@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-User Experience Virtualization-IPC" name="Microsoft-User Experience Virtualization-IPC" guid="{21d79db0-8e03-41cd-9589-f3ef7001a92a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-User Experience Virtualization-IPC/Operational" template="Args100_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-User Experience Virtualization-IPC/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="_String1" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-User Experience Virtualization-IPC" />
+       <string id="string1" value="Microsoft-User Experience Virtualization-IPC/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

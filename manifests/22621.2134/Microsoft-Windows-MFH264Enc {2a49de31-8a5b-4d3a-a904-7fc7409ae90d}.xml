@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MFH264Enc" name="Microsoft-Windows-MFH264Enc" guid="{2a49de31-8a5b-4d3a-a904-7fc7409ae90d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_EncodeSession" opcode="win:Start" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_EncodeSession" opcode="win:Stop"/>
+        <event value="3" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_TrackSample" opcode="win:Start" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_TrackSample" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_WorkItem" opcode="win:Start" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_WorkItem" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_RateControl" opcode="win:Info" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="WINDOWS_MFH264Enc_CHANNEL" task="MFH264Enc_RateControl" opcode="win:Info" template="Args8_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="WINDOWS_MFH264Enc_CHANNEL" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="MFH264Enc_EncodeSession" message="$(string.string1)">
+        </task>
+        <task value="2" name="MFH264Enc_TrackSample" message="$(string.string2)">
+        </task>
+        <task value="3" name="MFH264Enc_WorkItem" message="$(string.string3)">
+        </task>
+        <task value="4" name="MFH264Enc_RateControl" message="$(string.string4)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Complexity" inType="win:Int32" outType="xs:int"  />
+          <data name="RateCtrlMode" inType="win:Int32" outType="xs:int"  />
+          <data name="ContentType" inType="win:Int32" outType="xs:int"  />
+          <data name="BufferSize" inType="win:Int32" outType="xs:int"  />
+          <data name="AverageBitRate" inType="win:Int32" outType="xs:int"  />
+          <data name="PeakBitRate" inType="win:Int32" outType="xs:int"  />
+          <data name="EntropyMode" inType="win:Int32" outType="xs:int"  />
+          <data name="MultithreadEncodingMode" inType="win:Int32" outType="xs:int"  />
+          <data name="NumberOfWorkerThreads" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+          <data name="Type" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+          <data name="GOPNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="FrameNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="FrameRate" inType="win:Double" outType="xs:double"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+          <data name="GOPNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="FrameNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="BitRate" inType="win:Int32" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="MFH264Enc_EncodeSession" />
+       <string id="string1" value="MFH264Enc_RateControl" />
+       <string id="string2" value="MFH264Enc_TrackSample" />
+       <string id="string3" value="MFH264Enc_WorkItem" />
+       <string id="string4" value="Microsoft-Windows-MFH264Enc" />
+       <string id="string5" value="win:Info" />
+       <string id="string6" value="win:Start" />
+       <string id="string7" value="win:Stop" />
+       <string id="string8" value="WINDOWS_MFH264Enc_CHANNEL" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

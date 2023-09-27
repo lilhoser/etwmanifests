@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Shell-AppWizCpl" name="Microsoft-Windows-Shell-AppWizCpl" guid="{08d945eb-c8bd-44aa-994f-86079d8dce35}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_InstalledProgramsChangeNotify" opcode="win:Info"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_RemoveApplicationLaunch" opcode="win:Start"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_RemoveApplicationLaunch" opcode="win:Stop"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_Open" opcode="win:Start"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_Open" opcode="win:Stop"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_InstalledProgramsView" opcode="win:Start"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_InstalledProgramsView" opcode="win:Stop"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_NewProgramsView" opcode="win:Start"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_NewProgramsView" opcode="win:Stop"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_InstallApplicationLaunch" opcode="win:Start"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" task="AppWizCpl_SoftwareExplorer_InstallApplicationLaunch" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="AppWizCpl_SoftwareExplorer_InstalledProgramsChangeNotify" message="$(string.string1)">
+        </task>
+        <task value="2" name="AppWizCpl_SoftwareExplorer_RemoveApplicationLaunch" message="$(string.string2)">
+        </task>
+        <task value="3" name="AppWizCpl_SoftwareExplorer_Open" message="$(string.string3)">
+        </task>
+        <task value="4" name="AppWizCpl_SoftwareExplorer_InstalledProgramsView" message="$(string.string4)">
+        </task>
+        <task value="5" name="AppWizCpl_SoftwareExplorer_NewProgramsView" message="$(string.string5)">
+        </task>
+        <task value="6" name="AppWizCpl_SoftwareExplorer_InstallApplicationLaunch" message="$(string.string6)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AppWizCpl_SoftwareExplorer_InstallApplicationLaunch" />
+       <string id="string1" value="AppWizCpl_SoftwareExplorer_InstalledProgramsChangeNotify" />
+       <string id="string2" value="AppWizCpl_SoftwareExplorer_InstalledProgramsView" />
+       <string id="string3" value="AppWizCpl_SoftwareExplorer_NewProgramsView" />
+       <string id="string4" value="AppWizCpl_SoftwareExplorer_Open" />
+       <string id="string5" value="AppWizCpl_SoftwareExplorer_RemoveApplicationLaunch" />
+       <string id="string6" value="Microsoft-Windows-Shell-AppWizCpl" />
+       <string id="string7" value="Microsoft-Windows-Shell-AppWizCpl/Diagnostic" />
+       <string id="string8" value="win:Info" />
+       <string id="string9" value="win:Start" />
+       <string id="string10" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

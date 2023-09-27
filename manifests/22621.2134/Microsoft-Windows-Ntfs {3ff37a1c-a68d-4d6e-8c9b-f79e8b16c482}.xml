@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Ntfs" name="Microsoft-Windows-Ntfs" guid="{3ff37a1c-a68d-4d6e-8c9b-f79e8b16c482}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Rundown" opcode="win:Start" keywords="Rundown"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Rundown" opcode="win:Stop" keywords="Rundown"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Rundown" opcode="win:Info" keywords="Rundown" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeMount" opcode="win:Info" keywords="VolumeMountDismount" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR" template="Args5_0"/>
+        <event value="6" version="0" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR" template="Args6_0"/>
+        <event value="7" version="0" level="win:Warning"  channel="System" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" opcode="win:Info" keywords="Statistics" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" opcode="win:Info" keywords="Statistics" template="Args10_0"/>
+        <event value="98" version="0" level="win:Informational"  channel="System" keywords="VolumeCorruptionActionStateChange" template="Args98_0"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/WHC" keywords="GlobalCorruptionActionStateChange" template="Args100_0"/>
+        <event value="139" version="0" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="SdsCompaction" template="Args139_0"/>
+        <event value="141" version="0" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args141_0"/>
+        <event value="142" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args142_0"/>
+        <event value="143" version="0" level="win:Warning"  channel="System" keywords="VolumeMountDismount"/>
+        <event value="144" version="0" level="win:Warning"  channel="System" keywords="VolumeMountDismount"/>
+        <event value="151" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args151_0"/>
+        <event value="152" version="0" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args152_0"/>
+        <event value="154" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="SystemFilePages"/>
+        <event value="155" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="SystemFilePages" template="Args155_0"/>
+        <event value="156" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args156_0"/>
+        <event value="157" version="0" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args157_0"/>
+        <event value="158" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args158_0"/>
+        <event value="159" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeSizeChange" opcode="win:Info" keywords="Statistics" template="Args159_0"/>
+        <event value="160" version="0" level="win:Error"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeSizeChange" opcode="win:Stop" keywords="Statistics" template="Args160_0"/>
+        <event value="161" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args161_0"/>
+        <event value="162" version="0" level="win:Error"  channel="System" template="Args162_0"/>
+        <event value="163" version="0" level="win:Warning"  channel="System" template="Args163_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="LogFileFull" opcode="win:Info" keywords="LogFileFull" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Checkpoint" opcode="win:Start" keywords="Checkpoint PeriodicCheckpoint" template="Args202_0"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Checkpoint" opcode="win:Stop" keywords="Checkpoint PeriodicCheckpoint" template="Args203_0"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Checkpoint" opcode="win:Start" keywords="Checkpoint CleanCheckpoint"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="Checkpoint" opcode="win:Stop" keywords="Checkpoint CleanCheckpoint"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="MftRecordRead" opcode="win:Info" keywords="MftRecordRead" template="Args206_0"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="MftRecordWrite" opcode="win:Info" keywords="MftRecordWrite"/>
+        <event value="210" version="0" level="win:Warning"  channel="System" task="TPMapBitNotSet" opcode="win:Info" keywords="TPMapBitNotSet" template="Args210_0"/>
+        <event value="211" version="0" level="win:Error"  channel="System" task="TPMapBitNotSet" opcode="win:Info" keywords="TPMapBitNotSet"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="WorkItem" opcode="win:Info" keywords="WorkItem" template="Args230_0"/>
+        <event value="231" version="0" level="win:Error"  channel="Microsoft-Windows-Ntfs/Performance" task="WorkItem" opcode="win:Info" keywords="WorkItem" template="Args231_0"/>
+        <event value="232" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="WorkItem" opcode="win:Start" keywords="WorkItem"/>
+        <event value="233" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="WorkItem" opcode="win:Stop" keywords="WorkItem"/>
+        <event value="240" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="FileMetadataOptimization" opcode="win:Start" keywords="FileMetadataOptimization" template="Args240_0"/>
+        <event value="241" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="FileMetadataOptimization" opcode="win:Stop" keywords="FileMetadataOptimization"/>
+        <event value="300" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Start" keywords="VolumeMountDismount"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Suspend" keywords="VolumeMountDismount"/>
+        <event value="302" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Resume" keywords="VolumeMountDismount"/>
+        <event value="303" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Stop" keywords="VolumeMountDismount"/>
+        <event value="304" version="0" level="win:Error"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Stop" keywords="VolumeMountDismount" template="Args304_0"/>
+        <event value="305" version="0" level="win:Error"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeMount" opcode="win:Stop" keywords="VolumeMountDismount" template="Args305_0"/>
+        <event value="401" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="EfsTest" opcode="win:Info" keywords="EfsTest" template="Args401_0"/>
+        <event value="402" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="EfsTest" opcode="win:Info" keywords="EfsTest"/>
+        <event value="403" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="EfsTest" opcode="win:Info" keywords="EfsTest"/>
+        <event value="404" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="EfsTest" opcode="win:Info" keywords="EfsTest"/>
+        <event value="405" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="EfsTest" opcode="win:Info" keywords="EfsTest"/>
+        <event value="406" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Performance" task="EfsTest" opcode="win:Info" keywords="EfsTest"/>
+        <event value="500" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args500_0"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args501_0"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeMount" opcode="win:Info" keywords="VolumeMountDismount" template="Args4_1"/>
+        <event value="5" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR"/>
+        <event value="6" version="1" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR" template="Args6_1"/>
+        <event value="7" version="1" level="win:Warning"  channel="System" template="Args7_1"/>
+        <event value="10" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" opcode="win:Info" keywords="Statistics" template="Args10_1"/>
+        <event value="11" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR" template="Args11_1"/>
+        <event value="12" version="1" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR"/>
+        <event value="13" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR" template="Args13_1"/>
+        <event value="14" version="1" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" task="KSR" opcode="win:Info" keywords="KSR"/>
+        <event value="140" version="1" level="win:Warning"  channel="System" keywords="LogFlushFailed" template="Args140_1"/>
+        <event value="142" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args142_1"/>
+        <event value="150" version="1" level="win:Warning"  channel="System" keywords="BadClusterHotFix" template="Args150_1"/>
+        <event value="170" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args170_1"/>
+        <event value="300" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Start" keywords="VolumeMountDismount" template="Args300_1"/>
+        <event value="303" version="1" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Stop" keywords="VolumeMountDismount"/>
+        <event value="304" version="1" level="win:Error"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeDismount" opcode="win:Stop" keywords="VolumeMountDismount" template="Args304_1"/>
+        <event value="305" version="1" level="win:Error"  channel="Microsoft-Windows-Ntfs/Operational" task="VolumeMount" opcode="win:Stop" keywords="VolumeMountDismount" template="Args305_1"/>
+        <event value="142" version="2" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args142_2"/>
+        <event value="148" version="2" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args148_2"/>
+        <event value="149" version="2" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args149_2"/>
+        <event value="170" version="2" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args170_2"/>
+        <event value="142" version="3" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args142_3"/>
+        <event value="146" version="3" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args146_3"/>
+        <event value="147" version="3" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args147_3"/>
+        <event value="148" version="3" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args148_3"/>
+        <event value="170" version="3" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args170_3"/>
+        <event value="171" version="3" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args171_3"/>
+        <event value="142" version="4" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args142_4"/>
+        <event value="145" version="4" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics"/>
+        <event value="147" version="4" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args147_4"/>
+        <event value="170" version="4" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args170_4"/>
+        <event value="147" version="5" level="win:Warning"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics"/>
+        <event value="170" version="5" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args170_5"/>
+        <event value="170" version="6" level="win:Informational"  channel="Microsoft-Windows-Ntfs/Operational" keywords="Statistics" template="Args170_6"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Ntfs/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Ntfs/WHC" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Ntfs/Performance" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="GlobalCorruptionActionStateChange" mask="0x1" message="$(string.string6)" />
+        <keyword name="VolumeCorruptionActionStateChange" mask="0x2" message="$(string.string23)" />
+        <keyword name="SdsCompaction" mask="0x4" message="$(string.string18)" />
+        <keyword name="LogFlushFailed" mask="0x8" message="$(string.string9)" />
+        <keyword name="Rundown" mask="0x10" message="$(string.string17)" />
+        <keyword name="VolumeMountDismount" mask="0x20" message="$(string.string26)" />
+        <keyword name="TPMapBitNotSet" mask="0x40" message="$(string.string22)" />
+        <keyword name="LogFileFull" mask="0x100" message="$(string.string8)" />
+        <keyword name="Checkpoint" mask="0x200" message="$(string.string1)" />
+        <keyword name="CleanCheckpoint" mask="0x400" message="$(string.string2)" />
+        <keyword name="PeriodicCheckpoint" mask="0x800" message="$(string.string16)" />
+        <keyword name="MftRecordRead" mask="0x1000" message="$(string.string10)" />
+        <keyword name="MftRecordWrite" mask="0x2000" message="$(string.string11)" />
+        <keyword name="WorkItem" mask="0x10000" message="$(string.string33)" />
+        <keyword name="DirectoryStream" mask="0x100000" message="$(string.string3)" />
+        <keyword name="Statistics" mask="0x200000" message="$(string.string19)" />
+        <keyword name="FileMetadataOptimization" mask="0x400000" message="$(string.string5)" />
+        <keyword name="EfsTest" mask="0x800000" message="$(string.string4)" />
+        <keyword name="BadClusterHotFix" mask="0x1000000" message="$(string.string0)" />
+        <keyword name="KSR" mask="0x2000000" message="$(string.string7)" />
+        <keyword name="SystemFilePages" mask="0x4000000" message="$(string.string21)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Checkpoint" message="$(string.string1)">
+        </task>
+        <task value="2" name="MftRecordRead" message="$(string.string2)">
+        </task>
+        <task value="3" name="MftRecordWrite" message="$(string.string3)">
+        </task>
+        <task value="4" name="LogFileFull" message="$(string.string4)">
+        </task>
+        <task value="5" name="Rundown" message="$(string.string5)">
+        </task>
+        <task value="6" name="VolumeMount" message="$(string.string6)">
+        </task>
+        <task value="7" name="WorkItem" message="$(string.string7)">
+        </task>
+        <task value="8" name="VolumeDismount" message="$(string.string8)">
+        </task>
+        <task value="9" name="FileMetadataOptimization" message="$(string.string9)">
+        </task>
+        <task value="10" name="EfsTest" message="$(string.string10)">
+        </task>
+        <task value="11" name="TPMapBitNotSet" message="$(string.string11)">
+        </task>
+        <task value="12" name="KSR" message="$(string.string12)">
+        </task>
+        <task value="13" name="VolumeSizeChange" message="$(string.string13)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args3_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+        </template>
+        <template tid="Args4_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+        </template>
+        <template tid="Args5_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CachedRunsRestoredRunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsRestoredTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MessageLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string" length="MessageLength" />
+        </template>
+        <template tid="Args7_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="BufferOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TornStructureOffset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BlockIndex" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ExpectedSequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ActualSequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="FileLinkNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileLinkName" inType="win:UnicodeString" outType="xs:string" length="FileLinkNameLength" />
+          <data name="ParentFileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ParentFileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParentFileName" inType="win:UnicodeString" outType="xs:string" length="ParentFileNameLength" />
+          <data name="Reason" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ReasonText" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="DurationUs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RunsCached" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LongestRunCached" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LongestRunCachedStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MostPopulatedBinCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MostPopulatedBinMinLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MostPopulatedBinMinLengthStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MostPopulatedBinMaxLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MostPopulatedBinMaxLengthStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TotalCachedRuns" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CachedRunsLogged" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args98_0">
+          <data name="DriveName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CorruptionActionState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args139_0">
+          <data name="DriveName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FragmentationLevel" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FreeSpaceInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalReservedSpaceInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalAbortReservationSpaceInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RequestedSpaceInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args142_0">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="LowestFreeSpaceInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HighestFreeSpaceInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SecondsElapsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalCountDeleteFile" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalCountDeleteFileLogged" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessNamesArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInDesktopArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInDocumentsArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInDownloadsArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInMusicArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInPicturesArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInVideosArray" inType="win:AnsiString" outType="xs:string"  />
+          <data name="CountDeletesInOtherArray" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args152_0">
+          <data name="TimeoutSeconds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OwnerProcessNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OwnerProcessName" inType="win:UnicodeString" outType="xs:string" length="OwnerProcessNameLength" />
+          <data name="BreakingProcessNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BreakingProcessName" inType="win:UnicodeString" outType="xs:string" length="BreakingProcessNameLength" />
+        </template>
+        <template tid="Args155_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="UnlockReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VcbExAcquireCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VcbExMaxWaitDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExAvgWaitDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExMaxHoldDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExAvgHoldDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExMaxCombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExAvgCombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MaxDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MajorFunction" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="MinorFunction" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ControlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourceName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WaitDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HoldDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+        </template>
+        <template tid="Args158_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="UserFileReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserFileReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserDiskReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserFileWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserFileWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserDiskWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MetaDataReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MetaDataReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MetaDataDiskReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MetaDataWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MetaDataWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MetaDataDiskWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Mft2Writes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Mft2WriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RootIndexReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RootIndexReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RootIndexWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RootIndexWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BitmapReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BitmapReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BitmapWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BitmapWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftBitmapReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftBitmapReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftBitmapWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MftBitmapWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserIndexReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserIndexReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserIndexWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserIndexWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileReads" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileWrites" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFull" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LogFileFullReasonBucket15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DiskResourceFailure" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvgVolumeTrimTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvgVolumeTrimSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimSkippedCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimSkippedSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvgFileLevelTrimTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvgFileLevelTrimSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NtfsFillStatInfoFromMftRecordCalledCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NtfsFillStatInfoFromMftRecordBailedBecauseOfAttributeListCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NtfsFillStatInfoFromMftRecordBailedBecauseOfNonResReparsePointCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args159_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="FromSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ToSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="VolumeSizeChangeOperation" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeSizeChangeRequestType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage1DurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage2DurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage3DurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="FromSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ToSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="VolumeSizeChangeOperation" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeSizeChangeRequestType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage1DurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage2DurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage3DurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FailureStage" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FailureStatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FailureReason" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args161_0">
+          <data name="Reason" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ReasonOrigin" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args162_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="AttributeTypeCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AttributeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AttributeName" inType="win:UnicodeString" outType="xs:string" length="AttributeNameLength" />
+          <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="VolumeOffset" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Length" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CalledFromWorker" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WorkerStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="ReadDataValidOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ReadDataValidLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ReadData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+          <data name="PrevDataValidOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PrevDataValidLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PrevData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args163_0">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="MftDataAllocationSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftDataFileSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftBitmapAllocationSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftBitmapFileSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="BytesPerFRS" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="MftDataAttrAllocatedLength" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftDataAttrFileSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftBitmapAttrHighestVcn" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftBitmapAttrAllocatedLength" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftBitmapAttrFileSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MftLastDataAndBitmapInSameFrs" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CalledFromWorker" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WorkerStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="MajorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SourceTag" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LogFileFullReason" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LogFileFullReason" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LogFileUsePercentage" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args203_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DirtyMetaDataPages" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args206_0">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BaseFileId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="FileId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CacheHit" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args210_0">
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Starting LCN" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Ending LCN" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args230_0">
+          <data name="WorkItem" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args231_0">
+          <data name="WorkItem" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args240_0">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args304_0">
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args305_0">
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+        </template>
+        <template tid="Args401_0">
+          <data name="VolumeSerialNumber" inType="win:Int64" outType="xs:long"  />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+        </template>
+        <template tid="Args500_0">
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="JournalId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MaximumSize" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="AllocationDelta" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args501_0">
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="JournalId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="CurrentUsn" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MountDurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MountDuration" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LongestStage" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LongestStageDuration" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LongestStagePercentage" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecondLongestStage" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecondLongestStageDuration" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecondLongestStagePercentage" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartApplied" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Stage1DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage2DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage3DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage4DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage5DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage6DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage7DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage8DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage9DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Stage10DurationUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args6_1">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MessageLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string" length="MessageLength" />
+          <data name="FailureStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="FileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="BufferOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TornStructureOffset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BlockIndex" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ExpectedSequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ActualSequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrsFileReference" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FrsFileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrsFileName" inType="win:UnicodeString" outType="xs:string" length="FrsFileNameLength" />
+          <data name="IsChildFRS" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args10_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapacityTierName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapacityMediaType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CapacityRunsCached" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CapacityLongestRunCached" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CapacityLongestRunCachedStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapacityMostPopulatedBinCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CapacityMostPopulatedBinMinLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CapacityMostPopulatedBinMinLengthStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapacityMostPopulatedBinMaxLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CapacityMostPopulatedBinMaxLengthStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapacityTotalCachedRuns" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CapacityCachedRunsLogged" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PerfTierName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PerfMediaType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfRunsCached" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfLongestRunCached" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PerfLongestRunCachedStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PerfMostPopulatedBinCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PerfMostPopulatedBinMinLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PerfMostPopulatedBinMinLengthStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PerfMostPopulatedBinMaxLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PerfMostPopulatedBinMaxLengthStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PerfTotalCachedRuns" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PerfCachedRunsLogged" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args11_1">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CachedRunsPreparedRunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsPreparedTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_1">
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CachedRunsFilledRunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsFilledTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args140_1">
+          <data name="VolumeIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="DeviceNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+        </template>
+        <template tid="Args142_1">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ElapsedSeconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailabeSpaceMinStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceMaxStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceDeltaStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailableClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailableClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClusterSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args150_1">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="BadFileOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BadLcn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClustersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailureStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args170_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MaxLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoCount0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs11" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args300_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DismountReason" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args304_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="Vcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args305_1">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="VolumeLabelLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeLabel" inType="win:UnicodeString" outType="xs:string" length="VolumeLabelLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="MountStageSourceTag" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args142_2">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ElapsedSeconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailabeSpaceMinStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceMaxStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceDeltaStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailableClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailableClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClusterSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SlabSizeInClusters" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SlabSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SlabsInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalSlabsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MapFailureCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args148_2">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="IoType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartingLcn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClustersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailureStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="LatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+        </template>
+        <template tid="Args149_2">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="SecondsElapsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighLatencyCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailedWriteCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailedReadCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BadClusterHotfixCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValuesCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args170_2">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MaxLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoCount0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageBps" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes11" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args142_3">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ElapsedSeconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailabeSpaceMinStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceMaxStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceDeltaStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailableClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailableClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClusterSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CachedRunsMissCountForMft" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsMissCountForMftZone" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsMissCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args146_3">
+          <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TierIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="MaxLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadWriteLatencyBucket1" inType="win:Int64" outType="xs:long"  />
+          <data name="ReadWriteLatencyBucket2" inType="win:Int64" outType="xs:long"  />
+          <data name="ReadWriteLatencyBucket3" inType="win:Int64" outType="xs:long"  />
+          <data name="ReadWriteLatencyBucket4" inType="win:Int64" outType="xs:long"  />
+          <data name="ReadWriteLatencyBucket5" inType="win:Int64" outType="xs:long"  />
+          <data name="ReadWriteLatencyBucket6" inType="win:Int64" outType="xs:long"  />
+          <data name="ReadWriteLatencyBucket7" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket1" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket2" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket3" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket4" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket5" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket6" inType="win:Int64" outType="xs:long"  />
+          <data name="TrimLatencyBucket7" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket1" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket2" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket3" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket4" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket5" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket6" inType="win:Int64" outType="xs:long"  />
+          <data name="FlushLatencyBucket7" inType="win:Int64" outType="xs:long"  />
+          <data name="HighIoLatencyCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IntervalDurationUs" inType="win:Int64" outType="xs:long"  />
+          <data name="NCReadIOCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NCReadTotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NCReadAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NCWriteIOCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NCWriteTotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NCWriteAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileFlushCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileFlushAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DirectoryFlushCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DirectoryFlushAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeFlushCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeFlushAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimTotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimExtentsCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileLevelTrimAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimTotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimExtentsCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeTrimAvgLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoBucketsCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalBytesBucketsCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ExtentsBucketsCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VcbExAcquireCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VcbExMaxWaitDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExAvgWaitDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExMaxHoldDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExAvgHoldDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExMaxCombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VcbExAvgCombinedDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args147_3">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MaxLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="IoType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartingLcn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClustersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+        </template>
+        <template tid="Args148_3">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="FileIdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="FileIdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IoType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartingLcn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClustersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailureStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+        </template>
+        <template tid="Args170_3">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MaxLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoCount0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageBps" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents11" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args171_3">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PeriodDurationMicrosSec" inType="win:Int64" outType="xs:long"  />
+          <data name="OperationCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RepostedOperationCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FailedOperationCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationRangeCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLongRangeByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnalignedRangeCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesInUnalignedRanges" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationTrimExtentCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NonBlockAlignedTrimByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReclaimedByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ByteCountLabelsLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ByteCountLabels" inType="win:UnicodeString" outType="xs:string" length="ByteCountLabelsLength" />
+          <data name="OperationCountBuckets1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountBuckets12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationByteCountBuckets12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationBytesReclaimedBuckets12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationLatencyBuckets12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatencyBucketLabelsLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LatencyBucketLabelsLabels" inType="win:UnicodeString" outType="xs:string" length="LatencyBucketLabelsLength" />
+          <data name="OperationCountLatencyBuckets1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationCountLatencyBuckets15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationFailureStatusCode1" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OperationFailureCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationFailureStatusCode2" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OperationFailureCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationFailureStatusCode3" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OperationFailureCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationFailureStatusCode4" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OperationFailureCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OperationFailureStatusCode5" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OperationFailureCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args142_4">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ElapsedSeconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailabeSpaceMinStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceMaxStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailabeSpaceDeltaStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AvailableClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AvailableClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnallocatedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMin" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TxfAbortReservedClustersMax" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageFileSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VolumeSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClusterSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SlabSizeInClusters" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SlabSizeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SlabsInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalSlabsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MapFailureCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsMissCountForMft" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsMissCountForMftZone" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachedRunsMissCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args147_4">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MaxLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FileNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="FileIdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="FileIdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartingLcn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClustersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+        </template>
+        <template tid="Args170_4">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SummaryId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HighLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalIoTimeNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MaxLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoCount0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs15" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args170_5">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SummaryId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HighLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalIoTimeNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MaxLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoCount0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageBps" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes15" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args170_6">
+          <data name="VolumeCorrelationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="IsBootVolume" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VendorId" inType="win:UnicodeString" outType="xs:string" length="VendorIdLength" />
+          <data name="ProductIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductId" inType="win:UnicodeString" outType="xs:string" length="ProductIdLength" />
+          <data name="ProductRevisionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductRevision" inType="win:UnicodeString" outType="xs:string" length="ProductRevisionLength" />
+          <data name="DeviceSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceSerialNumber" inType="win:UnicodeString" outType="xs:string" length="DeviceSerialNumberLength" />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumberLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string" length="AdapterSerialNumberLength" />
+          <data name="IntervalDurationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IntervalDurationStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SummaryId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IoTypeStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HighLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HighLatencyIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalIoTimeNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MaxLatencyNs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxLatencyStr" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoCount0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoCount15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTimeNs15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AverageBps" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes15" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalExtents15" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="BadClusterHotFix" />
+       <string id="string1" value="Checkpoint" />
+       <string id="string2" value="CleanCheckpoint" />
+       <string id="string3" value="DirectoryStream" />
+       <string id="string4" value="EfsTest" />
+       <string id="string5" value="FileMetadataOptimization" />
+       <string id="string6" value="GlobalCorruptionActionStateChange" />
+       <string id="string7" value="KSR" />
+       <string id="string8" value="LogFileFull" />
+       <string id="string9" value="LogFlushFailed" />
+       <string id="string10" value="MftRecordRead" />
+       <string id="string11" value="MftRecordWrite" />
+       <string id="string12" value="Microsoft-Windows-Ntfs" />
+       <string id="string13" value="Microsoft-Windows-Ntfs/Operational" />
+       <string id="string14" value="Microsoft-Windows-Ntfs/Performance" />
+       <string id="string15" value="Microsoft-Windows-Ntfs/WHC" />
+       <string id="string16" value="PeriodicCheckpoint" />
+       <string id="string17" value="Rundown" />
+       <string id="string18" value="SdsCompaction" />
+       <string id="string19" value="Statistics" />
+       <string id="string20" value="System" />
+       <string id="string21" value="SystemFilePages" />
+       <string id="string22" value="TPMapBitNotSet" />
+       <string id="string23" value="VolumeCorruptionActionStateChange" />
+       <string id="string24" value="VolumeDismount" />
+       <string id="string25" value="VolumeMount" />
+       <string id="string26" value="VolumeMountDismount" />
+       <string id="string27" value="VolumeSizeChange" />
+       <string id="string28" value="win:Info" />
+       <string id="string29" value="win:Resume" />
+       <string id="string30" value="win:Start" />
+       <string id="string31" value="win:Stop" />
+       <string id="string32" value="win:Suspend" />
+       <string id="string33" value="WorkItem" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

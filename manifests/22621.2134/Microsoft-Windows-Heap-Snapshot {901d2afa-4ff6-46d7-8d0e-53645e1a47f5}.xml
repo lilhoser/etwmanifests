@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Heap-Snapshot" name="Microsoft-Windows-Heap-Snapshot" guid="{901d2afa-4ff6-46d7-8d0e-53645e1a47f5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="1" level="win:Verbose"  template="Args100_1"/>
+        <event value="200" version="1" level="win:Verbose"  template="Args200_1"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_1">
+          <data name="HeapSnapshotInstance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeapSnapshotSequence" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeapSnapshotBufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeapSnapshotBuffer" inType="win:Binary" outType="xs:hexBinary" length="HeapSnapshotBufferLen" />
+        </template>
+        <template tid="Args200_1">
+          <data name="HeapSnapshotInstance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalData" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Heap-Snapshot" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

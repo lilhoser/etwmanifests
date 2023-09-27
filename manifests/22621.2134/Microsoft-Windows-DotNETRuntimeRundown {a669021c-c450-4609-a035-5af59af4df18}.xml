@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DotNETRuntimeRundown" name="Microsoft-Windows-DotNETRuntimeRundown" guid="{a669021c-c450-4609-a035-5af59af4df18}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="Log Always"  task="CLRStackRundown" opcode="CLRStackWalk" keywords="StackKeyword" template="Args0_0"/>
+        <event value="141" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCStart" keywords="JitRundownKeyword NGenRundownKeyword" template="Args141_0"/>
+        <event value="142" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCEnd" keywords="JitRundownKeyword NGenRundownKeyword"/>
+        <event value="143" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCStartVerbose" keywords="JitRundownKeyword NGenRundownKeyword" template="Args143_0"/>
+        <event value="144" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCEndVerbose" keywords="JitRundownKeyword NGenRundownKeyword"/>
+        <event value="145" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="DCStartComplete" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="146" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="DCEndComplete" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="147" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="DCStartInit" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="148" version="0" level="win:Informational"  task="CLRMethodRundown" opcode="DCEndInit" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="149" version="0" level="win:Verbose"  task="CLRMethodRundown" opcode="MethodDCStartILToNativeMap" keywords="JittedMethodILToNativeMapRundownKeyword" template="Args149_0"/>
+        <event value="150" version="0" level="win:Verbose"  task="CLRMethodRundown" opcode="MethodDCEndILToNativeMap" keywords="JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="151" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="DomainModuleDCStart" keywords="LoaderRundownKeyword" template="Args151_0"/>
+        <event value="152" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="DomainModuleDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="153" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="ModuleDCStart" keywords="LoaderRundownKeyword"/>
+        <event value="154" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="ModuleDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="155" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="AssemblyDCStart" keywords="LoaderRundownKeyword" template="Args155_0"/>
+        <event value="156" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="AssemblyDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="157" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="AppDomainDCStart" keywords="LoaderRundownKeyword" template="Args157_0"/>
+        <event value="158" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="AppDomainDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="159" version="0" level="win:Informational"  task="CLRLoaderRundown" opcode="ThreadDC" keywords="AppDomainResourceManagementRundownKeyword ThreadingKeyword" template="Args159_0"/>
+        <event value="160" version="0" level="win:Informational"  task="CLRPerfTrackRundown" opcode="ModuleRangeDCStart" keywords="PerfTrackRundownKeyword" template="Args160_0"/>
+        <event value="161" version="0" level="win:Informational"  task="CLRPerfTrackRundown" opcode="ModuleRangeDCEnd" keywords="PerfTrackRundownKeyword"/>
+        <event value="187" version="0" level="win:Informational"  task="CLRRuntimeInformationRundown" opcode="win:Start" template="Args187_0"/>
+        <event value="141" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCStart" keywords="JitRundownKeyword NGenRundownKeyword" template="Args141_1"/>
+        <event value="142" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCEnd" keywords="JitRundownKeyword NGenRundownKeyword"/>
+        <event value="143" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCStartVerbose" keywords="JitRundownKeyword NGenRundownKeyword" template="Args143_1"/>
+        <event value="144" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCEndVerbose" keywords="JitRundownKeyword NGenRundownKeyword"/>
+        <event value="145" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="DCStartComplete" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="146" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="DCEndComplete" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="147" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="DCStartInit" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="148" version="1" level="win:Informational"  task="CLRMethodRundown" opcode="DCEndInit" keywords="LoaderRundownKeyword JitRundownKeyword NGenRundownKeyword JittedMethodILToNativeMapRundownKeyword"/>
+        <event value="151" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="DomainModuleDCStart" keywords="LoaderRundownKeyword" template="Args151_1"/>
+        <event value="152" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="DomainModuleDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="153" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="ModuleDCStart" keywords="LoaderRundownKeyword PerfTrackRundownKeyword"/>
+        <event value="154" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="ModuleDCEnd" keywords="LoaderRundownKeyword PerfTrackRundownKeyword"/>
+        <event value="155" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="AssemblyDCStart" keywords="LoaderRundownKeyword" template="Args155_1"/>
+        <event value="156" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="AssemblyDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="157" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="AppDomainDCStart" keywords="LoaderRundownKeyword" template="Args157_1"/>
+        <event value="158" version="1" level="win:Informational"  task="CLRLoaderRundown" opcode="AppDomainDCEnd" keywords="LoaderRundownKeyword"/>
+        <event value="141" version="2" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCStart" keywords="JitRundownKeyword NGenRundownKeyword" template="Args141_2"/>
+        <event value="142" version="2" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCEnd" keywords="JitRundownKeyword NGenRundownKeyword"/>
+        <event value="143" version="2" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCStartVerbose" keywords="JitRundownKeyword NGenRundownKeyword" template="Args143_2"/>
+        <event value="144" version="2" level="win:Informational"  task="CLRMethodRundown" opcode="MethodDCEndVerbose" keywords="JitRundownKeyword NGenRundownKeyword"/>
+        <event value="153" version="2" level="win:Informational"  task="CLRLoaderRundown" opcode="ModuleDCStart" keywords="LoaderRundownKeyword PerfTrackRundownKeyword" template="Args153_2"/>
+        <event value="154" version="2" level="win:Informational"  task="CLRLoaderRundown" opcode="ModuleDCEnd" keywords="LoaderRundownKeyword PerfTrackRundownKeyword"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="LoaderRundownKeyword" mask="0x8" message="$(string.string20)" />
+        <keyword name="JitRundownKeyword" mask="0x10" message="$(string.string18)" />
+        <keyword name="NGenRundownKeyword" mask="0x20" message="$(string.string32)" />
+        <keyword name="StartRundownKeyword" mask="0x40" message="$(string.string36)" />
+        <keyword name="EndRundownKeyword" mask="0x100" message="$(string.string17)" />
+        <keyword name="AppDomainResourceManagementRundownKeyword" mask="0x800" message="$(string.string2)" />
+        <keyword name="ThreadingKeyword" mask="0x10000" message="$(string.string38)" />
+        <keyword name="JittedMethodILToNativeMapRundownKeyword" mask="0x20000" message="$(string.string19)" />
+        <keyword name="OverrideAndSuppressNGenEventsRundownKeyword" mask="0x40000" message="$(string.string33)" />
+        <keyword name="PerfTrackRundownKeyword" mask="0x20000000" message="$(string.string34)" />
+        <keyword name="StackKeyword" mask="0x40000000" message="$(string.string35)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="CLRMethodRundown" message="$(string.string1)">
+          <opcodes>
+           <opcode value="14" name="DCStartComplete" message="$(string.string13)"/>
+           <opcode value="15" name="DCEndComplete" message="$(string.string11)"/>
+           <opcode value="16" name="DCStartInit" message="$(string.string14)"/>
+           <opcode value="17" name="DCEndInit" message="$(string.string12)"/>
+           <opcode value="35" name="MethodDCStart" message="$(string.string24)"/>
+           <opcode value="36" name="MethodDCEnd" message="$(string.string21)"/>
+           <opcode value="39" name="MethodDCStartVerbose" message="$(string.string26)"/>
+           <opcode value="40" name="MethodDCEndVerbose" message="$(string.string23)"/>
+           <opcode value="41" name="MethodDCStartILToNativeMap" message="$(string.string25)"/>
+           <opcode value="42" name="MethodDCEndILToNativeMap" message="$(string.string22)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="CLRLoaderRundown" message="$(string.string2)">
+          <opcodes>
+           <opcode value="35" name="ModuleDCStart" message="$(string.string29)"/>
+           <opcode value="36" name="ModuleDCEnd" message="$(string.string28)"/>
+           <opcode value="39" name="AssemblyDCStart" message="$(string.string4)"/>
+           <opcode value="40" name="AssemblyDCEnd" message="$(string.string3)"/>
+           <opcode value="43" name="AppDomainDCStart" message="$(string.string1)"/>
+           <opcode value="44" name="AppDomainDCEnd" message="$(string.string0)"/>
+           <opcode value="46" name="DomainModuleDCStart" message="$(string.string16)"/>
+           <opcode value="47" name="DomainModuleDCEnd" message="$(string.string15)"/>
+           <opcode value="48" name="ThreadDC" message="$(string.string37)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="CLRStackRundown" message="$(string.string11)">
+          <opcodes>
+           <opcode value="82" name="CLRStackWalk" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="CLRRuntimeInformationRundown" message="$(string.string19)">
+        </task>
+        <task value="20" name="CLRPerfTrackRundown" message="$(string.string20)">
+          <opcodes>
+           <opcode value="10" name="ModuleRangeDCStart" message="$(string.string31)"/>
+           <opcode value="11" name="ModuleRangeDCEnd" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Reserved1" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Reserved2" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Stack" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MethodToken" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args143_0">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args149_0">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodExtent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CountOfMapEntries" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args155_0">
+          <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AssemblyFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FullyQualifiedAssemblyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppDomainName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args159_0">
+          <data name="ManagedThreadID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ManagedThreadIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OSThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RangeBegin" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="RangeSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="RangeType" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args187_0">
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Sku" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="BclMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="BclMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="BclBuildNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="BclQfeNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VMMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VMMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VMBuildNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VMQfeNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="StartupFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartupMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ComObjectGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RuntimeDllPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args141_1">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args143_1">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args151_1">
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args155_1">
+          <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BindingID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AssemblyFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FullyQualifiedAssemblyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args157_1">
+          <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AppDomainFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppDomainName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppDomainIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args141_2">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args143_2">
+          <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args153_2">
+          <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ManagedPdbSignature" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ManagedPdbAge" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ManagedPdbBuildPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NativePdbSignature" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NativePdbAge" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NativePdbBuildPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AppDomainDCEnd" />
+       <string id="string1" value="AppDomainDCStart" />
+       <string id="string2" value="AppDomainResourceManagementRundownKeyword" />
+       <string id="string3" value="AssemblyDCEnd" />
+       <string id="string4" value="AssemblyDCStart" />
+       <string id="string5" value="CLRLoaderRundown" />
+       <string id="string6" value="CLRMethodRundown" />
+       <string id="string7" value="CLRPerfTrackRundown" />
+       <string id="string8" value="CLRRuntimeInformationRundown" />
+       <string id="string9" value="CLRStackRundown" />
+       <string id="string10" value="CLRStackWalk" />
+       <string id="string11" value="DCEndComplete" />
+       <string id="string12" value="DCEndInit" />
+       <string id="string13" value="DCStartComplete" />
+       <string id="string14" value="DCStartInit" />
+       <string id="string15" value="DomainModuleDCEnd" />
+       <string id="string16" value="DomainModuleDCStart" />
+       <string id="string17" value="EndRundownKeyword" />
+       <string id="string18" value="JitRundownKeyword" />
+       <string id="string19" value="JittedMethodILToNativeMapRundownKeyword" />
+       <string id="string20" value="LoaderRundownKeyword" />
+       <string id="string21" value="MethodDCEnd" />
+       <string id="string22" value="MethodDCEndILToNativeMap" />
+       <string id="string23" value="MethodDCEndVerbose" />
+       <string id="string24" value="MethodDCStart" />
+       <string id="string25" value="MethodDCStartILToNativeMap" />
+       <string id="string26" value="MethodDCStartVerbose" />
+       <string id="string27" value="Microsoft-Windows-DotNETRuntimeRundown" />
+       <string id="string28" value="ModuleDCEnd" />
+       <string id="string29" value="ModuleDCStart" />
+       <string id="string30" value="ModuleRangeDCEnd" />
+       <string id="string31" value="ModuleRangeDCStart" />
+       <string id="string32" value="NGenRundownKeyword" />
+       <string id="string33" value="OverrideAndSuppressNGenEventsRundownKeyword" />
+       <string id="string34" value="PerfTrackRundownKeyword" />
+       <string id="string35" value="StackKeyword" />
+       <string id="string36" value="StartRundownKeyword" />
+       <string id="string37" value="ThreadDC" />
+       <string id="string38" value="ThreadingKeyword" />
+       <string id="string39" value="win:Start" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

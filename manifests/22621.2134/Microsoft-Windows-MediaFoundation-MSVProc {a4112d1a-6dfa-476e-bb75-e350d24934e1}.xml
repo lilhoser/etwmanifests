@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MediaFoundation-MSVProc" name="Microsoft-Windows-MediaFoundation-MSVProc" guid="{a4112d1a-6dfa-476e-bb75-e350d24934e1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DCreateVideoProcessor" opcode="win:Info" template="Args100_0"/>
+        <event value="101" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DCreateVPInputView" opcode="win:Info" template="Args101_0"/>
+        <event value="102" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DCreateVPOutputView" opcode="win:Info"/>
+        <event value="103" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DVideoProcessorBlt" opcode="win:Start" template="Args103_0"/>
+        <event value="104" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DVideoProcessorBlt" opcode="win:Stop" template="Args104_0"/>
+        <event value="105" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="MFT" opcode="win:Start" template="Args105_0"/>
+        <event value="106" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="MFT" opcode="win:Stop"/>
+        <event value="107" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ProcessInput" opcode="win:Start"/>
+        <event value="108" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ProcessInput" opcode="win:Stop" template="Args108_0"/>
+        <event value="109" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ProcessOutput" opcode="win:Start"/>
+        <event value="110" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ProcessOutput" opcode="win:Stop"/>
+        <event value="111" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ColorConv" opcode="win:Start" template="Args111_0"/>
+        <event value="112" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ColorConv" opcode="win:Stop"/>
+        <event value="113" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="Resizer" opcode="win:Start" template="Args113_0"/>
+        <event value="114" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="Resizer" opcode="win:Stop"/>
+        <event value="115" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="Rotation" opcode="win:Start" template="Args115_0"/>
+        <event value="116" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="Rotation" opcode="win:Stop"/>
+        <event value="117" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="Mirror" opcode="win:Start" template="Args117_0"/>
+        <event value="118" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="Mirror" opcode="win:Stop"/>
+        <event value="119" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DShaderFallback" opcode="win:Start" template="Args119_0"/>
+        <event value="120" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="D3DShaderFallback" opcode="win:Stop"/>
+        <event value="121" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="ConfigureInputHDRMetadata" opcode="win:Info" template="Args121_0"/>
+        <event value="122" version="0" level="win:Verbose"  channel="MedaFoundationVideoProcD3D" task="ConfigureOutputHDRMetadata" opcode="win:Info"/>
+        <event value="123" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ConstrictionResizer" opcode="win:Start"/>
+        <event value="124" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="ConstrictionResizer" opcode="win:Stop"/>
+        <event value="125" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="EffectWrapper_ProcessFrame" opcode="win:Start" template="Args125_0"/>
+        <event value="126" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="EffectWrapper_ProcessFrame" opcode="win:Stop"/>
+        <event value="127" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="EffectWrapper_StartStreaming" opcode="win:Start"/>
+        <event value="128" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="EffectWrapper_StartStreaming" opcode="win:Stop"/>
+        <event value="129" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="EffectWrapper_SetTypes" opcode="win:Start" template="Args129_0"/>
+        <event value="130" version="0" level="win:Verbose"  channel="MedaFoundationVideoProc" task="EffectWrapper_SetTypes" opcode="win:Stop" template="Args130_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="MedaFoundationVideoProc" type="unknown"/>
+        <channel value="17" name="MedaFoundationVideoProcD3D" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="10" name="D3DCreateVideoProcessor" message="$(string.string10)">
+        </task>
+        <task value="11" name="D3DCreateVPInputView" message="$(string.string11)">
+        </task>
+        <task value="12" name="D3DCreateVPOutputView" message="$(string.string12)">
+        </task>
+        <task value="13" name="D3DVideoProcessorBlt" message="$(string.string13)">
+        </task>
+        <task value="14" name="MFT" message="$(string.string14)">
+        </task>
+        <task value="15" name="ProcessInput" message="$(string.string15)">
+        </task>
+        <task value="16" name="ProcessOutput" message="$(string.string16)">
+        </task>
+        <task value="17" name="ColorConv" message="$(string.string17)">
+        </task>
+        <task value="18" name="Resizer" message="$(string.string18)">
+        </task>
+        <task value="19" name="Rotation" message="$(string.string19)">
+        </task>
+        <task value="20" name="Mirror" message="$(string.string20)">
+        </task>
+        <task value="21" name="D3DShaderFallback" message="$(string.string21)">
+        </task>
+        <task value="22" name="ConfigureInputHDRMetadata" message="$(string.string22)">
+        </task>
+        <task value="23" name="ConfigureOutputHDRMetadata" message="$(string.string23)">
+        </task>
+        <task value="24" name="ConstrictionResizer" message="$(string.string24)">
+        </task>
+        <task value="25" name="EffectWrapper_ProcessFrame" message="$(string.string25)">
+        </task>
+        <task value="26" name="EffectWrapper_StartStreaming" message="$(string.string26)">
+        </task>
+        <task value="27" name="EffectWrapper_SetTypes" message="$(string.string27)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="VideoDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VP" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RateConversionIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PastFrames" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="View" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="InputSample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="InputViewIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputSample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="InputFrameOrField" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputFrame" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SrcWidth" inType="win:Int32" outType="xs:int"  />
+          <data name="SrcHeight" inType="win:Int32" outType="xs:int"  />
+          <data name="DestWidth" inType="win:Int32" outType="xs:int"  />
+          <data name="DestHeight" inType="win:Int32" outType="xs:int"  />
+          <data name="SourceFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Mirrored" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxLuminanceIn" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxLuminanceOut" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="srcColorSp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dstColorSp" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="OutputSample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args108_0">
+          <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args111_0">
+          <data name="fourCCSrc" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="fourCCDst" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args113_0">
+          <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="srcWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="srcHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dstWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dstHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args115_0">
+          <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args117_0">
+          <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Mirror" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="uiInputViewCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uiOutputViewCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uiOutWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uiOutHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uiOffsetX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uiOffsetY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Shader" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="lightLevelIn" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="lightLevelOut" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="srcColorSp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dstColorSp" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args121_0">
+          <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RedPrimaryX" inType="win:Float" outType="xs:float"  />
+          <data name="RedPrimaryY" inType="win:Float" outType="xs:float"  />
+          <data name="GreenPrimaryX" inType="win:Float" outType="xs:float"  />
+          <data name="GreenPrimaryY" inType="win:Float" outType="xs:float"  />
+          <data name="BluePrimaryX" inType="win:Float" outType="xs:float"  />
+          <data name="BluePrimaryY" inType="win:Float" outType="xs:float"  />
+          <data name="WhitePrimaryX" inType="win:Float" outType="xs:float"  />
+          <data name="WhitePrimaryY" inType="win:Float" outType="xs:float"  />
+          <data name="MaxLuminance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinLuminance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args125_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args129_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ColorConv" />
+       <string id="string1" value="ConfigureInputHDRMetadata" />
+       <string id="string2" value="ConfigureOutputHDRMetadata" />
+       <string id="string3" value="ConstrictionResizer" />
+       <string id="string4" value="D3DCreateVideoProcessor" />
+       <string id="string5" value="D3DCreateVPInputView" />
+       <string id="string6" value="D3DCreateVPOutputView" />
+       <string id="string7" value="D3DShaderFallback" />
+       <string id="string8" value="D3DVideoProcessorBlt" />
+       <string id="string9" value="EffectWrapper_ProcessFrame" />
+       <string id="string10" value="EffectWrapper_SetTypes" />
+       <string id="string11" value="EffectWrapper_StartStreaming" />
+       <string id="string12" value="MedaFoundationVideoProc" />
+       <string id="string13" value="MedaFoundationVideoProcD3D" />
+       <string id="string14" value="MFT" />
+       <string id="string15" value="Microsoft-Windows-MediaFoundation-MSVProc" />
+       <string id="string16" value="Mirror" />
+       <string id="string17" value="ProcessInput" />
+       <string id="string18" value="ProcessOutput" />
+       <string id="string19" value="Resizer" />
+       <string id="string20" value="Rotation" />
+       <string id="string21" value="win:Info" />
+       <string id="string22" value="win:Start" />
+       <string id="string23" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

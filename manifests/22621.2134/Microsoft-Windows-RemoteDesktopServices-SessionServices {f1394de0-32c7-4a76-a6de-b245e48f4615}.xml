@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-RemoteDesktopServices-SessionServices" name="Microsoft-Windows-RemoteDesktopServices-SessionServices" guid="{f1394de0-32c7-4a76-a6de-b245e48f4615}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational" task="DisplayControl" opcode="ChangeSessionResolution" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  channel="Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational" task="DisplayControl" opcode="ChangeSessionResolution" template="Args2_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="DisplayControl" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="ChangeSessionResolution" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="NumMonitors" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ChangeSessionResolution" />
+       <string id="string1" value="DisplayControl" />
+       <string id="string2" value="Microsoft-Windows-RemoteDesktopServices-SessionServices" />
+       <string id="string3" value="Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

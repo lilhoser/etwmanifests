@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-User-Loader" name="Microsoft-Windows-User-Loader" guid="{b059b83f-d946-4b13-87ca-4292839dc2f2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_KEYWORD_DEPRECATED_DLL" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_FATAL_CALLBACK_EXCEPTION" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_KEYWORD_LOAD_FAILURE" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_LAUNCH_16BIT_APP"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_KEYWORD_COMPONENT_ON_DEMAND" template="Args5_0"/>
+        <event value="6" version="0" level="win:Warning"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_KEYWORD_LOAD_FATAL_ERROR"/>
+        <event value="7" version="0" level="win:Warning"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_KEYWORD_LOAD_FATAL_ERROR"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" template="Args8_0"/>
+        <event value="9" version="0" level="win:Critical"  channel="Microsoft-Windows-User-Loader/Analytic" opcode="win:Info" keywords="USER_LOADER_KEYWORD_LOAD_FATAL_ERROR"/>
+        <event value="10" version="0" level="win:Informational"  channel="Application" opcode="win:Info"/>
+        <event value="11" version="0" level="win:Warning"  channel="Application" opcode="win:Info" template="Args11_0"/>
+        <event value="12" version="0" level="win:Error"  channel="Application" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-User-Loader/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-User-Loader/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="USER_LOADER_KEYWORD_DEPRECATED_DLL" mask="0x10" message="$(string.string6)" />
+        <keyword name="USER_LOADER_FATAL_CALLBACK_EXCEPTION" mask="0x20" message="$(string.string4)" />
+        <keyword name="USER_LOADER_KEYWORD_LOAD_FAILURE" mask="0x40" message="$(string.string7)" />
+        <keyword name="USER_LOADER_LAUNCH_16BIT_APP" mask="0x80" message="$(string.string9)" />
+        <keyword name="USER_LOADER_KEYWORD_COMPONENT_ON_DEMAND" mask="0x100" message="$(string.string5)" />
+        <keyword name="USER_LOADER_KEYWORD_LOAD_FATAL_ERROR" mask="0x200" message="$(string.string8)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="ProcessFileNamePathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessFileNamePath" inType="win:UnicodeString" outType="xs:string" length="ProcessFileNamePathLength" />
+        </template>
+        <template tid="Args3_0">
+          <data name="FailureReason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ImportDllName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessImagePath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SuspendProcessRequest" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DLLName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="FailureReason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ImportDllName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExportModule" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="ProcessImagePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CurDirDllPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FoundDllPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Microsoft-Windows-User-Loader" />
+       <string id="string2" value="Microsoft-Windows-User-Loader/Analytic" />
+       <string id="string3" value="Microsoft-Windows-User-Loader/Operational" />
+       <string id="string4" value="USER_LOADER_FATAL_CALLBACK_EXCEPTION" />
+       <string id="string5" value="USER_LOADER_KEYWORD_COMPONENT_ON_DEMAND" />
+       <string id="string6" value="USER_LOADER_KEYWORD_DEPRECATED_DLL" />
+       <string id="string7" value="USER_LOADER_KEYWORD_LOAD_FAILURE" />
+       <string id="string8" value="USER_LOADER_KEYWORD_LOAD_FATAL_ERROR" />
+       <string id="string9" value="USER_LOADER_LAUNCH_16BIT_APP" />
+       <string id="string10" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

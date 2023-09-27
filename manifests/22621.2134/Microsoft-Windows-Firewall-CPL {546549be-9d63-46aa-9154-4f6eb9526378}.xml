@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Firewall-CPL" name="Microsoft-Windows-Firewall-CPL" guid="{546549be-9d63-46aa-9154-4f6eb9526378}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="FwCplInitialize" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="FwCplInitialize" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="LoadExceptionsInitialize" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="LoadExceptionsInitialize" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="SetFirewallOn" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="SetFirewallOn" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="SetFirewallOff" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="SetFirewallOff" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="AddAppException" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="AddAppException" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="AddPortException" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="AddPortException" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="QUInitialize" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="QUInitialize" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="QUUnblock" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="QUUnblock" opcode="win:Stop" keywords="FirewallCpl"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="QUAskLater" opcode="win:Start" keywords="FirewallCpl"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-Firewall-CPL/Diagnostic" task="QUAskLater" opcode="win:Stop" keywords="FirewallCpl"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Firewall-CPL/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="FirewallCpl" mask="0x10000" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+        <task value="101" name="FwCplInitialize" message="$(string.string101)">
+        </task>
+        <task value="103" name="LoadExceptionsInitialize" message="$(string.string103)">
+        </task>
+        <task value="105" name="SetFirewallOn" message="$(string.string105)">
+        </task>
+        <task value="107" name="SetFirewallOff" message="$(string.string107)">
+        </task>
+        <task value="109" name="AddAppException" message="$(string.string109)">
+        </task>
+        <task value="111" name="AddPortException" message="$(string.string111)">
+        </task>
+        <task value="113" name="QUInitialize" message="$(string.string113)">
+        </task>
+        <task value="115" name="QUUnblock" message="$(string.string115)">
+        </task>
+        <task value="117" name="QUAskLater" message="$(string.string117)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AddAppException" />
+       <string id="string1" value="AddPortException" />
+       <string id="string2" value="FirewallCpl" />
+       <string id="string3" value="FwCplInitialize" />
+       <string id="string4" value="LoadExceptionsInitialize" />
+       <string id="string5" value="Microsoft-Windows-Firewall-CPL" />
+       <string id="string6" value="Microsoft-Windows-Firewall-CPL/Diagnostic" />
+       <string id="string7" value="QUAskLater" />
+       <string id="string8" value="QUInitialize" />
+       <string id="string9" value="QUUnblock" />
+       <string id="string10" value="SetFirewallOff" />
+       <string id="string11" value="SetFirewallOn" />
+       <string id="string12" value="win:Start" />
+       <string id="string13" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WLAN-MediaManager" name="Microsoft-Windows-WLAN-MediaManager" guid="{323dad74-d3ec-44a8-8b9d-cafeb4999274}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-MediaManager/Diagnostic" task="Create_Context_Menu" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-MediaManager/Diagnostic" task="Create_Context_Menu" opcode="win:Stop"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-MediaManager/Diagnostic" task="Show_Data_Usage" opcode="win:Info"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-MediaManager/Diagnostic" task="Hide_Data_Usage" opcode="win:Info"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-MediaManager/Diagnostic" task="Change_Network_Cost" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WLAN-MediaManager/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="Create_Context_Menu" message="$(string.string1)">
+        </task>
+        <task value="2" name="Show_Data_Usage" message="$(string.string2)">
+        </task>
+        <task value="3" name="Hide_Data_Usage" message="$(string.string3)">
+        </task>
+        <task value="4" name="Change_Network_Cost" message="$(string.string4)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Change_Network_Cost" />
+       <string id="string1" value="Create_Context_Menu" />
+       <string id="string2" value="Hide_Data_Usage" />
+       <string id="string3" value="Microsoft-Windows-WLAN-MediaManager" />
+       <string id="string4" value="Microsoft-Windows-WLAN-MediaManager/Diagnostic" />
+       <string id="string5" value="Show_Data_Usage" />
+       <string id="string6" value="win:Info" />
+       <string id="string7" value="win:Start" />
+       <string id="string8" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Privacy-Auditing-DiagnosticData" name="Microsoft-Windows-Privacy-Auditing-DiagnosticData" guid="{d3610dca-4501-5a5d-21a7-30ca91130711}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="0" level="win:Informational"  channel="Microsoft-Windows-Privacy-Auditing/Operational" task="DiagnosticDataValueChanged" keywords="SystemGlobal" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Error"  channel="Microsoft-Windows-Privacy-Auditing/Operational" task="DiagnosticDataValueChanged" keywords="SystemGlobal Failure"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Privacy-Auditing/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="SystemGlobal" mask="0x1" message="$(string.string4)" />
+        <keyword name="Failure" mask="0x40" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="10" name="DiagnosticDataValueChanged" message="$(string.string10)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1000_0">
+          <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SettingName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DiagnosticDataValueChanged" />
+       <string id="string1" value="Failure" />
+       <string id="string2" value="Microsoft-Windows-Privacy-Auditing-DiagnosticData" />
+       <string id="string3" value="Microsoft-Windows-Privacy-Auditing/Operational" />
+       <string id="string4" value="SystemGlobal" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

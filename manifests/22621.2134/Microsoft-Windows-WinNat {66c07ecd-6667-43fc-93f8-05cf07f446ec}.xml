@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WinNat" name="Microsoft-Windows-WinNat" guid="{66c07ecd-6667-43fc-93f8-05cf07f446ec}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionCreate" opcode="win:Info" keywords="ut:Session" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionTimerUpdate" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionTcpStateUpdate" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionTimeout" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionDelete" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatBindingCreate" opcode="win:Info" keywords="ut:Binding" template="Args1006_0"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatBindingDelete" opcode="win:Info" keywords="ut:Binding"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatBindingSessionCount" opcode="win:Info" keywords="ut:Binding"/>
+        <event value="1009" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatTranslation" opcode="win:Info" keywords="ut:Translation" template="Args1009_0"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatInstanceEvent" opcode="win:Info" keywords="ut:Configuration" template="Args1010_0"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatPacketFilterEvent" opcode="win:Info" keywords="ut:Configuration" template="Args1011_0"/>
+        <event value="1012" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatWFPFilterEvent" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1013" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatAddressPoolConfig" opcode="win:Info" keywords="ut:Configuration" template="Args1013_0"/>
+        <event value="1014" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatAddressChangeNotify" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1015" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatStaticBindingEvent" opcode="win:Info" keywords="ut:Configuration" template="Args1015_0"/>
+        <event value="1016" version="0" level="win:Error"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMemoryAllocationFailure" opcode="win:Info" keywords="ut:Session ut:Binding ut:Translation ut:Configuration ut:NatDrop ut:NatSkip ut:NatForward" template="Args1016_0"/>
+        <event value="1017" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Oper" task="WinNatSessionCreateOperational"/>
+        <event value="1018" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Oper" task="WinNatSessionDeleteOperational"/>
+        <event value="1019" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceCreation" opcode="win:Info" keywords="ut:Configuration" template="Args1019_0"/>
+        <event value="1020" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceModification" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1021" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceExternalInterfaceAssociation" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1022" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceDeletion" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1023" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceRundown" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1024" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMExternalAddressAddition" opcode="win:Info" keywords="ut:Configuration" template="Args1024_0"/>
+        <event value="1025" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMExternalAddressRemoval" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1026" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMExternalAddressRundown" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1027" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMStaticMappingAddition" opcode="win:Info" keywords="ut:Configuration" template="Args1027_0"/>
+        <event value="1028" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMStaticMappingRemoval" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1029" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMStaticMappingRundown" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1030" version="0" level="win:Warning"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMDroppedIPv4Packet" opcode="win:Info" keywords="ut:NatDrop ut:Dropped" template="Args1030_0"/>
+        <event value="1031" version="0" level="win:Warning"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMImproperDefaultRoute" opcode="win:Info" keywords="ut:Configuration" template="Args1031_0"/>
+        <event value="1032" version="0" level="win:Warning"  channel="Microsoft-Windows-WinNat/Oper" task="WinNatMImproperDefaultRouteOper"/>
+        <event value="1033" version="0" level="win:Warning"  channel="Microsoft-Windows-WinNat/Oper" task="WinNatMOutOfPortsOper"/>
+        <event value="1034" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMSkippedIPv4Packet" opcode="win:Info" keywords="ut:NatSkip"/>
+        <event value="1035" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMForwardedIPv4Packet" opcode="win:Info" keywords="ut:NatForward"/>
+        <event value="1036" version="0" level="win:Error"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMGeneralError" opcode="win:Info" keywords="ut:NatGeneralError" template="Args1036_0"/>
+        <event value="1037" version="0" level="win:Warning"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceCreationWithNoMatchingPrefix" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1038" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMTaskGenericEventInformational" opcode="win:Info" keywords="ut:NatGeneric" template="Args1038_0"/>
+        <event value="1039" version="0" level="win:Error"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMTaskGenericEventError" opcode="win:Info" keywords="ut:NatGeneric"/>
+        <event value="1040" version="0" level="win:Warning"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMTaskGenericEventError" opcode="win:Info" keywords="ut:NatGeneric"/>
+        <event value="1041" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatIPxlatInstanceCreate" opcode="win:Info" keywords="ut:Configuration" template="Args1041_0"/>
+        <event value="1042" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatIPxlatInstanceModify" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1043" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatIPxlatInstanceDelete" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1044" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatIPxlatGenericTrace" opcode="win:Info"/>
+        <event value="1045" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInternalAddressAddition" opcode="win:Info" keywords="ut:Configuration" template="Args1045_0"/>
+        <event value="1046" version="0" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInternalAddressRemoval" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1001" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionCreate" opcode="win:Info" keywords="ut:Session" template="Args1001_1"/>
+        <event value="1002" version="1" level="win:Verbose"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionTimerUpdate" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1003" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionTcpStateUpdate" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1004" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionTimeout" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1005" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatSessionDelete" opcode="win:Info" keywords="ut:Session"/>
+        <event value="1006" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatBindingCreate" opcode="win:Info" keywords="ut:Binding" template="Args1006_1"/>
+        <event value="1007" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatBindingDelete" opcode="win:Info" keywords="ut:Binding"/>
+        <event value="1008" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatBindingSessionCount" opcode="win:Info" keywords="ut:Binding"/>
+        <event value="1019" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceCreation" opcode="win:Info" keywords="ut:Configuration" template="Args1019_1"/>
+        <event value="1023" version="1" level="win:Informational"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceRundown" opcode="win:Info" keywords="ut:Configuration"/>
+        <event value="1037" version="1" level="win:Warning"  channel="Microsoft-Windows-WinNat/Trace" task="WinNatMInstanceCreationWithNoMatchingPrefix" opcode="win:Info" keywords="ut:Configuration"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WinNat/Trace" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-WinNat/Oper" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="ut:Session" mask="0x1" message="$(string.string11)" />
+        <keyword name="ut:Binding" mask="0x2" message="$(string.string3)" />
+        <keyword name="ut:Translation" mask="0x4" message="$(string.string12)" />
+        <keyword name="ut:Configuration" mask="0x8" message="$(string.string4)" />
+        <keyword name="ut:NatDrop" mask="0x10" message="$(string.string6)" />
+        <keyword name="ut:NatSkip" mask="0x20" message="$(string.string10)" />
+        <keyword name="ut:NatForward" mask="0x40" message="$(string.string7)" />
+        <keyword name="ut:NatGeneralError" mask="0x80" message="$(string.string8)" />
+        <keyword name="ut:NatGeneric" mask="0x100" message="$(string.string9)" />
+        <keyword name="ut:Dropped" mask="0x10000000000" message="$(string.string5)" />
+      </keywords>
+      <tasks>
+        <task value="1001" name="WinNatSessionCreate" message="$(string.string1001)">
+        </task>
+        <task value="1002" name="WinNatSessionTimerUpdate" message="$(string.string1002)">
+        </task>
+        <task value="1003" name="WinNatSessionTcpStateUpdate" message="$(string.string1003)">
+        </task>
+        <task value="1004" name="WinNatSessionTimeout" message="$(string.string1004)">
+        </task>
+        <task value="1005" name="WinNatSessionDelete" message="$(string.string1005)">
+        </task>
+        <task value="1006" name="WinNatBindingCreate" message="$(string.string1006)">
+        </task>
+        <task value="1007" name="WinNatBindingDelete" message="$(string.string1007)">
+        </task>
+        <task value="1008" name="WinNatBindingSessionCount" message="$(string.string1008)">
+        </task>
+        <task value="1009" name="WinNatTranslation" message="$(string.string1009)">
+        </task>
+        <task value="1010" name="WinNatInstanceEvent" message="$(string.string1010)">
+        </task>
+        <task value="1011" name="WinNatPacketFilterEvent" message="$(string.string1011)">
+        </task>
+        <task value="1012" name="WinNatWFPFilterEvent" message="$(string.string1012)">
+        </task>
+        <task value="1013" name="WinNatAddressPoolConfig" message="$(string.string1013)">
+        </task>
+        <task value="1014" name="WinNatAddressChangeNotify" message="$(string.string1014)">
+        </task>
+        <task value="1015" name="WinNatStaticBindingEvent" message="$(string.string1015)">
+        </task>
+        <task value="1016" name="WinNatMemoryAllocationFailure" message="$(string.string1016)">
+        </task>
+        <task value="1017" name="WinNatSessionCreateOperational" message="$(string.string1017)">
+        </task>
+        <task value="1018" name="WinNatSessionDeleteOperational" message="$(string.string1018)">
+        </task>
+        <task value="1019" name="WinNatMInstanceCreation" message="$(string.string1019)">
+        </task>
+        <task value="1020" name="WinNatMInstanceModification" message="$(string.string1020)">
+        </task>
+        <task value="1021" name="WinNatMInstanceExternalInterfaceAssociation" message="$(string.string1021)">
+        </task>
+        <task value="1022" name="WinNatMInstanceDeletion" message="$(string.string1022)">
+        </task>
+        <task value="1023" name="WinNatMInstanceRundown" message="$(string.string1023)">
+        </task>
+        <task value="1024" name="WinNatMExternalAddressAddition" message="$(string.string1024)">
+        </task>
+        <task value="1025" name="WinNatMExternalAddressRemoval" message="$(string.string1025)">
+        </task>
+        <task value="1026" name="WinNatMExternalAddressRundown" message="$(string.string1026)">
+        </task>
+        <task value="1027" name="WinNatMStaticMappingAddition" message="$(string.string1027)">
+        </task>
+        <task value="1028" name="WinNatMStaticMappingRemoval" message="$(string.string1028)">
+        </task>
+        <task value="1029" name="WinNatMStaticMappingRundown" message="$(string.string1029)">
+        </task>
+        <task value="1030" name="WinNatMDroppedIPv4Packet" message="$(string.string1030)">
+        </task>
+        <task value="1031" name="WinNatMImproperDefaultRoute" message="$(string.string1031)">
+        </task>
+        <task value="1032" name="WinNatMImproperDefaultRouteOper" message="$(string.string1032)">
+        </task>
+        <task value="1033" name="WinNatMOutOfPortsOper" message="$(string.string1033)">
+        </task>
+        <task value="1034" name="WinNatMSkippedIPv4Packet" message="$(string.string1034)">
+        </task>
+        <task value="1035" name="WinNatMForwardedIPv4Packet" message="$(string.string1035)">
+        </task>
+        <task value="1036" name="WinNatMGeneralError" message="$(string.string1036)">
+        </task>
+        <task value="1037" name="WinNatMInstanceCreationWithNoMatchingPrefix" message="$(string.string1037)">
+        </task>
+        <task value="1038" name="WinNatMTaskGenericEventInformational" message="$(string.string1038)">
+        </task>
+        <task value="1039" name="WinNatMTaskGenericEventError" message="$(string.string1039)">
+        </task>
+        <task value="1040" name="WinNatMTaskGenericEventWarning" message="$(string.string1040)">
+        </task>
+        <task value="1041" name="WinNatIPxlatInstanceCreate" message="$(string.string1041)">
+        </task>
+        <task value="1042" name="WinNatIPxlatInstanceModify" message="$(string.string1042)">
+        </task>
+        <task value="1043" name="WinNatIPxlatInstanceDelete" message="$(string.string1043)">
+        </task>
+        <task value="1044" name="WinNatIPxlatGenericTrace" message="$(string.string1044)">
+        </task>
+        <task value="1045" name="WinNatMInternalAddressAddition" message="$(string.string1045)">
+        </task>
+        <task value="1046" name="WinNatMInternalAddressRemoval" message="$(string.string1046)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="InternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalSrcAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="InternalDstAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="ExternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalSrcAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="ExternalDstAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Lifetime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpSessionState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1006_0">
+          <data name="InternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="ExternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Configured" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1009_0">
+          <data name="IncomingAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IncomingSrcAddr" inType="win:Binary" outType="win:SocketAddress" length="IncomingAddrLen" />
+          <data name="IncomingDstAddr" inType="win:Binary" outType="win:SocketAddress" length="IncomingAddrLen" />
+          <data name="TranslatedAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TranslatedSrcAddr" inType="win:Binary" outType="win:SocketAddress" length="TranslatedAddrLen" />
+          <data name="TranslatedDstAddr" inType="win:Binary" outType="win:SocketAddress" length="TranslatedAddrLen" />
+          <data name="Identification" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="IcmpType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IcmpCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IcmpPayload" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1010_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UdpIdleSessionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpTransientConnectionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpEstablishedConnectionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IcmpQueryTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpFilteringBehavior" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpFilteringBehavior" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpInboundRefresh" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1011_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InternalPrefixAddrLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalSrcPrefix" inType="win:Binary" outType="win:SocketAddress" length="InternalPrefixAddrLength" />
+          <data name="InternalSrcPrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternaDstlPrefix" inType="win:Binary" outType="win:SocketAddress" length="InternalPrefixAddrLength" />
+          <data name="InternalDstPrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IPv4Prefix" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="IPv4PrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Nat64" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1013_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="StartingPort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndingPort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1015_0">
+          <data name="InternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="ExternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1016_0">
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1019_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InternalRoutingDomainId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ExternalIPInterfaceAddressPrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalIPInterfaceAddressPrefix" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalInterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpIdleSessionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpTransientConnectionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpEstablishedConnectionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IcmpQueryTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpFilteringBehavior" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpFilteringBehavior" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpInboundRefresh" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1024_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IPAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="PortStart" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PortEnd" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args1027_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MappingType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalTransportAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="InternalTransportAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="InternalRoutingDomainId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressPrefix" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="RemoteAddressPrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1030_0">
+          <data name="ActionReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ArrivalCompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ArrivalInterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ArrivalNetwork" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ForwardCompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ForwardInterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContinuousLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CapturedIPHeaderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CapturedTransportHeaderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ICMPErrorTransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ICMPErrorCapturedIPHeaderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ICMPErrorCapturedTransportHeaderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IPHeader" inType="win:Binary" outType="xs:hexBinary" length="CapturedIPHeaderLength" />
+          <data name="TransportHeader" inType="win:Binary" outType="xs:hexBinary" length="CapturedTransportHeaderLength" />
+          <data name="ICMPErrorIPHeader" inType="win:Binary" outType="xs:hexBinary" length="ICMPErrorCapturedIPHeaderLength" />
+          <data name="ICMPErrorTransportHeader" inType="win:Binary" outType="xs:hexBinary" length="ICMPErrorCapturedTransportHeaderLength" />
+        </template>
+        <template tid="Args1031_0">
+          <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1036_0">
+          <data name="ErrorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorContext" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorMisc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1038_0">
+          <data name="Info" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1041_0">
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FallbackIPv4Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="SyntheticIPv4Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="SyntheticIPv6Address" inType="win:Binary" outType="win:IPv6"  />
+          <data name="RemotePrefix" inType="win:Binary" outType="win:IPv6"  />
+          <data name="RemotePrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalPrefix" inType="win:Binary" outType="win:IPv6"  />
+          <data name="LocalPrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1045_0">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IPAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1001_1">
+          <data name="InternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalSrcAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="InternalDstAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="ExternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalSrcAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="ExternalDstAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Lifetime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpSessionState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalCompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1006_1">
+          <data name="InternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalAddr" inType="win:Binary" outType="win:SocketAddress" length="InternalAddrLen" />
+          <data name="ExternalAddrLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalAddr" inType="win:Binary" outType="win:SocketAddress" length="ExternalAddrLen" />
+          <data name="TransportProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Configured" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="InternalCompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1019_1">
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InternalRoutingDomainId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AddressPrefix" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalInterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpIdleSessionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpTransientConnectionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpEstablishedConnectionTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IcmpQueryTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcpFilteringBehavior" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpFilteringBehavior" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UdpInboundRefresh" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="InstanceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WinNat" />
+       <string id="string1" value="Microsoft-Windows-WinNat/Oper" />
+       <string id="string2" value="Microsoft-Windows-WinNat/Trace" />
+       <string id="string3" value="ut:Binding" />
+       <string id="string4" value="ut:Configuration" />
+       <string id="string5" value="ut:Dropped" />
+       <string id="string6" value="ut:NatDrop" />
+       <string id="string7" value="ut:NatForward" />
+       <string id="string8" value="ut:NatGeneralError" />
+       <string id="string9" value="ut:NatGeneric" />
+       <string id="string10" value="ut:NatSkip" />
+       <string id="string11" value="ut:Session" />
+       <string id="string12" value="ut:Translation" />
+       <string id="string13" value="win:Info" />
+       <string id="string14" value="WinNatAddressChangeNotify" />
+       <string id="string15" value="WinNatAddressPoolConfig" />
+       <string id="string16" value="WinNatBindingCreate" />
+       <string id="string17" value="WinNatBindingDelete" />
+       <string id="string18" value="WinNatBindingSessionCount" />
+       <string id="string19" value="WinNatInstanceEvent" />
+       <string id="string20" value="WinNatIPxlatGenericTrace" />
+       <string id="string21" value="WinNatIPxlatInstanceCreate" />
+       <string id="string22" value="WinNatIPxlatInstanceDelete" />
+       <string id="string23" value="WinNatIPxlatInstanceModify" />
+       <string id="string24" value="WinNatMDroppedIPv4Packet" />
+       <string id="string25" value="WinNatMemoryAllocationFailure" />
+       <string id="string26" value="WinNatMExternalAddressAddition" />
+       <string id="string27" value="WinNatMExternalAddressRemoval" />
+       <string id="string28" value="WinNatMExternalAddressRundown" />
+       <string id="string29" value="WinNatMForwardedIPv4Packet" />
+       <string id="string30" value="WinNatMGeneralError" />
+       <string id="string31" value="WinNatMImproperDefaultRoute" />
+       <string id="string32" value="WinNatMImproperDefaultRouteOper" />
+       <string id="string33" value="WinNatMInstanceCreation" />
+       <string id="string34" value="WinNatMInstanceCreationWithNoMatchingPrefix" />
+       <string id="string35" value="WinNatMInstanceDeletion" />
+       <string id="string36" value="WinNatMInstanceExternalInterfaceAssociation" />
+       <string id="string37" value="WinNatMInstanceModification" />
+       <string id="string38" value="WinNatMInstanceRundown" />
+       <string id="string39" value="WinNatMInternalAddressAddition" />
+       <string id="string40" value="WinNatMInternalAddressRemoval" />
+       <string id="string41" value="WinNatMOutOfPortsOper" />
+       <string id="string42" value="WinNatMSkippedIPv4Packet" />
+       <string id="string43" value="WinNatMStaticMappingAddition" />
+       <string id="string44" value="WinNatMStaticMappingRemoval" />
+       <string id="string45" value="WinNatMStaticMappingRundown" />
+       <string id="string46" value="WinNatMTaskGenericEventError" />
+       <string id="string47" value="WinNatMTaskGenericEventInformational" />
+       <string id="string48" value="WinNatMTaskGenericEventWarning" />
+       <string id="string49" value="WinNatPacketFilterEvent" />
+       <string id="string50" value="WinNatSessionCreate" />
+       <string id="string51" value="WinNatSessionCreateOperational" />
+       <string id="string52" value="WinNatSessionDelete" />
+       <string id="string53" value="WinNatSessionDeleteOperational" />
+       <string id="string54" value="WinNatSessionTcpStateUpdate" />
+       <string id="string55" value="WinNatSessionTimeout" />
+       <string id="string56" value="WinNatSessionTimerUpdate" />
+       <string id="string57" value="WinNatStaticBindingEvent" />
+       <string id="string58" value="WinNatTranslation" />
+       <string id="string59" value="WinNatWFPFilterEvent" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UAC" name="Microsoft-Windows-UAC" guid="{e7558269-3fa5-46ed-9f4d-3c6e282dde55}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-UAC/Operational" task="CreateProcess"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-UAC/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="CreateProcess" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CreateProcess" />
+       <string id="string1" value="Microsoft-Windows-UAC" />
+       <string id="string2" value="Microsoft-Windows-UAC/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

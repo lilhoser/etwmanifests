@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-BootDiagnostics" name="Microsoft-Windows-Kernel-BootDiagnostics" guid="{96ac7637-5950-4a30-b8f7-e07e8e5734c1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-BootDiagnostics/Diagnostic" task="SystemBoot" opcode="win:Start"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-BootDiagnostics/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="501" name="SystemBoot" message="$(string.string501)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Kernel-BootDiagnostics" />
+       <string id="string1" value="Microsoft-Windows-Kernel-BootDiagnostics/Diagnostic" />
+       <string id="string2" value="SystemBoot" />
+       <string id="string3" value="win:Start" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

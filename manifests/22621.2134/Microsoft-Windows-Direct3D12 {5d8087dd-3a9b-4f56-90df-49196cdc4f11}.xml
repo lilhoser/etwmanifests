@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Direct3D12" name="Microsoft-Windows-Direct3D12" guid="{5d8087dd-3a9b-4f56-90df-49196cdc4f11}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Name" opcode="win:Info" keywords="Names" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Name" opcode="win:DC_Start" keywords="Names" template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Device" opcode="win:Start" keywords="Devices ObjectLifetime" template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Device" opcode="win:Stop" keywords="Devices ObjectLifetime"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Device" opcode="win:DC_Start" keywords="Devices ObjectLifetime"/>
+        <event value="19" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Device" opcode="win:Info" keywords="Devices" template="Args19_0"/>
+        <event value="26" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Logging" task="D3DSupplemental" opcode="win:Info" template="Args26_0"/>
+        <event value="35" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Marker" opcode="win:Info" keywords="Markers" template="Args35_0"/>
+        <event value="36" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Marker" opcode="win:Start" keywords="Markers"/>
+        <event value="37" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Marker" opcode="win:Stop" keywords="Markers"/>
+        <event value="38" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Marker" opcode="win:Info" keywords="Markers" template="Args38_0"/>
+        <event value="39" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="RuntimeMarker" opcode="win:Info" keywords="RenderOperationMarkers" template="Args39_0"/>
+        <event value="40" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="RuntimeDroppedCall" opcode="win:Info" keywords="RenderOperationMarkers" template="Args40_0"/>
+        <event value="45" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CustomDriverMarker" opcode="win:Info" keywords="DriverCustomMarkers" template="Args45_0"/>
+        <event value="47" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandQueue" opcode="win:Start" keywords="Devices ObjectLifetime" template="Args47_0"/>
+        <event value="48" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandQueue" opcode="win:Stop" keywords="Devices ObjectLifetime"/>
+        <event value="49" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandQueue" opcode="win:DC_Start" keywords="Devices ObjectLifetime"/>
+        <event value="50" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandList" opcode="win:Start" keywords="Devices ObjectLifetime" template="Args50_0"/>
+        <event value="51" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandList" opcode="win:Stop" keywords="Devices ObjectLifetime"/>
+        <event value="52" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandList" opcode="win:Info" keywords="Devices"/>
+        <event value="53" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ExecuteCommandList" opcode="win:Start" keywords="Devices" template="Args53_0"/>
+        <event value="54" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ExecuteCommandList" opcode="win:Stop" keywords="Devices"/>
+        <event value="55" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Name" opcode="win:Info" keywords="Names" template="Args55_0"/>
+        <event value="56" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Name" opcode="win:DC_Start" keywords="Names" template="Args56_0"/>
+        <event value="57" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Fence" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args57_0"/>
+        <event value="58" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Fence" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="59" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Fence" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="60" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandAllocator" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args60_0"/>
+        <event value="61" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandAllocator" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="62" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandAllocator" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="63" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="GraphicsPipelineState" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args63_0"/>
+        <event value="64" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="GraphicsPipelineState" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="65" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="GraphicsPipelineState" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="66" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="DescriptorHeap" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args66_0"/>
+        <event value="67" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="DescriptorHeap" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="68" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="DescriptorHeap" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="69" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="RootSignature" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args69_0"/>
+        <event value="70" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="RootSignature" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="71" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="RootSignature" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="72" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Heap" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args72_0"/>
+        <event value="73" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Heap" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="74" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Heap" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="75" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="QueryHeap" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args75_0"/>
+        <event value="76" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="QueryHeap" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="77" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="QueryHeap" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="78" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandSignature" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args78_0"/>
+        <event value="79" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandSignature" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="80" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandSignature" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="81" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="PipelineLibrary" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args81_0"/>
+        <event value="82" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="PipelineLibrary" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="83" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="PipelineLibrary" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="84" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoDecoder" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args84_0"/>
+        <event value="85" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoDecoder" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="86" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoDecoder" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="87" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoProcessor" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args87_0"/>
+        <event value="88" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoProcessor" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="89" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoProcessor" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="90" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandList" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="95" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandAllocatorUnacquire" opcode="win:Info" keywords="Resources" template="Args95_0"/>
+        <event value="96" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoDecoderHeap" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args96_0"/>
+        <event value="97" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoDecoderHeap" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="98" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoDecoderHeap" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="99" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ExtendedFeatureVersion" opcode="win:Info" keywords="Devices ObjectLifetime" template="Args99_0"/>
+        <event value="100" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="JournalEntry" opcode="win:Info" keywords="Devices JournalEntries" template="Args100_0"/>
+        <event value="101" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandPool" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args101_0"/>
+        <event value="102" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandPool" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="103" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandPool" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="104" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandRecorder" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args104_0"/>
+        <event value="105" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandRecorder" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="106" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandRecorder" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="107" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandRecorderAcquire" opcode="win:Start" keywords="Resources" template="Args107_0"/>
+        <event value="108" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CommandRecorderUnacquire" opcode="win:Stop" keywords="Resources"/>
+        <event value="109" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="CreateHeapSharedHandle" opcode="win:Info" keywords="Resources" template="Args109_0"/>
+        <event value="110" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="StateObject" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args110_0"/>
+        <event value="111" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="StateObject" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="112" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="StateObject" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="113" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="MetaCommand" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args113_0"/>
+        <event value="114" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="MetaCommand" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="115" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="MetaCommand" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="116" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ProtectedResourceSession" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args116_0"/>
+        <event value="117" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ProtectedResourceSession" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="118" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ProtectedResourceSession" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="119" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="LifetimeTracker" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args119_0"/>
+        <event value="120" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="LifetimeTracker" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="121" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="LifetimeTracker" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="122" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="SchedulingGroup" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args122_0"/>
+        <event value="123" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="SchedulingGroup" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="124" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="SchedulingGroup" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="125" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoMotionEstimator" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args125_0"/>
+        <event value="126" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoMotionEstimator" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="127" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoMotionEstimator" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="128" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoMotionVectorHeap" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args128_0"/>
+        <event value="129" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoMotionVectorHeap" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="130" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoMotionVectorHeap" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="132" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="BackgroundWork" opcode="win:Start" keywords="Markers"/>
+        <event value="133" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="BackgroundWork" opcode="win:Stop" keywords="Markers"/>
+        <event value="134" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="BackgroundWork" opcode="win:Info" keywords="Markers"/>
+        <event value="135" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoExtensionCommand" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args135_0"/>
+        <event value="136" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoExtensionCommand" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="137" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoExtensionCommand" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="138" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="HistoryBufferCompletion" opcode="win:Info" keywords="RenderOperationMarkers" template="Args138_0"/>
+        <event value="139" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ExecuteCommandList" opcode="win:Start" keywords="Devices" template="Args139_0"/>
+        <event value="140" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ExecuteCommandList" opcode="win:Stop" keywords="Devices"/>
+        <event value="141" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="TrackWrittenResource" opcode="win:Info" keywords="Resources" template="Args141_0"/>
+        <event value="142" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ShaderCacheSession" opcode="win:Start" keywords="ObjectLifetime" template="Args142_0"/>
+        <event value="143" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ShaderCacheSession" opcode="win:Stop" keywords="ObjectLifetime"/>
+        <event value="144" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="ShaderCacheSession" opcode="win:DC_Start" keywords="ObjectLifetime"/>
+        <event value="145" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="DRED" opcode="win:Info" template="Args145_0"/>
+        <event value="146" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="TrackedWorkload" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args146_0"/>
+        <event value="147" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="TrackedWorkload" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="148" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="TrackedWorkload" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="149" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoEncoder" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args149_0"/>
+        <event value="150" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoEncoder" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="151" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoEncoder" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="152" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoEncoderHeap" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args152_0"/>
+        <event value="153" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoEncoderHeap" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="154" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="VideoEncoderHeap" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="41" version="1" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="RuntimeMarker" opcode="win:Info" keywords="RenderOperationMarkers" template="Args41_1"/>
+        <event value="91" version="1" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Resource" opcode="win:Start" keywords="Resources ObjectLifetime" template="Args91_1"/>
+        <event value="92" version="1" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Resource" opcode="win:Stop" keywords="Resources ObjectLifetime"/>
+        <event value="93" version="1" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="Resource" opcode="win:DC_Start" keywords="Resources ObjectLifetime"/>
+        <event value="94" version="1" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="AllocationInfo" opcode="win:Info" keywords="Resources" template="Args94_1"/>
+        <event value="131" version="1" level="Log Always"  channel="Microsoft-Windows-Direct3D12/Analytic" task="DecodePictureLists" opcode="win:Info" keywords="DecodeInfo" template="Args131_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Direct3D12/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Direct3D12/Logging" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Direct3D12/PerfTiming" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Names" mask="0x1" message="$(string.string40)" />
+        <keyword name="Devices" mask="0x2" message="$(string.string20)" />
+        <keyword name="Resources" mask="0x4" message="$(string.string47)" />
+        <keyword name="Markers" mask="0x8" message="$(string.string33)" />
+        <keyword name="RenderOperationMarkers" mask="0x10" message="$(string.string45)" />
+        <keyword name="DriverCustomMarkers" mask="0x20" message="$(string.string22)" />
+        <keyword name="BundleMarkers" mask="0x40" message="$(string.string2)" />
+        <keyword name="ObjectLifetime" mask="0x80" message="$(string.string41)" />
+        <keyword name="JournalEntries" mask="0x100" message="$(string.string29)" />
+        <keyword name="DecodeInfo" mask="0x200" message="$(string.string15)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Name" message="$(string.string1)">
+        </task>
+        <task value="2" name="Device" message="$(string.string2)">
+        </task>
+        <task value="11" name="D3DSupplemental" message="$(string.string11)">
+        </task>
+        <task value="15" name="Destruction" message="$(string.string15)">
+        </task>
+        <task value="20" name="Marker" message="$(string.string20)">
+        </task>
+        <task value="21" name="RuntimeMarker" message="$(string.string21)">
+        </task>
+        <task value="22" name="RuntimeDroppedCall" message="$(string.string22)">
+        </task>
+        <task value="23" name="CustomDriverMarker" message="$(string.string23)">
+        </task>
+        <task value="24" name="CommandQueue" message="$(string.string24)">
+        </task>
+        <task value="25" name="CommandList" message="$(string.string25)">
+        </task>
+        <task value="26" name="ExecuteCommandList" message="$(string.string26)">
+        </task>
+        <task value="27" name="Fence" message="$(string.string27)">
+        </task>
+        <task value="28" name="CommandAllocator" message="$(string.string28)">
+        </task>
+        <task value="29" name="GraphicsPipelineState" message="$(string.string29)">
+        </task>
+        <task value="30" name="DescriptorHeap" message="$(string.string30)">
+        </task>
+        <task value="31" name="RootSignature" message="$(string.string31)">
+        </task>
+        <task value="32" name="Heap" message="$(string.string32)">
+        </task>
+        <task value="33" name="QueryHeap" message="$(string.string33)">
+        </task>
+        <task value="34" name="CommandSignature" message="$(string.string34)">
+        </task>
+        <task value="35" name="PipelineLibrary" message="$(string.string35)">
+        </task>
+        <task value="36" name="VideoDecoder" message="$(string.string36)">
+        </task>
+        <task value="37" name="VideoProcessor" message="$(string.string37)">
+        </task>
+        <task value="38" name="Resource" message="$(string.string38)">
+        </task>
+        <task value="39" name="AllocationInfo" message="$(string.string39)">
+        </task>
+        <task value="40" name="CommandAllocatorUnacquire" message="$(string.string40)">
+        </task>
+        <task value="41" name="VideoDecoderHeap" message="$(string.string41)">
+        </task>
+        <task value="42" name="ExtendedFeatureVersion" message="$(string.string42)">
+        </task>
+        <task value="43" name="JournalEntry" message="$(string.string43)">
+        </task>
+        <task value="44" name="CommandPool" message="$(string.string44)">
+        </task>
+        <task value="45" name="CommandRecorder" message="$(string.string45)">
+        </task>
+        <task value="46" name="CommandRecorderAcquire" message="$(string.string46)">
+        </task>
+        <task value="47" name="CommandRecorderUnacquire" message="$(string.string47)">
+        </task>
+        <task value="48" name="CreateHeapSharedHandle" message="$(string.string48)">
+        </task>
+        <task value="49" name="StateObject" message="$(string.string49)">
+        </task>
+        <task value="50" name="MetaCommand" message="$(string.string50)">
+        </task>
+        <task value="51" name="ProtectedResourceSession" message="$(string.string51)">
+        </task>
+        <task value="52" name="LifetimeTracker" message="$(string.string52)">
+        </task>
+        <task value="53" name="SchedulingGroup" message="$(string.string53)">
+        </task>
+        <task value="54" name="VideoMotionEstimator" message="$(string.string54)">
+        </task>
+        <task value="55" name="VideoMotionVectorHeap" message="$(string.string55)">
+        </task>
+        <task value="56" name="DecodePictureLists" message="$(string.string56)">
+        </task>
+        <task value="57" name="BackgroundWork" message="$(string.string57)">
+        </task>
+        <task value="58" name="VideoExtensionCommand" message="$(string.string58)">
+        </task>
+        <task value="59" name="HistoryBufferCompletion" message="$(string.string59)">
+        </task>
+        <task value="60" name="TrackWrittenResource" message="$(string.string60)">
+        </task>
+        <task value="61" name="ShaderCacheSession" message="$(string.string61)">
+        </task>
+        <task value="62" name="DRED" message="$(string.string62)">
+        </task>
+        <task value="63" name="TrackedWorkload" message="$(string.string63)">
+        </task>
+        <task value="64" name="VideoEncoder" message="$(string.string64)">
+        </task>
+        <task value="65" name="VideoEncoderHeap" message="$(string.string65)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchOldDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldDebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchOldDebugObjectName" />
+          <data name="CchNewDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewDebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchNewDebugObjectName" />
+        </template>
+        <template tid="Args2_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchDebugObjectName" />
+        </template>
+        <template tid="Args3_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FeatureLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hKMAdapter" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMAdapter" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMAdapterVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hKMDevice" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UMDeviceVersion" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="SemaphoreHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdjustValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferSize" />
+        </template>
+        <template tid="Args35_0">
+          <data name="pID3D12CommandQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Metadata" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args38_0">
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="APISequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Metadata" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="CPUFrequency" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FirstAPISequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CPUTimeHigh" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadIDCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args40_0">
+          <data name="pID3D12DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args45_0">
+          <data name="InsertionAPISequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:Int32" outType="xs:int"  />
+          <data name="MarkerDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args47_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pCommandQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContextCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Priority" inType="win:Int32" outType="xs:int"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="pID3D12CommandQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchOldDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldDebugObjectName" inType="win:UnicodeString" outType="xs:string" length="CchOldDebugObjectName" />
+          <data name="CchNewDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewDebugObjectName" inType="win:UnicodeString" outType="xs:string" length="CchNewDebugObjectName" />
+        </template>
+        <template tid="Args56_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DebugObjectName" inType="win:UnicodeString" outType="xs:string" length="CchDebugObjectName" />
+        </template>
+        <template tid="Args57_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12Fence" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pDXGKFence" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args60_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandAllocator" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args63_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12GraphicsPipelineState" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args66_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12DescriptorHeap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumDescriptors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args69_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12RootSignature" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args72_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12Heap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Alignment" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CPUPageProperty" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemoryPoolPreference" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreationNodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VisibleNodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pID3D12ConjoinedResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hKMAllocation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hKMResource" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args75_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12QueryHeap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args78_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandSignature" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ByteStride" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumArgumentDescs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args81_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12PipelineLibrary" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args84_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoDecoder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DecodeProfile" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BitstreamEncryption" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterlaceFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args87_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoProcessor" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args95_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandAllocator" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_hr" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args96_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoDecoderHeap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DecodeProfile" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BitstreamEncryption" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterlaceFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DecodeWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DecodeHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxDecodePictureBufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameRate" inType="win:Float" outType="xs:float"  />
+          <data name="BitRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args99_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumExtendedFeatures" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Code" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandPool" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandRecorder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="supportFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandRecorder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_hr" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="hKMResource" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMSharedResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args110_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12StateObject" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args113_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12MetaCommand" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CommandId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args116_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12ProtectedResourceSession" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12LifetimeTracker" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args122_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12SchedulingGroup" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args125_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoMotionEstimator" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Precision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxWidthInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxHeightInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinWidthInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinHeightInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args128_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoMotionVectorHeap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Precision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxWidthInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxHeightInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinWidthInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinHeightInBlocks" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args135_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoExtensionCommand" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommandId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args138_0">
+          <data name="hHwQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RenderCbSequence" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HwQueueProgressFenceId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Precision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HistoryBufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args139_0">
+          <data name="pID3D12CommandQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CommandListCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12Resource" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args142_0">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaximumInMemoryCacheSizeBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaximumInMemoryCacheEntries" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaximumValueFileSizeBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args145_0">
+          <data name="pCommandList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pCommandQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BreadcrumbCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastBreadcrumbValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BreadcrumbContextsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args146_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12TrackedWorkload" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hKMTrackedWorkload" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args149_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoEncoder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncoderFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncoderCodec" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MotionEstimationPrecision" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args152_0">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12VideoEncoderHeap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NodeMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncoderHeapFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args41_1">
+          <data name="pID3D12CommandQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ContextCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LoopIteration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SubmitCommandCBSequence" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FirstAPISequenceNumberHigh" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CompletedAPISequenceNumberSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pID3D12CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args91_1">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12Resource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hUMResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Dimension" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Depth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MipLevels" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ArraySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PlaneCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleQuality" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Layout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeapType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pHeap" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ImmutableHeapOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PlacedAlignment" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PlacedSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumTilesForResource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumPackedMips" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumTilesForPackedMips" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pImmutableBuffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ImmutableBufferOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args94_1">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumVirtualAddressInfos" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumKMTInfos" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args131_1">
+          <data name="pID3D12Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D12Decoder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CurrPic-0" inType="win:Boolean" outType="xs:byte"  />
+          <data name="NumRefPicListEntries" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pID3D12OutputTexture2D" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OutputSubresource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pReferenceTexture2D" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ReferenceSubresource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumReferences" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AllocationInfo" />
+       <string id="string1" value="BackgroundWork" />
+       <string id="string2" value="BundleMarkers" />
+       <string id="string3" value="CommandAllocator" />
+       <string id="string4" value="CommandAllocatorUnacquire" />
+       <string id="string5" value="CommandList" />
+       <string id="string6" value="CommandPool" />
+       <string id="string7" value="CommandQueue" />
+       <string id="string8" value="CommandRecorder" />
+       <string id="string9" value="CommandRecorderAcquire" />
+       <string id="string10" value="CommandRecorderUnacquire" />
+       <string id="string11" value="CommandSignature" />
+       <string id="string12" value="CreateHeapSharedHandle" />
+       <string id="string13" value="CustomDriverMarker" />
+       <string id="string14" value="D3DSupplemental" />
+       <string id="string15" value="DecodeInfo" />
+       <string id="string16" value="DecodePictureLists" />
+       <string id="string17" value="DescriptorHeap" />
+       <string id="string18" value="Destruction" />
+       <string id="string19" value="Device" />
+       <string id="string20" value="Devices" />
+       <string id="string21" value="DRED" />
+       <string id="string22" value="DriverCustomMarkers" />
+       <string id="string23" value="ExecuteCommandList" />
+       <string id="string24" value="ExtendedFeatureVersion" />
+       <string id="string25" value="Fence" />
+       <string id="string26" value="GraphicsPipelineState" />
+       <string id="string27" value="Heap" />
+       <string id="string28" value="HistoryBufferCompletion" />
+       <string id="string29" value="JournalEntries" />
+       <string id="string30" value="JournalEntry" />
+       <string id="string31" value="LifetimeTracker" />
+       <string id="string32" value="Marker" />
+       <string id="string33" value="Markers" />
+       <string id="string34" value="MetaCommand" />
+       <string id="string35" value="Microsoft-Windows-Direct3D12" />
+       <string id="string36" value="Microsoft-Windows-Direct3D12/Analytic" />
+       <string id="string37" value="Microsoft-Windows-Direct3D12/Logging" />
+       <string id="string38" value="Microsoft-Windows-Direct3D12/PerfTiming" />
+       <string id="string39" value="Name" />
+       <string id="string40" value="Names" />
+       <string id="string41" value="ObjectLifetime" />
+       <string id="string42" value="PipelineLibrary" />
+       <string id="string43" value="ProtectedResourceSession" />
+       <string id="string44" value="QueryHeap" />
+       <string id="string45" value="RenderOperationMarkers" />
+       <string id="string46" value="Resource" />
+       <string id="string47" value="Resources" />
+       <string id="string48" value="RootSignature" />
+       <string id="string49" value="RuntimeDroppedCall" />
+       <string id="string50" value="RuntimeMarker" />
+       <string id="string51" value="SchedulingGroup" />
+       <string id="string52" value="ShaderCacheSession" />
+       <string id="string53" value="StateObject" />
+       <string id="string54" value="TrackedWorkload" />
+       <string id="string55" value="TrackWrittenResource" />
+       <string id="string56" value="VideoDecoder" />
+       <string id="string57" value="VideoDecoderHeap" />
+       <string id="string58" value="VideoEncoder" />
+       <string id="string59" value="VideoEncoderHeap" />
+       <string id="string60" value="VideoExtensionCommand" />
+       <string id="string61" value="VideoMotionEstimator" />
+       <string id="string62" value="VideoMotionVectorHeap" />
+       <string id="string63" value="VideoProcessor" />
+       <string id="string64" value="win:DC_Start" />
+       <string id="string65" value="win:Info" />
+       <string id="string66" value="win:Start" />
+       <string id="string67" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

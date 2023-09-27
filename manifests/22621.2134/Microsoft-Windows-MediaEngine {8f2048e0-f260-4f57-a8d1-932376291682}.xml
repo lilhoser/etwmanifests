@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MediaEngine" name="Microsoft-Windows-MediaEngine" guid="{8f2048e0-f260-4f57-a8d1-932376291682}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TransferFrame" opcode="win:Start" template="Args100_0"/>
+        <event value="101" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TransferFrame" opcode="win:Stop" template="Args101_0"/>
+        <event value="102" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TransferFrameRemote" opcode="win:Start"/>
+        <event value="103" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TransferFrameRemote" opcode="win:Stop"/>
+        <event value="104" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Initialize" opcode="win:Info"/>
+        <event value="105" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Lifetime" opcode="win:Start"/>
+        <event value="106" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="PlaybackRateChange" opcode="win:Info" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Play" opcode="win:Start"/>
+        <event value="108" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Play" opcode="win:Stop"/>
+        <event value="109" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Pause" opcode="win:Start"/>
+        <event value="110" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Pause" opcode="win:Stop"/>
+        <event value="111" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Seek" opcode="win:Start"/>
+        <event value="112" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Seek" opcode="win:Stop"/>
+        <event value="113" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Lifetime" opcode="win:Stop"/>
+        <event value="114" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DroppedFrame" opcode="win:Info" template="Args114_0"/>
+        <event value="115" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedFrame" opcode="win:Info"/>
+        <event value="116" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentSubmitted" opcode="win:Info" template="Args116_0"/>
+        <event value="117" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentQueued" opcode="win:Info" template="Args117_0"/>
+        <event value="118" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentCompleted" opcode="win:Info" template="Args118_0"/>
+        <event value="119" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="VideoFrameGlitch" opcode="win:Info" template="Args119_0"/>
+        <event value="120" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentSleep" opcode="win:Start"/>
+        <event value="121" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="PerfTrackPlay" opcode="win:Info" template="Args121_0"/>
+        <event value="123" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="PerfTrackPlayCancelled" opcode="win:Info"/>
+        <event value="125" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="PerfTrackFirstFrameAfterPlayPresented" opcode="win:Info"/>
+        <event value="127" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentStats" opcode="win:Info" template="Args127_0"/>
+        <event value="128" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Suspend" opcode="win:Info" template="Args128_0"/>
+        <event value="129" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Restore" opcode="win:Info" template="Args129_0"/>
+        <event value="130" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="NotVisible" opcode="win:Info" template="Args130_0"/>
+        <event value="131" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="NotVisibleTimer" opcode="win:Info"/>
+        <event value="132" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Visible" opcode="win:Info"/>
+        <event value="133" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Visible" opcode="win:Info" template="Args133_0"/>
+        <event value="134" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="PerfTrackVideoGlitch" opcode="win:Info" template="Args134_0"/>
+        <event value="135" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SaveImage" opcode="win:Start"/>
+        <event value="136" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SaveImage" opcode="win:Stop" template="Args136_0"/>
+        <event value="137" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SetSourceOp" opcode="win:Start"/>
+        <event value="138" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SetSourceOp" opcode="win:Stop"/>
+        <event value="139" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="VideoFrameEarly" opcode="win:Info" template="Args139_0"/>
+        <event value="141" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GetCorrelatedTime" opcode="win:Start"/>
+        <event value="142" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="IgnoreVSync" opcode="win:Info" template="Args142_0"/>
+        <event value="143" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="RequestNetwork" opcode="win:Info" template="Args143_0"/>
+        <event value="144" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="Batch" opcode="win:Start"/>
+        <event value="145" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="Batch" opcode="win:Stop"/>
+        <event value="146" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="DecodeSwapchainCreated" opcode="win:Info" template="Args146_0"/>
+        <event value="147" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="YUVSwapchainConfig" opcode="win:Info" template="Args147_0"/>
+        <event value="148" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="DecodeSwapchainDestroyed" opcode="win:Info" template="Args148_0"/>
+        <event value="149" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="DirectPresentationNotUsed" opcode="win:Info"/>
+        <event value="151" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Seek" opcode="win:Info"/>
+        <event value="153" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="ContentFrameRateDetected" opcode="win:Info" template="Args153_0"/>
+        <event value="154" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CustomRefreshRateRequested" opcode="win:Info" template="Args154_0"/>
+        <event value="155" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CustomRefreshRate" opcode="win:Start" template="Args155_0"/>
+        <event value="156" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CustomRefreshRate" opcode="win:Stop" template="Args156_0"/>
+        <event value="157" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="CustomRefreshRateStateChange" opcode="win:Info"/>
+        <event value="158" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateVideo" opcode="win:Info" template="Args158_0"/>
+        <event value="161" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PurgedFrames" opcode="win:Info" template="Args161_0"/>
+        <event value="162" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="YUVSwapchainQueue" opcode="win:Info"/>
+        <event value="163" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GPUSwapchainWait" opcode="win:Start"/>
+        <event value="164" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GPUSwapchainWait" opcode="win:Stop"/>
+        <event value="165" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GetPresentStats" opcode="win:Info" template="Args165_0"/>
+        <event value="166" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PruneHistory" opcode="win:Info"/>
+        <event value="168" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ClockSmooth" opcode="win:Info" template="Args168_0"/>
+        <event value="170" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateLongRunning" opcode="win:Info" template="Args170_0"/>
+        <event value="171" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="MapSample" opcode="win:Info" template="Args171_0"/>
+        <event value="172" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GetCorrelatedTime" opcode="win:Stop" template="Args172_0"/>
+        <event value="175" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="MinLatencyDone" opcode="win:Info" template="Args175_0"/>
+        <event value="176" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="MirrorVideo" opcode="win:Info" template="Args176_0"/>
+        <event value="177" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateDeadline" opcode="win:Info" template="Args177_0"/>
+        <event value="178" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GetEngineStatistics" opcode="win:Start" template="Args178_0"/>
+        <event value="179" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GetEngineStatistics" opcode="win:Stop"/>
+        <event value="180" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="RequestSample" opcode="win:Info" template="Args180_0"/>
+        <event value="181" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GPUBoost" opcode="win:Info" template="Args181_0"/>
+        <event value="182" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HistoryRecord" opcode="win:Start" template="Args182_0"/>
+        <event value="183" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HistoryRecord" opcode="win:Stop"/>
+        <event value="184" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ClearHistory" opcode="win:Info" template="Args184_0"/>
+        <event value="185" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="MEGetCurrentTime" opcode="win:Start"/>
+        <event value="186" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="MEGetCurrentTime" opcode="win:Stop" template="Args186_0"/>
+        <event value="188" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ComputeRatioToPrimary" opcode="win:Info" template="Args188_0"/>
+        <event value="189" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateRatioToPrimary" opcode="win:Info"/>
+        <event value="190" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="YUVSwapchainQueueDrain" opcode="win:Start"/>
+        <event value="191" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="YUVSwapchainQueueDrain" opcode="win:Stop"/>
+        <event value="192" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CustomRefreshRateCheckDriverSupport" opcode="win:Info" template="Args192_0"/>
+        <event value="193" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CustomRefreshRateMatchFound" opcode="win:Info"/>
+        <event value="196" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateVideo" opcode="win:Start"/>
+        <event value="197" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateVideo" opcode="win:Stop"/>
+        <event value="200" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="NeedKey" opcode="win:Info" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeys" opcode="win:Info" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Start" template="Args202_0"/>
+        <event value="203" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Stop"/>
+        <event value="204" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="KeyMessage" opcode="win:Start" template="Args204_0"/>
+        <event value="205" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="KeyMessage" opcode="win:Info" template="Args205_0"/>
+        <event value="206" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="KeyMessage" opcode="win:Stop"/>
+        <event value="207" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="KeyMessage" opcode="win:Start"/>
+        <event value="208" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="KeysAttribute" opcode="win:Info"/>
+        <event value="209" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="ContentEnabler" opcode="win:Start" template="Args209_0"/>
+        <event value="210" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="ContentEnabler" opcode="win:Stop"/>
+        <event value="213" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SubtitleQueued" opcode="win:Info" template="Args213_0"/>
+        <event value="214" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="EngineEnded" opcode="win:Info"/>
+        <event value="215" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentDelay" opcode="win:Start"/>
+        <event value="216" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentTimer" opcode="win:Start" template="Args216_0"/>
+        <event value="217" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentTimer" opcode="win:Stop"/>
+        <event value="218" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentTimeCritical" opcode="win:Start" template="Args218_0"/>
+        <event value="219" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentTimeCritical" opcode="win:Stop"/>
+        <event value="220" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="TimedTextDtvCCSample" opcode="win:Start" template="Args220_0"/>
+        <event value="221" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="TimedTextDtvCCSample" opcode="win:Stop" template="Args221_0"/>
+        <event value="222" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="TimedTextSendCue" opcode="win:Start"/>
+        <event value="223" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="TimedTextSendCue" opcode="win:Stop"/>
+        <event value="224" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMOpen" opcode="win:Start"/>
+        <event value="225" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMOpen" opcode="win:Stop"/>
+        <event value="226" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMExecuteCmd" opcode="win:Start"/>
+        <event value="227" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMExecuteCmd" opcode="win:Stop"/>
+        <event value="228" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMExecuteQuery" opcode="win:Start"/>
+        <event value="229" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMExecuteQuery" opcode="win:Stop"/>
+        <event value="230" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMProcessCertificate" opcode="win:Start"/>
+        <event value="231" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMProcessCertificate" opcode="win:Stop"/>
+        <event value="232" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMGetPublicKey" opcode="win:Start"/>
+        <event value="233" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="OPMGetPublicKey" opcode="win:Stop"/>
+        <event value="234" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Teardown" opcode="win:Start"/>
+        <event value="235" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Teardown" opcode="win:Stop"/>
+        <event value="236" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="ResizedSwapchain" opcode="win:Info" template="Args236_0"/>
+        <event value="237" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Stop"/>
+        <event value="238" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Stop"/>
+        <event value="239" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Stop"/>
+        <event value="240" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="Encrypted" opcode="win:Info"/>
+        <event value="241" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Start" template="Args241_0"/>
+        <event value="242" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="KeyMessage2" opcode="win:Start" template="Args242_0"/>
+        <event value="243" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySession" opcode="win:Stop"/>
+        <event value="244" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeys" opcode="win:Info"/>
+        <event value="245" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeys" opcode="win:Info" template="Args245_0"/>
+        <event value="246" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="MediaKeySystemAccess" opcode="win:Info" template="Args246_0"/>
+        <event value="247" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentRestart" opcode="win:Info" template="Args247_0"/>
+        <event value="248" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DisplayRotation" opcode="win:Info" template="Args248_0"/>
+        <event value="249" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DecodeSwapchainState" opcode="win:Info" template="Args249_0"/>
+        <event value="250" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ConfigureSwapchain" opcode="win:Info" template="Args250_0"/>
+        <event value="251" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentTimer" opcode="win:Start"/>
+        <event value="252" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="MMCSSRequest" opcode="win:Stop"/>
+        <event value="253" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ScrubbingState" opcode="win:Info" template="Args253_0"/>
+        <event value="254" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DXPresent" opcode="win:Start" template="Args254_0"/>
+        <event value="255" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DXPresent" opcode="win:Stop" template="Args255_0"/>
+        <event value="256" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="EnumMonitors" opcode="win:Start"/>
+        <event value="257" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="EnumMonitors" opcode="win:Stop"/>
+        <event value="258" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HandleMonitorChange" opcode="win:Start"/>
+        <event value="259" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HandleMonitorChange" opcode="win:Stop"/>
+        <event value="260" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessIdleTasks" opcode="win:Start"/>
+        <event value="261" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessIdleTasks" opcode="win:Stop"/>
+        <event value="262" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DXWorkComplete" opcode="win:Start" template="Args262_0"/>
+        <event value="263" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DXWorkComplete" opcode="win:Stop" template="Args263_0"/>
+        <event value="264" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SphericalVideoChanged" opcode="win:Info" template="Args264_0"/>
+        <event value="265" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SphericalVideoPropertiesChanged" opcode="win:Info" template="Args265_0"/>
+        <event value="267" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SetHDRMetadata" opcode="win:Info" template="Args267_0"/>
+        <event value="268" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="EDRStateChanged" opcode="win:Info" template="Args268_0"/>
+        <event value="269" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentSleep" opcode="win:Stop"/>
+        <event value="270" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessFrame" opcode="win:Start"/>
+        <event value="271" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessFrame" opcode="win:Stop" template="Args271_0"/>
+        <event value="272" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="WindowResizeOptimization" opcode="win:Start"/>
+        <event value="273" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="WindowResizeOptimization" opcode="win:Stop"/>
+        <event value="274" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessIdleEDRTasks" opcode="win:Start"/>
+        <event value="275" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessIdleEDRTasks" opcode="win:Stop"/>
+        <event value="276" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessPolicyEventTask" opcode="win:Start"/>
+        <event value="277" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessPolicyEventTask" opcode="win:Stop"/>
+        <event value="278" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentDelay" opcode="win:Stop" template="Args278_0"/>
+        <event value="279" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateHistoryTask" opcode="win:Start"/>
+        <event value="280" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateHistoryTask" opcode="win:Stop"/>
+        <event value="281" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CallMarshalingTask" opcode="win:Start" template="Args281_0"/>
+        <event value="282" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CallMarshalingTask" opcode="win:Stop" template="Args282_0"/>
+        <event value="283" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="CallMarshalingTask" opcode="win:Start"/>
+        <event value="284" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="CallMarshalingTask" opcode="win:Stop"/>
+        <event value="285" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="LongCallDetectedTask" opcode="win:Info" template="Args285_0"/>
+        <event value="286" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="CallSlotsFullTask" opcode="win:Info"/>
+        <event value="287" version="0" level="win:Informational"  channel="MediaFoundationMediaEngine" task="FrameNotPresentedTask" opcode="win:Info" template="Args287_0"/>
+        <event value="288" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandlerTask" opcode="win:Info" template="Args288_0"/>
+        <event value="289" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_ResourcesAllocatedTask" opcode="win:Info" template="Args289_0"/>
+        <event value="290" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_BindTask" opcode="win:Info" template="Args290_0"/>
+        <event value="292" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SplitMultiBuffer" opcode="win:Info" template="Args292_0"/>
+        <event value="293" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="RemoveEntireChunk" opcode="win:Info" template="Args293_0"/>
+        <event value="294" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DisplayUniquenessChange" opcode="win:Info" template="Args294_0"/>
+        <event value="295" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresent" opcode="win:Start" template="Args295_0"/>
+        <event value="296" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresent" opcode="win:Stop" template="Args296_0"/>
+        <event value="297" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentFrame" opcode="win:Start" template="Args297_0"/>
+        <event value="298" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentFrame" opcode="win:Stop"/>
+        <event value="299" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentFrameConvert" opcode="win:Start"/>
+        <event value="300" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentFrameConvert" opcode="win:Stop"/>
+        <event value="301" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_HWMTask" opcode="win:Info" template="Args301_0"/>
+        <event value="302" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_RetiredResourceTask" opcode="win:Info" template="Args302_0"/>
+        <event value="303" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TelemetryAssert" opcode="win:Start"/>
+        <event value="304" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TelemetryAssert" opcode="win:Stop"/>
+        <event value="305" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentAsyncCallback" opcode="win:Start" template="Args305_0"/>
+        <event value="306" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentAsyncCallback" opcode="win:Stop"/>
+        <event value="314" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_DrainAsyncPresents" opcode="win:Start" template="Args314_0"/>
+        <event value="315" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_DrainAsyncPresents" opcode="win:Stop"/>
+        <event value="316" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentD3DFence" opcode="win:Start"/>
+        <event value="317" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentD3DFence" opcode="win:Stop"/>
+        <event value="318" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_Flush" opcode="win:Info"/>
+        <event value="322" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_RetryPresent" opcode="win:Start" template="Args322_0"/>
+        <event value="323" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_RetryPresent" opcode="win:Stop"/>
+        <event value="328" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_PatchSkippedPresentTask" opcode="win:Info" template="Args328_0"/>
+        <event value="329" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_QueueSkippedPresentTask" opcode="win:Info" template="Args329_0"/>
+        <event value="333" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_EnableVSyncs" opcode="win:Info" template="Args333_0"/>
+        <event value="335" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentRegisterWakeFence" opcode="win:Stop"/>
+        <event value="336" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_InitializeQueueingModeTask" opcode="win:Info" template="Args336_0"/>
+        <event value="361" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="IsEdrEnabledCheck" opcode="win:Start"/>
+        <event value="362" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="IsEdrEnabledCheck" opcode="win:Stop"/>
+        <event value="363" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="CloneDXDevice" opcode="win:Start"/>
+        <event value="364" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="CloneDXDevice" opcode="win:Stop"/>
+        <event value="365" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HandleClockStart" opcode="win:Start"/>
+        <event value="366" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HandleClockStart" opcode="win:Stop"/>
+        <event value="367" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HandlePreroll" opcode="win:Start"/>
+        <event value="368" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="HandlePreroll" opcode="win:Stop"/>
+        <event value="378" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="NotVisible" opcode="win:Start"/>
+        <event value="379" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="NotVisible" opcode="win:Stop"/>
+        <event value="380" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_FakePresentSubmittedTask" opcode="win:Info" template="Args380_0"/>
+        <event value="381" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="FrameRateDetectionTask" opcode="win:Info"/>
+        <event value="382" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="FrameRateDetectionTask" opcode="win:Start"/>
+        <event value="383" version="0" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="FrameRateDetectionTask" opcode="win:Stop"/>
+        <event value="159" version="1" level="win:Informational"  channel="MediaFoundationMediaEngine" task="NormalSwapchainCreated" opcode="win:Info" template="Args159_1"/>
+        <event value="160" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="SampleReceived" opcode="win:Info" template="Args160_1"/>
+        <event value="167" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="InitVSyncRefreshRate" opcode="win:Info" template="Args167_1"/>
+        <event value="169" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="QuantizeFrame" opcode="win:Info" template="Args169_1"/>
+        <event value="174" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="RealtimeShift_Sample" opcode="win:Info" template="Args174_1"/>
+        <event value="187" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateGPUDeadline" opcode="win:Start" template="Args187_1"/>
+        <event value="194" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="RealtimeShift_Status" opcode="win:Info" template="Args194_1"/>
+        <event value="195" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="Present_Flush" opcode="win:Info"/>
+        <event value="212" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="BatchingReason" opcode="win:Info" template="Args212_1"/>
+        <event value="266" version="1" level="win:Informational"  channel="MediaFoundationMediaEngine" task="ProfileCheck" opcode="win:Info" template="Args266_1"/>
+        <event value="324" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_ConfigurationState" opcode="win:Info" template="Args324_1"/>
+        <event value="327" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContent_PresentationManagerLostTask" opcode="win:Info"/>
+        <event value="330" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GPUBoostInit" opcode="win:Start" template="Args330_1"/>
+        <event value="331" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="GPUBoostInit" opcode="win:Stop"/>
+        <event value="332" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="UpdateGPUDeadline" opcode="win:Stop" template="Args332_1"/>
+        <event value="334" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentRegisterWakeFence" opcode="win:Start" template="Args334_1"/>
+        <event value="350" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TriggeredGlitchTelemetryTracker" opcode="win:Start" keywords="DiagTrack" template="Args350_1"/>
+        <event value="360" version="1" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TrackLeakedStats" opcode="win:Info" keywords="DiagTrack"/>
+        <event value="173" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessFlipMode" opcode="win:Info" template="Args173_2"/>
+        <event value="309" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_PresentStatTask" opcode="win:Stop" template="Args309_2"/>
+        <event value="310" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_Completed_IFlipTask" opcode="win:Info" template="Args310_2"/>
+        <event value="313" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_GlitchDetectRenderMissingTask" opcode="win:Info" template="Args313_2"/>
+        <event value="320" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="DriverVersion" opcode="win:Info" template="Args320_2"/>
+        <event value="325" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_CompositionPresentStat" opcode="win:Info" template="Args325_2"/>
+        <event value="351" version="2" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="TriggeredGlitchTelemetryTracker" opcode="win:Stop" keywords="Telemetry" template="Args351_2"/>
+        <event value="140" version="3" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="ProcessVSync" opcode="win:Info" template="Args140_3"/>
+        <event value="152" version="3" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="QualityNotify" opcode="win:Info" template="Args152_3"/>
+        <event value="291" version="3" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_PresentSubmittedTask" opcode="win:Info" template="Args291_3"/>
+        <event value="312" version="3" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_DCompStatTask" opcode="win:Info" template="Args312_3"/>
+        <event value="308" version="4" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_PresentStatTask" opcode="win:Start" template="Args308_4"/>
+        <event value="307" version="6" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_PresentStatTask" opcode="win:Info" template="Args307_6"/>
+        <event value="311" version="7" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_GlitchDetectedTask" opcode="win:Info" template="Args311_7"/>
+        <event value="326" version="7" level="win:Verbose"  channel="MediaFoundationMediaEngine" task="PresentedContentPresentationHandler_ProcessGlitchDetectTask" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="MediaFoundationMediaEngine" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Telemetry" mask="0x100" message="$(string.string150)" />
+        <keyword name="DiagTrack" mask="0x200" message="$(string.string19)" />
+      </keywords>
+      <tasks>
+        <task value="10" name="TransferFrame" message="$(string.string10)">
+        </task>
+        <task value="11" name="TransferFrameRemote" message="$(string.string11)">
+        </task>
+        <task value="12" name="Initialize" message="$(string.string12)">
+        </task>
+        <task value="13" name="Lifetime" message="$(string.string13)">
+        </task>
+        <task value="14" name="PlaybackRateChange" message="$(string.string14)">
+        </task>
+        <task value="15" name="Play" message="$(string.string15)">
+        </task>
+        <task value="16" name="Pause" message="$(string.string16)">
+        </task>
+        <task value="17" name="Seek" message="$(string.string17)">
+        </task>
+        <task value="18" name="DroppedFrame" message="$(string.string18)">
+        </task>
+        <task value="19" name="PresentedFrame" message="$(string.string19)">
+        </task>
+        <task value="20" name="PresentSubmitted" message="$(string.string20)">
+        </task>
+        <task value="21" name="PresentQueued" message="$(string.string21)">
+        </task>
+        <task value="22" name="PresentCompleted" message="$(string.string22)">
+        </task>
+        <task value="23" name="VideoFrameGlitch" message="$(string.string23)">
+        </task>
+        <task value="24" name="PresentSleep" message="$(string.string24)">
+        </task>
+        <task value="25" name="PerfTrackPlay" message="$(string.string25)">
+        </task>
+        <task value="27" name="PerfTrackPlayCancelled" message="$(string.string27)">
+        </task>
+        <task value="29" name="PerfTrackFirstFrameAfterPlayPresented" message="$(string.string29)">
+        </task>
+        <task value="31" name="PresentStats" message="$(string.string31)">
+        </task>
+        <task value="32" name="Suspend" message="$(string.string32)">
+        </task>
+        <task value="33" name="Restore" message="$(string.string33)">
+        </task>
+        <task value="34" name="NotVisible" message="$(string.string34)">
+        </task>
+        <task value="35" name="NotVisibleTimer" message="$(string.string35)">
+        </task>
+        <task value="36" name="Visible" message="$(string.string36)">
+        </task>
+        <task value="37" name="SetGPUPriority" message="$(string.string37)">
+        </task>
+        <task value="38" name="PerfTrackVideoGlitch" message="$(string.string38)">
+        </task>
+        <task value="39" name="SaveImage" message="$(string.string39)">
+        </task>
+        <task value="40" name="SetSourceOp" message="$(string.string40)">
+        </task>
+        <task value="41" name="VideoFrameEarly" message="$(string.string41)">
+        </task>
+        <task value="42" name="ProcessVSync" message="$(string.string42)">
+        </task>
+        <task value="43" name="GetCorrelatedTime" message="$(string.string43)">
+        </task>
+        <task value="44" name="IgnoreVSync" message="$(string.string44)">
+        </task>
+        <task value="45" name="RequestNetwork" message="$(string.string45)">
+        </task>
+        <task value="46" name="Batch" message="$(string.string46)">
+        </task>
+        <task value="47" name="DecodeSwapchainCreated" message="$(string.string47)">
+        </task>
+        <task value="48" name="YUVSwapchainConfig" message="$(string.string48)">
+        </task>
+        <task value="49" name="DecodeSwapchainDestroyed" message="$(string.string49)">
+        </task>
+        <task value="50" name="DirectPresentationNotUsed" message="$(string.string50)">
+        </task>
+        <task value="51" name="QualityNotify" message="$(string.string51)">
+        </task>
+        <task value="52" name="ContentFrameRateDetected" message="$(string.string52)">
+        </task>
+        <task value="53" name="CustomRefreshRateRequested" message="$(string.string53)">
+        </task>
+        <task value="54" name="CustomRefreshRate" message="$(string.string54)">
+        </task>
+        <task value="56" name="CustomRefreshRateStateChange" message="$(string.string56)">
+        </task>
+        <task value="57" name="UpdateVideo" message="$(string.string57)">
+        </task>
+        <task value="58" name="NormalSwapchainCreated" message="$(string.string58)">
+        </task>
+        <task value="59" name="SampleReceived" message="$(string.string59)">
+        </task>
+        <task value="60" name="PurgedFrames" message="$(string.string60)">
+        </task>
+        <task value="61" name="YUVSwapchainQueue" message="$(string.string61)">
+        </task>
+        <task value="62" name="GPUSwapchainWait" message="$(string.string62)">
+        </task>
+        <task value="63" name="GetPresentStats" message="$(string.string63)">
+        </task>
+        <task value="64" name="PruneHistory" message="$(string.string64)">
+        </task>
+        <task value="65" name="InitVSyncRefreshRate" message="$(string.string65)">
+        </task>
+        <task value="66" name="ClockSmooth" message="$(string.string66)">
+        </task>
+        <task value="67" name="UpdateLongRunning" message="$(string.string67)">
+        </task>
+        <task value="68" name="MapSample" message="$(string.string68)">
+        </task>
+        <task value="69" name="ProcessFlipMode" message="$(string.string69)">
+        </task>
+        <task value="70" name="RealtimeShift_Sample" message="$(string.string70)">
+        </task>
+        <task value="71" name="MinLatencyDone" message="$(string.string71)">
+        </task>
+        <task value="72" name="MirrorVideo" message="$(string.string72)">
+        </task>
+        <task value="73" name="ProcessFrame" message="$(string.string73)">
+        </task>
+        <task value="74" name="UpdateDeadline" message="$(string.string74)">
+        </task>
+        <task value="75" name="GetEngineStatistics" message="$(string.string75)">
+        </task>
+        <task value="76" name="RequestSample" message="$(string.string76)">
+        </task>
+        <task value="77" name="GPUBoost" message="$(string.string77)">
+        </task>
+        <task value="78" name="HistoryRecord" message="$(string.string78)">
+        </task>
+        <task value="79" name="ClearHistory" message="$(string.string79)">
+        </task>
+        <task value="80" name="UpdateGPUDeadline" message="$(string.string80)">
+        </task>
+        <task value="81" name="ComputeRatioToPrimary" message="$(string.string81)">
+        </task>
+        <task value="82" name="UpdateRatioToPrimary" message="$(string.string82)">
+        </task>
+        <task value="83" name="YUVSwapchainQueueDrain" message="$(string.string83)">
+        </task>
+        <task value="84" name="CustomRefreshRateCheckDriverSupport" message="$(string.string84)">
+        </task>
+        <task value="85" name="CustomRefreshRateMatchFound" message="$(string.string85)">
+        </task>
+        <task value="86" name="RealtimeShift_Status" message="$(string.string86)">
+        </task>
+        <task value="87" name="Present_Flush" message="$(string.string87)">
+        </task>
+        <task value="100" name="NeedKey" message="$(string.string100)">
+        </task>
+        <task value="101" name="MediaKeys" message="$(string.string101)">
+        </task>
+        <task value="102" name="MediaKeySession" message="$(string.string102)">
+        </task>
+        <task value="103" name="KeyMessage" message="$(string.string103)">
+        </task>
+        <task value="104" name="KeysAttribute" message="$(string.string104)">
+        </task>
+        <task value="105" name="ContentEnabler" message="$(string.string105)">
+        </task>
+        <task value="107" name="BatchingReason" message="$(string.string107)">
+        </task>
+        <task value="108" name="SubtitleQueued" message="$(string.string108)">
+        </task>
+        <task value="109" name="EngineEnded" message="$(string.string109)">
+        </task>
+        <task value="110" name="PresentDelay" message="$(string.string110)">
+        </task>
+        <task value="111" name="PresentTimer" message="$(string.string111)">
+        </task>
+        <task value="112" name="PresentTimeCritical" message="$(string.string112)">
+        </task>
+        <task value="113" name="TimedTextDtvCCSample" message="$(string.string113)">
+        </task>
+        <task value="114" name="TimedTextSendCue" message="$(string.string114)">
+        </task>
+        <task value="115" name="OPMOpen" message="$(string.string115)">
+        </task>
+        <task value="116" name="OPMExecuteCmd" message="$(string.string116)">
+        </task>
+        <task value="117" name="OPMExecuteQuery" message="$(string.string117)">
+        </task>
+        <task value="118" name="OPMProcessCertificate" message="$(string.string118)">
+        </task>
+        <task value="119" name="OPMGetPublicKey" message="$(string.string119)">
+        </task>
+        <task value="120" name="Teardown" message="$(string.string120)">
+        </task>
+        <task value="121" name="ResizedSwapchain" message="$(string.string121)">
+        </task>
+        <task value="122" name="Encrypted" message="$(string.string122)">
+        </task>
+        <task value="123" name="KeyMessage2" message="$(string.string123)">
+        </task>
+        <task value="124" name="MediaKeySystemAccess" message="$(string.string124)">
+        </task>
+        <task value="125" name="QuantizeFrame" message="$(string.string125)">
+        </task>
+        <task value="126" name="PresentRestart" message="$(string.string126)">
+        </task>
+        <task value="127" name="DisplayRotation" message="$(string.string127)">
+        </task>
+        <task value="128" name="DecodeSwapchainState" message="$(string.string128)">
+        </task>
+        <task value="129" name="ConfigureSwapchain" message="$(string.string129)">
+        </task>
+        <task value="130" name="MMCSSRequest" message="$(string.string130)">
+        </task>
+        <task value="131" name="ScrubbingState" message="$(string.string131)">
+        </task>
+        <task value="132" name="DXPresent" message="$(string.string132)">
+        </task>
+        <task value="133" name="EnumMonitors" message="$(string.string133)">
+        </task>
+        <task value="134" name="HandleMonitorChange" message="$(string.string134)">
+        </task>
+        <task value="135" name="ProcessIdleTasks" message="$(string.string135)">
+        </task>
+        <task value="136" name="DXWorkComplete" message="$(string.string136)">
+        </task>
+        <task value="137" name="SphericalVideoChanged" message="$(string.string137)">
+        </task>
+        <task value="138" name="SphericalVideoPropertiesChanged" message="$(string.string138)">
+        </task>
+        <task value="139" name="ProfileCheck" message="$(string.string139)">
+        </task>
+        <task value="140" name="SetHDRMetadata" message="$(string.string140)">
+        </task>
+        <task value="141" name="EDRStateChanged" message="$(string.string141)">
+        </task>
+        <task value="142" name="WindowResizeOptimization" message="$(string.string142)">
+        </task>
+        <task value="143" name="ProcessIdleEDRTasks" message="$(string.string143)">
+        </task>
+        <task value="144" name="ProcessPolicyEventTask" message="$(string.string144)">
+        </task>
+        <task value="145" name="UpdateHistoryTask" message="$(string.string145)">
+        </task>
+        <task value="146" name="MEGetCurrentTime" message="$(string.string146)">
+        </task>
+        <task value="147" name="CallMarshalingTask" message="$(string.string147)">
+        </task>
+        <task value="148" name="LongCallDetectedTask" message="$(string.string148)">
+        </task>
+        <task value="149" name="CallSlotsFullTask" message="$(string.string149)">
+        </task>
+        <task value="150" name="FrameNotPresentedTask" message="$(string.string150)">
+        </task>
+        <task value="151" name="PresentedContentPresentationHandlerTask" message="$(string.string151)">
+        </task>
+        <task value="152" name="PresentedContentPresentationHandler_ResourcesAllocatedTask" message="$(string.string152)">
+        </task>
+        <task value="153" name="PresentedContentPresentationHandler_BindTask" message="$(string.string153)">
+        </task>
+        <task value="154" name="PresentedContentPresentationHandler_PresentSubmittedTask" message="$(string.string154)">
+        </task>
+        <task value="155" name="SplitMultiBuffer" message="$(string.string155)">
+        </task>
+        <task value="156" name="RemoveEntireChunk" message="$(string.string156)">
+        </task>
+        <task value="157" name="DisplayUniquenessChange" message="$(string.string157)">
+        </task>
+        <task value="158" name="PresentedContentPresent" message="$(string.string158)">
+        </task>
+        <task value="159" name="PresentFrame" message="$(string.string159)">
+        </task>
+        <task value="160" name="PresentFrameConvert" message="$(string.string160)">
+        </task>
+        <task value="161" name="PresentedContentPresentationHandler_HWMTask" message="$(string.string161)">
+        </task>
+        <task value="162" name="PresentedContentPresentationHandler_RetiredResourceTask" message="$(string.string162)">
+        </task>
+        <task value="163" name="TelemetryAssert" message="$(string.string163)">
+        </task>
+        <task value="164" name="PresentedContentAsyncCallback" message="$(string.string164)">
+        </task>
+        <task value="165" name="PresentedContentPresentationHandler_CompletedTask" message="$(string.string165)">
+        </task>
+        <task value="166" name="PresentedContentPresentationHandler_PresentStatTask" message="$(string.string166)">
+        </task>
+        <task value="167" name="PresentedContentPresentationHandler_Completed_IFlipTask" message="$(string.string167)">
+        </task>
+        <task value="168" name="PresentedContentPresentationHandler_GlitchDetectedTask" message="$(string.string168)">
+        </task>
+        <task value="169" name="PresentedContentPresentationHandler_DCompStatTask" message="$(string.string169)">
+        </task>
+        <task value="170" name="PresentedContentPresentationHandler_GlitchDetectRenderMissingTask" message="$(string.string170)">
+        </task>
+        <task value="171" name="PresentedContent_DrainAsyncPresents" message="$(string.string171)">
+        </task>
+        <task value="172" name="PresentedContentD3DFence" message="$(string.string172)">
+        </task>
+        <task value="173" name="PresentedContentPresentationHandler_InitializeQueueingModeTask" message="$(string.string173)">
+        </task>
+        <task value="174" name="PresentedContent_Flush" message="$(string.string174)">
+        </task>
+        <task value="180" name="DriverVersion" message="$(string.string180)">
+        </task>
+        <task value="181" name="PresentedContent_RetryPresent" message="$(string.string181)">
+        </task>
+        <task value="182" name="PresentedContent_ConfigurationState" message="$(string.string182)">
+        </task>
+        <task value="183" name="PresentedContentPresentationHandler_CompositionPresentStat" message="$(string.string183)">
+        </task>
+        <task value="184" name="PresentedContentPresentationHandler_ProcessGlitchDetectTask" message="$(string.string184)">
+        </task>
+        <task value="185" name="PresentedContent_PresentationManagerLostTask" message="$(string.string185)">
+        </task>
+        <task value="186" name="PresentedContentPresentationHandler_QueueSkippedPresentTask" message="$(string.string186)">
+        </task>
+        <task value="187" name="PresentedContentPresentationHandler_PatchSkippedPresentTask" message="$(string.string187)">
+        </task>
+        <task value="188" name="GPUBoostInit" message="$(string.string188)">
+        </task>
+        <task value="189" name="PresentedContentPresentationHandler_EnableVSyncs" message="$(string.string189)">
+        </task>
+        <task value="190" name="PresentedContentRegisterWakeFence" message="$(string.string190)">
+        </task>
+        <task value="191" name="TriggeredGlitchTelemetryTracker" message="$(string.string191)">
+        </task>
+        <task value="192" name="TrackLeakedStats" message="$(string.string192)">
+        </task>
+        <task value="193" name="IsEdrEnabledCheck" message="$(string.string193)">
+        </task>
+        <task value="194" name="CloneDXDevice" message="$(string.string194)">
+        </task>
+        <task value="195" name="HandleClockStart" message="$(string.string195)">
+        </task>
+        <task value="196" name="HandlePreroll" message="$(string.string196)">
+        </task>
+        <task value="202" name="PresentedContentPresentationHandler_FakePresentSubmittedTask" message="$(string.string202)">
+        </task>
+        <task value="203" name="FrameRateDetectionTask" message="$(string.string203)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="rate" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="location" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pts" inType="win:Int64" outType="xs:long"  />
+          <data name="clock" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args116_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC" inType="win:Int64" outType="xs:long"  />
+          <data name="Ahead" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args117_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC_snapped" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SyncInterval" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Repeat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Restart" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Now" inType="win:Int64" outType="xs:long"  />
+          <data name="DeltaToTarget_MS" inType="win:Int32" outType="xs:int"  />
+          <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="History_QueuedFrames" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="History_QueuedFramesWithRepeats" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args118_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC_target" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC_actual" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC_actual_behind" inType="win:Int64" outType="xs:long"  />
+          <data name="FramePeriod" inType="win:Int64" outType="xs:long"  />
+          <data name="FrameAdjustment" inType="win:Int32" outType="xs:int"  />
+          <data name="PresentCount" inType="win:Int32" outType="xs:int"  />
+          <data name="FrameCount" inType="win:Int32" outType="xs:int"  />
+          <data name="RatioAverage" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="FramesLate" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args121_0">
+          <data name="object" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="protected" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="height" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args127_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPresentLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Queued" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueuedWithRepeats" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EstimatedFramesNeeded" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Free" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeltaToTarget" inType="win:Int64" outType="xs:long"  />
+          <data name="SubmittedAheadDelta" inType="win:Int64" outType="xs:long"  />
+          <data name="TimeInQueue" inType="win:Int64" outType="xs:long"  />
+          <data name="MinLatency" inType="win:Int64" outType="xs:long"  />
+          <data name="MaxLatency" inType="win:Int32" outType="xs:int"  />
+          <data name="FramePeriod" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="TargetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="HistoryPresents" inType="win:Int32" outType="xs:int"  />
+          <data name="TimeToDeadline" inType="win:Int64" outType="xs:long"  />
+          <data name="BufferIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args128_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="paused" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args129_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resumed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="thinning" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args133_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="priority" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args134_0">
+          <data name="NumGlitches" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args136_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NativeWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NativeHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncodedWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncodedHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncodedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args139_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="FramesEarly" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args142_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QPC" inType="win:Int64" outType="xs:long"  />
+          <data name="Delta" inType="win:Int64" outType="xs:long"  />
+          <data name="Frames" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args143_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Requested" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ReferenceCounter" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args146_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Swapchain" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TextureArray" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args147_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Swapchain" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SrcRect_Left" inType="win:Int32" outType="xs:int"  />
+          <data name="SrcRect_Top" inType="win:Int32" outType="xs:int"  />
+          <data name="SrcRect_Right" inType="win:Int32" outType="xs:int"  />
+          <data name="SrcRect_Bottom" inType="win:Int32" outType="xs:int"  />
+          <data name="DstRect_Left" inType="win:Int32" outType="xs:int"  />
+          <data name="DstRect_Top" inType="win:Int32" outType="xs:int"  />
+          <data name="DstRect_Right" inType="win:Int32" outType="xs:int"  />
+          <data name="DstRect_Bottom" inType="win:Int32" outType="xs:int"  />
+          <data name="DstSize_Width" inType="win:Int32" outType="xs:int"  />
+          <data name="DstRect_Height" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args148_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Swapchain" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SwapchainState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args153_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FrameDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args154_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FrameDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RefreshDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args155_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestedRefreshDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ActualRefreshDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args158_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Dst_left" inType="win:Int32" outType="xs:int"  />
+          <data name="Dst_top" inType="win:Int32" outType="xs:int"  />
+          <data name="Dst_right" inType="win:Int32" outType="xs:int"  />
+          <data name="Dst_bottom" inType="win:Int32" outType="xs:int"  />
+          <data name="Src_left" inType="win:Float" outType="xs:float"  />
+          <data name="Src_top" inType="win:Float" outType="xs:float"  />
+          <data name="Src_right" inType="win:Float" outType="xs:float"  />
+          <data name="Src_bottom" inType="win:Float" outType="xs:float"  />
+          <data name="flags" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args161_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Count" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args165_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PresentRefreshCount" inType="win:Int32" outType="xs:int"  />
+          <data name="SyncRefreshCount" inType="win:Int32" outType="xs:int"  />
+          <data name="SyncQPC_us" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompMode" inType="win:Int32" outType="xs:int"  />
+          <data name="Duration" inType="win:Int32" outType="xs:int"  />
+          <data name="SyncQPC_rel_now_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args168_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ClockTime0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SmoothedQPC0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="QPCDelta_us" inType="win:Int64" outType="xs:long"  />
+          <data name="WindowCount" inType="win:Int32" outType="xs:int"  />
+          <data name="WindowWidth_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Accepted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args170_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="newState" inType="win:Int32" outType="xs:int"  />
+          <data name="oldState" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args171_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QPCnow_us" inType="win:Int64" outType="xs:long"  />
+          <data name="rate" inType="win:Float" outType="xs:float"  />
+          <data name="ClockTime0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleTime_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleQPC_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleQPCAhead_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Dejitter" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args172_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QPCnow_us" inType="win:Int64" outType="xs:long"  />
+          <data name="ClockTime0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="ApproxClockJitter_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args175_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeRemaining" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args176_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="old" inType="win:Int32" outType="xs:int"  />
+          <data name="new" inType="win:Int32" outType="xs:int"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args177_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="deadline" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsDeltaFromNow" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args178_0">
+          <data name="id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args180_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestsPending" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameQueueCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args181_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeToDeadline_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args182_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pRecord" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ListCount" inType="win:Int32" outType="xs:int"  />
+          <data name="DecodeYUV" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FrameCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PresentCount" inType="win:Int64" outType="xs:long"  />
+          <data name="Repeat" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TargetQPC" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args184_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ListCount" inType="win:Int32" outType="xs:int"  />
+          <data name="Location" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args186_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="now" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args188_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Ratio" inType="win:Float" outType="xs:float"  />
+          <data name="Ratio_x100" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args192_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FrameDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MinDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="data" inType="win:Binary" outType="xs:hexBinary" length="length" />
+        </template>
+        <template tid="Args201_0">
+          <data name="keysystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="defaultCdmStorePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="inprivateCdmStorePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="keySystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="data" inType="win:Binary" outType="xs:hexBinary" length="length" />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args204_0">
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="data" inType="win:Binary" outType="xs:hexBinary" length="length" />
+        </template>
+        <template tid="Args205_0">
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="code" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="systemError" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args209_0">
+          <data name="enable type" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args213_0">
+          <data name="buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleDuration" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args216_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Period" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args218_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeDelta" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args220_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleStartTime" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleEndTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args221_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CueStartTime" inType="win:Int64" outType="xs:long"  />
+          <data name="CueEndTime" inType="win:Int64" outType="xs:long"  />
+          <data name="CueTicket" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args236_0">
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Backbuffers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args241_0">
+          <data name="SessionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="keySystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UseDistinctiveIdentifier" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args242_0">
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MessageType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="data" inType="win:Binary" outType="xs:hexBinary" length="length" />
+        </template>
+        <template tid="Args245_0">
+          <data name="keysystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CDMAccess" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CDMCustomConfig" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MediaKeysObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SoftwareOverride" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args246_0">
+          <data name="keysystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="configCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="selectedConfigCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args247_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args248_0">
+          <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args249_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DecodeSwapchainState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args250_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsDecode" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DxgiFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColorSpaceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Dst_Left" inType="win:Int32" outType="xs:int"  />
+          <data name="Dst_Top" inType="win:Int32" outType="xs:int"  />
+          <data name="Dst_Right" inType="win:Int32" outType="xs:int"  />
+          <data name="Dst_Bottom" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args253_0">
+          <data name="ScrubbingState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args254_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Inverval" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args255_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args262_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args263_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args264_0">
+          <data name="IsEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProjectionMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args265_0">
+          <data name="Quaternion.W" inType="win:Float" outType="xs:float"  />
+          <data name="Quaternion.X" inType="win:Float" outType="xs:float"  />
+          <data name="Quaternion.Y" inType="win:Float" outType="xs:float"  />
+          <data name="Quaternion.Z" inType="win:Float" outType="xs:float"  />
+          <data name="FieldOfView" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args267_0">
+          <data name="IsDisplayMetadata" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MinLuminance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxLuminance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args268_0">
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsAC" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsMediaOptimizedForDisplayQuality" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsLowerScreenBrightnessActive" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsBrightnessPolicyActive" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ContentMaxLuminance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DisplayMaxLuminance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args271_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args278_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Delay" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeToDeadline" inType="win:Int64" outType="xs:long"  />
+          <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args281_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CallId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args282_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CallId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args285_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CallId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Start" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Now" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args287_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Timestamp" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args288_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ResourceManagerObject" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args289_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiscFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args290_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="colorSpaceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="isHWProtected" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="height" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args292_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwOldIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwNewIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Changed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args293_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwEndIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fRemoveEntireChunk" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args294_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Old" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="New" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RealDisplayChange" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args295_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="targetTime" inType="win:Int64" outType="xs:long"  />
+          <data name="avgDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args296_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args297_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="regeerated" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="height" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args301_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeInQueueAtHWMThreshold" inType="win:Int64" outType="xs:long"  />
+          <data name="LWM" inType="win:Int64" outType="xs:long"  />
+          <data name="HWM" inType="win:Int64" outType="xs:long"  />
+          <data name="ApproxSleepDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="LWM_PresentId" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args302_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentRetiredCount" inType="win:Int64" outType="xs:long"  />
+          <data name="RemainingInFlightResourceCount" inType="win:Int64" outType="xs:long"  />
+          <data name="FenceValue" inType="win:Int64" outType="xs:long"  />
+          <data name="FrameReturnedTimeDelta_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args305_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AsyncCallbackType" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args314_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PendingAsyncPresentCount" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args322_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RetryPresentTimerKey" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args328_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentId_Skipped" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId_displayed" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId_delta" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args329_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+          <data name="CompositionID" inType="win:Int64" outType="xs:long"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="SkippedFramePendingCount" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args333_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args336_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QueueingMode" inType="win:Int32" outType="xs:int"  />
+          <data name="LWM" inType="win:Int64" outType="xs:long"  />
+          <data name="HWM" inType="win:Int64" outType="xs:long"  />
+          <data name="LwmOverride" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SteadyStateQueueingMode" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args380_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="deltaToTarget" inType="win:Int64" outType="xs:long"  />
+          <data name="HWM" inType="win:Int64" outType="xs:long"  />
+          <data name="LWM" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args159_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Swapchain" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Backbuffers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColorSpaceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SwapChainType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SwapChainRotation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args160_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+          <data name="Duration" inType="win:Int64" outType="xs:long"  />
+          <data name="FirstFrameReady" inType="win:Int32" outType="xs:int"  />
+          <data name="Dropped" inType="win:Int32" outType="xs:int"  />
+          <data name="deltaFromLastSample_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args167_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FrameRate" inType="win:Float" outType="xs:float"  />
+          <data name="minFrameRate" inType="win:Float" outType="xs:float"  />
+          <data name="maxFrameRate" inType="win:Float" outType="xs:float"  />
+          <data name="Ratio" inType="win:Int32" outType="xs:int"  />
+          <data name="MaxRatio" inType="win:Int32" outType="xs:int"  />
+          <data name="Reason" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args169_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime_us" inType="win:Int64" outType="xs:long"  />
+          <data name="OrigTargetQPC_us" inType="win:Int64" outType="xs:long"  />
+          <data name="TargetQPC_us" inType="win:Int64" outType="xs:long"  />
+          <data name="DeltaQPC_us" inType="win:Int64" outType="xs:long"  />
+          <data name="framePeriod_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args174_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QPCtarget_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Delta_us" inType="win:Int64" outType="xs:long"  />
+          <data name="AverageLateness_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Correction_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args187_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DXObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DXType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="deadline" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsDeltaFromNow" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args194_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QPCtarget_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Ahead_us" inType="win:Int64" outType="xs:long"  />
+          <data name="AverageAhead_us" inType="win:Int64" outType="xs:long"  />
+          <data name="AverageDeviation_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SimpleAverageAhead_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SimpleAverageDeviation_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Diff_us" inType="win:Int64" outType="xs:long"  />
+          <data name="RenderLatency_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args212_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Ok" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Bits" inType="win:Int32" outType="xs:int"  />
+          <data name="FullScreenPercent" inType="win:Int32" outType="xs:int"  />
+          <data name="FullScreenThreshold" inType="win:Int32" outType="xs:int"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args266_1">
+          <data name="Present" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DcValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Provisioned" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QoS" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Memory" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args324_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FlightingEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FeatureEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ForceXVP" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SupportsDisplayables" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ForceDisabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args330_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DX Device" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args332_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DXObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DXType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrUpdate" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args334_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+          <data name="timeInQueue_hns" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args350_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MainEventType" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args173_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="LastQueuedStartQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="TargetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="nowQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="AheadQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="RepeatCount_Rounded" inType="win:Int32" outType="xs:int"  />
+          <data name="RepeatCount_x1000" inType="win:Int32" outType="xs:int"  />
+          <data name="TimeUntilFrame_Orig" inType="win:Int64" outType="xs:long"  />
+          <data name="TimeUntilFrame_postRepeat" inType="win:Int64" outType="xs:long"  />
+          <data name="FramesBehindAdjustment" inType="win:Int32" outType="xs:int"  />
+          <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrimaryFramePeriod" inType="win:Int64" outType="xs:long"  />
+          <data name="FramePeriod" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args309_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Iteration Count" inType="win:Int32" outType="xs:int"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args310_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+          <data name="displayedQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="frameDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="minCompositionDelay_ns" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args313_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+          <data name="OutputIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="totalOutputs" inType="win:Int32" outType="xs:int"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="nowQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="targetDeltaFromNowQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="framePeriod_ns" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args320_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Ver0" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Ver1" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Ver2" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Ver3" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="HWS_SupportedLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HWS_Enabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="HWFQ_SupportedLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HWFQ_Enabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Displayables_Supported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args325_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+          <data name="CompositionFrameId" inType="win:Int64" outType="xs:long"  />
+          <data name="InstanceKind" inType="win:Int32" outType="xs:int"  />
+          <data name="EntryIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="TotalEntries" inType="win:Int32" outType="xs:int"  />
+          <data name="WasFound" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LookUpOutputIdex" inType="win:Int32" outType="xs:int"  />
+          <data name="TotalOutputs" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args351_2">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MainEventType" inType="win:Int32" outType="xs:int"  />
+          <data name="Duration" inType="win:Int64" outType="xs:long"  />
+          <data name="GlitchCount" inType="win:Int32" outType="xs:int"  />
+          <data name="DisplayGlitchCount" inType="win:Int32" outType="xs:int"  />
+          <data name="SeenEventTypes" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args140_3">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QPC_Prev" inType="win:Int64" outType="xs:long"  />
+          <data name="Delta_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Delta_Frames" inType="win:Int32" outType="xs:int"  />
+          <data name="DeltaPerFrame_us" inType="win:Int64" outType="xs:long"  />
+          <data name="RatioToPrimary" inType="win:Float" outType="xs:float"  />
+          <data name="InputFrameIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="FrameIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="PreviousFramerate" inType="win:Float" outType="xs:float"  />
+          <data name="Framerate" inType="win:Float" outType="xs:float"  />
+          <data name="MinFramerate" inType="win:Float" outType="xs:float"  />
+          <data name="MaxFramerate" inType="win:Float" outType="xs:float"  />
+          <data name="QPC_Actual" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC_Smoothed" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC_SmoothedNonQuant" inType="win:Int64" outType="xs:long"  />
+          <data name="Accepted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsIFlip" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args152_3">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumGlitches" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumDisplayGlitches" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="ReceiveLateness" inType="win:Int64" outType="xs:long"  />
+          <data name="DisplayGlitchDelta" inType="win:Int64" outType="xs:long"  />
+          <data name="DidGlitch" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FlushLateSamplesOnDisplayChange" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args291_3">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="presentId" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="targetTime" inType="win:Int64" outType="xs:long"  />
+          <data name="timeRemainingInQueue" inType="win:Int64" outType="xs:long"  />
+          <data name="submittedAhead_us" inType="win:Int64" outType="xs:long"  />
+          <data name="now vs QPC(us)" inType="win:Int64" outType="xs:long"  />
+          <data name="QueuedFrames" inType="win:Int64" outType="xs:long"  />
+          <data name="IsDirectPresentation" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args312_3">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="displayAdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="renderAdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc" inType="win:Int32" outType="xs:int"  />
+          <data name="VidPnTarget" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId" inType="win:Int64" outType="xs:long"  />
+          <data name="CompositionframeId" inType="win:Int64" outType="xs:long"  />
+          <data name="CompletedTimeHNS" inType="win:Int64" outType="xs:long"  />
+          <data name="StartedTimeHNS" inType="win:Int64" outType="xs:long"  />
+          <data name="VBlankDuration_ps" inType="win:Int64" outType="xs:long"  />
+          <data name="framePeriod_ps" inType="win:Int64" outType="xs:long"  />
+          <data name="OutstandingPresents" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args308_4">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Pending Composition count" inType="win:Int32" outType="xs:int"  />
+          <data name="CompositionFrameId" inType="win:Int64" outType="xs:long"  />
+          <data name="targetQPC_hns" inType="win:Int64" outType="xs:long"  />
+          <data name="presentID" inType="win:Int32" outType="xs:int"  />
+          <data name="OutputCount" inType="win:Int32" outType="xs:int"  />
+          <data name="AdapterLuid0" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc0" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId0" inType="win:Int64" outType="xs:long"  />
+          <data name="AdapterLuid1" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc1" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId1" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args307_6">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId" inType="win:Int64" outType="xs:long"  />
+          <data name="CompID" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentID" inType="win:Int64" outType="xs:long"  />
+          <data name="OutputIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="FragmentCount" inType="win:Int32" outType="xs:int"  />
+          <data name="ScanoutType" inType="win:Int32" outType="xs:int"  />
+          <data name="CompletedOutputs" inType="win:Int32" outType="xs:int"  />
+          <data name="NumOutputs" inType="win:Int32" outType="xs:int"  />
+          <data name="CompositionLatency" inType="win:Int32" outType="xs:int"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="displayedQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="deltaQPC_ns" inType="win:Int64" outType="xs:long"  />
+          <data name="dwmSmoothedTargetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="deltaDwmTargetQPC_ns" inType="win:Int64" outType="xs:long"  />
+          <data name="deltaSmoothedJitter_ns" inType="win:Int64" outType="xs:long"  />
+          <data name="minCompositionDelay_ns" inType="win:Int64" outType="xs:long"  />
+          <data name="framePeriod_ns" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args311_7">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdapterLuid" inType="win:Int64" outType="xs:long"  />
+          <data name="VidPnSrc" inType="win:Int32" outType="xs:int"  />
+          <data name="uniqueId" inType="win:Int64" outType="xs:long"  />
+          <data name="PresentId" inType="win:Int64" outType="xs:long"  />
+          <data name="OutputIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="totalOutputs" inType="win:Int32" outType="xs:int"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="displayedQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="nowQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="targetDeltaFromNowQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="deltaQPC_ns" inType="win:Int64" outType="xs:long"  />
+          <data name="framePeriod_us" inType="win:Int64" outType="xs:long"  />
+          <data name="lowerTolerance_us" inType="win:Int64" outType="xs:long"  />
+          <data name="upperTolerance_us" inType="win:Int64" outType="xs:long"  />
+          <data name="wasIFlip" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SkipReconType" inType="win:Int32" outType="xs:int"  />
+          <data name="AdjustmentType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Batch" />
+       <string id="string1" value="BatchingReason" />
+       <string id="string2" value="CallMarshalingTask" />
+       <string id="string3" value="CallSlotsFullTask" />
+       <string id="string4" value="ClearHistory" />
+       <string id="string5" value="ClockSmooth" />
+       <string id="string6" value="CloneDXDevice" />
+       <string id="string7" value="ComputeRatioToPrimary" />
+       <string id="string8" value="ConfigureSwapchain" />
+       <string id="string9" value="ContentEnabler" />
+       <string id="string10" value="ContentFrameRateDetected" />
+       <string id="string11" value="CustomRefreshRate" />
+       <string id="string12" value="CustomRefreshRateCheckDriverSupport" />
+       <string id="string13" value="CustomRefreshRateMatchFound" />
+       <string id="string14" value="CustomRefreshRateRequested" />
+       <string id="string15" value="CustomRefreshRateStateChange" />
+       <string id="string16" value="DecodeSwapchainCreated" />
+       <string id="string17" value="DecodeSwapchainDestroyed" />
+       <string id="string18" value="DecodeSwapchainState" />
+       <string id="string19" value="DiagTrack" />
+       <string id="string20" value="DirectPresentationNotUsed" />
+       <string id="string21" value="DisplayRotation" />
+       <string id="string22" value="DisplayUniquenessChange" />
+       <string id="string23" value="DriverVersion" />
+       <string id="string24" value="DroppedFrame" />
+       <string id="string25" value="DXPresent" />
+       <string id="string26" value="DXWorkComplete" />
+       <string id="string27" value="EDRStateChanged" />
+       <string id="string28" value="Encrypted" />
+       <string id="string29" value="EngineEnded" />
+       <string id="string30" value="EnumMonitors" />
+       <string id="string31" value="FrameNotPresentedTask" />
+       <string id="string32" value="FrameRateDetectionTask" />
+       <string id="string33" value="GetCorrelatedTime" />
+       <string id="string34" value="GetEngineStatistics" />
+       <string id="string35" value="GetPresentStats" />
+       <string id="string36" value="GPUBoost" />
+       <string id="string37" value="GPUBoostInit" />
+       <string id="string38" value="GPUSwapchainWait" />
+       <string id="string39" value="HandleClockStart" />
+       <string id="string40" value="HandleMonitorChange" />
+       <string id="string41" value="HandlePreroll" />
+       <string id="string42" value="HistoryRecord" />
+       <string id="string43" value="IgnoreVSync" />
+       <string id="string44" value="Initialize" />
+       <string id="string45" value="InitVSyncRefreshRate" />
+       <string id="string46" value="IsEdrEnabledCheck" />
+       <string id="string47" value="KeyMessage" />
+       <string id="string48" value="KeyMessage2" />
+       <string id="string49" value="KeysAttribute" />
+       <string id="string50" value="Lifetime" />
+       <string id="string51" value="LongCallDetectedTask" />
+       <string id="string52" value="MapSample" />
+       <string id="string53" value="MediaFoundationMediaEngine" />
+       <string id="string54" value="MediaKeys" />
+       <string id="string55" value="MediaKeySession" />
+       <string id="string56" value="MediaKeySystemAccess" />
+       <string id="string57" value="MEGetCurrentTime" />
+       <string id="string58" value="Microsoft-Windows-MediaEngine" />
+       <string id="string59" value="MinLatencyDone" />
+       <string id="string60" value="MirrorVideo" />
+       <string id="string61" value="MMCSSRequest" />
+       <string id="string62" value="NeedKey" />
+       <string id="string63" value="NormalSwapchainCreated" />
+       <string id="string64" value="NotVisible" />
+       <string id="string65" value="NotVisibleTimer" />
+       <string id="string66" value="OPMExecuteCmd" />
+       <string id="string67" value="OPMExecuteQuery" />
+       <string id="string68" value="OPMGetPublicKey" />
+       <string id="string69" value="OPMOpen" />
+       <string id="string70" value="OPMProcessCertificate" />
+       <string id="string71" value="Pause" />
+       <string id="string72" value="PerfTrackFirstFrameAfterPlayPresented" />
+       <string id="string73" value="PerfTrackPlay" />
+       <string id="string74" value="PerfTrackPlayCancelled" />
+       <string id="string75" value="PerfTrackVideoGlitch" />
+       <string id="string76" value="Play" />
+       <string id="string77" value="PlaybackRateChange" />
+       <string id="string78" value="Present_Flush" />
+       <string id="string79" value="PresentCompleted" />
+       <string id="string80" value="PresentDelay" />
+       <string id="string81" value="PresentedContent_ConfigurationState" />
+       <string id="string82" value="PresentedContent_DrainAsyncPresents" />
+       <string id="string83" value="PresentedContent_Flush" />
+       <string id="string84" value="PresentedContent_PresentationManagerLostTask" />
+       <string id="string85" value="PresentedContent_RetryPresent" />
+       <string id="string86" value="PresentedContentAsyncCallback" />
+       <string id="string87" value="PresentedContentD3DFence" />
+       <string id="string88" value="PresentedContentPresent" />
+       <string id="string89" value="PresentedContentPresentationHandler_BindTask" />
+       <string id="string90" value="PresentedContentPresentationHandler_Completed_IFlipTask" />
+       <string id="string91" value="PresentedContentPresentationHandler_CompletedTask" />
+       <string id="string92" value="PresentedContentPresentationHandler_CompositionPresentStat" />
+       <string id="string93" value="PresentedContentPresentationHandler_DCompStatTask" />
+       <string id="string94" value="PresentedContentPresentationHandler_EnableVSyncs" />
+       <string id="string95" value="PresentedContentPresentationHandler_FakePresentSubmittedTask" />
+       <string id="string96" value="PresentedContentPresentationHandler_GlitchDetectedTask" />
+       <string id="string97" value="PresentedContentPresentationHandler_GlitchDetectRenderMissingTask" />
+       <string id="string98" value="PresentedContentPresentationHandler_HWMTask" />
+       <string id="string99" value="PresentedContentPresentationHandler_InitializeQueueingModeTask" />
+       <string id="string100" value="PresentedContentPresentationHandler_PatchSkippedPresentTask" />
+       <string id="string101" value="PresentedContentPresentationHandler_PresentStatTask" />
+       <string id="string102" value="PresentedContentPresentationHandler_PresentSubmittedTask" />
+       <string id="string103" value="PresentedContentPresentationHandler_ProcessGlitchDetectTask" />
+       <string id="string104" value="PresentedContentPresentationHandler_QueueSkippedPresentTask" />
+       <string id="string105" value="PresentedContentPresentationHandler_ResourcesAllocatedTask" />
+       <string id="string106" value="PresentedContentPresentationHandler_RetiredResourceTask" />
+       <string id="string107" value="PresentedContentPresentationHandlerTask" />
+       <string id="string108" value="PresentedContentRegisterWakeFence" />
+       <string id="string109" value="PresentedFrame" />
+       <string id="string110" value="PresentFrame" />
+       <string id="string111" value="PresentFrameConvert" />
+       <string id="string112" value="PresentQueued" />
+       <string id="string113" value="PresentRestart" />
+       <string id="string114" value="PresentSleep" />
+       <string id="string115" value="PresentStats" />
+       <string id="string116" value="PresentSubmitted" />
+       <string id="string117" value="PresentTimeCritical" />
+       <string id="string118" value="PresentTimer" />
+       <string id="string119" value="ProcessFlipMode" />
+       <string id="string120" value="ProcessFrame" />
+       <string id="string121" value="ProcessIdleEDRTasks" />
+       <string id="string122" value="ProcessIdleTasks" />
+       <string id="string123" value="ProcessPolicyEventTask" />
+       <string id="string124" value="ProcessVSync" />
+       <string id="string125" value="ProfileCheck" />
+       <string id="string126" value="PruneHistory" />
+       <string id="string127" value="PurgedFrames" />
+       <string id="string128" value="QualityNotify" />
+       <string id="string129" value="QuantizeFrame" />
+       <string id="string130" value="RealtimeShift_Sample" />
+       <string id="string131" value="RealtimeShift_Status" />
+       <string id="string132" value="RemoveEntireChunk" />
+       <string id="string133" value="RequestNetwork" />
+       <string id="string134" value="RequestSample" />
+       <string id="string135" value="ResizedSwapchain" />
+       <string id="string136" value="Restore" />
+       <string id="string137" value="SampleReceived" />
+       <string id="string138" value="SaveImage" />
+       <string id="string139" value="ScrubbingState" />
+       <string id="string140" value="Seek" />
+       <string id="string141" value="SetGPUPriority" />
+       <string id="string142" value="SetHDRMetadata" />
+       <string id="string143" value="SetSourceOp" />
+       <string id="string144" value="SphericalVideoChanged" />
+       <string id="string145" value="SphericalVideoPropertiesChanged" />
+       <string id="string146" value="SplitMultiBuffer" />
+       <string id="string147" value="SubtitleQueued" />
+       <string id="string148" value="Suspend" />
+       <string id="string149" value="Teardown" />
+       <string id="string150" value="Telemetry" />
+       <string id="string151" value="TelemetryAssert" />
+       <string id="string152" value="TimedTextDtvCCSample" />
+       <string id="string153" value="TimedTextSendCue" />
+       <string id="string154" value="TrackLeakedStats" />
+       <string id="string155" value="TransferFrame" />
+       <string id="string156" value="TransferFrameRemote" />
+       <string id="string157" value="TriggeredGlitchTelemetryTracker" />
+       <string id="string158" value="UpdateDeadline" />
+       <string id="string159" value="UpdateGPUDeadline" />
+       <string id="string160" value="UpdateHistoryTask" />
+       <string id="string161" value="UpdateLongRunning" />
+       <string id="string162" value="UpdateRatioToPrimary" />
+       <string id="string163" value="UpdateVideo" />
+       <string id="string164" value="VideoFrameEarly" />
+       <string id="string165" value="VideoFrameGlitch" />
+       <string id="string166" value="Visible" />
+       <string id="string167" value="win:Info" />
+       <string id="string168" value="win:Start" />
+       <string id="string169" value="win:Stop" />
+       <string id="string170" value="WindowResizeOptimization" />
+       <string id="string171" value="YUVSwapchainConfig" />
+       <string id="string172" value="YUVSwapchainQueue" />
+       <string id="string173" value="YUVSwapchainQueueDrain" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

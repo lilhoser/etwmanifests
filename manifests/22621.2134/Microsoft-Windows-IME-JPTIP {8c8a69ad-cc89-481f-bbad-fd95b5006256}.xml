@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IME-JPTIP" name="Microsoft-Windows-IME-JPTIP" guid="{8c8a69ad-cc89-481f-bbad-fd95b5006256}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-JPTIP/Analytic" task="IME_InvokeCommand" opcode="win:Start"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-JPTIP/Analytic" task="IME_InvokeCommand" opcode="win:Stop"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-JPTIP/Analytic" task="PerfTrack_IME_JPN_HWKBD_CandUIProcess" opcode="win:Info" template="Args30_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-IME-JPTIP/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="104" name="IME_InvokeCommand" message="$(string.string104)">
+        </task>
+        <task value="105" name="PerfTrack_IME_JPN_HWKBD_CandUIProcess" message="$(string.string105)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args30_0">
+          <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IMEType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="IME_InvokeCommand" />
+       <string id="string1" value="Microsoft-Windows-IME-JPTIP" />
+       <string id="string2" value="Microsoft-Windows-IME-JPTIP/Analytic" />
+       <string id="string3" value="PerfTrack_IME_JPN_HWKBD_CandUIProcess" />
+       <string id="string4" value="win:Info" />
+       <string id="string5" value="win:Start" />
+       <string id="string6" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

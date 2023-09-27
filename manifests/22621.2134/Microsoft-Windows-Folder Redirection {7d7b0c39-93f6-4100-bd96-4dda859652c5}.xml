@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Folder Redirection" name="Microsoft-Windows-Folder Redirection" guid="{7d7b0c39-93f6-4100-bd96-4dda859652c5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="501" version="0" level="win:Informational"  channel="Application" template="Args501_0"/>
+        <event value="502" version="0" level="win:Error"  channel="Application" template="Args502_0"/>
+        <event value="503" version="0" level="win:Error"  channel="Application"/>
+        <event value="505" version="0" level="win:Error"  channel="Application" template="Args505_0"/>
+        <event value="506" version="0" level="win:Error"  channel="Application"/>
+        <event value="507" version="0" level="win:Error"  channel="Application"/>
+        <event value="508" version="0" level="win:Error"  channel="Application"/>
+        <event value="509" version="0" level="win:Error"  channel="Application" template="Args509_0"/>
+        <event value="510" version="0" level="win:Warning"  channel="Application"/>
+        <event value="511" version="0" level="win:Error"  channel="Application"/>
+        <event value="512" version="0" level="win:Informational"  channel="Application"/>
+        <event value="513" version="0" level="win:Error"  channel="Application"/>
+        <event value="514" version="0" level="win:Informational"  channel="Application" template="Args514_0"/>
+        <event value="515" version="0" level="win:Error"  channel="Application" template="Args515_0"/>
+        <event value="516" version="0" level="win:Informational"  channel="Application"/>
+        <event value="517" version="0" level="win:Error"  channel="Application"/>
+        <event value="1000" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational" template="Args1004_0"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational" template="Args1006_0"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1009" version="0" level="win:Warning"  channel="Microsoft-Windows-Folder Redirection/Operational" template="Args1009_0"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational" template="Args1010_0"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+        <event value="1012" version="0" level="win:Informational"  channel="Microsoft-Windows-Folder Redirection/Operational"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Folder Redirection/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args501_0">
+          <data name="FromFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ToFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args502_0">
+          <data name="FromFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ToFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args505_0">
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args509_0">
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args514_0">
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args515_0">
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="GPFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1004_0">
+          <data name="ConfigurationFile" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1006_0">
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ParentFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Group" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1009_0">
+          <data name="Error" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1010_0">
+          <data name="Result" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Microsoft-Windows-Folder Redirection" />
+       <string id="string2" value="Microsoft-Windows-Folder Redirection/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

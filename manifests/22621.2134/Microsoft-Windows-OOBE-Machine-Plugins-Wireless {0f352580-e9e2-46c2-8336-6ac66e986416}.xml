@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-OOBE-Machine-Plugins-Wireless" name="Microsoft-Windows-OOBE-Machine-Plugins-Wireless" guid="{0f352580-e9e2-46c2-8336-6ac66e986416}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5111" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-Machine-Plugins-Wireless/Diagnostic" task="WirelessPageVisibilityResult" opcode="win:Info" keywords="msoobe" template="Args5111_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-OOBE-Machine-Plugins-Wireless/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="msoobe" mask="0x1" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+        <task value="6107" name="WirelessPageVisibilityResult" message="$(string.string6107)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args5111_0">
+          <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-OOBE-Machine-Plugins-Wireless" />
+       <string id="string1" value="Microsoft-Windows-OOBE-Machine-Plugins-Wireless/Diagnostic" />
+       <string id="string2" value="msoobe" />
+       <string id="string3" value="win:Info" />
+       <string id="string4" value="WirelessPageVisibilityResult" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

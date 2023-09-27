@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-COM" name="Microsoft-Windows-COM" guid="{d4263c98-310c-4d97-ba39-b55354f08584}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-COM/Analytic" opcode="win:Info" keywords="COM_CLASSNOTREG_ERROR" template="Args1_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-COM/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="COM_CLASSNOTREG_ERROR" mask="0x10" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="CLSID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="COM_CLASSNOTREG_ERROR" />
+       <string id="string1" value="Microsoft-Windows-COM" />
+       <string id="string2" value="Microsoft-Windows-COM/Analytic" />
+       <string id="string3" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

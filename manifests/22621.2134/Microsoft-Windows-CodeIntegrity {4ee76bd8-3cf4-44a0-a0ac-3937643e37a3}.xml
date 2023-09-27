@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-CodeIntegrity" name="Microsoft-Windows-CodeIntegrity" guid="{4ee76bd8-3cf4-44a0-a0ac-3937643e37a3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="3001" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="UnsignedDriverLoaded" template="Args3001_0"/>
+        <event value="3002" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PageHashNotFound"/>
+        <event value="3003" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PageHashNotFound_DbgAttached"/>
+        <event value="3004" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="FileHashNotFound"/>
+        <event value="3005" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="FileHashNotFound_DbgAttached"/>
+        <event value="3006" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="PageHashFoundInCatalog" opcode="win:Info" template="Args3006_0"/>
+        <event value="3007" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="PageHashFoundInImageCertificate" opcode="win:Info"/>
+        <event value="3008" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="FileHashFoundInCatalog" opcode="win:Info"/>
+        <event value="3009" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="FileHashFoundInImageCertificate" opcode="win:Info"/>
+        <event value="3010" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="LoadCatalog" opcode="Failed"/>
+        <event value="3011" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="LoadCatalog" opcode="win:Stop"/>
+        <event value="3012" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="LoadCatalog" opcode="win:Start"/>
+        <event value="3013" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ReloadCatalogs" opcode="win:Start"/>
+        <event value="3014" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ReloadCatalogs" opcode="win:Stop" template="Args3014_0"/>
+        <event value="3015" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateFileHash" opcode="win:Start"/>
+        <event value="3016" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateFileHash" opcode="win:Stop"/>
+        <event value="3017" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidatePageHash" opcode="win:Start"/>
+        <event value="3018" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidatePageHash" opcode="win:Stop"/>
+        <event value="3019" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="LoadCatalogCache" opcode="win:Start"/>
+        <event value="3020" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="LoadCatalogCache" opcode="win:Stop"/>
+        <event value="3021" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedDriverLoaded"/>
+        <event value="3022" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedDriverLoadedInDebugger"/>
+        <event value="3023" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedDriverNotLoaded"/>
+        <event value="3024" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="SaveCatalogCache" opcode="UpdateCatalogCacheFailed" template="Args3024_0"/>
+        <event value="3025" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="CreateSection" opcode="UnsignedDriverLoaded"/>
+        <event value="3026" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="LoadCatalog" opcode="Failed"/>
+        <event value="3027" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="LoadCatalogCache" opcode="win:Info"/>
+        <event value="3028" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SaveCatalogCache" opcode="win:Start"/>
+        <event value="3030" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SaveCatalogCache" opcode="win:Info"/>
+        <event value="3032" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageLoaded"/>
+        <event value="3033" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PolicyFailure" template="Args3033_0"/>
+        <event value="3034" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PolicyFailure"/>
+        <event value="3035" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageLoadedInDebugger"/>
+        <event value="3036" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageNotLoaded"/>
+        <event value="3037" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="UnsignedImageLoaded"/>
+        <event value="3038" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateImageHeader" opcode="win:Start"/>
+        <event value="3040" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="GetFileCache" opcode="win:Start"/>
+        <event value="3042" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Start"/>
+        <event value="3050" version="0" level="Log Always"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="GetFileCache" opcode="win:Info"/>
+        <event value="3051" version="0" level="Log Always"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="GetFileCache" opcode="win:Info"/>
+        <event value="3052" version="0" level="Log Always"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="GetFileCache" opcode="win:Info"/>
+        <event value="3054" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Start"/>
+        <event value="3055" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Stop"/>
+        <event value="3057" version="0" level="Log Always"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="GetFileCache" opcode="win:Info"/>
+        <event value="3058" version="0" level="Log Always"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="GetFileCache" opcode="win:Info"/>
+        <event value="3059" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetCatalogHint" opcode="win:Info"/>
+        <event value="3060" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="GetCatalogHint" opcode="win:Info"/>
+        <event value="3061" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetCatalogHint" opcode="win:Info"/>
+        <event value="3062" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="GetCatalogHint" opcode="win:Info"/>
+        <event value="3063" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SdlRequirement" template="Args3063_0"/>
+        <event value="3064" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="CreateSection" opcode="win:Info"/>
+        <event value="3065" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SdlRequirement"/>
+        <event value="3066" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PolicyFailure"/>
+        <event value="3067" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3068" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3069" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="LoadWeakCryptoPolicies" opcode="LoadWeakCryptoRegistryValueFailed"/>
+        <event value="3070" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="LoadWeakCryptoPolicies" opcode="LoadWeakCryptoRegistryPolicyFailed"/>
+        <event value="3071" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="LoadWeakCryptoPolicies" opcode="LoadWeakCryptoPoliciesFailed"/>
+        <event value="3072" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="HvciUnalignedSection"/>
+        <event value="3073" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="HvciWritableExecutableSection"/>
+        <event value="3074" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidatePageHash" opcode="HvciPageVerificationFailure"/>
+        <event value="3075" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateSIPolicy" opcode="PolicyPerformance" template="Args3075_0"/>
+        <event value="3076" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored" template="Args3076_0"/>
+        <event value="3077" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3078" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3079" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3082" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WhqlEnforcement" opcode="WhqlFailure"/>
+        <event value="3083" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WhqlEnforcement" opcode="WhqlFailure"/>
+        <event value="3084" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WhqlEnforcement" opcode="WhqlSettings" template="Args3084_0"/>
+        <event value="3085" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WhqlEnforcement" opcode="WhqlSettings"/>
+        <event value="3086" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PolicyFailure"/>
+        <event value="3087" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="HvciAuditFailure"/>
+        <event value="3088" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="CreateSection" opcode="SmartlockerVerbose" template="Args3088_0"/>
+        <event value="3089" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SignatureInformation" template="Args3089_0"/>
+        <event value="3090" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SmartlockerVerbose"/>
+        <event value="3091" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SmartlockerVerbose"/>
+        <event value="3092" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SmartlockerVerbose"/>
+        <event value="3095" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp" template="Args3095_0"/>
+        <event value="3096" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3097" version="0" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3099" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3100" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3101" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp" template="Args3101_0"/>
+        <event value="3102" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp" template="Args3102_0"/>
+        <event value="3103" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp" template="Args3103_0"/>
+        <event value="3104" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageNotLoaded"/>
+        <event value="3105" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp" template="Args3105_0"/>
+        <event value="3106" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Info"/>
+        <event value="3107" version="0" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Info"/>
+        <event value="3108" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WindowsModeSwitchTask" opcode="WindowsModeSwitchOp" template="Args3108_0"/>
+        <event value="3109" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WindowsModeSwitchTask" opcode="WindowsModeSwitchOp"/>
+        <event value="3110" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="WindowsModeSwitchTask" opcode="WindowsModeSwitchOp"/>
+        <event value="3111" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="HvciAuditFailure" template="Args3111_0"/>
+        <event value="3112" version="0" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="AllowExpiredAndRevokedCertWithUMCI"/>
+        <event value="3113" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3114" version="0" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="DynamicCodeTrustTask" opcode="DynamicCodeTrustOp" template="Args3114_0"/>
+        <event value="3001" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="UnsignedDriverLoaded" template="Args3001_1"/>
+        <event value="3002" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PageHashNotFound"/>
+        <event value="3003" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="PageHashNotFound_DbgAttached"/>
+        <event value="3004" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="FileHashNotFound"/>
+        <event value="3005" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="FileHashNotFound_DbgAttached"/>
+        <event value="3010" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="LoadCatalog" opcode="Failed"/>
+        <event value="3014" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ReloadCatalogs" opcode="win:Stop"/>
+        <event value="3016" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateFileHash" opcode="win:Stop"/>
+        <event value="3018" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidatePageHash" opcode="win:Stop"/>
+        <event value="3020" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="LoadCatalogCache" opcode="win:Stop"/>
+        <event value="3021" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedDriverLoaded"/>
+        <event value="3022" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedDriverLoadedInDebugger"/>
+        <event value="3023" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedDriverNotLoaded"/>
+        <event value="3029" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SaveCatalogCache" opcode="win:Stop"/>
+        <event value="3032" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageLoaded"/>
+        <event value="3035" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageLoadedInDebugger"/>
+        <event value="3036" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="RevokedImageNotLoaded"/>
+        <event value="3037" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="UnsignedImageLoaded"/>
+        <event value="3038" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateImageHeader" opcode="win:Start"/>
+        <event value="3039" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateImageHeader" opcode="win:Stop"/>
+        <event value="3043" version="1" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Stop" template="Args3043_1"/>
+        <event value="3076" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored" template="Args3076_1"/>
+        <event value="3077" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3078" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3079" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3087" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="HvciAuditFailure"/>
+        <event value="3089" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SignatureInformation" template="Args3089_1"/>
+        <event value="3091" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="CreateSection" opcode="SmartlockerVerbose"/>
+        <event value="3092" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="CreateSection" opcode="SmartlockerVerbose"/>
+        <event value="3095" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp" template="Args3095_1"/>
+        <event value="3096" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3097" version="1" level="win:Warning"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3099" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3100" version="1" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3103" version="1" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="RefreshPolicyTask" opcode="RefreshPolicyOp"/>
+        <event value="3038" version="2" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="ValidateImageHeader" opcode="win:Start"/>
+        <event value="3041" version="2" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="GetFileCache" opcode="win:Stop"/>
+        <event value="3043" version="2" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="SetFileCache" opcode="win:Stop" template="Args3043_2"/>
+        <event value="3076" version="2" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored" template="Args3076_2"/>
+        <event value="3077" version="2" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3078" version="2" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3079" version="2" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="2" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="2" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3089" version="2" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="CreateSection" opcode="SignatureInformation" template="Args3089_2"/>
+        <event value="3041" version="3" level="win:Verbose"  channel="Microsoft-Windows-CodeIntegrity/Verbose" task="GetFileCache" opcode="win:Stop"/>
+        <event value="3076" version="3" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored" template="Args3076_3"/>
+        <event value="3077" version="3" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3078" version="3" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3079" version="3" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="3" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="3" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3076" version="4" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored" template="Args3076_4"/>
+        <event value="3077" version="4" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="4" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="4" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3076" version="5" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored" template="Args3076_5"/>
+        <event value="3077" version="5" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="5" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="5" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="6" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="6" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="7" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="7" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="8" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="8" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="9" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="9" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="10" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="10" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="11" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="11" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+        <event value="3080" version="12" level="win:Informational"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="SiPolicyFailureIgnored"/>
+        <event value="3081" version="12" level="win:Error"  channel="Microsoft-Windows-CodeIntegrity/Operational" task="ValidateSIPolicy" opcode="PolicyFailure"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-CodeIntegrity/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-CodeIntegrity/Verbose" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="CreateSection" message="$(string.string1)">
+          <opcodes>
+           <opcode value="101" name="UnsignedDriverLoaded" message="$(string.string47)"/>
+           <opcode value="102" name="PageHashNotFound" message="$(string.string26)"/>
+           <opcode value="103" name="PageHashNotFound_DbgAttached" message="$(string.string27)"/>
+           <opcode value="104" name="FileHashNotFound" message="$(string.string7)"/>
+           <opcode value="105" name="FileHashNotFound_DbgAttached" message="$(string.string8)"/>
+           <opcode value="106" name="RevokedDriverLoaded" message="$(string.string33)"/>
+           <opcode value="107" name="RevokedDriverLoadedInDebugger" message="$(string.string34)"/>
+           <opcode value="108" name="RevokedDriverNotLoaded" message="$(string.string35)"/>
+           <opcode value="113" name="RevokedImageLoaded" message="$(string.string36)"/>
+           <opcode value="111" name="PolicyFailure" message="$(string.string28)"/>
+           <opcode value="114" name="RevokedImageLoadedInDebugger" message="$(string.string37)"/>
+           <opcode value="115" name="RevokedImageNotLoaded" message="$(string.string38)"/>
+           <opcode value="112" name="UnsignedImageLoaded" message="$(string.string48)"/>
+           <opcode value="116" name="SdlRequirement" message="$(string.string40)"/>
+           <opcode value="122" name="HvciUnalignedSection" message="$(string.string13)"/>
+           <opcode value="123" name="HvciWritableExecutableSection" message="$(string.string14)"/>
+           <opcode value="128" name="HvciAuditFailure" message="$(string.string11)"/>
+           <opcode value="129" name="SmartlockerVerbose" message="$(string.string46)"/>
+           <opcode value="130" name="SignatureInformation" message="$(string.string44)"/>
+           <opcode value="133" name="AllowExpiredAndRevokedCertWithUMCI" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="LoadCatalog" message="$(string.string2)">
+          <opcodes>
+           <opcode value="100" name="Failed" message="$(string.string4)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="ReloadCatalogs" message="$(string.string3)">
+        </task>
+        <task value="4" name="ValidateFileHash" message="$(string.string4)">
+        </task>
+        <task value="5" name="ValidatePageHash" message="$(string.string5)">
+          <opcodes>
+           <opcode value="124" name="HvciPageVerificationFailure" message="$(string.string12)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="PageHashFoundInCatalog" message="$(string.string6)">
+        </task>
+        <task value="7" name="PageHashFoundInImageCertificate" message="$(string.string7)">
+        </task>
+        <task value="8" name="FileHashFoundInCatalog" message="$(string.string8)">
+        </task>
+        <task value="9" name="FileHashFoundInImageCertificate" message="$(string.string9)">
+        </task>
+        <task value="10" name="LoadCatalogCache" message="$(string.string10)">
+        </task>
+        <task value="11" name="SaveCatalogCache" message="$(string.string11)">
+          <opcodes>
+           <opcode value="109" name="UpdateCatalogCacheFailed" message="$(string.string49)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="ValidateImageHeader" message="$(string.string13)">
+        </task>
+        <task value="14" name="GetFileCache" message="$(string.string14)">
+        </task>
+        <task value="15" name="SetFileCache" message="$(string.string15)">
+        </task>
+        <task value="16" name="SetCatalogHint" message="$(string.string16)">
+        </task>
+        <task value="17" name="GetCatalogHint" message="$(string.string17)">
+        </task>
+        <task value="18" name="ValidateSIPolicy" message="$(string.string18)">
+          <opcodes>
+           <opcode value="118" name="SiPolicyFailureIgnored" message="$(string.string45)"/>
+           <opcode value="111" name="PolicyFailure" message="$(string.string28)"/>
+           <opcode value="125" name="PolicyPerformance" message="$(string.string29)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="LoadWeakCryptoPolicies" message="$(string.string19)">
+          <opcodes>
+           <opcode value="119" name="LoadWeakCryptoRegistryValueFailed" message="$(string.string20)"/>
+           <opcode value="120" name="LoadWeakCryptoRegistryPolicyFailed" message="$(string.string19)"/>
+           <opcode value="121" name="LoadWeakCryptoPoliciesFailed" message="$(string.string18)"/>
+          </opcodes>
+        </task>
+        <task value="20" name="WhqlEnforcement" message="$(string.string20)">
+          <opcodes>
+           <opcode value="126" name="WhqlFailure" message="$(string.string55)"/>
+           <opcode value="127" name="WhqlSettings" message="$(string.string56)"/>
+          </opcodes>
+        </task>
+        <task value="21" name="RefreshPolicyTask" message="$(string.string21)">
+          <opcodes>
+           <opcode value="131" name="RefreshPolicyOp" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+        <task value="22" name="WindowsModeSwitchTask" message="$(string.string22)">
+          <opcodes>
+           <opcode value="132" name="WindowsModeSwitchOp" message="$(string.string60)"/>
+          </opcodes>
+        </task>
+        <task value="23" name="DynamicCodeTrustTask" message="$(string.string23)">
+          <opcodes>
+           <opcode value="134" name="DynamicCodeTrustOp" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="100" name="Failed" message="$(string.string4)"/>
+        <opcode value="101" name="UnsignedDriverLoaded" message="$(string.string47)"/>
+        <opcode value="102" name="PageHashNotFound" message="$(string.string26)"/>
+        <opcode value="103" name="PageHashNotFound_DbgAttached" message="$(string.string27)"/>
+        <opcode value="104" name="FileHashNotFound" message="$(string.string7)"/>
+        <opcode value="105" name="FileHashNotFound_DbgAttached" message="$(string.string8)"/>
+        <opcode value="106" name="RevokedDriverLoaded" message="$(string.string33)"/>
+        <opcode value="107" name="RevokedDriverLoadedInDebugger" message="$(string.string34)"/>
+        <opcode value="108" name="RevokedDriverNotLoaded" message="$(string.string35)"/>
+        <opcode value="109" name="UpdateCatalogCacheFailed" message="$(string.string49)"/>
+        <opcode value="111" name="PolicyFailure" message="$(string.string28)"/>
+        <opcode value="112" name="UnsignedImageLoaded" message="$(string.string48)"/>
+        <opcode value="113" name="RevokedImageLoaded" message="$(string.string36)"/>
+        <opcode value="114" name="RevokedImageLoadedInDebugger" message="$(string.string37)"/>
+        <opcode value="115" name="RevokedImageNotLoaded" message="$(string.string38)"/>
+        <opcode value="116" name="SdlRequirement" message="$(string.string40)"/>
+        <opcode value="117" name="SdlRequirementIgnored" message="$(string.string41)"/>
+        <opcode value="118" name="SiPolicyFailureIgnored" message="$(string.string45)"/>
+        <opcode value="119" name="LoadWeakCryptoRegistryValueFailed" message="$(string.string20)"/>
+        <opcode value="120" name="LoadWeakCryptoRegistryPolicyFailed" message="$(string.string19)"/>
+        <opcode value="121" name="LoadWeakCryptoPoliciesFailed" message="$(string.string18)"/>
+        <opcode value="122" name="HvciUnalignedSection" message="$(string.string13)"/>
+        <opcode value="123" name="HvciWritableExecutableSection" message="$(string.string14)"/>
+        <opcode value="124" name="HvciPageVerificationFailure" message="$(string.string12)"/>
+        <opcode value="125" name="PolicyPerformance" message="$(string.string29)"/>
+        <opcode value="126" name="WhqlFailure" message="$(string.string55)"/>
+        <opcode value="127" name="WhqlSettings" message="$(string.string56)"/>
+        <opcode value="128" name="HvciAuditFailure" message="$(string.string11)"/>
+        <opcode value="129" name="SmartlockerVerbose" message="$(string.string46)"/>
+        <opcode value="130" name="SignatureInformation" message="$(string.string44)"/>
+        <opcode value="131" name="RefreshPolicyOp" message="$(string.string30)"/>
+        <opcode value="132" name="WindowsModeSwitchOp" message="$(string.string60)"/>
+        <opcode value="133" name="AllowExpiredAndRevokedCertWithUMCI" message="$(string.string0)"/>
+        <opcode value="134" name="DynamicCodeTrustOp" message="$(string.string2)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args3001_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+        </template>
+        <template tid="Args3006_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength" />
+        </template>
+        <template tid="Args3014_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3024_0">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3033_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3063_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="RequirementType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3075_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="RequestedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidatedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ElapsedTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PolicyElapsedTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PercentageTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3076_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size" />
+          <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size" />
+          <data name="USN" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3084_0">
+          <data name="Settings" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Exemption" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args3088_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="StatusCode" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ManagedInstallerEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PassesManagedInstaller" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SmartlockerEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PassesSmartlocker" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DefenderTrust" inType="win:Int32" outType="xs:int"  />
+          <data name="AuditEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength" />
+        </template>
+        <template tid="Args3089_0">
+          <data name="TotalSignatureCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Hash" inType="win:Binary" outType="xs:hexBinary" length="Hash Size" />
+          <data name="SignatureType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidatedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VerificationError" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PolicyBits" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NotValidBefore" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="NotValidAfter" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="PublisherNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PublisherName" inType="win:UnicodeString" outType="xs:string" length="PublisherNameLength" />
+          <data name="IssuerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IssuerName" inType="win:UnicodeString" outType="xs:string" length="IssuerNameLength" />
+        </template>
+        <template tid="Args3095_0">
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength" />
+          <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize" />
+        </template>
+        <template tid="Args3101_0">
+          <data name="NumberOfPolicies" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3102_0">
+          <data name="NumberOfPolicies" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3103_0">
+          <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3105_0">
+          <data name="PolicyGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args3108_0">
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="FromMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ToMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3111_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="HVCI Audit Failures" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+        </template>
+        <template tid="Args3114_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SHA1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1HashSize" />
+          <data name="SHA256HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256HashSize" />
+          <data name="SHA256FlatHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256FlatHash" inType="win:Binary" outType="xs:hexBinary" length="SHA256FlatHashSize" />
+        </template>
+        <template tid="Args3001_1">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="SecureRequired" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="RequestedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+        </template>
+        <template tid="Args3043_1">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CachedFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CacheSource" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CachedPolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args3076_1">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size" />
+          <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size" />
+          <data name="USN" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength" />
+        </template>
+        <template tid="Args3089_1">
+          <data name="TotalSignatureCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Hash" inType="win:Binary" outType="xs:hexBinary" length="Hash Size" />
+          <data name="PageHash" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SignatureType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidatedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VerificationError" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PolicyBits" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NotValidBefore" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="NotValidAfter" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="PublisherNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PublisherName" inType="win:UnicodeString" outType="xs:string" length="PublisherNameLength" />
+          <data name="IssuerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IssuerName" inType="win:UnicodeString" outType="xs:string" length="IssuerNameLength" />
+          <data name="PublisherTBSHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PublisherTBSHash" inType="win:Binary" outType="xs:hexBinary" length="PublisherTBSHashSize" />
+          <data name="IssuerTBSHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IssuerTBSHash" inType="win:Binary" outType="xs:hexBinary" length="IssuerTBSHashSize" />
+        </template>
+        <template tid="Args3095_1">
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength" />
+          <data name="PolicyGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Options" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize" />
+        </template>
+        <template tid="Args3043_2">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CachedFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CacheSource" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CachedPolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateData" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args3076_2">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size" />
+          <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size" />
+          <data name="USN" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength" />
+          <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize" />
+        </template>
+        <template tid="Args3089_2">
+          <data name="TotalSignatureCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CacheState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Hash" inType="win:Binary" outType="xs:hexBinary" length="Hash Size" />
+          <data name="PageHash" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SignatureType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidatedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VerificationError" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PolicyBits" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NotValidBefore" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="NotValidAfter" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="PublisherNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PublisherName" inType="win:UnicodeString" outType="xs:string" length="PublisherNameLength" />
+          <data name="IssuerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IssuerName" inType="win:UnicodeString" outType="xs:string" length="IssuerNameLength" />
+          <data name="PublisherTBSHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PublisherTBSHash" inType="win:Binary" outType="xs:hexBinary" length="PublisherTBSHashSize" />
+          <data name="IssuerTBSHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IssuerTBSHash" inType="win:Binary" outType="xs:hexBinary" length="IssuerTBSHashSize" />
+        </template>
+        <template tid="Args3076_3">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size" />
+          <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size" />
+          <data name="USN" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength" />
+          <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize" />
+          <data name="OriginalFileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string" length="OriginalFileNameLength" />
+          <data name="InternalNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InternalName" inType="win:UnicodeString" outType="xs:string" length="InternalNameLength" />
+          <data name="FileDescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileDescription" inType="win:UnicodeString" outType="xs:string" length="FileDescriptionLength" />
+          <data name="ProductNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductName" inType="win:UnicodeString" outType="xs:string" length="ProductNameLength" />
+          <data name="FileVersion" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args3076_4">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size" />
+          <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size" />
+          <data name="USN" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength" />
+          <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize" />
+          <data name="OriginalFileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string" length="OriginalFileNameLength" />
+          <data name="InternalNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InternalName" inType="win:UnicodeString" outType="xs:string" length="InternalNameLength" />
+          <data name="FileDescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileDescription" inType="win:UnicodeString" outType="xs:string" length="FileDescriptionLength" />
+          <data name="ProductNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductName" inType="win:UnicodeString" outType="xs:string" length="ProductNameLength" />
+          <data name="FileVersion" inType="win:AnsiString" outType="xs:string"  />
+          <data name="PolicyGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args3076_5">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength" />
+          <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size" />
+          <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size" />
+          <data name="SHA1 Flat Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA1 Flat Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Flat Hash Size" />
+          <data name="SHA256 Flat Hash Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SHA256 Flat Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Flat Hash Size" />
+          <data name="USN" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength" />
+          <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength" />
+          <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize" />
+          <data name="OriginalFileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string" length="OriginalFileNameLength" />
+          <data name="InternalNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InternalName" inType="win:UnicodeString" outType="xs:string" length="InternalNameLength" />
+          <data name="FileDescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileDescription" inType="win:UnicodeString" outType="xs:string" length="FileDescriptionLength" />
+          <data name="ProductNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductName" inType="win:UnicodeString" outType="xs:string" length="ProductNameLength" />
+          <data name="FileVersion" inType="win:AnsiString" outType="xs:string"  />
+          <data name="PolicyGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UserWriteable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PackageFamilyNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string" length="PackageFamilyNameLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AllowExpiredAndRevokedCertWithUMCI" />
+       <string id="string1" value="CreateSection" />
+       <string id="string2" value="DynamicCodeTrustOp" />
+       <string id="string3" value="DynamicCodeTrustTask" />
+       <string id="string4" value="Failed" />
+       <string id="string5" value="FileHashFoundInCatalog" />
+       <string id="string6" value="FileHashFoundInImageCertificate" />
+       <string id="string7" value="FileHashNotFound" />
+       <string id="string8" value="FileHashNotFound_DbgAttached" />
+       <string id="string9" value="GetCatalogHint" />
+       <string id="string10" value="GetFileCache" />
+       <string id="string11" value="HvciAuditFailure" />
+       <string id="string12" value="HvciPageVerificationFailure" />
+       <string id="string13" value="HvciUnalignedSection" />
+       <string id="string14" value="HvciWritableExecutableSection" />
+       <string id="string15" value="LoadCatalog" />
+       <string id="string16" value="LoadCatalogCache" />
+       <string id="string17" value="LoadWeakCryptoPolicies" />
+       <string id="string18" value="LoadWeakCryptoPoliciesFailed" />
+       <string id="string19" value="LoadWeakCryptoRegistryPolicyFailed" />
+       <string id="string20" value="LoadWeakCryptoRegistryValueFailed" />
+       <string id="string21" value="Microsoft-Windows-CodeIntegrity" />
+       <string id="string22" value="Microsoft-Windows-CodeIntegrity/Operational" />
+       <string id="string23" value="Microsoft-Windows-CodeIntegrity/Verbose" />
+       <string id="string24" value="PageHashFoundInCatalog" />
+       <string id="string25" value="PageHashFoundInImageCertificate" />
+       <string id="string26" value="PageHashNotFound" />
+       <string id="string27" value="PageHashNotFound_DbgAttached" />
+       <string id="string28" value="PolicyFailure" />
+       <string id="string29" value="PolicyPerformance" />
+       <string id="string30" value="RefreshPolicyOp" />
+       <string id="string31" value="RefreshPolicyTask" />
+       <string id="string32" value="ReloadCatalogs" />
+       <string id="string33" value="RevokedDriverLoaded" />
+       <string id="string34" value="RevokedDriverLoadedInDebugger" />
+       <string id="string35" value="RevokedDriverNotLoaded" />
+       <string id="string36" value="RevokedImageLoaded" />
+       <string id="string37" value="RevokedImageLoadedInDebugger" />
+       <string id="string38" value="RevokedImageNotLoaded" />
+       <string id="string39" value="SaveCatalogCache" />
+       <string id="string40" value="SdlRequirement" />
+       <string id="string41" value="SdlRequirementIgnored" />
+       <string id="string42" value="SetCatalogHint" />
+       <string id="string43" value="SetFileCache" />
+       <string id="string44" value="SignatureInformation" />
+       <string id="string45" value="SiPolicyFailureIgnored" />
+       <string id="string46" value="SmartlockerVerbose" />
+       <string id="string47" value="UnsignedDriverLoaded" />
+       <string id="string48" value="UnsignedImageLoaded" />
+       <string id="string49" value="UpdateCatalogCacheFailed" />
+       <string id="string50" value="ValidateFileHash" />
+       <string id="string51" value="ValidateImageHeader" />
+       <string id="string52" value="ValidatePageHash" />
+       <string id="string53" value="ValidateSIPolicy" />
+       <string id="string54" value="WhqlEnforcement" />
+       <string id="string55" value="WhqlFailure" />
+       <string id="string56" value="WhqlSettings" />
+       <string id="string57" value="win:Info" />
+       <string id="string58" value="win:Start" />
+       <string id="string59" value="win:Stop" />
+       <string id="string60" value="WindowsModeSwitchOp" />
+       <string id="string61" value="WindowsModeSwitchTask" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

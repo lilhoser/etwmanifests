@@ -1,0 +1,2130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MediaFoundation-Performance" name="Microsoft-Windows-MediaFoundation-Performance" guid="{f404b94e-27e0-4384-bfe8-1d8d390b0aa3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="3062" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="OptimizationFlags_PerformanceTask" opcode="win:Info" template="Args3062_0"/>
+        <event value="3063" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="CascadedScalingTask" opcode="win:Info" template="Args3063_0"/>
+        <event value="3067" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PerfTrack_Audio_Capture_Start_Request" opcode="win:Info" template="Args3067_0"/>
+        <event value="3068" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PerfTrack_Video_Capture_Start_Request" opcode="win:Info"/>
+        <event value="3069" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PerfTrack_Audio_Capture_First_Sample_Received" opcode="win:Info"/>
+        <event value="3070" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PerfTrack_Video_Capture_First_Sample_Received" opcode="win:Info"/>
+        <event value="3071" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MediaProc_Dynamic_Topology_Change" opcode="win:Start" template="Args3071_0"/>
+        <event value="3072" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MediaProc_Dynamic_Topology_Change" opcode="win:Stop" template="Args3072_0"/>
+        <event value="3073" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MediaProc_Dynamic_Transform_Removal" opcode="win:Start"/>
+        <event value="3074" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MediaProc_Dynamic_Transform_Removal" opcode="win:Stop"/>
+        <event value="3075" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MediaProc_Dynamic_Transform_Insertion" opcode="win:Info"/>
+        <event value="3076" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MediaProc_SinkTriggered_Format_Change" opcode="win:Info"/>
+        <event value="4000" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Object" opcode="win:Start" template="Args4000_0"/>
+        <event value="4001" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Object" opcode="win:Stop"/>
+        <event value="4002" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Starvation" opcode="win:Info" template="Args4002_0"/>
+        <event value="4003" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Video_Frame_Glitch" opcode="win:Info" template="Args4003_0"/>
+        <event value="4004" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Evr_Queue" opcode="win:Info" template="Args4004_0"/>
+        <event value="4005" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Evr_DWMDequeue" opcode="win:Info" template="Args4005_0"/>
+        <event value="4006" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Evr_Present" opcode="win:Info" template="Args4006_0"/>
+        <event value="4007" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Evr_Monitor_Estimate" opcode="win:Info" template="Args4007_0"/>
+        <event value="4008" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Evr_Sleep" opcode="win:Info" template="Args4008_0"/>
+        <event value="4009" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Data_Drop" opcode="win:Info" template="Args4009_0"/>
+        <event value="4010" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Clock" opcode="win:Info" keywords="HighCostEvent" template="Args4010_0"/>
+        <event value="4011" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Predicted_Video_Sample_Time" opcode="win:Info"/>
+        <event value="4012" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="New_Stream" opcode="win:Info" template="Args4012_0"/>
+        <event value="4013" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Type_Change" opcode="win:Info" template="Args4013_0"/>
+        <event value="4014" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Transform_Create" opcode="win:Info" template="Args4014_0"/>
+        <event value="4015" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Buffer" opcode="Input" template="Args4015_0"/>
+        <event value="4016" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Buffer" opcode="Output"/>
+        <event value="4017" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Buffer" opcode="Queued"/>
+        <event value="4018" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Buffer" opcode="Dropped"/>
+        <event value="4019" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Process" opcode="Input" template="Args4019_0"/>
+        <event value="4020" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Process" opcode="Output"/>
+        <event value="4021" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="APOProcess" opcode="win:Info"/>
+        <event value="4022" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Unusual_Streaming_Event" opcode="win:Info" template="Args4022_0"/>
+        <event value="4023" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="File_Open" opcode="win:Info" template="Args4023_0"/>
+        <event value="4024" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="IORead_Request" opcode="win:Start" template="Args4024_0"/>
+        <event value="4025" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="IOWrite_Request" opcode="win:Start"/>
+        <event value="4026" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="IORead_Request" opcode="win:Stop"/>
+        <event value="4027" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="IOWrite_Request" opcode="win:Stop"/>
+        <event value="4028" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Allocate_Sample" opcode="win:Info" template="Args4028_0"/>
+        <event value="4029" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Render_Sample_Receive_Sample" opcode="win:Info"/>
+        <event value="4030" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Render" opcode="win:Start"/>
+        <event value="4031" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Render" opcode="win:Stop"/>
+        <event value="4032" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Start_Mix" opcode="win:Start"/>
+        <event value="4033" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Mix" opcode="win:Stop"/>
+        <event value="4034" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Decode" opcode="win:Start"/>
+        <event value="4035" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Decode" opcode="win:Stop"/>
+        <event value="4036" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Deinterlace" opcode="win:Start"/>
+        <event value="4037" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Deinterlace" opcode="win:Stop"/>
+        <event value="4038" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Procamp" opcode="win:Start"/>
+        <event value="4039" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Procamp" opcode="win:Stop"/>
+        <event value="4040" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_FRC" opcode="win:Start"/>
+        <event value="4041" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_FRC" opcode="win:Stop"/>
+        <event value="4042" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_MID_Render" opcode="win:Info"/>
+        <event value="4043" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_MAP_Render" opcode="win:Info"/>
+        <event value="4044" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Render_Sample_Actual_Render" opcode="win:Info"/>
+        <event value="4045" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Renderer_Buffer_Fullness" opcode="win:Info" template="Args4045_0"/>
+        <event value="4046" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="State_Change" opcode="Start"/>
+        <event value="4047" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="State_Change" opcode="Stop"/>
+        <event value="4048" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="State_Change" opcode="Pause"/>
+        <event value="4049" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Topo_Loader_Load" opcode="win:Start"/>
+        <event value="4050" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Topo_Loader_Load" opcode="win:Stop"/>
+        <event value="4051" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Topo_Loader_Create_MFT" opcode="win:Start"/>
+        <event value="4052" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Topo_Loader_Create_MFT" opcode="win:Stop"/>
+        <event value="4053" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Packet_Sink_Lost_Packet" opcode="win:Info" template="Args4053_0"/>
+        <event value="4054" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Packet_Recover_RTX" opcode="win:Info"/>
+        <event value="4055" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Packet_Recover_FEC" opcode="win:Info"/>
+        <event value="4056" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Read_Sample" opcode="win:Start" template="Args4056_0"/>
+        <event value="4057" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Read_Sample" opcode="win:Stop"/>
+        <event value="4058" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Write_Sample" opcode="win:Start"/>
+        <event value="4059" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Write_Sample" opcode="win:Stop"/>
+        <event value="4060" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Seek" opcode="win:Start"/>
+        <event value="4061" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Seek" opcode="win:Stop"/>
+        <event value="4062" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Trim" opcode="win:Start"/>
+        <event value="4063" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Cache_Trim" opcode="win:Stop"/>
+        <event value="4064" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Platform_Get_Host_By_Name" opcode="win:Start" template="Args4064_0"/>
+        <event value="4065" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Platform_Get_Host_By_Name" opcode="win:Stop"/>
+        <event value="4066" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Send_Request" opcode="win:Start" template="Args4066_0"/>
+        <event value="4067" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Send_Request" opcode="win:Stop"/>
+        <event value="4068" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Send_Response" opcode="win:Start"/>
+        <event value="4069" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Send_Response" opcode="win:Stop"/>
+        <event value="4070" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Receive_Request" opcode="win:Start"/>
+        <event value="4071" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Receive_Request" opcode="win:Stop"/>
+        <event value="4072" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Receive_Request" opcode="win:Info"/>
+        <event value="4073" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Open" opcode="win:Start"/>
+        <event value="4074" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Open" opcode="win:Stop"/>
+        <event value="4075" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Connect" opcode="win:Start"/>
+        <event value="4076" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Connect" opcode="win:Stop"/>
+        <event value="4077" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Read" opcode="win:Start"/>
+        <event value="4078" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Read" opcode="win:Stop"/>
+        <event value="4079" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Write" opcode="win:Start"/>
+        <event value="4080" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Channel_Write" opcode="win:Stop"/>
+        <event value="4081" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Send_Request" opcode="win:Start"/>
+        <event value="4082" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Send_Request" opcode="win:Stop"/>
+        <event value="4083" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Send_Response" opcode="win:Start"/>
+        <event value="4084" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Send_Response" opcode="win:Stop"/>
+        <event value="4085" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Receive_Request" opcode="win:Start"/>
+        <event value="4086" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Receive_Request" opcode="win:Stop"/>
+        <event value="4087" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Open" opcode="win:Start"/>
+        <event value="4088" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Open" opcode="win:Stop"/>
+        <event value="4089" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Connect" opcode="win:Start"/>
+        <event value="4090" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Session_Connect" opcode="win:Stop"/>
+        <event value="4091" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Open" opcode="win:Start"/>
+        <event value="4092" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Open" opcode="win:Stop"/>
+        <event value="4093" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Describe" opcode="win:Start"/>
+        <event value="4094" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Describe" opcode="win:Stop"/>
+        <event value="4095" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Select_Streams" opcode="win:Start"/>
+        <event value="4096" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Select_Streams" opcode="win:Stop"/>
+        <event value="4097" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Play" opcode="win:Start"/>
+        <event value="4098" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Play" opcode="win:Stop"/>
+        <event value="4099" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Pause" opcode="win:Start"/>
+        <event value="4100" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Pause" opcode="win:Stop"/>
+        <event value="4101" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Stop" opcode="win:Start"/>
+        <event value="4102" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Stop" opcode="win:Stop"/>
+        <event value="4103" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Send_Log" opcode="win:Start"/>
+        <event value="4104" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Send_Log" opcode="win:Stop"/>
+        <event value="4105" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Send_Keep_Alive" opcode="win:Info"/>
+        <event value="4106" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Received_Announce" opcode="win:Info"/>
+        <event value="4107" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Packet_Pair" opcode="win:Start"/>
+        <event value="4108" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Packet_Pair" opcode="win:Stop"/>
+        <event value="4109" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Tear_Down" opcode="win:Start"/>
+        <event value="4110" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Tear_Down" opcode="win:Stop"/>
+        <event value="4111" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Received_EOS" opcode="win:Info"/>
+        <event value="4112" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_Begin_Close" opcode="win:Start"/>
+        <event value="4113" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_End_Close" opcode="win:Stop"/>
+        <event value="4114" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Client_GUID" opcode="win:Info" template="Args4114_0"/>
+        <event value="4115" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Disconnect" opcode="win:Info" template="Args4115_0"/>
+        <event value="4116" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Begin_Reconnect" opcode="win:Start"/>
+        <event value="4117" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_End_Reconnect" opcode="win:Stop"/>
+        <event value="4118" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Announce" opcode="win:Info"/>
+        <event value="4119" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_EOS" opcode="win:Info"/>
+        <event value="4120" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Stream_Switch" opcode="win:Start"/>
+        <event value="4121" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Stream_Switch" opcode="win:Stop"/>
+        <event value="4122" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Buffering_Start" opcode="win:Info"/>
+        <event value="4123" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Buffering_Stop" opcode="win:Info"/>
+        <event value="4124" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Connect" opcode="win:Start"/>
+        <event value="4125" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Connect" opcode="win:Stop"/>
+        <event value="4126" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Open" opcode="win:Start"/>
+        <event value="4127" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_Open" opcode="win:Stop"/>
+        <event value="4128" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Network_Source_MCast_Join_Done" opcode="win:Info"/>
+        <event value="4129" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Create" opcode="win:Info" template="Args4129_0"/>
+        <event value="4130" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Delete" opcode="win:Info"/>
+        <event value="4131" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Begin_Open" opcode="win:Start"/>
+        <event value="4132" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Begin_Open" opcode="win:Stop"/>
+        <event value="4133" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_End_Open" opcode="win:Start"/>
+        <event value="4134" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_End_Open" opcode="win:Stop"/>
+        <event value="4135" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Time_Seek" opcode="win:Start"/>
+        <event value="4136" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Time_Seek" opcode="win:Stop"/>
+        <event value="4137" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Begin_Drm_Set_License" opcode="win:Start"/>
+        <event value="4138" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Begin_Drm_Set_License" opcode="win:Stop"/>
+        <event value="4139" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_End_Drm_Set_License" opcode="win:Start"/>
+        <event value="4140" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_End_Drm_Set_License" opcode="win:Stop"/>
+        <event value="4141" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Begin_Throttle" opcode="win:Start"/>
+        <event value="4142" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_Begin_Throttle" opcode="win:Stop"/>
+        <event value="4143" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_End_Throttle" opcode="win:Start"/>
+        <event value="4144" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Byte_Stream_End_Throttle" opcode="win:Stop"/>
+        <event value="4145" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Create" opcode="win:Info"/>
+        <event value="4146" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Delete" opcode="win:Info"/>
+        <event value="4147" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Read" opcode="win:Start"/>
+        <event value="4148" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Read" opcode="win:Stop"/>
+        <event value="4149" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Begin_Read" opcode="win:Start"/>
+        <event value="4150" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Begin_Read" opcode="win:Stop"/>
+        <event value="4151" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_End_Read" opcode="win:Start"/>
+        <event value="4152" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_End_Read" opcode="win:Stop"/>
+        <event value="4153" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Seek" opcode="win:Info"/>
+        <event value="4154" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Close" opcode="win:Start"/>
+        <event value="4155" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Close" opcode="win:Stop"/>
+        <event value="4156" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Configure_Buffering" opcode="win:Info"/>
+        <event value="4157" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Enable_Buffering" opcode="win:Info"/>
+        <event value="4158" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Begin_Save" opcode="win:Start"/>
+        <event value="4159" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Begin_Save" opcode="win:Stop"/>
+        <event value="4160" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_End_Save" opcode="win:Start"/>
+        <event value="4161" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_End_Save" opcode="win:Stop"/>
+        <event value="4162" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Cancel_Save" opcode="win:Info"/>
+        <event value="4163" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Fire_Start_Buffering" opcode="win:Info"/>
+        <event value="4164" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Base_Remote_Byte_Stream_Fire_Stop_Buffering" opcode="win:Info"/>
+        <event value="4165" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Create" opcode="win:Info"/>
+        <event value="4166" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Delete" opcode="win:Info"/>
+        <event value="4167" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Read" opcode="win:Start"/>
+        <event value="4168" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Read" opcode="win:Stop"/>
+        <event value="4169" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Begin_Read" opcode="win:Start"/>
+        <event value="4170" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Begin_Read" opcode="win:Stop"/>
+        <event value="4171" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_End_Read" opcode="win:Start"/>
+        <event value="4172" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_End_Read" opcode="win:Stop"/>
+        <event value="4173" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Seek" opcode="win:Info"/>
+        <event value="4174" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Close" opcode="win:Start"/>
+        <event value="4175" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Close" opcode="win:Stop"/>
+        <event value="4176" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Configure_Buffering" opcode="win:Info"/>
+        <event value="4177" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Enable_Buffering" opcode="win:Info"/>
+        <event value="4178" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Begin_Save" opcode="win:Start"/>
+        <event value="4179" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Begin_Save" opcode="win:Stop"/>
+        <event value="4180" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_End_Save" opcode="win:Start"/>
+        <event value="4181" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_End_Save" opcode="win:Stop"/>
+        <event value="4182" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Fire_Start_Buffering" opcode="win:Info"/>
+        <event value="4183" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Urlmon_Byte_Stream_Fire_Stop_Buffering" opcode="win:Info"/>
+        <event value="4184" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Begin_Send_Request" opcode="win:Start"/>
+        <event value="4185" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Begin_Send_Request" opcode="win:Stop"/>
+        <event value="4186" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_End_Send_Request" opcode="win:Start"/>
+        <event value="4187" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_End_Send_Request" opcode="win:Stop"/>
+        <event value="4188" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Begin_Receive_Response" opcode="win:Start"/>
+        <event value="4189" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Begin_Receive_Response" opcode="win:Stop"/>
+        <event value="4190" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_End_Receive_Response" opcode="win:Start"/>
+        <event value="4191" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_End_Receive_Response" opcode="win:Stop"/>
+        <event value="4192" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Begin_Read_Payload" opcode="win:Start"/>
+        <event value="4193" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Begin_Read_Payload" opcode="win:Stop"/>
+        <event value="4194" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_End_Read_Payload" opcode="win:Start"/>
+        <event value="4195" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_End_Read_Payload" opcode="win:Stop"/>
+        <event value="4196" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Close" opcode="win:Info"/>
+        <event value="4197" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Status_Callback" opcode="win:Start"/>
+        <event value="4198" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Status_Callback" opcode="win:Stop"/>
+        <event value="4199" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Create_Cache_Entry" opcode="win:Start"/>
+        <event value="4200" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Create_Cache_Entry" opcode="win:Stop"/>
+        <event value="4201" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Load_Cache_Entry" opcode="win:Start"/>
+        <event value="4202" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Load_Cache_Entry" opcode="win:Stop"/>
+        <event value="4203" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Delete_Cache_Entry" opcode="win:Start"/>
+        <event value="4204" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Delete_Cache_Entry" opcode="win:Stop"/>
+        <event value="4205" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Save_Cache_Entry" opcode="win:Start"/>
+        <event value="4206" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Http_Web_Request_Save_Cache_Entry" opcode="win:Stop"/>
+        <event value="4207" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Begin_Create" opcode="win:Start" template="Args4207_0"/>
+        <event value="4208" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_End_Create" opcode="win:Stop"/>
+        <event value="4209" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Begin_Create_Object_From_URL" opcode="win:Start"/>
+        <event value="4210" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Begin_Create_Object_From_URL" opcode="win:Stop"/>
+        <event value="4211" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_End_Create_Object_From_URL" opcode="win:Start"/>
+        <event value="4212" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_End_Create_Object_From_URL" opcode="win:Stop"/>
+        <event value="4213" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Begin_Create_Object_From_Byte_Stream" opcode="win:Start"/>
+        <event value="4214" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Begin_Create_Object_From_Byte_Stream" opcode="win:Stop"/>
+        <event value="4215" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_End_Create_Object_From_Byte_Stream" opcode="win:Start"/>
+        <event value="4216" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_End_Create_Object_From_Byte_Stream" opcode="win:Stop"/>
+        <event value="4217" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Lookup_Scheme_Handler" opcode="win:Start"/>
+        <event value="4218" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Lookup_Scheme_Handler" opcode="win:Stop"/>
+        <event value="4219" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Lookup_Byte_Stream_Handler" opcode="win:Start"/>
+        <event value="4220" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Lookup_Byte_Stream_Handler" opcode="win:Stop"/>
+        <event value="4221" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Scheme_Handler_Begin_Create_Object" opcode="win:Start"/>
+        <event value="4222" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Scheme_Handler_Begin_Create_Object" opcode="win:Stop"/>
+        <event value="4223" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Scheme_Handler_End_Create_Object" opcode="win:Start"/>
+        <event value="4224" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_End_Scheme_Handler_End_Create_Object" opcode="win:Stop"/>
+        <event value="4225" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Byte_Stream_Created" opcode="win:Info"/>
+        <event value="4226" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Byte_Stream_Handler_Begin_Create_Object" opcode="win:Start"/>
+        <event value="4227" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Byte_Stream_Handler_Begin_Create_Object" opcode="win:Stop"/>
+        <event value="4228" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Byte_Stream_Handler_End_Create_Object" opcode="win:Start"/>
+        <event value="4229" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Byte_Stream_Handler_End_Create_Object" opcode="win:Stop"/>
+        <event value="4230" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Source_Resolution_Media_Source_Created" opcode="win:Info"/>
+        <event value="4231" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_Start_Async_Call" opcode="win:Start" template="Args4231_0"/>
+        <event value="4232" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_End_Async_Call" opcode="win:Stop"/>
+        <event value="4233" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Session_Bitpump_Receive_Event" opcode="win:Info"/>
+        <event value="4234" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_Error" opcode="win:Info"/>
+        <event value="4235" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_Critical_Error" opcode="win:Info"/>
+        <event value="4236" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_Start_Sync_Call" opcode="win:Start"/>
+        <event value="4237" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_End_Sync_Call" opcode="win:Stop"/>
+        <event value="4238" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Bitpump_Wait_For_Sample" opcode="win:Info"/>
+        <event value="4239" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Session_Bitpump_Details" opcode="win:Info"/>
+        <event value="4240" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Set_Topology" opcode="win:Start" template="Args4240_0"/>
+        <event value="4241" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Set_Topology" opcode="win:Stop"/>
+        <event value="4242" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Start" opcode="win:Start"/>
+        <event value="4243" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Start" opcode="win:Stop"/>
+        <event value="4244" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Stop" opcode="win:Start"/>
+        <event value="4245" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Stop" opcode="win:Stop"/>
+        <event value="4246" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Pause" opcode="win:Start"/>
+        <event value="4247" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Pause" opcode="win:Stop"/>
+        <event value="4248" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Close" opcode="win:Start"/>
+        <event value="4249" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Close" opcode="win:Stop"/>
+        <event value="4250" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Shutdown" opcode="win:Start"/>
+        <event value="4251" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Shutdown" opcode="win:Stop"/>
+        <event value="4252" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Presentation_Switch" opcode="win:Start"/>
+        <event value="4253" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Session_Presentation_Switch" opcode="win:Stop"/>
+        <event value="4254" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_Start" opcode="win:Info" template="Args4254_0"/>
+        <event value="4255" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_Stop" opcode="win:Info"/>
+        <event value="4256" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_On_Context_Event" opcode="win:Info"/>
+        <event value="4257" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_Process_Sample" opcode="win:Info"/>
+        <event value="4258" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_On_Stream_Event" opcode="win:Info"/>
+        <event value="4259" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_Create_Object_From_Node" opcode="win:Start"/>
+        <event value="4260" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Sequencer_Source_Create_Object_From_Node" opcode="win:Stop"/>
+        <event value="4261" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Quality_Manager_Set_Quality_Level" opcode="win:Info" template="Args4261_0"/>
+        <event value="4262" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Quality_Manager_Set_Drop_Mode" opcode="win:Info"/>
+        <event value="4263" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Quality_Manager_Set_Drop_Time" opcode="win:Info"/>
+        <event value="4264" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Media_Processor_Source_Start" opcode="win:Info"/>
+        <event value="4265" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Processor_Source_Create_Topology" opcode="win:Info"/>
+        <event value="4266" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Processor_Source_Open" opcode="win:Info"/>
+        <event value="4267" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Processor_Source_Process_Sample" opcode="win:Info"/>
+        <event value="4268" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Media_Processor_Source_Send_Event" opcode="win:Info"/>
+        <event value="4269" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Frame_Grabber_Open_Source" opcode="win:Info"/>
+        <event value="4270" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Frame_Grabber_Get_Frame" opcode="win:Info"/>
+        <event value="4271" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Frame_Grabber_Invoke" opcode="win:Info"/>
+        <event value="4272" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Buffer_Adjust_Sample_Time_One_Shot" opcode="win:Info" template="Args4272_0"/>
+        <event value="4273" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Buffer_Adjust_Sample_Time_Repeat" opcode="win:Info"/>
+        <event value="4274" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Video_Render" opcode="win:Info" template="Args4274_0"/>
+        <event value="4275" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Render" opcode="win:Info" template="Args4275_0"/>
+        <event value="4276" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Created" opcode="win:Info" template="Args4276_0"/>
+        <event value="4277" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Loaded" opcode="win:Info"/>
+        <event value="4278" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Get_Count" opcode="win:Info"/>
+        <event value="4279" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Get_At" opcode="win:Info"/>
+        <event value="4280" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Get_Value" opcode="win:Info"/>
+        <event value="4281" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Set_Value" opcode="win:Info"/>
+        <event value="4282" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_Flush" opcode="win:Info"/>
+        <event value="4283" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_On_Get_Count" opcode="win:Info"/>
+        <event value="4284" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_On_Get_At" opcode="win:Info"/>
+        <event value="4285" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_On_Get_Value" opcode="win:Info"/>
+        <event value="4286" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_On_Set_Value" opcode="win:Info"/>
+        <event value="4287" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Metadata_On_Flush" opcode="win:Info"/>
+        <event value="4288" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Muxer_Process_Sample" opcode="win:Info" template="Args4288_0"/>
+        <event value="4289" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Muxer_Add_Payload" opcode="win:Info"/>
+        <event value="4290" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Muxer_On_Completed_Packet" opcode="win:Info"/>
+        <event value="4291" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Timer_Late" opcode="win:Info" template="Args4291_0"/>
+        <event value="4292" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Play" opcode="win:Start"/>
+        <event value="4293" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Play" opcode="win:Stop"/>
+        <event value="4294" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Stop" opcode="win:Start"/>
+        <event value="4295" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Stop" opcode="win:Stop"/>
+        <event value="4296" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Pause" opcode="win:Start"/>
+        <event value="4297" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Pause" opcode="win:Stop"/>
+        <event value="4298" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Render" opcode="win:Start"/>
+        <event value="4299" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Render" opcode="win:Stop"/>
+        <event value="4300" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Find_Interface_On_Filter" opcode="win:Start"/>
+        <event value="4301" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Find_Interface_On_Filter" opcode="win:Stop"/>
+        <event value="4302" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Scan" opcode="win:Start"/>
+        <event value="4303" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Scan" opcode="win:Stop"/>
+        <event value="4304" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Rate" opcode="win:Start"/>
+        <event value="4305" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Rate" opcode="win:Stop"/>
+        <event value="4306" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Insert_Node" opcode="win:Start"/>
+        <event value="4307" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Insert_Node" opcode="win:Stop"/>
+        <event value="4308" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Batch_Insert" opcode="win:Start"/>
+        <event value="4309" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Batch_Insert" opcode="win:Stop"/>
+        <event value="4310" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Batch_Insert" opcode="win:Start"/>
+        <event value="4311" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Batch_Insert" opcode="win:Stop"/>
+        <event value="4312" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Close" opcode="win:Start"/>
+        <event value="4313" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Close" opcode="win:Stop"/>
+        <event value="4314" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Volume" opcode="win:Start"/>
+        <event value="4315" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Volume" opcode="win:Stop"/>
+        <event value="4316" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Stop_Position" opcode="win:Start"/>
+        <event value="4317" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Stop_Position" opcode="win:Stop"/>
+        <event value="4318" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Current_Position" opcode="win:Start"/>
+        <event value="4319" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Current_Position" opcode="win:Stop"/>
+        <event value="4320" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Context" opcode="win:Start"/>
+        <event value="4321" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Context" opcode="win:Stop"/>
+        <event value="4322" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Queue" opcode="win:Start"/>
+        <event value="4323" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Queue" opcode="win:Stop"/>
+        <event value="4324" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Init" opcode="win:Start"/>
+        <event value="4325" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Init" opcode="win:Stop"/>
+        <event value="4326" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Init_Ex" opcode="win:Start"/>
+        <event value="4327" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Init_Ex" opcode="win:Stop"/>
+        <event value="4328" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Type" opcode="win:Start"/>
+        <event value="4329" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Type" opcode="win:Stop"/>
+        <event value="4330" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Is_Reused" opcode="win:Start"/>
+        <event value="4331" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Is_Reused" opcode="win:Stop"/>
+        <event value="4332" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_URL" opcode="win:Start"/>
+        <event value="4333" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_URL" opcode="win:Stop"/>
+        <event value="4334" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Context" opcode="win:Start"/>
+        <event value="4335" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Context" opcode="win:Stop"/>
+        <event value="4336" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Cookie" opcode="win:Start"/>
+        <event value="4337" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Cookie" opcode="win:Stop"/>
+        <event value="4338" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Cookie" opcode="win:Start"/>
+        <event value="4339" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Cookie" opcode="win:Stop"/>
+        <event value="4340" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Open_State" opcode="win:Start"/>
+        <event value="4341" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Open_State" opcode="win:Stop"/>
+        <event value="4342" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Rate" opcode="win:Start"/>
+        <event value="4343" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Rate" opcode="win:Stop"/>
+        <event value="4344" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Current_Position" opcode="win:Start"/>
+        <event value="4345" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Current_Position" opcode="win:Stop"/>
+        <event value="4346" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Stop_Position" opcode="win:Start"/>
+        <event value="4347" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Stop_Position" opcode="win:Stop"/>
+        <event value="4348" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Volume" opcode="win:Start"/>
+        <event value="4349" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Volume" opcode="win:Stop"/>
+        <event value="4350" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Media_Caps" opcode="win:Start"/>
+        <event value="4351" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Media_Caps" opcode="win:Stop"/>
+        <event value="4352" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Control_Caps" opcode="win:Start"/>
+        <event value="4353" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Control_Caps" opcode="win:Stop"/>
+        <event value="4354" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Seek_Caps" opcode="win:Start"/>
+        <event value="4355" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Seek_Caps" opcode="win:Stop"/>
+        <event value="4356" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Jump_Caps" opcode="win:Start"/>
+        <event value="4357" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Get_Jump_Caps" opcode="win:Stop"/>
+        <event value="4358" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Auto_Rewind" opcode="win:Start"/>
+        <event value="4359" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Set_Auto_Rewind" opcode="win:Stop"/>
+        <event value="4360" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Find_Plugin" opcode="win:Start"/>
+        <event value="4361" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Find_Plugin" opcode="win:Stop"/>
+        <event value="4362" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Handle_Presentation_Switch" opcode="win:Start"/>
+        <event value="4363" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Handle_Presentation_Switch" opcode="win:Stop"/>
+        <event value="4364" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_State_Change" opcode="win:Start" template="Args4364_0"/>
+        <event value="4365" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_State_Change" opcode="win:Stop"/>
+        <event value="4366" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Playback" opcode="win:Start"/>
+        <event value="4367" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Playback" opcode="win:Stop"/>
+        <event value="4368" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Rate_Change" opcode="win:Start"/>
+        <event value="4369" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Rate_Change" opcode="win:Stop"/>
+        <event value="4370" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Error" opcode="win:Start"/>
+        <event value="4371" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Error" opcode="win:Stop"/>
+        <event value="4372" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_License" opcode="win:Start"/>
+        <event value="4373" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_License" opcode="win:Stop"/>
+        <event value="4374" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Cred" opcode="win:Start"/>
+        <event value="4375" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Cred" opcode="win:Stop"/>
+        <event value="4376" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Individualization" opcode="win:Start"/>
+        <event value="4377" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Individualization" opcode="win:Stop"/>
+        <event value="4378" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Revocation" opcode="win:Start"/>
+        <event value="4379" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Revocation" opcode="win:Stop"/>
+        <event value="4380" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Fullscreen" opcode="win:Start"/>
+        <event value="4381" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Fullscreen" opcode="win:Stop"/>
+        <event value="4382" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Custom_License" opcode="win:Start"/>
+        <event value="4383" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_Custom_License" opcode="win:Stop"/>
+        <event value="4384" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_User_Event" opcode="win:Start"/>
+        <event value="4385" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFGraph_Notify_User_Event" opcode="win:Stop"/>
+        <event value="4386" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="WMPPlayback_Open" opcode="win:Info" template="Args4386_0"/>
+        <event value="4387" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="WMPPlayback_Queue" opcode="win:Info"/>
+        <event value="4388" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="WMPPlayback_Start" opcode="win:Info"/>
+        <event value="4389" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="WMPPlayback_Error_Open" opcode="win:Info"/>
+        <event value="4390" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="WMPPlayback_Error_Queue" opcode="win:Info"/>
+        <event value="4391" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Acquire_Session_Key" opcode="win:Start"/>
+        <event value="4392" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Acquire_Session_Key" opcode="win:Stop"/>
+        <event value="4393" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Kernel_State_Inquiry" opcode="win:Start"/>
+        <event value="4394" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Kernel_State_Inquiry" opcode="win:Stop"/>
+        <event value="4395" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Reload_GRL" opcode="win:Start"/>
+        <event value="4396" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Reload_GRL" opcode="win:Stop"/>
+        <event value="4397" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Renew_Session_Key" opcode="win:Start"/>
+        <event value="4398" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Renew_Session_Key" opcode="win:Stop"/>
+        <event value="4399" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Get_Comp_List" opcode="win:Start"/>
+        <event value="4400" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PEAuth_Comm_Get_Comp_List" opcode="win:Stop"/>
+        <event value="4401" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Cache_Reader" opcode="win:Info" template="Args4401_0"/>
+        <event value="4402" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Codec_DXVACPUDecode" opcode="win:Start" template="Args4402_0"/>
+        <event value="4403" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Codec_DXVACPUDecode" opcode="win:Stop"/>
+        <event value="4404" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Codec_DXVAGPUDecode" opcode="win:Start"/>
+        <event value="4405" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Codec_DXVAGPUDecode" opcode="win:Stop"/>
+        <event value="4406" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Codec_DXVADisplay" opcode="win:Start"/>
+        <event value="4407" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Codec_DXVADisplay" opcode="win:Stop"/>
+        <event value="4408" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="ASFSource_Start" opcode="win:Start" template="Args4408_0"/>
+        <event value="4409" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="ASFSource_Start" opcode="win:Stop"/>
+        <event value="4410" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Op_Queue_Operation" opcode="win:Start" template="Args4410_0"/>
+        <event value="4411" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Op_Queue_Operation" opcode="win:Stop"/>
+        <event value="4412" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Init" opcode="win:Start" template="Args4412_0"/>
+        <event value="4413" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Init" opcode="win:Stop"/>
+        <event value="4414" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Get_Value" opcode="win:Start"/>
+        <event value="4415" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Get_Value" opcode="win:Stop"/>
+        <event value="4416" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Set_Value" opcode="win:Start"/>
+        <event value="4417" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Set_Value" opcode="win:Stop"/>
+        <event value="4418" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Commit" opcode="win:Start"/>
+        <event value="4419" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_Commit" opcode="win:Stop"/>
+        <event value="4420" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Init" opcode="win:Start" template="Args4420_0"/>
+        <event value="4421" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Init" opcode="win:Stop"/>
+        <event value="4422" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Get_Value" opcode="win:Start"/>
+        <event value="4423" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Get_Value" opcode="win:Stop"/>
+        <event value="4424" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Set_Value" opcode="win:Start"/>
+        <event value="4425" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Set_Value" opcode="win:Stop"/>
+        <event value="4426" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Commit" opcode="win:Start"/>
+        <event value="4427" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_With_Key_Commit" opcode="win:Stop"/>
+        <event value="4428" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Transcode_Create_Transcode_Topology" opcode="win:Start"/>
+        <event value="4429" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Transcode_Create_Transcode_Topology" opcode="win:Stop"/>
+        <event value="4430" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Field_Of_Use_Validate" opcode="win:Start"/>
+        <event value="4431" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Field_Of_Use_Validate" opcode="win:Stop"/>
+        <event value="4432" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Capture_Source_Start" opcode="win:Info" template="Args4432_0"/>
+        <event value="4433" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Capture_Source_Ready_Queue_Empty" opcode="win:Info"/>
+        <event value="4434" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Capture_Source_Ready_Queue_Full" opcode="win:Info"/>
+        <event value="4437" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="DXGIBuffer" opcode="win:Start" template="Args4437_0"/>
+        <event value="4438" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="DXGIBuffer" opcode="win:Stop"/>
+        <event value="4439" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="DXGIBufferUnknown" opcode="win:Start" template="Args4439_0"/>
+        <event value="4440" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="DXGIBufferUnknown" opcode="win:Stop"/>
+        <event value="4441" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Create" opcode="win:Start" template="Args4441_0"/>
+        <event value="4442" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Create" opcode="win:Stop"/>
+        <event value="4443" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Buffer" opcode="win:Start" template="Args4443_0"/>
+        <event value="4444" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Buffer" opcode="win:Stop"/>
+        <event value="4445" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Copy" opcode="win:Start" template="Args4445_0"/>
+        <event value="4446" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Copy" opcode="win:Stop"/>
+        <event value="4447" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_ThumbnailGeneration" opcode="win:Start"/>
+        <event value="4448" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_ThumbnailGeneration" opcode="win:Stop"/>
+        <event value="4449" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Property_Handler_ThumbnailGeneration_BestFrame" opcode="win:Info" template="Args4449_0"/>
+        <event value="4450" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaSource_Sample_Received_Task" opcode="win:Info" template="Args4450_0"/>
+        <event value="4451" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaSource_Sample_Received_Task" opcode="win:Info"/>
+        <event value="4452" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Render" opcode="win:Info"/>
+        <event value="4453" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Render" opcode="win:Info"/>
+        <event value="4456" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Low_Latency" opcode="win:Info" template="Args4456_0"/>
+        <event value="4457" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaSource_Sample_Received_Task" opcode="win:Info" template="Args4457_0"/>
+        <event value="4458" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Starvation" opcode="win:Info" template="Args4458_0"/>
+        <event value="4459" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Render" opcode="win:Info" template="Args4459_0"/>
+        <event value="4460" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="DXGI_Map" opcode="win:Start" template="Args4460_0"/>
+        <event value="4461" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="DXGI_Map" opcode="win:Stop"/>
+        <event value="4462" version="0" level="win:Informational"  channel="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" task="Audio_Render" opcode="win:Info" template="Args4462_0"/>
+        <event value="4463" version="0" level="win:Informational"  channel="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" task="Audio_Render" opcode="win:Info" template="Args4463_0"/>
+        <event value="4464" version="0" level="win:Informational"  channel="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" task="Audio_Render" opcode="win:Info" template="Args4464_0"/>
+        <event value="4465" version="0" level="win:Informational"  channel="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" task="Audio_Render" opcode="win:Info" template="Args4465_0"/>
+        <event value="4466" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Audio_Render" opcode="win:Info" template="Args4466_0"/>
+        <event value="4467" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="CopyImage" opcode="win:Start" template="Args4467_0"/>
+        <event value="4468" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="CopyImage" opcode="win:Stop" template="Args4468_0"/>
+        <event value="4469" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaDeviceSource-Start" opcode="win:Start"/>
+        <event value="4470" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaDeviceSource-Start" opcode="win:Stop"/>
+        <event value="4471" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaDeviceStream-SendSinglePhotoTriggerToKS-Task" opcode="win:Info" template="Args4471_0"/>
+        <event value="4472" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="Mem2DAlloc_Flush" opcode="win:Info" template="Args4472_0"/>
+        <event value="4473" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Attributes_CopyAllItems" opcode="win:Start" template="Args4473_0"/>
+        <event value="4474" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="Attributes_CopyAllItems" opcode="win:Stop" template="Args4474_0"/>
+        <event value="4475" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="DXGI_Map_Sleep" opcode="win:Start"/>
+        <event value="4476" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="DXGI_Map_Sleep" opcode="win:Stop"/>
+        <event value="4500" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="NetworkRIO_PendingSends" opcode="win:Info" template="Args4500_0"/>
+        <event value="4501" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="NetworkRIO_PendingSends" opcode="win:Start"/>
+        <event value="4502" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="NetworkRIO_PendingSends" opcode="win:Stop"/>
+        <event value="4503" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="NetworkRIO_PendingReceives" opcode="win:Info" template="Args4503_0"/>
+        <event value="4504" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="NetworkRIO_PendingReceives" opcode="win:Start"/>
+        <event value="4505" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="NetworkRIO_PendingReceives" opcode="win:Start"/>
+        <event value="4600" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentProtectionDeviceCreate" opcode="win:Start" template="Args4600_0"/>
+        <event value="4601" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentProtectionDeviceCreate" opcode="win:Stop"/>
+        <event value="4602" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFIsContentProtectionDeviceSupported" opcode="win:Start"/>
+        <event value="4603" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFIsContentProtectionDeviceSupported" opcode="win:Stop" template="Args4603_0"/>
+        <event value="4604" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentProtectionDeviceCall" opcode="win:Start"/>
+        <event value="4605" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentProtectionDeviceCall" opcode="win:Stop" template="Args4605_0"/>
+        <event value="4606" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentDecryptorContextCreate" opcode="win:Start" template="Args4606_0"/>
+        <event value="4607" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentDecryptorContextCreate" opcode="win:Stop"/>
+        <event value="4608" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFContentDecryptorContextInitializeKey" opcode="win:Info"/>
+        <event value="4609" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="EnsureTrust" opcode="win:Start"/>
+        <event value="4610" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="EnsureTrust" opcode="win:Stop"/>
+        <event value="4611" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="AddDecryptor" opcode="win:Start"/>
+        <event value="4612" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="AddDecryptor" opcode="win:Stop" template="Args4612_0"/>
+        <event value="4613" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PreparePresentation" opcode="win:Start"/>
+        <event value="4614" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="PreparePresentation" opcode="win:Stop"/>
+        <event value="4615" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaSink_Sample_Write_To_Disk_Task" opcode="win:Start" template="Args4615_0"/>
+        <event value="4616" version="0" level="win:Informational"  channel="MediaFoundationPerformance" task="MFMediaSink_Sample_Write_To_Disk_Task" opcode="win:Stop" template="Args4616_0"/>
+        <event value="4617" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTDriver_ProcessInput_Task" opcode="win:Start" template="Args4617_0"/>
+        <event value="4618" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTDriver_ProcessInput_Task" opcode="win:Stop" template="Args4618_0"/>
+        <event value="4619" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTDriver_ProcessOutput_Task" opcode="win:Start" template="Args4619_0"/>
+        <event value="4620" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTDriver_ProcessOutput_Task" opcode="win:Stop"/>
+        <event value="4621" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTDriver_ProcessOutput_Task" opcode="win:Info"/>
+        <event value="4622" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyActivation" opcode="win:Start"/>
+        <event value="4623" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyActivation" opcode="win:Stop" template="Args4623_0"/>
+        <event value="4624" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyGetPreview" opcode="win:Start"/>
+        <event value="4625" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyGetPreview" opcode="win:Stop" template="Args4625_0"/>
+        <event value="4626" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyGetThumbnail" opcode="win:Start"/>
+        <event value="4627" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyGetThumbnail" opcode="win:Stop"/>
+        <event value="4628" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyGetFrame" opcode="win:Start"/>
+        <event value="4629" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICDecoderProxyGetFrame" opcode="win:Stop"/>
+        <event value="4630" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICBitmapSourceProxyGetThumbnail" opcode="win:Start" template="Args4630_0"/>
+        <event value="4631" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICBitmapSourceProxyGetThumbnail" opcode="win:Stop"/>
+        <event value="4632" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICBitmapSourceProxyCopyPixels" opcode="win:Start" template="Args4632_0"/>
+        <event value="4633" version="0" level="win:Verbose"  channel="MediaFoundationPerformance" task="MFTWICBitmapSourceProxyCopyPixels" opcode="win:Stop" template="Args4633_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="MediaFoundationPerformance" type="unknown"/>
+        <channel value="17" name="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="HighCostEvent" mask="0x1" message="$(string.string52)" />
+      </keywords>
+      <tasks>
+        <task value="200" name="PerformanceTask" message="$(string.string200)">
+        </task>
+        <task value="300" name="Object" message="$(string.string300)">
+        </task>
+        <task value="301" name="Audio_Starvation" message="$(string.string301)">
+        </task>
+        <task value="302" name="Video_Frame_Glitch" message="$(string.string302)">
+        </task>
+        <task value="303" name="Evr_Queue" message="$(string.string303)">
+        </task>
+        <task value="304" name="Evr_DWMDequeue" message="$(string.string304)">
+        </task>
+        <task value="305" name="Evr_Present" message="$(string.string305)">
+        </task>
+        <task value="306" name="Evr_Monitor_Estimate" message="$(string.string306)">
+        </task>
+        <task value="307" name="Evr_Sleep" message="$(string.string307)">
+        </task>
+        <task value="308" name="Data_Drop" message="$(string.string308)">
+        </task>
+        <task value="309" name="Clock" message="$(string.string309)">
+        </task>
+        <task value="310" name="Predicted_Video_Sample_Time" message="$(string.string310)">
+        </task>
+        <task value="311" name="New_Stream" message="$(string.string311)">
+        </task>
+        <task value="312" name="Media_Type_Change" message="$(string.string312)">
+        </task>
+        <task value="313" name="Transform_Create" message="$(string.string313)">
+        </task>
+        <task value="314" name="Buffer" message="$(string.string314)">
+          <opcodes>
+           <opcode value="10" name="Input" message="$(string.string74)"/>
+           <opcode value="11" name="Output" message="$(string.string228)"/>
+           <opcode value="12" name="Queued" message="$(string.string259)"/>
+           <opcode value="13" name="Dropped" message="$(string.string36)"/>
+          </opcodes>
+        </task>
+        <task value="315" name="Process" message="$(string.string315)">
+          <opcodes>
+           <opcode value="10" name="Input" message="$(string.string74)"/>
+           <opcode value="11" name="Output" message="$(string.string228)"/>
+          </opcodes>
+        </task>
+        <task value="316" name="APOProcess" message="$(string.string316)">
+        </task>
+        <task value="317" name="Unusual_Streaming_Event" message="$(string.string317)">
+        </task>
+        <task value="318" name="File_Open" message="$(string.string318)">
+        </task>
+        <task value="319" name="IORead_Request" message="$(string.string319)">
+        </task>
+        <task value="320" name="IOWrite_Request" message="$(string.string320)">
+        </task>
+        <task value="321" name="Render_Sample_Allocate_Sample" message="$(string.string321)">
+        </task>
+        <task value="322" name="Render_Sample_Receive_Sample" message="$(string.string322)">
+        </task>
+        <task value="323" name="Render_Sample_Render" message="$(string.string323)">
+        </task>
+        <task value="324" name="Render_Sample_Start_Mix" message="$(string.string324)">
+        </task>
+        <task value="325" name="Render_Sample_Mix" message="$(string.string325)">
+        </task>
+        <task value="326" name="Render_Sample_Decode" message="$(string.string326)">
+        </task>
+        <task value="327" name="Render_Sample_Deinterlace" message="$(string.string327)">
+        </task>
+        <task value="328" name="Render_Sample_Procamp" message="$(string.string328)">
+        </task>
+        <task value="329" name="Render_Sample_FRC" message="$(string.string329)">
+        </task>
+        <task value="330" name="Render_Sample_MID_Render" message="$(string.string330)">
+        </task>
+        <task value="331" name="Render_Sample_MAP_Render" message="$(string.string331)">
+        </task>
+        <task value="332" name="Render_Sample_Actual_Render" message="$(string.string332)">
+        </task>
+        <task value="333" name="Audio_Renderer_Buffer_Fullness" message="$(string.string333)">
+        </task>
+        <task value="334" name="State_Change" message="$(string.string334)">
+          <opcodes>
+           <opcode value="14" name="Start" message="$(string.string309)"/>
+           <opcode value="15" name="Stop" message="$(string.string311)"/>
+           <opcode value="16" name="Pause" message="$(string.string232)"/>
+          </opcodes>
+        </task>
+        <task value="335" name="Topo_Loader_Load" message="$(string.string335)">
+        </task>
+        <task value="336" name="Topo_Loader_Create_MFT" message="$(string.string336)">
+        </task>
+        <task value="337" name="Packet_Sink_Lost_Packet" message="$(string.string337)">
+        </task>
+        <task value="338" name="Packet_Recover_RTX" message="$(string.string338)">
+        </task>
+        <task value="339" name="Packet_Recover_FEC" message="$(string.string339)">
+        </task>
+        <task value="340" name="Media_Cache_Read_Sample" message="$(string.string340)">
+        </task>
+        <task value="341" name="Media_Cache_Write_Sample" message="$(string.string341)">
+        </task>
+        <task value="342" name="Media_Cache_Seek" message="$(string.string342)">
+        </task>
+        <task value="343" name="Media_Cache_Trim" message="$(string.string343)">
+        </task>
+        <task value="344" name="Network_Platform_Get_Host_By_Name" message="$(string.string344)">
+        </task>
+        <task value="345" name="Network_Channel_Send_Request" message="$(string.string345)">
+        </task>
+        <task value="346" name="Network_Channel_Send_Response" message="$(string.string346)">
+        </task>
+        <task value="347" name="Network_Channel_Receive_Request" message="$(string.string347)">
+        </task>
+        <task value="348" name="Network_Channel_Open" message="$(string.string348)">
+        </task>
+        <task value="349" name="Network_Channel_Connect" message="$(string.string349)">
+        </task>
+        <task value="350" name="Network_Channel_Read" message="$(string.string350)">
+        </task>
+        <task value="351" name="Network_Channel_Write" message="$(string.string351)">
+        </task>
+        <task value="352" name="Network_Session_Send_Request" message="$(string.string352)">
+        </task>
+        <task value="353" name="Network_Session_Send_Response" message="$(string.string353)">
+        </task>
+        <task value="354" name="Network_Session_Receive_Request" message="$(string.string354)">
+        </task>
+        <task value="355" name="Network_Session_Open" message="$(string.string355)">
+        </task>
+        <task value="356" name="Network_Session_Connect" message="$(string.string356)">
+        </task>
+        <task value="357" name="Network_Client_Open" message="$(string.string357)">
+        </task>
+        <task value="358" name="Network_Client_Describe" message="$(string.string358)">
+        </task>
+        <task value="359" name="Network_Client_Select_Streams" message="$(string.string359)">
+        </task>
+        <task value="360" name="Network_Client_Play" message="$(string.string360)">
+        </task>
+        <task value="361" name="Network_Client_Pause" message="$(string.string361)">
+        </task>
+        <task value="362" name="Network_Client_Stop" message="$(string.string362)">
+        </task>
+        <task value="363" name="Network_Client_Send_Log" message="$(string.string363)">
+        </task>
+        <task value="364" name="Network_Client_Send_Keep_Alive" message="$(string.string364)">
+        </task>
+        <task value="365" name="Network_Client_Received_Announce" message="$(string.string365)">
+        </task>
+        <task value="366" name="Network_Client_Packet_Pair" message="$(string.string366)">
+        </task>
+        <task value="367" name="Network_Client_Tear_Down" message="$(string.string367)">
+        </task>
+        <task value="368" name="Network_Client_Received_EOS" message="$(string.string368)">
+        </task>
+        <task value="369" name="Network_Client_Begin_Close" message="$(string.string369)">
+        </task>
+        <task value="370" name="Network_Client_End_Close" message="$(string.string370)">
+        </task>
+        <task value="371" name="Network_Client_GUID" message="$(string.string371)">
+        </task>
+        <task value="372" name="Network_Source_Disconnect" message="$(string.string372)">
+        </task>
+        <task value="373" name="Network_Source_Begin_Reconnect" message="$(string.string373)">
+        </task>
+        <task value="374" name="Network_Source_End_Reconnect" message="$(string.string374)">
+        </task>
+        <task value="375" name="Network_Source_Announce" message="$(string.string375)">
+        </task>
+        <task value="376" name="Network_Source_EOS" message="$(string.string376)">
+        </task>
+        <task value="377" name="Network_Source_Stream_Switch" message="$(string.string377)">
+        </task>
+        <task value="378" name="Network_Source_Buffering_Start" message="$(string.string378)">
+        </task>
+        <task value="379" name="Network_Source_Buffering_Stop" message="$(string.string379)">
+        </task>
+        <task value="380" name="Network_Source_Connect" message="$(string.string380)">
+        </task>
+        <task value="381" name="Network_Source_Open" message="$(string.string381)">
+        </task>
+        <task value="382" name="Network_Source_MCast_Join_Done" message="$(string.string382)">
+        </task>
+        <task value="383" name="Http_Byte_Stream_Create" message="$(string.string383)">
+        </task>
+        <task value="384" name="Http_Byte_Stream_Delete" message="$(string.string384)">
+        </task>
+        <task value="385" name="Http_Byte_Stream_Begin_Open" message="$(string.string385)">
+        </task>
+        <task value="386" name="Http_Byte_Stream_End_Open" message="$(string.string386)">
+        </task>
+        <task value="387" name="Http_Byte_Stream_Time_Seek" message="$(string.string387)">
+        </task>
+        <task value="388" name="Http_Byte_Stream_Begin_Drm_Set_License" message="$(string.string388)">
+        </task>
+        <task value="389" name="Http_Byte_Stream_End_Drm_Set_License" message="$(string.string389)">
+        </task>
+        <task value="390" name="Http_Byte_Stream_Begin_Throttle" message="$(string.string390)">
+        </task>
+        <task value="391" name="Http_Byte_Stream_End_Throttle" message="$(string.string391)">
+        </task>
+        <task value="392" name="Base_Remote_Byte_Stream_Create" message="$(string.string392)">
+        </task>
+        <task value="393" name="Base_Remote_Byte_Stream_Delete" message="$(string.string393)">
+        </task>
+        <task value="394" name="Base_Remote_Byte_Stream_Read" message="$(string.string394)">
+        </task>
+        <task value="395" name="Base_Remote_Byte_Stream_Begin_Read" message="$(string.string395)">
+        </task>
+        <task value="396" name="Base_Remote_Byte_Stream_End_Read" message="$(string.string396)">
+        </task>
+        <task value="397" name="Base_Remote_Byte_Stream_Seek" message="$(string.string397)">
+        </task>
+        <task value="398" name="Base_Remote_Byte_Stream_Close" message="$(string.string398)">
+        </task>
+        <task value="399" name="Base_Remote_Byte_Stream_Configure_Buffering" message="$(string.string399)">
+        </task>
+        <task value="400" name="Base_Remote_Byte_Stream_Enable_Buffering" message="$(string.string400)">
+        </task>
+        <task value="401" name="Base_Remote_Byte_Stream_Begin_Save" message="$(string.string401)">
+        </task>
+        <task value="402" name="Base_Remote_Byte_Stream_End_Save" message="$(string.string402)">
+        </task>
+        <task value="403" name="Base_Remote_Byte_Stream_Cancel_Save" message="$(string.string403)">
+        </task>
+        <task value="404" name="Base_Remote_Byte_Stream_Fire_Start_Buffering" message="$(string.string404)">
+        </task>
+        <task value="405" name="Base_Remote_Byte_Stream_Fire_Stop_Buffering" message="$(string.string405)">
+        </task>
+        <task value="406" name="Urlmon_Byte_Stream_Create" message="$(string.string406)">
+        </task>
+        <task value="407" name="Urlmon_Byte_Stream_Delete" message="$(string.string407)">
+        </task>
+        <task value="408" name="Urlmon_Byte_Stream_Read" message="$(string.string408)">
+        </task>
+        <task value="409" name="Urlmon_Byte_Stream_Begin_Read" message="$(string.string409)">
+        </task>
+        <task value="410" name="Urlmon_Byte_Stream_End_Read" message="$(string.string410)">
+        </task>
+        <task value="411" name="Urlmon_Byte_Stream_Seek" message="$(string.string411)">
+        </task>
+        <task value="412" name="Urlmon_Byte_Stream_Close" message="$(string.string412)">
+        </task>
+        <task value="413" name="Urlmon_Byte_Stream_Configure_Buffering" message="$(string.string413)">
+        </task>
+        <task value="414" name="Urlmon_Byte_Stream_Enable_Buffering" message="$(string.string414)">
+        </task>
+        <task value="415" name="Urlmon_Byte_Stream_Begin_Save" message="$(string.string415)">
+        </task>
+        <task value="416" name="Urlmon_Byte_Stream_End_Save" message="$(string.string416)">
+        </task>
+        <task value="417" name="Urlmon_Byte_Stream_Fire_Start_Buffering" message="$(string.string417)">
+        </task>
+        <task value="418" name="Urlmon_Byte_Stream_Fire_Stop_Buffering" message="$(string.string418)">
+        </task>
+        <task value="419" name="Http_Web_Request_Begin_Send_Request" message="$(string.string419)">
+        </task>
+        <task value="420" name="Http_Web_Request_End_Send_Request" message="$(string.string420)">
+        </task>
+        <task value="421" name="Http_Web_Request_Begin_Receive_Response" message="$(string.string421)">
+        </task>
+        <task value="422" name="Http_Web_Request_End_Receive_Response" message="$(string.string422)">
+        </task>
+        <task value="423" name="Http_Web_Request_Begin_Read_Payload" message="$(string.string423)">
+        </task>
+        <task value="424" name="Http_Web_Request_End_Read_Payload" message="$(string.string424)">
+        </task>
+        <task value="425" name="Http_Web_Request_Close" message="$(string.string425)">
+        </task>
+        <task value="426" name="Http_Web_Request_Status_Callback" message="$(string.string426)">
+        </task>
+        <task value="427" name="Http_Web_Request_Create_Cache_Entry" message="$(string.string427)">
+        </task>
+        <task value="428" name="Http_Web_Request_Load_Cache_Entry" message="$(string.string428)">
+        </task>
+        <task value="429" name="Http_Web_Request_Delete_Cache_Entry" message="$(string.string429)">
+        </task>
+        <task value="430" name="Http_Web_Request_Save_Cache_Entry" message="$(string.string430)">
+        </task>
+        <task value="431" name="Source_Resolution_Begin_Create" message="$(string.string431)">
+        </task>
+        <task value="432" name="Source_Resolution_End_Create" message="$(string.string432)">
+        </task>
+        <task value="433" name="Source_Resolution_Begin_Create_Object_From_URL" message="$(string.string433)">
+        </task>
+        <task value="434" name="Source_Resolution_End_Create_Object_From_URL" message="$(string.string434)">
+        </task>
+        <task value="435" name="Source_Resolution_Begin_Create_Object_From_Byte_Stream" message="$(string.string435)">
+        </task>
+        <task value="436" name="Source_Resolution_End_Create_Object_From_Byte_Stream" message="$(string.string436)">
+        </task>
+        <task value="437" name="Source_Resolution_Lookup_Scheme_Handler" message="$(string.string437)">
+        </task>
+        <task value="438" name="Source_Resolution_Lookup_Byte_Stream_Handler" message="$(string.string438)">
+        </task>
+        <task value="439" name="Source_Resolution_Scheme_Handler_Begin_Create_Object" message="$(string.string439)">
+        </task>
+        <task value="440" name="Source_Resolution_Scheme_Handler_End_Create_Object" message="$(string.string440)">
+        </task>
+        <task value="441" name="Source_Resolution_End_Scheme_Handler_End_Create_Object" message="$(string.string441)">
+        </task>
+        <task value="442" name="Source_Resolution_Byte_Stream_Created" message="$(string.string442)">
+        </task>
+        <task value="443" name="Source_Resolution_Byte_Stream_Handler_Begin_Create_Object" message="$(string.string443)">
+        </task>
+        <task value="444" name="Source_Resolution_Byte_Stream_Handler_End_Create_Object" message="$(string.string444)">
+        </task>
+        <task value="445" name="Source_Resolution_Media_Source_Created" message="$(string.string445)">
+        </task>
+        <task value="446" name="Session_Bitpump_Start_Async_Call" message="$(string.string446)">
+        </task>
+        <task value="447" name="Session_Bitpump_End_Async_Call" message="$(string.string447)">
+        </task>
+        <task value="448" name="Session_Bitpump_Receive_Event" message="$(string.string448)">
+        </task>
+        <task value="449" name="Session_Bitpump_Error" message="$(string.string449)">
+        </task>
+        <task value="450" name="Session_Bitpump_Critical_Error" message="$(string.string450)">
+        </task>
+        <task value="451" name="Session_Bitpump_Start_Sync_Call" message="$(string.string451)">
+        </task>
+        <task value="452" name="Session_Bitpump_End_Sync_Call" message="$(string.string452)">
+        </task>
+        <task value="453" name="Session_Bitpump_Wait_For_Sample" message="$(string.string453)">
+        </task>
+        <task value="454" name="Session_Bitpump_Details" message="$(string.string454)">
+        </task>
+        <task value="455" name="Session_Set_Topology" message="$(string.string455)">
+        </task>
+        <task value="456" name="Session_Start" message="$(string.string456)">
+        </task>
+        <task value="457" name="Session_Stop" message="$(string.string457)">
+        </task>
+        <task value="458" name="Session_Pause" message="$(string.string458)">
+        </task>
+        <task value="459" name="Session_Close" message="$(string.string459)">
+        </task>
+        <task value="460" name="Session_Shutdown" message="$(string.string460)">
+        </task>
+        <task value="461" name="Session_Presentation_Switch" message="$(string.string461)">
+        </task>
+        <task value="462" name="Sequencer_Source_Start" message="$(string.string462)">
+        </task>
+        <task value="463" name="Sequencer_Source_Stop" message="$(string.string463)">
+        </task>
+        <task value="464" name="Sequencer_Source_On_Context_Event" message="$(string.string464)">
+        </task>
+        <task value="465" name="Sequencer_Source_Process_Sample" message="$(string.string465)">
+        </task>
+        <task value="466" name="Sequencer_Source_On_Stream_Event" message="$(string.string466)">
+        </task>
+        <task value="467" name="Sequencer_Source_Create_Object_From_Node" message="$(string.string467)">
+        </task>
+        <task value="468" name="Quality_Manager_Set_Quality_Level" message="$(string.string468)">
+        </task>
+        <task value="469" name="Quality_Manager_Set_Drop_Mode" message="$(string.string469)">
+        </task>
+        <task value="470" name="Quality_Manager_Set_Drop_Time" message="$(string.string470)">
+        </task>
+        <task value="471" name="Media_Processor_Source_Start" message="$(string.string471)">
+        </task>
+        <task value="472" name="Media_Processor_Source_Create_Topology" message="$(string.string472)">
+        </task>
+        <task value="473" name="Media_Processor_Source_Open" message="$(string.string473)">
+        </task>
+        <task value="474" name="Media_Processor_Source_Process_Sample" message="$(string.string474)">
+        </task>
+        <task value="475" name="Media_Processor_Source_Send_Event" message="$(string.string475)">
+        </task>
+        <task value="476" name="Frame_Grabber_Open_Source" message="$(string.string476)">
+        </task>
+        <task value="477" name="Frame_Grabber_Get_Frame" message="$(string.string477)">
+        </task>
+        <task value="478" name="Frame_Grabber_Invoke" message="$(string.string478)">
+        </task>
+        <task value="479" name="Buffer_Adjust_Sample_Time_One_Shot" message="$(string.string479)">
+        </task>
+        <task value="480" name="Buffer_Adjust_Sample_Time_Repeat" message="$(string.string480)">
+        </task>
+        <task value="481" name="Video_Render" message="$(string.string481)">
+        </task>
+        <task value="482" name="Audio_Render" message="$(string.string482)">
+        </task>
+        <task value="483" name="Metadata_Created" message="$(string.string483)">
+        </task>
+        <task value="484" name="Metadata_Loaded" message="$(string.string484)">
+        </task>
+        <task value="485" name="Metadata_Get_Count" message="$(string.string485)">
+        </task>
+        <task value="486" name="Metadata_Get_At" message="$(string.string486)">
+        </task>
+        <task value="487" name="Metadata_Get_Value" message="$(string.string487)">
+        </task>
+        <task value="488" name="Metadata_Set_Value" message="$(string.string488)">
+        </task>
+        <task value="489" name="Metadata_Flush" message="$(string.string489)">
+        </task>
+        <task value="490" name="Metadata_On_Get_Count" message="$(string.string490)">
+        </task>
+        <task value="491" name="Metadata_On_Get_At" message="$(string.string491)">
+        </task>
+        <task value="492" name="Metadata_On_Get_Value" message="$(string.string492)">
+        </task>
+        <task value="493" name="Metadata_On_Set_Value" message="$(string.string493)">
+        </task>
+        <task value="494" name="Metadata_On_Flush" message="$(string.string494)">
+        </task>
+        <task value="495" name="Muxer_Process_Sample" message="$(string.string495)">
+        </task>
+        <task value="496" name="Muxer_Add_Payload" message="$(string.string496)">
+        </task>
+        <task value="497" name="Muxer_On_Completed_Packet" message="$(string.string497)">
+        </task>
+        <task value="498" name="Timer_Late" message="$(string.string498)">
+        </task>
+        <task value="499" name="MFGraph_Play" message="$(string.string499)">
+        </task>
+        <task value="500" name="MFGraph_Stop" message="$(string.string500)">
+        </task>
+        <task value="501" name="MFGraph_Pause" message="$(string.string501)">
+        </task>
+        <task value="502" name="MFGraph_Render" message="$(string.string502)">
+        </task>
+        <task value="503" name="MFGraph_Find_Interface_On_Filter" message="$(string.string503)">
+        </task>
+        <task value="504" name="MFGraph_Scan" message="$(string.string504)">
+        </task>
+        <task value="505" name="MFGraph_Set_Rate" message="$(string.string505)">
+        </task>
+        <task value="506" name="MFGraph_Insert_Node" message="$(string.string506)">
+        </task>
+        <task value="507" name="MFGraph_Batch_Insert" message="$(string.string507)">
+        </task>
+        <task value="508" name="MFGraph_Close" message="$(string.string508)">
+        </task>
+        <task value="509" name="MFGraph_Set_Volume" message="$(string.string509)">
+        </task>
+        <task value="510" name="MFGraph_Set_Stop_Position" message="$(string.string510)">
+        </task>
+        <task value="511" name="MFGraph_Set_Current_Position" message="$(string.string511)">
+        </task>
+        <task value="512" name="MFGraph_Set_Context" message="$(string.string512)">
+        </task>
+        <task value="513" name="MFGraph_Queue" message="$(string.string513)">
+        </task>
+        <task value="514" name="MFGraph_Init" message="$(string.string514)">
+        </task>
+        <task value="515" name="MFGraph_Init_Ex" message="$(string.string515)">
+        </task>
+        <task value="516" name="MFGraph_Get_Type" message="$(string.string516)">
+        </task>
+        <task value="517" name="MFGraph_Is_Reused" message="$(string.string517)">
+        </task>
+        <task value="518" name="MFGraph_Get_URL" message="$(string.string518)">
+        </task>
+        <task value="519" name="MFGraph_Get_Context" message="$(string.string519)">
+        </task>
+        <task value="520" name="MFGraph_Get_Cookie" message="$(string.string520)">
+        </task>
+        <task value="521" name="MFGraph_Set_Cookie" message="$(string.string521)">
+        </task>
+        <task value="522" name="MFGraph_Get_Open_State" message="$(string.string522)">
+        </task>
+        <task value="523" name="MFGraph_Get_Rate" message="$(string.string523)">
+        </task>
+        <task value="524" name="MFGraph_Get_Current_Position" message="$(string.string524)">
+        </task>
+        <task value="525" name="MFGraph_Get_Stop_Position" message="$(string.string525)">
+        </task>
+        <task value="526" name="MFGraph_Get_Volume" message="$(string.string526)">
+        </task>
+        <task value="527" name="MFGraph_Get_Media_Caps" message="$(string.string527)">
+        </task>
+        <task value="528" name="MFGraph_Get_Control_Caps" message="$(string.string528)">
+        </task>
+        <task value="529" name="MFGraph_Get_Seek_Caps" message="$(string.string529)">
+        </task>
+        <task value="530" name="MFGraph_Get_Jump_Caps" message="$(string.string530)">
+        </task>
+        <task value="531" name="MFGraph_Set_Auto_Rewind" message="$(string.string531)">
+        </task>
+        <task value="532" name="MFGraph_Find_Plugin" message="$(string.string532)">
+        </task>
+        <task value="533" name="MFGraph_Handle_Presentation_Switch" message="$(string.string533)">
+        </task>
+        <task value="534" name="MFGraph_Notify_State_Change" message="$(string.string534)">
+        </task>
+        <task value="535" name="MFGraph_Notify_Playback" message="$(string.string535)">
+        </task>
+        <task value="536" name="MFGraph_Notify_Rate_Change" message="$(string.string536)">
+        </task>
+        <task value="537" name="MFGraph_Notify_Error" message="$(string.string537)">
+        </task>
+        <task value="538" name="MFGraph_Notify_License" message="$(string.string538)">
+        </task>
+        <task value="539" name="MFGraph_Notify_Cred" message="$(string.string539)">
+        </task>
+        <task value="540" name="MFGraph_Notify_Individualization" message="$(string.string540)">
+        </task>
+        <task value="541" name="MFGraph_Notify_Revocation" message="$(string.string541)">
+        </task>
+        <task value="542" name="MFGraph_Notify_Fullscreen" message="$(string.string542)">
+        </task>
+        <task value="543" name="MFGraph_Notify_Custom_License" message="$(string.string543)">
+        </task>
+        <task value="544" name="MFGraph_Notify_User_Event" message="$(string.string544)">
+        </task>
+        <task value="545" name="WMPPlayback_Open" message="$(string.string545)">
+        </task>
+        <task value="546" name="WMPPlayback_Queue" message="$(string.string546)">
+        </task>
+        <task value="547" name="WMPPlayback_Start" message="$(string.string547)">
+        </task>
+        <task value="548" name="WMPPlayback_Error_Open" message="$(string.string548)">
+        </task>
+        <task value="549" name="WMPPlayback_Error_Queue" message="$(string.string549)">
+        </task>
+        <task value="550" name="PEAuth_Comm_Acquire_Session_Key" message="$(string.string550)">
+        </task>
+        <task value="551" name="PEAuth_Comm_Kernel_State_Inquiry" message="$(string.string551)">
+        </task>
+        <task value="552" name="PEAuth_Comm_Reload_GRL" message="$(string.string552)">
+        </task>
+        <task value="553" name="PEAuth_Comm_Renew_Session_Key" message="$(string.string553)">
+        </task>
+        <task value="554" name="PEAuth_Comm_Get_Comp_List" message="$(string.string554)">
+        </task>
+        <task value="555" name="Cache_Reader" message="$(string.string555)">
+        </task>
+        <task value="556" name="Codec_DXVACPUDecode" message="$(string.string556)">
+        </task>
+        <task value="557" name="Codec_DXVAGPUDecode" message="$(string.string557)">
+        </task>
+        <task value="558" name="Codec_DXVADisplay" message="$(string.string558)">
+        </task>
+        <task value="559" name="ASFSource_Start" message="$(string.string559)">
+        </task>
+        <task value="560" name="Op_Queue_Operation" message="$(string.string560)">
+        </task>
+        <task value="561" name="Property_Handler_Init" message="$(string.string561)">
+        </task>
+        <task value="562" name="Property_Handler_Get_Value" message="$(string.string562)">
+        </task>
+        <task value="563" name="Property_Handler_Set_Value" message="$(string.string563)">
+        </task>
+        <task value="564" name="Property_Handler_Commit" message="$(string.string564)">
+        </task>
+        <task value="565" name="Property_Handler_With_Key_Init" message="$(string.string565)">
+        </task>
+        <task value="566" name="Property_Handler_With_Key_Get_Value" message="$(string.string566)">
+        </task>
+        <task value="567" name="Property_Handler_With_Key_Set_Value" message="$(string.string567)">
+        </task>
+        <task value="568" name="Property_Handler_With_Key_Commit" message="$(string.string568)">
+        </task>
+        <task value="569" name="Transcode_Create_Transcode_Topology" message="$(string.string569)">
+        </task>
+        <task value="570" name="Field_Of_Use_Validate" message="$(string.string570)">
+        </task>
+        <task value="571" name="Capture_Source_Start" message="$(string.string571)">
+        </task>
+        <task value="572" name="Capture_Source_Ready_Queue_Empty" message="$(string.string572)">
+        </task>
+        <task value="573" name="Capture_Source_Ready_Queue_Full" message="$(string.string573)">
+        </task>
+        <task value="574" name="CascadedScalingTask" message="$(string.string574)">
+        </task>
+        <task value="575" name="OptimizationFlags_PerformanceTask" message="$(string.string575)">
+        </task>
+        <task value="579" name="PerfTrack_Audio_Capture_Start_Request" message="$(string.string579)">
+        </task>
+        <task value="580" name="PerfTrack_Audio_Capture_First_Sample_Received" message="$(string.string580)">
+        </task>
+        <task value="581" name="PerfTrack_Video_Capture_Start_Request" message="$(string.string581)">
+        </task>
+        <task value="582" name="PerfTrack_Video_Capture_First_Sample_Received" message="$(string.string582)">
+        </task>
+        <task value="585" name="MediaProc_Dynamic_Topology_Change" message="$(string.string585)">
+        </task>
+        <task value="586" name="MediaProc_Dynamic_Transform_Removal" message="$(string.string586)">
+        </task>
+        <task value="587" name="MediaProc_Dynamic_Transform_Insertion" message="$(string.string587)">
+        </task>
+        <task value="589" name="Mem2DAlloc_Create" message="$(string.string589)">
+        </task>
+        <task value="590" name="Mem2DAlloc_Buffer" message="$(string.string590)">
+        </task>
+        <task value="591" name="Mem2DAlloc_Copy" message="$(string.string591)">
+        </task>
+        <task value="592" name="Property_Handler_ThumbnailGeneration" message="$(string.string592)">
+        </task>
+        <task value="593" name="Property_Handler_ThumbnailGeneration_BestFrame" message="$(string.string593)">
+        </task>
+        <task value="594" name="MFMediaSource_Sample_Received_Task" message="$(string.string594)">
+        </task>
+        <task value="596" name="Audio_Low_Latency" message="$(string.string596)">
+        </task>
+        <task value="597" name="DXGI_Map" message="$(string.string597)">
+        </task>
+        <task value="598" name="CopyImage" message="$(string.string598)">
+        </task>
+        <task value="599" name="MediaProc_SinkTriggered_Format_Change" message="$(string.string599)">
+        </task>
+        <task value="600" name="MFMediaDeviceSource-Start" message="$(string.string600)">
+        </task>
+        <task value="601" name="MFMediaDeviceStream-SendSinglePhotoTriggerToKS-Task" message="$(string.string601)">
+        </task>
+        <task value="602" name="Mem2DAlloc_Flush" message="$(string.string602)">
+        </task>
+        <task value="603" name="MFMediaSink_Sample_Write_To_Disk_Task" message="$(string.string603)">
+        </task>
+        <task value="604" name="MFTDriver_ProcessInput_Task" message="$(string.string604)">
+        </task>
+        <task value="605" name="MFTDriver_ProcessOutput_Task" message="$(string.string605)">
+        </task>
+        <task value="610" name="NetworkRIO_PendingSends" message="$(string.string610)">
+        </task>
+        <task value="611" name="NetworkRIO_PendingReceives" message="$(string.string611)">
+        </task>
+        <task value="612" name="DXGIBuffer" message="$(string.string612)">
+        </task>
+        <task value="613" name="DXGIBufferUnknown" message="$(string.string613)">
+        </task>
+        <task value="614" name="Attributes_CopyAllItems" message="$(string.string614)">
+        </task>
+        <task value="615" name="DXGI_Map_Sleep" message="$(string.string615)">
+        </task>
+        <task value="700" name="MFContentProtectionDeviceCreate" message="$(string.string700)">
+        </task>
+        <task value="701" name="MFIsContentProtectionDeviceSupported" message="$(string.string701)">
+        </task>
+        <task value="702" name="MFContentProtectionDeviceCall" message="$(string.string702)">
+        </task>
+        <task value="703" name="MFContentDecryptorContextCreate" message="$(string.string703)">
+        </task>
+        <task value="704" name="MFContentDecryptorContextInitializeKey" message="$(string.string704)">
+        </task>
+        <task value="705" name="EnsureTrust" message="$(string.string705)">
+        </task>
+        <task value="706" name="AddDecryptor" message="$(string.string706)">
+        </task>
+        <task value="707" name="PreparePresentation" message="$(string.string707)">
+        </task>
+        <task value="708" name="MFTWICDecoderProxyActivation" message="$(string.string708)">
+        </task>
+        <task value="709" name="MFTWICDecoderProxyGetPreview" message="$(string.string709)">
+        </task>
+        <task value="710" name="MFTWICDecoderProxyGetThumbnail" message="$(string.string710)">
+        </task>
+        <task value="711" name="MFTWICDecoderProxyGetFrame" message="$(string.string711)">
+        </task>
+        <task value="712" name="MFTWICBitmapSourceProxyGetThumbnail" message="$(string.string712)">
+        </task>
+        <task value="713" name="MFTWICBitmapSourceProxyCopyPixels" message="$(string.string713)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="op_mfperf_Input" message="$(string.string220)"/>
+        <opcode value="11" name="op_mfperf_Output" message="$(string.string221)"/>
+        <opcode value="12" name="op_mfperf_Queued" message="$(string.string223)"/>
+        <opcode value="13" name="op_mfperf_Dropped" message="$(string.string219)"/>
+        <opcode value="14" name="op_mfperf_Start" message="$(string.string224)"/>
+        <opcode value="15" name="op_mfperf_Stop" message="$(string.string225)"/>
+        <opcode value="16" name="op_mfperf_Pause" message="$(string.string222)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args3062_0">
+          <data name="dwType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwConfig" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3063_0">
+          <data name="dwScaleX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwScaleY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwWindowX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwWindowY" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3067_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args3071_0">
+          <data name="subtype" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args3072_0">
+          <data name="result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4000_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="objectType" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args4002_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="byteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4003_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="timestamp" inType="win:Int64" outType="xs:long"  />
+          <data name="targetTime" inType="win:Int64" outType="xs:long"  />
+          <data name="offset" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4004_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="submittedQPC" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4005_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="originalTargetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="targetQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="targetAhead" inType="win:Int64" outType="xs:long"  />
+          <data name="submittedQPC" inType="win:Int64" outType="xs:long"  />
+          <data name="submittedAhead" inType="win:Int64" outType="xs:long"  />
+          <data name="now" inType="win:Int64" outType="xs:long"  />
+          <data name="presentTime" inType="win:Int64" outType="xs:long"  />
+          <data name="dwmFramesPresented" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dwmRefreshStartCount" inType="win:Int64" outType="xs:long"  />
+          <data name="buffersEmpty" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="refreshFrameCount" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4006_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="cPresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="llPresentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4007_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="screenHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="frameHeightx1000" inType="win:Int32" outType="xs:int"  />
+          <data name="frameRatex1000" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4008_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hThread" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sleepType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="width" inType="win:Int32" outType="xs:int"  />
+          <data name="height" inType="win:Int32" outType="xs:int"  />
+          <data name="format" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="retryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4009_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dataType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="bytesDropped" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dropReasons" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4010_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="time" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4012_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="streamType" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args4013_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="stream" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="byteCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="type" inType="win:Binary" outType="xs:hexBinary" length="byteCount" />
+        </template>
+        <template tid="Args4014_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="clsid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="transform" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="userTransform" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4015_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="objectCategory" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="stream" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="timestamp" inType="win:Int64" outType="xs:long"  />
+          <data name="clock" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sampleSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="duration" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4019_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="objectCategory" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="byteCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="processTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4022_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="processingType" inType="win:Int8" outType="xs:byte"  />
+          <data name="event" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4023_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4024_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="offset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="byteCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4028_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="clock" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4045_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fullness" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4053_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="rtpSeq" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="packetNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4056_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="segmentID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="numberPending" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="time" inType="win:Int64" outType="xs:long"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4064_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4066_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4114_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="guid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args4115_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="arg1" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="arg2" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4129_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="arg" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4207_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="objectCreated" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4231_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="state" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="context" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4240_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="parameter" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4254_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="eventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="time" inType="win:Int64" outType="xs:long"  />
+          <data name="parameter" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="url" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4261_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="knobID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="previousLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="newLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dropTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4272_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="originalTime" inType="win:Int64" outType="xs:long"  />
+          <data name="adjustment" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4274_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="clockTime" inType="win:Int64" outType="xs:long"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="refreshRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="left" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="top" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="right" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="left1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="top1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="right1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bottom1" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4275_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="masterTime" inType="win:Int64" outType="xs:long"  />
+          <data name="deviceTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4276_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="propertyKey" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="propvariant" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4288_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="streamNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="sampleByteCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="packetNumber" inType="win:Int64" outType="xs:long"  />
+          <data name="packetSendTime" inType="win:Int64" outType="xs:long"  />
+          <data name="packetByteCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4291_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="eventTime" inType="win:Int64" outType="xs:long"  />
+          <data name="lateBy" inType="win:Int64" outType="xs:long"  />
+          <data name="callback" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4364_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="parameter" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bstr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4386_0">
+          <data name="fileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="graphType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="lastHr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4401_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="initialOffset" inType="win:Int64" outType="xs:long"  />
+          <data name="finalOffset" inType="win:Int64" outType="xs:long"  />
+          <data name="bytesInCache" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cacheSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sectorSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4402_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="frameIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sampleTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4408_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="parameter" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4410_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="operation" inType="win:Int32" outType="xs:int"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4412_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="contentType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4420_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="contentType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="propertyKeyGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="propertyKeyFmtId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4432_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="duration" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4437_0">
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4439_0">
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="GUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Unknown" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4441_0">
+          <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:Int32" outType="xs:int"  />
+          <data name="Type" inType="win:Int32" outType="xs:int"  />
+          <data name="Max" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4443_0">
+          <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParentQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Free" inType="win:Int32" outType="xs:int"  />
+          <data name="Allocated" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4445_0">
+          <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Direction" inType="win:Int32" outType="xs:int"  />
+          <data name="Width" inType="win:Int32" outType="xs:int"  />
+          <data name="Height" inType="win:Int32" outType="xs:int"  />
+          <data name="Format" inType="win:Int32" outType="xs:int"  />
+          <data name="Length" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4449_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="contentType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bestFrameIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="totalFrameDecoded" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="timeoutin100NS" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="isTimeout" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4450_0">
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AdjustedTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4456_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="isLowLatency" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4457_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4458_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="byteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="totalByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4459_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="isRetryWorkItem" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4460_0">
+          <data name="surface" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="uSubresource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4462_0">
+          <data name="isLosigHardwareResource" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4463_0">
+          <data name="IsGoingOn" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4464_0">
+          <data name="SoundLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4465_0">
+          <data name="status" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4466_0">
+          <data name="tag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4467_0">
+          <data name="SrcPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DstPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Width" inType="win:Int32" outType="xs:int"  />
+          <data name="Height" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4468_0">
+          <data name="SrcPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DstPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4471_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwStreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uiPinID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4472_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Free" inType="win:Int32" outType="xs:int"  />
+          <data name="Allocated" inType="win:Int32" outType="xs:int"  />
+          <data name="MinSampleCount" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4473_0">
+          <data name="SrcPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DstPtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4474_0">
+          <data name="SrcPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4500_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PendingCount" inType="win:Int32" outType="xs:int"  />
+          <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4503_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PendingReceives" inType="win:Int32" outType="xs:int"  />
+          <data name="BytesReceived" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4600_0">
+          <data name="system" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args4603_0">
+          <data name="available" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4605_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="functionID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="input bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="output bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msTransportTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msExecutionTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msTotal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4606_0">
+          <data name="system" inType="win:GUID" outType="xs:GUID"  />
+          <data name="manager" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4612_0">
+          <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args4615_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bytes to write" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4616_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bytes written" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4617_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StreamType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="timestamp" inType="win:Int64" outType="xs:long"  />
+          <data name="sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="duration" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4618_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4619_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4623_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MFTobject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4625_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BitmapSourceProxyobject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hrResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4630_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FrameIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4632_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RectX" inType="win:Int32" outType="xs:int"  />
+          <data name="RectY" inType="win:Int32" outType="xs:int"  />
+          <data name="RectWidth" inType="win:Int32" outType="xs:int"  />
+          <data name="RectHeight" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4633_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CachedRectLeft" inType="win:Int64" outType="xs:long"  />
+          <data name="CachedRectTop" inType="win:Int64" outType="xs:long"  />
+          <data name="CachedRectRight" inType="win:Int64" outType="xs:long"  />
+          <data name="CachedRectBottom" inType="win:Int64" outType="xs:long"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AddDecryptor" />
+       <string id="string1" value="APOProcess" />
+       <string id="string2" value="ASFSource_Start" />
+       <string id="string3" value="Attributes_CopyAllItems" />
+       <string id="string4" value="Audio_Low_Latency" />
+       <string id="string5" value="Audio_Render" />
+       <string id="string6" value="Audio_Renderer_Buffer_Fullness" />
+       <string id="string7" value="Audio_Starvation" />
+       <string id="string8" value="Base_Remote_Byte_Stream_Begin_Read" />
+       <string id="string9" value="Base_Remote_Byte_Stream_Begin_Save" />
+       <string id="string10" value="Base_Remote_Byte_Stream_Cancel_Save" />
+       <string id="string11" value="Base_Remote_Byte_Stream_Close" />
+       <string id="string12" value="Base_Remote_Byte_Stream_Configure_Buffering" />
+       <string id="string13" value="Base_Remote_Byte_Stream_Create" />
+       <string id="string14" value="Base_Remote_Byte_Stream_Delete" />
+       <string id="string15" value="Base_Remote_Byte_Stream_Enable_Buffering" />
+       <string id="string16" value="Base_Remote_Byte_Stream_End_Read" />
+       <string id="string17" value="Base_Remote_Byte_Stream_End_Save" />
+       <string id="string18" value="Base_Remote_Byte_Stream_Fire_Start_Buffering" />
+       <string id="string19" value="Base_Remote_Byte_Stream_Fire_Stop_Buffering" />
+       <string id="string20" value="Base_Remote_Byte_Stream_Read" />
+       <string id="string21" value="Base_Remote_Byte_Stream_Seek" />
+       <string id="string22" value="Buffer" />
+       <string id="string23" value="Buffer_Adjust_Sample_Time_One_Shot" />
+       <string id="string24" value="Buffer_Adjust_Sample_Time_Repeat" />
+       <string id="string25" value="Cache_Reader" />
+       <string id="string26" value="Capture_Source_Ready_Queue_Empty" />
+       <string id="string27" value="Capture_Source_Ready_Queue_Full" />
+       <string id="string28" value="Capture_Source_Start" />
+       <string id="string29" value="CascadedScalingTask" />
+       <string id="string30" value="Clock" />
+       <string id="string31" value="Codec_DXVACPUDecode" />
+       <string id="string32" value="Codec_DXVADisplay" />
+       <string id="string33" value="Codec_DXVAGPUDecode" />
+       <string id="string34" value="CopyImage" />
+       <string id="string35" value="Data_Drop" />
+       <string id="string36" value="Dropped" />
+       <string id="string37" value="DXGI_Map" />
+       <string id="string38" value="DXGI_Map_Sleep" />
+       <string id="string39" value="DXGIBuffer" />
+       <string id="string40" value="DXGIBufferUnknown" />
+       <string id="string41" value="EnsureTrust" />
+       <string id="string42" value="Evr_DWMDequeue" />
+       <string id="string43" value="Evr_Monitor_Estimate" />
+       <string id="string44" value="Evr_Present" />
+       <string id="string45" value="Evr_Queue" />
+       <string id="string46" value="Evr_Sleep" />
+       <string id="string47" value="Field_Of_Use_Validate" />
+       <string id="string48" value="File_Open" />
+       <string id="string49" value="Frame_Grabber_Get_Frame" />
+       <string id="string50" value="Frame_Grabber_Invoke" />
+       <string id="string51" value="Frame_Grabber_Open_Source" />
+       <string id="string52" value="HighCostEvent" />
+       <string id="string53" value="Http_Byte_Stream_Begin_Drm_Set_License" />
+       <string id="string54" value="Http_Byte_Stream_Begin_Open" />
+       <string id="string55" value="Http_Byte_Stream_Begin_Throttle" />
+       <string id="string56" value="Http_Byte_Stream_Create" />
+       <string id="string57" value="Http_Byte_Stream_Delete" />
+       <string id="string58" value="Http_Byte_Stream_End_Drm_Set_License" />
+       <string id="string59" value="Http_Byte_Stream_End_Open" />
+       <string id="string60" value="Http_Byte_Stream_End_Throttle" />
+       <string id="string61" value="Http_Byte_Stream_Time_Seek" />
+       <string id="string62" value="Http_Web_Request_Begin_Read_Payload" />
+       <string id="string63" value="Http_Web_Request_Begin_Receive_Response" />
+       <string id="string64" value="Http_Web_Request_Begin_Send_Request" />
+       <string id="string65" value="Http_Web_Request_Close" />
+       <string id="string66" value="Http_Web_Request_Create_Cache_Entry" />
+       <string id="string67" value="Http_Web_Request_Delete_Cache_Entry" />
+       <string id="string68" value="Http_Web_Request_End_Read_Payload" />
+       <string id="string69" value="Http_Web_Request_End_Receive_Response" />
+       <string id="string70" value="Http_Web_Request_End_Send_Request" />
+       <string id="string71" value="Http_Web_Request_Load_Cache_Entry" />
+       <string id="string72" value="Http_Web_Request_Save_Cache_Entry" />
+       <string id="string73" value="Http_Web_Request_Status_Callback" />
+       <string id="string74" value="Input" />
+       <string id="string75" value="IORead_Request" />
+       <string id="string76" value="IOWrite_Request" />
+       <string id="string77" value="Media_Cache_Read_Sample" />
+       <string id="string78" value="Media_Cache_Seek" />
+       <string id="string79" value="Media_Cache_Trim" />
+       <string id="string80" value="Media_Cache_Write_Sample" />
+       <string id="string81" value="Media_Processor_Source_Create_Topology" />
+       <string id="string82" value="Media_Processor_Source_Open" />
+       <string id="string83" value="Media_Processor_Source_Process_Sample" />
+       <string id="string84" value="Media_Processor_Source_Send_Event" />
+       <string id="string85" value="Media_Processor_Source_Start" />
+       <string id="string86" value="Media_Type_Change" />
+       <string id="string87" value="MediaFoundationPerformance" />
+       <string id="string88" value="MediaProc_Dynamic_Topology_Change" />
+       <string id="string89" value="MediaProc_Dynamic_Transform_Insertion" />
+       <string id="string90" value="MediaProc_Dynamic_Transform_Removal" />
+       <string id="string91" value="MediaProc_SinkTriggered_Format_Change" />
+       <string id="string92" value="Mem2DAlloc_Buffer" />
+       <string id="string93" value="Mem2DAlloc_Copy" />
+       <string id="string94" value="Mem2DAlloc_Create" />
+       <string id="string95" value="Mem2DAlloc_Flush" />
+       <string id="string96" value="Metadata_Created" />
+       <string id="string97" value="Metadata_Flush" />
+       <string id="string98" value="Metadata_Get_At" />
+       <string id="string99" value="Metadata_Get_Count" />
+       <string id="string100" value="Metadata_Get_Value" />
+       <string id="string101" value="Metadata_Loaded" />
+       <string id="string102" value="Metadata_On_Flush" />
+       <string id="string103" value="Metadata_On_Get_At" />
+       <string id="string104" value="Metadata_On_Get_Count" />
+       <string id="string105" value="Metadata_On_Get_Value" />
+       <string id="string106" value="Metadata_On_Set_Value" />
+       <string id="string107" value="Metadata_Set_Value" />
+       <string id="string108" value="MFContentDecryptorContextCreate" />
+       <string id="string109" value="MFContentDecryptorContextInitializeKey" />
+       <string id="string110" value="MFContentProtectionDeviceCall" />
+       <string id="string111" value="MFContentProtectionDeviceCreate" />
+       <string id="string112" value="MFGraph_Batch_Insert" />
+       <string id="string113" value="MFGraph_Close" />
+       <string id="string114" value="MFGraph_Find_Interface_On_Filter" />
+       <string id="string115" value="MFGraph_Find_Plugin" />
+       <string id="string116" value="MFGraph_Get_Context" />
+       <string id="string117" value="MFGraph_Get_Control_Caps" />
+       <string id="string118" value="MFGraph_Get_Cookie" />
+       <string id="string119" value="MFGraph_Get_Current_Position" />
+       <string id="string120" value="MFGraph_Get_Jump_Caps" />
+       <string id="string121" value="MFGraph_Get_Media_Caps" />
+       <string id="string122" value="MFGraph_Get_Open_State" />
+       <string id="string123" value="MFGraph_Get_Rate" />
+       <string id="string124" value="MFGraph_Get_Seek_Caps" />
+       <string id="string125" value="MFGraph_Get_Stop_Position" />
+       <string id="string126" value="MFGraph_Get_Type" />
+       <string id="string127" value="MFGraph_Get_URL" />
+       <string id="string128" value="MFGraph_Get_Volume" />
+       <string id="string129" value="MFGraph_Handle_Presentation_Switch" />
+       <string id="string130" value="MFGraph_Init" />
+       <string id="string131" value="MFGraph_Init_Ex" />
+       <string id="string132" value="MFGraph_Insert_Node" />
+       <string id="string133" value="MFGraph_Is_Reused" />
+       <string id="string134" value="MFGraph_Notify_Cred" />
+       <string id="string135" value="MFGraph_Notify_Custom_License" />
+       <string id="string136" value="MFGraph_Notify_Error" />
+       <string id="string137" value="MFGraph_Notify_Fullscreen" />
+       <string id="string138" value="MFGraph_Notify_Individualization" />
+       <string id="string139" value="MFGraph_Notify_License" />
+       <string id="string140" value="MFGraph_Notify_Playback" />
+       <string id="string141" value="MFGraph_Notify_Rate_Change" />
+       <string id="string142" value="MFGraph_Notify_Revocation" />
+       <string id="string143" value="MFGraph_Notify_State_Change" />
+       <string id="string144" value="MFGraph_Notify_User_Event" />
+       <string id="string145" value="MFGraph_Pause" />
+       <string id="string146" value="MFGraph_Play" />
+       <string id="string147" value="MFGraph_Queue" />
+       <string id="string148" value="MFGraph_Render" />
+       <string id="string149" value="MFGraph_Scan" />
+       <string id="string150" value="MFGraph_Set_Auto_Rewind" />
+       <string id="string151" value="MFGraph_Set_Context" />
+       <string id="string152" value="MFGraph_Set_Cookie" />
+       <string id="string153" value="MFGraph_Set_Current_Position" />
+       <string id="string154" value="MFGraph_Set_Rate" />
+       <string id="string155" value="MFGraph_Set_Stop_Position" />
+       <string id="string156" value="MFGraph_Set_Volume" />
+       <string id="string157" value="MFGraph_Stop" />
+       <string id="string158" value="MFIsContentProtectionDeviceSupported" />
+       <string id="string159" value="MFMediaDeviceSource-Start" />
+       <string id="string160" value="MFMediaDeviceStream-SendSinglePhotoTriggerToKS-Task" />
+       <string id="string161" value="MFMediaSink_Sample_Write_To_Disk_Task" />
+       <string id="string162" value="MFMediaSource_Sample_Received_Task" />
+       <string id="string163" value="MFTDriver_ProcessInput_Task" />
+       <string id="string164" value="MFTDriver_ProcessOutput_Task" />
+       <string id="string165" value="MFTWICBitmapSourceProxyCopyPixels" />
+       <string id="string166" value="MFTWICBitmapSourceProxyGetThumbnail" />
+       <string id="string167" value="MFTWICDecoderProxyActivation" />
+       <string id="string168" value="MFTWICDecoderProxyGetFrame" />
+       <string id="string169" value="MFTWICDecoderProxyGetPreview" />
+       <string id="string170" value="MFTWICDecoderProxyGetThumbnail" />
+       <string id="string171" value="Microsoft-Windows-MediaFoundation-Performance" />
+       <string id="string172" value="Microsoft-Windows-MediaFoundation-Performance/SARStreamResource" />
+       <string id="string173" value="Muxer_Add_Payload" />
+       <string id="string174" value="Muxer_On_Completed_Packet" />
+       <string id="string175" value="Muxer_Process_Sample" />
+       <string id="string176" value="Network_Channel_Connect" />
+       <string id="string177" value="Network_Channel_Open" />
+       <string id="string178" value="Network_Channel_Read" />
+       <string id="string179" value="Network_Channel_Receive_Request" />
+       <string id="string180" value="Network_Channel_Send_Request" />
+       <string id="string181" value="Network_Channel_Send_Response" />
+       <string id="string182" value="Network_Channel_Write" />
+       <string id="string183" value="Network_Client_Begin_Close" />
+       <string id="string184" value="Network_Client_Describe" />
+       <string id="string185" value="Network_Client_End_Close" />
+       <string id="string186" value="Network_Client_GUID" />
+       <string id="string187" value="Network_Client_Open" />
+       <string id="string188" value="Network_Client_Packet_Pair" />
+       <string id="string189" value="Network_Client_Pause" />
+       <string id="string190" value="Network_Client_Play" />
+       <string id="string191" value="Network_Client_Received_Announce" />
+       <string id="string192" value="Network_Client_Received_EOS" />
+       <string id="string193" value="Network_Client_Select_Streams" />
+       <string id="string194" value="Network_Client_Send_Keep_Alive" />
+       <string id="string195" value="Network_Client_Send_Log" />
+       <string id="string196" value="Network_Client_Stop" />
+       <string id="string197" value="Network_Client_Tear_Down" />
+       <string id="string198" value="Network_Platform_Get_Host_By_Name" />
+       <string id="string199" value="Network_Session_Connect" />
+       <string id="string200" value="Network_Session_Open" />
+       <string id="string201" value="Network_Session_Receive_Request" />
+       <string id="string202" value="Network_Session_Send_Request" />
+       <string id="string203" value="Network_Session_Send_Response" />
+       <string id="string204" value="Network_Source_Announce" />
+       <string id="string205" value="Network_Source_Begin_Reconnect" />
+       <string id="string206" value="Network_Source_Buffering_Start" />
+       <string id="string207" value="Network_Source_Buffering_Stop" />
+       <string id="string208" value="Network_Source_Connect" />
+       <string id="string209" value="Network_Source_Disconnect" />
+       <string id="string210" value="Network_Source_End_Reconnect" />
+       <string id="string211" value="Network_Source_EOS" />
+       <string id="string212" value="Network_Source_MCast_Join_Done" />
+       <string id="string213" value="Network_Source_Open" />
+       <string id="string214" value="Network_Source_Stream_Switch" />
+       <string id="string215" value="NetworkRIO_PendingReceives" />
+       <string id="string216" value="NetworkRIO_PendingSends" />
+       <string id="string217" value="New_Stream" />
+       <string id="string218" value="Object" />
+       <string id="string219" value="op_mfperf_Dropped" />
+       <string id="string220" value="op_mfperf_Input" />
+       <string id="string221" value="op_mfperf_Output" />
+       <string id="string222" value="op_mfperf_Pause" />
+       <string id="string223" value="op_mfperf_Queued" />
+       <string id="string224" value="op_mfperf_Start" />
+       <string id="string225" value="op_mfperf_Stop" />
+       <string id="string226" value="Op_Queue_Operation" />
+       <string id="string227" value="OptimizationFlags_PerformanceTask" />
+       <string id="string228" value="Output" />
+       <string id="string229" value="Packet_Recover_FEC" />
+       <string id="string230" value="Packet_Recover_RTX" />
+       <string id="string231" value="Packet_Sink_Lost_Packet" />
+       <string id="string232" value="Pause" />
+       <string id="string233" value="PEAuth_Comm_Acquire_Session_Key" />
+       <string id="string234" value="PEAuth_Comm_Get_Comp_List" />
+       <string id="string235" value="PEAuth_Comm_Kernel_State_Inquiry" />
+       <string id="string236" value="PEAuth_Comm_Reload_GRL" />
+       <string id="string237" value="PEAuth_Comm_Renew_Session_Key" />
+       <string id="string238" value="PerformanceTask" />
+       <string id="string239" value="PerfTrack_Audio_Capture_First_Sample_Received" />
+       <string id="string240" value="PerfTrack_Audio_Capture_Start_Request" />
+       <string id="string241" value="PerfTrack_Video_Capture_First_Sample_Received" />
+       <string id="string242" value="PerfTrack_Video_Capture_Start_Request" />
+       <string id="string243" value="Predicted_Video_Sample_Time" />
+       <string id="string244" value="PreparePresentation" />
+       <string id="string245" value="Process" />
+       <string id="string246" value="Property_Handler_Commit" />
+       <string id="string247" value="Property_Handler_Get_Value" />
+       <string id="string248" value="Property_Handler_Init" />
+       <string id="string249" value="Property_Handler_Set_Value" />
+       <string id="string250" value="Property_Handler_ThumbnailGeneration" />
+       <string id="string251" value="Property_Handler_ThumbnailGeneration_BestFrame" />
+       <string id="string252" value="Property_Handler_With_Key_Commit" />
+       <string id="string253" value="Property_Handler_With_Key_Get_Value" />
+       <string id="string254" value="Property_Handler_With_Key_Init" />
+       <string id="string255" value="Property_Handler_With_Key_Set_Value" />
+       <string id="string256" value="Quality_Manager_Set_Drop_Mode" />
+       <string id="string257" value="Quality_Manager_Set_Drop_Time" />
+       <string id="string258" value="Quality_Manager_Set_Quality_Level" />
+       <string id="string259" value="Queued" />
+       <string id="string260" value="Render_Sample_Actual_Render" />
+       <string id="string261" value="Render_Sample_Allocate_Sample" />
+       <string id="string262" value="Render_Sample_Decode" />
+       <string id="string263" value="Render_Sample_Deinterlace" />
+       <string id="string264" value="Render_Sample_FRC" />
+       <string id="string265" value="Render_Sample_MAP_Render" />
+       <string id="string266" value="Render_Sample_MID_Render" />
+       <string id="string267" value="Render_Sample_Mix" />
+       <string id="string268" value="Render_Sample_Procamp" />
+       <string id="string269" value="Render_Sample_Receive_Sample" />
+       <string id="string270" value="Render_Sample_Render" />
+       <string id="string271" value="Render_Sample_Start_Mix" />
+       <string id="string272" value="Sequencer_Source_Create_Object_From_Node" />
+       <string id="string273" value="Sequencer_Source_On_Context_Event" />
+       <string id="string274" value="Sequencer_Source_On_Stream_Event" />
+       <string id="string275" value="Sequencer_Source_Process_Sample" />
+       <string id="string276" value="Sequencer_Source_Start" />
+       <string id="string277" value="Sequencer_Source_Stop" />
+       <string id="string278" value="Session_Bitpump_Critical_Error" />
+       <string id="string279" value="Session_Bitpump_Details" />
+       <string id="string280" value="Session_Bitpump_End_Async_Call" />
+       <string id="string281" value="Session_Bitpump_End_Sync_Call" />
+       <string id="string282" value="Session_Bitpump_Error" />
+       <string id="string283" value="Session_Bitpump_Receive_Event" />
+       <string id="string284" value="Session_Bitpump_Start_Async_Call" />
+       <string id="string285" value="Session_Bitpump_Start_Sync_Call" />
+       <string id="string286" value="Session_Bitpump_Wait_For_Sample" />
+       <string id="string287" value="Session_Close" />
+       <string id="string288" value="Session_Pause" />
+       <string id="string289" value="Session_Presentation_Switch" />
+       <string id="string290" value="Session_Set_Topology" />
+       <string id="string291" value="Session_Shutdown" />
+       <string id="string292" value="Session_Start" />
+       <string id="string293" value="Session_Stop" />
+       <string id="string294" value="Source_Resolution_Begin_Create" />
+       <string id="string295" value="Source_Resolution_Begin_Create_Object_From_Byte_Stream" />
+       <string id="string296" value="Source_Resolution_Begin_Create_Object_From_URL" />
+       <string id="string297" value="Source_Resolution_Byte_Stream_Created" />
+       <string id="string298" value="Source_Resolution_Byte_Stream_Handler_Begin_Create_Object" />
+       <string id="string299" value="Source_Resolution_Byte_Stream_Handler_End_Create_Object" />
+       <string id="string300" value="Source_Resolution_End_Create" />
+       <string id="string301" value="Source_Resolution_End_Create_Object_From_Byte_Stream" />
+       <string id="string302" value="Source_Resolution_End_Create_Object_From_URL" />
+       <string id="string303" value="Source_Resolution_End_Scheme_Handler_End_Create_Object" />
+       <string id="string304" value="Source_Resolution_Lookup_Byte_Stream_Handler" />
+       <string id="string305" value="Source_Resolution_Lookup_Scheme_Handler" />
+       <string id="string306" value="Source_Resolution_Media_Source_Created" />
+       <string id="string307" value="Source_Resolution_Scheme_Handler_Begin_Create_Object" />
+       <string id="string308" value="Source_Resolution_Scheme_Handler_End_Create_Object" />
+       <string id="string309" value="Start" />
+       <string id="string310" value="State_Change" />
+       <string id="string311" value="Stop" />
+       <string id="string312" value="Timer_Late" />
+       <string id="string313" value="Topo_Loader_Create_MFT" />
+       <string id="string314" value="Topo_Loader_Load" />
+       <string id="string315" value="Transcode_Create_Transcode_Topology" />
+       <string id="string316" value="Transform_Create" />
+       <string id="string317" value="Unusual_Streaming_Event" />
+       <string id="string318" value="Urlmon_Byte_Stream_Begin_Read" />
+       <string id="string319" value="Urlmon_Byte_Stream_Begin_Save" />
+       <string id="string320" value="Urlmon_Byte_Stream_Close" />
+       <string id="string321" value="Urlmon_Byte_Stream_Configure_Buffering" />
+       <string id="string322" value="Urlmon_Byte_Stream_Create" />
+       <string id="string323" value="Urlmon_Byte_Stream_Delete" />
+       <string id="string324" value="Urlmon_Byte_Stream_Enable_Buffering" />
+       <string id="string325" value="Urlmon_Byte_Stream_End_Read" />
+       <string id="string326" value="Urlmon_Byte_Stream_End_Save" />
+       <string id="string327" value="Urlmon_Byte_Stream_Fire_Start_Buffering" />
+       <string id="string328" value="Urlmon_Byte_Stream_Fire_Stop_Buffering" />
+       <string id="string329" value="Urlmon_Byte_Stream_Read" />
+       <string id="string330" value="Urlmon_Byte_Stream_Seek" />
+       <string id="string331" value="Video_Frame_Glitch" />
+       <string id="string332" value="Video_Render" />
+       <string id="string333" value="win:Info" />
+       <string id="string334" value="win:Start" />
+       <string id="string335" value="win:Stop" />
+       <string id="string336" value="WMPPlayback_Error_Open" />
+       <string id="string337" value="WMPPlayback_Error_Queue" />
+       <string id="string338" value="WMPPlayback_Open" />
+       <string id="string339" value="WMPPlayback_Queue" />
+       <string id="string340" value="WMPPlayback_Start" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

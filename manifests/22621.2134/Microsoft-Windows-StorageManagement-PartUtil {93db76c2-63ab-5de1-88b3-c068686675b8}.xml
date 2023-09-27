@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-StorageManagement-PartUtil" name="Microsoft-Windows-StorageManagement-PartUtil" guid="{93db76c2-63ab-5de1-88b3-c068686675b8}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args101_1"/>
+        <event value="102" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args102_1"/>
+        <event value="103" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args103_1"/>
+        <event value="104" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="105" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="106" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="107" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="108" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="109" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="110" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args110_1"/>
+        <event value="111" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args111_1"/>
+        <event value="112" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="113" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="201" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args201_1"/>
+        <event value="202" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args202_1"/>
+        <event value="203" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args203_1"/>
+        <event value="204" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational" template="Args204_1"/>
+        <event value="205" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+        <event value="207" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement-PartUtil/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-StorageManagement-PartUtil/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args101_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args102_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args103_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args110_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args111_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args201_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args202_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MbrPartitionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MbrBootIndicator" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GptPartitionType" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GptPartitionId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GptAttributes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="GptName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args203_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MbrPartitionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MbrBootIndicator" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GptPartitionType" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GptPartitionId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GptAttributes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="GptName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args204_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-StorageManagement-PartUtil" />
+       <string id="string1" value="Microsoft-Windows-StorageManagement-PartUtil/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

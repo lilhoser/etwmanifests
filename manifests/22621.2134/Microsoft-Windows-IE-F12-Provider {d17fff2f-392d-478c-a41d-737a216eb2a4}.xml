@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IE-F12-Provider" name="Microsoft-Windows-IE-F12-Provider" guid="{d17fff2f-392d-478c-a41d-737a216eb2a4}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  task="Timeline_Zoom" opcode="win:Start" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  task="Timeline_Zoom" opcode="win:Stop"/>
+        <event value="103" version="0" level="win:Informational"  task="Timeline_Grid_Sort" opcode="win:Start"/>
+        <event value="104" version="0" level="win:Informational"  task="Timeline_Grid_Sort" opcode="win:Stop"/>
+        <event value="105" version="0" level="win:Informational"  task="Timeline_LoadGraphs" opcode="win:Start"/>
+        <event value="106" version="0" level="win:Informational"  task="Timeline_LoadGraphs" opcode="win:Stop"/>
+        <event value="107" version="0" level="win:Informational"  task="Timeline_Grid_Scrolled" opcode="win:Start"/>
+        <event value="108" version="0" level="win:Informational"  task="Timeline_Grid_Filtered" opcode="win:Stop"/>
+        <event value="109" version="0" level="win:Informational"  task="Timeline_Selection_Updated" opcode="win:Start"/>
+        <event value="110" version="0" level="win:Informational"  task="Timeline_Selection_Updated" opcode="win:Stop"/>
+        <event value="111" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterBackground" opcode="win:Start"/>
+        <event value="112" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterBackground" opcode="win:Stop"/>
+        <event value="113" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterNetwork" opcode="win:Start"/>
+        <event value="114" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterNetwork" opcode="win:Stop"/>
+        <event value="115" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterMeasure" opcode="win:Start"/>
+        <event value="116" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterMeasure" opcode="win:Stop"/>
+        <event value="117" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterFrames" opcode="win:Start"/>
+        <event value="118" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterFrames" opcode="win:Stop"/>
+        <event value="119" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterName" opcode="win:Start"/>
+        <event value="120" version="0" level="win:Informational"  task="Timeline_GridUpdatedForFilterName" opcode="win:Stop"/>
+        <event value="201" version="0" level="win:Informational"  task="Memory_TakeSnapshot" opcode="win:Start"/>
+        <event value="202" version="0" level="win:Informational"  task="Memory_TakeSnapshot" opcode="win:Stop"/>
+        <event value="207" version="0" level="win:Informational"  task="Memory_Grid_Sort" opcode="win:Start"/>
+        <event value="208" version="0" level="win:Informational"  task="Memory_Grid_Sort" opcode="win:Stop"/>
+        <event value="209" version="0" level="win:Informational"  task="Memory_DisplayFirstLevelSnapshotData" opcode="win:Start"/>
+        <event value="210" version="0" level="win:Informational"  task="Memory_DisplayFirstLevelSnapshotData" opcode="win:Stop"/>
+        <event value="211" version="0" level="win:Informational"  task="Memory_ToolReady" opcode="win:Start"/>
+        <event value="212" version="0" level="win:Informational"  task="Memory_ToolReady" opcode="win:Stop"/>
+        <event value="213" version="0" level="win:Informational"  task="Memory_GridFilterUIResponse" opcode="win:Start"/>
+        <event value="214" version="0" level="win:Informational"  task="Memory_GridFilterUIResponse" opcode="win:Stop"/>
+        <event value="215" version="0" level="win:Informational"  task="Memory_UpdateObjectReferenceGraph" opcode="win:Start"/>
+        <event value="216" version="0" level="win:Informational"  task="Memory_UpdateObjectReferenceGraph" opcode="win:Stop"/>
+        <event value="217" version="0" level="win:Informational"  task="Memory_ProcessingSnapshot" opcode="win:Start" template="Args217_0"/>
+        <event value="218" version="0" level="win:Informational"  task="Memory_ProcessingSnapshot" opcode="win:Stop"/>
+        <event value="219" version="0" level="win:Informational"  task="Memory_ProcessingDiffSnapshot" opcode="win:Start"/>
+        <event value="220" version="0" level="win:Informational"  task="Memory_ProcessingDiffSnapshot" opcode="win:Stop"/>
+        <event value="301" version="0" level="win:Informational"  task="Debugger_StepOver" opcode="win:Start"/>
+        <event value="302" version="0" level="win:Informational"  task="Debugger_StepInto" opcode="win:Start"/>
+        <event value="303" version="0" level="win:Informational"  task="Debugger_StepOut" opcode="win:Start"/>
+        <event value="304" version="0" level="win:Informational"  task="Debugger_OnBreak" opcode="win:Start"/>
+        <event value="305" version="0" level="win:Informational"  task="Debugger_OnBreak" opcode="win:Stop"/>
+        <event value="306" version="0" level="win:Informational"  task="Debugger_PrettyPrint" opcode="win:Start"/>
+        <event value="307" version="0" level="win:Informational"  task="Debugger_PrettyPrint" opcode="win:Stop"/>
+        <event value="308" version="0" level="win:Informational"  task="Debugger_OpenDocument" opcode="win:Start"/>
+        <event value="309" version="0" level="win:Informational"  task="Debugger_OpenDocument" opcode="win:Stop"/>
+        <event value="310" version="0" level="win:Informational"  task="Debugger_CloseDocument" opcode="win:Start"/>
+        <event value="311" version="0" level="win:Informational"  task="Debugger_CloseDocument" opcode="win:Stop"/>
+        <event value="312" version="0" level="win:Informational"  task="Debugger_SwitchDocument" opcode="win:Start"/>
+        <event value="313" version="0" level="win:Informational"  task="Debugger_SwitchDocument" opcode="win:Stop"/>
+        <event value="314" version="0" level="win:Informational"  task="Debugger_RevealRange" opcode="win:Start"/>
+        <event value="315" version="0" level="win:Informational"  task="Debugger_RevealRange" opcode="win:Stop"/>
+        <event value="316" version="0" level="win:Informational"  task="Debugger_CallstackController_GoTo" opcode="win:Start"/>
+        <event value="317" version="0" level="win:Informational"  task="Debugger_CallstackController_GoTo" opcode="win:Stop"/>
+        <event value="318" version="0" level="win:Informational"  task="Debugger_BreakpointController_SetAllEnabledStates" opcode="win:Start"/>
+        <event value="319" version="0" level="win:Informational"  task="Debugger_BreakpointController_SetAllEnabledStates" opcode="win:Stop"/>
+        <event value="320" version="0" level="win:Informational"  task="Debugger_EditorWindow_NavigateTo" opcode="win:Start"/>
+        <event value="321" version="0" level="win:Informational"  task="Debugger_EditorWindow_NavigateTo" opcode="win:Stop"/>
+        <event value="322" version="0" level="win:Informational"  task="Debugger_Editor_SetModel" opcode="win:Start"/>
+        <event value="323" version="0" level="win:Informational"  task="Debugger_Editor_SetModel" opcode="win:Stop"/>
+        <event value="324" version="0" level="win:Informational"  task="Debugger_Editor_CreateModel" opcode="win:Start"/>
+        <event value="325" version="0" level="win:Informational"  task="Debugger_Editor_CreateModel" opcode="win:Stop"/>
+        <event value="326" version="0" level="win:Informational"  task="Debugger_Editor_Create" opcode="win:Start"/>
+        <event value="327" version="0" level="win:Informational"  task="Debugger_Editor_Create" opcode="win:Stop"/>
+        <event value="328" version="0" level="win:Informational"  task="Debugger_Editor_Layout" opcode="win:Start"/>
+        <event value="329" version="0" level="win:Informational"  task="Debugger_Editor_Layout" opcode="win:Stop"/>
+        <event value="330" version="0" level="win:Informational"  task="Debugger_Editor_ChangeViewZones" opcode="win:Start"/>
+        <event value="331" version="0" level="win:Informational"  task="Debugger_Editor_ChangeViewZones" opcode="win:Stop"/>
+        <event value="332" version="0" level="win:Informational"  task="Debugger_Editor_RevealPosition" opcode="win:Start"/>
+        <event value="333" version="0" level="win:Informational"  task="Debugger_Editor_RevealPosition" opcode="win:Stop"/>
+        <event value="334" version="0" level="win:Informational"  task="Debugger_Editor_SaveViewState" opcode="win:Start"/>
+        <event value="335" version="0" level="win:Informational"  task="Debugger_Editor_SaveViewState" opcode="win:Stop"/>
+        <event value="336" version="0" level="win:Informational"  task="Debugger_Editor_RestoreViewState" opcode="win:Start"/>
+        <event value="337" version="0" level="win:Informational"  task="Debugger_Editor_RestoreViewState" opcode="win:Stop"/>
+        <event value="338" version="0" level="win:Informational"  task="Debugger_EditorWindow_CreateDataTipFromPosition" opcode="win:Start"/>
+        <event value="339" version="0" level="win:Informational"  task="Debugger_EditorWindow_CreateDataTipFromPosition" opcode="win:Stop"/>
+        <event value="340" version="0" level="win:Informational"  task="Debugger_BreakpointController_SetEnabledState" opcode="win:Start"/>
+        <event value="341" version="0" level="win:Informational"  task="Debugger_BreakpointController_SetEnabledState" opcode="win:Stop"/>
+        <event value="342" version="0" level="win:Informational"  task="Debugger_BreakpointController_BreakpointChanged" opcode="win:Start"/>
+        <event value="343" version="0" level="win:Informational"  task="Debugger_BreakpointController_BreakpointChanged" opcode="win:Stop"/>
+        <event value="344" version="0" level="win:Informational"  task="Debugger_BreakpointWindow_BreakpointChanged" opcode="win:Start"/>
+        <event value="345" version="0" level="win:Informational"  task="Debugger_BreakpointWindow_BreakpointChanged" opcode="win:Stop"/>
+        <event value="346" version="0" level="win:Informational"  task="Debugger_WatchWindowView_RefreshView" opcode="win:Start"/>
+        <event value="347" version="0" level="win:Informational"  task="Debugger_WatchWindowView_RefreshView" opcode="win:Stop"/>
+        <event value="348" version="0" level="win:Informational"  task="Debugger_StepDocument" opcode="win:Start"/>
+        <event value="349" version="0" level="win:Informational"  task="Debugger_ToggleJMC" opcode="win:Start"/>
+        <event value="350" version="0" level="win:Informational"  task="Debugger_ToggleJMC" opcode="win:Stop"/>
+        <event value="351" version="0" level="win:Informational"  task="Debugger_ToggleCallstackLibraryFrames" opcode="win:Start"/>
+        <event value="352" version="0" level="win:Informational"  task="Debugger_ToggleCallstackLibraryFrames" opcode="win:Stop"/>
+        <event value="353" version="0" level="win:Informational"  task="Debugger_SpecifyUrlAsJMCType" opcode="win:Start"/>
+        <event value="354" version="0" level="win:Informational"  task="Debugger_SpecifyUrlAsJMCType" opcode="win:Stop"/>
+        <event value="355" version="0" level="win:Informational"  task="Debugger_Persistence_DataLoad" opcode="win:Start"/>
+        <event value="356" version="0" level="win:Informational"  task="Debugger_Persistence_DataLoad" opcode="win:Stop"/>
+        <event value="357" version="0" level="win:Informational"  task="Debugger_Persistence_AddBreakpoints" opcode="win:Start"/>
+        <event value="358" version="0" level="win:Informational"  task="Debugger_Persistence_AddBreakpoints" opcode="win:Stop"/>
+        <event value="359" version="0" level="win:Informational"  task="Debugger_Persistence_AddWatches" opcode="win:Start"/>
+        <event value="360" version="0" level="win:Informational"  task="Debugger_Persistence_AddWatches" opcode="win:Stop"/>
+        <event value="361" version="0" level="win:Informational"  task="Debugger_Persistence_TabOpen" opcode="win:Start"/>
+        <event value="362" version="0" level="win:Informational"  task="Debugger_Persistence_TabOpen" opcode="win:Stop"/>
+        <event value="363" version="0" level="win:Informational"  task="Debugger_Persistence_SaveState" opcode="win:Start"/>
+        <event value="364" version="0" level="win:Informational"  task="Debugger_Persistence_SaveState" opcode="win:Stop"/>
+        <event value="365" version="0" level="win:Informational"  task="Debugger_SourceMap_ToggleSourceMap" opcode="win:Start"/>
+        <event value="366" version="0" level="win:Informational"  task="Debugger_SourceMap_ToggleSourceMap" opcode="win:Stop"/>
+        <event value="367" version="0" level="win:Informational"  task="Debugger_SourceMap_ParseSourceMapAsync" opcode="win:Start"/>
+        <event value="368" version="0" level="win:Informational"  task="Debugger_SourceMap_ParseSourceMapAsync" opcode="win:Stop"/>
+        <event value="369" version="0" level="win:Informational"  task="Debugger_Editor_GetOrCreateMode" opcode="win:Start"/>
+        <event value="370" version="0" level="win:Informational"  task="Debugger_Editor_GetOrCreateMode" opcode="win:Stop"/>
+        <event value="371" version="0" level="win:Informational"  task="Debugger_OnAddDocuments" opcode="win:Info"/>
+        <event value="382" version="0" level="win:Informational"  task="Debugger_Intellisense_Provider_Update" opcode="win:Start"/>
+        <event value="383" version="0" level="win:Informational"  task="Debugger_Intellisense_Provider_Update" opcode="win:Stop"/>
+        <event value="384" version="0" level="win:Informational"  task="Debugger_Intellisense_Provider_Get_Items" opcode="win:Start"/>
+        <event value="385" version="0" level="win:Informational"  task="Debugger_Intellisense_Provider_Get_Items" opcode="win:Stop"/>
+        <event value="386" version="0" level="win:Informational"  task="Debugger_AsyncStackProvider_GetFrames" opcode="win:Start"/>
+        <event value="387" version="0" level="win:Informational"  task="Debugger_AsyncStackProvider_GetFrames" opcode="win:Stop"/>
+        <event value="388" version="0" level="win:Informational"  task="Debugger_AsyncStackProvider_GetFrames" opcode="win:Stop"/>
+        <event value="401" version="0" level="win:Informational"  task="Console_Window_Create" opcode="win:Start"/>
+        <event value="402" version="0" level="win:Informational"  task="Console_Window_Create" opcode="win:Stop"/>
+        <event value="403" version="0" level="win:Informational"  task="Console_Attach" opcode="win:Start"/>
+        <event value="404" version="0" level="win:Informational"  task="Console_Attach" opcode="win:Stop"/>
+        <event value="405" version="0" level="win:Informational"  task="Console_Message" opcode="win:Start"/>
+        <event value="406" version="0" level="win:Informational"  task="Console_Message" opcode="win:Stop"/>
+        <event value="407" version="0" level="win:Informational"  task="Console_Input" opcode="win:Start"/>
+        <event value="408" version="0" level="win:Informational"  task="Console_Input" opcode="win:Stop"/>
+        <event value="409" version="0" level="win:Informational"  task="Console_Output" opcode="win:Start"/>
+        <event value="410" version="0" level="win:Informational"  task="Console_Output" opcode="win:Stop"/>
+        <event value="411" version="0" level="win:Informational"  task="Console_Output_Render" opcode="win:Start"/>
+        <event value="412" version="0" level="win:Informational"  task="Console_Output_Render" opcode="win:Stop"/>
+        <event value="413" version="0" level="win:Informational"  task="Console_Item_Toggle" opcode="win:Start"/>
+        <event value="414" version="0" level="win:Informational"  task="Console_Item_Toggle" opcode="win:Stop"/>
+        <event value="415" version="0" level="win:Informational"  task="Console_HtmlLines_Expand" opcode="win:Start"/>
+        <event value="416" version="0" level="win:Informational"  task="Console_HtmlLines_Expand" opcode="win:Stop"/>
+        <event value="417" version="0" level="win:Informational"  task="Console_Context_Menu_Loading" opcode="win:Start"/>
+        <event value="418" version="0" level="win:Informational"  task="Console_Context_Menu_Loading" opcode="win:Stop"/>
+        <event value="419" version="0" level="win:Informational"  task="Console_Scroll" opcode="win:Start"/>
+        <event value="420" version="0" level="win:Informational"  task="Console_Scroll" opcode="win:Stop"/>
+        <event value="431" version="0" level="win:Informational"  task="Console_Intellisense_Provider_Update" opcode="win:Start"/>
+        <event value="432" version="0" level="win:Informational"  task="Console_Intellisense_Provider_Update" opcode="win:Stop"/>
+        <event value="433" version="0" level="win:Informational"  task="Console_Intellisense_Provider_Get_Items" opcode="win:Start"/>
+        <event value="434" version="0" level="win:Informational"  task="Console_Intellisense_Provider_Get_Items" opcode="win:Stop"/>
+        <event value="501" version="0" level="win:Informational"  task="Dom_Window_Create" opcode="win:Start"/>
+        <event value="502" version="0" level="win:Informational"  task="Dom_Window_Create" opcode="win:Stop"/>
+        <event value="503" version="0" level="win:Informational"  task="Dom_ExpandNode" opcode="win:Start"/>
+        <event value="504" version="0" level="win:Informational"  task="Dom_ExpandNode" opcode="win:Stop"/>
+        <event value="505" version="0" level="win:Informational"  task="Dom_UndoRedo" opcode="win:Start"/>
+        <event value="506" version="0" level="win:Informational"  task="Dom_UndoRedo" opcode="win:Stop"/>
+        <event value="507" version="0" level="win:Informational"  task="Dom_DragDrop" opcode="win:Start"/>
+        <event value="508" version="0" level="win:Informational"  task="Dom_DragDrop" opcode="win:Stop"/>
+        <event value="509" version="0" level="win:Informational"  task="Dom_AddAttribute" opcode="win:Start"/>
+        <event value="510" version="0" level="win:Informational"  task="Dom_AddAttribute" opcode="win:Stop"/>
+        <event value="511" version="0" level="win:Informational"  task="Dom_Intellisense" opcode="win:Start"/>
+        <event value="512" version="0" level="win:Informational"  task="Dom_Intellisense" opcode="win:Stop"/>
+        <event value="513" version="0" level="win:Informational"  task="Dom_SelectElement" opcode="win:Start"/>
+        <event value="514" version="0" level="win:Informational"  task="Dom_SelectElement" opcode="win:Stop"/>
+        <event value="515" version="0" level="win:Informational"  task="Dom_CutElement" opcode="win:Start"/>
+        <event value="516" version="0" level="win:Informational"  task="Dom_CutElement" opcode="win:Stop"/>
+        <event value="517" version="0" level="win:Informational"  task="Dom_PasteElement" opcode="win:Start"/>
+        <event value="518" version="0" level="win:Informational"  task="Dom_PasteElement" opcode="win:Stop"/>
+        <event value="519" version="0" level="win:Informational"  task="Dom_CollapseElement" opcode="win:Start"/>
+        <event value="520" version="0" level="win:Informational"  task="Dom_CollapseElement" opcode="win:Stop"/>
+        <event value="521" version="0" level="win:Informational"  task="Dom_StylesTabLoad" opcode="win:Start"/>
+        <event value="522" version="0" level="win:Informational"  task="Dom_StylesTabLoad" opcode="win:Stop"/>
+        <event value="523" version="0" level="win:Informational"  task="Dom_StylesTab_Intellisense" opcode="win:Start"/>
+        <event value="524" version="0" level="win:Informational"  task="Dom_StylesTab_Intellisense" opcode="win:Stop"/>
+        <event value="525" version="0" level="win:Informational"  task="Dom_TreeItemExpand" opcode="win:Start"/>
+        <event value="526" version="0" level="win:Informational"  task="Dom_TreeItemExpand" opcode="win:Stop"/>
+        <event value="527" version="0" level="win:Informational"  task="Dom_ComputedTabLoad" opcode="win:Start"/>
+        <event value="528" version="0" level="win:Informational"  task="Dom_ComputedTabLoad" opcode="win:Stop"/>
+        <event value="529" version="0" level="win:Informational"  task="Dom_ChangesTabLoad" opcode="win:Start"/>
+        <event value="530" version="0" level="win:Informational"  task="Dom_ChangesTabLoad" opcode="win:Stop"/>
+        <event value="531" version="0" level="win:Informational"  task="Dom_LayoutTabLoad" opcode="win:Start"/>
+        <event value="532" version="0" level="win:Informational"  task="Dom_LayoutTabLoad" opcode="win:Stop"/>
+        <event value="533" version="0" level="win:Informational"  task="Dom_EventsTabLoad" opcode="win:Start"/>
+        <event value="534" version="0" level="win:Informational"  task="Dom_EventsTabLoad" opcode="win:Stop"/>
+        <event value="535" version="0" level="win:Informational"  task="Dom_TreeItemCollapse" opcode="win:Start"/>
+        <event value="536" version="0" level="win:Informational"  task="Dom_TreeItemCollapse" opcode="win:Stop"/>
+        <event value="537" version="0" level="win:Informational"  task="Dom_Search" opcode="win:Start"/>
+        <event value="538" version="0" level="win:Informational"  task="Dom_Search" opcode="win:Stop"/>
+        <event value="539" version="0" level="win:Informational"  task="Dom_RemoteInjection" opcode="win:Start"/>
+        <event value="540" version="0" level="win:Informational"  task="Dom_RemoteInjection" opcode="win:Stop"/>
+        <event value="541" version="0" level="win:Informational"  task="Dom_EnterEditAsHtml" opcode="win:Start"/>
+        <event value="542" version="0" level="win:Informational"  task="Dom_EnterEditAsHtml" opcode="win:Stop"/>
+        <event value="543" version="0" level="win:Informational"  task="Dom_CommitEditAsHtml" opcode="win:Start"/>
+        <event value="544" version="0" level="win:Informational"  task="Dom_CommitEditAsHtml" opcode="win:Stop"/>
+        <event value="545" version="0" level="win:Informational"  task="Dom_CommitEditAttribute" opcode="win:Start"/>
+        <event value="546" version="0" level="win:Informational"  task="Dom_CommitEditAttribute" opcode="win:Stop"/>
+        <event value="547" version="0" level="win:Informational"  task="Dom_ShowColorPicker" opcode="win:Start"/>
+        <event value="548" version="0" level="win:Informational"  task="Dom_ShowColorPicker" opcode="win:Stop"/>
+        <event value="549" version="0" level="win:Informational"  task="Dom_HideColorPicker" opcode="win:Start"/>
+        <event value="550" version="0" level="win:Informational"  task="Dom_HideColorPicker" opcode="win:Stop"/>
+        <event value="551" version="0" level="win:Informational"  task="Dom_SetColorUsingColorPicker" opcode="win:Start"/>
+        <event value="552" version="0" level="win:Informational"  task="Dom_SetColorUsingColorPicker" opcode="win:Stop"/>
+        <event value="601" version="0" level="win:Informational"  task="Emulation_Window_Create" opcode="win:Start"/>
+        <event value="602" version="0" level="win:Informational"  task="Emulation_Window_Create" opcode="win:Stop"/>
+        <event value="701" version="0" level="win:Informational"  task="Generic_Debug_1" opcode="win:Start"/>
+        <event value="702" version="0" level="win:Informational"  task="Generic_Debug_1" opcode="win:Stop"/>
+        <event value="703" version="0" level="win:Informational"  task="Generic_Debug_2" opcode="win:Start"/>
+        <event value="704" version="0" level="win:Informational"  task="Generic_Debug_2" opcode="win:Stop"/>
+        <event value="705" version="0" level="win:Informational"  task="Generic_Debug_3" opcode="win:Start"/>
+        <event value="706" version="0" level="win:Informational"  task="Generic_Debug_3" opcode="win:Stop"/>
+        <event value="707" version="0" level="win:Informational"  task="Generic_Debug_4" opcode="win:Start"/>
+        <event value="708" version="0" level="win:Informational"  task="Generic_Debug_4" opcode="win:Stop"/>
+        <event value="709" version="0" level="win:Informational"  task="Generic_Debug_5" opcode="win:Start"/>
+        <event value="710" version="0" level="win:Informational"  task="Generic_Debug_5" opcode="win:Stop"/>
+        <event value="711" version="0" level="win:Informational"  task="Generic_Debug_6" opcode="win:Start"/>
+        <event value="712" version="0" level="win:Informational"  task="Generic_Debug_6" opcode="win:Stop"/>
+        <event value="713" version="0" level="win:Informational"  task="Generic_Debug_7" opcode="win:Start"/>
+        <event value="714" version="0" level="win:Informational"  task="Generic_Debug_7" opcode="win:Stop"/>
+        <event value="715" version="0" level="win:Informational"  task="Generic_Debug_8" opcode="win:Start"/>
+        <event value="716" version="0" level="win:Informational"  task="Generic_Debug_8" opcode="win:Stop"/>
+        <event value="717" version="0" level="win:Informational"  task="Generic_Debug_9" opcode="win:Start"/>
+        <event value="718" version="0" level="win:Informational"  task="Generic_Debug_9" opcode="win:Stop"/>
+        <event value="801" version="0" level="win:Informational"  task="Header_InitializeTabs" opcode="win:Start"/>
+        <event value="802" version="0" level="win:Informational"  task="Header_InitializeTabs" opcode="win:Stop"/>
+        <event value="901" version="0" level="win:Informational"  task="Shell_Load" opcode="win:Start"/>
+        <event value="902" version="0" level="win:Informational"  task="Shell_Load" opcode="win:Stop"/>
+        <event value="903" version="0" level="win:Informational"  task="Shell_LaunchTool" opcode="win:Start"/>
+        <event value="904" version="0" level="win:Informational"  task="Shell_LaunchTool" opcode="win:Stop"/>
+        <event value="905" version="0" level="win:Informational"  task="Shell_LaunchTool_Header" opcode="win:Start"/>
+        <event value="906" version="0" level="win:Informational"  task="Shell_LaunchTool_Header" opcode="win:Stop"/>
+        <event value="907" version="0" level="win:Informational"  task="Shell_LaunchTool_Network" opcode="win:Start"/>
+        <event value="908" version="0" level="win:Informational"  task="Shell_LaunchTool_Network" opcode="win:Stop"/>
+        <event value="909" version="0" level="win:Informational"  task="Shell_LaunchTool_Profiler" opcode="win:Start"/>
+        <event value="910" version="0" level="win:Informational"  task="Shell_LaunchTool_Profiler" opcode="win:Stop"/>
+        <event value="911" version="0" level="win:Informational"  task="Shell_LaunchTool_Console" opcode="win:Start"/>
+        <event value="912" version="0" level="win:Informational"  task="Shell_LaunchTool_Console" opcode="win:Stop"/>
+        <event value="913" version="0" level="win:Informational"  task="Shell_LaunchTool_Dom" opcode="win:Start"/>
+        <event value="914" version="0" level="win:Informational"  task="Shell_LaunchTool_Dom" opcode="win:Stop"/>
+        <event value="915" version="0" level="win:Informational"  task="Shell_LaunchTool_Debugger" opcode="win:Start"/>
+        <event value="916" version="0" level="win:Informational"  task="Shell_LaunchTool_Debugger" opcode="win:Stop"/>
+        <event value="917" version="0" level="win:Informational"  task="Shell_LaunchTool_Emulation" opcode="win:Start"/>
+        <event value="918" version="0" level="win:Informational"  task="Shell_LaunchTool_Emulation" opcode="win:Stop"/>
+        <event value="921" version="0" level="win:Informational"  task="Shell_LaunchTool_Memory" opcode="win:Start"/>
+        <event value="922" version="0" level="win:Informational"  task="Shell_LaunchTool_Memory" opcode="win:Stop"/>
+        <event value="923" version="0" level="win:Informational"  task="Shell_LaunchTool_VisualProfiler" opcode="win:Start"/>
+        <event value="924" version="0" level="win:Informational"  task="Shell_LaunchTool_VisualProfiler" opcode="win:Stop"/>
+        <event value="925" version="0" level="win:Informational"  task="Shell_LaunchTool_Popup" opcode="win:Start"/>
+        <event value="926" version="0" level="win:Informational"  task="Shell_LaunchTool_Popup" opcode="win:Stop"/>
+        <event value="927" version="0" level="win:Informational"  task="Shell_ShowTool_Network" opcode="win:Start"/>
+        <event value="928" version="0" level="win:Informational"  task="Shell_ShowTool_Network" opcode="win:Stop"/>
+        <event value="929" version="0" level="win:Informational"  task="Shell_ShowTool_Profiler" opcode="win:Start"/>
+        <event value="930" version="0" level="win:Informational"  task="Shell_ShowTool_Profiler" opcode="win:Stop"/>
+        <event value="931" version="0" level="win:Informational"  task="Shell_ShowTool_Console" opcode="win:Start"/>
+        <event value="932" version="0" level="win:Informational"  task="Shell_ShowTool_Console" opcode="win:Stop"/>
+        <event value="933" version="0" level="win:Informational"  task="Shell_ShowTool_Dom" opcode="win:Start"/>
+        <event value="934" version="0" level="win:Informational"  task="Shell_ShowTool_Dom" opcode="win:Stop"/>
+        <event value="935" version="0" level="win:Informational"  task="Shell_ShowTool_Debugger" opcode="win:Start"/>
+        <event value="936" version="0" level="win:Informational"  task="Shell_ShowTool_Debugger" opcode="win:Stop"/>
+        <event value="937" version="0" level="win:Informational"  task="Shell_ShowTool_Emulation" opcode="win:Start"/>
+        <event value="938" version="0" level="win:Informational"  task="Shell_ShowTool_Emulation" opcode="win:Stop"/>
+        <event value="939" version="0" level="win:Informational"  task="Shell_ShowTool_Popup" opcode="win:Start"/>
+        <event value="940" version="0" level="win:Informational"  task="Shell_ShowTool_Popup" opcode="win:Stop"/>
+        <event value="941" version="0" level="win:Informational"  task="Shell_ShowTool_Memory" opcode="win:Start"/>
+        <event value="942" version="0" level="win:Informational"  task="Shell_ShowTool_Memory" opcode="win:Stop"/>
+        <event value="943" version="0" level="win:Informational"  task="Shell_ShowTool_VisualProfiler" opcode="win:Start"/>
+        <event value="944" version="0" level="win:Informational"  task="Shell_ShowTool_VisualProfiler" opcode="win:Stop"/>
+        <event value="203" version="1" level="win:Informational"  task="Memory_CompareSnapshot" opcode="win:Start"/>
+        <event value="204" version="1" level="win:Informational"  task="Memory_CompareSnapshot" opcode="win:Stop"/>
+        <event value="205" version="1" level="win:Informational"  task="Memory_ViewSnapshot" opcode="win:Start"/>
+        <event value="206" version="1" level="win:Informational"  task="Memory_ViewSnapshot" opcode="win:Stop"/>
+        <event value="372" version="1" level="win:Informational"  task="Debugger_Intellisense_ListBox_Build" opcode="win:Start"/>
+        <event value="373" version="1" level="win:Informational"  task="Debugger_Intellisense_ListBox_Build" opcode="win:Stop"/>
+        <event value="374" version="1" level="win:Informational"  task="Debugger_Intellisense_ListBox_Reset" opcode="win:Start"/>
+        <event value="375" version="1" level="win:Informational"  task="Debugger_Intellisense_ListBox_Reset" opcode="win:Stop"/>
+        <event value="376" version="1" level="win:Informational"  task="Debugger_Intellisense_Menu_Filter" opcode="win:Start"/>
+        <event value="377" version="1" level="win:Informational"  task="Debugger_Intellisense_Menu_Filter" opcode="win:Stop"/>
+        <event value="378" version="1" level="win:Informational"  task="Debugger_Intellisense_Menu_Layout" opcode="win:Start"/>
+        <event value="379" version="1" level="win:Informational"  task="Debugger_Intellisense_Menu_Layout" opcode="win:Stop"/>
+        <event value="380" version="1" level="win:Informational"  task="Debugger_Intellisense_Provider_Get_Expression" opcode="win:Start"/>
+        <event value="381" version="1" level="win:Informational"  task="Debugger_Intellisense_Provider_Get_Expression" opcode="win:Stop"/>
+        <event value="421" version="1" level="win:Informational"  task="Console_Intellisense_ListBox_Build" opcode="win:Start"/>
+        <event value="422" version="1" level="win:Informational"  task="Console_Intellisense_ListBox_Build" opcode="win:Stop"/>
+        <event value="423" version="1" level="win:Informational"  task="Console_Intellisense_ListBox_Reset" opcode="win:Start"/>
+        <event value="424" version="1" level="win:Informational"  task="Console_Intellisense_ListBox_Reset" opcode="win:Stop"/>
+        <event value="425" version="1" level="win:Informational"  task="Console_Intellisense_Menu_Filter" opcode="win:Start"/>
+        <event value="426" version="1" level="win:Informational"  task="Console_Intellisense_Menu_Filter" opcode="win:Stop"/>
+        <event value="427" version="1" level="win:Informational"  task="Console_Intellisense_Menu_Layout" opcode="win:Start"/>
+        <event value="428" version="1" level="win:Informational"  task="Console_Intellisense_Menu_Layout" opcode="win:Stop"/>
+        <event value="429" version="1" level="win:Informational"  task="Console_Intellisense_Provider_Get_Expression" opcode="win:Start"/>
+        <event value="430" version="1" level="win:Informational"  task="Console_Intellisense_Provider_Get_Expression" opcode="win:Stop"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="101" name="Timeline_Grid_Sort" message="$(string.string101)">
+        </task>
+        <task value="102" name="Timeline_Zoom" message="$(string.string102)">
+        </task>
+        <task value="103" name="Timeline_LoadGraphs" message="$(string.string103)">
+        </task>
+        <task value="104" name="Timeline_Grid_Scrolled" message="$(string.string104)">
+        </task>
+        <task value="105" name="Timeline_Grid_Filtered" message="$(string.string105)">
+        </task>
+        <task value="106" name="Timeline_Selection_Updated" message="$(string.string106)">
+        </task>
+        <task value="107" name="Timeline_GridUpdatedForFilterBackground" message="$(string.string107)">
+        </task>
+        <task value="108" name="Timeline_GridUpdatedForFilterNetwork" message="$(string.string108)">
+        </task>
+        <task value="109" name="Timeline_GridUpdatedForFilterMeasure" message="$(string.string109)">
+        </task>
+        <task value="110" name="Timeline_GridUpdatedForFilterFrames" message="$(string.string110)">
+        </task>
+        <task value="111" name="Timeline_GridUpdatedForFilterName" message="$(string.string111)">
+        </task>
+        <task value="201" name="Memory_Grid_Sort" message="$(string.string201)">
+        </task>
+        <task value="202" name="Memory_DisplayFirstLevelSnapshotData" message="$(string.string202)">
+        </task>
+        <task value="203" name="Memory_ViewSnapshot" message="$(string.string203)">
+        </task>
+        <task value="204" name="Memory_TakeSnapshot" message="$(string.string204)">
+        </task>
+        <task value="205" name="Memory_CompareSnapshot" message="$(string.string205)">
+        </task>
+        <task value="206" name="Memory_ToolReady" message="$(string.string206)">
+        </task>
+        <task value="207" name="Memory_GridFilterUIResponse" message="$(string.string207)">
+        </task>
+        <task value="208" name="Memory_UpdateObjectReferenceGraph" message="$(string.string208)">
+        </task>
+        <task value="209" name="Memory_ProcessingSnapshot" message="$(string.string209)">
+        </task>
+        <task value="210" name="Memory_ProcessingDiffSnapshot" message="$(string.string210)">
+        </task>
+        <task value="301" name="Debugger_StepOver" message="$(string.string301)">
+        </task>
+        <task value="302" name="Debugger_StepInto" message="$(string.string302)">
+        </task>
+        <task value="303" name="Debugger_StepOut" message="$(string.string303)">
+        </task>
+        <task value="304" name="Debugger_OnBreak" message="$(string.string304)">
+        </task>
+        <task value="305" name="Debugger_PrettyPrint" message="$(string.string305)">
+        </task>
+        <task value="306" name="Debugger_OpenDocument" message="$(string.string306)">
+        </task>
+        <task value="307" name="Debugger_CloseDocument" message="$(string.string307)">
+        </task>
+        <task value="308" name="Debugger_SwitchDocument" message="$(string.string308)">
+        </task>
+        <task value="309" name="Debugger_RevealRange" message="$(string.string309)">
+        </task>
+        <task value="310" name="Debugger_CallstackController_GoTo" message="$(string.string310)">
+        </task>
+        <task value="311" name="Debugger_BreakpointController_SetAllEnabledStates" message="$(string.string311)">
+        </task>
+        <task value="312" name="Debugger_EditorWindow_NavigateTo" message="$(string.string312)">
+        </task>
+        <task value="313" name="Debugger_Editor_SetModel" message="$(string.string313)">
+        </task>
+        <task value="314" name="Debugger_Editor_CreateModel" message="$(string.string314)">
+        </task>
+        <task value="315" name="Debugger_Editor_Create" message="$(string.string315)">
+        </task>
+        <task value="316" name="Debugger_Editor_Layout" message="$(string.string316)">
+        </task>
+        <task value="317" name="Debugger_Editor_ChangeViewZones" message="$(string.string317)">
+        </task>
+        <task value="318" name="Debugger_Editor_RevealPosition" message="$(string.string318)">
+        </task>
+        <task value="319" name="Debugger_Editor_SaveViewState" message="$(string.string319)">
+        </task>
+        <task value="320" name="Debugger_Editor_RestoreViewState" message="$(string.string320)">
+        </task>
+        <task value="321" name="Debugger_EditorWindow_CreateDataTipFromPosition" message="$(string.string321)">
+        </task>
+        <task value="322" name="Debugger_BreakpointController_SetEnabledState" message="$(string.string322)">
+        </task>
+        <task value="323" name="Debugger_BreakpointController_BreakpointChanged" message="$(string.string323)">
+        </task>
+        <task value="324" name="Debugger_BreakpointWindow_BreakpointChanged" message="$(string.string324)">
+        </task>
+        <task value="325" name="Debugger_WatchWindowView_RefreshView" message="$(string.string325)">
+        </task>
+        <task value="326" name="Debugger_StepDocument" message="$(string.string326)">
+        </task>
+        <task value="327" name="Debugger_ToggleJMC" message="$(string.string327)">
+        </task>
+        <task value="328" name="Debugger_ToggleCallstackLibraryFrames" message="$(string.string328)">
+        </task>
+        <task value="329" name="Debugger_SpecifyUrlAsJMCType" message="$(string.string329)">
+        </task>
+        <task value="330" name="Debugger_Persistence_DataLoad" message="$(string.string330)">
+        </task>
+        <task value="331" name="Debugger_Persistence_AddBreakpoints" message="$(string.string331)">
+        </task>
+        <task value="332" name="Debugger_Persistence_AddWatches" message="$(string.string332)">
+        </task>
+        <task value="333" name="Debugger_Persistence_TabOpen" message="$(string.string333)">
+        </task>
+        <task value="334" name="Debugger_Persistence_SaveState" message="$(string.string334)">
+        </task>
+        <task value="335" name="Debugger_SourceMap_ToggleSourceMap" message="$(string.string335)">
+        </task>
+        <task value="336" name="Debugger_SourceMap_ParseSourceMapAsync" message="$(string.string336)">
+        </task>
+        <task value="337" name="Debugger_Editor_GetOrCreateMode" message="$(string.string337)">
+        </task>
+        <task value="338" name="Debugger_OnAddDocuments" message="$(string.string338)">
+        </task>
+        <task value="339" name="Debugger_Intellisense_ListBox_Build" message="$(string.string339)">
+        </task>
+        <task value="340" name="Debugger_Intellisense_ListBox_Reset" message="$(string.string340)">
+        </task>
+        <task value="341" name="Debugger_Intellisense_Menu_Filter" message="$(string.string341)">
+        </task>
+        <task value="342" name="Debugger_Intellisense_Menu_Layout" message="$(string.string342)">
+        </task>
+        <task value="343" name="Debugger_Intellisense_Provider_Get_Expression" message="$(string.string343)">
+        </task>
+        <task value="344" name="Debugger_Intellisense_Provider_Update" message="$(string.string344)">
+        </task>
+        <task value="345" name="Debugger_Intellisense_Provider_Get_Items" message="$(string.string345)">
+        </task>
+        <task value="346" name="Debugger_AsyncStackProvider_GetFrames" message="$(string.string346)">
+        </task>
+        <task value="401" name="Console_Window_Create" message="$(string.string401)">
+        </task>
+        <task value="402" name="Console_Attach" message="$(string.string402)">
+        </task>
+        <task value="403" name="Console_Message" message="$(string.string403)">
+        </task>
+        <task value="404" name="Console_Input" message="$(string.string404)">
+        </task>
+        <task value="405" name="Console_Output" message="$(string.string405)">
+        </task>
+        <task value="406" name="Console_Output_Render" message="$(string.string406)">
+        </task>
+        <task value="407" name="Console_Item_Toggle" message="$(string.string407)">
+        </task>
+        <task value="408" name="Console_HtmlLines_Expand" message="$(string.string408)">
+        </task>
+        <task value="409" name="Console_Context_Menu_Loading" message="$(string.string409)">
+        </task>
+        <task value="410" name="Console_Scroll" message="$(string.string410)">
+        </task>
+        <task value="411" name="Console_Intellisense_ListBox_Build" message="$(string.string411)">
+        </task>
+        <task value="412" name="Console_Intellisense_ListBox_Reset" message="$(string.string412)">
+        </task>
+        <task value="413" name="Console_Intellisense_Menu_Filter" message="$(string.string413)">
+        </task>
+        <task value="414" name="Console_Intellisense_Menu_Layout" message="$(string.string414)">
+        </task>
+        <task value="415" name="Console_Intellisense_Provider_Get_Expression" message="$(string.string415)">
+        </task>
+        <task value="416" name="Console_Intellisense_Provider_Update" message="$(string.string416)">
+        </task>
+        <task value="417" name="Console_Intellisense_Provider_Get_Items" message="$(string.string417)">
+        </task>
+        <task value="501" name="Dom_Window_Create" message="$(string.string501)">
+        </task>
+        <task value="502" name="Dom_ExpandNode" message="$(string.string502)">
+        </task>
+        <task value="503" name="Dom_UndoRedo" message="$(string.string503)">
+        </task>
+        <task value="504" name="Dom_DragDrop" message="$(string.string504)">
+        </task>
+        <task value="505" name="Dom_AddAttribute" message="$(string.string505)">
+        </task>
+        <task value="506" name="Dom_Intellisense" message="$(string.string506)">
+        </task>
+        <task value="507" name="Dom_SelectElement" message="$(string.string507)">
+        </task>
+        <task value="508" name="Dom_CutElement" message="$(string.string508)">
+        </task>
+        <task value="509" name="Dom_PasteElement" message="$(string.string509)">
+        </task>
+        <task value="510" name="Dom_CollapseElement" message="$(string.string510)">
+        </task>
+        <task value="511" name="Dom_StylesTabLoad" message="$(string.string511)">
+        </task>
+        <task value="512" name="Dom_StylesTab_Intellisense" message="$(string.string512)">
+        </task>
+        <task value="513" name="Dom_TreeItemExpand" message="$(string.string513)">
+        </task>
+        <task value="514" name="Dom_ComputedTabLoad" message="$(string.string514)">
+        </task>
+        <task value="515" name="Dom_ChangesTabLoad" message="$(string.string515)">
+        </task>
+        <task value="516" name="Dom_LayoutTabLoad" message="$(string.string516)">
+        </task>
+        <task value="517" name="Dom_EventsTabLoad" message="$(string.string517)">
+        </task>
+        <task value="518" name="Dom_TreeItemCollapse" message="$(string.string518)">
+        </task>
+        <task value="519" name="Dom_Search" message="$(string.string519)">
+        </task>
+        <task value="520" name="Dom_RemoteInjection" message="$(string.string520)">
+        </task>
+        <task value="521" name="Dom_EnterEditAsHtml" message="$(string.string521)">
+        </task>
+        <task value="522" name="Dom_CommitEditAsHtml" message="$(string.string522)">
+        </task>
+        <task value="523" name="Dom_CommitEditAttribute" message="$(string.string523)">
+        </task>
+        <task value="524" name="Dom_ShowColorPicker" message="$(string.string524)">
+        </task>
+        <task value="525" name="Dom_HideColorPicker" message="$(string.string525)">
+        </task>
+        <task value="526" name="Dom_SetColorUsingColorPicker" message="$(string.string526)">
+        </task>
+        <task value="601" name="Emulation_Window_Create" message="$(string.string601)">
+        </task>
+        <task value="701" name="Generic_Debug_1" message="$(string.string701)">
+        </task>
+        <task value="702" name="Generic_Debug_2" message="$(string.string702)">
+        </task>
+        <task value="703" name="Generic_Debug_3" message="$(string.string703)">
+        </task>
+        <task value="704" name="Generic_Debug_4" message="$(string.string704)">
+        </task>
+        <task value="705" name="Generic_Debug_5" message="$(string.string705)">
+        </task>
+        <task value="706" name="Generic_Debug_6" message="$(string.string706)">
+        </task>
+        <task value="707" name="Generic_Debug_7" message="$(string.string707)">
+        </task>
+        <task value="708" name="Generic_Debug_8" message="$(string.string708)">
+        </task>
+        <task value="709" name="Generic_Debug_9" message="$(string.string709)">
+        </task>
+        <task value="801" name="Header_InitializeTabs" message="$(string.string801)">
+        </task>
+        <task value="901" name="Shell_Load" message="$(string.string901)">
+        </task>
+        <task value="902" name="Shell_LaunchTool" message="$(string.string902)">
+        </task>
+        <task value="903" name="Shell_LaunchTool_Header" message="$(string.string903)">
+        </task>
+        <task value="904" name="Shell_LaunchTool_Network" message="$(string.string904)">
+        </task>
+        <task value="905" name="Shell_LaunchTool_Profiler" message="$(string.string905)">
+        </task>
+        <task value="906" name="Shell_LaunchTool_Console" message="$(string.string906)">
+        </task>
+        <task value="907" name="Shell_LaunchTool_Dom" message="$(string.string907)">
+        </task>
+        <task value="908" name="Shell_LaunchTool_Debugger" message="$(string.string908)">
+        </task>
+        <task value="909" name="Shell_LaunchTool_Emulation" message="$(string.string909)">
+        </task>
+        <task value="911" name="Shell_LaunchTool_Memory" message="$(string.string911)">
+        </task>
+        <task value="912" name="Shell_LaunchTool_VisualProfiler" message="$(string.string912)">
+        </task>
+        <task value="913" name="Shell_ShowTool_Network" message="$(string.string913)">
+        </task>
+        <task value="914" name="Shell_ShowTool_Profiler" message="$(string.string914)">
+        </task>
+        <task value="915" name="Shell_ShowTool_Console" message="$(string.string915)">
+        </task>
+        <task value="916" name="Shell_ShowTool_Dom" message="$(string.string916)">
+        </task>
+        <task value="917" name="Shell_ShowTool_Debugger" message="$(string.string917)">
+        </task>
+        <task value="918" name="Shell_ShowTool_Emulation" message="$(string.string918)">
+        </task>
+        <task value="919" name="Shell_ShowTool_Popup" message="$(string.string919)">
+        </task>
+        <task value="920" name="Shell_ShowTool_Memory" message="$(string.string920)">
+        </task>
+        <task value="921" name="Shell_ShowTool_VisualProfiler" message="$(string.string921)">
+        </task>
+        <task value="922" name="Shell_LaunchTool_Popup" message="$(string.string922)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args101_0">
+          <data name="TraceDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="Key" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TraceDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Console_Attach" />
+       <string id="string1" value="Console_Context_Menu_Loading" />
+       <string id="string2" value="Console_HtmlLines_Expand" />
+       <string id="string3" value="Console_Input" />
+       <string id="string4" value="Console_Intellisense_ListBox_Build" />
+       <string id="string5" value="Console_Intellisense_ListBox_Reset" />
+       <string id="string6" value="Console_Intellisense_Menu_Filter" />
+       <string id="string7" value="Console_Intellisense_Menu_Layout" />
+       <string id="string8" value="Console_Intellisense_Provider_Get_Expression" />
+       <string id="string9" value="Console_Intellisense_Provider_Get_Items" />
+       <string id="string10" value="Console_Intellisense_Provider_Update" />
+       <string id="string11" value="Console_Item_Toggle" />
+       <string id="string12" value="Console_Message" />
+       <string id="string13" value="Console_Output" />
+       <string id="string14" value="Console_Output_Render" />
+       <string id="string15" value="Console_Scroll" />
+       <string id="string16" value="Console_Window_Create" />
+       <string id="string17" value="Debugger_AsyncStackProvider_GetFrames" />
+       <string id="string18" value="Debugger_BreakpointController_BreakpointChanged" />
+       <string id="string19" value="Debugger_BreakpointController_SetAllEnabledStates" />
+       <string id="string20" value="Debugger_BreakpointController_SetEnabledState" />
+       <string id="string21" value="Debugger_BreakpointWindow_BreakpointChanged" />
+       <string id="string22" value="Debugger_CallstackController_GoTo" />
+       <string id="string23" value="Debugger_CloseDocument" />
+       <string id="string24" value="Debugger_Editor_ChangeViewZones" />
+       <string id="string25" value="Debugger_Editor_Create" />
+       <string id="string26" value="Debugger_Editor_CreateModel" />
+       <string id="string27" value="Debugger_Editor_GetOrCreateMode" />
+       <string id="string28" value="Debugger_Editor_Layout" />
+       <string id="string29" value="Debugger_Editor_RestoreViewState" />
+       <string id="string30" value="Debugger_Editor_RevealPosition" />
+       <string id="string31" value="Debugger_Editor_SaveViewState" />
+       <string id="string32" value="Debugger_Editor_SetModel" />
+       <string id="string33" value="Debugger_EditorWindow_CreateDataTipFromPosition" />
+       <string id="string34" value="Debugger_EditorWindow_NavigateTo" />
+       <string id="string35" value="Debugger_Intellisense_ListBox_Build" />
+       <string id="string36" value="Debugger_Intellisense_ListBox_Reset" />
+       <string id="string37" value="Debugger_Intellisense_Menu_Filter" />
+       <string id="string38" value="Debugger_Intellisense_Menu_Layout" />
+       <string id="string39" value="Debugger_Intellisense_Provider_Get_Expression" />
+       <string id="string40" value="Debugger_Intellisense_Provider_Get_Items" />
+       <string id="string41" value="Debugger_Intellisense_Provider_Update" />
+       <string id="string42" value="Debugger_OnAddDocuments" />
+       <string id="string43" value="Debugger_OnBreak" />
+       <string id="string44" value="Debugger_OpenDocument" />
+       <string id="string45" value="Debugger_Persistence_AddBreakpoints" />
+       <string id="string46" value="Debugger_Persistence_AddWatches" />
+       <string id="string47" value="Debugger_Persistence_DataLoad" />
+       <string id="string48" value="Debugger_Persistence_SaveState" />
+       <string id="string49" value="Debugger_Persistence_TabOpen" />
+       <string id="string50" value="Debugger_PrettyPrint" />
+       <string id="string51" value="Debugger_RevealRange" />
+       <string id="string52" value="Debugger_SourceMap_ParseSourceMapAsync" />
+       <string id="string53" value="Debugger_SourceMap_ToggleSourceMap" />
+       <string id="string54" value="Debugger_SpecifyUrlAsJMCType" />
+       <string id="string55" value="Debugger_StepDocument" />
+       <string id="string56" value="Debugger_StepInto" />
+       <string id="string57" value="Debugger_StepOut" />
+       <string id="string58" value="Debugger_StepOver" />
+       <string id="string59" value="Debugger_SwitchDocument" />
+       <string id="string60" value="Debugger_ToggleCallstackLibraryFrames" />
+       <string id="string61" value="Debugger_ToggleJMC" />
+       <string id="string62" value="Debugger_WatchWindowView_RefreshView" />
+       <string id="string63" value="Dom_AddAttribute" />
+       <string id="string64" value="Dom_ChangesTabLoad" />
+       <string id="string65" value="Dom_CollapseElement" />
+       <string id="string66" value="Dom_CommitEditAsHtml" />
+       <string id="string67" value="Dom_CommitEditAttribute" />
+       <string id="string68" value="Dom_ComputedTabLoad" />
+       <string id="string69" value="Dom_CutElement" />
+       <string id="string70" value="Dom_DragDrop" />
+       <string id="string71" value="Dom_EnterEditAsHtml" />
+       <string id="string72" value="Dom_EventsTabLoad" />
+       <string id="string73" value="Dom_ExpandNode" />
+       <string id="string74" value="Dom_HideColorPicker" />
+       <string id="string75" value="Dom_Intellisense" />
+       <string id="string76" value="Dom_LayoutTabLoad" />
+       <string id="string77" value="Dom_PasteElement" />
+       <string id="string78" value="Dom_RemoteInjection" />
+       <string id="string79" value="Dom_Search" />
+       <string id="string80" value="Dom_SelectElement" />
+       <string id="string81" value="Dom_SetColorUsingColorPicker" />
+       <string id="string82" value="Dom_ShowColorPicker" />
+       <string id="string83" value="Dom_StylesTab_Intellisense" />
+       <string id="string84" value="Dom_StylesTabLoad" />
+       <string id="string85" value="Dom_TreeItemCollapse" />
+       <string id="string86" value="Dom_TreeItemExpand" />
+       <string id="string87" value="Dom_UndoRedo" />
+       <string id="string88" value="Dom_Window_Create" />
+       <string id="string89" value="Emulation_Window_Create" />
+       <string id="string90" value="Generic_Debug_1" />
+       <string id="string91" value="Generic_Debug_2" />
+       <string id="string92" value="Generic_Debug_3" />
+       <string id="string93" value="Generic_Debug_4" />
+       <string id="string94" value="Generic_Debug_5" />
+       <string id="string95" value="Generic_Debug_6" />
+       <string id="string96" value="Generic_Debug_7" />
+       <string id="string97" value="Generic_Debug_8" />
+       <string id="string98" value="Generic_Debug_9" />
+       <string id="string99" value="Header_InitializeTabs" />
+       <string id="string100" value="Memory_CompareSnapshot" />
+       <string id="string101" value="Memory_DisplayFirstLevelSnapshotData" />
+       <string id="string102" value="Memory_Grid_Sort" />
+       <string id="string103" value="Memory_GridFilterUIResponse" />
+       <string id="string104" value="Memory_ProcessingDiffSnapshot" />
+       <string id="string105" value="Memory_ProcessingSnapshot" />
+       <string id="string106" value="Memory_TakeSnapshot" />
+       <string id="string107" value="Memory_ToolReady" />
+       <string id="string108" value="Memory_UpdateObjectReferenceGraph" />
+       <string id="string109" value="Memory_ViewSnapshot" />
+       <string id="string110" value="Microsoft-Windows-IE-F12-Provider" />
+       <string id="string111" value="Shell_LaunchTool" />
+       <string id="string112" value="Shell_LaunchTool_Console" />
+       <string id="string113" value="Shell_LaunchTool_Debugger" />
+       <string id="string114" value="Shell_LaunchTool_Dom" />
+       <string id="string115" value="Shell_LaunchTool_Emulation" />
+       <string id="string116" value="Shell_LaunchTool_Header" />
+       <string id="string117" value="Shell_LaunchTool_Memory" />
+       <string id="string118" value="Shell_LaunchTool_Network" />
+       <string id="string119" value="Shell_LaunchTool_Popup" />
+       <string id="string120" value="Shell_LaunchTool_Profiler" />
+       <string id="string121" value="Shell_LaunchTool_VisualProfiler" />
+       <string id="string122" value="Shell_Load" />
+       <string id="string123" value="Shell_ShowTool_Console" />
+       <string id="string124" value="Shell_ShowTool_Debugger" />
+       <string id="string125" value="Shell_ShowTool_Dom" />
+       <string id="string126" value="Shell_ShowTool_Emulation" />
+       <string id="string127" value="Shell_ShowTool_Memory" />
+       <string id="string128" value="Shell_ShowTool_Network" />
+       <string id="string129" value="Shell_ShowTool_Popup" />
+       <string id="string130" value="Shell_ShowTool_Profiler" />
+       <string id="string131" value="Shell_ShowTool_VisualProfiler" />
+       <string id="string132" value="Timeline_Grid_Filtered" />
+       <string id="string133" value="Timeline_Grid_Scrolled" />
+       <string id="string134" value="Timeline_Grid_Sort" />
+       <string id="string135" value="Timeline_GridUpdatedForFilterBackground" />
+       <string id="string136" value="Timeline_GridUpdatedForFilterFrames" />
+       <string id="string137" value="Timeline_GridUpdatedForFilterMeasure" />
+       <string id="string138" value="Timeline_GridUpdatedForFilterName" />
+       <string id="string139" value="Timeline_GridUpdatedForFilterNetwork" />
+       <string id="string140" value="Timeline_LoadGraphs" />
+       <string id="string141" value="Timeline_Selection_Updated" />
+       <string id="string142" value="Timeline_Zoom" />
+       <string id="string143" value="win:Info" />
+       <string id="string144" value="win:Start" />
+       <string id="string145" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

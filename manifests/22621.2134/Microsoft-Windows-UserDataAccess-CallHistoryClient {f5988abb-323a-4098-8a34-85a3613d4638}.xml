@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UserDataAccess-CallHistoryClient" name="Microsoft-Windows-UserDataAccess-CallHistoryClient" guid="{f5988abb-323a-4098-8a34-85a3613d4638}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  keywords="Error" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="3" version="0" level="win:Informational"  keywords="Error" template="Args3_0"/>
+        <event value="4" version="0" level="win:Error"  keywords="Error" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  keywords="CommsDataModel ms:Measures" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  keywords="CommsDataModel ms:Measures"/>
+        <event value="7" version="0" level="win:Error"  keywords="ms:Measures"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Error" mask="0x1" message="$(string.string1)" />
+        <keyword name="Performance" mask="0x2" message="$(string.string7)" />
+        <keyword name="CommsDataModel" mask="0x4" message="$(string.string0)" />
+        <keyword name="Warning" mask="0x4000000000" message="$(string.string8)" />
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string5)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string6)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string4)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="P1_HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="P2_String" inType="win:AnsiString" outType="xs:string"  />
+          <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="ObjPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ObjType" inType="win:Int32" outType="xs:int"  />
+          <data name="ObjId" inType="win:Int32" outType="xs:int"  />
+          <data name="PropCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="RpcCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OldCode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="P1" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CommsDataModel" />
+       <string id="string1" value="Error" />
+       <string id="string2" value="Microsoft-Windows-UserDataAccess-CallHistoryClient" />
+       <string id="string3" value="ms:CriticalData" />
+       <string id="string4" value="ms:Measures" />
+       <string id="string5" value="ms:ReservedKeyword44" />
+       <string id="string6" value="ms:Telemetry" />
+       <string id="string7" value="Performance" />
+       <string id="string8" value="Warning" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

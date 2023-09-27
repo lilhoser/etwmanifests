@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WEPHOSTSVC" name="Microsoft-Windows-WEPHOSTSVC" guid="{d5f7235b-48e2-4e9c-92fe-0e4950aba9e8}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Critical"  channel="Microsoft-Windows-WEPHOSTSVC/Operational" task="TASK_SERVICE" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Critical"  channel="Microsoft-Windows-WEPHOSTSVC/Operational" task="TASK_SERVICE" opcode="win:Info"/>
+        <event value="300" version="0" level="win:Informational"  channel="Microsoft-Windows-WEPHOSTSVC/Operational" task="TASK_SERVICE" opcode="win:Start"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-WEPHOSTSVC/Operational" task="TASK_SERVICE" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WEPHOSTSVC/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="TASK_SERVICE" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WEPHOSTSVC" />
+       <string id="string1" value="Microsoft-Windows-WEPHOSTSVC/Operational" />
+       <string id="string2" value="TASK_SERVICE" />
+       <string id="string3" value="win:Info" />
+       <string id="string4" value="win:Start" />
+       <string id="string5" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

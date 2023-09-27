@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Diagnosis-WDC" name="Microsoft-Windows-Diagnosis-WDC" guid="{05921578-2261-42c7-a0d3-26ddbce6c50d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5016" version="0" level="win:Verbose"  keywords="memory" template="Args5016_0"/>
+        <event value="5017" version="0" level="win:Verbose"  keywords="memory"/>
+        <event value="5018" version="0" level="win:Verbose"  keywords="memory" template="Args5018_0"/>
+        <event value="5100" version="0" level="win:Informational"  task="ListUpdate" opcode="Update" keywords="list" template="Args5100_0"/>
+        <event value="5101" version="0" level="win:Informational"  task="ListUpdate" opcode="Insert" keywords="list"/>
+        <event value="5102" version="0" level="win:Informational"  task="ListUpdate" opcode="Delete" keywords="list"/>
+        <event value="5103" version="0" level="win:Error"  keywords="error" template="Args5103_0"/>
+        <event value="5200" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_Launch" opcode="win:Start"/>
+        <event value="5201" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_Launch" opcode="win:Stop"/>
+        <event value="5202" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_TabSwitch" opcode="win:Start" template="Args5202_0"/>
+        <event value="5203" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_TabSwitch" opcode="win:Stop"/>
+        <event value="5204" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_HandleSearch" opcode="win:Start" template="Args5204_0"/>
+        <event value="5205" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_HandleSearch" opcode="win:Stop"/>
+        <event value="5206" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_ColumnSort" opcode="win:Start" template="Args5206_0"/>
+        <event value="5207" version="0" level="win:Informational"  channel="Microsoft-Windows-Diagnosis-WDC/Analytic" task="PerfTrack_ColumnSort" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Diagnosis-WDC/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="memory" mask="0x200" message="$(string.string5)" />
+        <keyword name="list" mask="0x400" message="$(string.string3)" />
+        <keyword name="error" mask="0x800" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="100" name="ListUpdate" message="$(string.string100)">
+          <opcodes>
+           <opcode value="10" name="Update" message="$(string.string12)"/>
+           <opcode value="11" name="Insert" message="$(string.string2)"/>
+           <opcode value="12" name="Delete" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="101" name="PerfTrack_Launch" message="$(string.string101)">
+        </task>
+        <task value="102" name="PerfTrack_TabSwitch" message="$(string.string102)">
+        </task>
+        <task value="103" name="PerfTrack_HandleSearch" message="$(string.string103)">
+        </task>
+        <task value="104" name="PerfTrack_ColumnSort" message="$(string.string104)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="Update" message="$(string.string12)"/>
+        <opcode value="11" name="Insert" message="$(string.string2)"/>
+        <opcode value="12" name="Delete" message="$(string.string0)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args5016_0">
+          <data name="FileName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Size" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args5018_0">
+          <data name="FileName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Size" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OrigAddress" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args5100_0">
+          <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ItemPos" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ItemState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ItemContent" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5103_0">
+          <data name="FileName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5202_0">
+          <data name="TabId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5204_0">
+          <data name="RequestCookie" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5206_0">
+          <data name="TableId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColumnId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Delete" />
+       <string id="string1" value="error" />
+       <string id="string2" value="Insert" />
+       <string id="string3" value="list" />
+       <string id="string4" value="ListUpdate" />
+       <string id="string5" value="memory" />
+       <string id="string6" value="Microsoft-Windows-Diagnosis-WDC" />
+       <string id="string7" value="Microsoft-Windows-Diagnosis-WDC/Analytic" />
+       <string id="string8" value="PerfTrack_ColumnSort" />
+       <string id="string9" value="PerfTrack_HandleSearch" />
+       <string id="string10" value="PerfTrack_Launch" />
+       <string id="string11" value="PerfTrack_TabSwitch" />
+       <string id="string12" value="Update" />
+       <string id="string13" value="win:Start" />
+       <string id="string14" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

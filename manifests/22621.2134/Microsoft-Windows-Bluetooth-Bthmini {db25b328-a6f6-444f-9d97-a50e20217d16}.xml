@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Bluetooth-Bthmini" name="Microsoft-Windows-Bluetooth-Bthmini" guid="{db25b328-a6f6-444f-9d97-a50e20217d16}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="200" version="0" level="win:Error"  channel="Microsoft-Windows-Bluetooth-Bthmini/Operational" task="BthMini_DriverPnP" opcode="win:Info" keywords="_BTHMINI_KEYWORD" template="Args200_0"/>
+        <event value="201" version="0" level="win:Error"  channel="Microsoft-Windows-Bluetooth-Bthmini/Operational" task="BthMini_ReadPump" opcode="win:Info" keywords="_BTHMINI_KEYWORD" template="Args201_0"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-Bluetooth-Bthmini/Operational" task="BthMini_ReadPump" opcode="win:Info" keywords="_BTHMINI_KEYWORD"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Bluetooth-Bthmini/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="_BTHMINI_KEYWORD" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="BthMini_DriverPnP" message="$(string.string1)">
+        </task>
+        <task value="2" name="BthMini_ReadPump" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args200_0">
+          <data name="Major" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Minor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Service" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="ExpectedLengthMin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExpectedLengthMax" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActualLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="_BTHMINI_KEYWORD" />
+       <string id="string1" value="BthMini_DriverPnP" />
+       <string id="string2" value="BthMini_ReadPump" />
+       <string id="string3" value="Microsoft-Windows-Bluetooth-Bthmini" />
+       <string id="string4" value="Microsoft-Windows-Bluetooth-Bthmini/Operational" />
+       <string id="string5" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

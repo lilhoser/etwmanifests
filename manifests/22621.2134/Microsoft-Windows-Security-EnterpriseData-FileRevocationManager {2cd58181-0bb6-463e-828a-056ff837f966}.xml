@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager" name="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager" guid="{2cd58181-0bb6-463e-828a-056ff837f966}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" opcode="Protect Identity operation." template="Args0_0"/>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" opcode="Protect Identity operation." template="Args1_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" opcode="Revoke Identity operation."/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" opcode="Revoke Identity operation."/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" opcode="Revoke Identity operation."/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" opcode="Delegation operation." template="Args20_0"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="Protect Identity operation." message="$(string.string4)"/>
+        <opcode value="11" name="Revoke Identity operation." message="$(string.string5)"/>
+        <opcode value="12" name="Delegation operation." message="$(string.string1)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args0_0">
+          <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1_0">
+          <data name="EntIDString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppIDString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="PolicyString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Delegation operation." />
+       <string id="string2" value="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager" />
+       <string id="string3" value="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager/Operational" />
+       <string id="string4" value="Protect Identity operation." />
+       <string id="string5" value="Revoke Identity operation." />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

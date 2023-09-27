@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Dwm-Compositor" name="Microsoft-Windows-Dwm-Compositor" guid="{044a9015-d96c-5dd1-0199-72d258325298}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="WaitForWork_Start" opcode="win:Start" keywords="Frame PresentMon"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="WaitForWork_Stop" opcode="win:Stop" keywords="Frame PresentMon" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="WaitForVerticalBlank_Start" opcode="win:Start" keywords="Frame PresentMon" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="WaitForVerticalBlank_Stop" opcode="win:Stop" keywords="Frame PresentMon" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="UpdateAnimations_Start" opcode="win:Start" keywords="Frame"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="UpdateAnimations_Stop" opcode="win:Stop" keywords="Frame" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="Present_MPO" opcode="win:Info" keywords="Frame PresentMon" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="Present_DFlip" opcode="win:Info" keywords="Frame PresentMon" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="Present_Legacy" opcode="win:Info" keywords="Frame PresentMon" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="Present_OverlayPlane" opcode="win:Info" keywords="Frame PresentMon" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="TargetStats_Ready" opcode="win:Info" keywords="Frame PresentMon" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="UpdateExpressions_Start" opcode="win:Start" keywords="Frame"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="UpdateExpressions_Stop" opcode="win:Stop" keywords="Frame" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="CleanTrees_Start" opcode="win:Start" keywords="Frame CleanTrees"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="CleanTrees_Stop" opcode="win:Stop" keywords="Frame CleanTrees" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="BeginFrame" opcode="win:Info" keywords="Frame PresentMon" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Dwm-Compositor/Diagnostic" task="ConfirmFrame" opcode="win:Info" keywords="Frame PresentMon" template="Args17_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Dwm-Compositor/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Frame" mask="0x1" message="$(string.string8)" />
+        <keyword name="Batches" mask="0x2" message="$(string.string1)" />
+        <keyword name="Tokens" mask="0x4" message="$(string.string18)" />
+        <keyword name="Animations" mask="0x8" message="$(string.string0)" />
+        <keyword name="Expressions" mask="0x10" message="$(string.string7)" />
+        <keyword name="CleanTrees" mask="0x20" message="$(string.string3)" />
+        <keyword name="PresentMon" mask="0x40000000" message="$(string.string15)" />
+        <keyword name="Summary" mask="0x80000000" message="$(string.string16)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="WaitForWork_Start" message="$(string.string1)">
+        </task>
+        <task value="2" name="WaitForWork_Stop" message="$(string.string2)">
+        </task>
+        <task value="3" name="WaitForVerticalBlank_Start" message="$(string.string3)">
+        </task>
+        <task value="4" name="WaitForVerticalBlank_Stop" message="$(string.string4)">
+        </task>
+        <task value="5" name="UpdateAnimations_Start" message="$(string.string5)">
+        </task>
+        <task value="6" name="UpdateAnimations_Stop" message="$(string.string6)">
+        </task>
+        <task value="7" name="Present_MPO" message="$(string.string7)">
+        </task>
+        <task value="8" name="Present_DFlip" message="$(string.string8)">
+        </task>
+        <task value="9" name="Present_Legacy" message="$(string.string9)">
+        </task>
+        <task value="10" name="Present_OverlayPlane" message="$(string.string10)">
+        </task>
+        <task value="11" name="TargetStats_Ready" message="$(string.string11)">
+        </task>
+        <task value="12" name="UpdateExpressions_Start" message="$(string.string12)">
+        </task>
+        <task value="13" name="UpdateExpressions_Stop" message="$(string.string13)">
+        </task>
+        <task value="14" name="CleanTrees_Start" message="$(string.string14)">
+        </task>
+        <task value="15" name="CleanTrees_Stop" message="$(string.string15)">
+        </task>
+        <task value="16" name="BeginFrame" message="$(string.string16)">
+        </task>
+        <task value="17" name="ConfirmFrame" message="$(string.string17)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Batches" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Tokens" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CompositionTimer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OcclusionEvent" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="targetVSync" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="targetId-0" inType="win:AnsiString" outType="xs:short"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="waitFailed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="earlyStart" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="timedOut" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="timeoutMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="updatedAnimationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="targetId-0" inType="win:UInt8" outType="xs:short"  />
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="presentedPlaneCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="desktopPlaneEnabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="targetId-0" inType="win:UInt16" outType="xs:short"  />
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="surfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="bindId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="realizationIndex" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="presentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="targetId-0" inType="win:Int8" outType="xs:short"  />
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="presentFlags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="surfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="bindId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="realizationIndex" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="presentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Enabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PlaneIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="srcRect-0" inType="win:Boolean" outType="xs:unsignedByte"  />
+          <data name="dstRect-0" inType="win:FILETIME" outType="xs:unsignedByte"  />
+          <data name="clipRect-0" inType="win:HexInt64" outType="xs:unsignedByte"  />
+          <data name="Rotation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Blend" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ColorSpace" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="targetId-0" inType="win:Float" outType="xs:short"  />
+          <data name="ready" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="outstandingPresents" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="forceParallelMode" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="timeSinceLastPresent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="idealStartTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="nextFrameStartTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="currentTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="timePresented" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="vBlankDuration" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="vBlankTime" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="expressionCalculatedCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tracedExpressionsCalculatedCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="activeExpressionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="suspendedAnimationsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="dirtyTreeCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="treeLockWaitTimeUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="desktopDirtyRectCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="desktopDirtyRects-0" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-1" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-2" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-3" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-4" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-5" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-6" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="desktopDirtyRects-7" inType="win:Int16" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="frameId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="targetTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="syncRefreshTarget" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="batchSubmissionDeadline" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="frameId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="targetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="targetIdAndStats-0" inType="win:UInt8" outType="win:HexInt16"  />
+          <data name="targetIdAndStats-1" inType="win:UInt8" outType="win:HexInt16"  />
+          <data name="targetIdAndStats-2" inType="win:UInt8" outType="win:HexInt16"  />
+          <data name="targetIdAndStats-3" inType="win:UInt8" outType="win:HexInt16"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Animations" />
+       <string id="string1" value="Batches" />
+       <string id="string2" value="BeginFrame" />
+       <string id="string3" value="CleanTrees" />
+       <string id="string4" value="CleanTrees_Start" />
+       <string id="string5" value="CleanTrees_Stop" />
+       <string id="string6" value="ConfirmFrame" />
+       <string id="string7" value="Expressions" />
+       <string id="string8" value="Frame" />
+       <string id="string9" value="Microsoft-Windows-Dwm-Compositor" />
+       <string id="string10" value="Microsoft-Windows-Dwm-Compositor/Diagnostic" />
+       <string id="string11" value="Present_DFlip" />
+       <string id="string12" value="Present_Legacy" />
+       <string id="string13" value="Present_MPO" />
+       <string id="string14" value="Present_OverlayPlane" />
+       <string id="string15" value="PresentMon" />
+       <string id="string16" value="Summary" />
+       <string id="string17" value="TargetStats_Ready" />
+       <string id="string18" value="Tokens" />
+       <string id="string19" value="UpdateAnimations_Start" />
+       <string id="string20" value="UpdateAnimations_Stop" />
+       <string id="string21" value="UpdateExpressions_Start" />
+       <string id="string22" value="UpdateExpressions_Stop" />
+       <string id="string23" value="WaitForVerticalBlank_Start" />
+       <string id="string24" value="WaitForVerticalBlank_Stop" />
+       <string id="string25" value="WaitForWork_Start" />
+       <string id="string26" value="WaitForWork_Stop" />
+       <string id="string27" value="win:Info" />
+       <string id="string28" value="win:Start" />
+       <string id="string29" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

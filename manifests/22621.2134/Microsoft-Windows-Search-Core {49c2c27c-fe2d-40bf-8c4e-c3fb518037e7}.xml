@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Search-Core" name="Microsoft-Windows-Search-Core" guid="{49c2c27c-fe2d-40bf-8c4e-c3fb518037e7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl" opcode="win:Start" keywords="Performance Indexing Gatherer"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl" opcode="win:Stop" keywords="Performance Indexing Gatherer"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IncCrawl" opcode="win:Start"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IncCrawl" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Mem" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Mem" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Bat" opcode="win:Start"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Bat" opcode="win:Stop"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Act" opcode="win:Start"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Act" opcode="win:Stop"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_IOR" opcode="win:Start"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_IOR" opcode="win:Stop"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Ntf" opcode="win:Start"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_Ntf" opcode="win:Stop"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_CPU" opcode="win:Start"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackOff_CPU" opcode="win:Stop"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_File" opcode="win:Start" keywords="Performance IndexingItem ProtocolHost" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_File" opcode="win:Stop"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="USN_Notify" opcode="win:Info" keywords="IndexingItem USN" template="Args19_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="USN_Notify_Filtered" opcode="win:Info" keywords="IndexingItem USN"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Catalog_Monitor" opcode="win:Start" keywords="Performance Indexing USN"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Catalog_Monitor" opcode="win:Stop" keywords="Performance Indexing USN"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_Merge" opcode="win:Start" keywords="Performance Indexing IndexPI" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_Merge" opcode="win:Stop" keywords="Performance Indexing IndexPI"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_Commit" opcode="win:Start" keywords="Performance Indexing IndexPI"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_Commit" opcode="win:Stop" keywords="Performance Indexing IndexPI"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiEmailItem" opcode="win:Start"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiEmailItem" opcode="win:Stop"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSCDocument" opcode="win:Start"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSCDocument" opcode="win:Stop"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RetrieveValue" opcode="win:Start"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RetrieveValue" opcode="win:Stop"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiOpenMessage" opcode="win:Start"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiOpenMessage" opcode="win:Stop"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiGetAttachmentFromMessage" opcode="win:Start"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiGetAttachmentFromMessage" opcode="win:Stop"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiEnumerateAttachments" opcode="win:Start"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiEnumerateAttachments" opcode="win:Stop"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiGetMapiFpsPropVals" opcode="win:Stop"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MapiGetMapiFpsPropVals" opcode="win:Stop"/>
+        <event value="42" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IndexItemInit" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args42_0"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IndexItemSetStatus" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="OnDataChange" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args44_0"/>
+        <event value="46" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IndexItemDataComplete" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="47" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="HighPriorityItemBoost" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="HighPriorityThreadBoost" opcode="win:Info"/>
+        <event value="49" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="HighPriorityMergeBoost" opcode="win:Info" keywords="Indexing IndexPI"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery" opcode="win:Start"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery" opcode="win:Stop"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IndexItemEnd" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MergeItem" opcode="win:Start" keywords="Indexing IndexPI"/>
+        <event value="54" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MergeThread" opcode="win:Start"/>
+        <event value="55" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MergeThread" opcode="win:Stop"/>
+        <event value="56" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="IndexItemPushToFile" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="57" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientGetNextRows" opcode="win:Info" template="Args57_0"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterOplockBreak" opcode="win:Info"/>
+        <event value="59" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackoffThreadWait" opcode="win:Start" keywords="Performance Backoff"/>
+        <event value="60" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackoffThreadWait" opcode="win:Stop" keywords="Performance Backoff"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="BackoffReason" opcode="win:Info" keywords="Backoff"/>
+        <event value="62" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterOplockFail" opcode="win:Info"/>
+        <event value="63" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServiceStatusUpdate" opcode="win:Info" keywords="Service" template="Args63_0"/>
+        <event value="64" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="SearchIndexer" opcode="win:Start" keywords="Service"/>
+        <event value="65" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="SearchIndexer" opcode="win:Stop" keywords="Service"/>
+        <event value="66" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="SearchProtocolHost" opcode="win:Start" keywords="ProtocolHost"/>
+        <event value="67" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="SearchProtocolHost" opcode="win:Stop" keywords="ProtocolHost"/>
+        <event value="68" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="SearchFilterHost" opcode="win:Start" keywords="FilterHost"/>
+        <event value="69" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="SearchFilterHost" opcode="win:Stop" keywords="FilterHost"/>
+        <event value="70" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_PostToStatusThread" opcode="win:Info" keywords="Gatherer"/>
+        <event value="71" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_ProcessInStatusThread" opcode="win:Info" keywords="Gatherer"/>
+        <event value="72" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusThread" opcode="win:Start" keywords="Gatherer"/>
+        <event value="73" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusThread" opcode="win:Stop" keywords="Gatherer"/>
+        <event value="74" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_AppendToGathererQueue" opcode="win:Info" keywords="Gatherer"/>
+        <event value="75" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_AppendCrawlToGathererQueue" opcode="win:Info" keywords="Gatherer"/>
+        <event value="76" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_RemoveFromGathererQueue" opcode="win:Info" keywords="Gatherer"/>
+        <event value="77" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_AdviseStatus" opcode="win:Info" keywords="Gatherer" template="Args77_0"/>
+        <event value="78" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_RequestStatusChange" opcode="win:Info" keywords="Gatherer"/>
+        <event value="80" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GatherProject_AdviseRequestStatus" opcode="win:Info" keywords="Gatherer"/>
+        <event value="81" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GatherProject_PrepareStatusChange" opcode="win:Info" keywords="Gatherer"/>
+        <event value="82" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="AliasTable_InitSDIDCache" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="83" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WID_SDID_Cache_Initialize" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args83_0"/>
+        <event value="84" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WID_SDID_Cache_Write" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args84_0"/>
+        <event value="85" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WID_SDID_Cache_SwitchToFull" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="86" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_MemoryCheck" opcode="win:Info" keywords="Backoff" template="Args86_0"/>
+        <event value="87" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_BatteryPolicyCheck" opcode="win:Info" keywords="Backoff" template="Args87_0"/>
+        <event value="88" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_BatteryCheck" opcode="win:Info" keywords="Backoff" template="Args88_0"/>
+        <event value="89" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_LowDiskCheck" opcode="win:Info" keywords="Backoff" template="Args89_0"/>
+        <event value="90" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_UserActivityCheck" opcode="win:Info" keywords="Backoff" template="Args90_0"/>
+        <event value="91" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_HighCPUCheck" opcode="win:Info" keywords="Backoff" template="Args91_0"/>
+        <event value="92" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_HighIOCheck" opcode="win:Info" keywords="Backoff" template="Args92_0"/>
+        <event value="93" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_HighNotificationsCheck" opcode="win:Info" keywords="Backoff" template="Args93_0"/>
+        <event value="94" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_PendingNotificationsCheck" opcode="win:Info" keywords="Backoff" template="Args94_0"/>
+        <event value="95" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_AllowNewItemsCheck" opcode="win:Info" keywords="Backoff" template="Args95_0"/>
+        <event value="96" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Backoff_State" opcode="win:Info" keywords="Backoff" template="Args96_0"/>
+        <event value="97" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostObjConstructor" opcode="win:Info" keywords="Service"/>
+        <event value="98" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostObjInit" opcode="win:Info" keywords="Service" template="Args98_0"/>
+        <event value="99" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostTerminating" opcode="win:Info" keywords="Service"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostStarted" opcode="win:Info" keywords="Service"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostStopped" opcode="win:Info" keywords="Service"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostKilled" opcode="win:Info" keywords="Service"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostStoppedAlready" opcode="win:Info" keywords="Service"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostTerminatingInDestructor" opcode="win:Info" keywords="Service"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostKilledInDestructor" opcode="win:Info" keywords="Service"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostStoppedInDestructor" opcode="win:Info" keywords="Service"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostObjDestructor" opcode="win:Info" keywords="Service"/>
+        <event value="108" version="0" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostNameConflict_FailedToKill" opcode="win:Info" keywords="Service"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostNameConflict_Killed" opcode="win:Info" keywords="Service"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ProtocolHostNameConflict_Killing" opcode="win:Info" keywords="Service"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterHostStarting" opcode="win:Info" keywords="Service"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterHostStarted" opcode="win:Info" keywords="Service"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterHostStopping" opcode="win:Info" keywords="Service"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterHostHung" opcode="win:Info" keywords="Service"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FilterHostStopped" opcode="win:Info" keywords="Service"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CSearchService_Init" opcode="win:Info" keywords="Service"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CDcomService_Init" opcode="win:Info" keywords="Service"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CDcomService_ServiceStart" opcode="win:Info" keywords="Service"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CDcomService_ServiceMain" opcode="win:Info" keywords="Service"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_RecoverIfNecessary" opcode="win:Info" keywords="Service"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_RecoverDataFiles" opcode="win:Info" keywords="Service"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_RecoverDataFiles_RemoveDir" opcode="win:Info" keywords="Service"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_MoveDataFiles" opcode="win:Info" keywords="Service" template="Args123_0"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_MoveDataFiles_CopyDir" opcode="win:Info" keywords="Service"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_MoveDataFiles_RemoveDir" opcode="win:Info" keywords="Service"/>
+        <event value="126" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_ReplaceDirectoryPrefixInValue" opcode="win:Info" keywords="Service" template="Args126_0"/>
+        <event value="127" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_SysPrepInProgress" opcode="win:Info" keywords="Service"/>
+        <event value="128" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_GuiSetupInProgress" opcode="win:Info" keywords="Service"/>
+        <event value="129" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CDcomService_IsIdleServiceMode" opcode="win:Info" keywords="Service"/>
+        <event value="130" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CSearchService_Init2" opcode="win:Info" keywords="Service" template="Args130_0"/>
+        <event value="131" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_SetupWorkingDirectory" opcode="win:Info" keywords="Service"/>
+        <event value="132" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_SetupWorkingDirectory_RemovePath" opcode="win:Info" keywords="Service"/>
+        <event value="133" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CheckAndCleanup" opcode="win:Info" keywords="Service"/>
+        <event value="134" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CSearchServiceObj_Initialize" opcode="win:Info" keywords="Service"/>
+        <event value="135" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CGatherModule_Init" opcode="win:Info" keywords="Service"/>
+        <event value="136" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CGatheringService_Init" opcode="win:Start" keywords="Service"/>
+        <event value="137" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_CGatheringService_Init" opcode="win:Stop" keywords="Service" template="Args137_0"/>
+        <event value="138" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_InitialIndexSetup" opcode="win:Info" keywords="Service"/>
+        <event value="139" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_DeletePreviousUsersSettingsKey" opcode="win:Info" keywords="Service"/>
+        <event value="140" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_SetCompletedSuccessfully" opcode="win:Info" keywords="Service"/>
+        <event value="141" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_Phase" opcode="win:Info" keywords="Service"/>
+        <event value="142" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_CatalogSetupSucceeded" opcode="win:Info" keywords="Service"/>
+        <event value="143" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_CatalogSetupFailed" opcode="win:Info" keywords="Service" template="Args143_0"/>
+        <event value="144" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_CleanupStarted" opcode="win:Info" keywords="Service"/>
+        <event value="145" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_CleanupRemoveDir" opcode="win:Info" keywords="Service"/>
+        <event value="146" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_CleanupSucceeded" opcode="win:Info" keywords="Service"/>
+        <event value="147" version="0" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Setup_CleanupFailed" opcode="win:Info" keywords="Service"/>
+        <event value="148" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl_InitializeNew" opcode="win:Info" keywords="Indexing Gatherer" template="Args148_0"/>
+        <event value="149" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl_Initialize" opcode="win:Info" keywords="Indexing Gatherer"/>
+        <event value="150" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl_Initialize_Load" opcode="win:Info" keywords="Indexing Gatherer"/>
+        <event value="151" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl_AddStartPage" opcode="win:Info" keywords="Indexing Gatherer" template="Args151_0"/>
+        <event value="152" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl_RemoveStartPage" opcode="win:Info" keywords="Indexing Gatherer" template="Args152_0"/>
+        <event value="153" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Crawl_IsDone" opcode="win:Info" keywords="Indexing Gatherer" template="Args153_0"/>
+        <event value="154" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Transactions_IterateHistory" opcode="win:Start" keywords="Indexing Gatherer"/>
+        <event value="155" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Transactions_IterateHistory" opcode="win:Stop" keywords="Indexing Gatherer" template="Args155_0"/>
+        <event value="156" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Transactions_IterateHistory_Modify" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args156_0"/>
+        <event value="157" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Transactions_IterateHistory_Delete" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="158" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Transactions_UpdateFailures" opcode="win:Start" keywords="Indexing Gatherer"/>
+        <event value="159" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Transactions_UpdateFailures" opcode="win:Stop" keywords="Indexing Gatherer"/>
+        <event value="160" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GatherLog_Transaction" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args160_0"/>
+        <event value="161" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GatherLog_Crawl" opcode="win:Info" keywords="Indexing Gatherer"/>
+        <event value="162" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_OnDataChange" opcode="win:Start" keywords="IndexingItem Gatherer" template="Args162_0"/>
+        <event value="163" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_OnDataChange" opcode="win:Stop" keywords="IndexingItem Gatherer" template="Args163_0"/>
+        <event value="164" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_OnDataChange" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args164_0"/>
+        <event value="165" version="0" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_OnDataChange_Failed" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="166" version="0" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="OnDataChange_Failed" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="169" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_BeforeGetNewTransaction" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="170" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_ProcessNewTransaction" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="180" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Constructor" opcode="win:Info" keywords="CSM"/>
+        <event value="181" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Destructor" opcode="win:Info" keywords="CSM"/>
+        <event value="182" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Destructor" opcode="win:Stop" keywords="CSM"/>
+        <event value="183" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Reset" opcode="win:Info" keywords="CSM"/>
+        <event value="184" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Clone" opcode="win:Start" keywords="CSM"/>
+        <event value="185" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Clone" opcode="win:Stop" keywords="CSM"/>
+        <event value="186" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Next" opcode="win:Start" keywords="CSM" template="Args186_0"/>
+        <event value="187" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Next" opcode="win:Stop" keywords="CSM" template="Args187_0"/>
+        <event value="188" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Next_Fetch" opcode="win:Info" keywords="CSM" template="Args188_0"/>
+        <event value="189" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Skip" opcode="win:Start" keywords="CSM"/>
+        <event value="190" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchRoots_Skip" opcode="win:Stop" keywords="CSM"/>
+        <event value="191" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Constructor" opcode="win:Info" keywords="CSM"/>
+        <event value="192" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Destructor" opcode="win:Start" keywords="CSM"/>
+        <event value="193" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Destructor" opcode="win:Stop" keywords="CSM"/>
+        <event value="194" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Reset" opcode="win:Info" keywords="CSM"/>
+        <event value="195" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Clone" opcode="win:Start" keywords="CSM"/>
+        <event value="196" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Clone" opcode="win:Stop" keywords="CSM"/>
+        <event value="197" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Next" opcode="win:Start" keywords="CSM"/>
+        <event value="198" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Next" opcode="win:Stop" keywords="CSM"/>
+        <event value="199" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Next_Fetch" opcode="win:Info" keywords="CSM" template="Args199_0"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Skip" opcode="win:Start" keywords="CSM"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CEnumSearchScopeRules_Skip" opcode="win:Stop" keywords="CSM"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_Constructor" opcode="win:Info" keywords="CSM"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_Destructor" opcode="win:Info" keywords="CSM"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_IncludedInCrawlScope" opcode="win:Start" keywords="CSM"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_IncludedInCrawlScope" opcode="win:Stop" keywords="CSM" template="Args205_0"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddDefaultScopeRule" opcode="win:Start" keywords="CSM" template="Args206_0"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddDefaultScopeRule" opcode="win:Stop" keywords="CSM"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddHierarchicalScope" opcode="win:Start" keywords="CSM" template="Args208_0"/>
+        <event value="209" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddHierarchicalScope" opcode="win:Stop" keywords="CSM"/>
+        <event value="210" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddRoot" opcode="win:Start" keywords="CSM"/>
+        <event value="211" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddRoot" opcode="win:Stop" keywords="CSM"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddUserScopeRule" opcode="win:Start" keywords="CSM" template="Args212_0"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_AddUserScopeRule" opcode="win:Stop" keywords="CSM"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_EnumerateRoots" opcode="win:Start" keywords="CSM"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_EnumerateRoots" opcode="win:Stop" keywords="CSM"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_EnumerateScopeRules" opcode="win:Start" keywords="CSM"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_EnumerateScopeRules" opcode="win:Stop" keywords="CSM"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_GetParentScopeVersionId" opcode="win:Start" keywords="CSM"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_GetParentScopeVersionId" opcode="win:Stop" keywords="CSM" template="Args219_0"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_HasChildScopeRule" opcode="win:Start" keywords="CSM"/>
+        <event value="221" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_HasChildScopeRule" opcode="win:Stop" keywords="CSM" template="Args221_0"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_HasParentScopeRule" opcode="win:Start" keywords="CSM"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_HasParentScopeRule" opcode="win:Stop" keywords="CSM" template="Args223_0"/>
+        <event value="224" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_IncludedInCrawlScopeEx" opcode="win:Start" keywords="CSM"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_IncludedInCrawlScopeEx" opcode="win:Stop" keywords="CSM" template="Args225_0"/>
+        <event value="226" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RemoveDefaultScopeRule" opcode="win:Start" keywords="CSM"/>
+        <event value="227" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RemoveDefaultScopeRule" opcode="win:Stop" keywords="CSM"/>
+        <event value="228" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RemoveRoot" opcode="win:Start" keywords="CSM"/>
+        <event value="229" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RemoveRoot" opcode="win:Stop" keywords="CSM"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RemoveScopeRule" opcode="win:Start" keywords="CSM"/>
+        <event value="231" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RemoveScopeRule" opcode="win:Stop" keywords="CSM"/>
+        <event value="232" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RevertToDefaultScopes" opcode="win:Start" keywords="CSM"/>
+        <event value="233" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_RevertToDefaultScopes" opcode="win:Stop" keywords="CSM"/>
+        <event value="234" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_SaveAll" opcode="win:Start" keywords="CSM"/>
+        <event value="235" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchCrawlScopeManager_SaveAll" opcode="win:Stop" keywords="CSM"/>
+        <event value="236" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_RootURL" opcode="win:Info" keywords="CSM"/>
+        <event value="237" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_RootURL" opcode="win:Info" keywords="CSM" template="Args237_0"/>
+        <event value="238" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_AuthenticationType" opcode="win:Info" keywords="CSM" template="Args238_0"/>
+        <event value="239" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_EnumerationDepth" opcode="win:Info" keywords="CSM"/>
+        <event value="240" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_FollowDirectories" opcode="win:Info" keywords="CSM" template="Args240_0"/>
+        <event value="241" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_HostDepth" opcode="win:Info" keywords="CSM"/>
+        <event value="242" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_IsHierarchical" opcode="win:Info" keywords="CSM"/>
+        <event value="243" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_ProvidesNotifications" opcode="win:Info" keywords="CSM"/>
+        <event value="244" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_Schedule" opcode="win:Info" keywords="CSM" template="Args244_0"/>
+        <event value="245" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_get_UseNotificationsOnly" opcode="win:Info" keywords="CSM"/>
+        <event value="246" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_AuthenticationType" opcode="win:Info" keywords="CSM"/>
+        <event value="247" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_EnumerationDepth" opcode="win:Info" keywords="CSM"/>
+        <event value="248" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_FollowDirectories" opcode="win:Info" keywords="CSM"/>
+        <event value="249" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_HostDepth" opcode="win:Info" keywords="CSM"/>
+        <event value="250" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_IsHierarchical" opcode="win:Info" keywords="CSM"/>
+        <event value="251" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_ProvidesNotifications" opcode="win:Info" keywords="CSM"/>
+        <event value="252" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_Schedule" opcode="win:Info" keywords="CSM"/>
+        <event value="253" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchRoot_put_UseNotificationsOnly" opcode="win:Info" keywords="CSM"/>
+        <event value="254" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchScopeRule_get_IsDefault" opcode="win:Info" keywords="CSM"/>
+        <event value="255" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchScopeRule_get_IsIncluded" opcode="win:Info" keywords="CSM"/>
+        <event value="256" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CSearchScopeRule_get_PatternOrURL" opcode="win:Info" keywords="CSM"/>
+        <event value="257" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_QueueLocked" opcode="win:Info" keywords="Service"/>
+        <event value="258" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="StatusChange_QueueUnlocked" opcode="win:Info" keywords="Service"/>
+        <event value="259" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_OnDataChange_Track_Url" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="260" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_DocIdTable_GetNewId" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args260_0"/>
+        <event value="261" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_DocIdTable_UndeleteId" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="262" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_DocIdTable_DeleteId" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="263" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_DocIdTable_GetMaxId" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="264" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_DocIdTable_SetMaxId" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="265" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WID_SDID_Cache_NumberItems" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args265_0"/>
+        <event value="266" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gatherer_Queues_QueueLength" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args266_0"/>
+        <event value="267" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_Search_Service_Duration" opcode="win:Start" keywords="Performance Indexing"/>
+        <event value="268" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Startup_Search_Service_Duration" opcode="win:Stop" keywords="Performance Indexing"/>
+        <event value="269" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Shutdown_Search_Service_Duration" opcode="win:Start" keywords="Performance Indexing"/>
+        <event value="270" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Shutdown_Search_Service_Duration" opcode="win:Stop" keywords="Performance Indexing"/>
+        <event value="271" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQueryRelease" opcode="win:Info" keywords="Querying" template="Args271_0"/>
+        <event value="272" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreatePhysCursor" opcode="win:Start" keywords="Querying" template="Args272_0"/>
+        <event value="273" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreatePhysCursor" opcode="win:Stop" keywords="Querying"/>
+        <event value="274" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreatePhysCursorRange" opcode="win:Start" keywords="Querying" template="Args274_0"/>
+        <event value="275" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreatePhysCursorRange" opcode="win:Stop" keywords="Querying" template="Args275_0"/>
+        <event value="276" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Merge" opcode="win:Start" keywords="Indexing" template="Args276_0"/>
+        <event value="277" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Merge" opcode="win:Stop" keywords="Indexing"/>
+        <event value="278" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateWLCursor" opcode="win:Start" keywords="Querying" template="Args278_0"/>
+        <event value="279" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateWLCursor" opcode="win:Stop" keywords="Querying"/>
+        <event value="280" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateWLCursorRange" opcode="win:Start" keywords="Querying" template="Args280_0"/>
+        <event value="281" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateWLCursorRange" opcode="win:Stop" keywords="Querying" template="Args281_0"/>
+        <event value="282" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery" opcode="win:Start" keywords="Querying"/>
+        <event value="283" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery_Send" opcode="win:Info" keywords="Querying" template="Args283_0"/>
+        <event value="284" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery_Received" opcode="win:Info" keywords="Querying" template="Args284_0"/>
+        <event value="285" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery_Send" opcode="win:Info" keywords="Querying"/>
+        <event value="286" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery_Received" opcode="win:Info" keywords="Querying"/>
+        <event value="287" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery" opcode="win:Stop" keywords="Querying"/>
+        <event value="288" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery_Create" opcode="win:Info" keywords="Querying"/>
+        <event value="289" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientStartFetch" opcode="win:Info" keywords="Querying" template="Args289_0"/>
+        <event value="290" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientFetched" opcode="win:Info" keywords="Querying" template="Args290_0"/>
+        <event value="291" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerGetRows" opcode="win:Start" keywords="Querying" template="Args291_0"/>
+        <event value="292" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerGetRows" opcode="win:Stop" keywords="Querying" template="Args292_0"/>
+        <event value="293" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_LangAutoDetection_Start" opcode="win:Start" keywords="IndexingChunk Gatherer" template="Args293_0"/>
+        <event value="294" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_LangAutoDetection_Stop" opcode="win:Stop" keywords="IndexingChunk Gatherer" template="Args294_0"/>
+        <event value="295" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_LangAutoDetection_Succeed" opcode="win:Info" keywords="IndexingChunk Gatherer" template="Args295_0"/>
+        <event value="296" version="0" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_LangAutoDetection_Fail" opcode="win:Info" keywords="IndexingChunk Gatherer"/>
+        <event value="297" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Service_Status_Notify" opcode="win:Start" keywords="Service"/>
+        <event value="298" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Service_Status_Notify" opcode="win:Stop" keywords="Service"/>
+        <event value="300" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery_ForcePublish" opcode="win:Start" keywords="Performance Indexing Querying IndexPI"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery_ForcePublish" opcode="win:Stop" keywords="Performance Indexing Querying IndexPI"/>
+        <event value="302" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Wordlist_Publish" opcode="win:Start" keywords="Performance Indexing IndexPI" template="Args302_0"/>
+        <event value="303" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Wordlist_Publish" opcode="win:Stop" keywords="Performance Indexing IndexPI"/>
+        <event value="304" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Flush_Schedule" opcode="win:Info" keywords="Indexing IndexPI" template="Args304_0"/>
+        <event value="305" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CBPool_ForceFlush" opcode="win:Info" keywords="Indexing IndexPI" template="Args305_0"/>
+        <event value="306" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="DocAborted_ForcePublish" opcode="win:Info" keywords="Indexing IndexPI" template="Args306_0"/>
+        <event value="307" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="DocAborted_CBOverflow" opcode="win:Info" keywords="Indexing IndexPI"/>
+        <event value="308" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Wordlist_BeginResourceFailed_CBOverflow" opcode="win:Info" keywords="Indexing IndexPI" template="Args308_0"/>
+        <event value="309" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Wordlist_BeginResourceFailed_DocInError" opcode="win:Info" keywords="Indexing IndexPI"/>
+        <event value="310" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Wordlist_BeginResource_InvalidatedPreviousDoc" opcode="win:Info" keywords="Indexing IndexPI" template="Args310_0"/>
+        <event value="311" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery_Rowset_Reuse" opcode="win:Info" keywords="Querying"/>
+        <event value="312" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ServerQuery_DeferredProperty" opcode="win:Info" keywords="Querying" template="Args312_0"/>
+        <event value="313" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeManager_Init" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="314" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeManager_Retrieved" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="315" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeManager_SwitchToFull" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="316" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeManager_Write" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args316_0"/>
+        <event value="317" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Prioritization_Request" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args317_0"/>
+        <event value="318" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Prioritization_Complete" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="319" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Prioritization_Statistics" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="320" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="JET_IO_Low_Priority_Change" opcode="win:Info" keywords="Performance Service PropStorePI"/>
+        <event value="321" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Gather_Transaction_Failure_Code" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args321_0"/>
+        <event value="322" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ETWLogging" opcode="win:Info" keywords="Indexing" template="Args322_0"/>
+        <event value="323" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ETWLoggingFailure" opcode="win:Info" keywords="Indexing" template="Args323_0"/>
+        <event value="324" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ETWLoggingItem" opcode="win:Info" keywords="Indexing" template="Args324_0"/>
+        <event value="325" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ETWLoggingItemFailure" opcode="win:Info" keywords="Indexing" template="Args325_0"/>
+        <event value="326" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="USN_Notify_Journal_Wrap" opcode="win:Info" keywords="USN" template="Args326_0"/>
+        <event value="327" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GathererRecover" opcode="win:Start" keywords="Service Gatherer"/>
+        <event value="328" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GathererRecover" opcode="win:Stop" keywords="Service Gatherer"/>
+        <event value="329" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ValueIndexCreation" opcode="win:Start" keywords="Indexing Querying" template="Args329_0"/>
+        <event value="330" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ValueIndexCreation" opcode="win:Stop" keywords="Indexing Querying" template="Args330_0"/>
+        <event value="331" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ValueIndexSeek" opcode="win:Start" keywords="Indexing Querying" template="Args331_0"/>
+        <event value="332" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ValueIndexSeek" opcode="win:Stop" keywords="Indexing Querying" template="Args332_0"/>
+        <event value="333" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ValueIndexSeek" opcode="win:Start" keywords="Indexing Querying" template="Args333_0"/>
+        <event value="334" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ValueIndexSeek" opcode="win:Stop" keywords="Indexing Querying" template="Args334_0"/>
+        <event value="335" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FreeCursor" opcode="win:Info" keywords="Querying" template="Args335_0"/>
+        <event value="336" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ReuseRestriction" opcode="win:Info" keywords="Querying" template="Args336_0"/>
+        <event value="337" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GetQueryStatusEx" opcode="win:Start" keywords="Querying"/>
+        <event value="338" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GetQueryStatusEx" opcode="win:Stop" keywords="Querying"/>
+        <event value="339" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateWordBreaker" opcode="win:Start" keywords="Indexing"/>
+        <event value="340" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateWordBreaker" opcode="win:Stop" keywords="Indexing"/>
+        <event value="341" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ReleaseWordBreaker" opcode="win:Start" keywords="Indexing"/>
+        <event value="342" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ReleaseWordBreaker" opcode="win:Stop" keywords="Indexing"/>
+        <event value="343" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateStemmer" opcode="win:Start" keywords="Indexing"/>
+        <event value="344" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateStemmer" opcode="win:Stop" keywords="Indexing"/>
+        <event value="345" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ReleaseStemmer" opcode="win:Start" keywords="Indexing"/>
+        <event value="346" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ReleaseStemmer" opcode="win:Stop" keywords="Indexing"/>
+        <event value="347" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="CreateCatalog" opcode="win:Info" keywords="Service"/>
+        <event value="348" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="DeleteCatalog" opcode="win:Info" keywords="Service"/>
+        <event value="349" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_GetWordBreaker" opcode="win:Info" keywords="IndexingChunk Gatherer" template="Args349_0"/>
+        <event value="350" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GetWordBreaker" opcode="win:Info" keywords="Indexing"/>
+        <event value="351" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WordBreakerSelector_IncrementHistory" opcode="win:Info" keywords="IndexingChunk Gatherer" template="Args351_0"/>
+        <event value="352" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WordBreakerSelector_SubstituteLocale" opcode="win:Info" keywords="IndexingChunk Gatherer" template="Args352_0"/>
+        <event value="353" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WordBreakerSelector_Fallback" opcode="win:Info" keywords="IndexingChunk Gatherer"/>
+        <event value="354" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WordBreakerHistory_Save" opcode="win:Info" keywords="IndexingChunk Gatherer" template="Args354_0"/>
+        <event value="355" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="WordBreakerHistory_Load" opcode="win:Info" keywords="IndexingChunk Gatherer"/>
+        <event value="356" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_LangAutoDetection_Scores" opcode="win:Info" keywords="IndexingChunk Gatherer" template="Args356_0"/>
+        <event value="357" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_APICall" opcode="win:Start" keywords="IndexingChunk Gatherer"/>
+        <event value="358" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_APICall" opcode="win:Stop" keywords="IndexingChunk Gatherer"/>
+        <event value="359" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_APICall" opcode="win:Start" keywords="IndexingChunk Gatherer"/>
+        <event value="360" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_APICall" opcode="win:Stop" keywords="IndexingChunk Gatherer"/>
+        <event value="361" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_APICall" opcode="win:Start" keywords="IndexingChunk Gatherer"/>
+        <event value="362" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_APICall" opcode="win:Stop" keywords="IndexingChunk Gatherer"/>
+        <event value="363" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_ProcessUSN" opcode="win:Start" keywords="IndexingChunk Gatherer"/>
+        <event value="364" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="FileChangeTracker_ProcessUSN" opcode="win:Stop" keywords="IndexingChunk Gatherer"/>
+        <event value="365" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeChangeNotification_OnChanged" keywords="IndexingItem Gatherer" template="Args365_0"/>
+        <event value="366" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeChangeNotification_OnChanged" keywords="IndexingItem Gatherer"/>
+        <event value="367" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeChangeNotification_Register" opcode="win:Start" template="Args367_0"/>
+        <event value="368" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeChangeNotification_Register" opcode="win:Stop"/>
+        <event value="369" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeChangeNotification_Unregister" opcode="win:Start"/>
+        <event value="370" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ScopeChangeNotification_Unregister" opcode="win:Stop"/>
+        <event value="18" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="Index_File" opcode="win:Stop" keywords="Performance IndexingItem ProtocolHost" template="Args18_1"/>
+        <event value="50" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery" opcode="win:Start" keywords="Performance Querying" template="Args50_1"/>
+        <event value="51" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="ClientQuery" opcode="win:Stop" keywords="Performance Querying" template="Args51_1"/>
+        <event value="54" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MergeThread" opcode="win:Start" keywords="Performance Indexing IndexPI" template="Args54_1"/>
+        <event value="55" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="MergeThread" opcode="win:Stop" keywords="Performance Indexing IndexPI"/>
+        <event value="79" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="GatherProject_AdviseStatusChange" opcode="win:Info" keywords="Gatherer" template="Args79_1"/>
+        <event value="171" version="1" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_FilterDriver_Init_Failed" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="172" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_IsHistoryIterator" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="173" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_IsWildcardTransaction" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="174" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_IsIteratorByStartAddress" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="175" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_IsHistoryIteratorUpdateFailures" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="176" version="1" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_ProcessAnnotation_Failed" opcode="win:Info" keywords="IndexingItem Gatherer" template="Args176_1"/>
+        <event value="177" version="1" level="win:Error"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_GetStandardProperties_Failed" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="178" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_TransactionNotModified" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+        <event value="179" version="1" level="win:Informational"  channel="Microsoft-Windows-Search-Core/Diagnostic" task="RobotThread_CatalogResetRequested" opcode="win:Info" keywords="IndexingItem Gatherer"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Search-Core/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Performance" mask="0x1" message="$(string.string173)" />
+        <keyword name="GroupPolicy" mask="0x2" message="$(string.string143)" />
+        <keyword name="Indexing" mask="0x4" message="$(string.string151)" />
+        <keyword name="IndexingItem" mask="0x8" message="$(string.string153)" />
+        <keyword name="IndexingChunk" mask="0x10" message="$(string.string152)" />
+        <keyword name="Querying" mask="0x20" message="$(string.string194)" />
+        <keyword name="ReservedKeyword1" mask="0x40" message="$(string.string197)" />
+        <keyword name="ReservedKeyword2" mask="0x80" message="$(string.string198)" />
+        <keyword name="Common" mask="0x100" message="$(string.string44)" />
+        <keyword name="Service" mask="0x200" message="$(string.string241)" />
+        <keyword name="Gatherer" mask="0x400" message="$(string.string122)" />
+        <keyword name="CPL" mask="0x2000" message="$(string.string45)" />
+        <keyword name="ProtocolHost" mask="0x4000" message="$(string.string178)" />
+        <keyword name="FilterHost" mask="0x8000" message="$(string.string111)" />
+        <keyword name="Wordbreakers" mask="0x10000" message="$(string.string304)" />
+        <keyword name="CSM" mask="0x20000" message="$(string.string101)" />
+        <keyword name="PropStorePI" mask="0x40000" message="$(string.string177)" />
+        <keyword name="PTypePI" mask="0x80000" message="$(string.string193)" />
+        <keyword name="IndexPI" mask="0x100000" message="$(string.string159)" />
+        <keyword name="USN" mask="0x200000" message="$(string.string289)" />
+        <keyword name="Backoff" mask="0x400000" message="$(string.string1)" />
+        <keyword name="ReservedKeyword5" mask="0x800000" message="$(string.string199)" />
+        <keyword name="ReservedKeyword6" mask="0x1000000" message="$(string.string200)" />
+        <keyword name="ReservedKeyword7" mask="0x2000000" message="$(string.string201)" />
+        <keyword name="ReservedKeyword8" mask="0x4000000" message="$(string.string202)" />
+        <keyword name="ReservedKeyword9" mask="0x8000000" message="$(string.string203)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Crawl" message="$(string.string1)">
+        </task>
+        <task value="2" name="IncCrawl" message="$(string.string2)">
+        </task>
+        <task value="3" name="BackOff_Mem" message="$(string.string3)">
+        </task>
+        <task value="4" name="BackOff_Bat" message="$(string.string4)">
+        </task>
+        <task value="5" name="BackOff_Act" message="$(string.string5)">
+        </task>
+        <task value="6" name="BackOff_IOR" message="$(string.string6)">
+        </task>
+        <task value="7" name="BackOff_Ntf" message="$(string.string7)">
+        </task>
+        <task value="8" name="BackOff_CPU" message="$(string.string8)">
+        </task>
+        <task value="9" name="Index_File" message="$(string.string9)">
+        </task>
+        <task value="10" name="USN_Notify" message="$(string.string10)">
+        </task>
+        <task value="11" name="USN_Notify_Filtered" message="$(string.string11)">
+        </task>
+        <task value="12" name="Catalog_Monitor" message="$(string.string12)">
+        </task>
+        <task value="13" name="Index_Merge" message="$(string.string13)">
+        </task>
+        <task value="14" name="Index_Commit" message="$(string.string14)">
+        </task>
+        <task value="15" name="MapiEmailItem" message="$(string.string15)">
+        </task>
+        <task value="16" name="CSCDocument" message="$(string.string16)">
+        </task>
+        <task value="17" name="RetrieveValue" message="$(string.string17)">
+        </task>
+        <task value="18" name="MapiOpenMessage" message="$(string.string18)">
+        </task>
+        <task value="19" name="MapiGetAttachmentFromMessage" message="$(string.string19)">
+        </task>
+        <task value="20" name="MapiEnumerateAttachments" message="$(string.string20)">
+        </task>
+        <task value="21" name="MapiGetMapiFpsPropVals" message="$(string.string21)">
+        </task>
+        <task value="22" name="IndexItemInit" message="$(string.string22)">
+        </task>
+        <task value="23" name="IndexItemSetStatus" message="$(string.string23)">
+        </task>
+        <task value="24" name="OnDataChange" message="$(string.string24)">
+        </task>
+        <task value="25" name="IndexItemDataComplete" message="$(string.string25)">
+        </task>
+        <task value="26" name="HighPriorityItemBoost" message="$(string.string26)">
+        </task>
+        <task value="27" name="HighPriorityThreadBoost" message="$(string.string27)">
+        </task>
+        <task value="28" name="HighPriorityMergeBoost" message="$(string.string28)">
+        </task>
+        <task value="29" name="ClientQuery" message="$(string.string29)">
+        </task>
+        <task value="30" name="IndexItemEnd" message="$(string.string30)">
+        </task>
+        <task value="31" name="MergeItem" message="$(string.string31)">
+        </task>
+        <task value="32" name="MergeThread" message="$(string.string32)">
+        </task>
+        <task value="33" name="IndexItemPushToFile" message="$(string.string33)">
+        </task>
+        <task value="34" name="ClientGetNextRows" message="$(string.string34)">
+        </task>
+        <task value="35" name="FilterOplockBreak" message="$(string.string35)">
+        </task>
+        <task value="36" name="BackoffThreadWait" message="$(string.string36)">
+        </task>
+        <task value="37" name="BackoffReason" message="$(string.string37)">
+        </task>
+        <task value="38" name="FilterOplockFail" message="$(string.string38)">
+        </task>
+        <task value="39" name="ServiceStatusUpdate" message="$(string.string39)">
+        </task>
+        <task value="40" name="SearchIndexer" message="$(string.string40)">
+        </task>
+        <task value="41" name="SearchProtocolHost" message="$(string.string41)">
+        </task>
+        <task value="42" name="SearchFilterHost" message="$(string.string42)">
+        </task>
+        <task value="43" name="StatusChange_PostToStatusThread" message="$(string.string43)">
+        </task>
+        <task value="44" name="StatusChange_ProcessInStatusThread" message="$(string.string44)">
+        </task>
+        <task value="45" name="StatusThread" message="$(string.string45)">
+        </task>
+        <task value="46" name="StatusChange_AppendToGathererQueue" message="$(string.string46)">
+        </task>
+        <task value="48" name="StatusChange_AppendCrawlToGathererQueue" message="$(string.string48)">
+        </task>
+        <task value="49" name="StatusChange_RemoveFromGathererQueue" message="$(string.string49)">
+        </task>
+        <task value="50" name="Gatherer_AdviseStatus" message="$(string.string50)">
+        </task>
+        <task value="51" name="Gatherer_RequestStatusChange" message="$(string.string51)">
+        </task>
+        <task value="52" name="GatherProject_AdviseStatusChange" message="$(string.string52)">
+        </task>
+        <task value="53" name="GatherProject_AdviseRequestStatus" message="$(string.string53)">
+        </task>
+        <task value="54" name="GatherProject_PrepareStatusChange" message="$(string.string54)">
+        </task>
+        <task value="55" name="AliasTable_InitSDIDCache" message="$(string.string55)">
+        </task>
+        <task value="56" name="WID_SDID_Cache_Initialize" message="$(string.string56)">
+        </task>
+        <task value="57" name="WID_SDID_Cache_Write" message="$(string.string57)">
+        </task>
+        <task value="58" name="WID_SDID_Cache_SwitchToFull" message="$(string.string58)">
+        </task>
+        <task value="60" name="Startup_Search_Service_Duration" message="$(string.string60)">
+        </task>
+        <task value="61" name="Shutdown_Search_Service_Duration" message="$(string.string61)">
+        </task>
+        <task value="62" name="Startup_CSearchService_Init" message="$(string.string62)">
+        </task>
+        <task value="63" name="Startup_CDcomService_Init" message="$(string.string63)">
+        </task>
+        <task value="64" name="Startup_CDcomService_ServiceStart" message="$(string.string64)">
+        </task>
+        <task value="65" name="Startup_CDcomService_ServiceMain" message="$(string.string65)">
+        </task>
+        <task value="66" name="Startup_RecoverIfNecessary" message="$(string.string66)">
+        </task>
+        <task value="67" name="Startup_RecoverDataFiles" message="$(string.string67)">
+        </task>
+        <task value="68" name="Startup_RecoverDataFiles_RemoveDir" message="$(string.string68)">
+        </task>
+        <task value="69" name="Startup_MoveDataFiles" message="$(string.string69)">
+        </task>
+        <task value="70" name="Startup_MoveDataFiles_CopyDir" message="$(string.string70)">
+        </task>
+        <task value="71" name="Startup_MoveDataFiles_RemoveDir" message="$(string.string71)">
+        </task>
+        <task value="72" name="Startup_ReplaceDirectoryPrefixInValue" message="$(string.string72)">
+        </task>
+        <task value="73" name="Startup_SysPrepInProgress" message="$(string.string73)">
+        </task>
+        <task value="74" name="Startup_GuiSetupInProgress" message="$(string.string74)">
+        </task>
+        <task value="75" name="Startup_CDcomService_IsIdleServiceMode" message="$(string.string75)">
+        </task>
+        <task value="76" name="Startup_CSearchService_Init2" message="$(string.string76)">
+        </task>
+        <task value="77" name="Startup_SetupWorkingDirectory" message="$(string.string77)">
+        </task>
+        <task value="78" name="Startup_SetupWorkingDirectory_RemovePath" message="$(string.string78)">
+        </task>
+        <task value="79" name="Startup_CheckAndCleanup" message="$(string.string79)">
+        </task>
+        <task value="80" name="Startup_CSearchServiceObj_Initialize" message="$(string.string80)">
+        </task>
+        <task value="81" name="Startup_CGatherModule_Init" message="$(string.string81)">
+        </task>
+        <task value="82" name="Startup_CGatheringService_Init" message="$(string.string82)">
+        </task>
+        <task value="84" name="Startup_InitialIndexSetup" message="$(string.string84)">
+        </task>
+        <task value="85" name="Setup_DeletePreviousUsersSettingsKey" message="$(string.string85)">
+        </task>
+        <task value="86" name="Setup_SetCompletedSuccessfully" message="$(string.string86)">
+        </task>
+        <task value="87" name="Setup_Phase" message="$(string.string87)">
+        </task>
+        <task value="88" name="Setup_CatalogSetupSucceeded" message="$(string.string88)">
+        </task>
+        <task value="89" name="Setup_CatalogSetupFailed" message="$(string.string89)">
+        </task>
+        <task value="90" name="Setup_CleanupStarted" message="$(string.string90)">
+        </task>
+        <task value="91" name="Setup_CleanupRemoveDir" message="$(string.string91)">
+        </task>
+        <task value="92" name="Setup_CleanupSucceeded" message="$(string.string92)">
+        </task>
+        <task value="93" name="Setup_CleanupFailed" message="$(string.string93)">
+        </task>
+        <task value="94" name="Crawl_InitializeNew" message="$(string.string94)">
+        </task>
+        <task value="95" name="Crawl_Initialize" message="$(string.string95)">
+        </task>
+        <task value="96" name="Crawl_Initialize_Load" message="$(string.string96)">
+        </task>
+        <task value="97" name="Crawl_AddStartPage" message="$(string.string97)">
+        </task>
+        <task value="98" name="Crawl_RemoveStartPage" message="$(string.string98)">
+        </task>
+        <task value="99" name="Crawl_IsDone" message="$(string.string99)">
+        </task>
+        <task value="100" name="Transactions_IterateHistory" message="$(string.string100)">
+        </task>
+        <task value="101" name="Transactions_IterateHistory_Modify" message="$(string.string101)">
+        </task>
+        <task value="102" name="Transactions_IterateHistory_Delete" message="$(string.string102)">
+        </task>
+        <task value="103" name="Transactions_UpdateFailures" message="$(string.string103)">
+        </task>
+        <task value="104" name="GatherLog_Transaction" message="$(string.string104)">
+        </task>
+        <task value="105" name="GatherLog_Crawl" message="$(string.string105)">
+        </task>
+        <task value="106" name="Gatherer_OnDataChange" message="$(string.string106)">
+        </task>
+        <task value="107" name="Gatherer_OnDataChange_Lost" message="$(string.string107)">
+        </task>
+        <task value="108" name="Gatherer_OnDataChange_Failed" message="$(string.string108)">
+        </task>
+        <task value="109" name="OnDataChange_Failed" message="$(string.string109)">
+        </task>
+        <task value="112" name="RobotThread_BeforeGetNewTransaction" message="$(string.string112)">
+        </task>
+        <task value="113" name="RobotThread_ProcessNewTransaction" message="$(string.string113)">
+        </task>
+        <task value="114" name="RobotThread_FilterDriver_Init_Failed" message="$(string.string114)">
+        </task>
+        <task value="115" name="RobotThread_IsHistoryIterator" message="$(string.string115)">
+        </task>
+        <task value="116" name="RobotThread_IsWildcardTransaction" message="$(string.string116)">
+        </task>
+        <task value="117" name="RobotThread_IsIteratorByStartAddress" message="$(string.string117)">
+        </task>
+        <task value="118" name="RobotThread_IsHistoryIteratorUpdateFailures" message="$(string.string118)">
+        </task>
+        <task value="119" name="RobotThread_ProcessAnnotation_Failed" message="$(string.string119)">
+        </task>
+        <task value="120" name="RobotThread_GetStandardProperties_Failed" message="$(string.string120)">
+        </task>
+        <task value="121" name="RobotThread_TransactionNotModified" message="$(string.string121)">
+        </task>
+        <task value="122" name="RobotThread_CatalogResetRequested" message="$(string.string122)">
+        </task>
+        <task value="123" name="CEnumSearchRoots_Constructor" message="$(string.string123)">
+        </task>
+        <task value="124" name="CEnumSearchRoots_Destructor" message="$(string.string124)">
+        </task>
+        <task value="125" name="CEnumSearchRoots_Reset" message="$(string.string125)">
+        </task>
+        <task value="126" name="CEnumSearchRoots_Clone" message="$(string.string126)">
+        </task>
+        <task value="127" name="CEnumSearchRoots_Next" message="$(string.string127)">
+        </task>
+        <task value="128" name="CEnumSearchRoots_Next_Fetch" message="$(string.string128)">
+        </task>
+        <task value="129" name="CEnumSearchRoots_Skip" message="$(string.string129)">
+        </task>
+        <task value="130" name="CEnumSearchScopeRules_Constructor" message="$(string.string130)">
+        </task>
+        <task value="131" name="CEnumSearchScopeRules_Destructor" message="$(string.string131)">
+        </task>
+        <task value="132" name="CEnumSearchScopeRules_Reset" message="$(string.string132)">
+        </task>
+        <task value="133" name="CEnumSearchScopeRules_Clone" message="$(string.string133)">
+        </task>
+        <task value="134" name="CEnumSearchScopeRules_Next" message="$(string.string134)">
+        </task>
+        <task value="135" name="CEnumSearchScopeRules_Next_Fetch" message="$(string.string135)">
+        </task>
+        <task value="136" name="CEnumSearchScopeRules_Skip" message="$(string.string136)">
+        </task>
+        <task value="137" name="CSearchCrawlScopeManager_Constructor" message="$(string.string137)">
+        </task>
+        <task value="138" name="CSearchCrawlScopeManager_Destructor" message="$(string.string138)">
+        </task>
+        <task value="139" name="CSearchCrawlScopeManager_IncludedInCrawlScope" message="$(string.string139)">
+        </task>
+        <task value="140" name="CSearchCrawlScopeManager_AddDefaultScopeRule" message="$(string.string140)">
+        </task>
+        <task value="141" name="CSearchCrawlScopeManager_AddHierarchicalScope" message="$(string.string141)">
+        </task>
+        <task value="142" name="CSearchCrawlScopeManager_AddRoot" message="$(string.string142)">
+        </task>
+        <task value="143" name="CSearchCrawlScopeManager_AddUserScopeRule" message="$(string.string143)">
+        </task>
+        <task value="144" name="CSearchCrawlScopeManager_EnumerateRoots" message="$(string.string144)">
+        </task>
+        <task value="145" name="CSearchCrawlScopeManager_EnumerateScopeRules" message="$(string.string145)">
+        </task>
+        <task value="146" name="CSearchCrawlScopeManager_GetParentScopeVersionId" message="$(string.string146)">
+        </task>
+        <task value="147" name="CSearchCrawlScopeManager_HasChildScopeRule" message="$(string.string147)">
+        </task>
+        <task value="148" name="CSearchCrawlScopeManager_HasParentScopeRule" message="$(string.string148)">
+        </task>
+        <task value="149" name="CSearchCrawlScopeManager_IncludedInCrawlScopeEx" message="$(string.string149)">
+        </task>
+        <task value="150" name="CSearchCrawlScopeManager_RemoveDefaultScopeRule" message="$(string.string150)">
+        </task>
+        <task value="151" name="CSearchCrawlScopeManager_RemoveRoot" message="$(string.string151)">
+        </task>
+        <task value="152" name="CSearchCrawlScopeManager_RemoveScopeRule" message="$(string.string152)">
+        </task>
+        <task value="153" name="CSearchCrawlScopeManager_RevertToDefaultScopes" message="$(string.string153)">
+        </task>
+        <task value="154" name="CSearchCrawlScopeManager_SaveAll" message="$(string.string154)">
+        </task>
+        <task value="155" name="CSearchRoot_put_RootURL" message="$(string.string155)">
+        </task>
+        <task value="156" name="CSearchRoot_get_RootURL" message="$(string.string156)">
+        </task>
+        <task value="157" name="CSearchRoot_get_AuthenticationType" message="$(string.string157)">
+        </task>
+        <task value="158" name="CSearchRoot_get_EnumerationDepth" message="$(string.string158)">
+        </task>
+        <task value="159" name="CSearchRoot_get_FollowDirectories" message="$(string.string159)">
+        </task>
+        <task value="160" name="CSearchRoot_get_HostDepth" message="$(string.string160)">
+        </task>
+        <task value="161" name="CSearchRoot_get_IsHierarchical" message="$(string.string161)">
+        </task>
+        <task value="162" name="CSearchRoot_get_ProvidesNotifications" message="$(string.string162)">
+        </task>
+        <task value="163" name="CSearchRoot_get_Schedule" message="$(string.string163)">
+        </task>
+        <task value="164" name="CSearchRoot_get_UseNotificationsOnly" message="$(string.string164)">
+        </task>
+        <task value="165" name="CSearchRoot_put_AuthenticationType" message="$(string.string165)">
+        </task>
+        <task value="166" name="CSearchRoot_put_EnumerationDepth" message="$(string.string166)">
+        </task>
+        <task value="167" name="CSearchRoot_put_FollowDirectories" message="$(string.string167)">
+        </task>
+        <task value="168" name="CSearchRoot_put_HostDepth" message="$(string.string168)">
+        </task>
+        <task value="169" name="CSearchRoot_put_IsHierarchical" message="$(string.string169)">
+        </task>
+        <task value="170" name="CSearchRoot_put_ProvidesNotifications" message="$(string.string170)">
+        </task>
+        <task value="171" name="CSearchRoot_put_Schedule" message="$(string.string171)">
+        </task>
+        <task value="172" name="CSearchRoot_put_UseNotificationsOnly" message="$(string.string172)">
+        </task>
+        <task value="173" name="CSearchRoot_put_User" message="$(string.string173)">
+        </task>
+        <task value="174" name="CSearchScopeRule_get_IsDefault" message="$(string.string174)">
+        </task>
+        <task value="175" name="CSearchScopeRule_get_IsIncluded" message="$(string.string175)">
+        </task>
+        <task value="176" name="CSearchScopeRule_get_PatternOrURL" message="$(string.string176)">
+        </task>
+        <task value="177" name="StatusChange_QueueLocked" message="$(string.string177)">
+        </task>
+        <task value="178" name="StatusChange_QueueUnlocked" message="$(string.string178)">
+        </task>
+        <task value="179" name="Backoff_MemoryCheck" message="$(string.string179)">
+        </task>
+        <task value="180" name="Backoff_BatteryPolicyCheck" message="$(string.string180)">
+        </task>
+        <task value="181" name="Backoff_BatteryCheck" message="$(string.string181)">
+        </task>
+        <task value="182" name="Backoff_LowDiskCheck" message="$(string.string182)">
+        </task>
+        <task value="183" name="Backoff_UserActivityCheck" message="$(string.string183)">
+        </task>
+        <task value="184" name="Backoff_HighCPUCheck" message="$(string.string184)">
+        </task>
+        <task value="185" name="Backoff_HighIOCheck" message="$(string.string185)">
+        </task>
+        <task value="186" name="Backoff_HighNotificationsCheck" message="$(string.string186)">
+        </task>
+        <task value="187" name="Backoff_PendingNotificationsCheck" message="$(string.string187)">
+        </task>
+        <task value="188" name="Backoff_AllowNewItemsCheck" message="$(string.string188)">
+        </task>
+        <task value="189" name="Backoff_State" message="$(string.string189)">
+        </task>
+        <task value="190" name="ProtocolHostObjConstructor" message="$(string.string190)">
+        </task>
+        <task value="191" name="ProtocolHostObjInit" message="$(string.string191)">
+        </task>
+        <task value="192" name="ProtocolHostStarted" message="$(string.string192)">
+        </task>
+        <task value="193" name="ProtocolHostTerminating" message="$(string.string193)">
+        </task>
+        <task value="194" name="ProtocolHostStopped" message="$(string.string194)">
+        </task>
+        <task value="195" name="ProtocolHostStoppedAlready" message="$(string.string195)">
+        </task>
+        <task value="196" name="ProtocolHostTerminatingInDestructor" message="$(string.string196)">
+        </task>
+        <task value="197" name="ProtocolHostKilledInDestructor" message="$(string.string197)">
+        </task>
+        <task value="198" name="ProtocolHostStoppedInDestructor" message="$(string.string198)">
+        </task>
+        <task value="199" name="ProtocolHostNameConflict_Killing" message="$(string.string199)">
+        </task>
+        <task value="200" name="ProtocolHostNameConflict_FailedToKill" message="$(string.string200)">
+        </task>
+        <task value="201" name="ProtocolHostNameConflict_Killed" message="$(string.string201)">
+        </task>
+        <task value="202" name="FilterHostStarting" message="$(string.string202)">
+        </task>
+        <task value="203" name="FilterHostStarted" message="$(string.string203)">
+        </task>
+        <task value="204" name="FilterHostStopping" message="$(string.string204)">
+        </task>
+        <task value="205" name="FilterHostHung" message="$(string.string205)">
+        </task>
+        <task value="206" name="FilterHostStopped" message="$(string.string206)">
+        </task>
+        <task value="207" name="ProtocolHostKilled" message="$(string.string207)">
+        </task>
+        <task value="208" name="ProtocolHostObjDestructor" message="$(string.string208)">
+        </task>
+        <task value="209" name="Gatherer_OnDataChange_Track_Url" message="$(string.string209)">
+        </task>
+        <task value="210" name="Gatherer_DocIdTable_GetNewId" message="$(string.string210)">
+        </task>
+        <task value="211" name="Gatherer_DocIdTable_UndeleteId" message="$(string.string211)">
+        </task>
+        <task value="212" name="Gatherer_DocIdTable_DeleteId" message="$(string.string212)">
+        </task>
+        <task value="213" name="Gatherer_DocIdTable_GetMaxId" message="$(string.string213)">
+        </task>
+        <task value="214" name="Gatherer_DocIdTable_SetMaxId" message="$(string.string214)">
+        </task>
+        <task value="215" name="WID_SDID_Cache_NumberItems" message="$(string.string215)">
+        </task>
+        <task value="216" name="Gatherer_Queues_QueueLength" message="$(string.string216)">
+        </task>
+        <task value="217" name="ClientStartFetch" message="$(string.string217)">
+        </task>
+        <task value="218" name="ClientFetched" message="$(string.string218)">
+        </task>
+        <task value="219" name="ServerGetRows" message="$(string.string219)">
+        </task>
+        <task value="220" name="ServerQueryRelease" message="$(string.string220)">
+        </task>
+        <task value="221" name="CreatePhysCursor" message="$(string.string221)">
+        </task>
+        <task value="222" name="CreatePhysCursorRange" message="$(string.string222)">
+        </task>
+        <task value="223" name="Merge" message="$(string.string223)">
+        </task>
+        <task value="224" name="CreateWLCursor" message="$(string.string224)">
+        </task>
+        <task value="225" name="CreateWLCursorRange" message="$(string.string225)">
+        </task>
+        <task value="226" name="ServerQuery" message="$(string.string226)">
+        </task>
+        <task value="227" name="ServerQuery_Send" message="$(string.string227)">
+        </task>
+        <task value="228" name="ServerQuery_Received" message="$(string.string228)">
+        </task>
+        <task value="229" name="ClientQuery_Send" message="$(string.string229)">
+        </task>
+        <task value="230" name="ClientQuery_Received" message="$(string.string230)">
+        </task>
+        <task value="231" name="ServerQuery_Create" message="$(string.string231)">
+        </task>
+        <task value="232" name="RobotThread_LangAutoDetection_Start" message="$(string.string232)">
+        </task>
+        <task value="233" name="RobotThread_LangAutoDetection_Stop" message="$(string.string233)">
+        </task>
+        <task value="234" name="RobotThread_LangAutoDetection_Succeed" message="$(string.string234)">
+        </task>
+        <task value="235" name="RobotThread_LangAutoDetection_Fail" message="$(string.string235)">
+        </task>
+        <task value="236" name="Service_Status_Notify" message="$(string.string236)">
+        </task>
+        <task value="238" name="ServerQuery_ForcePublish" message="$(string.string238)">
+        </task>
+        <task value="239" name="Wordlist_Publish" message="$(string.string239)">
+        </task>
+        <task value="240" name="Flush_Schedule" message="$(string.string240)">
+        </task>
+        <task value="241" name="CBPool_ForceFlush" message="$(string.string241)">
+        </task>
+        <task value="242" name="DocAborted_ForcePublish" message="$(string.string242)">
+        </task>
+        <task value="243" name="DocAborted_CBOverflow" message="$(string.string243)">
+        </task>
+        <task value="244" name="Wordlist_BeginResourceFailed_CBOverflow" message="$(string.string244)">
+        </task>
+        <task value="245" name="Wordlist_BeginResourceFailed_DocInError" message="$(string.string245)">
+        </task>
+        <task value="246" name="Wordlist_BeginResource_InvalidatedPreviousDoc" message="$(string.string246)">
+        </task>
+        <task value="247" name="ClientQuery_Rowset_Reuse" message="$(string.string247)">
+        </task>
+        <task value="248" name="ServerQuery_DeferredProperty" message="$(string.string248)">
+        </task>
+        <task value="249" name="ScopeManager_Init" message="$(string.string249)">
+        </task>
+        <task value="250" name="ScopeManager_Retrieved" message="$(string.string250)">
+        </task>
+        <task value="251" name="ScopeManager_SwitchToFull" message="$(string.string251)">
+        </task>
+        <task value="252" name="ScopeManager_Write" message="$(string.string252)">
+        </task>
+        <task value="253" name="Prioritization_Request" message="$(string.string253)">
+        </task>
+        <task value="254" name="Prioritization_Complete" message="$(string.string254)">
+        </task>
+        <task value="255" name="Prioritization_Statistics" message="$(string.string255)">
+        </task>
+        <task value="256" name="JET_IO_Low_Priority_Change" message="$(string.string256)">
+        </task>
+        <task value="257" name="Gather_Transaction_Failure_Code" message="$(string.string257)">
+        </task>
+        <task value="258" name="ETWLogging" message="$(string.string258)">
+        </task>
+        <task value="259" name="ETWLoggingFailure" message="$(string.string259)">
+        </task>
+        <task value="260" name="ETWLoggingItem" message="$(string.string260)">
+        </task>
+        <task value="261" name="ETWLoggingItemFailure" message="$(string.string261)">
+        </task>
+        <task value="262" name="USN_Notify_Journal_Wrap" message="$(string.string262)">
+        </task>
+        <task value="263" name="GathererRecover" message="$(string.string263)">
+        </task>
+        <task value="264" name="ValueIndexCreation" message="$(string.string264)">
+        </task>
+        <task value="265" name="ValueIndexSeek" message="$(string.string265)">
+        </task>
+        <task value="266" name="FreeCursor" message="$(string.string266)">
+        </task>
+        <task value="267" name="ReuseRestriction" message="$(string.string267)">
+        </task>
+        <task value="268" name="GetQueryStatusEx" message="$(string.string268)">
+        </task>
+        <task value="269" name="CreateWordBreaker" message="$(string.string269)">
+        </task>
+        <task value="270" name="ReleaseWordBreaker" message="$(string.string270)">
+        </task>
+        <task value="271" name="CreateStemmer" message="$(string.string271)">
+        </task>
+        <task value="272" name="ReleaseStemmer" message="$(string.string272)">
+        </task>
+        <task value="273" name="CreateCatalog" message="$(string.string273)">
+        </task>
+        <task value="274" name="DeleteCatalog" message="$(string.string274)">
+        </task>
+        <task value="275" name="RobotThread_GetWordBreaker" message="$(string.string275)">
+        </task>
+        <task value="276" name="GetWordBreaker" message="$(string.string276)">
+        </task>
+        <task value="277" name="WordBreakerSelector_SubstituteLocale" message="$(string.string277)">
+        </task>
+        <task value="278" name="WordBreakerSelector_IncrementHistory" message="$(string.string278)">
+        </task>
+        <task value="279" name="WordBreakerSelector_Fallback" message="$(string.string279)">
+        </task>
+        <task value="280" name="WordBreakerHistory_Save" message="$(string.string280)">
+        </task>
+        <task value="281" name="WordBreakerHistory_Load" message="$(string.string281)">
+        </task>
+        <task value="282" name="RobotThread_LangAutoDetection_Scores" message="$(string.string282)">
+        </task>
+        <task value="283" name="FileChangeTracker_APICall" message="$(string.string283)">
+        </task>
+        <task value="284" name="FileChangeTracker_ProcessUSN" message="$(string.string284)">
+        </task>
+        <task value="285" name="ScopeChangeNotification_OnChanged" message="$(string.string285)">
+        </task>
+        <task value="286" name="ScopeChangeNotification_Register" message="$(string.string286)">
+        </task>
+        <task value="287" name="ScopeChangeNotification_Unregister" message="$(string.string287)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args17_0">
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="Reason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args42_0">
+          <data name="ITrans" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ResID" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="InternalFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CrawlNumber" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CrawlType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Extra1" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Extra2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Extra3" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args44_0">
+          <data name="Value" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args57_0">
+          <data name="Rowset" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Chapter" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RowsToSkip" inType="win:Int64" outType="xs:long"  />
+          <data name="RowsRequested" inType="win:Int64" outType="xs:long"  />
+          <data name="RowsReturned" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args63_0">
+          <data name="WaitHint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CheckPoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args77_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args83_0">
+          <data name="IsCompact" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CacheCapacity" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args84_0">
+          <data name="MaxWID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SDID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsCompact" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CacheCapacity" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args86_0">
+          <data name="MemAvail" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemTreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsLow" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args87_0">
+          <data name="ACLineStatus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BackOffOnBattery" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsBackOffNeeded" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args88_0">
+          <data name="ACLineStatus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BatteryFlag" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BatteryLifePercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LowBatteryThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsLow" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args89_0">
+          <data name="DiskAvail" inType="win:Double" outType="xs:double"  />
+          <data name="LowDiskThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsLow" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args90_0">
+          <data name="Interval" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsUserActive" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args91_0">
+          <data name="Idle" inType="win:Double" outType="xs:double"  />
+          <data name="MaxIdle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsHigh" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args92_0">
+          <data name="IORate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighIOThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsHigh" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args93_0">
+          <data name="NotificationRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighNotificationThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsHigh" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args94_0">
+          <data name="PendingNotifications" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NotificationsForceAtMost" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NotificationsForced" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args95_0">
+          <data name="LastIndexNewItemReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexNewItemReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackoffReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args96_0">
+          <data name="BackoffReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexNewItemReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AllReasons" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FeatureDisabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PowerSetting" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackoffRecoveryIsON" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ProcessNotifications" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BackOffOnPendingNotifications" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PendingHiPriNotifications" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackOffOnPowerSetting" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="XPScreenSaverAndNoBattery" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Merging" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args98_0">
+          <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Architecture" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args123_0">
+          <data name="OldPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args126_0">
+          <data name="Value" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldPrefix" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewPrefix" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="NoRun" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SystemSetupOver" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args137_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args143_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args148_0">
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CrawlType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsCatalogLevel" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartPageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StartPageRefID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args152_0">
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartPageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StartPageRefID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CrawlIsInProgress" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args153_0">
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsDone" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args155_0">
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="hrCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartAddressId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CrawlNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DocId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrTransactionError" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args162_0">
+          <data name="Resource" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ChangeAdvice" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args163_0">
+          <data name="Resource" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args164_0">
+          <data name="Resource" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransactionURL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args186_0">
+          <data name="ElementCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args187_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ElementCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args188_0">
+          <data name="SearchRootURL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args199_0">
+          <data name="ScopeRuleURL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args205_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsIncluded" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args206_0">
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsInclude" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FollowFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args208_0">
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsInclude" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OverrideChildren" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args212_0">
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsInclude" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OverrideChildren" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FollowFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args219_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args221_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HasChildRule" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args223_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HasParentRule" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args225_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsIncluded" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args237_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SearchRootURL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args238_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args240_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args244_0">
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args260_0">
+          <data name="WorkId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args265_0">
+          <data name="NumWID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args266_0">
+          <data name="GathererCodeLocation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsInFile" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsInMemory" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionQueueLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsInFileNotifications" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsInMemoryNotifications" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionQueueLengthNotifications" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsHighLimit" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsLowLimitPerCrawl" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsHighLimitPerCrawl" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsInIncrementalQueue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionsInNotificationQueue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TansactionsInNotificationHighPriorityQueue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args271_0">
+          <data name="Qid" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args272_0">
+          <data name="ObjectWid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyPid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupPids" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="KeyStr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args274_0">
+          <data name="ObjectWid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyStartPid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupPids" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="KeyEndStr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args275_0">
+          <data name="ObjectWid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StackCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args276_0">
+          <data name="ObjectWid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UseQueryPerfOpt" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Restarted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IndexIds" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TotalSizeInPages" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxWid" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args278_0">
+          <data name="WordListId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="KeyTargetPid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyTargetStr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args280_0">
+          <data name="WordListId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="KeyStartPid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupPids" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="KeyEndStr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args281_0">
+          <data name="WordListId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StackCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args283_0">
+          <data name="Qid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args284_0">
+          <data name="Qid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesReceived" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args289_0">
+          <data name="Rowset" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Chapter" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RowsRequested" inType="win:Int64" outType="xs:long"  />
+          <data name="RowSeekMethod" inType="win:Int32" outType="xs:int"  />
+          <data name="RowsToSkip" inType="win:Int64" outType="xs:long"  />
+          <data name="RowOffset" inType="win:Int32" outType="xs:int"  />
+          <data name="Bookmark" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bookmarks" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Numerator" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Denominator" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args290_0">
+          <data name="Rowset" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RowsReturned" inType="win:Int64" outType="xs:long"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args291_0">
+          <data name="Qid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WidStart" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Chapter" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Depth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RowOffset" inType="win:Int64" outType="xs:long"  />
+          <data name="RequestedRows" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args292_0">
+          <data name="Qid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RowsTransferred" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args293_0">
+          <data name="fmtid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="pid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TextPrefix" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TextLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args294_0">
+          <data name="LocaleID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args295_0">
+          <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args302_0">
+          <data name="CBID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DocCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesAvailable" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args304_0">
+          <data name="Scheduled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args305_0">
+          <data name="AvailableCBCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DirtyCBCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InUseCBCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PublishedCBCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args306_0">
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args308_0">
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesAvailable" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args310_0">
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CBID" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args312_0">
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PropID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args316_0">
+          <data name="MaxWID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Scope" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsCompact" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CacheCapacity" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args317_0">
+          <data name="RequestID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Priority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Indexed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutstandingAdds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutstandingModifies" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args321_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args322_0">
+          <data name="Info" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args323_0">
+          <data name="Hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Info" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args324_0">
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Info" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args325_0">
+          <data name="Hr" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DocID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Info" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args326_0">
+          <data name="Volume" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DesiredPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="CurrentPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="hr" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args329_0">
+          <data name="Locale" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdxName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="IsShadow" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ColumnType" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args330_0">
+          <data name="Locale" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdxName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="IsShadow" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args331_0">
+          <data name="SeekType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ColumnType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args332_0">
+          <data name="SeekType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args333_0">
+          <data name="HasStartVariant" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="HasEndVariant" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ExcludeStartVariant" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ExcludeEndVariant" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args334_0">
+          <data name="RangeSet" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args335_0">
+          <data name="Qid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cursor" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args336_0">
+          <data name="WhereID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args349_0">
+          <data name="fmtid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="pid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocaleID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocaleSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args351_0">
+          <data name="LocaleID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IncrementCallID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args352_0">
+          <data name="LocaleOriginal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocaleSubstitute" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args354_0">
+          <data name="Data" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args356_0">
+          <data name="TextLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TopLCID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TopScore" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecondLCID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecondScore" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args365_0">
+          <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EventId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Result" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SuccessEvent" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args367_0">
+          <data name="UserSid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EventId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_1">
+          <data name="UsesFilter" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="UsesPropertyHandler" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args50_1">
+          <data name="QueryText" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args51_1">
+          <data name="QueryText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args54_1">
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Type" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args79_1">
+          <data name="ProjectPtr" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hrReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args176_1">
+          <data name="ITrans" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AliasTable_InitSDIDCache" />
+       <string id="string1" value="Backoff" />
+       <string id="string2" value="BackOff_Act" />
+       <string id="string3" value="Backoff_AllowNewItemsCheck" />
+       <string id="string4" value="BackOff_Bat" />
+       <string id="string5" value="Backoff_BatteryCheck" />
+       <string id="string6" value="Backoff_BatteryPolicyCheck" />
+       <string id="string7" value="BackOff_CPU" />
+       <string id="string8" value="Backoff_HighCPUCheck" />
+       <string id="string9" value="Backoff_HighIOCheck" />
+       <string id="string10" value="Backoff_HighNotificationsCheck" />
+       <string id="string11" value="BackOff_IOR" />
+       <string id="string12" value="Backoff_LowDiskCheck" />
+       <string id="string13" value="BackOff_Mem" />
+       <string id="string14" value="Backoff_MemoryCheck" />
+       <string id="string15" value="BackOff_Ntf" />
+       <string id="string16" value="Backoff_PendingNotificationsCheck" />
+       <string id="string17" value="Backoff_State" />
+       <string id="string18" value="Backoff_UserActivityCheck" />
+       <string id="string19" value="BackoffReason" />
+       <string id="string20" value="BackoffThreadWait" />
+       <string id="string21" value="Catalog_Monitor" />
+       <string id="string22" value="CBPool_ForceFlush" />
+       <string id="string23" value="CEnumSearchRoots_Clone" />
+       <string id="string24" value="CEnumSearchRoots_Constructor" />
+       <string id="string25" value="CEnumSearchRoots_Destructor" />
+       <string id="string26" value="CEnumSearchRoots_Next" />
+       <string id="string27" value="CEnumSearchRoots_Next_Fetch" />
+       <string id="string28" value="CEnumSearchRoots_Reset" />
+       <string id="string29" value="CEnumSearchRoots_Skip" />
+       <string id="string30" value="CEnumSearchScopeRules_Clone" />
+       <string id="string31" value="CEnumSearchScopeRules_Constructor" />
+       <string id="string32" value="CEnumSearchScopeRules_Destructor" />
+       <string id="string33" value="CEnumSearchScopeRules_Next" />
+       <string id="string34" value="CEnumSearchScopeRules_Next_Fetch" />
+       <string id="string35" value="CEnumSearchScopeRules_Reset" />
+       <string id="string36" value="CEnumSearchScopeRules_Skip" />
+       <string id="string37" value="ClientFetched" />
+       <string id="string38" value="ClientGetNextRows" />
+       <string id="string39" value="ClientQuery" />
+       <string id="string40" value="ClientQuery_Received" />
+       <string id="string41" value="ClientQuery_Rowset_Reuse" />
+       <string id="string42" value="ClientQuery_Send" />
+       <string id="string43" value="ClientStartFetch" />
+       <string id="string44" value="Common" />
+       <string id="string45" value="CPL" />
+       <string id="string46" value="Crawl" />
+       <string id="string47" value="Crawl_AddStartPage" />
+       <string id="string48" value="Crawl_Initialize" />
+       <string id="string49" value="Crawl_Initialize_Load" />
+       <string id="string50" value="Crawl_InitializeNew" />
+       <string id="string51" value="Crawl_IsDone" />
+       <string id="string52" value="Crawl_RemoveStartPage" />
+       <string id="string53" value="CreateCatalog" />
+       <string id="string54" value="CreatePhysCursor" />
+       <string id="string55" value="CreatePhysCursorRange" />
+       <string id="string56" value="CreateStemmer" />
+       <string id="string57" value="CreateWLCursor" />
+       <string id="string58" value="CreateWLCursorRange" />
+       <string id="string59" value="CreateWordBreaker" />
+       <string id="string60" value="CSCDocument" />
+       <string id="string61" value="CSearchCrawlScopeManager_AddDefaultScopeRule" />
+       <string id="string62" value="CSearchCrawlScopeManager_AddHierarchicalScope" />
+       <string id="string63" value="CSearchCrawlScopeManager_AddRoot" />
+       <string id="string64" value="CSearchCrawlScopeManager_AddUserScopeRule" />
+       <string id="string65" value="CSearchCrawlScopeManager_Constructor" />
+       <string id="string66" value="CSearchCrawlScopeManager_Destructor" />
+       <string id="string67" value="CSearchCrawlScopeManager_EnumerateRoots" />
+       <string id="string68" value="CSearchCrawlScopeManager_EnumerateScopeRules" />
+       <string id="string69" value="CSearchCrawlScopeManager_GetParentScopeVersionId" />
+       <string id="string70" value="CSearchCrawlScopeManager_HasChildScopeRule" />
+       <string id="string71" value="CSearchCrawlScopeManager_HasParentScopeRule" />
+       <string id="string72" value="CSearchCrawlScopeManager_IncludedInCrawlScope" />
+       <string id="string73" value="CSearchCrawlScopeManager_IncludedInCrawlScopeEx" />
+       <string id="string74" value="CSearchCrawlScopeManager_RemoveDefaultScopeRule" />
+       <string id="string75" value="CSearchCrawlScopeManager_RemoveRoot" />
+       <string id="string76" value="CSearchCrawlScopeManager_RemoveScopeRule" />
+       <string id="string77" value="CSearchCrawlScopeManager_RevertToDefaultScopes" />
+       <string id="string78" value="CSearchCrawlScopeManager_SaveAll" />
+       <string id="string79" value="CSearchRoot_get_AuthenticationType" />
+       <string id="string80" value="CSearchRoot_get_EnumerationDepth" />
+       <string id="string81" value="CSearchRoot_get_FollowDirectories" />
+       <string id="string82" value="CSearchRoot_get_HostDepth" />
+       <string id="string83" value="CSearchRoot_get_IsHierarchical" />
+       <string id="string84" value="CSearchRoot_get_ProvidesNotifications" />
+       <string id="string85" value="CSearchRoot_get_RootURL" />
+       <string id="string86" value="CSearchRoot_get_Schedule" />
+       <string id="string87" value="CSearchRoot_get_UseNotificationsOnly" />
+       <string id="string88" value="CSearchRoot_put_AuthenticationType" />
+       <string id="string89" value="CSearchRoot_put_EnumerationDepth" />
+       <string id="string90" value="CSearchRoot_put_FollowDirectories" />
+       <string id="string91" value="CSearchRoot_put_HostDepth" />
+       <string id="string92" value="CSearchRoot_put_IsHierarchical" />
+       <string id="string93" value="CSearchRoot_put_ProvidesNotifications" />
+       <string id="string94" value="CSearchRoot_put_RootURL" />
+       <string id="string95" value="CSearchRoot_put_Schedule" />
+       <string id="string96" value="CSearchRoot_put_UseNotificationsOnly" />
+       <string id="string97" value="CSearchRoot_put_User" />
+       <string id="string98" value="CSearchScopeRule_get_IsDefault" />
+       <string id="string99" value="CSearchScopeRule_get_IsIncluded" />
+       <string id="string100" value="CSearchScopeRule_get_PatternOrURL" />
+       <string id="string101" value="CSM" />
+       <string id="string102" value="DeleteCatalog" />
+       <string id="string103" value="DocAborted_CBOverflow" />
+       <string id="string104" value="DocAborted_ForcePublish" />
+       <string id="string105" value="ETWLogging" />
+       <string id="string106" value="ETWLoggingFailure" />
+       <string id="string107" value="ETWLoggingItem" />
+       <string id="string108" value="ETWLoggingItemFailure" />
+       <string id="string109" value="FileChangeTracker_APICall" />
+       <string id="string110" value="FileChangeTracker_ProcessUSN" />
+       <string id="string111" value="FilterHost" />
+       <string id="string112" value="FilterHostHung" />
+       <string id="string113" value="FilterHostStarted" />
+       <string id="string114" value="FilterHostStarting" />
+       <string id="string115" value="FilterHostStopped" />
+       <string id="string116" value="FilterHostStopping" />
+       <string id="string117" value="FilterOplockBreak" />
+       <string id="string118" value="FilterOplockFail" />
+       <string id="string119" value="Flush_Schedule" />
+       <string id="string120" value="FreeCursor" />
+       <string id="string121" value="Gather_Transaction_Failure_Code" />
+       <string id="string122" value="Gatherer" />
+       <string id="string123" value="Gatherer_AdviseStatus" />
+       <string id="string124" value="Gatherer_DocIdTable_DeleteId" />
+       <string id="string125" value="Gatherer_DocIdTable_GetMaxId" />
+       <string id="string126" value="Gatherer_DocIdTable_GetNewId" />
+       <string id="string127" value="Gatherer_DocIdTable_SetMaxId" />
+       <string id="string128" value="Gatherer_DocIdTable_UndeleteId" />
+       <string id="string129" value="Gatherer_OnDataChange" />
+       <string id="string130" value="Gatherer_OnDataChange_Failed" />
+       <string id="string131" value="Gatherer_OnDataChange_Lost" />
+       <string id="string132" value="Gatherer_OnDataChange_Track_Url" />
+       <string id="string133" value="Gatherer_Queues_QueueLength" />
+       <string id="string134" value="Gatherer_RequestStatusChange" />
+       <string id="string135" value="GathererRecover" />
+       <string id="string136" value="GatherLog_Crawl" />
+       <string id="string137" value="GatherLog_Transaction" />
+       <string id="string138" value="GatherProject_AdviseRequestStatus" />
+       <string id="string139" value="GatherProject_AdviseStatusChange" />
+       <string id="string140" value="GatherProject_PrepareStatusChange" />
+       <string id="string141" value="GetQueryStatusEx" />
+       <string id="string142" value="GetWordBreaker" />
+       <string id="string143" value="GroupPolicy" />
+       <string id="string144" value="HighPriorityItemBoost" />
+       <string id="string145" value="HighPriorityMergeBoost" />
+       <string id="string146" value="HighPriorityThreadBoost" />
+       <string id="string147" value="IncCrawl" />
+       <string id="string148" value="Index_Commit" />
+       <string id="string149" value="Index_File" />
+       <string id="string150" value="Index_Merge" />
+       <string id="string151" value="Indexing" />
+       <string id="string152" value="IndexingChunk" />
+       <string id="string153" value="IndexingItem" />
+       <string id="string154" value="IndexItemDataComplete" />
+       <string id="string155" value="IndexItemEnd" />
+       <string id="string156" value="IndexItemInit" />
+       <string id="string157" value="IndexItemPushToFile" />
+       <string id="string158" value="IndexItemSetStatus" />
+       <string id="string159" value="IndexPI" />
+       <string id="string160" value="JET_IO_Low_Priority_Change" />
+       <string id="string161" value="MapiEmailItem" />
+       <string id="string162" value="MapiEnumerateAttachments" />
+       <string id="string163" value="MapiGetAttachmentFromMessage" />
+       <string id="string164" value="MapiGetMapiFpsPropVals" />
+       <string id="string165" value="MapiOpenMessage" />
+       <string id="string166" value="Merge" />
+       <string id="string167" value="MergeItem" />
+       <string id="string168" value="MergeThread" />
+       <string id="string169" value="Microsoft-Windows-Search-Core" />
+       <string id="string170" value="Microsoft-Windows-Search-Core/Diagnostic" />
+       <string id="string171" value="OnDataChange" />
+       <string id="string172" value="OnDataChange_Failed" />
+       <string id="string173" value="Performance" />
+       <string id="string174" value="Prioritization_Complete" />
+       <string id="string175" value="Prioritization_Request" />
+       <string id="string176" value="Prioritization_Statistics" />
+       <string id="string177" value="PropStorePI" />
+       <string id="string178" value="ProtocolHost" />
+       <string id="string179" value="ProtocolHostKilled" />
+       <string id="string180" value="ProtocolHostKilledInDestructor" />
+       <string id="string181" value="ProtocolHostNameConflict_FailedToKill" />
+       <string id="string182" value="ProtocolHostNameConflict_Killed" />
+       <string id="string183" value="ProtocolHostNameConflict_Killing" />
+       <string id="string184" value="ProtocolHostObjConstructor" />
+       <string id="string185" value="ProtocolHostObjDestructor" />
+       <string id="string186" value="ProtocolHostObjInit" />
+       <string id="string187" value="ProtocolHostStarted" />
+       <string id="string188" value="ProtocolHostStopped" />
+       <string id="string189" value="ProtocolHostStoppedAlready" />
+       <string id="string190" value="ProtocolHostStoppedInDestructor" />
+       <string id="string191" value="ProtocolHostTerminating" />
+       <string id="string192" value="ProtocolHostTerminatingInDestructor" />
+       <string id="string193" value="PTypePI" />
+       <string id="string194" value="Querying" />
+       <string id="string195" value="ReleaseStemmer" />
+       <string id="string196" value="ReleaseWordBreaker" />
+       <string id="string197" value="ReservedKeyword1" />
+       <string id="string198" value="ReservedKeyword2" />
+       <string id="string199" value="ReservedKeyword5" />
+       <string id="string200" value="ReservedKeyword6" />
+       <string id="string201" value="ReservedKeyword7" />
+       <string id="string202" value="ReservedKeyword8" />
+       <string id="string203" value="ReservedKeyword9" />
+       <string id="string204" value="RetrieveValue" />
+       <string id="string205" value="ReuseRestriction" />
+       <string id="string206" value="RobotThread_BeforeGetNewTransaction" />
+       <string id="string207" value="RobotThread_CatalogResetRequested" />
+       <string id="string208" value="RobotThread_FilterDriver_Init_Failed" />
+       <string id="string209" value="RobotThread_GetStandardProperties_Failed" />
+       <string id="string210" value="RobotThread_GetWordBreaker" />
+       <string id="string211" value="RobotThread_IsHistoryIterator" />
+       <string id="string212" value="RobotThread_IsHistoryIteratorUpdateFailures" />
+       <string id="string213" value="RobotThread_IsIteratorByStartAddress" />
+       <string id="string214" value="RobotThread_IsWildcardTransaction" />
+       <string id="string215" value="RobotThread_LangAutoDetection_Fail" />
+       <string id="string216" value="RobotThread_LangAutoDetection_Scores" />
+       <string id="string217" value="RobotThread_LangAutoDetection_Start" />
+       <string id="string218" value="RobotThread_LangAutoDetection_Stop" />
+       <string id="string219" value="RobotThread_LangAutoDetection_Succeed" />
+       <string id="string220" value="RobotThread_ProcessAnnotation_Failed" />
+       <string id="string221" value="RobotThread_ProcessNewTransaction" />
+       <string id="string222" value="RobotThread_TransactionNotModified" />
+       <string id="string223" value="ScopeChangeNotification_OnChanged" />
+       <string id="string224" value="ScopeChangeNotification_Register" />
+       <string id="string225" value="ScopeChangeNotification_Unregister" />
+       <string id="string226" value="ScopeManager_Init" />
+       <string id="string227" value="ScopeManager_Retrieved" />
+       <string id="string228" value="ScopeManager_SwitchToFull" />
+       <string id="string229" value="ScopeManager_Write" />
+       <string id="string230" value="SearchFilterHost" />
+       <string id="string231" value="SearchIndexer" />
+       <string id="string232" value="SearchProtocolHost" />
+       <string id="string233" value="ServerGetRows" />
+       <string id="string234" value="ServerQuery" />
+       <string id="string235" value="ServerQuery_Create" />
+       <string id="string236" value="ServerQuery_DeferredProperty" />
+       <string id="string237" value="ServerQuery_ForcePublish" />
+       <string id="string238" value="ServerQuery_Received" />
+       <string id="string239" value="ServerQuery_Send" />
+       <string id="string240" value="ServerQueryRelease" />
+       <string id="string241" value="Service" />
+       <string id="string242" value="Service_Status_Notify" />
+       <string id="string243" value="ServiceStatusUpdate" />
+       <string id="string244" value="Setup_CatalogSetupFailed" />
+       <string id="string245" value="Setup_CatalogSetupSucceeded" />
+       <string id="string246" value="Setup_CleanupFailed" />
+       <string id="string247" value="Setup_CleanupRemoveDir" />
+       <string id="string248" value="Setup_CleanupStarted" />
+       <string id="string249" value="Setup_CleanupSucceeded" />
+       <string id="string250" value="Setup_DeletePreviousUsersSettingsKey" />
+       <string id="string251" value="Setup_Phase" />
+       <string id="string252" value="Setup_SetCompletedSuccessfully" />
+       <string id="string253" value="Shutdown_Search_Service_Duration" />
+       <string id="string254" value="Startup_CDcomService_Init" />
+       <string id="string255" value="Startup_CDcomService_IsIdleServiceMode" />
+       <string id="string256" value="Startup_CDcomService_ServiceMain" />
+       <string id="string257" value="Startup_CDcomService_ServiceStart" />
+       <string id="string258" value="Startup_CGatheringService_Init" />
+       <string id="string259" value="Startup_CGatherModule_Init" />
+       <string id="string260" value="Startup_CheckAndCleanup" />
+       <string id="string261" value="Startup_CSearchService_Init" />
+       <string id="string262" value="Startup_CSearchService_Init2" />
+       <string id="string263" value="Startup_CSearchServiceObj_Initialize" />
+       <string id="string264" value="Startup_GuiSetupInProgress" />
+       <string id="string265" value="Startup_InitialIndexSetup" />
+       <string id="string266" value="Startup_MoveDataFiles" />
+       <string id="string267" value="Startup_MoveDataFiles_CopyDir" />
+       <string id="string268" value="Startup_MoveDataFiles_RemoveDir" />
+       <string id="string269" value="Startup_RecoverDataFiles" />
+       <string id="string270" value="Startup_RecoverDataFiles_RemoveDir" />
+       <string id="string271" value="Startup_RecoverIfNecessary" />
+       <string id="string272" value="Startup_ReplaceDirectoryPrefixInValue" />
+       <string id="string273" value="Startup_Search_Service_Duration" />
+       <string id="string274" value="Startup_SetupWorkingDirectory" />
+       <string id="string275" value="Startup_SetupWorkingDirectory_RemovePath" />
+       <string id="string276" value="Startup_SysPrepInProgress" />
+       <string id="string277" value="StatusChange_AppendCrawlToGathererQueue" />
+       <string id="string278" value="StatusChange_AppendToGathererQueue" />
+       <string id="string279" value="StatusChange_PostToStatusThread" />
+       <string id="string280" value="StatusChange_ProcessInStatusThread" />
+       <string id="string281" value="StatusChange_QueueLocked" />
+       <string id="string282" value="StatusChange_QueueUnlocked" />
+       <string id="string283" value="StatusChange_RemoveFromGathererQueue" />
+       <string id="string284" value="StatusThread" />
+       <string id="string285" value="Transactions_IterateHistory" />
+       <string id="string286" value="Transactions_IterateHistory_Delete" />
+       <string id="string287" value="Transactions_IterateHistory_Modify" />
+       <string id="string288" value="Transactions_UpdateFailures" />
+       <string id="string289" value="USN" />
+       <string id="string290" value="USN_Notify" />
+       <string id="string291" value="USN_Notify_Filtered" />
+       <string id="string292" value="USN_Notify_Journal_Wrap" />
+       <string id="string293" value="ValueIndexCreation" />
+       <string id="string294" value="ValueIndexSeek" />
+       <string id="string295" value="WID_SDID_Cache_Initialize" />
+       <string id="string296" value="WID_SDID_Cache_NumberItems" />
+       <string id="string297" value="WID_SDID_Cache_SwitchToFull" />
+       <string id="string298" value="WID_SDID_Cache_Write" />
+       <string id="string299" value="win:Info" />
+       <string id="string300" value="win:Start" />
+       <string id="string301" value="win:Stop" />
+       <string id="string302" value="WordBreakerHistory_Load" />
+       <string id="string303" value="WordBreakerHistory_Save" />
+       <string id="string304" value="Wordbreakers" />
+       <string id="string305" value="WordBreakerSelector_Fallback" />
+       <string id="string306" value="WordBreakerSelector_IncrementHistory" />
+       <string id="string307" value="WordBreakerSelector_SubstituteLocale" />
+       <string id="string308" value="Wordlist_BeginResource_InvalidatedPreviousDoc" />
+       <string id="string309" value="Wordlist_BeginResourceFailed_CBOverflow" />
+       <string id="string310" value="Wordlist_BeginResourceFailed_DocInError" />
+       <string id="string311" value="Wordlist_Publish" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

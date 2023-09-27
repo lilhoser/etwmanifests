@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Memory" name="Microsoft-Windows-Kernel-Memory" guid="{d1d93ef7-e1f2-4f45-9943-03d245fe6c00}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoWS" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_EX" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoSessionWS" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_EX"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetOutSwap" opcode="win:Start" keywords="KERNEL_MEM_KEYWORD_WS_SWAP" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetOutSwap" opcode="win:Stop" keywords="KERNEL_MEM_KEYWORD_WS_SWAP" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetInSwap" opcode="win:Start" keywords="KERNEL_MEM_KEYWORD_WS_SWAP"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetInSwap" opcode="win:Stop" keywords="KERNEL_MEM_KEYWORD_WS_SWAP"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="Acg" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_ACG" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetInSwap" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_WS_SWAP"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MdlAllocation" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="ContAllocation" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoNode" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_NODE" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoHugeIoSpace" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_NODE"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="ContFree" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC" template="Args14_0"/>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfo" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoWS" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_EX"/>
+        <event value="3" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoSessionWS" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_EX"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetOutSwap" opcode="win:Start" keywords="KERNEL_MEM_KEYWORD_WS_SWAP" template="Args4_1"/>
+        <event value="5" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetOutSwap" opcode="win:Stop" keywords="KERNEL_MEM_KEYWORD_WS_SWAP" template="Args5_1"/>
+        <event value="6" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="WorkingSetInSwap" opcode="win:Start" keywords="KERNEL_MEM_KEYWORD_WS_SWAP"/>
+        <event value="11" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="ContAllocation" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC" template="Args11_1"/>
+        <event value="2" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoWS" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_EX"/>
+        <event value="3" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Memory/Analytic" task="MemInfoSessionWS" opcode="win:Info" keywords="KERNEL_MEM_KEYWORD_MEMINFO_EX"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-Memory/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="KERNEL_MEM_KEYWORD_MEMINFO" mask="0x20" message="$(string.string4)" />
+        <keyword name="KERNEL_MEM_KEYWORD_MEMINFO_EX" mask="0x40" message="$(string.string5)" />
+        <keyword name="KERNEL_MEM_KEYWORD_WS_SWAP" mask="0x80" message="$(string.string8)" />
+        <keyword name="KERNEL_MEM_KEYWORD_ACG" mask="0x100" message="$(string.string3)" />
+        <keyword name="KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC" mask="0x200" message="$(string.string7)" />
+        <keyword name="KERNEL_MEM_KEYWORD_MEMINFO_NODE" mask="0x400" message="$(string.string6)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="MemInfo" message="$(string.string1)">
+        </task>
+        <task value="2" name="MemInfoWS" message="$(string.string2)">
+        </task>
+        <task value="3" name="MemInfoSessionWS" message="$(string.string3)">
+        </task>
+        <task value="4" name="WorkingSetOutSwap" message="$(string.string4)">
+        </task>
+        <task value="5" name="WorkingSetInSwap" message="$(string.string5)">
+        </task>
+        <task value="6" name="Acg" message="$(string.string6)">
+        </task>
+        <task value="7" name="MdlAllocation" message="$(string.string7)">
+        </task>
+        <task value="8" name="ContAllocation" message="$(string.string8)">
+        </task>
+        <task value="9" name="MemInfoNode" message="$(string.string9)">
+        </task>
+        <task value="10" name="MemInfoHugeIoSpace" message="$(string.string10)">
+        </task>
+        <task value="11" name="ContFree" message="$(string.string11)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PagesProcessed" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="AcgFlag" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="DurationInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SkipBytes" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MemoryDescriptorList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IdealNode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="DurationInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Boundary" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PhysicalAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MappedAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AllocatedFromPool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ProtectionMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PreferredNode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="PartitionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Size" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1_1">
+          <data name="PriorityLevels" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ZeroPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FreePageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ModifiedPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ModifiedNoWritePageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BadPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ModifiedPageCountPageFile" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PagedPoolPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NonPagedPoolPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MdlPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CommitPageCount" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args5_1">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PagesProcessed" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WriteCombinePagesProcessed" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UncachedPagesProcessed" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CleanPagesProcessed" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11_1">
+          <data name="DurationInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Boundary" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PhysicalAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MappedAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProtectionMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PreferredNode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PartitionId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Tag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AllocatedFromPool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AllocatedFromExtension" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Acg" />
+       <string id="string1" value="ContAllocation" />
+       <string id="string2" value="ContFree" />
+       <string id="string3" value="KERNEL_MEM_KEYWORD_ACG" />
+       <string id="string4" value="KERNEL_MEM_KEYWORD_MEMINFO" />
+       <string id="string5" value="KERNEL_MEM_KEYWORD_MEMINFO_EX" />
+       <string id="string6" value="KERNEL_MEM_KEYWORD_MEMINFO_NODE" />
+       <string id="string7" value="KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC" />
+       <string id="string8" value="KERNEL_MEM_KEYWORD_WS_SWAP" />
+       <string id="string9" value="MdlAllocation" />
+       <string id="string10" value="MemInfo" />
+       <string id="string11" value="MemInfoHugeIoSpace" />
+       <string id="string12" value="MemInfoNode" />
+       <string id="string13" value="MemInfoSessionWS" />
+       <string id="string14" value="MemInfoWS" />
+       <string id="string15" value="Microsoft-Windows-Kernel-Memory" />
+       <string id="string16" value="Microsoft-Windows-Kernel-Memory/Analytic" />
+       <string id="string17" value="win:Info" />
+       <string id="string18" value="win:Start" />
+       <string id="string19" value="win:Stop" />
+       <string id="string20" value="WorkingSetInSwap" />
+       <string id="string21" value="WorkingSetOutSwap" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

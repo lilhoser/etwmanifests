@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-RTWorkQueue-Extended" name="Microsoft-Windows-RTWorkQueue-Extended" guid="{83faaa86-63c8-4dd8-a2da-fbadddfc0655}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="RTWorkQueueExtended" task="WorkQueue_Queue_Extended" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_LongRunning" opcode="win:Info" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_InvalidUsageAttempt" opcode="win:Info" template="Args3_0"/>
+        <event value="4" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_InvalidCallbackAttempt" opcode="win:Info" template="Args4_0"/>
+        <event value="5" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_PlatformRef" opcode="win:Start" template="Args5_0"/>
+        <event value="6" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_PlatformRef" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_PlatformRef" opcode="win:Info" template="Args7_0"/>
+        <event value="8" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_RTLock" opcode="win:Start"/>
+        <event value="9" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_RTLock" opcode="win:Stop"/>
+        <event value="10" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_SetAVMode" opcode="win:Start" template="Args10_0"/>
+        <event value="11" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_SetAVMode" opcode="win:Stop"/>
+        <event value="12" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_RTLockAcquire" opcode="win:Start"/>
+        <event value="13" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_RTLockAcquire" opcode="win:Stop"/>
+        <event value="14" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_TimerCallback" opcode="win:Start" template="Args14_0"/>
+        <event value="15" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_TimerCallback" opcode="win:Stop"/>
+        <event value="16" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_TimerMode" opcode="win:Info" template="Args16_0"/>
+        <event value="17" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_TimerSet" opcode="win:Info" template="Args17_0"/>
+        <event value="18" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_TimerResChange" opcode="win:Start" template="Args18_0"/>
+        <event value="19" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_TimerResChange" opcode="win:Stop"/>
+        <event value="20" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_Lock" opcode="win:Start"/>
+        <event value="21" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_Lock" opcode="win:Stop"/>
+        <event value="22" version="0" level="win:Verbose"  channel="RTWorkQueueExtended" task="WorkQueue_Extended_Lock" opcode="win:Info" template="Args22_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="RTWorkQueueExtended" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="100" name="WorkQueue_Queue_Extended" message="$(string.string100)">
+        </task>
+        <task value="101" name="WorkQueue_Extended_LongRunning" message="$(string.string101)">
+        </task>
+        <task value="102" name="WorkQueue_Extended_InvalidUsageAttempt" message="$(string.string102)">
+        </task>
+        <task value="103" name="WorkQueue_Extended_InvalidCallbackAttempt" message="$(string.string103)">
+        </task>
+        <task value="104" name="WorkQueue_Extended_PlatformRef" message="$(string.string104)">
+        </task>
+        <task value="105" name="WorkQueue_Extended_RTLock" message="$(string.string105)">
+        </task>
+        <task value="106" name="WorkQueue_Extended_SetAVMode" message="$(string.string106)">
+        </task>
+        <task value="107" name="WorkQueue_Extended_RTLockAcquire" message="$(string.string107)">
+        </task>
+        <task value="108" name="WorkQueue_Extended_TimerCallback" message="$(string.string108)">
+        </task>
+        <task value="109" name="WorkQueue_Extended_TimerMode" message="$(string.string109)">
+        </task>
+        <task value="110" name="WorkQueue_Extended_TimerSet" message="$(string.string110)">
+        </task>
+        <task value="111" name="WorkQueue_Extended_TimerResChange" message="$(string.string111)">
+        </task>
+        <task value="112" name="WorkQueue_Extended_Lock" message="$(string.string112)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AsyncResultVTable" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Platform" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WorkPrivateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Platform" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Callback" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Count" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Delta" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Resolution" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ExtRefCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IntRefCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-RTWorkQueue-Extended" />
+       <string id="string1" value="RTWorkQueueExtended" />
+       <string id="string2" value="win:Info" />
+       <string id="string3" value="win:Start" />
+       <string id="string4" value="win:Stop" />
+       <string id="string5" value="WorkQueue_Extended_InvalidCallbackAttempt" />
+       <string id="string6" value="WorkQueue_Extended_InvalidUsageAttempt" />
+       <string id="string7" value="WorkQueue_Extended_Lock" />
+       <string id="string8" value="WorkQueue_Extended_LongRunning" />
+       <string id="string9" value="WorkQueue_Extended_PlatformRef" />
+       <string id="string10" value="WorkQueue_Extended_RTLock" />
+       <string id="string11" value="WorkQueue_Extended_RTLockAcquire" />
+       <string id="string12" value="WorkQueue_Extended_SetAVMode" />
+       <string id="string13" value="WorkQueue_Extended_TimerCallback" />
+       <string id="string14" value="WorkQueue_Extended_TimerMode" />
+       <string id="string15" value="WorkQueue_Extended_TimerResChange" />
+       <string id="string16" value="WorkQueue_Extended_TimerSet" />
+       <string id="string17" value="WorkQueue_Queue_Extended" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

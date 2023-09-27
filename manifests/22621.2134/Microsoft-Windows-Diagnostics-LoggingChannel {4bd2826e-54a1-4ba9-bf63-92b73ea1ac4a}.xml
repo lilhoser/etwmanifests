@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Diagnostics-LoggingChannel" name="Microsoft-Windows-Diagnostics-LoggingChannel" guid="{4bd2826e-54a1-4ba9-bf63-92b73ea1ac4a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Critical"  keywords="K_LogMsg" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  keywords="K_LogMsg"/>
+        <event value="3" version="0" level="win:Warning"  keywords="K_LogMsg"/>
+        <event value="4" version="0" level="win:Informational"  keywords="K_LogMsg"/>
+        <event value="5" version="0" level="win:Verbose"  keywords="K_LogMsg"/>
+        <event value="6" version="0" level="win:Critical"  keywords="K_LogPair" template="Args6_0"/>
+        <event value="7" version="0" level="win:Error"  keywords="K_LogPair"/>
+        <event value="8" version="0" level="win:Warning"  keywords="K_LogPair"/>
+        <event value="9" version="0" level="win:Informational"  keywords="K_LogPair"/>
+        <event value="10" version="0" level="win:Verbose"  keywords="K_LogPair"/>
+        <event value="11" version="0" level="win:Critical"  opcode="win:Start" keywords="K_ActivityLogging" template="Args11_0"/>
+        <event value="12" version="0" level="win:Error"  opcode="win:Start" keywords="K_ActivityLogging"/>
+        <event value="13" version="0" level="win:Warning"  opcode="win:Start" keywords="K_ActivityLogging"/>
+        <event value="14" version="0" level="win:Informational"  opcode="win:Start" keywords="K_ActivityLogging"/>
+        <event value="15" version="0" level="win:Verbose"  opcode="win:Start" keywords="K_ActivityLogging"/>
+        <event value="16" version="0" level="win:Critical"  opcode="win:Stop" keywords="K_ActivityLogging"/>
+        <event value="17" version="0" level="win:Error"  opcode="win:Stop" keywords="K_ActivityLogging"/>
+        <event value="18" version="0" level="win:Warning"  opcode="win:Stop" keywords="K_ActivityLogging"/>
+        <event value="19" version="0" level="win:Informational"  opcode="win:Stop" keywords="K_ActivityLogging"/>
+        <event value="20" version="0" level="win:Verbose"  opcode="win:Stop" keywords="K_ActivityLogging"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="K_LogMsg" mask="0x1" message="$(string.string1)" />
+        <keyword name="K_LogPair" mask="0x2" message="$(string.string2)" />
+        <keyword name="K_ActivityLogging" mask="0x4" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StringMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StringValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IntegerValue" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="K_ActivityLogging" />
+       <string id="string1" value="K_LogMsg" />
+       <string id="string2" value="K_LogPair" />
+       <string id="string3" value="Microsoft-Windows-Diagnostics-LoggingChannel" />
+       <string id="string4" value="win:Start" />
+       <string id="string5" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

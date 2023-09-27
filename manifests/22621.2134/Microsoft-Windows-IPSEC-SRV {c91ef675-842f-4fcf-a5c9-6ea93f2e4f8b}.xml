@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IPSEC-SRV" name="Microsoft-Windows-IPSEC-SRV" guid="{c91ef675-842f-4fcf-a5c9-6ea93f2e4f8b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="StartService" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="StartService" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="StopService" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="StopService" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="ApplyDomainPolicy" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="ApplyDomainPolicy" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_EngineOpen" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_EngineOpen" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_EngineClose" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_EngineClose" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_TransactionBegin" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_TransactionBegin" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_TransactionCommit" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_TransactionCommit" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_TransactionAbort" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_TransactionAbort" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_ProviderContextAdd" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_ProviderContextAdd" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_ProviderContextDeleteByKey" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_ProviderContextDeleteByKey" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_FilterAdd" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_FilterAdd" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_FilterDeleteByKey" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_FilterDeleteByKey" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_IPsecTunnelAdd" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="126" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="IPSEC_BFE_IPsecTunnelAdd" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="127" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="ApplyLocalPolicy" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="128" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="ApplyLocalPolicy" opcode="win:Stop" keywords="PolicyAgent"/>
+        <event value="129" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="ApplyCachePolicy" opcode="win:Start" keywords="PolicyAgent"/>
+        <event value="130" version="0" level="win:Informational"  channel="Microsoft-Windows-IPSEC-SRV/Diagnostic" task="ApplyCachePolicy" opcode="win:Stop" keywords="PolicyAgent"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-IPSEC-SRV/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="PolicyAgent" mask="0x10000" message="$(string.string15)" />
+      </keywords>
+      <tasks>
+        <task value="101" name="StartService" message="$(string.string101)">
+        </task>
+        <task value="103" name="StopService" message="$(string.string103)">
+        </task>
+        <task value="105" name="ApplyDomainPolicy" message="$(string.string105)">
+        </task>
+        <task value="107" name="IPSEC_BFE_EngineOpen" message="$(string.string107)">
+        </task>
+        <task value="109" name="IPSEC_BFE_EngineClose" message="$(string.string109)">
+        </task>
+        <task value="111" name="IPSEC_BFE_TransactionBegin" message="$(string.string111)">
+        </task>
+        <task value="113" name="IPSEC_BFE_TransactionCommit" message="$(string.string113)">
+        </task>
+        <task value="115" name="IPSEC_BFE_TransactionAbort" message="$(string.string115)">
+        </task>
+        <task value="117" name="IPSEC_BFE_ProviderContextAdd" message="$(string.string117)">
+        </task>
+        <task value="119" name="IPSEC_BFE_ProviderContextDeleteByKey" message="$(string.string119)">
+        </task>
+        <task value="121" name="IPSEC_BFE_FilterAdd" message="$(string.string121)">
+        </task>
+        <task value="123" name="IPSEC_BFE_FilterDeleteByKey" message="$(string.string123)">
+        </task>
+        <task value="125" name="IPSEC_BFE_IPsecTunnelAdd" message="$(string.string125)">
+        </task>
+        <task value="127" name="ApplyLocalPolicy" message="$(string.string127)">
+        </task>
+        <task value="129" name="ApplyCachePolicy" message="$(string.string129)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ApplyCachePolicy" />
+       <string id="string1" value="ApplyDomainPolicy" />
+       <string id="string2" value="ApplyLocalPolicy" />
+       <string id="string3" value="IPSEC_BFE_EngineClose" />
+       <string id="string4" value="IPSEC_BFE_EngineOpen" />
+       <string id="string5" value="IPSEC_BFE_FilterAdd" />
+       <string id="string6" value="IPSEC_BFE_FilterDeleteByKey" />
+       <string id="string7" value="IPSEC_BFE_IPsecTunnelAdd" />
+       <string id="string8" value="IPSEC_BFE_ProviderContextAdd" />
+       <string id="string9" value="IPSEC_BFE_ProviderContextDeleteByKey" />
+       <string id="string10" value="IPSEC_BFE_TransactionAbort" />
+       <string id="string11" value="IPSEC_BFE_TransactionBegin" />
+       <string id="string12" value="IPSEC_BFE_TransactionCommit" />
+       <string id="string13" value="Microsoft-Windows-IPSEC-SRV" />
+       <string id="string14" value="Microsoft-Windows-IPSEC-SRV/Diagnostic" />
+       <string id="string15" value="PolicyAgent" />
+       <string id="string16" value="StartService" />
+       <string id="string17" value="StopService" />
+       <string id="string18" value="win:Start" />
+       <string id="string19" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

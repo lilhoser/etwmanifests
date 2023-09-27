@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DomainJoinManagerTriggerProvider" name="Microsoft-Windows-DomainJoinManagerTriggerProvider" guid="{5b004607-1087-4f16-b10e-979685a8d131}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  opcode="Opcode_DomainJoinEvent" keywords="Keyword_DomainJoinEvent" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  opcode="Opcode_DomainUnjoinEvent" keywords="Keyword_DomainUnjoinEvent"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Keyword_DomainJoinEvent" mask="0x1" message="$(string.string0)" />
+        <keyword name="Keyword_DomainUnjoinEvent" mask="0x2" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="100" name="Opcode_DomainJoinEvent" message="$(string.string3)"/>
+        <opcode value="101" name="Opcode_DomainUnjoinEvent" message="$(string.string4)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="DomainMembershipChangeGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Keyword_DomainJoinEvent" />
+       <string id="string1" value="Keyword_DomainUnjoinEvent" />
+       <string id="string2" value="Microsoft-Windows-DomainJoinManagerTriggerProvider" />
+       <string id="string3" value="Opcode_DomainJoinEvent" />
+       <string id="string4" value="Opcode_DomainUnjoinEvent" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

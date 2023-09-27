@@ -1,0 +1,2306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-StorPort" name="Microsoft-Windows-StorPort" guid="{c4636a1e-7986-4646-bf10-7bc3b4a76e8e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="1" level="win:Error"  channel="Microsoft-Windows-StorPort/Operational" task="TaskLUReset" opcode="OpCodeLUReset" keywords="Reset" template="Args1_1"/>
+        <event value="2" version="1" level="win:Error"  channel="Microsoft-Windows-StorPort/Operational" task="TaskTargetReset" opcode="OpCodeTargetReset" keywords="Reset"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskResetDetected" opcode="OpCodeResetDetected" keywords="PortNotification" template="Args4_1"/>
+        <event value="5" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskLinkDown" opcode="OpCodeLinkDown" keywords="PortNotification" template="Args5_1"/>
+        <event value="6" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskLinkUp" opcode="OpCodeLinkUp" keywords="PortNotification"/>
+        <event value="7" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskRequestTimerCall" opcode="OpCodeRequestTimerCall" keywords="PortNotification" template="Args7_1"/>
+        <event value="8" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskPortPause" opcode="OpCodePortPause" keywords="PauseResume"/>
+        <event value="9" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskPortResume" opcode="OpCodePortResume" keywords="PauseResume"/>
+        <event value="10" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskPortPauseDevice" opcode="OpCodePortPauseDevice" keywords="PauseResume" template="Args10_1"/>
+        <event value="11" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskPortResumeDevice" opcode="OpCodePortResumeDevice" keywords="PauseResume"/>
+        <event value="12" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskBusChangeDetected" opcode="OpCodeBusChangeDetected" keywords="PortNotification"/>
+        <event value="13" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskMiniportIORequestServiceTime" opcode="OpCodeMiniportIORequestServiceTime" keywords="IoPerfNotification" template="Args13_1"/>
+        <event value="14" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args14_1"/>
+        <event value="15" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args15_1"/>
+        <event value="16" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args16_1"/>
+        <event value="17" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args17_1"/>
+        <event value="18" version="1" level="win:Warning"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args18_1"/>
+        <event value="19" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args19_1"/>
+        <event value="20" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config"/>
+        <event value="21" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args21_1"/>
+        <event value="22" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config" template="Args22_1"/>
+        <event value="23" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Config"/>
+        <event value="24" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" opcode="win:Info" keywords="Perf" template="Args24_1"/>
+        <event value="25" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskStateChangeDetected" opcode="OpCodeStateChangeDetected" keywords="PortNotification" template="Args25_1"/>
+        <event value="26" version="1" level="win:Informational"  channel="Microsoft-Windows-StorPort/Operational" task="TaskTargetedReenumeration" opcode="OpCodeTargetedReenumeration" keywords="Enum" template="Args26_1"/>
+        <event value="208" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="Read Write PagingRead PagingWrite LowMemoryRead LowMemoryWrite" template="Args208_1"/>
+        <event value="209" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Retry handling." keywords="Read Write PagingRead PagingWrite LowMemoryRead LowMemoryWrite" template="Args209_1"/>
+        <event value="210" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Flush" template="Args210_1"/>
+        <event value="211" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="Flush"/>
+        <event value="212" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="IOCTL" template="Args212_1"/>
+        <event value="213" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="WMI"/>
+        <event value="214" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="IOCTL WMI" template="Args214_1"/>
+        <event value="217" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="PnP" template="Args217_1"/>
+        <event value="218" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="PnP"/>
+        <event value="219" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="PnP Enum" template="Args219_1"/>
+        <event value="220" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Event Queue related operation." keywords="Queue" template="Args220_1"/>
+        <event value="221" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="PassThrough IOCTL"/>
+        <event value="222" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Analytic" task="Port" opcode="win:Info" keywords="Logo_Performance" template="Args222_1"/>
+        <event value="223" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Analytic" task="Port" opcode="win:Info" keywords="Logo_Performance"/>
+        <event value="224" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Analytic" task="Dpc" opcode="Completion of request." keywords="DPC" template="Args224_1"/>
+        <event value="225" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power" template="Args225_1"/>
+        <event value="226" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="227" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power" template="Args227_1"/>
+        <event value="228" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="230" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power" template="Args230_1"/>
+        <event value="231" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="232" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="233" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="234" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="235" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="236" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="237" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="238" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="239" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="241" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="242" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="243" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="244" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="245" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="246" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="247" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Event Queue related operation." keywords="Queue" template="Args247_1"/>
+        <event value="248" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Analytic" task="Isr" opcode="Completion of request." keywords="ISR" template="Args248_1"/>
+        <event value="259" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="260" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="Power" template="Args260_1"/>
+        <event value="261" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Power" template="Args261_1"/>
+        <event value="262" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Power" template="Args262_1"/>
+        <event value="263" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Power" template="Args263_1"/>
+        <event value="264" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Power" template="Args264_1"/>
+        <event value="265" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Power" template="Args265_1"/>
+        <event value="267" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="268" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power" template="Args268_1"/>
+        <event value="269" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="PassThrough IOCTL" template="Args269_1"/>
+        <event value="270" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="271" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="272" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="273" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="274" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="275" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="276" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Start" keywords="Power"/>
+        <event value="277" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Stop" keywords="Power"/>
+        <event value="278" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="win:Info" keywords="TCG" template="Args278_1"/>
+        <event value="279" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="win:Info" keywords="TCG" template="Args279_1"/>
+        <event value="300" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="NVMe Operation." keywords="NVMe"/>
+        <event value="301" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="NVMe Operation." keywords="NVMe" template="Args301_1"/>
+        <event value="400" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeGetMFNDCapability" keywords="MFND" template="Args400_1"/>
+        <event value="401" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryChildPFList" keywords="MFND" template="Args401_1"/>
+        <event value="402" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryOperationInfo" keywords="MFND"/>
+        <event value="403" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryChildPFProperty" keywords="MFND" template="Args403_1"/>
+        <event value="404" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryChildPFSettings" keywords="MFND" template="Args404_1"/>
+        <event value="405" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryChildPFCommandPermission" keywords="MFND" template="Args405_1"/>
+        <event value="406" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryMigrationQoS" keywords="MFND" template="Args406_1"/>
+        <event value="407" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryNSPageMap" keywords="MFND" template="Args407_1"/>
+        <event value="408" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDQueryCCQueuesState" keywords="MFND" template="Args408_1"/>
+        <event value="508" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Miniport" template="Args508_1"/>
+        <event value="509" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Timeout" template="Args509_1"/>
+        <event value="513" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport" template="Args513_1"/>
+        <event value="550" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Reset" template="Args550_1"/>
+        <event value="551" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="PortNotification" template="Args551_1"/>
+        <event value="552" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="PortNotification"/>
+        <event value="553" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="PortNotification" template="Args553_1"/>
+        <event value="555" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Start" keywords="Power" template="Args555_1"/>
+        <event value="556" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Stop" keywords="Power" template="Args556_1"/>
+        <event value="560" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="TaskCaptureLiveDump" opcode="win:Info" keywords="DeviceState" template="Args560_1"/>
+        <event value="562" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="PortNotification" template="Args562_1"/>
+        <event value="563" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Read Write" template="Args563_1"/>
+        <event value="564" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="DeviceState" template="Args564_1"/>
+        <event value="565" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="DeviceState" template="Args565_1"/>
+        <event value="566" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args566_1"/>
+        <event value="567" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="568" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="569" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="570" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="571" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="572" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="DeviceState" template="Args572_1"/>
+        <event value="573" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Config" template="Args573_1"/>
+        <event value="574" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Config"/>
+        <event value="575" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Power" template="Args575_1"/>
+        <event value="576" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeInitializeStorageD3" keywords="Power" template="Args576_1"/>
+        <event value="577" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMiniportThreadNotTerminated" keywords="PnP" template="Args577_1"/>
+        <event value="578" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Config"/>
+        <event value="579" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Config"/>
+        <event value="580" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Config" template="Args580_1"/>
+        <event value="581" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="TCG"/>
+        <event value="582" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="TCG" template="Args582_1"/>
+        <event value="583" version="1" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="TCG" template="Args583_1"/>
+        <event value="584" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDNameSpaceRead" keywords="MFND" template="Args584_1"/>
+        <event value="585" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDNameSpaceWrite" keywords="MFND" template="Args585_1"/>
+        <event value="586" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" opcode="OpCodeMFNDNameSpacePageMapControl" keywords="MFND" template="Args586_1"/>
+        <event value="800" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeRegisterMFNDInterface" keywords="MFND"/>
+        <event value="801" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeReconfigureMFND" keywords="MFND" template="Args801_1"/>
+        <event value="802" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDChildPFControl" keywords="MFND" template="Args802_1"/>
+        <event value="803" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetOperationInformation" keywords="MFND" template="Args803_1"/>
+        <event value="804" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetChildPFProperty" keywords="MFND" template="Args804_1"/>
+        <event value="805" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetChildPFSettings" keywords="MFND" template="Args805_1"/>
+        <event value="806" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetChildPFQoS" keywords="MFND"/>
+        <event value="807" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetChildPFCommandPermission" keywords="MFND"/>
+        <event value="808" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetMigrationQoS" keywords="MFND"/>
+        <event value="809" version="1" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDSetCCQueuesState" keywords="MFND"/>
+        <event value="810" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDNameSpaceRead" keywords="MFND"/>
+        <event value="811" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDNameSpaceWrite" keywords="MFND"/>
+        <event value="812" version="1" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="OpCodeMFNDNameSpacePageMapControl" keywords="MFND"/>
+        <event value="200" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Analytic" task="Port" opcode="win:Info" keywords="IO_Performance" template="Args200_2"/>
+        <event value="201" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Analytic" task="Port" opcode="win:Info" keywords="IO_Performance"/>
+        <event value="202" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Read" template="Args202_2"/>
+        <event value="203" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Write"/>
+        <event value="204" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Read PagingRead"/>
+        <event value="205" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Write PagingWrite"/>
+        <event value="206" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Read LowMemoryRead"/>
+        <event value="207" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Write LowMemoryWrite"/>
+        <event value="215" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Dispatching of request." keywords="Power"/>
+        <event value="216" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="Completion of request." keywords="Power" template="Args216_2"/>
+        <event value="229" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Power" template="Args229_2"/>
+        <event value="240" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Power" template="Args240_2"/>
+        <event value="502" version="2" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="DeviceState" template="Args502_2"/>
+        <event value="503" version="2" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="DeviceState"/>
+        <event value="507" version="2" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Miniport" template="Args507_2"/>
+        <event value="549" version="2" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Read Write" template="Args549_2"/>
+        <event value="554" version="2" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="PortNotification" template="Args554_2"/>
+        <event value="557" version="2" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="PortNotification" template="Args557_2"/>
+        <event value="559" version="2" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="DeviceState" template="Args559_2"/>
+        <event value="561" version="2" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="DeviceState" template="Args561_2"/>
+        <event value="250" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args250_3"/>
+        <event value="251" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args251_3"/>
+        <event value="252" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args252_3"/>
+        <event value="253" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args253_3"/>
+        <event value="254" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args254_3"/>
+        <event value="255" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args255_3"/>
+        <event value="256" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args256_3"/>
+        <event value="257" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args257_3"/>
+        <event value="258" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="Miniport" template="Args258_3"/>
+        <event value="501" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="TaskBusReset" opcode="OpCodeBusReset" keywords="Reset" template="Args501_3"/>
+        <event value="506" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="DeviceState" template="Args506_3"/>
+        <event value="514" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="SMR" template="Args514_3"/>
+        <event value="515" version="3" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Diagnose" task="Port" opcode="win:Info" keywords="SMR" template="Args515_3"/>
+        <event value="516" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="517" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="518" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="519" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="520" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="521" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="522" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="523" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="524" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="525" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="526" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="527" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="528" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="529" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="530" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="531" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="532" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="533" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="535" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="TaskMarkDevicePotentiallyFailed" opcode="Device potentially failed." keywords="PortNotification" template="Args535_3"/>
+        <event value="536" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="TaskMarkAndRemoveFailedDevice" opcode="Device failed and will be removed." keywords="PortNotification"/>
+        <event value="537" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="538" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="539" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="540" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="541" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="542" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="543" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="544" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="545" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="546" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="547" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="548" version="3" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="558" version="3" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="TaskEventMarkDeviceFailed" opcode="Device failed." keywords="PortNotification"/>
+        <event value="500" version="4" level="win:Warning"  channel="Microsoft-Windows-Storage-Storport/Operational" opcode="win:Info" keywords="Timeout" template="Args500_4"/>
+        <event value="504" version="4" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Read Write" template="Args504_4"/>
+        <event value="510" version="4" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="DeviceState" template="Args510_4"/>
+        <event value="534" version="4" level="win:Error"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Miniport"/>
+        <event value="511" version="5" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="DeviceState" template="Args511_5"/>
+        <event value="505" version="6" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Operational" task="Port" opcode="win:Info" keywords="Read Write" template="Args505_6"/>
+        <event value="512" version="6" level="win:Informational"  channel="Microsoft-Windows-Storage-Storport/Health" task="Port" opcode="win:Info" keywords="DeviceState" template="Args512_6"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-StorPort/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Storage-Storport/Diagnose" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Storage-Storport/Debug" type="Debug"/>
+        <channel value="19" name="Microsoft-Windows-Storage-Storport/Analytic" type="Analytic"/>
+        <channel value="20" name="Microsoft-Windows-Storage-Storport/Operational" type="Operational"/>
+        <channel value="21" name="Microsoft-Windows-Storage-Storport/Admin" type="Admin"/>
+        <channel value="22" name="Microsoft-Windows-Storage-Storport/Health" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Reset" mask="0x1" message="$(string.string96)" />
+        <keyword name="PortNotification" mask="0x2" message="$(string.string91)" />
+        <keyword name="PauseResume" mask="0x4" message="$(string.string87)" />
+        <keyword name="IoPerfNotification" mask="0x8" message="$(string.string22)" />
+        <keyword name="Config" mask="0x10" message="$(string.string7)" />
+        <keyword name="Perf" mask="0x20" message="$(string.string88)" />
+        <keyword name="DeviceState" mask="0x40" message="$(string.string11)" />
+        <keyword name="CommandTrace" mask="0x80" message="$(string.string2)" />
+        <keyword name="SMR" mask="0x100" message="$(string.string100)" />
+        <keyword name="AsyncEvent" mask="0x200" message="$(string.string1)" />
+        <keyword name="CommandTraceIO" mask="0x400" message="$(string.string3)" />
+        <keyword name="CommandTraceNonIO" mask="0x800" message="$(string.string4)" />
+        <keyword name="MFND" mask="0x1000" message="$(string.string28)" />
+        <keyword name="NVMe" mask="0x2000" message="$(string.string39)" />
+        <keyword name="Logo_Performance" mask="0x80000" message="$(string.string25)" />
+        <keyword name="IO_Performance" mask="0x100000" message="$(string.string20)" />
+        <keyword name="Read" mask="0x200000" message="$(string.string95)" />
+        <keyword name="Write" mask="0x400000" message="$(string.string131)" />
+        <keyword name="PagingRead" mask="0x800000" message="$(string.string84)" />
+        <keyword name="PagingWrite" mask="0x1000000" message="$(string.string85)" />
+        <keyword name="LowMemoryRead" mask="0x2000000" message="$(string.string26)" />
+        <keyword name="LowMemoryWrite" mask="0x4000000" message="$(string.string27)" />
+        <keyword name="NonReadWrite" mask="0x8000000" message="$(string.string38)" />
+        <keyword name="PassThrough" mask="0x10000000" message="$(string.string86)" />
+        <keyword name="Flush" mask="0x20000000" message="$(string.string19)" />
+        <keyword name="IOCTL" mask="0x40000000" message="$(string.string21)" />
+        <keyword name="WMI" mask="0x80000000" message="$(string.string130)" />
+        <keyword name="Power" mask="0x100000000" message="$(string.string92)" />
+        <keyword name="PnP" mask="0x200000000" message="$(string.string89)" />
+        <keyword name="Enum" mask="0x400000000" message="$(string.string16)" />
+        <keyword name="Queue" mask="0x800000000" message="$(string.string94)" />
+        <keyword name="ISR" mask="0x1000000000" message="$(string.string24)" />
+        <keyword name="DPC" mask="0x2000000000" message="$(string.string15)" />
+        <keyword name="Timer" mask="0x4000000000" message="$(string.string125)" />
+        <keyword name="Protocol" mask="0x8000000000" message="$(string.string93)" />
+        <keyword name="Target" mask="0x10000000000" message="$(string.string102)" />
+        <keyword name="Adapter" mask="0x20000000000" message="$(string.string0)" />
+        <keyword name="Retry" mask="0x40000000000" message="$(string.string98)" />
+        <keyword name="Timeout" mask="0x80000000000" message="$(string.string124)" />
+        <keyword name="ReSet" mask="0x100000000000" message="$(string.string97)" />
+        <keyword name="Miniport" mask="0x200000000000" message="$(string.string37)" />
+        <keyword name="TCG" mask="0x400000000000" message="$(string.string122)" />
+        <keyword name="Test" mask="0x800000000000" message="$(string.string123)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="TaskLUReset" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="OpCodeLUReset" message="$(string.string49)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="TaskTargetReset" message="$(string.string2)">
+          <opcodes>
+           <opcode value="12" name="OpCodeTargetReset" message="$(string.string83)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="TaskBusReset" message="$(string.string3)">
+          <opcodes>
+           <opcode value="13" name="OpCodeBusReset" message="$(string.string43)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="TaskResetDetected" message="$(string.string4)">
+          <opcodes>
+           <opcode value="14" name="OpCodeResetDetected" message="$(string.string80)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="TaskLinkDown" message="$(string.string5)">
+          <opcodes>
+           <opcode value="15" name="OpCodeLinkDown" message="$(string.string47)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="TaskLinkUp" message="$(string.string6)">
+          <opcodes>
+           <opcode value="16" name="OpCodeLinkUp" message="$(string.string48)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="TaskRequestTimerCall" message="$(string.string7)">
+          <opcodes>
+           <opcode value="17" name="OpCodeRequestTimerCall" message="$(string.string79)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="TaskPortPause" message="$(string.string8)">
+          <opcodes>
+           <opcode value="18" name="OpCodePortPause" message="$(string.string73)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="TaskPortResume" message="$(string.string9)">
+          <opcodes>
+           <opcode value="19" name="OpCodePortResume" message="$(string.string75)"/>
+          </opcodes>
+        </task>
+        <task value="10" name="TaskPortPauseDevice" message="$(string.string10)">
+          <opcodes>
+           <opcode value="20" name="OpCodePortPauseDevice" message="$(string.string74)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="TaskPortResumeDevice" message="$(string.string11)">
+          <opcodes>
+           <opcode value="21" name="OpCodePortResumeDevice" message="$(string.string76)"/>
+          </opcodes>
+        </task>
+        <task value="12" name="TaskBusChangeDetected" message="$(string.string12)">
+          <opcodes>
+           <opcode value="22" name="OpCodeBusChangeDetected" message="$(string.string42)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="TaskMiniportIORequestServiceTime" message="$(string.string13)">
+          <opcodes>
+           <opcode value="23" name="OpCodeMiniportIORequestServiceTime" message="$(string.string71)"/>
+          </opcodes>
+        </task>
+        <task value="14" name="TaskStateChangeDetected" message="$(string.string14)">
+          <opcodes>
+           <opcode value="24" name="OpCodeStateChangeDetected" message="$(string.string81)"/>
+          </opcodes>
+        </task>
+        <task value="15" name="TaskTargetedReenumeration" message="$(string.string15)">
+          <opcodes>
+           <opcode value="25" name="OpCodeTargetedReenumeration" message="$(string.string82)"/>
+          </opcodes>
+        </task>
+        <task value="16" name="TaskMarkDevicePotentiallyFailed" message="$(string.string16)">
+          <opcodes>
+           <opcode value="108" name="Device potentially failed." message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="18" name="TaskMarkAndRemoveFailedDevice" message="$(string.string18)">
+          <opcodes>
+           <opcode value="110" name="Device failed and will be removed." message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="TaskEventMarkDeviceFailed" message="$(string.string19)">
+          <opcodes>
+           <opcode value="112" name="Device failed." message="$(string.string9)"/>
+          </opcodes>
+        </task>
+        <task value="201" name="Port" message="$(string.string201)">
+          <opcodes>
+           <opcode value="101" name="Completion of request." message="$(string.string6)"/>
+           <opcode value="104" name="Retry handling." message="$(string.string99)"/>
+           <opcode value="100" name="Dispatching of request." message="$(string.string13)"/>
+           <opcode value="106" name="Event Queue related operation." message="$(string.string18)"/>
+           <opcode value="136" name="NVMe Operation." message="$(string.string40)"/>
+          </opcodes>
+        </task>
+        <task value="202" name="Dpc" message="$(string.string202)">
+          <opcodes>
+           <opcode value="101" name="Completion of request." message="$(string.string6)"/>
+          </opcodes>
+        </task>
+        <task value="203" name="Isr" message="$(string.string203)">
+          <opcodes>
+           <opcode value="101" name="Completion of request." message="$(string.string6)"/>
+          </opcodes>
+        </task>
+        <task value="204" name="TaskCaptureLiveDump" message="$(string.string204)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="OpCodeLUReset" message="$(string.string49)"/>
+        <opcode value="12" name="OpCodeTargetReset" message="$(string.string83)"/>
+        <opcode value="13" name="OpCodeBusReset" message="$(string.string43)"/>
+        <opcode value="14" name="OpCodeResetDetected" message="$(string.string80)"/>
+        <opcode value="15" name="OpCodeLinkDown" message="$(string.string47)"/>
+        <opcode value="16" name="OpCodeLinkUp" message="$(string.string48)"/>
+        <opcode value="17" name="OpCodeRequestTimerCall" message="$(string.string79)"/>
+        <opcode value="18" name="OpCodePortPause" message="$(string.string73)"/>
+        <opcode value="19" name="OpCodePortResume" message="$(string.string75)"/>
+        <opcode value="20" name="OpCodePortPauseDevice" message="$(string.string74)"/>
+        <opcode value="21" name="OpCodePortResumeDevice" message="$(string.string76)"/>
+        <opcode value="22" name="OpCodeBusChangeDetected" message="$(string.string42)"/>
+        <opcode value="23" name="OpCodeMiniportIORequestServiceTime" message="$(string.string71)"/>
+        <opcode value="24" name="OpCodeStateChangeDetected" message="$(string.string81)"/>
+        <opcode value="25" name="OpCodeTargetedReenumeration" message="$(string.string82)"/>
+        <opcode value="100" name="Dispatch" message="$(string.string12)"/>
+        <opcode value="101" name="Completion" message="$(string.string5)"/>
+        <opcode value="102" name="Timeout" message="$(string.string124)"/>
+        <opcode value="103" name="Error" message="$(string.string17)"/>
+        <opcode value="104" name="Retry" message="$(string.string98)"/>
+        <opcode value="105" name="Miniport" message="$(string.string37)"/>
+        <opcode value="106" name="Queue" message="$(string.string94)"/>
+        <opcode value="107" name="StateTransition" message="$(string.string101)"/>
+        <opcode value="108" name="OpCodeMarkDevicePotentiallyFailed" message="$(string.string51)"/>
+        <opcode value="110" name="OpCodeMarkAndRemoveFailedDevice" message="$(string.string50)"/>
+        <opcode value="111" name="OpCodeInitializeStorageD3" message="$(string.string46)"/>
+        <opcode value="112" name="OpCodeEventMarkDeviceFailed" message="$(string.string44)"/>
+        <opcode value="113" name="OpCodeMiniportThreadNotTerminated" message="$(string.string72)"/>
+        <opcode value="114" name="OpCodeRegisterMFNDInterface" message="$(string.string78)"/>
+        <opcode value="115" name="OpCodeGetMFNDCapability" message="$(string.string45)"/>
+        <opcode value="116" name="OpCodeReconfigureMFND" message="$(string.string77)"/>
+        <opcode value="117" name="OpCodeMFNDChildPFControl" message="$(string.string52)"/>
+        <opcode value="118" name="OpCodeMFNDQueryChildPFList" message="$(string.string58)"/>
+        <opcode value="119" name="OpCodeMFNDQueryOperationInfo" message="$(string.string63)"/>
+        <opcode value="120" name="OpCodeMFNDQueryChildPFProperty" message="$(string.string59)"/>
+        <opcode value="121" name="OpCodeMFNDQueryChildPFSettings" message="$(string.string60)"/>
+        <opcode value="122" name="OpCodeMFNDQueryChildPFCommandPermission" message="$(string.string57)"/>
+        <opcode value="123" name="OpCodeMFNDSetOperationInformation" message="$(string.string70)"/>
+        <opcode value="124" name="OpCodeMFNDSetChildPFProperty" message="$(string.string66)"/>
+        <opcode value="125" name="OpCodeMFNDSetChildPFSettings" message="$(string.string68)"/>
+        <opcode value="126" name="OpCodeMFNDSetChildPFQoS" message="$(string.string67)"/>
+        <opcode value="127" name="OpCodeMFNDSetChildPFCommandPermission" message="$(string.string65)"/>
+        <opcode value="128" name="OpCodeMFNDQueryMigrationQoS" message="$(string.string61)"/>
+        <opcode value="129" name="OpCodeMFNDQueryNSPageMap" message="$(string.string62)"/>
+        <opcode value="130" name="OpCodeMFNDQueryCCQueuesState" message="$(string.string56)"/>
+        <opcode value="131" name="OpCodeMFNDSetMigrationQoS" message="$(string.string69)"/>
+        <opcode value="132" name="OpCodeMFNDSetCCQueuesState" message="$(string.string64)"/>
+        <opcode value="133" name="OpCodeMFNDNameSpaceRead" message="$(string.string54)"/>
+        <opcode value="134" name="OpCodeMFNDNameSpaceWrite" message="$(string.string55)"/>
+        <opcode value="135" name="OpCodeMFNDNameSpacePageMapControl" message="$(string.string53)"/>
+        <opcode value="136" name="NVMeOperation" message="$(string.string41)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="MiniportExtension" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PauseTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5_1">
+          <data name="MiniportExtension" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LinkDownTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_1">
+          <data name="MiniportExtension" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_1">
+          <data name="MiniportExtension" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PauseTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args13_1">
+          <data name="MiniportExtension" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RequestDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Command" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ScsiStatus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SrbStatus" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args14_1">
+          <data name="Field" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PivotField" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PivotValue" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="OriginalValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_1">
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorportApi" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args16_1">
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InitialCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourceSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemorySize" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args17_1">
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentOutstanding" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldHighWaterMark" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewHighWaterMark" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_1">
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentOutstanding" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighWaterMark" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemAllocFailures" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConsecutiveFailures" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SuspendCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_1">
+          <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ConcurrentChannels" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FirstRedirectionMessageNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastRedirectionMessageNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceNode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21_1">
+          <data name="HwInitializationDataSize" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AdapterInterfaceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceExtensionSize" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SpecificLuExtensionSize" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SrbExtensionSize" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="FeatureSupport" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SrbTypeFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AddressTypeFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="HwFreeAdapterResources" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="HwProcessServiceRequest" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="HwCompleteServiceIrp" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="HwInitializeTracing" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="HwCleanupTracing" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args22_1">
+          <data name="Length" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="MaxTransferLength" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="NumberOfBuses" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxNumberOfTargets" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxNumberOfLogicalUnits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxNumberOfIO" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxIOsPerLun" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InitialLunQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequestedDumpBufferSize" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="FeatureSupport" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SrbType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AddressType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Dma64BitAddress" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BusResetHoldTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterruptSynchronizationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CachesData" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="VirtualDevice" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args24_1">
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Duration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args25_1">
+          <data name="MiniportExtension" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChangedEntity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Attributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HwStateChange" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HwStateChangeContext" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args26_1">
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChangedEntity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Attributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HwStateChange" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HwStateChangeContext" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args208_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NTStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args209_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CurrentRetryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args210_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Bus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="Target" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args212_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args214_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args217_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args219_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumberOfChildren" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args220_1">
+          <data name="QueueTag" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Operation" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args222_1">
+          <data name="Port" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RequestDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CDBLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CDB" inType="win:Binary" outType="xs:hexBinary" length="CDBLength" />
+          <data name="SrbStatus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BuildIoDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartIoDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MiniportDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args224_1">
+          <data name="DpcRoutine" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DpcRoutineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CompletionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QpcTicks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Duration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SwitchDpcProc" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RevertDpcProc" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args225_1">
+          <data name="PoHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DIrpRequested" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DPNRDurationMsec" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args227_1">
+          <data name="PoHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DIrpRequested" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IdleTimeoutMsec" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args230_1">
+          <data name="PoHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args247_1">
+          <data name="QueueID" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QueueTag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Operation" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EnqueueReason" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="QueuedIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutstandingIoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NTStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args248_1">
+          <data name="IsrRoutine" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Processor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Duration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args260_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args261_1">
+          <data name="PoHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Requested_AdapterIdleTimeout_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Actual_AdapterIdleTimeout_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args262_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="OldState" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="NewState" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Action" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PowerStateContext" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args263_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentPowerCycleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PotentialPowerCycleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPowerCyclePeriodInMS" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args264_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentD3IdleTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewD3IdleTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoCoalescingOn" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OnBatteryPower" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args265_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousPowerHint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousResumeLatency_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewPowerHint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewResumeLatency_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args268_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Success" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ActiveRefsDuringMaintenanceTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args269_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IOCTLCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AdapterRequest" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProtocolType" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CommandCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ReturnStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="UntaggedRequest" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args278_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Description" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Param1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Param2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Param3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Param4" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args279_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TcgStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args301_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterSerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="VendorID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SubsystemVendorID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProductID" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="NamespaceID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="Reason" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args400_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Signature" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MajorVersion" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SubVersion" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="MaxPFCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AvailablePFCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MaxQPairCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AvailableQPairCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MaxMSIXMessageCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AvailableMSIXMessageCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MaxNamespaceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AvailableNamespaceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TotalNVMStorageSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AvailableNVMStorageSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="StorageProvisionGranularity" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TotalReadBandwidth" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AvailableReadBandwidth" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TotalWriteBandwidth" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AvailableWriteBandwidth" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TotalReadIOPS" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AvailableReadIOPS" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TotalWriteIOPS" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AvailableWriteIOPS" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Features" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MaxSupportedCCNamespaceCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args401_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChildPFCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChildPFDataLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChildPFData" inType="win:Binary" outType="xs:hexBinary" length="ChildPFDataLength" />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args403_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="NamespaceMetadataSize" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="NamespaceLBADataSize" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="DataProtectionType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="NamespaceNMIC" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args404_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SettingsFlags" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="IoQueuePairCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InterruptCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NamespaceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NS1StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NS2StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NS3StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NS4StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="QoSVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="QoSSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="QoSPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReserveReadBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReserveWriteBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitWriteBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReserveReadIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReserveWriteIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitWriteIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args405_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CommandCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommandPermissionEntriesLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommandPermissionEntries" inType="win:Binary" outType="xs:hexBinary" length="CommandPermissionEntriesLength" />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args406_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="QoSPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LimitBandwidthInMBps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LimitWriteBandwidthInMBps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LimitRandomIops" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LimitRandomWriteIops" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args407_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PageMapDataQualifier" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageMapDataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args408_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ChildControllerId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SubmissionQueueCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CompletionQueueCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminSubmissionQueueID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminSubmissionQueueHeadPointer" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminSubmissionQueueTailPointer" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminCompletionQueueID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminCompletionQueueHeadPointer" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminCompletionQueueTailPointer" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdminCompletionQueueFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AQAER1CommandID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AQAER2CommandID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AQAER3CommandID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AQAER4CommandID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ValidAERFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="QueuesStateSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueuesState" inType="win:Binary" outType="xs:hexBinary" length="QueuesStateSize" />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args508_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="Target" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AbortedReq_SrbFunction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortedReq_CdbLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortedReq_Cdb" inType="win:Binary" outType="xs:hexBinary" length="AbortedReq_CdbLength" />
+        </template>
+        <template tid="Args509_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="Target" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AbortSrbTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortedReq_SrbFunction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortedReq_CdbLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortedReq_Cdb" inType="win:Binary" outType="xs:hexBinary" length="AbortedReq_CdbLength" />
+        </template>
+        <template tid="Args513_1">
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="AllocationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceMinSizeInBytes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DevicePreferredSizeInBytes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PolicyMaxInBytes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TargetAllocationSizeInBytes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ActualAllocationSizeInBytes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="RangesAllocated" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Success" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args550_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ResetType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ResetStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="SuccessIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FailedIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args551_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Removable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SurpriseRemovalOK" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args553_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NewUnitCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeleteUnitCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args555_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args556_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Success" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ActiveRefsDuringMaintenanceTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args560_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterVendorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IssueType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NTStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args562_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args563_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Version" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IoSizeBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoLatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TotalSuccessIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadIoSizeBucket1IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket1IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket2IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket2IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket3IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket3IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket4IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket4IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket5IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket5IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket6IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket6IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket7IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket7IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket8IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket8IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket9IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ReadIoSizeBucket9IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket1IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket1IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket2IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket2IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket3IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket3IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket4IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket4IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket5IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket5IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket6IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket6IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket7IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket7IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket8IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket8IoLatency" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket9IoSuccess" inType="win:AnsiString" outType="xs:string"  />
+          <data name="WriteIoSizeBucket9IoLatency" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args564_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LogPageCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LogPageLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LogPageData" inType="win:Binary" outType="xs:hexBinary" length="LogPageLength" />
+        </template>
+        <template tid="Args565_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SystemUptime_s" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Temperature" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TemperatureMax" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ManufactureDate" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StartStopCycleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartStopCycleCountMax" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LoadUnloadCycleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LoadUnloadCycleCountMax" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteErrorsTotal" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteErrorsCorrected" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteErrorsUncorrected" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadErrorsTotal" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadErrorsCorrected" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadErrorsUncorrected" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WorkloadUtilization" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PercentageUsed" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BackgroundScanStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="PowerOnMinutes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteErrorCountersLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteErrorCountersLog" inType="win:Binary" outType="xs:hexBinary" length="WriteErrorCountersLogLength" />
+          <data name="ReadErrorCountersLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReadErrorCountersLog" inType="win:Binary" outType="xs:hexBinary" length="ReadErrorCountersLogLength" />
+          <data name="TemperatureLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TemperatureLog" inType="win:Binary" outType="xs:hexBinary" length="TemperatureLogLength" />
+          <data name="EnvironmentalReportingLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnvironmentalReportingLog" inType="win:Binary" outType="xs:hexBinary" length="EnvironmentalReportingLogLength" />
+          <data name="StartStopCycleCountersLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartStopCycleCountersLog" inType="win:Binary" outType="xs:hexBinary" length="StartStopCycleCountersLogLength" />
+          <data name="UtilizationLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UtilizationLog" inType="win:Binary" outType="xs:hexBinary" length="UtilizationLogLength" />
+          <data name="SolidStateMediaLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SolidStateMediaLog" inType="win:Binary" outType="xs:hexBinary" length="SolidStateMediaLogLength" />
+          <data name="BackgroundScanResultsLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackgroundScanResultsLog" inType="win:Binary" outType="xs:hexBinary" length="BackgroundScanResultsLogLength" />
+        </template>
+        <template tid="Args566_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataLength" />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args572_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ZoneSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args573_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterHardwareId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PerformanceOptimizationFlags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="MaximumProcessorCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveProcessorCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessorCountPerGateway" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AllocatedGatewayCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveGatewayCountRequired" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InUseGatewayCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NtStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args575_1">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args576_1">
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterHardwareId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterInterfaceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllowStorageD3" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AcpiDsdProperty" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageD3RegistryState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageD3Enable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DirectedFxEnable" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args577_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SystemThreadMaximumCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemThreadCurrentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args580_1">
+          <data name="NtStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ReferenceCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args582_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TcgSSC" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LockingSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LockingSpPresent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SingleUserModeSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NumberOfLockingObjectsSupported" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxRangesSupported" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BlockSIDSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="InitialSIDPin" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SIDPinBehaviorOnRevert" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MaxDatastoreTablesSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DatastoreTableSizeAlignment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxNumberOfDatastoreTables" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args583_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Operation" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SubOperation" inType="win:AnsiString" outType="xs:string"  />
+          <data name="NTStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="Param1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Param2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Param3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Param4" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args584_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NSID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartingLBA" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LBACount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args585_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NSID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartingLBA" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LBACount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSizeToWrite" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args586_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NSID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ControlAction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args801_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReconfigureType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChildPFCountToCreate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPFCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args802_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationPrivilege" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChildControllerID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ControlAction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args803_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ChildPFCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Enable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OperationSelect" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args804_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="NamespaceMetadataSize" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="NamespaceLBADataSize" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="NamespaceDPS" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="NamespaceNMIC" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args805_1">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MFNDInterfaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ChildControllerID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="IoQueuePairCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InterruptCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NamespaceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NS1StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NS2StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NS3StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NS4StorageProvisionUnitCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="QoSPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReserveReadBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReserveWriteBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitWriteBandwidthInMBps" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReserveReadIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReserveWriteIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LimitWriteIops" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SCT" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args200_2">
+          <data name="RequestDuration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Command" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Port" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ByteLengthOfTransfer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BuildIoDuration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartIoDuration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args202_2">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Command" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LengthOfTransfer (in blocks)" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NvCachePriority" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args216_2">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args229_2">
+          <data name="PoHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RegistrationStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Requested_D3ColdSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Requested_WakeCapable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Requested_IdleTimeoutInMS" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfFStates" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Actual_D3ColdSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Actual_WakeCapable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Actual_IdleTimeoutInMS" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args240_2">
+          <data name="PoHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="D3ColdEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IdleTimeoutInMS" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfFStates" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PlaceHolderModeEnable" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args502_2">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args507_2">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SrbFunction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CdbLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cdb" inType="win:Binary" outType="xs:hexBinary" length="CdbLength" />
+          <data name="IoDispatchToResetTime_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args549_2">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Version" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RequestDuration_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WaitDuration_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Command" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args554_2">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Phase" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Threshold_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Count" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args557_2">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Threshold_ms" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RequestDuration_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WaitDuration_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Command" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="QueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args559_2">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ConcurrentChannel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args561_2">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BootAdapter" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceResetType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NtStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="PciDeviceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetDuration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args250_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args251_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args252_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter5Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter5Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter6Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter6Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter7Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter7Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter8Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter8Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args253_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args254_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args255_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter5Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter5Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter6Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter6Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter7Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter7Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter8Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter8Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args256_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Srb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args257_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Srb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args258_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MiniportEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportEventDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Srb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter5Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter5Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter6Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter6Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter7Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter7Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Parameter8Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter8Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args501_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BusResetReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args506_3">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="UnresponsiveRequests" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QosGuaranteeFailures" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QosGuaranteeThreshold_s" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnitQueueTimeoutCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AdapterQueueTimeoutCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HwQueueTimeoutCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxUnitQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxAdapterQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args514_3">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LengthOfTransfer (in blocks)" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RequestLBA" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="CurrentLBA" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args515_3">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PendingIoCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResetWritePointerAll" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args535_3">
+          <data name="AdapterInterfaceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Device" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Function" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FaultCode" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FaultDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdditionalDataSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AdditionalData" inType="win:Binary" outType="xs:hexBinary" length="AdditionalDataSize" />
+          <data name="CriticalDataSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CriticalData" inType="win:Binary" outType="xs:hexBinary" length="CriticalDataSize" />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args500_4">
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SrbFunction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CdbLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cdb" inType="win:Binary" outType="xs:hexBinary" length="CdbLength" />
+          <data name="SrbTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortSupported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args504_4">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SystemUptime_s" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Version" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalErrors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalReadWriteErrors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalImpendingDeviceFailureErrors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalDeviceFailureErrors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeoutsInMiniport" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HierarchicalResetSuccessCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastError_RequestDuration_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastError_WaitDuration_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastError_Command" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LastError_SrbStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LastError_ScsiStatus" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LastError_SenseKey" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LastError_AddSense" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LastError_AddSenseQ" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LastError_IoSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastError_QueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastError_LBA" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="SampledErrorLogArrayLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampledErrorLogArray" inType="win:Binary" outType="xs:hexBinary" length="SampledErrorLogArrayLength" />
+          <data name="UniqueErrorLogArrayLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UniqueErrorLogArray" inType="win:Binary" outType="xs:hexBinary" length="UniqueErrorLogArrayLength" />
+        </template>
+        <template tid="Args510_4">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SystemUptime_s" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SmartReturnStatus" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SmartAttributesLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SmartAttributes" inType="win:Binary" outType="xs:hexBinary" length="SmartAttributesLength" />
+        </template>
+        <template tid="Args511_5">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SystemUptime_s" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GeneralLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="General" inType="win:Binary" outType="xs:hexBinary" length="GeneralLength" />
+          <data name="FreeFallLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Freefall" inType="win:Binary" outType="xs:hexBinary" length="FreeFallLength" />
+          <data name="RotatingMediaLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RotatingMedia" inType="win:Binary" outType="xs:hexBinary" length="RotatingMediaLength" />
+          <data name="GeneralErrorsLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GeneralErrors" inType="win:Binary" outType="xs:hexBinary" length="GeneralErrorsLength" />
+          <data name="TemperatureLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Temperature" inType="win:Binary" outType="xs:hexBinary" length="TemperatureLength" />
+          <data name="TransportLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Transport" inType="win:Binary" outType="xs:hexBinary" length="TransportLength" />
+          <data name="SolidStateDeviceLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SolidStateDevice" inType="win:Binary" outType="xs:hexBinary" length="SolidStateDeviceLength" />
+        </template>
+        <template tid="Args505_6">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IoTimeout_s" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SystemUptime_s" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Version" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalDeviceQueueIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxDeviceQueueCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxOutstandingCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalDeviceQueueIoWaitDuration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxDeviceQueueIoWaitDuration_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceQueueIoWaitExceededTimeoutCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceQueueIoBusyCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceQueueIoPausedCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceQueueIoUntaggedCommandOutstandingCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeviceQueueIoPausedForUntaggedCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxReadWriteLatency_100ns" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxFlushLatency_100ns" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxUnmapLatency_100ns" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoLatencyBuckets" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BucketIoSuccess1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoSuccess14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed6" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed7" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed8" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed9" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed10" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed11" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed12" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed13" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoFailed14" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency1_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency2_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency3_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency4_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency5_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency6_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency7_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency8_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency9_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency10_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency11_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency12_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency13_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BucketIoLatency14_100ns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalReadBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalWriteBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HighLatencyIoCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args512_6">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="TargetID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="LUN" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MiniportName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FirmwareRevision" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BootDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SystemUptime_s" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalWarning" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NvmeHealthLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NvmeHealthLog" inType="win:Binary" outType="xs:hexBinary" length="NvmeHealthLogLength" />
+          <data name="VendorSpecificLogPageCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="VendorSpecificLogPageVersion" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="VendorSpecificLogLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorSpecificLog" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificLogLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Adapter" />
+       <string id="string1" value="AsyncEvent" />
+       <string id="string2" value="CommandTrace" />
+       <string id="string3" value="CommandTraceIO" />
+       <string id="string4" value="CommandTraceNonIO" />
+       <string id="string5" value="Completion" />
+       <string id="string6" value="Completion of request." />
+       <string id="string7" value="Config" />
+       <string id="string8" value="Device failed and will be removed." />
+       <string id="string9" value="Device failed." />
+       <string id="string10" value="Device potentially failed." />
+       <string id="string11" value="DeviceState" />
+       <string id="string12" value="Dispatch" />
+       <string id="string13" value="Dispatching of request." />
+       <string id="string14" value="Dpc" />
+       <string id="string15" value="DPC" />
+       <string id="string16" value="Enum" />
+       <string id="string17" value="Error" />
+       <string id="string18" value="Event Queue related operation." />
+       <string id="string19" value="Flush" />
+       <string id="string20" value="IO_Performance" />
+       <string id="string21" value="IOCTL" />
+       <string id="string22" value="IoPerfNotification" />
+       <string id="string23" value="Isr" />
+       <string id="string24" value="ISR" />
+       <string id="string25" value="Logo_Performance" />
+       <string id="string26" value="LowMemoryRead" />
+       <string id="string27" value="LowMemoryWrite" />
+       <string id="string28" value="MFND" />
+       <string id="string29" value="Microsoft-Windows-Storage-Storport/Admin" />
+       <string id="string30" value="Microsoft-Windows-Storage-Storport/Analytic" />
+       <string id="string31" value="Microsoft-Windows-Storage-Storport/Debug" />
+       <string id="string32" value="Microsoft-Windows-Storage-Storport/Diagnose" />
+       <string id="string33" value="Microsoft-Windows-Storage-Storport/Health" />
+       <string id="string34" value="Microsoft-Windows-Storage-Storport/Operational" />
+       <string id="string35" value="Microsoft-Windows-StorPort" />
+       <string id="string36" value="Microsoft-Windows-StorPort/Operational" />
+       <string id="string37" value="Miniport" />
+       <string id="string38" value="NonReadWrite" />
+       <string id="string39" value="NVMe" />
+       <string id="string40" value="NVMe Operation." />
+       <string id="string41" value="NVMeOperation" />
+       <string id="string42" value="OpCodeBusChangeDetected" />
+       <string id="string43" value="OpCodeBusReset" />
+       <string id="string44" value="OpCodeEventMarkDeviceFailed" />
+       <string id="string45" value="OpCodeGetMFNDCapability" />
+       <string id="string46" value="OpCodeInitializeStorageD3" />
+       <string id="string47" value="OpCodeLinkDown" />
+       <string id="string48" value="OpCodeLinkUp" />
+       <string id="string49" value="OpCodeLUReset" />
+       <string id="string50" value="OpCodeMarkAndRemoveFailedDevice" />
+       <string id="string51" value="OpCodeMarkDevicePotentiallyFailed" />
+       <string id="string52" value="OpCodeMFNDChildPFControl" />
+       <string id="string53" value="OpCodeMFNDNameSpacePageMapControl" />
+       <string id="string54" value="OpCodeMFNDNameSpaceRead" />
+       <string id="string55" value="OpCodeMFNDNameSpaceWrite" />
+       <string id="string56" value="OpCodeMFNDQueryCCQueuesState" />
+       <string id="string57" value="OpCodeMFNDQueryChildPFCommandPermission" />
+       <string id="string58" value="OpCodeMFNDQueryChildPFList" />
+       <string id="string59" value="OpCodeMFNDQueryChildPFProperty" />
+       <string id="string60" value="OpCodeMFNDQueryChildPFSettings" />
+       <string id="string61" value="OpCodeMFNDQueryMigrationQoS" />
+       <string id="string62" value="OpCodeMFNDQueryNSPageMap" />
+       <string id="string63" value="OpCodeMFNDQueryOperationInfo" />
+       <string id="string64" value="OpCodeMFNDSetCCQueuesState" />
+       <string id="string65" value="OpCodeMFNDSetChildPFCommandPermission" />
+       <string id="string66" value="OpCodeMFNDSetChildPFProperty" />
+       <string id="string67" value="OpCodeMFNDSetChildPFQoS" />
+       <string id="string68" value="OpCodeMFNDSetChildPFSettings" />
+       <string id="string69" value="OpCodeMFNDSetMigrationQoS" />
+       <string id="string70" value="OpCodeMFNDSetOperationInformation" />
+       <string id="string71" value="OpCodeMiniportIORequestServiceTime" />
+       <string id="string72" value="OpCodeMiniportThreadNotTerminated" />
+       <string id="string73" value="OpCodePortPause" />
+       <string id="string74" value="OpCodePortPauseDevice" />
+       <string id="string75" value="OpCodePortResume" />
+       <string id="string76" value="OpCodePortResumeDevice" />
+       <string id="string77" value="OpCodeReconfigureMFND" />
+       <string id="string78" value="OpCodeRegisterMFNDInterface" />
+       <string id="string79" value="OpCodeRequestTimerCall" />
+       <string id="string80" value="OpCodeResetDetected" />
+       <string id="string81" value="OpCodeStateChangeDetected" />
+       <string id="string82" value="OpCodeTargetedReenumeration" />
+       <string id="string83" value="OpCodeTargetReset" />
+       <string id="string84" value="PagingRead" />
+       <string id="string85" value="PagingWrite" />
+       <string id="string86" value="PassThrough" />
+       <string id="string87" value="PauseResume" />
+       <string id="string88" value="Perf" />
+       <string id="string89" value="PnP" />
+       <string id="string90" value="Port" />
+       <string id="string91" value="PortNotification" />
+       <string id="string92" value="Power" />
+       <string id="string93" value="Protocol" />
+       <string id="string94" value="Queue" />
+       <string id="string95" value="Read" />
+       <string id="string96" value="Reset" />
+       <string id="string97" value="ReSet" />
+       <string id="string98" value="Retry" />
+       <string id="string99" value="Retry handling." />
+       <string id="string100" value="SMR" />
+       <string id="string101" value="StateTransition" />
+       <string id="string102" value="Target" />
+       <string id="string103" value="TaskBusChangeDetected" />
+       <string id="string104" value="TaskBusReset" />
+       <string id="string105" value="TaskCaptureLiveDump" />
+       <string id="string106" value="TaskEventMarkDeviceFailed" />
+       <string id="string107" value="TaskLinkDown" />
+       <string id="string108" value="TaskLinkUp" />
+       <string id="string109" value="TaskLUReset" />
+       <string id="string110" value="TaskMarkAndRemoveFailedDevice" />
+       <string id="string111" value="TaskMarkDevicePotentiallyFailed" />
+       <string id="string112" value="TaskMiniportIORequestServiceTime" />
+       <string id="string113" value="TaskPortPause" />
+       <string id="string114" value="TaskPortPauseDevice" />
+       <string id="string115" value="TaskPortResume" />
+       <string id="string116" value="TaskPortResumeDevice" />
+       <string id="string117" value="TaskRequestTimerCall" />
+       <string id="string118" value="TaskResetDetected" />
+       <string id="string119" value="TaskStateChangeDetected" />
+       <string id="string120" value="TaskTargetedReenumeration" />
+       <string id="string121" value="TaskTargetReset" />
+       <string id="string122" value="TCG" />
+       <string id="string123" value="Test" />
+       <string id="string124" value="Timeout" />
+       <string id="string125" value="Timer" />
+       <string id="string126" value="win:Info" />
+       <string id="string127" value="win:None" />
+       <string id="string128" value="win:Start" />
+       <string id="string129" value="win:Stop" />
+       <string id="string130" value="WMI" />
+       <string id="string131" value="Write" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ESE" name="Microsoft-Windows-ESE" guid="{478ea8a8-00be-4ba6-8e75-8b9dc7db9f78}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Verbose"  task="ESE_TraceBaseId_Trace" keywords="Trace"/>
+        <event value="101" version="0" level="win:Verbose"  task="ESE_BF_Trace" keywords="Trace"/>
+        <event value="102" version="0" level="win:Verbose"  task="ESE_Block_Trace" keywords="BF"/>
+        <event value="103" version="0" level="win:Informational"  task="ESE_CacheNewPage_Trace" keywords="Performance BF DataWorkingSet" template="Args103_0"/>
+        <event value="104" version="0" level="win:Informational"  task="ESE_CacheReadPage_Trace" keywords="Performance BF DataWorkingSet"/>
+        <event value="105" version="0" level="win:Informational"  task="ESE_CachePrereadPage_Trace" keywords="Performance BF DataWorkingSet"/>
+        <event value="106" version="0" level="win:Informational"  task="ESE_CacheWritePage_Trace" keywords="Performance BF BFRESMGR DataWorkingSet" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  task="ESE_CacheEvictPage_Trace" keywords="BF BFRESMGR DataWorkingSet" template="Args107_0"/>
+        <event value="108" version="0" level="win:Verbose"  task="ESE_CacheRequestPage_Trace" keywords="BF BFRESMGR" template="Args108_0"/>
+        <event value="109" version="0" level="win:Informational"  task="ESE_LatchPageDeprecated_Trace" keywords="Performance BF BFRESMGR"/>
+        <event value="110" version="0" level="win:Verbose"  task="ESE_CacheDirtyPage_Trace" keywords="Performance BF BFRESMGR" template="Args110_0"/>
+        <event value="111" version="0" level="win:Verbose"  task="ESE_TransactionBegin_Trace" keywords="Transaction" template="Args111_0"/>
+        <event value="112" version="0" level="win:Verbose"  task="ESE_TransactionCommit_Trace" keywords="Transaction"/>
+        <event value="113" version="0" level="win:Verbose"  task="ESE_TransactionRollback_Trace" keywords="Transaction"/>
+        <event value="114" version="0" level="win:Verbose"  task="ESE_SpaceAllocExt_Trace" keywords="Space" template="Args114_0"/>
+        <event value="115" version="0" level="win:Verbose"  task="ESE_SpaceFreeExt_Trace" keywords="Space"/>
+        <event value="116" version="0" level="win:Verbose"  task="ESE_SpaceAllocPage_Trace" keywords="Space DataWorkingSet" template="Args116_0"/>
+        <event value="117" version="0" level="win:Verbose"  task="ESE_SpaceFreePage_Trace" keywords="Space DataWorkingSet" template="Args117_0"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-ESE/IODiagnose" task="ESE_IorunEnqueue_Trace" keywords="IO" template="Args118_0"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-ESE/IODiagnose" task="ESE_IorunDequeue_Trace" keywords="IO" template="Args119_0"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-ESE/IODiagnose" task="ESE_IOCompletion_Trace" keywords="IO" template="Args120_0"/>
+        <event value="121" version="0" level="win:Warning"  task="ESE_LogStall_Trace" keywords="LOG StallLatencies"/>
+        <event value="122" version="0" level="win:Informational"  task="ESE_LogWrite_Trace" keywords="LOG" template="Args122_0"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-ESE/Operational" task="ESE_EventLogInfo_Trace" keywords="Trace" template="Args123_0"/>
+        <event value="124" version="0" level="win:Warning"  channel="Microsoft-Windows-ESE/Operational" task="ESE_EventLogWarn_Trace" keywords="Trace"/>
+        <event value="125" version="0" level="win:Error"  channel="Microsoft-Windows-ESE/Operational" task="ESE_EventLogError_Trace" keywords="Trace"/>
+        <event value="126" version="0" level="win:Verbose"  task="ESE_TimerQueueScheduleDeprecated_Trace" keywords="Task"/>
+        <event value="127" version="0" level="win:Verbose"  task="ESE_TimerQueueRunDeprecated_Trace" keywords="Task"/>
+        <event value="128" version="0" level="win:Verbose"  task="ESE_TimerQueueCancelDeprecated_Trace" keywords="Task"/>
+        <event value="129" version="0" level="win:Verbose"  task="ESE_TimerTaskSchedule_Trace" keywords="Task" template="Args129_0"/>
+        <event value="130" version="0" level="win:Verbose"  task="ESE_TimerTaskRun_Trace" keywords="Task" template="Args130_0"/>
+        <event value="131" version="0" level="win:Verbose"  task="ESE_TimerTaskCancel_Trace" keywords="Task"/>
+        <event value="132" version="0" level="win:Verbose"  task="ESE_TaskManagerPost_Trace" keywords="Task" template="Args132_0"/>
+        <event value="133" version="0" level="win:Verbose"  task="ESE_TaskManagerRun_Trace" keywords="Task" template="Args133_0"/>
+        <event value="134" version="0" level="win:Verbose"  task="ESE_GPTaskManagerPost_Trace" keywords="Task" template="Args134_0"/>
+        <event value="135" version="0" level="win:Verbose"  task="ESE_GPTaskManagerRun_Trace" keywords="Task"/>
+        <event value="136" version="0" level="win:Informational"  task="ESE_TestMarker_Trace" keywords="Test" template="Args136_0"/>
+        <event value="137" version="0" level="win:Informational"  task="ESE_ThreadCreate_Trace" keywords="Task" template="Args137_0"/>
+        <event value="138" version="0" level="win:Informational"  task="ESE_ThreadStart_Trace" keywords="Task"/>
+        <event value="139" version="0" level="win:Informational"  task="ESE_CacheVersionPage_Trace" keywords="Performance BF"/>
+        <event value="140" version="0" level="win:Informational"  task="ESE_CacheVersionCopyPage_Trace" keywords="Performance BF"/>
+        <event value="141" version="0" level="win:Informational"  task="ESE_CacheResize_Trace" keywords="Performance BF" template="Args141_0"/>
+        <event value="142" version="0" level="win:Informational"  task="ESE_CacheLimitResize_Trace" keywords="Performance BF" template="Args142_0"/>
+        <event value="143" version="0" level="win:Informational"  task="ESE_CacheScavengeProgress_Trace" keywords="Performance BF" template="Args143_0"/>
+        <event value="144" version="0" level="win:Informational"  task="ESE_ApiCall_Trace" opcode="win:Start" keywords="Performance" template="Args144_0"/>
+        <event value="145" version="0" level="win:Informational"  task="ESE_ApiCall_Trace" opcode="win:Stop" keywords="Performance" template="Args145_0"/>
+        <event value="146" version="0" level="win:Informational"  task="ESE_ResMgrInit_Trace" keywords="BFRESMGR" template="Args146_0"/>
+        <event value="147" version="0" level="win:Informational"  task="ESE_ResMgrTerm_Trace" keywords="BFRESMGR"/>
+        <event value="148" version="0" level="win:Verbose"  task="ESE_CacheCachePage_Trace" keywords="BF BFRESMGR"/>
+        <event value="149" version="0" level="win:Verbose"  task="ESE_MarkPageAsSuperCold_Trace" keywords="BF BFRESMGR"/>
+        <event value="150" version="0" level="win:Informational"  task="ESE_CacheMissLatency_Trace" keywords="BF StallLatencies" template="Args150_0"/>
+        <event value="151" version="0" level="win:Informational"  task="ESE_BTreePrereadPageRequest_Trace" keywords="Performance" template="Args151_0"/>
+        <event value="152" version="0" level="win:Informational"  task="ESE_DiskFlushFileBuffers_Trace" keywords="IO" template="Args152_0"/>
+        <event value="153" version="0" level="win:Informational"  task="ESE_DiskFlushFileBuffersBegin_Trace" keywords="IO" template="Args153_0"/>
+        <event value="154" version="0" level="win:Informational"  task="ESE_CacheFirstDirtyPage_Trace" keywords="BF DataWorkingSet" template="Args154_0"/>
+        <event value="155" version="0" level="win:Informational"  task="ESE_SysStationId_Trace" keywords="StationId" template="Args155_0"/>
+        <event value="156" version="0" level="win:Informational"  task="ESE_InstStationId_Trace" keywords="StationId" template="Args156_0"/>
+        <event value="157" version="0" level="win:Informational"  task="ESE_FmpStationId_Trace" keywords="StationId" template="Args157_0"/>
+        <event value="158" version="0" level="win:Informational"  task="ESE_DiskStationId_Trace" keywords="StationId" template="Args158_0"/>
+        <event value="159" version="0" level="win:Informational"  task="ESE_FileStationId_Trace" keywords="StationId" template="Args159_0"/>
+        <event value="160" version="0" level="win:Informational"  task="ESE_IsamDbfilehdrInfo_Trace" keywords="StationId" template="Args160_0"/>
+        <event value="161" version="0" level="win:Informational"  task="ESE_DiskOsDiskCacheInfo_Trace" keywords="StationId" template="Args161_0"/>
+        <event value="162" version="0" level="win:Informational"  task="ESE_DiskOsStorageWriteCacheProp_Trace" keywords="StationId" template="Args162_0"/>
+        <event value="163" version="0" level="win:Informational"  task="ESE_DiskOsDeviceSeekPenaltyDesc_Trace" keywords="StationId" template="Args163_0"/>
+        <event value="164" version="0" level="win:Informational"  task="ESE_DirtyPage2Deprecated_Trace"/>
+        <event value="165" version="0" level="win:Informational"  task="ESE_IOCompletion2_Trace" keywords="IOEX" template="Args165_0"/>
+        <event value="166" version="0" level="win:Informational"  task="ESE_FCBPurgeFailure_Trace" template="Args166_0"/>
+        <event value="167" version="0" level="win:Informational"  task="ESE_IOLatencySpikeNotice_Trace" keywords="StallLatencies" template="Args167_0"/>
+        <event value="168" version="0" level="win:Informational"  task="ESE_IOCompletion2Sess_Trace" keywords="IOSESS"/>
+        <event value="169" version="0" level="win:Informational"  task="ESE_IOIssueThreadPost_Trace" keywords="IO" template="Args169_0"/>
+        <event value="170" version="0" level="win:Informational"  task="ESE_IOIssueThreadPosted_Trace" keywords="IO" template="Args170_0"/>
+        <event value="171" version="0" level="win:Informational"  task="ESE_IOThreadIssueStart_Trace" keywords="IO"/>
+        <event value="172" version="0" level="win:Informational"  task="ESE_IOThreadIssuedDisk_Trace" keywords="IO" template="Args172_0"/>
+        <event value="173" version="0" level="win:Informational"  task="ESE_IOThreadIssueProcessedIO_Trace" keywords="IO" template="Args173_0"/>
+        <event value="174" version="0" level="win:Informational"  task="ESE_IOIoreqCompletion_Trace" keywords="IO StallLatencies" template="Args174_0"/>
+        <event value="175" version="0" level="win:Informational"  task="ESE_CacheMemoryUsage_Trace" keywords="SubstrateTelemetry" template="Args175_0"/>
+        <event value="176" version="0" level="win:Verbose"  task="ESE_CacheSetLgposModify_Trace" keywords="BF BFRESMGR"/>
+        <event value="200" version="0" level="win:Verbose"  task="ESE_tagNull_Trace" keywords="JETTraceTag" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  task="ESE_tagInformation_Trace" keywords="JETTraceTag"/>
+        <event value="202" version="0" level="win:Informational"  task="ESE_tagErrors_Trace" keywords="JETTraceTag"/>
+        <event value="203" version="0" level="win:Error"  task="ESE_tagAsserts_Trace" keywords="JETTraceTag"/>
+        <event value="204" version="0" level="win:Verbose"  task="ESE_tagAPI_Trace" keywords="JETTraceTag"/>
+        <event value="205" version="0" level="win:Verbose"  task="ESE_tagInitTerm_Trace" keywords="JETTraceTag"/>
+        <event value="206" version="0" level="win:Verbose"  task="ESE_tagBufferManager_Trace" keywords="JETTraceTag"/>
+        <event value="207" version="0" level="win:Verbose"  task="ESE_tagBufferManagerHashedLatches_Trace" keywords="JETTraceTag"/>
+        <event value="208" version="0" level="win:Verbose"  task="ESE_tagIO_Trace" keywords="JETTraceTag"/>
+        <event value="209" version="0" level="win:Verbose"  task="ESE_tagMemory_Trace" keywords="JETTraceTag"/>
+        <event value="210" version="0" level="win:Verbose"  task="ESE_tagVersionStore_Trace" keywords="JETTraceTag"/>
+        <event value="211" version="0" level="win:Verbose"  task="ESE_tagVersionStoreOOM_Trace" keywords="JETTraceTag"/>
+        <event value="212" version="0" level="win:Verbose"  task="ESE_tagVersionCleanup_Trace" keywords="JETTraceTag"/>
+        <event value="213" version="0" level="win:Verbose"  task="ESE_tagCatalog_Trace" keywords="JETTraceTag"/>
+        <event value="214" version="0" level="win:Verbose"  task="ESE_tagDDLRead_Trace" keywords="JETTraceTag"/>
+        <event value="215" version="0" level="win:Verbose"  task="ESE_tagDDLWrite_Trace" keywords="JETTraceTag"/>
+        <event value="216" version="0" level="win:Verbose"  task="ESE_tagDMLRead_Trace" keywords="JETTraceTag"/>
+        <event value="217" version="0" level="win:Verbose"  task="ESE_tagDMLWrite_Trace" keywords="JETTraceTag"/>
+        <event value="218" version="0" level="win:Verbose"  task="ESE_tagDMLConflicts_Trace" keywords="JETTraceTag"/>
+        <event value="219" version="0" level="win:Verbose"  task="ESE_tagInstances_Trace" keywords="JETTraceTag"/>
+        <event value="220" version="0" level="win:Verbose"  task="ESE_tagDatabases_Trace" keywords="JETTraceTag"/>
+        <event value="221" version="0" level="win:Verbose"  task="ESE_tagSessions_Trace" keywords="JETTraceTag"/>
+        <event value="222" version="0" level="win:Verbose"  task="ESE_tagCursors_Trace" keywords="JETTraceTag"/>
+        <event value="223" version="0" level="win:Verbose"  task="ESE_tagCursorNavigation_Trace" keywords="JETTraceTag"/>
+        <event value="224" version="0" level="win:Verbose"  task="ESE_tagCursorPageRefs_Trace" keywords="JETTraceTag"/>
+        <event value="225" version="0" level="win:Verbose"  task="ESE_tagBtree_Trace" keywords="JETTraceTag"/>
+        <event value="226" version="0" level="win:Verbose"  task="ESE_tagSpace_Trace" keywords="JETTraceTag"/>
+        <event value="227" version="0" level="win:Verbose"  task="ESE_tagFCBs_Trace" keywords="JETTraceTag"/>
+        <event value="228" version="0" level="win:Verbose"  task="ESE_tagTransactions_Trace" keywords="JETTraceTag"/>
+        <event value="229" version="0" level="win:Verbose"  task="ESE_tagLogging_Trace" keywords="JETTraceTag"/>
+        <event value="230" version="0" level="win:Verbose"  task="ESE_tagRecovery_Trace" keywords="JETTraceTag"/>
+        <event value="231" version="0" level="win:Verbose"  task="ESE_tagBackup_Trace" keywords="JETTraceTag"/>
+        <event value="232" version="0" level="win:Verbose"  task="ESE_tagRestore_Trace" keywords="JETTraceTag"/>
+        <event value="233" version="0" level="win:Verbose"  task="ESE_tagOLD_Trace" keywords="JETTraceTag"/>
+        <event value="234" version="0" level="win:Verbose"  task="ESE_tagEventlog_Trace" keywords="JETTraceTag"/>
+        <event value="235" version="0" level="win:Verbose"  task="ESE_tagBufferManagerMaintTasks_Trace" keywords="JETTraceTag"/>
+        <event value="236" version="0" level="win:Verbose"  task="ESE_tagSpaceManagement_Trace" keywords="JETTraceTag"/>
+        <event value="237" version="0" level="win:Verbose"  task="ESE_tagSpaceInternal_Trace" keywords="JETTraceTag"/>
+        <event value="238" version="0" level="win:Verbose"  task="ESE_tagIOQueue_Trace" keywords="JETTraceTag"/>
+        <event value="239" version="0" level="win:Verbose"  task="ESE_tagDiskVolumeManagement_Trace" keywords="JETTraceTag"/>
+        <event value="240" version="0" level="win:Verbose"  task="ESE_tagCallbacks_Trace" keywords="JETTraceTag"/>
+        <event value="241" version="0" level="win:Error"  task="ESE_tagIOProblems_Trace" keywords="JETTraceTag"/>
+        <event value="242" version="0" level="win:Verbose"  task="ESE_tagUpgrade_Trace" keywords="JETTraceTag"/>
+        <event value="243" version="0" level="win:Verbose"  task="ESE_tagRecoveryValidation_Trace" keywords="JETTraceTag"/>
+        <event value="244" version="0" level="win:Verbose"  task="ESE_tagBufferManagerBufferCacheState_Trace" keywords="JETTraceTag"/>
+        <event value="245" version="0" level="win:Verbose"  task="ESE_tagBufferManagerBufferDirtyState_Trace" keywords="JETTraceTag"/>
+        <event value="246" version="0" level="win:Verbose"  task="ESE_tagTimerQueue_Trace" keywords="JETTraceTag"/>
+        <event value="247" version="0" level="win:Verbose"  task="ESE_tagSortPerf_Trace" keywords="JETTraceTag"/>
+        <event value="248" version="0" level="win:Verbose"  task="ESE_tagOLDRegistration_Trace" keywords="JETTraceTag"/>
+        <event value="249" version="0" level="win:Verbose"  task="ESE_tagOLDWork_Trace" keywords="JETTraceTag"/>
+        <event value="250" version="0" level="win:Verbose"  task="ESE_tagSysInitTerm_Trace" keywords="JETTraceTag"/>
+        <event value="251" version="0" level="win:Verbose"  task="ESE_tagVersionAndStagingChecks_Trace" keywords="JETTraceTag"/>
+        <event value="252" version="0" level="win:Verbose"  task="ESE_tagFile_Trace" keywords="JETTraceTag"/>
+        <event value="253" version="0" level="win:Verbose"  task="ESE_tagFlushFileBuffers_Trace" keywords="JETTraceTag"/>
+        <event value="254" version="0" level="win:Verbose"  task="ESE_tagCheckpointUpdate_Trace" keywords="JETTraceTag"/>
+        <event value="255" version="0" level="win:Verbose"  task="ESE_tagDiagnostics_Trace" keywords="JETTraceTag"/>
+        <event value="256" version="0" level="win:Verbose"  task="ESE_tagBlockCache_Trace" keywords="JETTraceTag"/>
+        <event value="257" version="0" level="win:Verbose"  task="ESE_tagRBS_Trace" keywords="JETTraceTag"/>
+        <event value="258" version="0" level="win:Verbose"  task="ESE_tagRBSCleaner_Trace" keywords="JETTraceTag"/>
+        <event value="5000" version="0" level="win:Verbose"  keywords="CompressExp" template="Args5000_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ESE/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-ESE/IODiagnose" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Error" mask="0x1" message="$(string.string4)" />
+        <keyword name="Performance" mask="0x2" message="$(string.string148)" />
+        <keyword name="Trace" mask="0x4" message="$(string.string155)" />
+        <keyword name="Transaction" mask="0x8" message="$(string.string156)" />
+        <keyword name="Space" mask="0x10" message="$(string.string149)" />
+        <keyword name="BF" mask="0x20" message="$(string.string0)" />
+        <keyword name="IO" mask="0x40" message="$(string.string140)" />
+        <keyword name="LOG" mask="0x80" message="$(string.string144)" />
+        <keyword name="Task" mask="0x100" message="$(string.string153)" />
+        <keyword name="Test" mask="0x200" message="$(string.string154)" />
+        <keyword name="BFRESMGR" mask="0x400" message="$(string.string1)" />
+        <keyword name="StationId" mask="0x800" message="$(string.string151)" />
+        <keyword name="JETTraceTag" mask="0x1000" message="$(string.string143)" />
+        <keyword name="StallLatencies" mask="0x2000" message="$(string.string150)" />
+        <keyword name="DataWorkingSet" mask="0x4000" message="$(string.string3)" />
+        <keyword name="IOEX" mask="0x8000" message="$(string.string141)" />
+        <keyword name="IOSESS" mask="0x10000" message="$(string.string142)" />
+        <keyword name="SubstrateTelemetry" mask="0x20000" message="$(string.string152)" />
+        <keyword name="CompressExp" mask="0x100000000" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="ESE_TraceBaseId_Trace" message="$(string.string1)">
+        </task>
+        <task value="2" name="ESE_BF_Trace" message="$(string.string2)">
+        </task>
+        <task value="3" name="ESE_Block_Trace" message="$(string.string3)">
+        </task>
+        <task value="4" name="ESE_CacheNewPage_Trace" message="$(string.string4)">
+        </task>
+        <task value="5" name="ESE_CacheReadPage_Trace" message="$(string.string5)">
+        </task>
+        <task value="6" name="ESE_CachePrereadPage_Trace" message="$(string.string6)">
+        </task>
+        <task value="7" name="ESE_CacheWritePage_Trace" message="$(string.string7)">
+        </task>
+        <task value="8" name="ESE_CacheEvictPage_Trace" message="$(string.string8)">
+        </task>
+        <task value="9" name="ESE_CacheRequestPage_Trace" message="$(string.string9)">
+        </task>
+        <task value="10" name="ESE_LatchPageDeprecated_Trace" message="$(string.string10)">
+        </task>
+        <task value="11" name="ESE_CacheDirtyPage_Trace" message="$(string.string11)">
+        </task>
+        <task value="12" name="ESE_TransactionBegin_Trace" message="$(string.string12)">
+        </task>
+        <task value="13" name="ESE_TransactionCommit_Trace" message="$(string.string13)">
+        </task>
+        <task value="14" name="ESE_TransactionRollback_Trace" message="$(string.string14)">
+        </task>
+        <task value="15" name="ESE_SpaceAllocExt_Trace" message="$(string.string15)">
+        </task>
+        <task value="16" name="ESE_SpaceFreeExt_Trace" message="$(string.string16)">
+        </task>
+        <task value="17" name="ESE_SpaceAllocPage_Trace" message="$(string.string17)">
+        </task>
+        <task value="18" name="ESE_SpaceFreePage_Trace" message="$(string.string18)">
+        </task>
+        <task value="19" name="ESE_IorunEnqueue_Trace" message="$(string.string19)">
+        </task>
+        <task value="20" name="ESE_IorunDequeue_Trace" message="$(string.string20)">
+        </task>
+        <task value="21" name="ESE_IOCompletion_Trace" message="$(string.string21)">
+        </task>
+        <task value="22" name="ESE_LogStall_Trace" message="$(string.string22)">
+        </task>
+        <task value="23" name="ESE_LogWrite_Trace" message="$(string.string23)">
+        </task>
+        <task value="24" name="ESE_EventLogInfo_Trace" message="$(string.string24)">
+        </task>
+        <task value="25" name="ESE_EventLogWarn_Trace" message="$(string.string25)">
+        </task>
+        <task value="26" name="ESE_EventLogError_Trace" message="$(string.string26)">
+        </task>
+        <task value="27" name="ESE_TimerQueueScheduleDeprecated_Trace" message="$(string.string27)">
+        </task>
+        <task value="28" name="ESE_TimerQueueRunDeprecated_Trace" message="$(string.string28)">
+        </task>
+        <task value="29" name="ESE_TimerQueueCancelDeprecated_Trace" message="$(string.string29)">
+        </task>
+        <task value="30" name="ESE_TimerTaskSchedule_Trace" message="$(string.string30)">
+        </task>
+        <task value="31" name="ESE_TimerTaskRun_Trace" message="$(string.string31)">
+        </task>
+        <task value="32" name="ESE_TimerTaskCancel_Trace" message="$(string.string32)">
+        </task>
+        <task value="33" name="ESE_TaskManagerPost_Trace" message="$(string.string33)">
+        </task>
+        <task value="34" name="ESE_TaskManagerRun_Trace" message="$(string.string34)">
+        </task>
+        <task value="35" name="ESE_GPTaskManagerPost_Trace" message="$(string.string35)">
+        </task>
+        <task value="36" name="ESE_GPTaskManagerRun_Trace" message="$(string.string36)">
+        </task>
+        <task value="37" name="ESE_TestMarker_Trace" message="$(string.string37)">
+        </task>
+        <task value="38" name="ESE_ThreadCreate_Trace" message="$(string.string38)">
+        </task>
+        <task value="39" name="ESE_ThreadStart_Trace" message="$(string.string39)">
+        </task>
+        <task value="40" name="ESE_CacheVersionPage_Trace" message="$(string.string40)">
+        </task>
+        <task value="41" name="ESE_CacheVersionCopyPage_Trace" message="$(string.string41)">
+        </task>
+        <task value="42" name="ESE_CacheResize_Trace" message="$(string.string42)">
+        </task>
+        <task value="43" name="ESE_CacheLimitResize_Trace" message="$(string.string43)">
+        </task>
+        <task value="44" name="ESE_CacheScavengeProgress_Trace" message="$(string.string44)">
+        </task>
+        <task value="45" name="ESE_ApiCall_Trace" message="$(string.string45)">
+        </task>
+        <task value="46" name="ESE_ResMgrInit_Trace" message="$(string.string46)">
+        </task>
+        <task value="47" name="ESE_ResMgrTerm_Trace" message="$(string.string47)">
+        </task>
+        <task value="48" name="ESE_CacheCachePage_Trace" message="$(string.string48)">
+        </task>
+        <task value="49" name="ESE_MarkPageAsSuperCold_Trace" message="$(string.string49)">
+        </task>
+        <task value="50" name="ESE_CacheMissLatency_Trace" message="$(string.string50)">
+        </task>
+        <task value="51" name="ESE_BTreePrereadPageRequest_Trace" message="$(string.string51)">
+        </task>
+        <task value="52" name="ESE_DiskFlushFileBuffers_Trace" message="$(string.string52)">
+        </task>
+        <task value="53" name="ESE_DiskFlushFileBuffersBegin_Trace" message="$(string.string53)">
+        </task>
+        <task value="54" name="ESE_CacheFirstDirtyPage_Trace" message="$(string.string54)">
+        </task>
+        <task value="55" name="ESE_SysStationId_Trace" message="$(string.string55)">
+        </task>
+        <task value="56" name="ESE_InstStationId_Trace" message="$(string.string56)">
+        </task>
+        <task value="57" name="ESE_FmpStationId_Trace" message="$(string.string57)">
+        </task>
+        <task value="58" name="ESE_DiskStationId_Trace" message="$(string.string58)">
+        </task>
+        <task value="59" name="ESE_FileStationId_Trace" message="$(string.string59)">
+        </task>
+        <task value="60" name="ESE_IsamDbfilehdrInfo_Trace" message="$(string.string60)">
+        </task>
+        <task value="61" name="ESE_DiskOsDiskCacheInfo_Trace" message="$(string.string61)">
+        </task>
+        <task value="62" name="ESE_DiskOsStorageWriteCacheProp_Trace" message="$(string.string62)">
+        </task>
+        <task value="63" name="ESE_DiskOsDeviceSeekPenaltyDesc_Trace" message="$(string.string63)">
+        </task>
+        <task value="64" name="ESE_DirtyPage2Deprecated_Trace" message="$(string.string64)">
+        </task>
+        <task value="65" name="ESE_IOCompletion2_Trace" message="$(string.string65)">
+        </task>
+        <task value="66" name="ESE_FCBPurgeFailure_Trace" message="$(string.string66)">
+        </task>
+        <task value="67" name="ESE_IOLatencySpikeNotice_Trace" message="$(string.string67)">
+        </task>
+        <task value="68" name="ESE_IOCompletion2Sess_Trace" message="$(string.string68)">
+        </task>
+        <task value="69" name="ESE_IOIssueThreadPost_Trace" message="$(string.string69)">
+        </task>
+        <task value="70" name="ESE_IOIssueThreadPosted_Trace" message="$(string.string70)">
+        </task>
+        <task value="71" name="ESE_IOThreadIssueStart_Trace" message="$(string.string71)">
+        </task>
+        <task value="72" name="ESE_IOThreadIssuedDisk_Trace" message="$(string.string72)">
+        </task>
+        <task value="73" name="ESE_IOThreadIssueProcessedIO_Trace" message="$(string.string73)">
+        </task>
+        <task value="74" name="ESE_IOIoreqCompletion_Trace" message="$(string.string74)">
+        </task>
+        <task value="75" name="ESE_CacheMemoryUsage_Trace" message="$(string.string75)">
+        </task>
+        <task value="76" name="ESE_CacheSetLgposModify_Trace" message="$(string.string76)">
+        </task>
+        <task value="100" name="ESE_tagNull_Trace" message="$(string.string100)">
+        </task>
+        <task value="101" name="ESE_tagInformation_Trace" message="$(string.string101)">
+        </task>
+        <task value="102" name="ESE_tagErrors_Trace" message="$(string.string102)">
+        </task>
+        <task value="103" name="ESE_tagAsserts_Trace" message="$(string.string103)">
+        </task>
+        <task value="104" name="ESE_tagAPI_Trace" message="$(string.string104)">
+        </task>
+        <task value="105" name="ESE_tagInitTerm_Trace" message="$(string.string105)">
+        </task>
+        <task value="106" name="ESE_tagBufferManager_Trace" message="$(string.string106)">
+        </task>
+        <task value="107" name="ESE_tagBufferManagerHashedLatches_Trace" message="$(string.string107)">
+        </task>
+        <task value="108" name="ESE_tagIO_Trace" message="$(string.string108)">
+        </task>
+        <task value="109" name="ESE_tagMemory_Trace" message="$(string.string109)">
+        </task>
+        <task value="110" name="ESE_tagVersionStore_Trace" message="$(string.string110)">
+        </task>
+        <task value="111" name="ESE_tagVersionStoreOOM_Trace" message="$(string.string111)">
+        </task>
+        <task value="112" name="ESE_tagVersionCleanup_Trace" message="$(string.string112)">
+        </task>
+        <task value="113" name="ESE_tagCatalog_Trace" message="$(string.string113)">
+        </task>
+        <task value="114" name="ESE_tagDDLRead_Trace" message="$(string.string114)">
+        </task>
+        <task value="115" name="ESE_tagDDLWrite_Trace" message="$(string.string115)">
+        </task>
+        <task value="116" name="ESE_tagDMLRead_Trace" message="$(string.string116)">
+        </task>
+        <task value="117" name="ESE_tagDMLWrite_Trace" message="$(string.string117)">
+        </task>
+        <task value="118" name="ESE_tagDMLConflicts_Trace" message="$(string.string118)">
+        </task>
+        <task value="119" name="ESE_tagInstances_Trace" message="$(string.string119)">
+        </task>
+        <task value="120" name="ESE_tagDatabases_Trace" message="$(string.string120)">
+        </task>
+        <task value="121" name="ESE_tagSessions_Trace" message="$(string.string121)">
+        </task>
+        <task value="122" name="ESE_tagCursors_Trace" message="$(string.string122)">
+        </task>
+        <task value="123" name="ESE_tagCursorNavigation_Trace" message="$(string.string123)">
+        </task>
+        <task value="124" name="ESE_tagCursorPageRefs_Trace" message="$(string.string124)">
+        </task>
+        <task value="125" name="ESE_tagBtree_Trace" message="$(string.string125)">
+        </task>
+        <task value="126" name="ESE_tagSpace_Trace" message="$(string.string126)">
+        </task>
+        <task value="127" name="ESE_tagFCBs_Trace" message="$(string.string127)">
+        </task>
+        <task value="128" name="ESE_tagTransactions_Trace" message="$(string.string128)">
+        </task>
+        <task value="129" name="ESE_tagLogging_Trace" message="$(string.string129)">
+        </task>
+        <task value="130" name="ESE_tagRecovery_Trace" message="$(string.string130)">
+        </task>
+        <task value="131" name="ESE_tagBackup_Trace" message="$(string.string131)">
+        </task>
+        <task value="132" name="ESE_tagRestore_Trace" message="$(string.string132)">
+        </task>
+        <task value="133" name="ESE_tagOLD_Trace" message="$(string.string133)">
+        </task>
+        <task value="134" name="ESE_tagEventlog_Trace" message="$(string.string134)">
+        </task>
+        <task value="135" name="ESE_tagBufferManagerMaintTasks_Trace" message="$(string.string135)">
+        </task>
+        <task value="136" name="ESE_tagSpaceManagement_Trace" message="$(string.string136)">
+        </task>
+        <task value="137" name="ESE_tagSpaceInternal_Trace" message="$(string.string137)">
+        </task>
+        <task value="138" name="ESE_tagIOQueue_Trace" message="$(string.string138)">
+        </task>
+        <task value="139" name="ESE_tagDiskVolumeManagement_Trace" message="$(string.string139)">
+        </task>
+        <task value="140" name="ESE_tagCallbacks_Trace" message="$(string.string140)">
+        </task>
+        <task value="141" name="ESE_tagIOProblems_Trace" message="$(string.string141)">
+        </task>
+        <task value="142" name="ESE_tagUpgrade_Trace" message="$(string.string142)">
+        </task>
+        <task value="143" name="ESE_tagRecoveryValidation_Trace" message="$(string.string143)">
+        </task>
+        <task value="144" name="ESE_tagBufferManagerBufferCacheState_Trace" message="$(string.string144)">
+        </task>
+        <task value="145" name="ESE_tagBufferManagerBufferDirtyState_Trace" message="$(string.string145)">
+        </task>
+        <task value="146" name="ESE_tagTimerQueue_Trace" message="$(string.string146)">
+        </task>
+        <task value="147" name="ESE_tagSortPerf_Trace" message="$(string.string147)">
+        </task>
+        <task value="148" name="ESE_tagOLDRegistration_Trace" message="$(string.string148)">
+        </task>
+        <task value="149" name="ESE_tagOLDWork_Trace" message="$(string.string149)">
+        </task>
+        <task value="150" name="ESE_tagSysInitTerm_Trace" message="$(string.string150)">
+        </task>
+        <task value="151" name="ESE_tagVersionAndStagingChecks_Trace" message="$(string.string151)">
+        </task>
+        <task value="152" name="ESE_tagFile_Trace" message="$(string.string152)">
+        </task>
+        <task value="153" name="ESE_tagFlushFileBuffers_Trace" message="$(string.string153)">
+        </task>
+        <task value="154" name="ESE_tagCheckpointUpdate_Trace" message="$(string.string154)">
+        </task>
+        <task value="155" name="ESE_tagDiagnostics_Trace" message="$(string.string155)">
+        </task>
+        <task value="156" name="ESE_tagBlockCache_Trace" message="$(string.string156)">
+        </task>
+        <task value="157" name="ESE_tagRBS_Trace" message="$(string.string157)">
+        </task>
+        <task value="158" name="ESE_tagRBSCleaner_Trace" message="$(string.string158)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args103_0">
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="dbtimeDirtied" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="itagMicFree" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="cbFree" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DirtyLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fCurrentVersion" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="errBF" inType="win:Int32" outType="xs:int"  />
+          <data name="bfef" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="pctPriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args108_0">
+          <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bflf" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="bflt" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pctPriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bfrtf" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args110_0">
+          <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DirtyLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LgposModify" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="UserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args111_0">
+          <data name="SessionNumber" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TransactionNumber" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TransactionLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgnoFirst" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cpg" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args116_0">
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgnoAlloc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args117_0">
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgnoFree" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args118_0">
+          <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cbData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fHeapA" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fWrite" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EngineFileType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EngineFileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cusecEnqueueLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cbData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fHeapA" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fWrite" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Iorp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Iors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Ioru" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Iorf" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="grbitQos" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="cmsecTimeInQueue" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="EngineFileType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EngineFileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cDispatchPass" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cIorunCombined" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="cusecDequeueLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args120_0">
+          <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="fMultiIor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fWrite" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cbTransfer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="error" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="qosHighestFirst" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="cmsecIOElapsed" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dtickQueueDelay" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EngineFileType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EngineFileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="fmfFile" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEngineObjid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="qosIOComplete" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args122_0">
+          <data name="lgenData" inType="win:Int32" outType="xs:int"  />
+          <data name="ibLogData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cbLogData" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args123_0">
+          <data name="szTrace" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args129_0">
+          <data name="posttTimerHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pvTaskGroupContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pvRuntimeContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dtickMinDelay" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dtickSlopDelay" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="posttTimerHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pvTaskGroupContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pvRuntimeContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="cRuns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args132_0">
+          <data name="ptm" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwCompletionKey1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwCompletionKey2" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args133_0">
+          <data name="ptm" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwCompletionKey1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwCompletionKey2" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="gle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwThreadContext" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args134_0">
+          <data name="pgptm" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pvParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pTaskInfo" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args136_0">
+          <data name="qwMarkerID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="szAnnotation" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args137_0">
+          <data name="Thread" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnStart" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwParam" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="cbfCacheAddressableInitial" inType="win:Int64" outType="xs:long"  />
+          <data name="cbfCacheSizeInitial" inType="win:Int64" outType="xs:long"  />
+          <data name="cbfCacheAddressableFinal" inType="win:Int64" outType="xs:long"  />
+          <data name="cbfCacheSizeFinal" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args142_0">
+          <data name="cbfCacheSizeLimitInitial" inType="win:Int64" outType="xs:long"  />
+          <data name="cbfCacheSizeLimitFinal" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args143_0">
+          <data name="iRun" inType="win:Int64" outType="xs:long"  />
+          <data name="cbfVisited" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfCacheSize" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfCacheTarget" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfCacheSizeStartShrink" inType="win:Int32" outType="xs:int"  />
+          <data name="dtickShrinkDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cbfAvail" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfAvailPoolLow" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfAvailPoolHigh" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfFlushPending" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfFlushPendingSlow" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfFlushPendingHung" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfOutOfMemory" inType="win:Int32" outType="xs:int"  />
+          <data name="cbfPermanentErrs" inType="win:Int32" outType="xs:int"  />
+          <data name="eStopReason" inType="win:Int32" outType="xs:int"  />
+          <data name="errRun" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args144_0">
+          <data name="opApi" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args145_0">
+          <data name="opApi" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="err" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args146_0">
+          <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="K" inType="win:Int32" outType="xs:int"  />
+          <data name="csecCorrelatedTouch" inType="win:Double" outType="xs:double"  />
+          <data name="csecTimeout" inType="win:Double" outType="xs:double"  />
+          <data name="csecUncertainty" inType="win:Double" outType="xs:double"  />
+          <data name="dblHashLoadFactor" inType="win:Double" outType="xs:double"  />
+          <data name="dblHashUniformity" inType="win:Double" outType="xs:double"  />
+          <data name="dblSpeedSizeTradeoff" inType="win:Double" outType="xs:double"  />
+        </template>
+        <template tid="Args150_0">
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="usecsWait" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="bftcmr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bUserPriorityTag" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="fOpFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args152_0">
+          <data name="Disk" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wszFileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="iofr" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cioreqFileFlushing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="usFfb" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args153_0">
+          <data name="dwDisk" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="iofr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args154_0">
+          <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="bfdfNew" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="lgposModify" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args155_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="dwImageVerMajor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwImageVerMinor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwImageBuildMajor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwImageBuildMinor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wszDisplayName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iInstance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="perfstatusEvent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="wszInstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wszDisplayName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="iInstance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dbid" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="wszDatabaseName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args158_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wszDiskPathId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="szDiskModel" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szDiskFirmwareRev" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szDiskSerialNumber" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args159_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="hFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEngineFileType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="qwEngineFileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="fmf" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cbFileSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="wszAbsPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="filetype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ulMagic" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ulChecksum" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cbPageSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ulDbFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="psignDb" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args161_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="posdci" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args162_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="posswcp" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args163_0">
+          <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="posdspd" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args165_0">
+          <data name="wszFilename" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fMultiIor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fWrite" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iorf" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="szClientComponent" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szClientAction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szClientActionContext" inType="win:AnsiString" outType="xs:string"  />
+          <data name="guidActivityId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cbTransfer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwError" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="qosHighestFirst" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="cmsecIOElapsed" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dtickQueueDelay" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEngineFileType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEngineFileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="fmfFile" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEngineObjid" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args166_0">
+          <data name="iInstance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grbitPurgeFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="fcbpfr" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args167_0">
+          <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dtickSpikeLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args169_0">
+          <data name="p_osf" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="cioDiskEnqueued" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args170_0">
+          <data name="p_osf" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="cDispatchAttempts" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="usPosted" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args172_0">
+          <data name="dwDiskId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fFromCompletion" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ipass" inType="win:Int64" outType="xs:long"  />
+          <data name="err" inType="win:Int32" outType="xs:int"  />
+          <data name="cioProcessed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="usRuntime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args173_0">
+          <data name="err" inType="win:Int32" outType="xs:int"  />
+          <data name="cDisksProcessed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="usRuntime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args174_0">
+          <data name="fWrite" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cbData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="qos" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="iIoreq" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="err" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="usCompletionDelay" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args175_0">
+          <data name="wszFilename" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="dwEngineFileType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEngineFileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cbMemory" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cmsecReferenceIntervalMax" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cbDirty" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="szTrace" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args5000_0">
+          <data name="TableClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OrigSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="XpressSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Xpress9Size" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="usecXpressTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="usecXpress9Time" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShannonEntropy" inType="win:Double" outType="xs:double"  />
+          <data name="ChiSquared" inType="win:Double" outType="xs:double"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="BF" />
+       <string id="string1" value="BFRESMGR" />
+       <string id="string2" value="CompressExp" />
+       <string id="string3" value="DataWorkingSet" />
+       <string id="string4" value="Error" />
+       <string id="string5" value="ESE_ApiCall_Trace" />
+       <string id="string6" value="ESE_BF_Trace" />
+       <string id="string7" value="ESE_Block_Trace" />
+       <string id="string8" value="ESE_BTreePrereadPageRequest_Trace" />
+       <string id="string9" value="ESE_CacheCachePage_Trace" />
+       <string id="string10" value="ESE_CacheDirtyPage_Trace" />
+       <string id="string11" value="ESE_CacheEvictPage_Trace" />
+       <string id="string12" value="ESE_CacheFirstDirtyPage_Trace" />
+       <string id="string13" value="ESE_CacheLimitResize_Trace" />
+       <string id="string14" value="ESE_CacheMemoryUsage_Trace" />
+       <string id="string15" value="ESE_CacheMissLatency_Trace" />
+       <string id="string16" value="ESE_CacheNewPage_Trace" />
+       <string id="string17" value="ESE_CachePrereadPage_Trace" />
+       <string id="string18" value="ESE_CacheReadPage_Trace" />
+       <string id="string19" value="ESE_CacheRequestPage_Trace" />
+       <string id="string20" value="ESE_CacheResize_Trace" />
+       <string id="string21" value="ESE_CacheScavengeProgress_Trace" />
+       <string id="string22" value="ESE_CacheSetLgposModify_Trace" />
+       <string id="string23" value="ESE_CacheVersionCopyPage_Trace" />
+       <string id="string24" value="ESE_CacheVersionPage_Trace" />
+       <string id="string25" value="ESE_CacheWritePage_Trace" />
+       <string id="string26" value="ESE_DirtyPage2Deprecated_Trace" />
+       <string id="string27" value="ESE_DiskFlushFileBuffers_Trace" />
+       <string id="string28" value="ESE_DiskFlushFileBuffersBegin_Trace" />
+       <string id="string29" value="ESE_DiskOsDeviceSeekPenaltyDesc_Trace" />
+       <string id="string30" value="ESE_DiskOsDiskCacheInfo_Trace" />
+       <string id="string31" value="ESE_DiskOsStorageWriteCacheProp_Trace" />
+       <string id="string32" value="ESE_DiskStationId_Trace" />
+       <string id="string33" value="ESE_EventLogError_Trace" />
+       <string id="string34" value="ESE_EventLogInfo_Trace" />
+       <string id="string35" value="ESE_EventLogWarn_Trace" />
+       <string id="string36" value="ESE_FCBPurgeFailure_Trace" />
+       <string id="string37" value="ESE_FileStationId_Trace" />
+       <string id="string38" value="ESE_FmpStationId_Trace" />
+       <string id="string39" value="ESE_GPTaskManagerPost_Trace" />
+       <string id="string40" value="ESE_GPTaskManagerRun_Trace" />
+       <string id="string41" value="ESE_InstStationId_Trace" />
+       <string id="string42" value="ESE_IOCompletion_Trace" />
+       <string id="string43" value="ESE_IOCompletion2_Trace" />
+       <string id="string44" value="ESE_IOCompletion2Sess_Trace" />
+       <string id="string45" value="ESE_IOIoreqCompletion_Trace" />
+       <string id="string46" value="ESE_IOIssueThreadPost_Trace" />
+       <string id="string47" value="ESE_IOIssueThreadPosted_Trace" />
+       <string id="string48" value="ESE_IOLatencySpikeNotice_Trace" />
+       <string id="string49" value="ESE_IorunDequeue_Trace" />
+       <string id="string50" value="ESE_IorunEnqueue_Trace" />
+       <string id="string51" value="ESE_IOThreadIssuedDisk_Trace" />
+       <string id="string52" value="ESE_IOThreadIssueProcessedIO_Trace" />
+       <string id="string53" value="ESE_IOThreadIssueStart_Trace" />
+       <string id="string54" value="ESE_IsamDbfilehdrInfo_Trace" />
+       <string id="string55" value="ESE_LatchPageDeprecated_Trace" />
+       <string id="string56" value="ESE_LogStall_Trace" />
+       <string id="string57" value="ESE_LogWrite_Trace" />
+       <string id="string58" value="ESE_MarkPageAsSuperCold_Trace" />
+       <string id="string59" value="ESE_ResMgrInit_Trace" />
+       <string id="string60" value="ESE_ResMgrTerm_Trace" />
+       <string id="string61" value="ESE_SpaceAllocExt_Trace" />
+       <string id="string62" value="ESE_SpaceAllocPage_Trace" />
+       <string id="string63" value="ESE_SpaceFreeExt_Trace" />
+       <string id="string64" value="ESE_SpaceFreePage_Trace" />
+       <string id="string65" value="ESE_SysStationId_Trace" />
+       <string id="string66" value="ESE_tagAPI_Trace" />
+       <string id="string67" value="ESE_tagAsserts_Trace" />
+       <string id="string68" value="ESE_tagBackup_Trace" />
+       <string id="string69" value="ESE_tagBlockCache_Trace" />
+       <string id="string70" value="ESE_tagBtree_Trace" />
+       <string id="string71" value="ESE_tagBufferManager_Trace" />
+       <string id="string72" value="ESE_tagBufferManagerBufferCacheState_Trace" />
+       <string id="string73" value="ESE_tagBufferManagerBufferDirtyState_Trace" />
+       <string id="string74" value="ESE_tagBufferManagerHashedLatches_Trace" />
+       <string id="string75" value="ESE_tagBufferManagerMaintTasks_Trace" />
+       <string id="string76" value="ESE_tagCallbacks_Trace" />
+       <string id="string77" value="ESE_tagCatalog_Trace" />
+       <string id="string78" value="ESE_tagCheckpointUpdate_Trace" />
+       <string id="string79" value="ESE_tagCursorNavigation_Trace" />
+       <string id="string80" value="ESE_tagCursorPageRefs_Trace" />
+       <string id="string81" value="ESE_tagCursors_Trace" />
+       <string id="string82" value="ESE_tagDatabases_Trace" />
+       <string id="string83" value="ESE_tagDDLRead_Trace" />
+       <string id="string84" value="ESE_tagDDLWrite_Trace" />
+       <string id="string85" value="ESE_tagDiagnostics_Trace" />
+       <string id="string86" value="ESE_tagDiskVolumeManagement_Trace" />
+       <string id="string87" value="ESE_tagDMLConflicts_Trace" />
+       <string id="string88" value="ESE_tagDMLRead_Trace" />
+       <string id="string89" value="ESE_tagDMLWrite_Trace" />
+       <string id="string90" value="ESE_tagErrors_Trace" />
+       <string id="string91" value="ESE_tagEventlog_Trace" />
+       <string id="string92" value="ESE_tagFCBs_Trace" />
+       <string id="string93" value="ESE_tagFile_Trace" />
+       <string id="string94" value="ESE_tagFlushFileBuffers_Trace" />
+       <string id="string95" value="ESE_tagInformation_Trace" />
+       <string id="string96" value="ESE_tagInitTerm_Trace" />
+       <string id="string97" value="ESE_tagInstances_Trace" />
+       <string id="string98" value="ESE_tagIO_Trace" />
+       <string id="string99" value="ESE_tagIOProblems_Trace" />
+       <string id="string100" value="ESE_tagIOQueue_Trace" />
+       <string id="string101" value="ESE_tagLogging_Trace" />
+       <string id="string102" value="ESE_tagMemory_Trace" />
+       <string id="string103" value="ESE_tagNull_Trace" />
+       <string id="string104" value="ESE_tagOLD_Trace" />
+       <string id="string105" value="ESE_tagOLDRegistration_Trace" />
+       <string id="string106" value="ESE_tagOLDWork_Trace" />
+       <string id="string107" value="ESE_tagRBS_Trace" />
+       <string id="string108" value="ESE_tagRBSCleaner_Trace" />
+       <string id="string109" value="ESE_tagRecovery_Trace" />
+       <string id="string110" value="ESE_tagRecoveryValidation_Trace" />
+       <string id="string111" value="ESE_tagRestore_Trace" />
+       <string id="string112" value="ESE_tagSessions_Trace" />
+       <string id="string113" value="ESE_tagSortPerf_Trace" />
+       <string id="string114" value="ESE_tagSpace_Trace" />
+       <string id="string115" value="ESE_tagSpaceInternal_Trace" />
+       <string id="string116" value="ESE_tagSpaceManagement_Trace" />
+       <string id="string117" value="ESE_tagSysInitTerm_Trace" />
+       <string id="string118" value="ESE_tagTimerQueue_Trace" />
+       <string id="string119" value="ESE_tagTransactions_Trace" />
+       <string id="string120" value="ESE_tagUpgrade_Trace" />
+       <string id="string121" value="ESE_tagVersionAndStagingChecks_Trace" />
+       <string id="string122" value="ESE_tagVersionCleanup_Trace" />
+       <string id="string123" value="ESE_tagVersionStore_Trace" />
+       <string id="string124" value="ESE_tagVersionStoreOOM_Trace" />
+       <string id="string125" value="ESE_TaskManagerPost_Trace" />
+       <string id="string126" value="ESE_TaskManagerRun_Trace" />
+       <string id="string127" value="ESE_TestMarker_Trace" />
+       <string id="string128" value="ESE_ThreadCreate_Trace" />
+       <string id="string129" value="ESE_ThreadStart_Trace" />
+       <string id="string130" value="ESE_TimerQueueCancelDeprecated_Trace" />
+       <string id="string131" value="ESE_TimerQueueRunDeprecated_Trace" />
+       <string id="string132" value="ESE_TimerQueueScheduleDeprecated_Trace" />
+       <string id="string133" value="ESE_TimerTaskCancel_Trace" />
+       <string id="string134" value="ESE_TimerTaskRun_Trace" />
+       <string id="string135" value="ESE_TimerTaskSchedule_Trace" />
+       <string id="string136" value="ESE_TraceBaseId_Trace" />
+       <string id="string137" value="ESE_TransactionBegin_Trace" />
+       <string id="string138" value="ESE_TransactionCommit_Trace" />
+       <string id="string139" value="ESE_TransactionRollback_Trace" />
+       <string id="string140" value="IO" />
+       <string id="string141" value="IOEX" />
+       <string id="string142" value="IOSESS" />
+       <string id="string143" value="JETTraceTag" />
+       <string id="string144" value="LOG" />
+       <string id="string145" value="Microsoft-Windows-ESE" />
+       <string id="string146" value="Microsoft-Windows-ESE/IODiagnose" />
+       <string id="string147" value="Microsoft-Windows-ESE/Operational" />
+       <string id="string148" value="Performance" />
+       <string id="string149" value="Space" />
+       <string id="string150" value="StallLatencies" />
+       <string id="string151" value="StationId" />
+       <string id="string152" value="SubstrateTelemetry" />
+       <string id="string153" value="Task" />
+       <string id="string154" value="Test" />
+       <string id="string155" value="Trace" />
+       <string id="string156" value="Transaction" />
+       <string id="string157" value="win:Start" />
+       <string id="string158" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

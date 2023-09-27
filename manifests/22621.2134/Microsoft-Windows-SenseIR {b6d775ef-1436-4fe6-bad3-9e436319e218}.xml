@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SenseIR" name="Microsoft-Windows-SenseIR" guid="{b6d775ef-1436-4fe6-bad3-9e436319e218}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info" template="Args5_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="8" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="9" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="10" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="12" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="13" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info"/>
+        <event value="15" version="0" level="win:Warning"  channel="Microsoft-Windows-SenseIR/Operational" opcode="win:Info" template="Args15_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SenseIR/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="Trigger" mask="0x8" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ActionType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActionId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="ActionType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="ActionType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActionPhase" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-SenseIR" />
+       <string id="string1" value="Microsoft-Windows-SenseIR/Operational" />
+       <string id="string2" value="Trigger" />
+       <string id="string3" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

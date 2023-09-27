@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TPM-WMI" name="Microsoft-Windows-TPM-WMI" guid="{7d5387b0-cbe0-11da-a94d-0800200c9a66}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="513" version="0" level="win:Informational"  channel="System"/>
+        <event value="514" version="0" level="win:Warning"  channel="System" template="Args514_0"/>
+        <event value="515" version="0" level="win:Warning"  channel="System"/>
+        <event value="516" version="0" level="win:Informational"  channel="System"/>
+        <event value="517" version="0" level="win:Warning"  channel="System" template="Args517_0"/>
+        <event value="518" version="0" level="win:Informational"  channel="System"/>
+        <event value="519" version="0" level="win:Informational"  channel="System" template="Args519_0"/>
+        <event value="769" version="0" level="win:Informational"  channel="System" template="Args769_0"/>
+        <event value="1025" version="0" level="win:Informational"  channel="System"/>
+        <event value="1026" version="0" level="win:Informational"  channel="System" template="Args1026_0"/>
+        <event value="1027" version="0" level="win:Informational"  channel="System"/>
+        <event value="1028" version="0" level="win:Informational"  channel="System"/>
+        <event value="1029" version="0" level="win:Informational"  channel="System"/>
+        <event value="1030" version="0" level="win:Informational"  channel="System"/>
+        <event value="1031" version="0" level="win:Informational"  channel="System"/>
+        <event value="1032" version="0" level="win:Error"  channel="System"/>
+        <event value="1033" version="0" level="win:Error"  channel="System" template="Args1033_0"/>
+        <event value="1034" version="0" level="win:Informational"  channel="System"/>
+        <event value="1035" version="0" level="win:Informational"  channel="System"/>
+        <event value="1281" version="0" level="win:Informational"  channel="System"/>
+        <event value="1282" version="0" level="win:Informational"  channel="System"/>
+        <event value="1537" version="0" level="win:Informational"  channel="System" template="Args1537_0"/>
+        <event value="1538" version="0" level="win:Warning"  channel="System" template="Args1538_0"/>
+        <event value="1539" version="0" level="win:Warning"  channel="System" template="Args1539_0"/>
+        <event value="1793" version="0" level="win:Informational"  channel="System"/>
+        <event value="1794" version="0" level="win:Error"  channel="System"/>
+        <event value="1795" version="0" level="win:Error"  channel="System"/>
+        <event value="1796" version="0" level="win:Error"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args514_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args517_0">
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args519_0">
+          <data name="ClearReason" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args769_0">
+          <data name="Old OS Managed Auth Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="New OS Managed Auth Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1026_0">
+          <data name="Error Code" inType="win:Int32" outType="win:HResult"  />
+          <data name="Status Information" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1033_0">
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1537_0">
+          <data name="Health Attestation Server" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1538_0">
+          <data name="Health Attestation Server" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args1539_0">
+          <data name="Health Attestation Server" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HTTP Status" inType="win:Int32" outType="xs:int"  />
+          <data name="Server Response" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-TPM-WMI" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

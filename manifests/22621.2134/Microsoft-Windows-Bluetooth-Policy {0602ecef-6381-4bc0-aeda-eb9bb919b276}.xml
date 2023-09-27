@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Bluetooth-Policy" name="Microsoft-Windows-Bluetooth-Policy" guid="{0602ecef-6381-4bc0-aeda-eb9bb919b276}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-Policy/Operational" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Bluetooth-Policy/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyValue" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyState" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyState" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RadioName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="BtAddr" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Service" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="Accepted" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ServiceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BtAddr" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="Accepted" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Psm" inType="win:Int16" outType="xs:short"  />
+          <data name="BtAddr" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PolicyPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="bthAddr" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="bthAddr" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="requiredKeySize" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="actualKeySize" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Bluetooth-Policy" />
+       <string id="string1" value="Microsoft-Windows-Bluetooth-Policy/Operational" />
+       <string id="string2" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

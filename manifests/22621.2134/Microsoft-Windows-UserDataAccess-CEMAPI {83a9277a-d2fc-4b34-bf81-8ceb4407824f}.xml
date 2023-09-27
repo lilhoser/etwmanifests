@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UserDataAccess-CEMAPI" name="Microsoft-Windows-UserDataAccess-CEMAPI" guid="{83a9277a-d2fc-4b34-bf81-8ceb4407824f}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  keywords="Error" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="3" version="0" level="win:Verbose"  task="tracemessage" keywords="debug" template="Args3_0"/>
+        <event value="4011" version="0" level="win:Verbose"  task="FOLDER_EMPTYFOLDER" opcode="win:Start" keywords="Performance"/>
+        <event value="4012" version="0" level="win:Verbose"  task="FOLDER_EMPTYFOLDER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4013" version="0" level="win:Verbose"  task="FOLDER_CREATEMESSAGE" opcode="win:Start" keywords="Performance"/>
+        <event value="4014" version="0" level="win:Verbose"  task="FOLDER_CREATEMESSAGE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4015" version="0" level="win:Verbose"  task="FOLDER_DELETEMESSAGES" opcode="win:Start" keywords="Performance"/>
+        <event value="4016" version="0" level="win:Verbose"  task="FOLDER_DELETEMESSAGES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4017" version="0" level="win:Verbose"  task="FOLDER_COPYMESSAGES" opcode="win:Start" keywords="Performance"/>
+        <event value="4018" version="0" level="win:Verbose"  task="FOLDER_COPYMESSAGES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4019" version="0" level="win:Verbose"  task="FOLDER_GETHIERARCHYTABLE" opcode="win:Start" keywords="Performance"/>
+        <event value="4020" version="0" level="win:Verbose"  task="FOLDER_GETHIERARCHYTABLE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4021" version="0" level="win:Verbose"  task="FOLDER_GETCONTENTSTABLE" opcode="win:Start" keywords="Performance"/>
+        <event value="4022" version="0" level="win:Verbose"  task="FOLDER_GETCONTENTSTABLE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4023" version="0" level="win:Verbose"  task="FOLDER_DELETEFOLDER" opcode="win:Start" keywords="Performance"/>
+        <event value="4024" version="0" level="win:Verbose"  task="FOLDER_DELETEFOLDER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4025" version="0" level="win:Verbose"  task="FOLDER_COPYFOLDER" opcode="win:Start" keywords="Performance"/>
+        <event value="4026" version="0" level="win:Verbose"  task="FOLDER_COPYFOLDER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4027" version="0" level="win:Verbose"  task="FOLDER_CREATEFOLDER" opcode="win:Start" keywords="Performance"/>
+        <event value="4028" version="0" level="win:Verbose"  task="FOLDER_CREATEFOLDER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4100" version="0" level="win:Verbose"  task="QUERYROWS_ATTACHMENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4101" version="0" level="win:Verbose"  task="QUERYROWS_ATTACHMENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4102" version="0" level="win:Verbose"  task="QUERYROWS_RECIPIENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4103" version="0" level="win:Verbose"  task="QUERYROWS_RECIPIENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4104" version="0" level="win:Verbose"  task="QUERYROWS_FOLDERCONTENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4105" version="0" level="win:Verbose"  task="QUERYROWS_FOLDERCONTENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4106" version="0" level="win:Verbose"  task="QUERYROWS_FOLDERHIERARCHY" opcode="win:Start" keywords="Performance"/>
+        <event value="4107" version="0" level="win:Verbose"  task="QUERYROWS_FOLDERHIERARCHY" opcode="win:Stop" keywords="Performance"/>
+        <event value="4108" version="0" level="win:Verbose"  task="QUERYROWS_SEARCHFOLDER" opcode="win:Start" keywords="Performance"/>
+        <event value="4109" version="0" level="win:Verbose"  task="QUERYROWS_SEARCHFOLDER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4110" version="0" level="win:Verbose"  task="QUERYROWS_STORES" opcode="win:Start" keywords="Performance"/>
+        <event value="4111" version="0" level="win:Verbose"  task="QUERYROWS_STORES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4112" version="0" level="win:Verbose"  task="QUERYROWS_CONVERSATIONS" opcode="win:Start" keywords="Performance"/>
+        <event value="4113" version="0" level="win:Verbose"  task="QUERYROWS_CONVERSATIONS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4200" version="0" level="win:Verbose"  task="STORE_GETIDSFROMNAMES" opcode="win:Start" keywords="Performance"/>
+        <event value="4201" version="0" level="win:Verbose"  task="STORE_GETIDSFROMNAMES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4202" version="0" level="win:Verbose"  task="STORE_OPENFOLDER" opcode="win:Start" keywords="Performance"/>
+        <event value="4203" version="0" level="win:Verbose"  task="STORE_OPENFOLDER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4204" version="0" level="win:Verbose"  task="STORE_OPENMESSAGE" opcode="win:Start" keywords="Performance"/>
+        <event value="4205" version="0" level="win:Verbose"  task="STORE_OPENMESSAGE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4206" version="0" level="win:Verbose"  task="STORE_ISANCESTOR" opcode="win:Start" keywords="Performance"/>
+        <event value="4207" version="0" level="win:Verbose"  task="STORE_ISANCESTOR" opcode="win:Stop" keywords="Performance"/>
+        <event value="4208" version="0" level="win:Verbose"  task="STORE_CREATESPECIALFOLDERS" opcode="win:Start" keywords="Performance"/>
+        <event value="4209" version="0" level="win:Verbose"  task="STORE_CREATESPECIALFOLDERS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4210" version="0" level="win:Verbose"  task="STORE_LOADRULESLIST" opcode="win:Start" keywords="Performance"/>
+        <event value="4211" version="0" level="win:Verbose"  task="STORE_LOADRULESLIST" opcode="win:Stop" keywords="Performance"/>
+        <event value="4212" version="0" level="win:Verbose"  task="STORE_RUNRULES" opcode="win:Start" keywords="Performance"/>
+        <event value="4213" version="0" level="win:Verbose"  task="STORE_RUNRULES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4300" version="0" level="win:Verbose"  task="MAPILOGONEX" opcode="win:Start" keywords="Performance"/>
+        <event value="4301" version="0" level="win:Verbose"  task="MAPILOGONEX" opcode="win:Stop" keywords="Performance"/>
+        <event value="4302" version="0" level="win:Verbose"  task="CTX_GETSTOREMANAGER" opcode="win:Start" keywords="Performance"/>
+        <event value="4303" version="0" level="win:Verbose"  task="CTX_GETSTOREMANAGER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4304" version="0" level="win:Verbose"  task="CTX_CREATESESSION" opcode="win:Start" keywords="Performance"/>
+        <event value="4305" version="0" level="win:Verbose"  task="CTX_CREATESESSION" opcode="win:Stop" keywords="Performance"/>
+        <event value="4306" version="0" level="win:Verbose"  task="CTX_CREATEINSTANCE" opcode="win:Start" keywords="Performance"/>
+        <event value="4307" version="0" level="win:Verbose"  task="CTX_CREATEINSTANCE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4308" version="0" level="win:Verbose"  task="CTX_INITMESSAGESTORES" opcode="win:Start" keywords="Performance"/>
+        <event value="4309" version="0" level="win:Verbose"  task="CTX_INITMESSAGESTORES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4310" version="0" level="win:Verbose"  task="CTX_CREATESMSSTORE" opcode="win:Start" keywords="Performance"/>
+        <event value="4311" version="0" level="win:Verbose"  task="CTX_CREATESMSSTORE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4312" version="0" level="win:Verbose"  task="CTX_LOADDEFAULTMESSAGESTORE" opcode="win:Start" keywords="Performance"/>
+        <event value="4313" version="0" level="win:Verbose"  task="CTX_LOADDEFAULTMESSAGESTORE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4314" version="0" level="win:Verbose"  task="CTX_CREATEMESSAGESTORE" opcode="win:Start" keywords="Performance"/>
+        <event value="4315" version="0" level="win:Verbose"  task="CTX_CREATEMESSAGESTORE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4316" version="0" level="win:Verbose"  task="CTX_OPENENTRY" opcode="win:Start" keywords="Performance"/>
+        <event value="4317" version="0" level="win:Verbose"  task="CTX_OPENENTRY" opcode="win:Stop" keywords="Performance"/>
+        <event value="4318" version="0" level="win:Verbose"  task="CTX_ADVISE" opcode="win:Start" keywords="Performance"/>
+        <event value="4319" version="0" level="win:Verbose"  task="CTX_ADVISE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4320" version="0" level="win:Verbose"  task="CTX_UNADVISE" opcode="win:Start" keywords="Performance"/>
+        <event value="4321" version="0" level="win:Verbose"  task="CTX_UNADVISE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4322" version="0" level="win:Verbose"  task="CTX_INITSTORESINK" opcode="win:Start" keywords="Performance"/>
+        <event value="4323" version="0" level="win:Verbose"  task="CTX_INITSTORESINK" opcode="win:Stop" keywords="Performance"/>
+        <event value="4324" version="0" level="win:Verbose"  task="CTX_GETSTOREBYID" opcode="win:Start" keywords="Performance"/>
+        <event value="4325" version="0" level="win:Verbose"  task="CTX_GETSTOREBYID" opcode="win:Stop" keywords="Performance"/>
+        <event value="4326" version="0" level="win:Verbose"  task="CTX_GETSTOREFROMDATABASE" opcode="win:Start" keywords="Performance"/>
+        <event value="4327" version="0" level="win:Verbose"  task="CTX_GETSTOREFROMDATABASE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4328" version="0" level="win:Verbose"  task="CTX_OPENMSGSTORE" opcode="win:Start" keywords="Performance"/>
+        <event value="4329" version="0" level="win:Verbose"  task="CTX_OPENMSGSTORE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4330" version="0" level="win:Verbose"  task="CTX_DELETEMSGSTORE" opcode="win:Start" keywords="Performance"/>
+        <event value="4331" version="0" level="win:Verbose"  task="CTX_DELETEMSGSTORE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4332" version="0" level="win:Verbose"  task="CTX_REFRESHRULECLIENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4333" version="0" level="win:Verbose"  task="CTX_REFRESHRULECLIENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4400" version="0" level="win:Verbose"  task="MSG_CREATEATTACH" opcode="win:Start" keywords="Performance"/>
+        <event value="4401" version="0" level="win:Verbose"  task="MSG_CREATEATTACH" opcode="win:Stop" keywords="Performance"/>
+        <event value="4402" version="0" level="win:Verbose"  task="MSG_DELETEATTACH" opcode="win:Start" keywords="Performance"/>
+        <event value="4403" version="0" level="win:Verbose"  task="MSG_DELETEATTACH" opcode="win:Stop" keywords="Performance"/>
+        <event value="4404" version="0" level="win:Verbose"  task="MSG_OPENATTACH" opcode="win:Start" keywords="Performance"/>
+        <event value="4405" version="0" level="win:Verbose"  task="MSG_OPENATTACH" opcode="win:Stop" keywords="Performance"/>
+        <event value="4406" version="0" level="win:Verbose"  task="MSG_GETATTACHTABLE" opcode="win:Start" keywords="Performance"/>
+        <event value="4407" version="0" level="win:Verbose"  task="MSG_GETATTACHTABLE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4408" version="0" level="win:Verbose"  task="MSG_MODIFYRECIPIENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4409" version="0" level="win:Verbose"  task="MSG_MODIFYRECIPIENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4410" version="0" level="win:Verbose"  task="MSG_SUBMITMESSAGE" opcode="win:Start" keywords="Performance"/>
+        <event value="4411" version="0" level="win:Verbose"  task="MSG_SUBMITMESSAGE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4412" version="0" level="win:Verbose"  task="MSG_DELETERECIPIENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4413" version="0" level="win:Verbose"  task="MSG_DELETERECIPIENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4414" version="0" level="win:Verbose"  task="MSG_ADDRECIPIENTS" opcode="win:Start" keywords="Performance"/>
+        <event value="4415" version="0" level="win:Verbose"  task="MSG_ADDRECIPIENTS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4416" version="0" level="win:Verbose"  task="MSG_UPDATERECIPIENTTABLE" opcode="win:Start" keywords="Performance"/>
+        <event value="4417" version="0" level="win:Verbose"  task="MSG_UPDATERECIPIENTTABLE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4418" version="0" level="win:Verbose"  task="MSG_PREPROCESSWRITE" opcode="win:Start" keywords="Performance"/>
+        <event value="4419" version="0" level="win:Verbose"  task="MSG_PREPROCESSWRITE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4420" version="0" level="win:Verbose"  task="MSG_POSTPROCESSWRITE" opcode="win:Start" keywords="Performance"/>
+        <event value="4421" version="0" level="win:Verbose"  task="MSG_POSTPROCESSWRITE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4500" version="0" level="win:Verbose"  task="SETPROPS" opcode="win:Start" keywords="Performance"/>
+        <event value="4501" version="0" level="win:Verbose"  task="SETPROPS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4502" version="0" level="win:Verbose"  task="GETPROPS" opcode="win:Start" keywords="Performance"/>
+        <event value="4503" version="0" level="win:Verbose"  task="GETPROPS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4504" version="0" level="win:Verbose"  task="DELETEPROPS" opcode="win:Start" keywords="Performance"/>
+        <event value="4505" version="0" level="win:Verbose"  task="DELETEPROPS" opcode="win:Stop" keywords="Performance"/>
+        <event value="4506" version="0" level="win:Verbose"  task="OPENSTREAMPROPERTY" opcode="win:Start" keywords="Performance"/>
+        <event value="4507" version="0" level="win:Verbose"  task="OPENSTREAMPROPERTY" opcode="win:Stop" keywords="Performance"/>
+        <event value="4508" version="0" level="win:Verbose"  task="RUNRULE" opcode="win:Start" keywords="Performance"/>
+        <event value="4509" version="0" level="win:Verbose"  task="RUNRULE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4510" version="0" level="win:Verbose"  task="SESSION_GETSTORESTABLE" opcode="win:Start" keywords="Performance"/>
+        <event value="4511" version="0" level="win:Verbose"  task="SESSION_GETSTORESTABLE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4512" version="0" level="win:Verbose"  task="SINK_ONNOTIFY" opcode="win:Start" keywords="Performance"/>
+        <event value="4513" version="0" level="win:Verbose"  task="SINK_ONNOTIFY" opcode="win:Stop" keywords="Performance"/>
+        <event value="4514" version="0" level="win:Verbose"  task="SINK_ONNOTIFYWRAPPER" opcode="win:Start" keywords="Performance"/>
+        <event value="4515" version="0" level="win:Verbose"  task="SINK_ONNOTIFYWRAPPER" opcode="win:Stop" keywords="Performance"/>
+        <event value="4600" version="0" level="win:Verbose"  task="CONVERSATION_DELETE" opcode="win:Start" keywords="Performance"/>
+        <event value="4601" version="0" level="win:Verbose"  task="CONVERSATION_DELETE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4602" version="0" level="win:Verbose"  task="CONVERSATION_SOFTDELETE" opcode="win:Start" keywords="Performance"/>
+        <event value="4603" version="0" level="win:Verbose"  task="CONVERSATION_SOFTDELETE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4604" version="0" level="win:Verbose"  task="CONVERSATION_MSGPROPSET" opcode="win:Start" keywords="Performance"/>
+        <event value="4605" version="0" level="win:Verbose"  task="CONVERSATION_MSGPROPSET" opcode="win:Stop" keywords="Performance"/>
+        <event value="4606" version="0" level="win:Verbose"  task="CONVERSATION_MSGPROPDELETE" opcode="win:Start" keywords="Performance"/>
+        <event value="4607" version="0" level="win:Verbose"  task="CONVERSATION_MSGPROPDELETE" opcode="win:Stop" keywords="Performance"/>
+        <event value="4608" version="0" level="win:Verbose"  task="CONVERSATION_DELETEMESSAGES" opcode="win:Start" keywords="Performance"/>
+        <event value="4609" version="0" level="win:Verbose"  task="CONVERSATION_DELETEMESSAGES" opcode="win:Stop" keywords="Performance"/>
+        <event value="4610" version="0" level="win:Verbose"  task="CONVERSATIONID_SET" opcode="win:Start" keywords="Performance"/>
+        <event value="4611" version="0" level="win:Verbose"  task="CONVERSATIONID_SET" opcode="win:Stop" keywords="Performance"/>
+        <event value="4612" version="0" level="win:Verbose"  task="CONVERSATIONID_CREATEHASH" opcode="win:Start" keywords="Performance"/>
+        <event value="4613" version="0" level="win:Verbose"  task="CONVERSATIONID_CREATEHASH" opcode="win:Stop" keywords="Performance"/>
+        <event value="4700" version="0" level="win:Verbose"  task="SHARECONTENT" opcode="win:Start" keywords="Performance"/>
+        <event value="4701" version="0" level="win:Verbose"  task="SHARECONTENT" opcode="win:Stop" keywords="Performance"/>
+        <event value="4800" version="0" level="win:Verbose"  keywords="CEMAPI"/>
+        <event value="4801" version="0" level="win:Informational"  keywords="CEMAPI"/>
+        <event value="4802" version="0" level="win:Informational"  keywords="CEMAPI"/>
+        <event value="4803" version="0" level="win:Warning"  keywords="CEMAPI Warning" template="Args4803_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Error" mask="0x1" message="$(string.string26)" />
+        <keyword name="Performance" mask="0x2" message="$(string.string51)" />
+        <keyword name="CEMAPI" mask="0x4" message="$(string.string0)" />
+        <keyword name="debug" mask="0x100" message="$(string.string24)" />
+        <keyword name="Warning" mask="0x4000000000" message="$(string.string73)" />
+      </keywords>
+      <tasks>
+        <task value="4001" name="FOLDER_EMPTYFOLDER" message="$(string.string4001)">
+        </task>
+        <task value="4002" name="FOLDER_CREATEMESSAGE" message="$(string.string4002)">
+        </task>
+        <task value="4003" name="FOLDER_DELETEMESSAGES" message="$(string.string4003)">
+        </task>
+        <task value="4004" name="FOLDER_COPYMESSAGES" message="$(string.string4004)">
+        </task>
+        <task value="4005" name="FOLDER_GETHIERARCHYTABLE" message="$(string.string4005)">
+        </task>
+        <task value="4006" name="FOLDER_GETCONTENTSTABLE" message="$(string.string4006)">
+        </task>
+        <task value="4007" name="FOLDER_DELETEFOLDER" message="$(string.string4007)">
+        </task>
+        <task value="4008" name="FOLDER_COPYFOLDER" message="$(string.string4008)">
+        </task>
+        <task value="4009" name="FOLDER_CREATEFOLDER" message="$(string.string4009)">
+        </task>
+        <task value="4100" name="QUERYROWS_ATTACHMENTS" message="$(string.string4100)">
+        </task>
+        <task value="4101" name="QUERYROWS_RECIPIENTS" message="$(string.string4101)">
+        </task>
+        <task value="4102" name="QUERYROWS_FOLDERCONTENTS" message="$(string.string4102)">
+        </task>
+        <task value="4103" name="QUERYROWS_FOLDERHIERARCHY" message="$(string.string4103)">
+        </task>
+        <task value="4104" name="QUERYROWS_SEARCHFOLDER" message="$(string.string4104)">
+        </task>
+        <task value="4105" name="QUERYROWS_STORES" message="$(string.string4105)">
+        </task>
+        <task value="4106" name="QUERYROWS_CONVERSATIONS" message="$(string.string4106)">
+        </task>
+        <task value="4200" name="STORE_GETIDSFROMNAMES" message="$(string.string4200)">
+        </task>
+        <task value="4201" name="STORE_OPENFOLDER" message="$(string.string4201)">
+        </task>
+        <task value="4202" name="STORE_OPENMESSAGE" message="$(string.string4202)">
+        </task>
+        <task value="4203" name="STORE_ISANCESTOR" message="$(string.string4203)">
+        </task>
+        <task value="4204" name="STORE_CREATESPECIALFOLDERS" message="$(string.string4204)">
+        </task>
+        <task value="4205" name="STORE_LOADRULESLIST" message="$(string.string4205)">
+        </task>
+        <task value="4206" name="STORE_RUNRULES" message="$(string.string4206)">
+        </task>
+        <task value="4300" name="MAPILOGONEX" message="$(string.string4300)">
+        </task>
+        <task value="4301" name="CTX_GETSTOREMANAGER" message="$(string.string4301)">
+        </task>
+        <task value="4302" name="CTX_CREATESESSION" message="$(string.string4302)">
+        </task>
+        <task value="4303" name="CTX_CREATEINSTANCE" message="$(string.string4303)">
+        </task>
+        <task value="4304" name="CTX_INITMESSAGESTORES" message="$(string.string4304)">
+        </task>
+        <task value="4305" name="CTX_CREATESMSSTORE" message="$(string.string4305)">
+        </task>
+        <task value="4306" name="CTX_LOADDEFAULTMESSAGESTORE" message="$(string.string4306)">
+        </task>
+        <task value="4307" name="CTX_CREATEMESSAGESTORE" message="$(string.string4307)">
+        </task>
+        <task value="4308" name="CTX_OPENENTRY" message="$(string.string4308)">
+        </task>
+        <task value="4309" name="CTX_ADVISE" message="$(string.string4309)">
+        </task>
+        <task value="4310" name="CTX_UNADVISE" message="$(string.string4310)">
+        </task>
+        <task value="4311" name="CTX_INITSTORESINK" message="$(string.string4311)">
+        </task>
+        <task value="4312" name="CTX_GETSTOREBYID" message="$(string.string4312)">
+        </task>
+        <task value="4313" name="CTX_GETSTOREFROMDATABASE" message="$(string.string4313)">
+        </task>
+        <task value="4314" name="CTX_OPENMSGSTORE" message="$(string.string4314)">
+        </task>
+        <task value="4315" name="CTX_DELETEMSGSTORE" message="$(string.string4315)">
+        </task>
+        <task value="4316" name="CTX_REFRESHRULECLIENTS" message="$(string.string4316)">
+        </task>
+        <task value="4400" name="MSG_CREATEATTACH" message="$(string.string4400)">
+        </task>
+        <task value="4401" name="MSG_DELETEATTACH" message="$(string.string4401)">
+        </task>
+        <task value="4402" name="MSG_OPENATTACH" message="$(string.string4402)">
+        </task>
+        <task value="4403" name="MSG_GETATTACHTABLE" message="$(string.string4403)">
+        </task>
+        <task value="4404" name="MSG_MODIFYRECIPIENTS" message="$(string.string4404)">
+        </task>
+        <task value="4405" name="MSG_SUBMITMESSAGE" message="$(string.string4405)">
+        </task>
+        <task value="4406" name="MSG_DELETERECIPIENTS" message="$(string.string4406)">
+        </task>
+        <task value="4407" name="MSG_ADDRECIPIENTS" message="$(string.string4407)">
+        </task>
+        <task value="4408" name="MSG_UPDATERECIPIENTTABLE" message="$(string.string4408)">
+        </task>
+        <task value="4409" name="MSG_PREPROCESSWRITE" message="$(string.string4409)">
+        </task>
+        <task value="4410" name="MSG_POSTPROCESSWRITE" message="$(string.string4410)">
+        </task>
+        <task value="4500" name="SETPROPS" message="$(string.string4500)">
+        </task>
+        <task value="4501" name="GETPROPS" message="$(string.string4501)">
+        </task>
+        <task value="4502" name="DELETEPROPS" message="$(string.string4502)">
+        </task>
+        <task value="4503" name="OPENSTREAMPROPERTY" message="$(string.string4503)">
+        </task>
+        <task value="4504" name="RUNRULE" message="$(string.string4504)">
+        </task>
+        <task value="4505" name="SESSION_GETSTORESTABLE" message="$(string.string4505)">
+        </task>
+        <task value="4506" name="SINK_ONNOTIFY" message="$(string.string4506)">
+        </task>
+        <task value="4507" name="SINK_ONNOTIFYWRAPPER" message="$(string.string4507)">
+        </task>
+        <task value="4600" name="CONVERSATION_DELETE" message="$(string.string4600)">
+        </task>
+        <task value="4601" name="CONVERSATION_SOFTDELETE" message="$(string.string4601)">
+        </task>
+        <task value="4602" name="CONVERSATION_MSGPROPSET" message="$(string.string4602)">
+        </task>
+        <task value="4603" name="CONVERSATION_MSGPROPDELETE" message="$(string.string4603)">
+        </task>
+        <task value="4604" name="CONVERSATION_DELETEMESSAGES" message="$(string.string4604)">
+        </task>
+        <task value="4605" name="CONVERSATIONID_SET" message="$(string.string4605)">
+        </task>
+        <task value="4606" name="CONVERSATIONID_CREATEHASH" message="$(string.string4606)">
+        </task>
+        <task value="4700" name="SHARECONTENT" message="$(string.string4700)">
+        </task>
+        <task value="4800" name="tracemessage" message="$(string.string4800)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="P1_HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="P2_String" inType="win:AnsiString" outType="xs:string"  />
+          <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Message" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4803_0">
+          <data name="Prop_Hex_UInt32" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CEMAPI" />
+       <string id="string1" value="CONVERSATION_DELETE" />
+       <string id="string2" value="CONVERSATION_DELETEMESSAGES" />
+       <string id="string3" value="CONVERSATION_MSGPROPDELETE" />
+       <string id="string4" value="CONVERSATION_MSGPROPSET" />
+       <string id="string5" value="CONVERSATION_SOFTDELETE" />
+       <string id="string6" value="CONVERSATIONID_CREATEHASH" />
+       <string id="string7" value="CONVERSATIONID_SET" />
+       <string id="string8" value="CTX_ADVISE" />
+       <string id="string9" value="CTX_CREATEINSTANCE" />
+       <string id="string10" value="CTX_CREATEMESSAGESTORE" />
+       <string id="string11" value="CTX_CREATESESSION" />
+       <string id="string12" value="CTX_CREATESMSSTORE" />
+       <string id="string13" value="CTX_DELETEMSGSTORE" />
+       <string id="string14" value="CTX_GETSTOREBYID" />
+       <string id="string15" value="CTX_GETSTOREFROMDATABASE" />
+       <string id="string16" value="CTX_GETSTOREMANAGER" />
+       <string id="string17" value="CTX_INITMESSAGESTORES" />
+       <string id="string18" value="CTX_INITSTORESINK" />
+       <string id="string19" value="CTX_LOADDEFAULTMESSAGESTORE" />
+       <string id="string20" value="CTX_OPENENTRY" />
+       <string id="string21" value="CTX_OPENMSGSTORE" />
+       <string id="string22" value="CTX_REFRESHRULECLIENTS" />
+       <string id="string23" value="CTX_UNADVISE" />
+       <string id="string24" value="debug" />
+       <string id="string25" value="DELETEPROPS" />
+       <string id="string26" value="Error" />
+       <string id="string27" value="FOLDER_COPYFOLDER" />
+       <string id="string28" value="FOLDER_COPYMESSAGES" />
+       <string id="string29" value="FOLDER_CREATEFOLDER" />
+       <string id="string30" value="FOLDER_CREATEMESSAGE" />
+       <string id="string31" value="FOLDER_DELETEFOLDER" />
+       <string id="string32" value="FOLDER_DELETEMESSAGES" />
+       <string id="string33" value="FOLDER_EMPTYFOLDER" />
+       <string id="string34" value="FOLDER_GETCONTENTSTABLE" />
+       <string id="string35" value="FOLDER_GETHIERARCHYTABLE" />
+       <string id="string36" value="GETPROPS" />
+       <string id="string37" value="MAPILOGONEX" />
+       <string id="string38" value="Microsoft-Windows-UserDataAccess-CEMAPI" />
+       <string id="string39" value="MSG_ADDRECIPIENTS" />
+       <string id="string40" value="MSG_CREATEATTACH" />
+       <string id="string41" value="MSG_DELETEATTACH" />
+       <string id="string42" value="MSG_DELETERECIPIENTS" />
+       <string id="string43" value="MSG_GETATTACHTABLE" />
+       <string id="string44" value="MSG_MODIFYRECIPIENTS" />
+       <string id="string45" value="MSG_OPENATTACH" />
+       <string id="string46" value="MSG_POSTPROCESSWRITE" />
+       <string id="string47" value="MSG_PREPROCESSWRITE" />
+       <string id="string48" value="MSG_SUBMITMESSAGE" />
+       <string id="string49" value="MSG_UPDATERECIPIENTTABLE" />
+       <string id="string50" value="OPENSTREAMPROPERTY" />
+       <string id="string51" value="Performance" />
+       <string id="string52" value="QUERYROWS_ATTACHMENTS" />
+       <string id="string53" value="QUERYROWS_CONVERSATIONS" />
+       <string id="string54" value="QUERYROWS_FOLDERCONTENTS" />
+       <string id="string55" value="QUERYROWS_FOLDERHIERARCHY" />
+       <string id="string56" value="QUERYROWS_RECIPIENTS" />
+       <string id="string57" value="QUERYROWS_SEARCHFOLDER" />
+       <string id="string58" value="QUERYROWS_STORES" />
+       <string id="string59" value="RUNRULE" />
+       <string id="string60" value="SESSION_GETSTORESTABLE" />
+       <string id="string61" value="SETPROPS" />
+       <string id="string62" value="SHARECONTENT" />
+       <string id="string63" value="SINK_ONNOTIFY" />
+       <string id="string64" value="SINK_ONNOTIFYWRAPPER" />
+       <string id="string65" value="STORE_CREATESPECIALFOLDERS" />
+       <string id="string66" value="STORE_GETIDSFROMNAMES" />
+       <string id="string67" value="STORE_ISANCESTOR" />
+       <string id="string68" value="STORE_LOADRULESLIST" />
+       <string id="string69" value="STORE_OPENFOLDER" />
+       <string id="string70" value="STORE_OPENMESSAGE" />
+       <string id="string71" value="STORE_RUNRULES" />
+       <string id="string72" value="tracemessage" />
+       <string id="string73" value="Warning" />
+       <string id="string74" value="win:Start" />
+       <string id="string75" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

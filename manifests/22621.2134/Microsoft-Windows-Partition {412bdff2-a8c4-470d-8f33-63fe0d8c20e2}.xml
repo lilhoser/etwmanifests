@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Partition" name="Microsoft-Windows-Partition" guid="{412bdff2-a8c4-470d-8f33-63fe0d8c20e2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-Partition/Diagnostic" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-Partition/Diagnostic" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-Partition/Analytic" keywords="power" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-Partition/Analytic" keywords="power" template="Args1004_0"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-Partition/Analytic" keywords="power" template="Args1005_0"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-Partition/Diagnostic" template="Args1007_0"/>
+        <event value="1006" version="4" level="win:Informational"  channel="Microsoft-Windows-Partition/Diagnostic" template="Args1006_4"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Partition/Diagnostic" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-Partition/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="power" mask="0x1" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="Process" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IncrementEnergy" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SrvTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="EndByteOffset" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IoSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LastIdleState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IsRandom" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args1004_0">
+          <data name="Process" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IncrementEnergy" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastIdleState" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args1005_0">
+          <data name="LocalLastCompTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SharedLastCompTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1007_0">
+          <data name="SpStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="OperationStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WnfStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1006_4">
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Characteristics" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="IsSystemCritical" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PagingCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HibernationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DumpCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesPerSector" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Capacity" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Manufacturer" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Model" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Revision" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ParentId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Socket" inType="win:Int32" outType="xs:int"  />
+          <data name="Slot" inType="win:Int32" outType="xs:int"  />
+          <data name="Bus" inType="win:Int32" outType="xs:int"  />
+          <data name="Device" inType="win:Int32" outType="xs:int"  />
+          <data name="Function" inType="win:Int32" outType="xs:int"  />
+          <data name="Adapter" inType="win:Int32" outType="xs:int"  />
+          <data name="Port" inType="win:Int32" outType="xs:int"  />
+          <data name="Target" inType="win:Int32" outType="xs:int"  />
+          <data name="Lun" inType="win:Int32" outType="xs:int"  />
+          <data name="IoctlSupport" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IdFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DiskId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RegistryId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PoolId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FirmwareSupportsUpgrade" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FirmwareSlotCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StorageIdCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageIdCodeSet" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageIdType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageIdAssociation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageIdBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StorageId" inType="win:Binary" outType="xs:hexBinary" length="StorageIdBytes" />
+          <data name="WriteCacheType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteCacheEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteCacheChangeable" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteThroughSupported" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FlushCacheSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsPowerProtected" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NVCacheEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BytesPerLogicalSector" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesPerPhysicalSector" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesOffsetForSectorAlignment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IncursSeekPenalty" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsTrimSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsThinProvisioned" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OptimalUnmapGranularity" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnmapAlignment" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumberOfLogicalCopies" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfPhysicalCopies" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FaultTolerance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfColumns" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterleaveBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HybridSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="HybridCacheBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AdapterMaximumTransferBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterMaximumTransferPages" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterAlignmentMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortDriver" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UserRemovalPolicy" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionTableBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionTable" inType="win:Binary" outType="xs:hexBinary" length="PartitionTableBytes" />
+          <data name="MbrBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Mbr" inType="win:Binary" outType="xs:hexBinary" length="MbrBytes" />
+          <data name="Vbr0Bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Vbr0" inType="win:Binary" outType="xs:hexBinary" length="Vbr0Bytes" />
+          <data name="Vbr1Bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Vbr1" inType="win:Binary" outType="xs:hexBinary" length="Vbr1Bytes" />
+          <data name="Vbr2Bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Vbr2" inType="win:Binary" outType="xs:hexBinary" length="Vbr2Bytes" />
+          <data name="Vbr3Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Vbr3" inType="win:Binary" outType="xs:hexBinary" length="Vbr3Size" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Partition" />
+       <string id="string1" value="Microsoft-Windows-Partition/Analytic" />
+       <string id="string2" value="Microsoft-Windows-Partition/Diagnostic" />
+       <string id="string3" value="power" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

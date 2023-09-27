@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Bluetooth-BthLEPrepairing" name="Microsoft-Windows-Bluetooth-BthLEPrepairing" guid="{4af188ac-e9c4-4c11-b07b-1fabc07dfeb2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-BthLEPrepairing/Operational" task="BthLEPrepairing" opcode="win:Info" template="Args100_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Bluetooth-BthLEPrepairing/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="BthLEPrepairing" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="DeviceID" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="BthLEPrepairing" />
+       <string id="string1" value="Microsoft-Windows-Bluetooth-BthLEPrepairing" />
+       <string id="string2" value="Microsoft-Windows-Bluetooth-BthLEPrepairing/Operational" />
+       <string id="string3" value="System" />
+       <string id="string4" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

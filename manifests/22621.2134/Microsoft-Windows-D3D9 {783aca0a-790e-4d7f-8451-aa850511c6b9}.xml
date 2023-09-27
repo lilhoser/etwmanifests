@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-D3D9" name="Microsoft-Windows-D3D9" guid="{783aca0a-790e-4d7f-8451-aa850511c6b9}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="Present" opcode="win:Start" keywords="Events" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="Present" opcode="win:Stop" keywords="Events" template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="Reset" opcode="win:Start" keywords="Events" template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="Reset" opcode="win:Stop" keywords="Events"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="BindToDWM" opcode="win:Info" keywords="Events" template="Args5_0"/>
+        <event value="6" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="DWMRedirection" opcode="win:Info" keywords="Events" template="Args6_0"/>
+        <event value="7" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="FlipExSurfaceTimeout" opcode="win:Info" keywords="Events" template="Args7_0"/>
+        <event value="8" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="FlipExSemaphoreTimeout" opcode="win:Info" keywords="Events" template="Args8_0"/>
+        <event value="9" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D9/Analytic" task="GetPresentStats" opcode="win:Info" keywords="Events" template="Args9_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Direct3D9/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="Events" mask="0x2" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Present" message="$(string.string1)">
+        </task>
+        <task value="2" name="Reset" message="$(string.string2)">
+        </task>
+        <task value="3" name="BindToDWM" message="$(string.string3)">
+        </task>
+        <task value="4" name="DWMRedirection" message="$(string.string4)">
+        </task>
+        <task value="5" name="FlipExSurfaceTimeout" message="$(string.string5)">
+        </task>
+        <task value="6" name="FlipExSemaphoreTimeout" message="$(string.string6)">
+        </task>
+        <task value="7" name="GetPresentStats" message="$(string.string7)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="pSwapchain" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="pSwapchain" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackbufferFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackbufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SwapEffect" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Windowed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PresentationInterval" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdditionalSwapchain" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="LogicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BackBufferCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="IsOn" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="LogicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BackBufferNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackBufferHandle" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="LogicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AdjustValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FenceValue" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentRefreshCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SyncRefreshCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SyncQPCTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="BindToDWM" />
+       <string id="string1" value="DWMRedirection" />
+       <string id="string2" value="Events" />
+       <string id="string3" value="FlipExSemaphoreTimeout" />
+       <string id="string4" value="FlipExSurfaceTimeout" />
+       <string id="string5" value="GetPresentStats" />
+       <string id="string6" value="Microsoft-Windows-D3D9" />
+       <string id="string7" value="Microsoft-Windows-Direct3D9/Analytic" />
+       <string id="string8" value="Present" />
+       <string id="string9" value="Reset" />
+       <string id="string10" value="win:Info" />
+       <string id="string11" value="win:Start" />
+       <string id="string12" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

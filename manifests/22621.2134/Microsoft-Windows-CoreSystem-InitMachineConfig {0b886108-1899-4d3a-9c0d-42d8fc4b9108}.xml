@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-CoreSystem-InitMachineConfig" name="Microsoft-Windows-CoreSystem-InitMachineConfig" guid="{0b886108-1899-4d3a-9c0d-42d8fc4b9108}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="System" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="System"/>
+        <event value="3" version="0" level="win:Warning"  channel="System"/>
+        <event value="4" version="0" level="win:Warning"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="evtErrorId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="evtHiveNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="evtHiveName" inType="win:UnicodeString" outType="xs:string" length="evtHiveNameLength" />
+          <data name="evtStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="evtAdditionalInfo" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-CoreSystem-InitMachineConfig" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

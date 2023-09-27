@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-FilterManager" name="Microsoft-Windows-FilterManager" guid="{f3c5e28e-63f6-49c7-a204-e48a1bc4b09d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="System" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="System" template="Args2_0"/>
+        <event value="3" version="0" level="win:Error"  channel="System"/>
+        <event value="4" version="0" level="win:Warning"  channel="System" template="Args4_0"/>
+        <event value="5" version="0" level="win:Warning"  channel="System"/>
+        <event value="6" version="0" level="win:Informational"  channel="System"/>
+        <event value="7" version="0" level="win:Warning"  channel="System"/>
+        <event value="8" version="0" level="win:Informational"  channel="System"/>
+        <event value="9" version="0" level="win:Error"  channel="System"/>
+        <event value="10" version="0" level="win:Informational"  channel="System"/>
+        <event value="11" version="0" level="win:Warning"  channel="System" template="Args11_0"/>
+        <event value="12" version="0" level="win:Warning"  channel="System" template="Args12_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceVersionMajor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceVersionMinor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength" />
+        </template>
+        <template tid="Args4_0">
+          <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceVersionMajor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceVersionMinor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="DeviceTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength" />
+        </template>
+        <template tid="Args11_0">
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceVersionMajor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceVersionMinor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="SupportedFeatures" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceVersionMajor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceVersionMinor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BypassIoOperation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BypassVetoingReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OperationStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-FilterManager" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

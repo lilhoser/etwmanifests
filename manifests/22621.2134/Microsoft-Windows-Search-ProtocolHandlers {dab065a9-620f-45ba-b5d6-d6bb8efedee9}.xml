@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Search-ProtocolHandlers" name="Microsoft-Windows-Search-ProtocolHandlers" guid="{dab065a9-620f-45ba-b5d6-d6bb8efedee9}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiEmailItem" opcode="win:Start" keywords="MAPIPH"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiEmailItem" opcode="win:Stop" keywords="MAPIPH"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="CSCDocument" opcode="win:Start" keywords="Performance IndexingItem CSCPH"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="CSCDocument" opcode="win:Stop" keywords="Performance IndexingItem CSCPH"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiOpenMessage" opcode="win:Start" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiOpenMessage" opcode="win:Stop" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiGetAttachmentFromMessage" opcode="win:Start" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiGetAttachmentFromMessage" opcode="win:Stop" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiEnumerateAttachments" opcode="win:Start" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiEnumerateAttachments" opcode="win:Stop" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiGetMapiFpsPropVals" opcode="win:Start" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="MapiGetMapiFpsPropVals" opcode="win:Stop" keywords="Performance IndexingItem MAPIPH"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="FilterOplockBreak" opcode="win:Info" keywords="IndexingItem FilePH" template="Args58_0"/>
+        <event value="62" version="0" level="win:Error"  channel="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" task="FilterOplockFail" opcode="win:Info" keywords="IndexingItem FilePH"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Performance" mask="0x1" message="$(string.string16)" />
+        <keyword name="Indexing" mask="0x4" message="$(string.string5)" />
+        <keyword name="IndexingItem" mask="0x8" message="$(string.string7)" />
+        <keyword name="IndexingChunk" mask="0x10" message="$(string.string6)" />
+        <keyword name="MAPIPH" mask="0x1000000" message="$(string.string13)" />
+        <keyword name="FilePH" mask="0x2000000" message="$(string.string2)" />
+        <keyword name="CSCPH" mask="0x4000000" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="15" name="MapiEmailItem" message="$(string.string15)">
+        </task>
+        <task value="16" name="CSCDocument" message="$(string.string16)">
+        </task>
+        <task value="18" name="MapiOpenMessage" message="$(string.string18)">
+        </task>
+        <task value="19" name="MapiGetAttachmentFromMessage" message="$(string.string19)">
+        </task>
+        <task value="20" name="MapiEnumerateAttachments" message="$(string.string20)">
+        </task>
+        <task value="21" name="MapiGetMapiFpsPropVals" message="$(string.string21)">
+        </task>
+        <task value="35" name="FilterOplockBreak" message="$(string.string35)">
+        </task>
+        <task value="38" name="FilterOplockFail" message="$(string.string38)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args58_0">
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CSCDocument" />
+       <string id="string1" value="CSCPH" />
+       <string id="string2" value="FilePH" />
+       <string id="string3" value="FilterOplockBreak" />
+       <string id="string4" value="FilterOplockFail" />
+       <string id="string5" value="Indexing" />
+       <string id="string6" value="IndexingChunk" />
+       <string id="string7" value="IndexingItem" />
+       <string id="string8" value="MapiEmailItem" />
+       <string id="string9" value="MapiEnumerateAttachments" />
+       <string id="string10" value="MapiGetAttachmentFromMessage" />
+       <string id="string11" value="MapiGetMapiFpsPropVals" />
+       <string id="string12" value="MapiOpenMessage" />
+       <string id="string13" value="MAPIPH" />
+       <string id="string14" value="Microsoft-Windows-Search-ProtocolHandlers" />
+       <string id="string15" value="Microsoft-Windows-Search-ProtocolHandlers/Diagnostic" />
+       <string id="string16" value="Performance" />
+       <string id="string17" value="win:Info" />
+       <string id="string18" value="win:Start" />
+       <string id="string19" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

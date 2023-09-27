@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Winsock-Sockets" name="Microsoft-Windows-Winsock-Sockets" guid="{bde46aea-2357-51fe-7367-d5296f530bd1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  task="SockCreate" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME"/>
+        <event value="2" version="0" level="win:Informational"  task="SockCreate" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  task="SockClose" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME"/>
+        <event value="4" version="0" level="win:Informational"  task="SockClose" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME" template="Args4_0"/>
+        <event value="5" version="0" level="win:Verbose"  task="SockAccept" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME"/>
+        <event value="6" version="0" level="win:Informational"  task="SockAccept" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME" template="Args6_0"/>
+        <event value="7" version="0" level="win:Verbose"  task="SockSetOpt" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="8" version="0" level="win:Informational"  task="SockSetOpt" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG" template="Args8_0"/>
+        <event value="9" version="0" level="win:Verbose"  task="SockConnect" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="10" version="0" level="win:Informational"  task="SockConnect" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG" template="Args10_0"/>
+        <event value="11" version="0" level="win:Verbose"  task="SockBind" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="12" version="0" level="win:Informational"  task="SockBind" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="13" version="0" level="win:Verbose"  task="SockGetOpt" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="14" version="0" level="win:Informational"  task="SockGetOpt" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="15" version="0" level="win:Verbose"  task="SockListen" opcode="win:Start" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG"/>
+        <event value="16" version="0" level="win:Informational"  task="SockListen" opcode="win:Stop" keywords="WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG" template="Args16_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="WINSOCK_API_BOUNDARY" mask="0x1" message="$(string.string11)" />
+        <keyword name="WINSOCK_SOCKET_LIFETIME" mask="0x1000" message="$(string.string13)" />
+        <keyword name="WINSOCK_SOCKET_CONFIG" mask="0x2000" message="$(string.string12)" />
+      </keywords>
+      <tasks>
+        <task value="1000" name="SockCreate" message="$(string.string1000)">
+        </task>
+        <task value="1001" name="SockClose" message="$(string.string1001)">
+        </task>
+        <task value="1002" name="SockAccept" message="$(string.string1002)">
+        </task>
+        <task value="1003" name="SockSetOpt" message="$(string.string1003)">
+        </task>
+        <task value="1004" name="SockConnect" message="$(string.string1004)">
+        </task>
+        <task value="1005" name="SockBind" message="$(string.string1005)">
+        </task>
+        <task value="1006" name="SockGetOpt" message="$(string.string1006)">
+        </task>
+        <task value="1007" name="SockListen" message="$(string.string1007)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:Win32Error"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SocketType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessId" inType="win:UInt32" outType="win:PID"  />
+          <data name="FailurePoint" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:Win32Error"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsProviderSocket" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FailurePoint" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:Win32Error"  />
+          <data name="SocketAccepted" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketListening" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProcessId" inType="win:UInt32" outType="win:PID"  />
+          <data name="FailurePoint" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:Win32Error"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Level" inType="win:Int32" outType="xs:int"  />
+          <data name="OptName" inType="win:Int32" outType="xs:int"  />
+          <data name="OptLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OptVal" inType="win:Binary" outType="xs:hexBinary" length="OptLen" />
+          <data name="FailurePoint" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:Win32Error"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="FailurePoint" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:Win32Error"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Backlog" inType="win:Int32" outType="xs:int"  />
+          <data name="FailurePoint" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Winsock-Sockets" />
+       <string id="string1" value="SockAccept" />
+       <string id="string2" value="SockBind" />
+       <string id="string3" value="SockClose" />
+       <string id="string4" value="SockConnect" />
+       <string id="string5" value="SockCreate" />
+       <string id="string6" value="SockGetOpt" />
+       <string id="string7" value="SockListen" />
+       <string id="string8" value="SockSetOpt" />
+       <string id="string9" value="win:Start" />
+       <string id="string10" value="win:Stop" />
+       <string id="string11" value="WINSOCK_API_BOUNDARY" />
+       <string id="string12" value="WINSOCK_SOCKET_CONFIG" />
+       <string id="string13" value="WINSOCK_SOCKET_LIFETIME" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

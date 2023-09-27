@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Dism-Cli" name="Microsoft-Windows-Dism-Cli" guid="{2f959466-24d4-4972-8729-0d5e3539ebc3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliCloseSession" opcode="win:Start" keywords="DismCliEvent"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliCloseSession" opcode="win:Stop" keywords="DismCliEvent"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliLoadDism" opcode="win:Start" keywords="DismCliEvent"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliLoadDism" opcode="win:Stop" keywords="DismCliEvent"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliExecuteCmdLine" opcode="win:Start" keywords="DismCliEvent"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliExecuteCmdLine" opcode="win:Stop" keywords="DismCliEvent"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliLoadImageSession" opcode="win:Start" keywords="DismCliEvent"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Dism-Cli/Analytic" task="DismCliLoadImageSession" opcode="win:Stop" keywords="DismCliEvent"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Dism-Cli/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="DismCliEvent" mask="0x1" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="DismCliCloseSession" message="$(string.string1)">
+        </task>
+        <task value="2" name="DismCliLoadDism" message="$(string.string2)">
+        </task>
+        <task value="3" name="DismCliExecuteCmdLine" message="$(string.string3)">
+        </task>
+        <task value="4" name="DismCliLoadImageSession" message="$(string.string4)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DismCliCloseSession" />
+       <string id="string1" value="DismCliEvent" />
+       <string id="string2" value="DismCliExecuteCmdLine" />
+       <string id="string3" value="DismCliLoadDism" />
+       <string id="string4" value="DismCliLoadImageSession" />
+       <string id="string5" value="Microsoft-Windows-Dism-Cli" />
+       <string id="string6" value="Microsoft-Windows-Dism-Cli/Analytic" />
+       <string id="string7" value="win:Start" />
+       <string id="string8" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

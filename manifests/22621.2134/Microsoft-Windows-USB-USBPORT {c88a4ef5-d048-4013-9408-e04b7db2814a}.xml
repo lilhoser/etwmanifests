@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-USB-USBPORT" name="Microsoft-Windows-USB-USBPORT" guid="{c88a4ef5-d048-4013-9408-e04b7db2814a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Add" keywords="Diagnostic PowerDiagnostics ms:Measures" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Removal" keywords="Diagnostic PowerDiagnostics ms:Measures"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Information" keywords="Diagnostic PowerDiagnostics" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Start" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Stop" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Suspend" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Resume" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="8" version="0" level="win:Verbose"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_ASYNC_SCHEDULE" opcode="Enable" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="9" version="0" level="win:Verbose"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_ASYNC_SCHEDULE" opcode="Disable" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_PERIODIC_SCHEDULE" opcode="Enable" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_PERIODIC_SCHEDULE" opcode="Disable" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_DEVICE" opcode="Create" keywords="Diagnostic PowerDiagnostics" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_DEVICE" opcode="Initialize" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_DEVICE" opcode="Removal" keywords="Diagnostic PowerDiagnostics" template="Args14_0"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_DEVICE" opcode="Information" keywords="Diagnostic PowerDiagnostics" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_DEVICE_IDLE_STATE" opcode="Set" keywords="Diagnostic PowerDiagnostics" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_DEVICE_IDLE_STATE" opcode="Clear" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_ENDPOINT" opcode="Open" keywords="Diagnostic PowerDiagnostics" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_ENDPOINT" opcode="Close" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_ENDPOINT" opcode="Information" keywords="Diagnostic PowerDiagnostics"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SELECT_CONFIGURATION" opcode="Dispatch" keywords="Diagnostic" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SELECT_INTERFACE" opcode="Dispatch" keywords="Diagnostic" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_CURRENT_FRAME_NUMBER" opcode="Dispatch" keywords="Diagnostic" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" opcode="Dispatch" keywords="Diagnostic" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER_EX" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" opcode="Dispatch" keywords="Diagnostic" template="Args26_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_ISOCH_TRANSFER" opcode="Dispatch" keywords="Diagnostic" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_FEATURE_TO_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_FEATURE_TO_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_FEATURE_TO_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_OTHER" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_FEATURE_TO_OTHER" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="42" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_STATUS_FROM_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_STATUS_FROM_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_STATUS_FROM_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="45" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_STATUS_FROM_OTHER" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="46" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_VENDOR_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="47" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_VENDOR_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_VENDOR_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="49" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLASS_DEVICE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLASS_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLASS_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CLASS_OTHER" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_VENDOR_OTHER" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="54" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_ABORT_PIPE" opcode="Dispatch" keywords="Diagnostic" template="Args54_0"/>
+        <event value="55" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="56" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="57" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SYNC_CLEAR_STALL" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_CONFIGURATION" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="59" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_INTERFACE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="60" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="62" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="63" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_GET_FRAME_LENGTH" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="64" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_SET_FRAME_LENGTH" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="65" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_RESERVED" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="66" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" opcode="Complete" keywords="Diagnostic"/>
+        <event value="67" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER_EX" opcode="Complete" keywords="Diagnostic"/>
+        <event value="68" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" opcode="Complete with Data" keywords="Diagnostic" template="Args68_0"/>
+        <event value="69" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER_EX" opcode="Complete with Data" keywords="Diagnostic"/>
+        <event value="70" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" opcode="Complete" keywords="Diagnostic"/>
+        <event value="71" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" opcode="Complete with Data" keywords="Diagnostic" template="Args71_0"/>
+        <event value="72" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_ISOCH_TRANSFER" opcode="Complete" keywords="Diagnostic"/>
+        <event value="73" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_ISOCH_TRANSFER" opcode="Complete with Data" keywords="Diagnostic"/>
+        <event value="74" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" opcode="Dispatch Internal" keywords="Diagnostic" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" opcode="Complete Internal" keywords="Diagnostic"/>
+        <event value="76" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" opcode="Complete Internal with Data" keywords="Diagnostic" template="Args76_0"/>
+        <event value="77" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_FUNCTION_ABORT_PIPE" opcode="Complete" keywords="Diagnostic"/>
+        <event value="78" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_HEADER_LENGTH_WARNING" opcode="Dispatch" keywords="Diagnostic" template="Args78_0"/>
+        <event value="79" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_FUNCTION" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="80" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_HEADER_LENGTH" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="81" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_DEVICE_HANDLE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="82" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_FUNCTION_NOT_SUPPORTED" opcode="Dispatch" keywords="Diagnostic" template="Args82_0"/>
+        <event value="83" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_FUNCTION_RESERVED" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="84" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_DUE_TO_HC_SUSPEND" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="85" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_URB_LINK" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="86" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_PIPE_HANDLE" opcode="Dispatch" keywords="Diagnostic" template="Args86_0"/>
+        <event value="87" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_ZERO_BW_PIPE_HANDLE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="88" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_NOP_ZERO_BW_PIPE_HANDLE_REQUEST" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="89" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_CONTROL_TRANSFER_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="90" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_CONTROL_TRANSFER_BUFFER_LENGTH" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="91" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_ENDPOINT" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="92" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_BUFFER_LENGTH" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="93" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_ISOCHRONOUS_TRANSFER_ENDPOINT" opcode="Dispatch" keywords="Diagnostic" template="Args93_0"/>
+        <event value="94" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_NULL_TRANSFER_BUFFER_AND_MDL" opcode="Dispatch" keywords="Diagnostic" template="Args94_0"/>
+        <event value="95" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_NON_NULL_TRANSFER_BUFFER_MDL" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="96" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_ALLOCATE_MDL_FAILURE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="97" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_ALLOCATE_TRANSFER_CONTEXT_FAILURE" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="98" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_NOP_ROOTHUB_PIPE_HANDLE_REQUEST" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="99" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_ISOCHRONOUS_ZERO_LENGTH" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_ISOCHRONOUS_NUM_PACKETS" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_URB_INVALID_ISOCHRONOUS_START_FRAME" opcode="Dispatch" keywords="Diagnostic" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_IRP" opcode="Cancel" keywords="Diagnostic" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_RAW_RESET_PORT" opcode="Dispatch" keywords="Diagnostic" template="Args103_0"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_RAW_RESET_PORT" opcode="Status" keywords="Diagnostic" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_RAW_RESET_PORT" opcode="Status" keywords="Diagnostic"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_RAW_RESET_PORT" opcode="Status" keywords="Diagnostic"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_RAW_RESET_PORT" opcode="Complete" keywords="Diagnostic" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_SEND_ONE_PACKET" opcode="Dispatch" keywords="Diagnostic" template="Args108_0"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_SEND_ONE_PACKET" opcode="Dispatch with Data" keywords="Diagnostic" template="Args109_0"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_SEND_ONE_PACKET" opcode="Status" keywords="Diagnostic"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_SEND_ONE_PACKET" opcode="Complete" keywords="Diagnostic" template="Args111_0"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_USBUSER_OP_SEND_ONE_PACKET" opcode="Complete with Data" keywords="Diagnostic"/>
+        <event value="113" version="0" level="win:Verbose"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_CODE_EXECUTION_TIME" opcode="Information" keywords="PerfDiagnostics" template="Args113_0"/>
+        <event value="114" version="0" level="win:Verbose"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_PUT_SGLIST_EXECUTION_TIME" opcode="Information" keywords="PerfDiagnostics" template="Args114_0"/>
+        <event value="115" version="0" level="win:Verbose"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_BUILD_SGLIST_EXECUTION_TIME" opcode="Information" keywords="PerfDiagnostics" template="Args115_0"/>
+        <event value="1024" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="1025" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete" keywords="Diagnostic" template="Args1025_0"/>
+        <event value="1026" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1027" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1028" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1029" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1030" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1031" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="1032" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" opcode="Complete" keywords="Diagnostic"/>
+        <event value="1033" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="1034" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" opcode="Complete" keywords="Diagnostic"/>
+        <event value="1035" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="1036" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete" keywords="Diagnostic" template="Args1036_0"/>
+        <event value="1037" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1038" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1039" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1040" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1041" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1042" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="1043" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_DEVICE_DATA" opcode="Information" keywords="Diagnostic" template="Args1043_0"/>
+        <event value="2048" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="2049" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete" keywords="Diagnostic"/>
+        <event value="2050" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2051" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2052" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2053" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2054" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2055" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="2056" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" opcode="Complete" keywords="Diagnostic"/>
+        <event value="2057" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="2058" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" opcode="Complete" keywords="Diagnostic"/>
+        <event value="2059" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="2060" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete" keywords="Diagnostic"/>
+        <event value="2061" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2062" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2063" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2064" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="2065" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3072" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="3073" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete" keywords="Diagnostic"/>
+        <event value="3074" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3075" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3076" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3077" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_START" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3078" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="3079" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" opcode="Complete" keywords="Diagnostic"/>
+        <event value="3080" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="3081" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" opcode="Complete" keywords="Diagnostic"/>
+        <event value="3082" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Dispatch" keywords="Diagnostic"/>
+        <event value="3083" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete" keywords="Diagnostic"/>
+        <event value="3084" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3085" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3086" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3087" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3088" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" opcode="Complete with Error" keywords="Diagnostic"/>
+        <event value="3089" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_RUNTIME_PM" opcode="RunTime PM Transition" keywords="Diagnostic" template="Args3089_0"/>
+        <event value="3090" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_ARM_FOR_WAKE" opcode="Dispatch" keywords="Diagnostic" template="Args3090_0"/>
+        <event value="3091" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_ARM_FOR_WAKE" opcode="Complete" keywords="Diagnostic"/>
+        <event value="3092" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-USBPORT/Diagnostic" task="USBPORT_HOST_CONTROLLER" opcode="Information" keywords="Diagnostic" template="Args3092_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-USB-USBPORT/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Diagnostic" mask="0x1" message="$(string.string20)" />
+        <keyword name="PowerDiagnostics" mask="0x2" message="$(string.string44)" />
+        <keyword name="PerfDiagnostics" mask="0x4" message="$(string.string43)" />
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string39)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string40)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string38)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string37)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="USBPORT_HOST_CONTROLLER" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="Add" message="$(string.string0)"/>
+           <opcode value="13" name="Removal" message="$(string.string45)"/>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+           <opcode value="15" name="Start" message="$(string.string53)"/>
+           <opcode value="16" name="Stop" message="$(string.string57)"/>
+           <opcode value="17" name="Suspend" message="$(string.string59)"/>
+           <opcode value="18" name="Resume" message="$(string.string47)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="USBPORT_HOST_CONTROLLER_ASYNC_SCHEDULE" message="$(string.string2)">
+          <opcodes>
+           <opcode value="19" name="Enable" message="$(string.string29)"/>
+           <opcode value="20" name="Disable" message="$(string.string21)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="USBPORT_HOST_CONTROLLER_PERIODIC_SCHEDULE" message="$(string.string3)">
+          <opcodes>
+           <opcode value="19" name="Enable" message="$(string.string29)"/>
+           <opcode value="20" name="Disable" message="$(string.string21)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="USBPORT_DEVICE" message="$(string.string4)">
+          <opcodes>
+           <opcode value="11" name="Create" message="$(string.string18)"/>
+           <opcode value="12" name="Initialize" message="$(string.string33)"/>
+           <opcode value="13" name="Removal" message="$(string.string45)"/>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="USBPORT_DEVICE_IDLE_STATE" message="$(string.string5)">
+          <opcodes>
+           <opcode value="21" name="Set" message="$(string.string51)"/>
+           <opcode value="22" name="Clear" message="$(string.string4)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="USBPORT_ENDPOINT" message="$(string.string6)">
+          <opcodes>
+           <opcode value="23" name="Open" message="$(string.string41)"/>
+           <opcode value="24" name="Close" message="$(string.string6)"/>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="USBPORT_URB_FUNCTION_SELECT_CONFIGURATION" message="$(string.string7)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="USBPORT_URB_FUNCTION_SELECT_INTERFACE" message="$(string.string8)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="USBPORT_URB_FUNCTION_GET_CURRENT_FRAME_NUMBER" message="$(string.string9)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="10" name="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" message="$(string.string10)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="27" name="Complete with Data" message="$(string.string12)"/>
+           <opcode value="28" name="Dispatch Internal" message="$(string.string25)"/>
+           <opcode value="29" name="Complete Internal" message="$(string.string10)"/>
+           <opcode value="30" name="Complete Internal with Data" message="$(string.string11)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="USBPORT_URB_FUNCTION_CONTROL_TRANSFER_EX" message="$(string.string11)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="27" name="Complete with Data" message="$(string.string12)"/>
+          </opcodes>
+        </task>
+        <task value="12" name="USBPORT_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" message="$(string.string12)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="27" name="Complete with Data" message="$(string.string12)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="USBPORT_URB_FUNCTION_ISOCH_TRANSFER" message="$(string.string13)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="27" name="Complete with Data" message="$(string.string12)"/>
+          </opcodes>
+        </task>
+        <task value="14" name="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE" message="$(string.string14)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="15" name="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE" message="$(string.string15)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="16" name="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT" message="$(string.string16)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="17" name="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT" message="$(string.string17)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="18" name="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE" message="$(string.string18)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE" message="$(string.string19)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="20" name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_DEVICE" message="$(string.string20)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="21" name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_INTERFACE" message="$(string.string21)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="22" name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_ENDPOINT" message="$(string.string22)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="23" name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE" message="$(string.string23)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="24" name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE" message="$(string.string24)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="25" name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT" message="$(string.string25)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="26" name="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_OTHER" message="$(string.string26)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="27" name="USBPORT_URB_FUNCTION_SET_FEATURE_TO_OTHER" message="$(string.string27)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="28" name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_DEVICE" message="$(string.string28)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="29" name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_INTERFACE" message="$(string.string29)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="30" name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_ENDPOINT" message="$(string.string30)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="31" name="USBPORT_URB_FUNCTION_GET_STATUS_FROM_OTHER" message="$(string.string31)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="32" name="USBPORT_URB_FUNCTION_VENDOR_DEVICE" message="$(string.string32)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="33" name="USBPORT_URB_FUNCTION_VENDOR_INTERFACE" message="$(string.string33)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="34" name="USBPORT_URB_FUNCTION_VENDOR_ENDPOINT" message="$(string.string34)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="35" name="USBPORT_URB_FUNCTION_CLASS_DEVICE" message="$(string.string35)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="36" name="USBPORT_URB_FUNCTION_CLASS_INTERFACE" message="$(string.string36)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="37" name="USBPORT_URB_FUNCTION_CLASS_ENDPOINT" message="$(string.string37)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="38" name="USBPORT_URB_FUNCTION_CLASS_OTHER" message="$(string.string38)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="39" name="USBPORT_URB_FUNCTION_VENDOR_OTHER" message="$(string.string39)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="40" name="USBPORT_URB_FUNCTION_ABORT_PIPE" message="$(string.string40)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="41" name="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL" message="$(string.string41)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="42" name="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE" message="$(string.string42)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="43" name="USBPORT_URB_FUNCTION_SYNC_CLEAR_STALL" message="$(string.string43)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="44" name="USBPORT_URB_FUNCTION_GET_CONFIGURATION" message="$(string.string44)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="45" name="USBPORT_URB_FUNCTION_GET_INTERFACE" message="$(string.string45)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="46" name="USBPORT_URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR" message="$(string.string46)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="47" name="USBPORT_URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL" message="$(string.string47)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="48" name="USBPORT_URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL" message="$(string.string48)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="49" name="USBPORT_URB_FUNCTION_GET_FRAME_LENGTH" message="$(string.string49)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="50" name="USBPORT_URB_FUNCTION_SET_FRAME_LENGTH" message="$(string.string50)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="51" name="USBPORT_URB_FUNCTION_RESERVED" message="$(string.string51)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="52" name="USBPORT_URB_INVALID_HEADER_LENGTH_WARNING" message="$(string.string52)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="53" name="USBPORT_URB_INVALID_FUNCTION" message="$(string.string53)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="54" name="USBPORT_URB_INVALID_HEADER_LENGTH" message="$(string.string54)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="55" name="USBPORT_URB_INVALID_DEVICE_HANDLE" message="$(string.string55)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="56" name="USBPORT_URB_INVALID_FUNCTION_NOT_SUPPORTED" message="$(string.string56)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="57" name="USBPORT_URB_INVALID_FUNCTION_RESERVED" message="$(string.string57)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="58" name="USBPORT_URB_INVALID_DUE_TO_HC_SUSPEND" message="$(string.string58)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="59" name="USBPORT_URB_INVALID_URB_LINK" message="$(string.string59)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="60" name="USBPORT_URB_INVALID_PIPE_HANDLE" message="$(string.string60)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="61" name="USBPORT_URB_INVALID_ZERO_BW_PIPE_HANDLE" message="$(string.string61)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="62" name="USBPORT_URB_NOP_ZERO_BW_PIPE_HANDLE_REQUEST" message="$(string.string62)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="63" name="USBPORT_URB_INVALID_CONTROL_TRANSFER_ENDPOINT" message="$(string.string63)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="64" name="USBPORT_URB_INVALID_CONTROL_TRANSFER_BUFFER_LENGTH" message="$(string.string64)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="65" name="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_ENDPOINT" message="$(string.string65)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="66" name="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_BUFFER_LENGTH" message="$(string.string66)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="67" name="USBPORT_URB_INVALID_ISOCHRONOUS_TRANSFER_ENDPOINT" message="$(string.string67)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="68" name="USBPORT_URB_INVALID_NULL_TRANSFER_BUFFER_AND_MDL" message="$(string.string68)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="69" name="USBPORT_URB_INVALID_NON_NULL_TRANSFER_BUFFER_MDL" message="$(string.string69)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="70" name="USBPORT_URB_ALLOCATE_MDL_FAILURE" message="$(string.string70)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="71" name="USBPORT_URB_ALLOCATE_TRANSFER_CONTEXT_FAILURE" message="$(string.string71)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="72" name="USBPORT_URB_NOP_ROOTHUB_PIPE_HANDLE_REQUEST" message="$(string.string72)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="73" name="USBPORT_URB_INVALID_ISOCHRONOUS_ZERO_LENGTH" message="$(string.string73)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="74" name="USBPORT_URB_INVALID_ISOCHRONOUS_NUM_PACKETS" message="$(string.string74)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="75" name="USBPORT_URB_INVALID_ISOCHRONOUS_START_FRAME" message="$(string.string75)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="76" name="USBPORT_IRP" message="$(string.string76)">
+          <opcodes>
+           <opcode value="31" name="Cancel" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+        <task value="77" name="USBPORT_USBUSER_OP_RAW_RESET_PORT" message="$(string.string77)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="33" name="Status" message="$(string.string55)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="78" name="USBPORT_USBUSER_OP_SEND_ONE_PACKET" message="$(string.string78)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="32" name="Dispatch with Data" message="$(string.string26)"/>
+           <opcode value="33" name="Status" message="$(string.string55)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="27" name="Complete with Data" message="$(string.string12)"/>
+          </opcodes>
+        </task>
+        <task value="79" name="USBPORT_HOST_CONTROLLER_MINIPORT_START" message="$(string.string79)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="34" name="Complete with Error" message="$(string.string13)"/>
+          </opcodes>
+        </task>
+        <task value="80" name="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" message="$(string.string80)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="81" name="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" message="$(string.string81)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="82" name="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" message="$(string.string82)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+           <opcode value="34" name="Complete with Error" message="$(string.string13)"/>
+          </opcodes>
+        </task>
+        <task value="83" name="USBPORT_CODE_EXECUTION_TIME" message="$(string.string83)">
+          <opcodes>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+          </opcodes>
+        </task>
+        <task value="84" name="USBPORT_PUT_SGLIST_EXECUTION_TIME" message="$(string.string84)">
+          <opcodes>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+          </opcodes>
+        </task>
+        <task value="85" name="USBPORT_BUILD_SGLIST_EXECUTION_TIME" message="$(string.string85)">
+          <opcodes>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+          </opcodes>
+        </task>
+        <task value="86" name="USBPORT_RUNTIME_PM" message="$(string.string86)">
+          <opcodes>
+           <opcode value="35" name="RunTime PM Transition" message="$(string.string49)"/>
+          </opcodes>
+        </task>
+        <task value="87" name="USBPORT_ARM_FOR_WAKE" message="$(string.string87)">
+          <opcodes>
+           <opcode value="25" name="Dispatch" message="$(string.string23)"/>
+           <opcode value="26" name="Complete" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="88" name="USBPORT_HOST_CONTROLLER_DEVICE_DATA" message="$(string.string88)">
+          <opcodes>
+           <opcode value="14" name="Information" message="$(string.string31)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="ADD" message="$(string.string1)"/>
+        <opcode value="11" name="CREATE" message="$(string.string19)"/>
+        <opcode value="12" name="INITIALIZE" message="$(string.string34)"/>
+        <opcode value="13" name="REMOVAL" message="$(string.string46)"/>
+        <opcode value="14" name="INFORMATION" message="$(string.string32)"/>
+        <opcode value="15" name="START" message="$(string.string54)"/>
+        <opcode value="16" name="STOP" message="$(string.string58)"/>
+        <opcode value="17" name="SUSPEND" message="$(string.string60)"/>
+        <opcode value="18" name="RESUME" message="$(string.string48)"/>
+        <opcode value="19" name="ENABLE" message="$(string.string30)"/>
+        <opcode value="20" name="DISABLE" message="$(string.string22)"/>
+        <opcode value="21" name="SET" message="$(string.string52)"/>
+        <opcode value="22" name="CLEAR" message="$(string.string5)"/>
+        <opcode value="23" name="OPEN" message="$(string.string42)"/>
+        <opcode value="24" name="CLOSE" message="$(string.string7)"/>
+        <opcode value="25" name="DISPATCH" message="$(string.string24)"/>
+        <opcode value="26" name="COMPLETE" message="$(string.string9)"/>
+        <opcode value="27" name="COMPLETE_DATA" message="$(string.string14)"/>
+        <opcode value="28" name="DISPATCH_INTERNAL" message="$(string.string28)"/>
+        <opcode value="29" name="COMPLETE_INTERNAL" message="$(string.string16)"/>
+        <opcode value="30" name="COMPLETE_INTERNAL_DATA" message="$(string.string17)"/>
+        <opcode value="31" name="CANCEL" message="$(string.string3)"/>
+        <opcode value="32" name="DISPATCH_DATA" message="$(string.string27)"/>
+        <opcode value="33" name="STATUS" message="$(string.string56)"/>
+        <opcode value="34" name="COMPLETE_ERROR" message="$(string.string15)"/>
+        <opcode value="35" name="RUNTIME_PM_TRANSITION" message="$(string.string50)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="fid_USBPORT_HC" inType="win:UnicodeString" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_HC_Idle_Status" inType="win:Double" outType="xs:unsignedByte"  />
+          <data name="fid_USBPORT_HC_Pdo_Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fid_RunTimePmSetupStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_DevicePowerState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_AcpiInstanceId" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="fid_USBPORT_HC" inType="win:Int8" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Int64" outType="xs:int"  />
+          <data name="fid_USBPORT_Device_Descriptor" inType="win:Pointer" outType="xs:GUID"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:UInt32" outType="xs:int"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Double" outType="xs:int"  />
+          <data name="fid_USBPORT_Device_Descriptor" inType="win:SID" outType="xs:GUID"  />
+          <data name="fid_USBPORT_Device_Driver_Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fid_USBPORT_Device_Idle_State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_USBPORT_Device_Pdo_Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt8" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:UInt64" outType="xs:int"  />
+          <data name="fid_USBPORT_Device_Idle_Previous_State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_USBPORT_Device_Idle_New_State" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt8" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:UInt64" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:FILETIME" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:HexInt32" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Binary" outType="xs:int"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Configuration_Descriptor_Length" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Double" outType="xs:int"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Length" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="fid_USBPORT_HC" inType="win:Int16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Float" outType="xs:int"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_FrameNumber" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="fid_USBPORT_HC" inType="win:Int32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Boolean" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:HexInt32" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_CONTROL_TRANSFER" inType="win:Binary" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="fid_USBPORT_HC" inType="win:Int32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Boolean" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:HexInt32" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_BULK_OR_INTERRUPT_TRANSFER" inType="win:Binary" outType="xs:double"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="fid_USBPORT_HC" inType="win:Int64" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:GUID" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:UnicodeString" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_USBPORT_URB_ISOCH_TRANSFER" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args54_0">
+          <data name="fid_USBPORT_HC" inType="win:Int32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Boolean" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:HexInt32" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_URB_PIPE_REQUEST" inType="win:Binary" outType="xs:int"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="fid_USBPORT_HC" inType="win:Int64" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:GUID" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:UnicodeString" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_CONTROL_TRANSFER" inType="win:Binary" outType="win:HexInt16"  />
+          <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args71_0">
+          <data name="fid_USBPORT_HC" inType="win:Int64" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:GUID" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:UnicodeString" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_BULK_OR_INTERRUPT_TRANSFER" inType="win:Binary" outType="xs:double"  />
+          <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Double" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:SID" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:UnicodeString" outType="xs:unsignedShort"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_CONTROL_TRANSFER" inType="win:Binary" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args76_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Binary" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:HexInt64" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_CONTROL_TRANSFER" inType="win:Binary" outType="win:HexInt16"  />
+          <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args78_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt8" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_HEADER" inType="win:UInt64" outType="xs:short"  />
+        </template>
+        <template tid="Args82_0">
+          <data name="fid_USBPORT_HC" inType="win:Int16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Float" outType="xs:int"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_HEADER" inType="win:SYSTEMTIME" outType="xs:short"  />
+        </template>
+        <template tid="Args86_0">
+          <data name="fid_USBPORT_HC" inType="win:Int16" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Float" outType="xs:int"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_INVALID_PIPE_REQUEST" inType="win:SYSTEMTIME" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args93_0">
+          <data name="fid_USBPORT_HC" inType="win:Int32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Boolean" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:HexInt32" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_ISOCH_TRANSFER" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args94_0">
+          <data name="fid_USBPORT_HC" inType="win:Int32" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Boolean" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:HexInt32" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_HEADER" inType="win:Binary" outType="xs:short"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt64" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:Pointer" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:AnsiString" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USBPORT_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_USBPORT_URB_ISOCH_TRANSFER" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="fid_URB_FrameNumber" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_PortNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="fid_USBPORT_HC" inType="win:Int8" outType="xs:unsignedShort"  />
+          <data name="fid_PortNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="fid_PortStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="fid_USBPORT_HC" inType="win:Int8" outType="xs:unsignedShort"  />
+          <data name="fid_PortNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="fid_UsbStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args108_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Usbuser_Op_Send_One_Packet" inType="win:UInt32" outType="xs:long"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="fid_USBPORT_HC" inType="win:UInt8" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Usbuser_Op_Send_One_Packet" inType="win:UInt64" outType="xs:long"  />
+          <data name="fid_PacketDataLength" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args111_0">
+          <data name="fid_USBPORT_HC" inType="win:Int8" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Usbuser_Op_Send_One_Packet" inType="win:Int64" outType="xs:long"  />
+          <data name="fid_UsbStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args113_0">
+          <data name="fid_USBPORT_HC" inType="win:Int8" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Execution_Metrics" inType="win:Int64" outType="xs:byte"  />
+          <data name="fid_CodeTag" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="fid_USBPORT_HC" inType="win:Float" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:FILETIME" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:Binary" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Execution_Metrics" inType="win:Binary" outType="xs:byte"  />
+          <data name="fid_AdapterObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_NumPutScatterGatherList" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_WriteData" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fid_FlushLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentVA" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_CodeTag" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args115_0">
+          <data name="fid_USBPORT_HC" inType="win:Float" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Device" inType="win:FILETIME" outType="xs:int"  />
+          <data name="fid_USBPORT_Endpoint" inType="win:Binary" outType="xs:byte"  />
+          <data name="fid_USBPORT_Endpoint_Descriptor" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_USBPORT_Execution_Metrics" inType="win:Binary" outType="xs:byte"  />
+          <data name="fid_AdapterObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_WriteData" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fid_LengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentVA" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_CodeTag" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1025_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_MiniportStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1036_0">
+          <data name="fid_USBPORT_HC" inType="win:Int16" outType="xs:unsignedShort"  />
+          <data name="fid_MiniportStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_NumberOfPorts" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args1043_0">
+          <data name="fid_USBPORT_HC" inType="win:Binary" outType="xs:unsignedShort"  />
+          <data name="fid_HcSuspendedFlag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_SuspendHcNotHalted" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_HostSystemErrorCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_HostSystemErrorResetNeeded" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncEnableCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncDisableCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatPeriodicEnableCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatPeriodicDisableCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncEnableTimeoutCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncDisableTimeoutCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatPeriodicEnableTimeoutCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatPeriodicDisableTimeoutCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellDisabledCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellDisablingCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellEnablingCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellEnabledCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellHwRemovedCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAnswerDoorbell" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncCacheFlushIdle" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncCacheFlushNormal" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncCacheFlushRetry" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatIntOnAsyncAdvancePendingCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatIntOnAsyncAdvanceSyncRoutineCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellEnabledWithRetryCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatRingDoorbellEnabledWithRetryIgnoredCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatAsyncCacheFlushPrevented" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentRingDoorbellDisablingTimerCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentRingDoorbellEnablingTimerCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentRingDoorbellEnabledTimerCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentIntOnAsyncAdvancePendingCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_StatResetNeededCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_ResetNeeded" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_ResetRecoveryEnable" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_ResetRecoveryBreak" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_AsyncScheduleState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_AsyncDoorbellState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_PeriodicScheduleState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_EhciInternalFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_PreventCmdChangesWithDoorbellPending" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_OptimizeInactiveQhFlush" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_DisableTwoDoorbellWorkaround" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_StrictTransitionChecksEnabled" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_IntegratedTTSupportRegistryOverride" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_CurrentAsyncEnableCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_InitialDoorbellRetryEnableValue" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_CurrentDoorbellRetryEnableValue" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_DoorbellRetryRequired" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_PeriodicEnableChangeWithDoorbellPending" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_PeriodicDisableChangeWithDoorbellPending" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3089_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_RunTimePmEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3090_0">
+          <data name="fid_USBPORT_HC" inType="win:Int8" outType="xs:unsignedShort"  />
+          <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3092_0">
+          <data name="fid_USBPORT_HC" inType="win:AnsiString" outType="xs:unsignedShort"  />
+          <data name="fid_NakReloadCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Add" />
+       <string id="string1" value="ADD" />
+       <string id="string2" value="Cancel" />
+       <string id="string3" value="CANCEL" />
+       <string id="string4" value="Clear" />
+       <string id="string5" value="CLEAR" />
+       <string id="string6" value="Close" />
+       <string id="string7" value="CLOSE" />
+       <string id="string8" value="Complete" />
+       <string id="string9" value="COMPLETE" />
+       <string id="string10" value="Complete Internal" />
+       <string id="string11" value="Complete Internal with Data" />
+       <string id="string12" value="Complete with Data" />
+       <string id="string13" value="Complete with Error" />
+       <string id="string14" value="COMPLETE_DATA" />
+       <string id="string15" value="COMPLETE_ERROR" />
+       <string id="string16" value="COMPLETE_INTERNAL" />
+       <string id="string17" value="COMPLETE_INTERNAL_DATA" />
+       <string id="string18" value="Create" />
+       <string id="string19" value="CREATE" />
+       <string id="string20" value="Diagnostic" />
+       <string id="string21" value="Disable" />
+       <string id="string22" value="DISABLE" />
+       <string id="string23" value="Dispatch" />
+       <string id="string24" value="DISPATCH" />
+       <string id="string25" value="Dispatch Internal" />
+       <string id="string26" value="Dispatch with Data" />
+       <string id="string27" value="DISPATCH_DATA" />
+       <string id="string28" value="DISPATCH_INTERNAL" />
+       <string id="string29" value="Enable" />
+       <string id="string30" value="ENABLE" />
+       <string id="string31" value="Information" />
+       <string id="string32" value="INFORMATION" />
+       <string id="string33" value="Initialize" />
+       <string id="string34" value="INITIALIZE" />
+       <string id="string35" value="Microsoft-Windows-USB-USBPORT" />
+       <string id="string36" value="Microsoft-Windows-USB-USBPORT/Diagnostic" />
+       <string id="string37" value="ms:CriticalData" />
+       <string id="string38" value="ms:Measures" />
+       <string id="string39" value="ms:ReservedKeyword44" />
+       <string id="string40" value="ms:Telemetry" />
+       <string id="string41" value="Open" />
+       <string id="string42" value="OPEN" />
+       <string id="string43" value="PerfDiagnostics" />
+       <string id="string44" value="PowerDiagnostics" />
+       <string id="string45" value="Removal" />
+       <string id="string46" value="REMOVAL" />
+       <string id="string47" value="Resume" />
+       <string id="string48" value="RESUME" />
+       <string id="string49" value="RunTime PM Transition" />
+       <string id="string50" value="RUNTIME_PM_TRANSITION" />
+       <string id="string51" value="Set" />
+       <string id="string52" value="SET" />
+       <string id="string53" value="Start" />
+       <string id="string54" value="START" />
+       <string id="string55" value="Status" />
+       <string id="string56" value="STATUS" />
+       <string id="string57" value="Stop" />
+       <string id="string58" value="STOP" />
+       <string id="string59" value="Suspend" />
+       <string id="string60" value="SUSPEND" />
+       <string id="string61" value="USBPORT_ARM_FOR_WAKE" />
+       <string id="string62" value="USBPORT_BUILD_SGLIST_EXECUTION_TIME" />
+       <string id="string63" value="USBPORT_CODE_EXECUTION_TIME" />
+       <string id="string64" value="USBPORT_DEVICE" />
+       <string id="string65" value="USBPORT_DEVICE_IDLE_STATE" />
+       <string id="string66" value="USBPORT_ENDPOINT" />
+       <string id="string67" value="USBPORT_HOST_CONTROLLER" />
+       <string id="string68" value="USBPORT_HOST_CONTROLLER_ASYNC_SCHEDULE" />
+       <string id="string69" value="USBPORT_HOST_CONTROLLER_DEVICE_DATA" />
+       <string id="string70" value="USBPORT_HOST_CONTROLLER_MINIPORT_RESUME" />
+       <string id="string71" value="USBPORT_HOST_CONTROLLER_MINIPORT_START" />
+       <string id="string72" value="USBPORT_HOST_CONTROLLER_MINIPORT_STOP" />
+       <string id="string73" value="USBPORT_HOST_CONTROLLER_MINIPORT_SUSPEND" />
+       <string id="string74" value="USBPORT_HOST_CONTROLLER_PERIODIC_SCHEDULE" />
+       <string id="string75" value="USBPORT_IRP" />
+       <string id="string76" value="USBPORT_PUT_SGLIST_EXECUTION_TIME" />
+       <string id="string77" value="USBPORT_RUNTIME_PM" />
+       <string id="string78" value="USBPORT_URB_ALLOCATE_MDL_FAILURE" />
+       <string id="string79" value="USBPORT_URB_ALLOCATE_TRANSFER_CONTEXT_FAILURE" />
+       <string id="string80" value="USBPORT_URB_FUNCTION_ABORT_PIPE" />
+       <string id="string81" value="USBPORT_URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" />
+       <string id="string82" value="USBPORT_URB_FUNCTION_CLASS_DEVICE" />
+       <string id="string83" value="USBPORT_URB_FUNCTION_CLASS_ENDPOINT" />
+       <string id="string84" value="USBPORT_URB_FUNCTION_CLASS_INTERFACE" />
+       <string id="string85" value="USBPORT_URB_FUNCTION_CLASS_OTHER" />
+       <string id="string86" value="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE" />
+       <string id="string87" value="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT" />
+       <string id="string88" value="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE" />
+       <string id="string89" value="USBPORT_URB_FUNCTION_CLEAR_FEATURE_TO_OTHER" />
+       <string id="string90" value="USBPORT_URB_FUNCTION_CONTROL_TRANSFER" />
+       <string id="string91" value="USBPORT_URB_FUNCTION_CONTROL_TRANSFER_EX" />
+       <string id="string92" value="USBPORT_URB_FUNCTION_GET_CONFIGURATION" />
+       <string id="string93" value="USBPORT_URB_FUNCTION_GET_CURRENT_FRAME_NUMBER" />
+       <string id="string94" value="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE" />
+       <string id="string95" value="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT" />
+       <string id="string96" value="USBPORT_URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE" />
+       <string id="string97" value="USBPORT_URB_FUNCTION_GET_FRAME_LENGTH" />
+       <string id="string98" value="USBPORT_URB_FUNCTION_GET_INTERFACE" />
+       <string id="string99" value="USBPORT_URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR" />
+       <string id="string100" value="USBPORT_URB_FUNCTION_GET_STATUS_FROM_DEVICE" />
+       <string id="string101" value="USBPORT_URB_FUNCTION_GET_STATUS_FROM_ENDPOINT" />
+       <string id="string102" value="USBPORT_URB_FUNCTION_GET_STATUS_FROM_INTERFACE" />
+       <string id="string103" value="USBPORT_URB_FUNCTION_GET_STATUS_FROM_OTHER" />
+       <string id="string104" value="USBPORT_URB_FUNCTION_ISOCH_TRANSFER" />
+       <string id="string105" value="USBPORT_URB_FUNCTION_RELEASE_FRAME_LENGTH_CONTROL" />
+       <string id="string106" value="USBPORT_URB_FUNCTION_RESERVED" />
+       <string id="string107" value="USBPORT_URB_FUNCTION_SELECT_CONFIGURATION" />
+       <string id="string108" value="USBPORT_URB_FUNCTION_SELECT_INTERFACE" />
+       <string id="string109" value="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE" />
+       <string id="string110" value="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT" />
+       <string id="string111" value="USBPORT_URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE" />
+       <string id="string112" value="USBPORT_URB_FUNCTION_SET_FEATURE_TO_DEVICE" />
+       <string id="string113" value="USBPORT_URB_FUNCTION_SET_FEATURE_TO_ENDPOINT" />
+       <string id="string114" value="USBPORT_URB_FUNCTION_SET_FEATURE_TO_INTERFACE" />
+       <string id="string115" value="USBPORT_URB_FUNCTION_SET_FEATURE_TO_OTHER" />
+       <string id="string116" value="USBPORT_URB_FUNCTION_SET_FRAME_LENGTH" />
+       <string id="string117" value="USBPORT_URB_FUNCTION_SYNC_CLEAR_STALL" />
+       <string id="string118" value="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE" />
+       <string id="string119" value="USBPORT_URB_FUNCTION_SYNC_RESET_PIPE_AND_CLEAR_STALL" />
+       <string id="string120" value="USBPORT_URB_FUNCTION_TAKE_FRAME_LENGTH_CONTROL" />
+       <string id="string121" value="USBPORT_URB_FUNCTION_VENDOR_DEVICE" />
+       <string id="string122" value="USBPORT_URB_FUNCTION_VENDOR_ENDPOINT" />
+       <string id="string123" value="USBPORT_URB_FUNCTION_VENDOR_INTERFACE" />
+       <string id="string124" value="USBPORT_URB_FUNCTION_VENDOR_OTHER" />
+       <string id="string125" value="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_BUFFER_LENGTH" />
+       <string id="string126" value="USBPORT_URB_INVALID_BULK_OR_INTERRUPT_TRANSFER_ENDPOINT" />
+       <string id="string127" value="USBPORT_URB_INVALID_CONTROL_TRANSFER_BUFFER_LENGTH" />
+       <string id="string128" value="USBPORT_URB_INVALID_CONTROL_TRANSFER_ENDPOINT" />
+       <string id="string129" value="USBPORT_URB_INVALID_DEVICE_HANDLE" />
+       <string id="string130" value="USBPORT_URB_INVALID_DUE_TO_HC_SUSPEND" />
+       <string id="string131" value="USBPORT_URB_INVALID_FUNCTION" />
+       <string id="string132" value="USBPORT_URB_INVALID_FUNCTION_NOT_SUPPORTED" />
+       <string id="string133" value="USBPORT_URB_INVALID_FUNCTION_RESERVED" />
+       <string id="string134" value="USBPORT_URB_INVALID_HEADER_LENGTH" />
+       <string id="string135" value="USBPORT_URB_INVALID_HEADER_LENGTH_WARNING" />
+       <string id="string136" value="USBPORT_URB_INVALID_ISOCHRONOUS_NUM_PACKETS" />
+       <string id="string137" value="USBPORT_URB_INVALID_ISOCHRONOUS_START_FRAME" />
+       <string id="string138" value="USBPORT_URB_INVALID_ISOCHRONOUS_TRANSFER_ENDPOINT" />
+       <string id="string139" value="USBPORT_URB_INVALID_ISOCHRONOUS_ZERO_LENGTH" />
+       <string id="string140" value="USBPORT_URB_INVALID_NON_NULL_TRANSFER_BUFFER_MDL" />
+       <string id="string141" value="USBPORT_URB_INVALID_NULL_TRANSFER_BUFFER_AND_MDL" />
+       <string id="string142" value="USBPORT_URB_INVALID_PIPE_HANDLE" />
+       <string id="string143" value="USBPORT_URB_INVALID_URB_LINK" />
+       <string id="string144" value="USBPORT_URB_INVALID_ZERO_BW_PIPE_HANDLE" />
+       <string id="string145" value="USBPORT_URB_NOP_ROOTHUB_PIPE_HANDLE_REQUEST" />
+       <string id="string146" value="USBPORT_URB_NOP_ZERO_BW_PIPE_HANDLE_REQUEST" />
+       <string id="string147" value="USBPORT_USBUSER_OP_RAW_RESET_PORT" />
+       <string id="string148" value="USBPORT_USBUSER_OP_SEND_ONE_PACKET" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

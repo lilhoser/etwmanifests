@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DriverFrameworks-UserMode" name="Microsoft-Windows-DriverFrameworks-UserMode" guid="{2e35aaeb-857f-4beb-a418-2e6c0e54d988}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_Startup" opcode="win:Start" template="Args1000_1"/>
+        <event value="1001" version="1" level="win:Critical"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_Startup" opcode="win:Stop" template="Args1001_1"/>
+        <event value="1002" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_Startup" opcode="win:Stop"/>
+        <event value="1003" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_CreateHost" opcode="win:Start" template="Args1003_1"/>
+        <event value="1004" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_CreateHost" opcode="win:Stop" template="Args1004_1"/>
+        <event value="1005" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_CreateHost" opcode="win:Stop"/>
+        <event value="1006" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_ShutdownHost" opcode="win:Start"/>
+        <event value="1007" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_ShutdownHost" opcode="win:Info" template="Args1007_1"/>
+        <event value="1008" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_ShutdownHost" opcode="win:Stop" template="Args1008_1"/>
+        <event value="2000" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_Startup" opcode="win:Start"/>
+        <event value="2001" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_Startup" opcode="win:Stop"/>
+        <event value="2002" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_Startup" opcode="win:Stop"/>
+        <event value="2003" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Start"/>
+        <event value="2004" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Start" template="Args2004_1"/>
+        <event value="2005" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Info" template="Args2005_1"/>
+        <event value="2006" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Stop" template="Args2006_1"/>
+        <event value="2007" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Stop"/>
+        <event value="2010" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Stop"/>
+        <event value="2011" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_DeviceArrival" opcode="win:Stop"/>
+        <event value="2100" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Start" template="Args2100_1"/>
+        <event value="2101" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Stop"/>
+        <event value="2102" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Stop"/>
+        <event value="2103" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Stop"/>
+        <event value="2105" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Start"/>
+        <event value="2106" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Start"/>
+        <event value="2107" version="1" level="win:Error"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_PnpOperation" opcode="win:Start"/>
+        <event value="2900" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_Shutdown" opcode="win:Start"/>
+        <event value="2901" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Host_Shutdown" opcode="win:Stop"/>
+        <event value="3000" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Fx_PnpOperation" opcode="win:Start" template="Args3000_1"/>
+        <event value="3001" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Fx_PnpOperation" opcode="win:Info"/>
+        <event value="3010" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Fx_PnpOperation" opcode="win:Start" template="Args3010_1"/>
+        <event value="3011" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Fx_PnpOperation" opcode="win:Stop" template="Args3011_1"/>
+        <event value="3020" version="1" level="win:Verbose"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Fx_PnpOperation" opcode="win:Stop"/>
+        <event value="10000" version="1" level="win:Informational"  channel="System" task="Installation" opcode="win:Start" template="Args10000_1"/>
+        <event value="10001" version="1" level="win:Informational"  channel="System" task="Installation" opcode="win:Info" template="Args10001_1"/>
+        <event value="10002" version="1" level="win:Informational"  channel="System" task="Installation" opcode="win:Info"/>
+        <event value="10100" version="1" level="win:Informational"  channel="System" task="Installation" opcode="win:Stop" template="Args10100_1"/>
+        <event value="10101" version="1" level="win:Error"  channel="System" task="Installation" opcode="win:Stop"/>
+        <event value="10110" version="1" level="win:Critical"  channel="System" task="UMDF_Crash" opcode="win:Info"/>
+        <event value="10111" version="1" level="win:Critical"  channel="System" task="UMDF_Crash" opcode="win:Info" template="Args10111_1"/>
+        <event value="10112" version="1" level="win:Critical"  channel="System" task="UMDF_Crash" opcode="win:Info"/>
+        <event value="10113" version="1" level="win:Error"  channel="System" task="Host_Startup" opcode="win:Info" template="Args10113_1"/>
+        <event value="10115" version="1" level="win:Critical"  channel="System" task="UMDF_Crash" opcode="win:Info"/>
+        <event value="10116" version="1" level="win:Critical"  channel="System" task="UMDF_Crash" opcode="win:Info"/>
+        <event value="10117" version="1" level="win:Critical"  channel="System" task="Installation" opcode="win:Info" template="Args10117_1"/>
+        <event value="10118" version="1" level="win:Informational"  channel="System" task="Reflector_Startup" opcode="win:Info"/>
+        <event value="19999" version="1" level="win:Informational"  channel="System" task="UMDF_Test" opcode="win:Info" template="Args19999_1"/>
+        <event value="20030" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Power/Diagnostic" task="PowerTransition_Driver" opcode="win:Start" keywords="umdf:PowerTransition" template="Args20030_1"/>
+        <event value="20031" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Power/Diagnostic" task="PowerTransition_Driver" opcode="win:Stop" keywords="umdf:PowerTransition"/>
+        <event value="20032" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Power/Diagnostic" task="PowerTransition_Driver" opcode="NestingStart" keywords="umdf:PowerTransition"/>
+        <event value="20033" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Power/Diagnostic" task="PowerTransition_Driver" opcode="NestingStop" keywords="umdf:PowerTransition"/>
+        <event value="30008" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_Fx_Ddi_ReadFromHardware" opcode="win:Start" template="Args30008_1"/>
+        <event value="30009" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_Fx_Ddi_ReadFromHardware" opcode="win:Stop"/>
+        <event value="30010" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_ReadFromHardware" opcode="win:Start"/>
+        <event value="30011" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_ReadFromHardware" opcode="win:Stop"/>
+        <event value="30012" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_Fx_Ddi_WriteToHardware" opcode="win:Start"/>
+        <event value="30013" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_Fx_Ddi_WriteToHardware" opcode="win:Stop"/>
+        <event value="30014" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_WriteToHardware" opcode="win:Start"/>
+        <event value="30015" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_WriteToHardware" opcode="win:Stop"/>
+        <event value="30016" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_ReadFromHardware" opcode="win:Start"/>
+        <event value="30017" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_ReadFromHardware" opcode="win:Stop"/>
+        <event value="30018" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_WriteToHardware" opcode="win:Start"/>
+        <event value="30019" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_WriteToHardware" opcode="win:Stop"/>
+        <event value="30020" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_InterruptNotification" opcode="win:Info" template="Args30020_1"/>
+        <event value="30021" version="1" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="Task_Umdf_InterruptNotification" opcode="win:Info"/>
+        <event value="1000" version="2" level="win:Informational"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_Startup" opcode="win:Start"/>
+        <event value="1001" version="2" level="win:Critical"  channel="Microsoft-Windows-DriverFrameworks-UserMode/Operational" task="DriverManager_Startup" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-DriverFrameworks-UserMode/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Kernel-Power/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="umdf:PowerTransition" mask="0x1" message="$(string.string24)" />
+      </keywords>
+      <tasks>
+        <task value="16" name="DriverManager_Startup" message="$(string.string16)">
+        </task>
+        <task value="17" name="DriverManager_CreateHost" message="$(string.string17)">
+        </task>
+        <task value="18" name="DriverManager_ShutdownHost" message="$(string.string18)">
+        </task>
+        <task value="32" name="Host_Startup" message="$(string.string32)">
+        </task>
+        <task value="33" name="Host_DeviceArrival" message="$(string.string33)">
+        </task>
+        <task value="37" name="Host_PnpOperation" message="$(string.string37)">
+        </task>
+        <task value="41" name="Host_Shutdown" message="$(string.string41)">
+        </task>
+        <task value="48" name="Installation" message="$(string.string48)">
+        </task>
+        <task value="64" name="UMDF_Crash" message="$(string.string64)">
+        </task>
+        <task value="80" name="Fx_PnpOperation" message="$(string.string80)">
+        </task>
+        <task value="96" name="PowerTransition_Driver" message="$(string.string96)">
+          <opcodes>
+           <opcode value="32" name="NestingStart" message="$(string.string12)"/>
+           <opcode value="33" name="NestingStop" message="$(string.string13)"/>
+          </opcodes>
+        </task>
+        <task value="101" name="Reflector_Startup" message="$(string.string101)">
+        </task>
+        <task value="116" name="UMDF_Test" message="$(string.string116)">
+        </task>
+        <task value="117" name="Task_Umdf_Fx_Ddi_ReadFromHardware" message="$(string.string117)">
+        </task>
+        <task value="118" name="Task_Umdf_ReadFromHardware" message="$(string.string118)">
+        </task>
+        <task value="119" name="Task_Umdf_Fx_Ddi_WriteToHardware" message="$(string.string119)">
+        </task>
+        <task value="120" name="Task_Umdf_WriteToHardware" message="$(string.string120)">
+        </task>
+        <task value="121" name="Task_Umdf_InterruptNotification" message="$(string.string121)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="32" name="NestingStart" message="$(string.string12)"/>
+        <opcode value="33" name="NestingStop" message="$(string.string13)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1000_1">
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1001_1">
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1003_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="HostGuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1004_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1007_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Problem" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DetectedBy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ActiveOperation" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ExitCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1008_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TerminationStatus" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2004_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Service" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClsId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args2005_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CompanyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileVersion" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2006_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2100_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args3000_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateMachine" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Queueing" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3010_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateMachine" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3011_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateMachine" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10000_1">
+          <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FrameworkVersion" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args10001_1">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CLSID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FxVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Upgrade" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args10100_1">
+          <data name="FinalStatus" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args10111_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RestartCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10113_1">
+          <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConflictingParameter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args10117_1">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActualFuntionTableCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExpectedFuntionTableCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19999_1">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args20030_1">
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args30008_1">
+          <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30020_1">
+          <data name="InterruptMessageNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DriverManager_CreateHost" />
+       <string id="string1" value="DriverManager_ShutdownHost" />
+       <string id="string2" value="DriverManager_Startup" />
+       <string id="string3" value="Fx_PnpOperation" />
+       <string id="string4" value="Host_DeviceArrival" />
+       <string id="string5" value="Host_PnpOperation" />
+       <string id="string6" value="Host_Shutdown" />
+       <string id="string7" value="Host_Startup" />
+       <string id="string8" value="Installation" />
+       <string id="string9" value="Microsoft-Windows-DriverFrameworks-UserMode" />
+       <string id="string10" value="Microsoft-Windows-DriverFrameworks-UserMode/Operational" />
+       <string id="string11" value="Microsoft-Windows-Kernel-Power/Diagnostic" />
+       <string id="string12" value="NestingStart" />
+       <string id="string13" value="NestingStop" />
+       <string id="string14" value="PowerTransition_Driver" />
+       <string id="string15" value="Reflector_Startup" />
+       <string id="string16" value="System" />
+       <string id="string17" value="Task_Umdf_Fx_Ddi_ReadFromHardware" />
+       <string id="string18" value="Task_Umdf_Fx_Ddi_WriteToHardware" />
+       <string id="string19" value="Task_Umdf_InterruptNotification" />
+       <string id="string20" value="Task_Umdf_ReadFromHardware" />
+       <string id="string21" value="Task_Umdf_WriteToHardware" />
+       <string id="string22" value="UMDF_Crash" />
+       <string id="string23" value="UMDF_Test" />
+       <string id="string24" value="umdf:PowerTransition" />
+       <string id="string25" value="win:Info" />
+       <string id="string26" value="win:Start" />
+       <string id="string27" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

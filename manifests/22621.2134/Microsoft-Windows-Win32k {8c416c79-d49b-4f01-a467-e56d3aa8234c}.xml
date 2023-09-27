@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Win32k" name="Microsoft-Windows-Win32k" guid="{8c416c79-d49b-4f01-a467-e56d3aa8234c}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="WindowUpdate" opcode="win:Info" keywords="Updates" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FocusChange" opcode="win:Info" keywords="Focus" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPIMsgError" opcode="win:Info" keywords="UIPI" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPIHookError" opcode="win:Info" keywords="UIPI" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPIEventHookError" opcode="win:Info" keywords="UIPI" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPIHandleValError" opcode="win:Info" keywords="UIPI" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPIInputError" opcode="win:Info" keywords="UIPI" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPIClipboardError" opcode="win:Info" keywords="UIPI" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/UIPI" task="UIPISystemError" opcode="win:Info" keywords="UIPI" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Info" keywords="win32Power" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="IdleActionExpiration" opcode="win:Info" keywords="win32Power" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="DisplayReqChange" opcode="win:Info" keywords="win32Power" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="DisplayTimeoutReset" opcode="win:Info" keywords="win32Power" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Concurrency" task="LockAcquireExclusive" opcode="win:Info" keywords="Concurrency" template="Args14_0"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Concurrency" task="LockAcquireShared" opcode="win:Info" keywords="Concurrency"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Concurrency" task="LockAcquireSharedStarveExclusive" opcode="win:Info" keywords="Concurrency"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Concurrency" task="LockRelease" opcode="win:Info" keywords="Concurrency"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainBind" opcode="win:Info" keywords="Updates" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainUnBind" opcode="win:Info" keywords="Updates"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="IdleStatusTracing" opcode="win:Info" keywords="win32Power" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainSetStats" opcode="win:Info" keywords="Updates" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="ScreenSaverProcess" opcode="win:Info" keywords="win32Power" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="WinlogonSleepStart" opcode="win:Info" keywords="win32Power"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="WinlogonSleepEnd" opcode="win:Info" keywords="win32Power"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="UserActive" opcode="win:Info" keywords="UserActivity" template="Args25_0"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FocusedProcessChange" opcode="win:Info" keywords="UserActivity" template="Args26_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmSpriteCreate" opcode="win:Info" keywords="Updates" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmSpriteDestroy" opcode="win:Info" keywords="Updates"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfCreate" opcode="win:Info" keywords="Updates" template="Args29_0"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfDestroy" opcode="win:Info" keywords="Updates"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfPhysSurfBind" opcode="win:Info" keywords="Updates" template="Args31_0"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfPhysSurfUnbind" opcode="win:Info" keywords="Updates"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="GdiSysMemToken" opcode="win:Info" keywords="Updates" template="Args33_0"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="WaitCursor" opcode="win:Info" keywords="UIUnresponsiveness" template="Args35_0"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ThreadInfoRundown" opcode="win:Info" keywords="ThreadRundown" template="Args36_0"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="InputProcessDelay" opcode="win:Info" keywords="UIUnresponsiveness" template="Args37_0"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="MessageCheckDelay" opcode="win:Info" keywords="UIUnresponsiveness" template="Args38_0"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="NewRendering" keywords="Rendering" template="Args39_0"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="OldToNewRendering" keywords="Rendering"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="AppRenderingUpdate" keywords="Rendering" template="Args41_0"/>
+        <event value="42" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="AppRenderingTightUpdate" keywords="Rendering"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="ValidateWindow" keywords="Rendering" template="Args43_0"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="InvalidateWindow" keywords="Rendering"/>
+        <event value="45" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ThreadExit" opcode="win:Info" keywords="ThreadInfo"/>
+        <event value="46" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="BindLogicalSurface" opcode="win:Info" keywords="Updates" template="Args46_0"/>
+        <event value="47" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="UnBindLogicalSurface" opcode="win:Info" keywords="Updates"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="BindLogicalSurfaceRH" opcode="win:Info" keywords="Updates" template="Args48_0"/>
+        <event value="49" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmSpriteLogicalSurfBind" opcode="win:Info" keywords="Updates" template="Args49_0"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmSpriteLogicalSurfUnBind" opcode="win:Info" keywords="Updates"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfEnableDirtyNotification" opcode="win:Info" keywords="Updates" template="Args51_0"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="PhysicalSurfCreate" opcode="win:Info" keywords="Updates" template="Args52_0"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ModifyRgn" opcode="win:Info" keywords="Updates" template="Args53_0"/>
+        <event value="54" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainGetStats" opcode="win:Info" keywords="Updates"/>
+        <event value="55" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainBindingOpen" opcode="win:Info" keywords="Updates" template="Args55_0"/>
+        <event value="56" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainBindingRelease" opcode="win:Info" keywords="Updates" template="Args56_0"/>
+        <event value="57" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SwapChainBindingStatus" opcode="win:Info" keywords="Updates"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DesktopResolutionFailure" opcode="win:Info" keywords="Updates" template="Args58_0"/>
+        <event value="59" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="QueuePostMessage" opcode="win:Info" keywords="MessagePump" template="Args59_0"/>
+        <event value="60" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="SendMessage" opcode="win:Start" keywords="MessagePump" template="Args60_0"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RetrievePostMessage" opcode="win:Info" keywords="MessagePump"/>
+        <event value="62" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RetrieveSendMessage" opcode="win:Start" keywords="MessagePump"/>
+        <event value="63" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RetrieveInputMessage" opcode="win:Info" keywords="MessagePump ComponentHosting"/>
+        <event value="64" version="0" level="win:Verbose"  channel="Microsoft-Windows-Win32k/Messages" task="RetrievePseudoMessage" opcode="win:Info" keywords="MessagePump"/>
+        <event value="65" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="WakePump" opcode="win:Info" keywords="MessagePump"/>
+        <event value="66" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputQueueLocked" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args66_0"/>
+        <event value="67" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputQueueLocked" opcode="win:Info" keywords="MessagePumpInternalAndInput"/>
+        <event value="68" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="UserCallback" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args68_0"/>
+        <event value="69" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="UserCallback" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="70" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="SendMessage" opcode="win:Stop" keywords="MessagePump"/>
+        <event value="71" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="SendMessageTimeOutToBlocking" opcode="win:Info" keywords="MessagePumpInternalAndInput"/>
+        <event value="72" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputDeviceRead" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args72_0"/>
+        <event value="73" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputDeviceRead" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="74" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="MessageInjection" opcode="PostGestureInputMessage" keywords="MessagePumpInternalAndInput" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="MessageInjection" opcode="PostGestureMessage" keywords="MessagePumpInternalAndInput"/>
+        <event value="76" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="AppMessagePump" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args76_0"/>
+        <event value="77" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="AppMessagePump" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="78" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="WakeRIT" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args78_0"/>
+        <event value="79" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerMotion" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args79_0"/>
+        <event value="80" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerMotion" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="81" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InjectMouse" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args81_0"/>
+        <event value="82" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InjectMouse" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="83" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RetrieveSendMessage" opcode="win:Stop" keywords="MessagePump"/>
+        <event value="84" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="GUIProcess" opcode="win:Start" keywords="ThreadInfo"/>
+        <event value="85" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="GUIProcess" opcode="win:Stop" keywords="ThreadInfo"/>
+        <event value="86" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="GUIThread" opcode="win:Start" keywords="ThreadInfo"/>
+        <event value="87" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="GUIThread" opcode="win:Stop" keywords="ThreadInfo"/>
+        <event value="88" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="QueueInputMessage" opcode="win:Info" keywords="MessagePump ComponentHosting" template="Args88_0"/>
+        <event value="89" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TranslateMessage" opcode="win:Start" keywords="MessagePump"/>
+        <event value="91" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TranslateMessage" opcode="win:Stop" keywords="MessagePump"/>
+        <event value="92" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DispatchMessage" opcode="win:Start" keywords="MessagePump"/>
+        <event value="93" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DispatchMessage" opcode="win:Stop" keywords="MessagePump"/>
+        <event value="94" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingSpeedHitTest" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="95" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingSpeedHitTest" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="96" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingWindowHitTest" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="97" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingWindowHitTest" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="98" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingPointerTarget" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="99" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingPointerTarget" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="MessageInjection" opcode="InjectTouchEvent" keywords="MessagePumpInternalAndInput"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" opcode="win:Info" keywords="TimerSurvey" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" opcode="win:Info" keywords="TimerSurvey" template="Args103_0"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ContactVisualization" opcode="win:Start" keywords="UserActivity Rendering"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ContactVisualization" opcode="win:Stop" keywords="UserActivity Rendering"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingOffset" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingPointerEvent" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args107_0"/>
+        <event value="108" version="0" level="win:Verbose"  channel="Microsoft-Windows-Win32k/Messages" task="TouchTargetingPointerEvent" opcode="win:Info" keywords="MessagePumpInternalAndInput"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceRead" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceRead" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceTransformation" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args115_0"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceTransformation" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="TranslationUpdate" keywords="Rendering"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="TranslationUpdateOffset" opcode="win:Info" keywords="Rendering" template="Args118_0"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="TranslationUpdateRectClip" keywords="Rendering"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="UpdateDxAccumFromGDI" keywords="Rendering"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="UpdateDxAccumFromDX" keywords="Rendering"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Render" task="Rendering" opcode="GetDxAccum" keywords="Rendering" template="Args122_0"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ModifyDxAccumRgn" opcode="win:Info" keywords="Updates"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfRemovedTranslationFromDirty" opcode="win:Info" keywords="Updates"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceDiscovery" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="126" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceDiscovery" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="127" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="128" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="129" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchInjectionEvent" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="130" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchInjectionEvent" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="131" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCreation" opcode="win:Start" keywords="PointerInput" template="Args131_0"/>
+        <event value="132" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCreation" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="133" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameBuildPartial" opcode="win:Start" keywords="PointerInput"/>
+        <event value="134" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameBuildPartial" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="135" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCommit" opcode="win:Start" keywords="PointerInput"/>
+        <event value="136" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCommit" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="137" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Start" keywords="PointerInput"/>
+        <event value="138" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="139" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameMessageGeneration" opcode="win:Start" keywords="PointerInput"/>
+        <event value="140" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameMessageGeneration" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="141" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerMessageRetrieve" opcode="win:Start" keywords="PointerInput" template="Args141_0"/>
+        <event value="142" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerMessageRetrieve" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="143" version="0" level="win:Verbose"  channel="Microsoft-Windows-Win32k/Messages" task="PointerUpdateMessageRetrieve" opcode="win:Start" keywords="PointerInput"/>
+        <event value="144" version="0" level="win:Verbose"  channel="Microsoft-Windows-Win32k/Messages" task="PointerUpdateMessageRetrieve" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="145" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerSetTargetWindows" opcode="win:Start" keywords="PointerInput"/>
+        <event value="146" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerSetTargetWindows" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="147" version="0" level="win:Verbose"  channel="Microsoft-Windows-Win32k/Messages" task="PointerUpdateSetTargetWindows" opcode="win:Start" keywords="PointerInput"/>
+        <event value="148" version="0" level="win:Verbose"  channel="Microsoft-Windows-Win32k/Messages" task="PointerUpdateSetTargetWindows" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="149" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputQueueNoRemoveLocker" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="150" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputQueueLockedPeekRecursion" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="151" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompCommitBatch" opcode="win:Info" keywords="Updates Visualization" template="Args151_0"/>
+        <event value="152" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DelegateInputUserCallback" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="153" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DelegateInputUserCallback" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="154" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DelegatedInputWorker" opcode="win:Start" keywords="MessagePumpInternalAndInput" template="Args154_0"/>
+        <event value="155" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DelegatedInputWorker" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="156" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerDeviceMessage" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args156_0"/>
+        <event value="157" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerMessageGeneration" opcode="win:Start" keywords="PointerInput" template="Args157_0"/>
+        <event value="158" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerMessageGeneration" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="159" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Info" keywords="PointerInput" template="Args159_0"/>
+        <event value="160" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SmoothRotation" opcode="win:Start" keywords="UIUnresponsiveness AutoRotation" template="Args160_0"/>
+        <event value="161" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SmoothRotation" opcode="win:Stop" keywords="UIUnresponsiveness AutoRotation"/>
+        <event value="162" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompGetBatch" opcode="win:Info" keywords="Updates Visualization"/>
+        <event value="163" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Contention" task="ExclusiveUserCrit" opcode="win:Info" keywords="Contention" template="Args163_0"/>
+        <event value="164" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Contention" task="ExclusiveUserCrit" opcode="win:Info" keywords="Contention"/>
+        <event value="165" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Contention" task="SharedUserCrit" opcode="win:Info" keywords="Contention"/>
+        <event value="166" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Contention" task="SharedUserCrit" opcode="win:Info" keywords="Contention"/>
+        <event value="167" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Contention" task="ReleaseUserCrit" opcode="win:Info" keywords="Contention" template="Args167_0"/>
+        <event value="168" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="SleepInputIdle" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args168_0"/>
+        <event value="169" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="WakeInputIdle" opcode="win:Info" keywords="MessagePumpInternalAndInput"/>
+        <event value="170" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="EdgyDetection" opcode="win:Start" keywords="UserActivity PointerInput"/>
+        <event value="171" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="EdgyDetection" opcode="win:Stop" keywords="UserActivity PointerInput" template="Args171_0"/>
+        <event value="172" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ImmersiveInputProcessDelay" opcode="win:Info" keywords="UIUnresponsiveness" template="Args172_0"/>
+        <event value="173" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ImmersiveMessageCheckDelay" opcode="win:Info" keywords="UIUnresponsiveness" template="Args173_0"/>
+        <event value="174" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="THQAEvent" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="175" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="THQAEvent" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="176" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerPrediction" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="177" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerPrediction" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="178" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="MoveRgn" opcode="win:Info" keywords="Updates"/>
+        <event value="179" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DirtyRgn" opcode="win:Info" keywords="Updates"/>
+        <event value="180" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LogicalSurfRemovedTranslationFromMove" opcode="win:Info" keywords="Updates"/>
+        <event value="181" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DirtyRectUpdate" opcode="win:Info" keywords="Updates"/>
+        <event value="182" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TranslationUpdateOffsetDWM" opcode="win:Info" keywords="Rendering"/>
+        <event value="183" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmGetRgn" opcode="win:Info" keywords="Updates"/>
+        <event value="184" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Start" keywords="PointerInput"/>
+        <event value="185" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Stop" keywords="PointerInput"/>
+        <event value="186" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Info" keywords="PointerInput"/>
+        <event value="187" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="InternalSetTimerCoalescing" opcode="win:Info" keywords="TimerInfo" template="Args187_0"/>
+        <event value="188" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="InternalSetTimerNoCoalescing" opcode="win:Info" keywords="TimerInfo"/>
+        <event value="189" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="KillTimer" opcode="win:Info" keywords="TimerInfo"/>
+        <event value="190" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ProcTimerCoalescing" opcode="win:Info" keywords="TimerInfo"/>
+        <event value="191" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ProcTimerNoCoalescing" opcode="win:Info" keywords="TimerInfo"/>
+        <event value="192" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DrvChangeDisplaySettings" opcode="win:Start"/>
+        <event value="193" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DrvChangeDisplaySettings" opcode="win:Stop"/>
+        <event value="194" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ChangeDisplayMode" opcode="win:Start"/>
+        <event value="195" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ChangeDisplayMode" opcode="win:Stop"/>
+        <event value="196" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PseudoDevCreation" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="197" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PseudoDevCreation" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="198" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchHWTimeStamp" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args198_0"/>
+        <event value="199" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Info" keywords="PointerInput"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="PointerFrameCoalesce" opcode="win:Info" keywords="PointerInput"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="CompositionSurfaceObjectUpdate" opcode="win:Info" keywords="Updates Visualization" template="Args202_0"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="QueueEventMessage" opcode="win:Info" keywords="MessagePumpInternalAndInput" template="Args203_0"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RetrieveQueueEventMessage" opcode="win:Info" keywords="MessagePumpInternalAndInput"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ForegroundWindowFullScreen" opcode="win:Start" keywords="UIUnresponsiveness AutoRotation"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ForegroundWindowFullScreen" opcode="win:Stop" keywords="UIUnresponsiveness AutoRotation"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ChangeDisplayModeBroadcast" opcode="win:Info"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ContactVisualization" opcode="win:Info" keywords="UserActivity Rendering" template="Args213_0"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ChangeDisplayModeDeferral" opcode="win:Info"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ConvertibleState" opcode="win:Info" keywords="UserActivity" template="Args215_0"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DockState" opcode="win:Info" keywords="UserActivity" template="Args216_0"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadHWTimeStamp" opcode="win:Info" keywords="TouchInput" template="Args217_0"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TransformAgeDecay" opcode="win:Info" template="Args218_0"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="WakeMIT" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="ArmDitMouseFlush" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="221" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="ProcessQueuedMouseEvents" opcode="win:Start" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="ProcessQueuedMouseEvents" opcode="win:Stop" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DITSpeedHitTestFailedRevalidation" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="224" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="InputRedirection" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting" template="Args224_0"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="OnInputXformUpdate" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting" template="Args225_0"/>
+        <event value="226" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitWaitForRitDisEngagement" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="227" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RitDisEngaged" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="228" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitEngaged" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="229" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="RitReEngaged" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitDisEngaged" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="231" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitTerminated" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="232" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitShutdown" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="233" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadAAP" opcode="win:Info" keywords="TouchInput" template="Args233_0"/>
+        <event value="234" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="MouseInputApc" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="235" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="MouseInputCoalesced" opcode="win:Info" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="236" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadTypeDiscovered" opcode="win:Info" keywords="TouchInput" template="Args236_0"/>
+        <event value="237" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadEnabledStatusChange" opcode="win:Start" keywords="TouchInput"/>
+        <event value="238" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadEnabledStatusChange" opcode="win:Stop" keywords="TouchInput"/>
+        <event value="239" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="PTPReadThresholds" opcode="win:Start" keywords="TouchInput"/>
+        <event value="240" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="PTPReadThresholds" opcode="win:Stop" keywords="TouchInput"/>
+        <event value="241" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadConfidenceCleared" opcode="win:Info" keywords="TouchInput" template="Args241_0"/>
+        <event value="242" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadConfidenceUpped" opcode="win:Info" keywords="TouchInput"/>
+        <event value="243" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="PTPElasticDragMode" opcode="win:Start" keywords="TouchInput"/>
+        <event value="244" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="PTPElasticDragMode" opcode="win:Stop" keywords="TouchInput"/>
+        <event value="245" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LegacyTouchPadDetection" opcode="win:Start" keywords="TouchInput"/>
+        <event value="246" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LegacyTouchPadDetection" opcode="win:Stop" keywords="TouchInput"/>
+        <event value="247" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LegacyTouchPadDetection" opcode="win:Info" keywords="TouchInput"/>
+        <event value="248" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="LegacyTouchPadDetection" opcode="win:Info" keywords="TouchInput"/>
+        <event value="249" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadCurtainState" opcode="win:Info" keywords="TouchInput" template="Args249_0"/>
+        <event value="250" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchPadCurtainSize" opcode="win:Info" keywords="TouchInput" template="Args250_0"/>
+        <event value="251" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchpadStopInertia" opcode="win:Info" keywords="TouchInput"/>
+        <event value="252" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchpadStopInertia" opcode="win:Info" keywords="TouchInput"/>
+        <event value="253" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TouchpadStopInertia" opcode="win:Info" keywords="TouchInput"/>
+        <event value="254" version="0" level="win:Error"  channel="Microsoft-Windows-Win32k/Tracing" task="TrappedAppContainerRender" opcode="win:Info" keywords="TrappedACRendering" template="Args254_0"/>
+        <event value="255" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="CursorSize" opcode="win:Info" keywords="Updates" template="Args255_0"/>
+        <event value="256" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitMmcssWork" opcode="win:Start" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="257" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="DitMmcssWork" opcode="win:Stop" keywords="MessagePumpInternalAndInput ComponentHosting"/>
+        <event value="258" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FocusedProcessChangeGained" opcode="win:Info" keywords="UserActivity" template="Args258_0"/>
+        <event value="259" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FocusedProcessChangeLost" opcode="win:Info" keywords="UserActivity" template="Args259_0"/>
+        <event value="260" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Operational" task="FontLoadAttempt" keywords="Fonts" template="Args260_0"/>
+        <event value="400" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompDeferBatch" opcode="win:Info" keywords="Updates" template="Args400_0"/>
+        <event value="401" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchPadHIDProcessing" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="402" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchPadHIDProcessing" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="403" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchPadWMPointerProcessing" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="404" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchPadWMPointerProcessing" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="405" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="TouchPadGesture" opcode="win:Info" keywords="MessagePumpInternalAndInput"/>
+        <event value="406" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="CopyPointerInputFrame" opcode="win:Start" keywords="MessagePumpInternalAndInput"/>
+        <event value="407" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="CopyPointerInputFrame" opcode="win:Stop" keywords="MessagePumpInternalAndInput"/>
+        <event value="410" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="LatencyModeProcessing" opcode="win:Start"/>
+        <event value="411" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="LatencyModeProcessing" opcode="win:Stop"/>
+        <event value="412" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompBeginFrame" opcode="win:Info" keywords="Updates" template="Args412_0"/>
+        <event value="413" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TokenIndependentFlipSkipComplete" opcode="win:Info" keywords="Updates" template="Args413_0"/>
+        <event value="414" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmManipulationFrameStart" opcode="win:Info" keywords="Updates"/>
+        <event value="415" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmManipulationFrameRouted" opcode="win:Info" keywords="Updates"/>
+        <event value="418" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Start" keywords="win32Power" template="Args418_0"/>
+        <event value="419" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Stop" keywords="win32Power"/>
+        <event value="420" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Start" keywords="win32Power"/>
+        <event value="421" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Stop" keywords="win32Power"/>
+        <event value="422" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Start" keywords="win32Power"/>
+        <event value="423" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Stop" keywords="win32Power"/>
+        <event value="424" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Start" keywords="win32Power"/>
+        <event value="425" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerDisplayChange" opcode="win:Stop" keywords="win32Power"/>
+        <event value="426" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Messages" task="QueueNullPostMessage" opcode="win:Info" keywords="MessagePump NullMessages" template="Args426_0"/>
+        <event value="427" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Operational" task="SyscallFilterMessage" opcode="win:Info" template="Args427_0"/>
+        <event value="428" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Operational" task="SPIBlockedByFiltering" opcode="win:Info" template="Args428_0"/>
+        <event value="429" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerWatchdog" opcode="win:Start" keywords="win32Power" template="Args429_0"/>
+        <event value="430" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerWatchdog" opcode="win:Stop" keywords="win32Power"/>
+        <event value="431" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Start" keywords="win32Power" template="Args431_0"/>
+        <event value="432" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Stop" keywords="win32Power"/>
+        <event value="433" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Start" keywords="win32Power" template="Args433_0"/>
+        <event value="434" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Stop" keywords="win32Power"/>
+        <event value="435" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Start" keywords="win32Power" template="Args435_0"/>
+        <event value="436" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Stop" keywords="win32Power"/>
+        <event value="437" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Start" keywords="win32Power" template="Args437_0"/>
+        <event value="438" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Info" keywords="win32Power" template="Args438_0"/>
+        <event value="439" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Info" keywords="win32Power"/>
+        <event value="440" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Stop" keywords="win32Power"/>
+        <event value="441" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Start" keywords="win32Power" template="Args441_0"/>
+        <event value="442" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Power" task="PowerRequest" opcode="win:Stop" keywords="win32Power"/>
+        <event value="443" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompResourceMapping" opcode="win:Info" keywords="DCompDetails DCompInput" template="Args443_0"/>
+        <event value="444" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompResourcePropertyUpdate" opcode="win:Info" keywords="Updates Visualization" template="Args444_0"/>
+        <event value="445" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompCommandType" opcode="win:Info" keywords="Updates Visualization" template="Args445_0"/>
+        <event value="446" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompCommandsInBatch" opcode="win:Info" keywords="Updates Visualization" template="Args446_0"/>
+        <event value="450" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompCreateImplicitInteraction" opcode="win:Info" keywords="DCompInput" template="Args450_0"/>
+        <event value="451" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DCompVisualSetInteraction" opcode="win:Info" keywords="DCompInput"/>
+        <event value="452" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="UserHandleOperation" opcode="CreateHandle" keywords="UserHandleOperation" template="Args452_0"/>
+        <event value="453" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="UserHandleOperation" opcode="DestroyHandle" keywords="UserHandleOperation"/>
+        <event value="454" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="UserHandleOperation" opcode="UpdateHandleOwner" keywords="UserHandleOperation"/>
+        <event value="455" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="GdiHandleOperation" opcode="CreateHandle" keywords="GdiHandleOperation"/>
+        <event value="456" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="GdiHandleOperation" opcode="DestroyHandle" keywords="GdiHandleOperation"/>
+        <event value="457" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="GdiHandleOperation" opcode="UpdateHandleOwner" keywords="GdiHandleOperation"/>
+        <event value="458" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="GdiHandleOperation" opcode="TransformHandle" keywords="GdiHandleOperation" template="Args458_0"/>
+        <event value="459" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="WriteClipboard" opcode="win:Info" keywords="WriteClipboard" template="Args459_0"/>
+        <event value="460" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="WriteClipboard" opcode="win:Info" keywords="WriteClipboard"/>
+        <event value="461" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmVisRgnUpdate" opcode="win:Info" keywords="Rendering" template="Args461_0"/>
+        <event value="462" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="DwmVisRgnDirty" opcode="win:Info" keywords="Rendering"/>
+        <event value="463" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ReadClipboard" opcode="win:Info" keywords="ReadClipboard" template="Args463_0"/>
+        <event value="500" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerCompleteToken" opcode="win:Start" keywords="Updates" template="Args500_0"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerCompleteToken" opcode="win:Stop" keywords="Updates"/>
+        <event value="502" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerTokenReleaseToFrame" opcode="win:Start" keywords="Updates"/>
+        <event value="503" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerTokenReleaseToFrame" opcode="win:Stop" keywords="Updates"/>
+        <event value="504" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentConfirmed" opcode="win:Info" keywords="Updates"/>
+        <event value="505" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentSignaled" opcode="win:Info" keywords="Updates" template="Args505_0"/>
+        <event value="506" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentPosted" opcode="win:Info" keywords="Updates" template="Args506_0"/>
+        <event value="507" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerProducerSetContent" opcode="win:Info" keywords="Updates" template="Args507_0"/>
+        <event value="508" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerBufferAvailable" opcode="win:Info" keywords="Updates" template="Args508_0"/>
+        <event value="509" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerAddBuffer" opcode="win:Info" keywords="Updates" template="Args509_0"/>
+        <event value="510" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerRemoveBuffer" opcode="win:Info" keywords="Updates"/>
+        <event value="511" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerContentRebind" opcode="win:Info" keywords="Updates" template="Args511_0"/>
+        <event value="512" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentProcessed" opcode="win:Info" keywords="Updates" template="Args512_0"/>
+        <event value="513" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentDeferred" opcode="win:Info" keywords="Updates"/>
+        <event value="514" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentCanceled" opcode="win:Info" keywords="Updates"/>
+        <event value="515" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentIFlipSubmitted" opcode="win:Info" keywords="Updates" template="Args515_0"/>
+        <event value="516" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentIFlipCompleted" opcode="win:Info" keywords="Updates" template="Args516_0"/>
+        <event value="517" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentQueueDepth" opcode="win:Info" keywords="Updates" template="Args517_0"/>
+        <event value="518" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerBinding" opcode="win:Start" keywords="Updates"/>
+        <event value="519" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerBinding" opcode="win:Info" keywords="Updates" template="Args519_0"/>
+        <event value="520" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerBinding" opcode="win:Stop" keywords="Updates"/>
+        <event value="521" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerAddContent" opcode="win:Info" keywords="Updates"/>
+        <event value="522" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerContentFlip" opcode="win:Info" keywords="Updates" template="Args522_0"/>
+        <event value="523" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerNoOpPresent" opcode="win:Info" keywords="Updates"/>
+        <event value="524" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerCancelPosted" opcode="win:Info" keywords="Updates"/>
+        <event value="525" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerContentUnbind" opcode="win:Info" keywords="Updates"/>
+        <event value="526" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerCreate" opcode="win:Info" keywords="Updates"/>
+        <event value="527" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerDestroy" opcode="win:Info" keywords="Updates"/>
+        <event value="528" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TokenManagerDisableScanoutToken" opcode="win:Info" keywords="Updates"/>
+        <event value="529" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerLost" opcode="win:Info" keywords="Updates"/>
+        <event value="530" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerCanceledPresentShown" opcode="win:Info" keywords="Updates" template="Args530_0"/>
+        <event value="531" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerUpdateExpectedConsumerPresentId" opcode="win:Info" keywords="Updates"/>
+        <event value="532" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentSkipped" opcode="win:Info" keywords="Updates"/>
+        <event value="533" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerRemoveContent" opcode="win:Info" keywords="Updates"/>
+        <event value="534" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="FlipManagerPresentIFlipPurgePreviousPresents" opcode="win:Info" keywords="Updates"/>
+        <event value="1000" version="0" level="win:Informational"  opcode="win:Info" keywords="AuditApiCalls" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Informational"  opcode="win:Info" keywords="AuditApiCalls" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  opcode="win:Info" keywords="AuditApiCalls" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Informational"  opcode="win:Info" keywords="AuditApiCalls" template="Args1003_0"/>
+        <event value="2000" version="0" level="win:Informational"  opcode="win:Info" keywords="ProcessInfo" template="Args2000_0"/>
+        <event value="10002" version="0" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="WindowLayoutChange" opcode="win:Stop" template="Args10002_0"/>
+        <event value="201" version="1" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TokenCompositionSurfaceObject" opcode="win:Info" keywords="Updates Visualization" template="Args201_1"/>
+        <event value="301" version="1" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="TokenStateChanged" opcode="win:Info" keywords="Updates" template="Args301_1"/>
+        <event value="416" version="1" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="ExclusiveUserCritTelemetry" opcode="win:Info" keywords="Contention ContentionTelemetry" template="Args416_1"/>
+        <event value="417" version="1" level="win:Informational"  channel="Microsoft-Windows-Win32k/Tracing" task="SharedUserCritTelemetry" opcode="win:Info" keywords="Contention ContentionTelemetry"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Win32k/Tracing" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-Win32k/UIPI" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Win32k/Power" type="Debug"/>
+        <channel value="19" name="Microsoft-Windows-Win32k/Concurrency" type="Debug"/>
+        <channel value="20" name="Microsoft-Windows-Win32k/Render" type="Debug"/>
+        <channel value="21" name="Microsoft-Windows-Win32k/Messages" type="Debug"/>
+        <channel value="22" name="Microsoft-Windows-Win32k/Contention" type="Debug"/>
+        <channel value="23" name="Microsoft-Windows-Win32k/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="AuditApiCalls" mask="0x400" message="$(string.string5)" />
+        <keyword name="CompatImpact" mask="0x800" message="$(string.string12)" />
+        <keyword name="Updates" mask="0x1000" message="$(string.string277)" />
+        <keyword name="Focus" mask="0x2000" message="$(string.string97)" />
+        <keyword name="UIPI" mask="0x4000" message="$(string.string264)" />
+        <keyword name="win32Power" mask="0x8000" message="$(string.string293)" />
+        <keyword name="Concurrency" mask="0x10000" message="$(string.string15)" />
+        <keyword name="UserActivity" mask="0x20000" message="$(string.string279)" />
+        <keyword name="UIUnresponsiveness" mask="0x40000" message="$(string.string272)" />
+        <keyword name="ThreadRundown" mask="0x80000" message="$(string.string228)" />
+        <keyword name="Rendering" mask="0x100000" message="$(string.string200)" />
+        <keyword name="ThreadInfo" mask="0x200000" message="$(string.string226)" />
+        <keyword name="MessagePump" mask="0x400000" message="$(string.string142)" />
+        <keyword name="MessagePumpInternalAndInput" mask="0x800000" message="$(string.string144)" />
+        <keyword name="TouchInput" mask="0x1000000" message="$(string.string237)" />
+        <keyword name="TimerSurvey" mask="0x2000000" message="$(string.string230)" />
+        <keyword name="PointerInput" mask="0x4000000" message="$(string.string173)" />
+        <keyword name="AutoRotation" mask="0x8000000" message="$(string.string6)" />
+        <keyword name="Contention" mask="0x10000000" message="$(string.string17)" />
+        <keyword name="TimerInfo" mask="0x20000000" message="$(string.string229)" />
+        <keyword name="ComponentHosting" mask="0x40000000" message="$(string.string13)" />
+        <keyword name="TrappedACRendering" mask="0x80000000" message="$(string.string262)" />
+        <keyword name="Fonts" mask="0x100000000" message="$(string.string103)" />
+        <keyword name="NullMessages" mask="0x200000000" message="$(string.string160)" />
+        <keyword name="Visualization" mask="0x400000000" message="$(string.string283)" />
+        <keyword name="DCompDetails" mask="0x800000000" message="$(string.string29)" />
+        <keyword name="PrecisionTouchpad" mask="0x1000000000" message="$(string.string186)" />
+        <keyword name="ContentionTelemetry" mask="0x2000000000" message="$(string.string18)" />
+        <keyword name="ProcessInfo" mask="0x4000000000" message="$(string.string187)" />
+        <keyword name="DCompInput" mask="0x8000000000" message="$(string.string31)" />
+        <keyword name="GdiHandleOperation" mask="0x10000000000" message="$(string.string105)" />
+        <keyword name="UserHandleOperation" mask="0x20000000000" message="$(string.string281)" />
+        <keyword name="WriteClipboard" mask="0x40000000000" message="$(string.string298)" />
+        <keyword name="ReadClipboard" mask="0x80000000000" message="$(string.string198)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="WindowUpdate" message="$(string.string1)">
+        </task>
+        <task value="2" name="FocusChange" message="$(string.string2)">
+        </task>
+        <task value="3" name="UIPIMsgError" message="$(string.string3)">
+        </task>
+        <task value="4" name="UIPIHookError" message="$(string.string4)">
+        </task>
+        <task value="5" name="UIPIEventHookError" message="$(string.string5)">
+        </task>
+        <task value="6" name="UIPIHandleValError" message="$(string.string6)">
+        </task>
+        <task value="7" name="UIPIInputError" message="$(string.string7)">
+        </task>
+        <task value="8" name="UIPIClipboardError" message="$(string.string8)">
+        </task>
+        <task value="9" name="UIPISystemError" message="$(string.string9)">
+        </task>
+        <task value="10" name="PowerDisplayChange" message="$(string.string10)">
+        </task>
+        <task value="11" name="IdleActionExpiration" message="$(string.string11)">
+        </task>
+        <task value="12" name="DisplayReqChange" message="$(string.string12)">
+        </task>
+        <task value="13" name="DisplayTimeoutReset" message="$(string.string13)">
+        </task>
+        <task value="14" name="LockAcquireExclusive" message="$(string.string14)">
+        </task>
+        <task value="15" name="LockAcquireShared" message="$(string.string15)">
+        </task>
+        <task value="16" name="LockAcquireSharedStarveExclusive" message="$(string.string16)">
+        </task>
+        <task value="17" name="LockRelease" message="$(string.string17)">
+        </task>
+        <task value="18" name="SwapChainBind" message="$(string.string18)">
+        </task>
+        <task value="19" name="SwapChainSetStats" message="$(string.string19)">
+        </task>
+        <task value="20" name="SwapChainUnBind" message="$(string.string20)">
+        </task>
+        <task value="21" name="IdleStatusTracing" message="$(string.string21)">
+        </task>
+        <task value="22" name="ScreenSaverProcess" message="$(string.string22)">
+        </task>
+        <task value="23" name="WinlogonSleepStart" message="$(string.string23)">
+        </task>
+        <task value="24" name="WinlogonSleepEnd" message="$(string.string24)">
+        </task>
+        <task value="25" name="UserActive" message="$(string.string25)">
+        </task>
+        <task value="26" name="FocusedProcessChange" message="$(string.string26)">
+        </task>
+        <task value="27" name="DwmSpriteCreate" message="$(string.string27)">
+        </task>
+        <task value="28" name="DwmSpriteDestroy" message="$(string.string28)">
+        </task>
+        <task value="29" name="LogicalSurfCreate" message="$(string.string29)">
+        </task>
+        <task value="30" name="LogicalSurfDestroy" message="$(string.string30)">
+        </task>
+        <task value="31" name="LogicalSurfPhysSurfBind" message="$(string.string31)">
+        </task>
+        <task value="32" name="LogicalSurfPhysSurfUnbind" message="$(string.string32)">
+        </task>
+        <task value="33" name="GdiSysMemToken" message="$(string.string33)">
+        </task>
+        <task value="34" name="WatermarkChange" message="$(string.string34)">
+        </task>
+        <task value="35" name="WaitCursor" message="$(string.string35)">
+        </task>
+        <task value="36" name="ThreadInfoRundown" message="$(string.string36)">
+        </task>
+        <task value="37" name="InputProcessDelay" message="$(string.string37)">
+        </task>
+        <task value="38" name="MessageCheckDelay" message="$(string.string38)">
+        </task>
+        <task value="39" name="Rendering" message="$(string.string39)">
+          <opcodes>
+           <opcode value="11" name="NewRendering" message="$(string.string159)"/>
+           <opcode value="10" name="OldToNewRendering" message="$(string.string161)"/>
+           <opcode value="12" name="AppRenderingUpdate" message="$(string.string3)"/>
+           <opcode value="13" name="AppRenderingTightUpdate" message="$(string.string2)"/>
+           <opcode value="17" name="ValidateWindow" message="$(string.string282)"/>
+           <opcode value="18" name="InvalidateWindow" message="$(string.string125)"/>
+           <opcode value="21" name="TranslationUpdate" message="$(string.string258)"/>
+           <opcode value="23" name="TranslationUpdateRectClip" message="$(string.string261)"/>
+           <opcode value="24" name="UpdateDxAccumFromGDI" message="$(string.string275)"/>
+           <opcode value="25" name="UpdateDxAccumFromDX" message="$(string.string274)"/>
+           <opcode value="26" name="GetDxAccum" message="$(string.string107)"/>
+          </opcodes>
+        </task>
+        <task value="45" name="ThreadExit" message="$(string.string45)">
+        </task>
+        <task value="46" name="BindLogicalSurface" message="$(string.string46)">
+        </task>
+        <task value="47" name="UnBindLogicalSurface" message="$(string.string47)">
+        </task>
+        <task value="48" name="BindLogicalSurfaceRH" message="$(string.string48)">
+        </task>
+        <task value="49" name="DwmSpriteLogicalSurfBind" message="$(string.string49)">
+        </task>
+        <task value="50" name="DwmSpriteLogicalSurfUnBind" message="$(string.string50)">
+        </task>
+        <task value="51" name="LogicalSurfEnableDirtyNotification" message="$(string.string51)">
+        </task>
+        <task value="52" name="PhysicalSurfCreate" message="$(string.string52)">
+        </task>
+        <task value="53" name="ModifyRgn" message="$(string.string53)">
+        </task>
+        <task value="54" name="SwapChainGetStats" message="$(string.string54)">
+        </task>
+        <task value="55" name="SwapChainBindingOpen" message="$(string.string55)">
+        </task>
+        <task value="56" name="SwapChainBindingRelease" message="$(string.string56)">
+        </task>
+        <task value="57" name="SwapChainBindingStatus" message="$(string.string57)">
+        </task>
+        <task value="58" name="DesktopResolutionFailure" message="$(string.string58)">
+        </task>
+        <task value="59" name="QueuePostMessage" message="$(string.string59)">
+        </task>
+        <task value="60" name="SendMessage" message="$(string.string60)">
+        </task>
+        <task value="61" name="WakePump" message="$(string.string61)">
+        </task>
+        <task value="62" name="InputQueueLocked" message="$(string.string62)">
+        </task>
+        <task value="63" name="InputQueueUnLocked" message="$(string.string63)">
+        </task>
+        <task value="64" name="UserCallback" message="$(string.string64)">
+        </task>
+        <task value="65" name="RetrievePostMessage" message="$(string.string65)">
+        </task>
+        <task value="66" name="RetrieveSendMessage" message="$(string.string66)">
+        </task>
+        <task value="67" name="RetrieveInputMessage" message="$(string.string67)">
+        </task>
+        <task value="68" name="RetrievePseudoMessage" message="$(string.string68)">
+        </task>
+        <task value="69" name="AppMessagePump" message="$(string.string69)">
+        </task>
+        <task value="70" name="InputDeviceRead" message="$(string.string70)">
+        </task>
+        <task value="71" name="MessageInjection" message="$(string.string71)">
+          <opcodes>
+           <opcode value="19" name="PostGestureInputMessage" message="$(string.string181)"/>
+           <opcode value="20" name="PostGestureMessage" message="$(string.string182)"/>
+           <opcode value="27" name="InjectTouchEvent" message="$(string.string115)"/>
+          </opcodes>
+        </task>
+        <task value="72" name="WakeRIT" message="$(string.string72)">
+        </task>
+        <task value="73" name="PointerMotion" message="$(string.string73)">
+        </task>
+        <task value="74" name="InjectMouse" message="$(string.string74)">
+        </task>
+        <task value="75" name="MessagePumpInputMessage" message="$(string.string75)">
+        </task>
+        <task value="76" name="GUIProcess" message="$(string.string76)">
+        </task>
+        <task value="77" name="GUIThread" message="$(string.string77)">
+        </task>
+        <task value="78" name="SendMessageTimeOutToBlocking" message="$(string.string78)">
+        </task>
+        <task value="79" name="QueueInputMessage" message="$(string.string79)">
+        </task>
+        <task value="80" name="TranslateMessage" message="$(string.string80)">
+        </task>
+        <task value="81" name="DispatchMessage" message="$(string.string81)">
+        </task>
+        <task value="82" name="TouchTargetingSpeedHitTest" message="$(string.string82)">
+        </task>
+        <task value="83" name="TouchTargetingWindowHitTest" message="$(string.string83)">
+        </task>
+        <task value="84" name="TouchTargetingPointerTarget" message="$(string.string84)">
+        </task>
+        <task value="85" name="PseudoDevCreation" message="$(string.string85)">
+        </task>
+        <task value="86" name="ContactVisualization" message="$(string.string86)">
+        </task>
+        <task value="87" name="TouchTargetingOffset" message="$(string.string87)">
+        </task>
+        <task value="88" name="TouchTargetingPointerEvent" message="$(string.string88)">
+        </task>
+        <task value="89" name="PointerDeviceRead" message="$(string.string89)">
+        </task>
+        <task value="90" name="PointerDeviceMessage" message="$(string.string90)">
+        </task>
+        <task value="91" name="PointerDeviceTransformation" message="$(string.string91)">
+        </task>
+        <task value="92" name="ModifyDxAccumRgn" message="$(string.string92)">
+        </task>
+        <task value="93" name="LogicalSurfRemovedTranslationFromDirty" message="$(string.string93)">
+        </task>
+        <task value="94" name="PointerDeviceDiscovery" message="$(string.string94)">
+        </task>
+        <task value="95" name="TouchInjectionEvent" message="$(string.string95)">
+        </task>
+        <task value="96" name="PointerFrameCreation" message="$(string.string96)">
+        </task>
+        <task value="97" name="PointerFrameBuildPartial" message="$(string.string97)">
+        </task>
+        <task value="98" name="PointerFrameCommit" message="$(string.string98)">
+        </task>
+        <task value="99" name="PointerFrameCoalesce" message="$(string.string99)">
+        </task>
+        <task value="100" name="PointerMessageGeneration" message="$(string.string100)">
+        </task>
+        <task value="101" name="PointerMessageRetrieve" message="$(string.string101)">
+        </task>
+        <task value="102" name="PointerUpdateMessageRetrieve" message="$(string.string102)">
+        </task>
+        <task value="103" name="PointerSetTargetWindows" message="$(string.string103)">
+        </task>
+        <task value="104" name="PointerUpdateSetTargetWindows" message="$(string.string104)">
+        </task>
+        <task value="105" name="InputQueueNoRemoveLocker" message="$(string.string105)">
+        </task>
+        <task value="106" name="InputQueueLockedPeekRecursion" message="$(string.string106)">
+        </task>
+        <task value="107" name="DCompCommitBatch" message="$(string.string107)">
+        </task>
+        <task value="108" name="DelegateInputUserCallback" message="$(string.string108)">
+        </task>
+        <task value="109" name="DelegatedInputWorker" message="$(string.string109)">
+        </task>
+        <task value="110" name="SmoothRotation" message="$(string.string110)">
+        </task>
+        <task value="111" name="DCompGetBatch" message="$(string.string111)">
+        </task>
+        <task value="112" name="PointerFrameMessageGeneration" message="$(string.string112)">
+        </task>
+        <task value="113" name="ExclusiveUserCrit" message="$(string.string113)">
+        </task>
+        <task value="114" name="SharedUserCrit" message="$(string.string114)">
+        </task>
+        <task value="115" name="ReleaseUserCrit" message="$(string.string115)">
+        </task>
+        <task value="116" name="SleepInputIdle" message="$(string.string116)">
+        </task>
+        <task value="117" name="WakeInputIdle" message="$(string.string117)">
+        </task>
+        <task value="118" name="EdgyDetection" message="$(string.string118)">
+        </task>
+        <task value="119" name="ImmersiveInputProcessDelay" message="$(string.string119)">
+        </task>
+        <task value="120" name="ImmersiveMessageCheckDelay" message="$(string.string120)">
+        </task>
+        <task value="121" name="THQAEvent" message="$(string.string121)">
+        </task>
+        <task value="122" name="PointerPrediction" message="$(string.string122)">
+        </task>
+        <task value="123" name="MoveRgn" message="$(string.string123)">
+        </task>
+        <task value="124" name="DirtyRgn" message="$(string.string124)">
+        </task>
+        <task value="125" name="LogicalSurfRemovedTranslationFromMove" message="$(string.string125)">
+        </task>
+        <task value="126" name="DwmGetRgn" message="$(string.string126)">
+        </task>
+        <task value="127" name="DirtyRectUpdate" message="$(string.string127)">
+        </task>
+        <task value="128" name="TranslationUpdateOffset" message="$(string.string128)">
+        </task>
+        <task value="129" name="TranslationUpdateOffsetDWM" message="$(string.string129)">
+        </task>
+        <task value="130" name="InternalSetTimerCoalescing" message="$(string.string130)">
+        </task>
+        <task value="131" name="InternalSetTimerNoCoalescing" message="$(string.string131)">
+        </task>
+        <task value="132" name="KillTimer" message="$(string.string132)">
+        </task>
+        <task value="133" name="ProcTimerCoalescing" message="$(string.string133)">
+        </task>
+        <task value="134" name="ProcTimerNoCoalescing" message="$(string.string134)">
+        </task>
+        <task value="135" name="DrvChangeDisplaySettings" message="$(string.string135)">
+        </task>
+        <task value="136" name="ChangeDisplayMode" message="$(string.string136)">
+        </task>
+        <task value="137" name="TouchHWTimeStamp" message="$(string.string137)">
+        </task>
+        <task value="138" name="TokenCompositionSurfaceObject" message="$(string.string138)">
+        </task>
+        <task value="139" name="CompositionSurfaceObjectUpdate" message="$(string.string139)">
+        </task>
+        <task value="140" name="QueueEventMessage" message="$(string.string140)">
+        </task>
+        <task value="141" name="RetrieveQueueEventMessage" message="$(string.string141)">
+        </task>
+        <task value="208" name="ForegroundWindowFullScreen" message="$(string.string208)">
+        </task>
+        <task value="209" name="ChangeDisplayModeBroadcast" message="$(string.string209)">
+        </task>
+        <task value="210" name="ChangeDisplayModeDeferral" message="$(string.string210)">
+        </task>
+        <task value="211" name="ConvertibleState" message="$(string.string211)">
+        </task>
+        <task value="212" name="DockState" message="$(string.string212)">
+        </task>
+        <task value="213" name="TouchPadHWTimeStamp" message="$(string.string213)">
+        </task>
+        <task value="214" name="WakeMIT" message="$(string.string214)">
+        </task>
+        <task value="215" name="ArmDitMouseFlush" message="$(string.string215)">
+        </task>
+        <task value="216" name="ProcessQueuedMouseEvents" message="$(string.string216)">
+        </task>
+        <task value="217" name="DITSpeedHitTestFailedRevalidation" message="$(string.string217)">
+        </task>
+        <task value="218" name="TransformAgeDecay" message="$(string.string218)">
+        </task>
+        <task value="219" name="InputRedirection" message="$(string.string219)">
+        </task>
+        <task value="220" name="OnInputXformUpdate" message="$(string.string220)">
+        </task>
+        <task value="221" name="DitWaitForRitDisEngagement" message="$(string.string221)">
+        </task>
+        <task value="222" name="RitDisEngaged" message="$(string.string222)">
+        </task>
+        <task value="223" name="DitEngaged" message="$(string.string223)">
+        </task>
+        <task value="224" name="RitReEngaged" message="$(string.string224)">
+        </task>
+        <task value="225" name="DitDisEngaged" message="$(string.string225)">
+        </task>
+        <task value="226" name="DitTerminated" message="$(string.string226)">
+        </task>
+        <task value="227" name="DitShutdown" message="$(string.string227)">
+        </task>
+        <task value="228" name="TouchPadAAP" message="$(string.string228)">
+        </task>
+        <task value="229" name="TouchPadTypeDiscovered" message="$(string.string229)">
+        </task>
+        <task value="230" name="TouchPadEnabledStatusChange" message="$(string.string230)">
+        </task>
+        <task value="231" name="MouseInputApc" message="$(string.string231)">
+        </task>
+        <task value="232" name="MouseInputCoalesced" message="$(string.string232)">
+        </task>
+        <task value="233" name="PTPReadThresholds" message="$(string.string233)">
+        </task>
+        <task value="234" name="TouchPadConfidenceCleared" message="$(string.string234)">
+        </task>
+        <task value="235" name="TouchPadConfidenceUpped" message="$(string.string235)">
+        </task>
+        <task value="236" name="PTPElasticDragMode" message="$(string.string236)">
+        </task>
+        <task value="237" name="LegacyTouchPadDetection" message="$(string.string237)">
+        </task>
+        <task value="238" name="TouchPadCurtainState" message="$(string.string238)">
+        </task>
+        <task value="239" name="TouchPadCurtainSize" message="$(string.string239)">
+        </task>
+        <task value="240" name="TouchpadStopInertia" message="$(string.string240)">
+        </task>
+        <task value="241" name="CursorSize" message="$(string.string241)">
+        </task>
+        <task value="242" name="TrappedAppContainerRender" message="$(string.string242)">
+        </task>
+        <task value="258" name="FocusedProcessChangeGained" message="$(string.string258)">
+        </task>
+        <task value="259" name="FocusedProcessChangeLost" message="$(string.string259)">
+        </task>
+        <task value="260" name="FontLoadAttempt" message="$(string.string260)">
+        </task>
+        <task value="301" name="TokenStateChanged" message="$(string.string301)">
+        </task>
+        <task value="400" name="DCompDeferBatch" message="$(string.string400)">
+        </task>
+        <task value="401" name="TouchPadHIDProcessing" message="$(string.string401)">
+        </task>
+        <task value="402" name="TouchPadWMPointerProcessing" message="$(string.string402)">
+        </task>
+        <task value="403" name="DitMmcssWork" message="$(string.string403)">
+        </task>
+        <task value="404" name="TouchPadGesture" message="$(string.string404)">
+        </task>
+        <task value="405" name="CopyPointerInputFrame" message="$(string.string405)">
+        </task>
+        <task value="410" name="LatencyModeProcessing" message="$(string.string410)">
+        </task>
+        <task value="412" name="DCompBeginFrame" message="$(string.string412)">
+        </task>
+        <task value="413" name="TokenIndependentFlipSkipComplete" message="$(string.string413)">
+        </task>
+        <task value="414" name="DwmManipulationFrameStart" message="$(string.string414)">
+        </task>
+        <task value="415" name="DwmManipulationFrameRouted" message="$(string.string415)">
+        </task>
+        <task value="416" name="ExclusiveUserCritTelemetry" message="$(string.string416)">
+        </task>
+        <task value="417" name="SharedUserCritTelemetry" message="$(string.string417)">
+        </task>
+        <task value="426" name="QueueNullPostMessage" message="$(string.string426)">
+        </task>
+        <task value="427" name="SyscallFilterMessage" message="$(string.string427)">
+        </task>
+        <task value="428" name="SPIBlockedByFiltering" message="$(string.string428)">
+        </task>
+        <task value="429" name="PowerWatchdog" message="$(string.string429)">
+        </task>
+        <task value="430" name="PowerRequest" message="$(string.string430)">
+        </task>
+        <task value="431" name="DCompResourceMapping" message="$(string.string431)">
+        </task>
+        <task value="432" name="DCompResourcePropertyUpdate" message="$(string.string432)">
+        </task>
+        <task value="433" name="DCompCommandType" message="$(string.string433)">
+        </task>
+        <task value="434" name="DCompCommandsInBatch" message="$(string.string434)">
+        </task>
+        <task value="438" name="DCompVisualSetInteraction" message="$(string.string438)">
+        </task>
+        <task value="439" name="DCompCreateImplicitInteraction" message="$(string.string439)">
+        </task>
+        <task value="440" name="FlipManagerCompleteToken" message="$(string.string440)">
+        </task>
+        <task value="441" name="FlipManagerTokenReleaseToFrame" message="$(string.string441)">
+        </task>
+        <task value="442" name="GdiHandleOperation" message="$(string.string442)">
+          <opcodes>
+           <opcode value="28" name="CreateHandle" message="$(string.string21)"/>
+           <opcode value="29" name="DestroyHandle" message="$(string.string38)"/>
+           <opcode value="30" name="UpdateHandleOwner" message="$(string.string276)"/>
+           <opcode value="31" name="TransformHandle" message="$(string.string256)"/>
+          </opcodes>
+        </task>
+        <task value="443" name="UserHandleOperation" message="$(string.string443)">
+          <opcodes>
+           <opcode value="28" name="CreateHandle" message="$(string.string21)"/>
+           <opcode value="29" name="DestroyHandle" message="$(string.string38)"/>
+           <opcode value="30" name="UpdateHandleOwner" message="$(string.string276)"/>
+          </opcodes>
+        </task>
+        <task value="444" name="DwmVisRgnUpdate" message="$(string.string444)">
+        </task>
+        <task value="445" name="DwmVisRgnDirty" message="$(string.string445)">
+        </task>
+        <task value="446" name="WriteClipboard" message="$(string.string446)">
+        </task>
+        <task value="447" name="ReadClipboard" message="$(string.string447)">
+        </task>
+        <task value="448" name="FlipManagerPresentConfirmed" message="$(string.string448)">
+        </task>
+        <task value="449" name="FlipManagerPresentSignaled" message="$(string.string449)">
+        </task>
+        <task value="450" name="FlipManagerPresentPosted" message="$(string.string450)">
+        </task>
+        <task value="451" name="FlipManagerProducerSetContent" message="$(string.string451)">
+        </task>
+        <task value="452" name="FlipManagerBufferAvailable" message="$(string.string452)">
+        </task>
+        <task value="453" name="FlipManagerAddBuffer" message="$(string.string453)">
+        </task>
+        <task value="454" name="FlipManagerRemoveBuffer" message="$(string.string454)">
+        </task>
+        <task value="455" name="FlipManagerContentRebind" message="$(string.string455)">
+        </task>
+        <task value="456" name="FlipManagerPresentProcessed" message="$(string.string456)">
+        </task>
+        <task value="457" name="FlipManagerPresentDeferred" message="$(string.string457)">
+        </task>
+        <task value="458" name="FlipManagerPresentCanceled" message="$(string.string458)">
+        </task>
+        <task value="459" name="FlipManagerPresentIFlipSubmitted" message="$(string.string459)">
+        </task>
+        <task value="460" name="FlipManagerPresentIFlipCompleted" message="$(string.string460)">
+        </task>
+        <task value="461" name="FlipManagerPresentQueueDepth" message="$(string.string461)">
+        </task>
+        <task value="462" name="FlipManagerBinding" message="$(string.string462)">
+        </task>
+        <task value="463" name="FlipManagerAddContent" message="$(string.string463)">
+        </task>
+        <task value="464" name="FlipManagerContentFlip" message="$(string.string464)">
+        </task>
+        <task value="465" name="FlipManagerNoOpPresent" message="$(string.string465)">
+        </task>
+        <task value="466" name="FlipManagerCancelPosted" message="$(string.string466)">
+        </task>
+        <task value="467" name="FlipManagerContentUnbind" message="$(string.string467)">
+        </task>
+        <task value="468" name="FlipManagerCreate" message="$(string.string468)">
+        </task>
+        <task value="469" name="FlipManagerDestroy" message="$(string.string469)">
+        </task>
+        <task value="470" name="TokenManagerDisableScanoutToken" message="$(string.string470)">
+        </task>
+        <task value="471" name="FlipManagerLost" message="$(string.string471)">
+        </task>
+        <task value="472" name="FlipManagerCanceledPresentShown" message="$(string.string472)">
+        </task>
+        <task value="473" name="FlipManagerUpdateExpectedConsumerPresentId" message="$(string.string473)">
+        </task>
+        <task value="474" name="FlipManagerPresentSkipped" message="$(string.string474)">
+        </task>
+        <task value="475" name="FlipManagerRemoveContent" message="$(string.string475)">
+        </task>
+        <task value="476" name="FlipManagerPresentIFlipPurgePreviousPresents" message="$(string.string476)">
+        </task>
+        <task value="10001" name="WindowLayoutChange" message="$(string.string10001)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="OldToNewRendering" message="$(string.string161)"/>
+        <opcode value="11" name="NewRendering" message="$(string.string159)"/>
+        <opcode value="12" name="AppRenderingUpdate" message="$(string.string3)"/>
+        <opcode value="13" name="AppRenderingTightUpdate" message="$(string.string2)"/>
+        <opcode value="14" name="DirtyUpdate" message="$(string.string41)"/>
+        <opcode value="15" name="AccumulatedDirtyUpdate" message="$(string.string0)"/>
+        <opcode value="16" name="DWMPickedUpDitryUpdate" message="$(string.string57)"/>
+        <opcode value="17" name="ValidateWindow" message="$(string.string282)"/>
+        <opcode value="18" name="InvalidateWindow" message="$(string.string125)"/>
+        <opcode value="19" name="PostGestureInputMessage" message="$(string.string181)"/>
+        <opcode value="20" name="PostGestureMessage" message="$(string.string182)"/>
+        <opcode value="21" name="TranslationUpdate" message="$(string.string258)"/>
+        <opcode value="22" name="TranslationUpdateOffset" message="$(string.string259)"/>
+        <opcode value="23" name="TranslationUpdateRectClip" message="$(string.string261)"/>
+        <opcode value="24" name="UpdateDxAccumFromGDI" message="$(string.string275)"/>
+        <opcode value="25" name="UpdateDxAccumFromDX" message="$(string.string274)"/>
+        <opcode value="26" name="GetDxAccum" message="$(string.string107)"/>
+        <opcode value="27" name="InjectTouchEvent" message="$(string.string115)"/>
+        <opcode value="28" name="CreateHandle" message="$(string.string21)"/>
+        <opcode value="29" name="DestroyHandle" message="$(string.string38)"/>
+        <opcode value="30" name="UpdateHandleOwner" message="$(string.string276)"/>
+        <opcode value="31" name="TransformHandle" message="$(string.string256)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="OldThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="UIPI_Trace_Header-0" inType="win:UInt8" outType="xs:long"  />
+          <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="lParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="UIPI_Trace_Header-0" inType="win:UInt16" outType="xs:long"  />
+          <data name="HookID" inType="win:Int32" outType="xs:int"  />
+          <data name="Flags" inType="win:Int8" outType="xs:byte"  />
+          <data name="nCode" inType="win:Int32" outType="xs:int"  />
+          <data name="wParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="lParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="UIPI_Trace_Header-0" inType="win:UInt32" outType="xs:long"  />
+          <data name="WinEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WndHandle" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ObjectID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChildID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SenderTID" inType="win:Int32" outType="xs:int"  />
+          <data name="Time" inType="win:Int32" outType="xs:int"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="UIPI_Trace_Header-0" inType="win:UInt8" outType="xs:long"  />
+          <data name="Handle" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HandleType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reserved" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="UIPI_Trace_Header-0" inType="win:UInt8" outType="xs:long"  />
+          <data name="InputType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QIL" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QLBN" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="UIPI_Trace_Header-0" inType="win:UInt8" outType="xs:long"  />
+          <data name="ClipFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClipIL" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClipLBN" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="UIPI_Trace_Header-0" inType="win:AnsiString" outType="xs:long"  />
+          <data name="SysErrorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousStateTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NewState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IsConsoleSession" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleAction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeoutValueMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleStartTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsConsoleSession" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsConsoleSession" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NewCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsConsoleSession" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DisplayTimeoutValueMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="LockId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LockLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LockName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="hWnd" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hLogicalSurfSwapChainBind" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AccruedIdleTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DisplayTimeoutValueMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ScreenSaverTimeoutValueMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DimTimeoutValueMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DimBrightnessValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NormalBrightnessValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="hLogicalSurfSwapChainBind" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConfirmReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastPresentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastFrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SyncFrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastFrameTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessIdOwningFocus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessCreateTimeOwningFocus" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="hWnd" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hSprite" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args29_0">
+          <data name="hLogicalSurf" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="hLogicalSurf" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hPhysicalSurf" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args33_0">
+          <data name="Pending" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwDirtyFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hLogicalSurf" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="uiCookie" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="CursorThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CursorProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CursorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DisplayTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args36_0">
+          <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TimeSinceInputCheckMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceInputRemoveMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceOldestInputMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TimeSinceInputRemoveMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceOldestInputMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TopLevelClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImagePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MessageId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args38_0">
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DelayTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceInputRemoveMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceOldestInputMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TopLevelClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImagePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MessageId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="hwndDst" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hwndDstSprite" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hbmDst" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DstLeft" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DstTop" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DstRight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DstBottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hwndSrc" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hwndSrcSprite" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hbmSrc" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SrcLeft" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SrcTop" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SrcRight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SrcBottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args41_0">
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bitmapCX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bitmapCY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DirtyLeft" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DirtyTop" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DirtyRight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DirtyBottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args43_0">
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FULL" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Left" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Top" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Right" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args46_0">
+          <data name="hWnd" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hLogicalSurf" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="hLogicalSurf" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="bCreated" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args49_0">
+          <data name="hDwmSprite" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hLogicalSurf" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args51_0">
+          <data name="hLogicalSurf" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hPhysSurf" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="hPhysicalSurf" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hDxSharedSurface" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="hLogicalSurface" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RgnType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="rcBounds-0" inType="win:Int16" outType="xs:unsignedByte"  />
+          <data name="NumRects" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="hLogicalSurfSwapChainBinding" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="luidAdapter" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="nWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DxgiColorFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hmonAssociation" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="uiPresentLimitSemaphoreId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="cBuffers" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args56_0">
+          <data name="hLogicalSurfSwapChainBinding" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DesktopCompositorProcess" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DesktopCompositorError" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DesktopCompositorRef" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DesktopCompositorStatus" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="pEventConfirmed" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args58_0">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailureStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="pqmsg" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="message" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="inputReadyTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="pqmsg" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="message" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="inputReadyTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pidReceiver" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tidReceiver" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args66_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="pQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ownerThread" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="api" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args72_0">
+          <data name="DeviceType" inType="win:Int32" outType="xs:int"  />
+          <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hGestureInfo" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args76_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="fGetMessage" inType="win:Int32" outType="xs:int"  />
+          <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args78_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="WakeReason" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args79_0">
+          <data name="Time" inType="win:Int32" outType="xs:int"  />
+          <data name="X" inType="win:Int32" outType="xs:int"  />
+          <data name="Y" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args81_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="Time" inType="win:Int32" outType="xs:int"  />
+          <data name="X" inType="win:Int32" outType="xs:int"  />
+          <data name="Y" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args88_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="pqmsg" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WindowDelegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WasWindowDelegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Delegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WasDelegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Processed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fDelayedFree" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="message" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="inputReadyTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cLineWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cElements" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="ProcName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="WindowName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="uId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uElapse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="ptOffsetX" inType="win:Int32" outType="xs:int"  />
+          <data name="ptOffsetY" inType="win:Int32" outType="xs:int"  />
+          <data name="pointerId" inType="win:Int32" outType="xs:int"  />
+          <data name="cursorId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="pointerId" inType="win:Int32" outType="xs:int"  />
+          <data name="cursorId" inType="win:Int32" outType="xs:int"  />
+          <data name="pointerType" inType="win:Int32" outType="xs:int"  />
+          <data name="pointerFlags" inType="win:Int32" outType="xs:int"  />
+          <data name="touchMask" inType="win:Int32" outType="xs:int"  />
+          <data name="ptLocationX" inType="win:Int32" outType="xs:int"  />
+          <data name="ptLocationY" inType="win:Int32" outType="xs:int"  />
+          <data name="rcContactLeft" inType="win:Int32" outType="xs:int"  />
+          <data name="rcContactRight" inType="win:Int32" outType="xs:int"  />
+          <data name="rcContactTop" inType="win:Int32" outType="xs:int"  />
+          <data name="rcContactBottom" inType="win:Int32" outType="xs:int"  />
+          <data name="orientation" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args115_0">
+          <data name="ulContactId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args118_0">
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Offsetx" inType="win:Int32" outType="xs:int"  />
+          <data name="Offsety" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args122_0">
+          <data name="hSprite" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hWnd" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args131_0">
+          <data name="FrameId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PointerCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PendingPointerCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="pqmsg" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PointerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pBatch" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="batchID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args154_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="pqmsg" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WindowDelegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WasWindowDelegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Delegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WasDelegated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Processed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fDelayedFree" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LParam" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="message" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="inputReadyTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hdfResponse" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="bNew" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ulContactId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwCursorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="X" inType="win:Int32" outType="xs:int"  />
+          <data name="Y" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="wCursorId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="wPointerId" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args159_0">
+          <data name="wCursorId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="wPointerId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="dwReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="Orientation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SensorOriginated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ActiveProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args163_0">
+          <data name="AcquireQpcCounts" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AcquireTimeUs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Token" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args167_0">
+          <data name="HoldQpcCounts" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HoldTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Token" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args168_0">
+          <data name="pti" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args171_0">
+          <data name="Info" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args172_0">
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TimeSinceInputRemoveMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceOldestInputMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TopLevelClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageMoniker" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppUserModelId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MessageId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args173_0">
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DelayTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceInputRemoveMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeSinceOldestInputMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TopLevelClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageMoniker" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppUserModelId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MessageId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args187_0">
+          <data name="Hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="uId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uElapse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uCoalescingTolerance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args198_0">
+          <data name="ScanTime" inType="win:Int32" outType="xs:int"  />
+          <data name="dwTime" inType="win:Int32" outType="xs:int"  />
+          <data name="QPC" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="XRawPosition" inType="win:Int32" outType="xs:int"  />
+          <data name="YRawPosition" inType="win:Int32" outType="xs:int"  />
+          <data name="XPredictedPosition" inType="win:Int32" outType="xs:int"  />
+          <data name="YPredictedPosition" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="pCompositionSurfaceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SwapChainIndex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args203_0">
+          <data name="CallbackCount" inType="win:Int8" outType="xs:byte"  />
+          <data name="pqmsg" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pti" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwQEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args213_0">
+          <data name="data" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args215_0">
+          <data name="ConvertibleState" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args216_0">
+          <data name="DockState" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="ScanTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QPCTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="XLogicalT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="YLogicalT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="XLogicalC" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="YLogicalC" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="XHimetricT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="YHimetricT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Button" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Identifier" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Confidence" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Pressure" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args218_0">
+          <data name="InputTransformList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PerformanceCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args224_0">
+          <data name="hDCompInputHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="XformQPCTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="XformStored" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args225_0">
+          <data name="Hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="XformQPCTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="XformUpdated" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args233_0">
+          <data name="LastKeyDownTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastKeyUpTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TapTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Blocked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Feature" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args236_0">
+          <data name="deviceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args241_0">
+          <data name="ContactId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OnUp" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NeedsUp" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args249_0">
+          <data name="CurtainsOn" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args250_0">
+          <data name="Top" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Left" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Right" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args254_0">
+          <data name="RenderSourceProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="RenderSourcePackageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RenderTargetProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="RenderTargetPackageName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args255_0">
+          <data name="iCursorDim" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cx" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args258_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args259_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args260_0">
+          <data name="SourceProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FontSourcePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Blocked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args400_0">
+          <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pBatch" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="batchID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="submissionTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="submissionDeadline" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="deferReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args412_0">
+          <data name="hConnection" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SyncRefreshCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args413_0">
+          <data name="SyncRefreshCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PresentCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CompositionSurfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BindId" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args418_0">
+          <data name="Location" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args426_0">
+          <data name="SourceProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceProcessName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DestinationHwnd" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args427_0">
+          <data name="SyscallName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AppContainerSid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FilterSetId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args428_0">
+          <data name="SPIAction" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args429_0">
+          <data name="Instance" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="WatchdogType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args431_0">
+          <data name="CalloutType" inType="win:Int32" outType="xs:int"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args433_0">
+          <data name="PowerTaskState" inType="win:Int32" outType="xs:int"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args435_0">
+          <data name="EventNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="Code" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args437_0">
+          <data name="Address" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="EventNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="Code" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args438_0">
+          <data name="Address" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args441_0">
+          <data name="NeedWaitForRit" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NeedPowerOnGdi" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args443_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ExternalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreateShared" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OpenShared" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args444_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InternalHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExternalHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PropertyId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args445_0">
+          <data name="CommandType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="status" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args446_0">
+          <data name="CommandsCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args450_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VisualInternalHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InteractionInternalHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VisualInternalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InteractionInternalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ResourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultInteraction" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Reason" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args452_0">
+          <data name="HandleValue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HandleType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OwnerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args458_0">
+          <data name="PreviousHandleValue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewHandleValue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HandleType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OwnerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args459_0">
+          <data name="Pid" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args461_0">
+          <data name="hwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hwndParent" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="visRgnType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="changed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args463_0">
+          <data name="CallerPid" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CallerProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="OwnerPid" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OwnerProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ClipboardSequenceNumber" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args500_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IFlip" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IFlipCompleted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RequestDwmConfirm" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RequestDwmExit" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IndependentFlipCandidate" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args505_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Skipped" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args506_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PresentAtTimeHns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CurrentTimeHns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PresentAtTimeMinusCurrentTimeHns" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args507_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContentResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args508_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="available" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args509_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hVidMmGlobalAlloc" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args511_0">
+          <data name="Content" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LUID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BindId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Displayable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Decode" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args512_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FrameId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PresentAtTimeHns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FrameTimeHns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxAcceptableTargetTimeHns" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PresentTimeMinusFrameTimeHns" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args515_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WasCanceled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args516_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Notify" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WasCanceled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args517_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentQueueDepth" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args519_0">
+          <data name="BufferResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args522_0">
+          <data name="ContentResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LUID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BindId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FlipIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args530_0">
+          <data name="FlipManagerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1000_0">
+          <data name="eventMin" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="eventMax" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="idEventProcess" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="idEventThread" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="HookInstance" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="ReturnValue" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UsagePage" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Usage" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hwndTarget" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ThreadStartAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ThreadCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cWindows" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cVisWindows" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadInfoFlags" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ThreadStartAddressMappedModuleName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ThreadStartAddressQueryResult" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ThreadStartAddressVadAllocationBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ThreadStartAddressVadAllocationProtect" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadStartAddressVadRegionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadStartAddressVadRegionSize" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ThreadStartAddressVadProtect" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="FilterType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="pstrLib" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hmod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pfnFilterProc" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ReturnValue" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MsSinceLastKeyEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackgroundCallCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2000_0">
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args10002_0">
+          <data name="hWnd" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Packed_High_Height_Low_Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PRAID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args201_1">
+          <data name="pToken" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pCompositionSurfaceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SwapChainIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PresentCount" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CompositionSurfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BindId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FlipInterval" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DestWidth" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DestHeight" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args301_1">
+          <data name="pCompositionSurfaceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SwapChainIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PresentCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FenceValue" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="NewState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="IndependentFlip" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SkipIndependentFlip" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CompositionSurfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BindId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="EarlyComposition" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args416_1">
+          <data name="AcquireQpcCounts" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AcquireTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Token" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AccumulatedDirtyUpdate" />
+       <string id="string1" value="AppMessagePump" />
+       <string id="string2" value="AppRenderingTightUpdate" />
+       <string id="string3" value="AppRenderingUpdate" />
+       <string id="string4" value="ArmDitMouseFlush" />
+       <string id="string5" value="AuditApiCalls" />
+       <string id="string6" value="AutoRotation" />
+       <string id="string7" value="BindLogicalSurface" />
+       <string id="string8" value="BindLogicalSurfaceRH" />
+       <string id="string9" value="ChangeDisplayMode" />
+       <string id="string10" value="ChangeDisplayModeBroadcast" />
+       <string id="string11" value="ChangeDisplayModeDeferral" />
+       <string id="string12" value="CompatImpact" />
+       <string id="string13" value="ComponentHosting" />
+       <string id="string14" value="CompositionSurfaceObjectUpdate" />
+       <string id="string15" value="Concurrency" />
+       <string id="string16" value="ContactVisualization" />
+       <string id="string17" value="Contention" />
+       <string id="string18" value="ContentionTelemetry" />
+       <string id="string19" value="ConvertibleState" />
+       <string id="string20" value="CopyPointerInputFrame" />
+       <string id="string21" value="CreateHandle" />
+       <string id="string22" value="CursorSize" />
+       <string id="string23" value="DCompBeginFrame" />
+       <string id="string24" value="DCompCommandsInBatch" />
+       <string id="string25" value="DCompCommandType" />
+       <string id="string26" value="DCompCommitBatch" />
+       <string id="string27" value="DCompCreateImplicitInteraction" />
+       <string id="string28" value="DCompDeferBatch" />
+       <string id="string29" value="DCompDetails" />
+       <string id="string30" value="DCompGetBatch" />
+       <string id="string31" value="DCompInput" />
+       <string id="string32" value="DCompResourceMapping" />
+       <string id="string33" value="DCompResourcePropertyUpdate" />
+       <string id="string34" value="DCompVisualSetInteraction" />
+       <string id="string35" value="DelegatedInputWorker" />
+       <string id="string36" value="DelegateInputUserCallback" />
+       <string id="string37" value="DesktopResolutionFailure" />
+       <string id="string38" value="DestroyHandle" />
+       <string id="string39" value="DirtyRectUpdate" />
+       <string id="string40" value="DirtyRgn" />
+       <string id="string41" value="DirtyUpdate" />
+       <string id="string42" value="DispatchMessage" />
+       <string id="string43" value="DisplayReqChange" />
+       <string id="string44" value="DisplayTimeoutReset" />
+       <string id="string45" value="DitDisEngaged" />
+       <string id="string46" value="DitEngaged" />
+       <string id="string47" value="DitMmcssWork" />
+       <string id="string48" value="DitShutdown" />
+       <string id="string49" value="DITSpeedHitTestFailedRevalidation" />
+       <string id="string50" value="DitTerminated" />
+       <string id="string51" value="DitWaitForRitDisEngagement" />
+       <string id="string52" value="DockState" />
+       <string id="string53" value="DrvChangeDisplaySettings" />
+       <string id="string54" value="DwmGetRgn" />
+       <string id="string55" value="DwmManipulationFrameRouted" />
+       <string id="string56" value="DwmManipulationFrameStart" />
+       <string id="string57" value="DWMPickedUpDitryUpdate" />
+       <string id="string58" value="DwmSpriteCreate" />
+       <string id="string59" value="DwmSpriteDestroy" />
+       <string id="string60" value="DwmSpriteLogicalSurfBind" />
+       <string id="string61" value="DwmSpriteLogicalSurfUnBind" />
+       <string id="string62" value="DwmVisRgnDirty" />
+       <string id="string63" value="DwmVisRgnUpdate" />
+       <string id="string64" value="EdgyDetection" />
+       <string id="string65" value="ExclusiveUserCrit" />
+       <string id="string66" value="ExclusiveUserCritTelemetry" />
+       <string id="string67" value="FlipManagerAddBuffer" />
+       <string id="string68" value="FlipManagerAddContent" />
+       <string id="string69" value="FlipManagerBinding" />
+       <string id="string70" value="FlipManagerBufferAvailable" />
+       <string id="string71" value="FlipManagerCanceledPresentShown" />
+       <string id="string72" value="FlipManagerCancelPosted" />
+       <string id="string73" value="FlipManagerCompleteToken" />
+       <string id="string74" value="FlipManagerContentFlip" />
+       <string id="string75" value="FlipManagerContentRebind" />
+       <string id="string76" value="FlipManagerContentUnbind" />
+       <string id="string77" value="FlipManagerCreate" />
+       <string id="string78" value="FlipManagerDestroy" />
+       <string id="string79" value="FlipManagerLost" />
+       <string id="string80" value="FlipManagerNoOpPresent" />
+       <string id="string81" value="FlipManagerPresentCanceled" />
+       <string id="string82" value="FlipManagerPresentConfirmed" />
+       <string id="string83" value="FlipManagerPresentDeferred" />
+       <string id="string84" value="FlipManagerPresentIFlipCompleted" />
+       <string id="string85" value="FlipManagerPresentIFlipPurgePreviousPresents" />
+       <string id="string86" value="FlipManagerPresentIFlipSubmitted" />
+       <string id="string87" value="FlipManagerPresentPosted" />
+       <string id="string88" value="FlipManagerPresentProcessed" />
+       <string id="string89" value="FlipManagerPresentQueueDepth" />
+       <string id="string90" value="FlipManagerPresentSignaled" />
+       <string id="string91" value="FlipManagerPresentSkipped" />
+       <string id="string92" value="FlipManagerProducerSetContent" />
+       <string id="string93" value="FlipManagerRemoveBuffer" />
+       <string id="string94" value="FlipManagerRemoveContent" />
+       <string id="string95" value="FlipManagerTokenReleaseToFrame" />
+       <string id="string96" value="FlipManagerUpdateExpectedConsumerPresentId" />
+       <string id="string97" value="Focus" />
+       <string id="string98" value="FocusChange" />
+       <string id="string99" value="FocusedProcessChange" />
+       <string id="string100" value="FocusedProcessChangeGained" />
+       <string id="string101" value="FocusedProcessChangeLost" />
+       <string id="string102" value="FontLoadAttempt" />
+       <string id="string103" value="Fonts" />
+       <string id="string104" value="ForegroundWindowFullScreen" />
+       <string id="string105" value="GdiHandleOperation" />
+       <string id="string106" value="GdiSysMemToken" />
+       <string id="string107" value="GetDxAccum" />
+       <string id="string108" value="GUIProcess" />
+       <string id="string109" value="GUIThread" />
+       <string id="string110" value="IdleActionExpiration" />
+       <string id="string111" value="IdleStatusTracing" />
+       <string id="string112" value="ImmersiveInputProcessDelay" />
+       <string id="string113" value="ImmersiveMessageCheckDelay" />
+       <string id="string114" value="InjectMouse" />
+       <string id="string115" value="InjectTouchEvent" />
+       <string id="string116" value="InputDeviceRead" />
+       <string id="string117" value="InputProcessDelay" />
+       <string id="string118" value="InputQueueLocked" />
+       <string id="string119" value="InputQueueLockedPeekRecursion" />
+       <string id="string120" value="InputQueueNoRemoveLocker" />
+       <string id="string121" value="InputQueueUnLocked" />
+       <string id="string122" value="InputRedirection" />
+       <string id="string123" value="InternalSetTimerCoalescing" />
+       <string id="string124" value="InternalSetTimerNoCoalescing" />
+       <string id="string125" value="InvalidateWindow" />
+       <string id="string126" value="KillTimer" />
+       <string id="string127" value="LatencyModeProcessing" />
+       <string id="string128" value="LegacyTouchPadDetection" />
+       <string id="string129" value="LockAcquireExclusive" />
+       <string id="string130" value="LockAcquireShared" />
+       <string id="string131" value="LockAcquireSharedStarveExclusive" />
+       <string id="string132" value="LockRelease" />
+       <string id="string133" value="LogicalSurfCreate" />
+       <string id="string134" value="LogicalSurfDestroy" />
+       <string id="string135" value="LogicalSurfEnableDirtyNotification" />
+       <string id="string136" value="LogicalSurfPhysSurfBind" />
+       <string id="string137" value="LogicalSurfPhysSurfUnbind" />
+       <string id="string138" value="LogicalSurfRemovedTranslationFromDirty" />
+       <string id="string139" value="LogicalSurfRemovedTranslationFromMove" />
+       <string id="string140" value="MessageCheckDelay" />
+       <string id="string141" value="MessageInjection" />
+       <string id="string142" value="MessagePump" />
+       <string id="string143" value="MessagePumpInputMessage" />
+       <string id="string144" value="MessagePumpInternalAndInput" />
+       <string id="string145" value="Microsoft-Windows-Win32k" />
+       <string id="string146" value="Microsoft-Windows-Win32k/Concurrency" />
+       <string id="string147" value="Microsoft-Windows-Win32k/Contention" />
+       <string id="string148" value="Microsoft-Windows-Win32k/Messages" />
+       <string id="string149" value="Microsoft-Windows-Win32k/Operational" />
+       <string id="string150" value="Microsoft-Windows-Win32k/Power" />
+       <string id="string151" value="Microsoft-Windows-Win32k/Render" />
+       <string id="string152" value="Microsoft-Windows-Win32k/Tracing" />
+       <string id="string153" value="Microsoft-Windows-Win32k/UIPI" />
+       <string id="string154" value="ModifyDxAccumRgn" />
+       <string id="string155" value="ModifyRgn" />
+       <string id="string156" value="MouseInputApc" />
+       <string id="string157" value="MouseInputCoalesced" />
+       <string id="string158" value="MoveRgn" />
+       <string id="string159" value="NewRendering" />
+       <string id="string160" value="NullMessages" />
+       <string id="string161" value="OldToNewRendering" />
+       <string id="string162" value="OnInputXformUpdate" />
+       <string id="string163" value="PhysicalSurfCreate" />
+       <string id="string164" value="PointerDeviceDiscovery" />
+       <string id="string165" value="PointerDeviceMessage" />
+       <string id="string166" value="PointerDeviceRead" />
+       <string id="string167" value="PointerDeviceTransformation" />
+       <string id="string168" value="PointerFrameBuildPartial" />
+       <string id="string169" value="PointerFrameCoalesce" />
+       <string id="string170" value="PointerFrameCommit" />
+       <string id="string171" value="PointerFrameCreation" />
+       <string id="string172" value="PointerFrameMessageGeneration" />
+       <string id="string173" value="PointerInput" />
+       <string id="string174" value="PointerMessageGeneration" />
+       <string id="string175" value="PointerMessageRetrieve" />
+       <string id="string176" value="PointerMotion" />
+       <string id="string177" value="PointerPrediction" />
+       <string id="string178" value="PointerSetTargetWindows" />
+       <string id="string179" value="PointerUpdateMessageRetrieve" />
+       <string id="string180" value="PointerUpdateSetTargetWindows" />
+       <string id="string181" value="PostGestureInputMessage" />
+       <string id="string182" value="PostGestureMessage" />
+       <string id="string183" value="PowerDisplayChange" />
+       <string id="string184" value="PowerRequest" />
+       <string id="string185" value="PowerWatchdog" />
+       <string id="string186" value="PrecisionTouchpad" />
+       <string id="string187" value="ProcessInfo" />
+       <string id="string188" value="ProcessQueuedMouseEvents" />
+       <string id="string189" value="ProcTimerCoalescing" />
+       <string id="string190" value="ProcTimerNoCoalescing" />
+       <string id="string191" value="PseudoDevCreation" />
+       <string id="string192" value="PTPElasticDragMode" />
+       <string id="string193" value="PTPReadThresholds" />
+       <string id="string194" value="QueueEventMessage" />
+       <string id="string195" value="QueueInputMessage" />
+       <string id="string196" value="QueueNullPostMessage" />
+       <string id="string197" value="QueuePostMessage" />
+       <string id="string198" value="ReadClipboard" />
+       <string id="string199" value="ReleaseUserCrit" />
+       <string id="string200" value="Rendering" />
+       <string id="string201" value="RetrieveInputMessage" />
+       <string id="string202" value="RetrievePostMessage" />
+       <string id="string203" value="RetrievePseudoMessage" />
+       <string id="string204" value="RetrieveQueueEventMessage" />
+       <string id="string205" value="RetrieveSendMessage" />
+       <string id="string206" value="RitDisEngaged" />
+       <string id="string207" value="RitReEngaged" />
+       <string id="string208" value="ScreenSaverProcess" />
+       <string id="string209" value="SendMessage" />
+       <string id="string210" value="SendMessageTimeOutToBlocking" />
+       <string id="string211" value="SharedUserCrit" />
+       <string id="string212" value="SharedUserCritTelemetry" />
+       <string id="string213" value="SleepInputIdle" />
+       <string id="string214" value="SmoothRotation" />
+       <string id="string215" value="SPIBlockedByFiltering" />
+       <string id="string216" value="SwapChainBind" />
+       <string id="string217" value="SwapChainBindingOpen" />
+       <string id="string218" value="SwapChainBindingRelease" />
+       <string id="string219" value="SwapChainBindingStatus" />
+       <string id="string220" value="SwapChainGetStats" />
+       <string id="string221" value="SwapChainSetStats" />
+       <string id="string222" value="SwapChainUnBind" />
+       <string id="string223" value="SyscallFilterMessage" />
+       <string id="string224" value="THQAEvent" />
+       <string id="string225" value="ThreadExit" />
+       <string id="string226" value="ThreadInfo" />
+       <string id="string227" value="ThreadInfoRundown" />
+       <string id="string228" value="ThreadRundown" />
+       <string id="string229" value="TimerInfo" />
+       <string id="string230" value="TimerSurvey" />
+       <string id="string231" value="TokenCompositionSurfaceObject" />
+       <string id="string232" value="TokenIndependentFlipSkipComplete" />
+       <string id="string233" value="TokenManagerDisableScanoutToken" />
+       <string id="string234" value="TokenStateChanged" />
+       <string id="string235" value="TouchHWTimeStamp" />
+       <string id="string236" value="TouchInjectionEvent" />
+       <string id="string237" value="TouchInput" />
+       <string id="string238" value="TouchPadAAP" />
+       <string id="string239" value="TouchPadConfidenceCleared" />
+       <string id="string240" value="TouchPadConfidenceUpped" />
+       <string id="string241" value="TouchPadCurtainSize" />
+       <string id="string242" value="TouchPadCurtainState" />
+       <string id="string243" value="TouchPadEnabledStatusChange" />
+       <string id="string244" value="TouchPadGesture" />
+       <string id="string245" value="TouchPadHIDProcessing" />
+       <string id="string246" value="TouchPadHWTimeStamp" />
+       <string id="string247" value="TouchpadStopInertia" />
+       <string id="string248" value="TouchPadTypeDiscovered" />
+       <string id="string249" value="TouchPadWMPointerProcessing" />
+       <string id="string250" value="TouchTargetingOffset" />
+       <string id="string251" value="TouchTargetingPointerEvent" />
+       <string id="string252" value="TouchTargetingPointerTarget" />
+       <string id="string253" value="TouchTargetingSpeedHitTest" />
+       <string id="string254" value="TouchTargetingWindowHitTest" />
+       <string id="string255" value="TransformAgeDecay" />
+       <string id="string256" value="TransformHandle" />
+       <string id="string257" value="TranslateMessage" />
+       <string id="string258" value="TranslationUpdate" />
+       <string id="string259" value="TranslationUpdateOffset" />
+       <string id="string260" value="TranslationUpdateOffsetDWM" />
+       <string id="string261" value="TranslationUpdateRectClip" />
+       <string id="string262" value="TrappedACRendering" />
+       <string id="string263" value="TrappedAppContainerRender" />
+       <string id="string264" value="UIPI" />
+       <string id="string265" value="UIPIClipboardError" />
+       <string id="string266" value="UIPIEventHookError" />
+       <string id="string267" value="UIPIHandleValError" />
+       <string id="string268" value="UIPIHookError" />
+       <string id="string269" value="UIPIInputError" />
+       <string id="string270" value="UIPIMsgError" />
+       <string id="string271" value="UIPISystemError" />
+       <string id="string272" value="UIUnresponsiveness" />
+       <string id="string273" value="UnBindLogicalSurface" />
+       <string id="string274" value="UpdateDxAccumFromDX" />
+       <string id="string275" value="UpdateDxAccumFromGDI" />
+       <string id="string276" value="UpdateHandleOwner" />
+       <string id="string277" value="Updates" />
+       <string id="string278" value="UserActive" />
+       <string id="string279" value="UserActivity" />
+       <string id="string280" value="UserCallback" />
+       <string id="string281" value="UserHandleOperation" />
+       <string id="string282" value="ValidateWindow" />
+       <string id="string283" value="Visualization" />
+       <string id="string284" value="WaitCursor" />
+       <string id="string285" value="WakeInputIdle" />
+       <string id="string286" value="WakeMIT" />
+       <string id="string287" value="WakePump" />
+       <string id="string288" value="WakeRIT" />
+       <string id="string289" value="WatermarkChange" />
+       <string id="string290" value="win:Info" />
+       <string id="string291" value="win:Start" />
+       <string id="string292" value="win:Stop" />
+       <string id="string293" value="win32Power" />
+       <string id="string294" value="WindowLayoutChange" />
+       <string id="string295" value="WindowUpdate" />
+       <string id="string296" value="WinlogonSleepEnd" />
+       <string id="string297" value="WinlogonSleepStart" />
+       <string id="string298" value="WriteClipboard" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

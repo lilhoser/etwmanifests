@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SrumTelemetry" name="Microsoft-Windows-SrumTelemetry" guid="{48d445a8-2f64-4d49-b093-a5774d8dc531}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2003" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" opcode="win:Info" template="Args2003_0"/>
+        <event value="2004" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" opcode="win:Info" template="Args2004_0"/>
+        <event value="2005" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" opcode="win:Info" template="Args2005_0"/>
+        <event value="3003" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" opcode="win:Info" template="Args3003_0"/>
+        <event value="3004" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" opcode="win:Info" template="Args3004_0"/>
+        <event value="3005" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" opcode="win:Info" template="Args3005_0"/>
+        <event value="3006" version="0" level="win:Informational"  channel="Microsoft-Windows-SrumTelemetry" task="E3Rundown" opcode="win:DC_Stop" template="Args3006_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SrumTelemetry" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="E3Rundown1day" mask="0x1000" message="$(string.string1)" />
+        <keyword name="E3Rundown3day" mask="0x2000" message="$(string.string2)" />
+        <keyword name="E3Rundown7day" mask="0x4000" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="E3Rundown" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2003_0">
+          <data name="BatteryDrainRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PowerBitpack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppCpuCyclesBitpack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeStamp" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2004_0">
+          <data name="JoulesPerHourScreenOnDC" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="JoulesPerHourScreenOffDC" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DCTimeBitpack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CPUCyclesOnDCBitpack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskMBRead" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskMBWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2005_0">
+          <data name="PowerInMilliwatts" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CpuStatsBitpack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskAndNetStatsBitPack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DurationBitPack" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModernAppPackageName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3003_0">
+          <data name="PreviousBrightnessLevel" inType="win:Int32" outType="xs:int"  />
+          <data name="PreviousBrightnessDurationInSeconds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewBrightnessLevel" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args3004_0">
+          <data name="CurrentBrightnessLevel" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args3005_0">
+          <data name="PreviousStateDurationInSeconds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewEnergySaverState" inType="win:Int8" outType="xs:byte"  />
+        </template>
+        <template tid="Args3006_0">
+          <data name="TimeStamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+          <data name="AppId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EnergyLoss" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CpuEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SocEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DisplayEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DiskEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NetworkEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MbbEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OtherEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalEnergyConsumption" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name=" MeasuredPower" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OnBattery" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Foreground" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ScreenOn" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BatterySaverActive" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LowPowerEpochActive" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="E3Rundown" />
+       <string id="string1" value="E3Rundown1day" />
+       <string id="string2" value="E3Rundown3day" />
+       <string id="string3" value="E3Rundown7day" />
+       <string id="string4" value="Microsoft-Windows-SrumTelemetry" />
+       <string id="string5" value="win:DC_Stop" />
+       <string id="string6" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

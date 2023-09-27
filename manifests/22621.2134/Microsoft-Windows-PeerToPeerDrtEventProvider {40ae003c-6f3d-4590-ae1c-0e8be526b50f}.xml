@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PeerToPeerDrtEventProvider" name="Microsoft-Windows-PeerToPeerDrtEventProvider" guid="{40ae003c-6f3d-4590-ae1c-0e8be526b50f}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="10000" version="0" level="win:Informational"  channel="Microsoft-Windows-PeerToPeerDrtEventProvider/Diagnostic"/>
+        <event value="10001" version="0" level="win:Informational"  channel="Microsoft-Windows-PeerToPeerDrtEventProvider/Diagnostic"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-PeerToPeerDrtEventProvider/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="TransportCreate" message="$(string.string1)">
+        </task>
+        <task value="2" name="TransportDelete" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-PeerToPeerDrtEventProvider" />
+       <string id="string1" value="Microsoft-Windows-PeerToPeerDrtEventProvider/Diagnostic" />
+       <string id="string2" value="TransportCreate" />
+       <string id="string3" value="TransportDelete" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

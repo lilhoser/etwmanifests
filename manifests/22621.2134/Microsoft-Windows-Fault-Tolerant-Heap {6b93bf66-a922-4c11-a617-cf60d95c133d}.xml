@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Fault-Tolerant-Heap" name="Microsoft-Windows-Fault-Tolerant-Heap" guid="{6b93bf66-a922-4c11-a617-cf60d95c133d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-Fault-Tolerant-Heap/Operational" task="FTH_EVENT_TASK_LIFECYCLE" opcode="FTH_EVENT_OPCODE_LIFECYCLE_START" keywords="FTH_EVENT_KEYWORD_LIFECYCLE"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-Fault-Tolerant-Heap/Operational" task="FTH_EVENT_TASK_LIFECYCLE" opcode="FTH_EVENT_OPCODE_LIFECYCLE_STOP" keywords="FTH_EVENT_KEYWORD_LIFECYCLE"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-Fault-Tolerant-Heap/Operational" keywords="FTH_EVENT_KEYWORD_LIFECYCLE" template="Args1003_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Fault-Tolerant-Heap/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="FTH_EVENT_KEYWORD_LIFECYCLE" mask="0x10000000" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="FTH_EVENT_TASK_LIFECYCLE" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="FTH_EVENT_OPCODE_LIFECYCLE_START" message="$(string.string1)"/>
+           <opcode value="12" name="FTH_EVENT_OPCODE_LIFECYCLE_STOP" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1003_0">
+          <data name="FthEnabledPID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FthEnabledProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FthEnabledProcessStartup" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="FTH_EVENT_KEYWORD_LIFECYCLE" />
+       <string id="string1" value="FTH_EVENT_OPCODE_LIFECYCLE_START" />
+       <string id="string2" value="FTH_EVENT_OPCODE_LIFECYCLE_STOP" />
+       <string id="string3" value="FTH_EVENT_TASK_LIFECYCLE" />
+       <string id="string4" value="Microsoft-Windows-Fault-Tolerant-Heap" />
+       <string id="string5" value="Microsoft-Windows-Fault-Tolerant-Heap/Operational" />
+       <string id="string6" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

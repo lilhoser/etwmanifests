@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-PerfTrack-MSHTML" name="Microsoft-PerfTrack-MSHTML" guid="{ffdb9886-80f3-4540-aa8b-b85192217ddf}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Navigation" opcode="win:Start" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Navigation" opcode="win:Stop"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Scroll" opcode="win:Start" keywords="defunct"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Scroll" opcode="win:Stop" keywords="defunct"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Redirect" opcode="win:Start"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="XSSFilter-RuleCheck" opcode="win:Start" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="XSSFilter-RuleCheck" opcode="win:Stop"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="XSSFilter-Sanitize" opcode="win:Start"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="XSSFilter-Sanitize" opcode="win:Stop"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Mshtml_TouchSelection_Invocation" opcode="win:Start"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Mshtml_TouchSelection_Invocation" opcode="win:Stop"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Mshtml_TouchSelection_Manipulation" opcode="win:Start"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Mshtml_TouchSelection_Manipulation" opcode="win:Stop"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Mshtml_TouchSelection_Dismissal" opcode="win:Start"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-PerfTrack-MSHTML/Diagnostic" task="Mshtml_TouchSelection_Dismissal" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-PerfTrack-MSHTML/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="defunct" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="101" name="Navigation" message="$(string.string101)">
+        </task>
+        <task value="103" name="Scroll" message="$(string.string103)">
+        </task>
+        <task value="105" name="Redirect" message="$(string.string105)">
+        </task>
+        <task value="107" name="XSSFilter-RuleCheck" message="$(string.string107)">
+        </task>
+        <task value="109" name="XSSFilter-Sanitize" message="$(string.string109)">
+        </task>
+        <task value="120" name="Mshtml_TouchSelection_Invocation" message="$(string.string120)">
+        </task>
+        <task value="122" name="Mshtml_TouchSelection_Manipulation" message="$(string.string122)">
+        </task>
+        <task value="124" name="Mshtml_TouchSelection_Dismissal" message="$(string.string124)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args101_0">
+          <data name="ObjectMSHTML" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="ObjectXSSFilter" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="defunct" />
+       <string id="string1" value="Microsoft-PerfTrack-MSHTML" />
+       <string id="string2" value="Microsoft-PerfTrack-MSHTML/Diagnostic" />
+       <string id="string3" value="Mshtml_TouchSelection_Dismissal" />
+       <string id="string4" value="Mshtml_TouchSelection_Invocation" />
+       <string id="string5" value="Mshtml_TouchSelection_Manipulation" />
+       <string id="string6" value="Navigation" />
+       <string id="string7" value="Redirect" />
+       <string id="string8" value="Scroll" />
+       <string id="string9" value="win:Start" />
+       <string id="string10" value="win:Stop" />
+       <string id="string11" value="XSSFilter-RuleCheck" />
+       <string id="string12" value="XSSFilter-Sanitize" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

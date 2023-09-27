@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-LDAP-Client" name="Microsoft-Windows-LDAP-Client" guid="{099614a5-5dd7-4788-8bc9-e29f43db28fc}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="search" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="write"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="refcnt"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="heap"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="cache"/>
+        <event value="6" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="ssl"/>
+        <event value="7" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="spewsearch"/>
+        <event value="8" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="serverdown"/>
+        <event value="9" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="connect"/>
+        <event value="10" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="reconnect"/>
+        <event value="11" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="receivedata"/>
+        <event value="12" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="bytes_sent"/>
+        <event value="13" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="eom"/>
+        <event value="14" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="ber"/>
+        <event value="15" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="outmemory"/>
+        <event value="16" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="controls"/>
+        <event value="17" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="bytes_received"/>
+        <event value="18" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="cldap"/>
+        <event value="19" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="filter"/>
+        <event value="20" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="bind"/>
+        <event value="21" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="network_errors"/>
+        <event value="22" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="verbose"/>
+        <event value="23" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="parse"/>
+        <event value="24" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="referrals"/>
+        <event value="25" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="request"/>
+        <event value="26" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="connection"/>
+        <event value="27" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="init_term"/>
+        <event value="28" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="api_errors"/>
+        <event value="29" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="errors"/>
+        <event value="30" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="search" template="Args30_0"/>
+        <event value="31" version="0" level="Log Always"  channel="Microsoft-Windows-LDAP-Client/Debug" keywords="performance"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-LDAP-Client/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="search" mask="0x1" message="$(string.string26)" />
+        <keyword name="write" mask="0x2" message="$(string.string31)" />
+        <keyword name="refcnt" mask="0x4" message="$(string.string23)" />
+        <keyword name="heap" mask="0x8" message="$(string.string13)" />
+        <keyword name="cache" mask="0x10" message="$(string.string5)" />
+        <keyword name="ssl" mask="0x20" message="$(string.string29)" />
+        <keyword name="spewsearch" mask="0x40" message="$(string.string28)" />
+        <keyword name="serverdown" mask="0x80" message="$(string.string27)" />
+        <keyword name="connect" mask="0x100" message="$(string.string7)" />
+        <keyword name="reconnect" mask="0x200" message="$(string.string22)" />
+        <keyword name="receivedata" mask="0x400" message="$(string.string21)" />
+        <keyword name="bytes_sent" mask="0x800" message="$(string.string4)" />
+        <keyword name="eom" mask="0x1000" message="$(string.string10)" />
+        <keyword name="ber" mask="0x2000" message="$(string.string1)" />
+        <keyword name="outmemory" mask="0x4000" message="$(string.string18)" />
+        <keyword name="controls" mask="0x8000" message="$(string.string9)" />
+        <keyword name="bytes_received" mask="0x10000" message="$(string.string3)" />
+        <keyword name="cldap" mask="0x20000" message="$(string.string6)" />
+        <keyword name="filter" mask="0x40000" message="$(string.string12)" />
+        <keyword name="bind" mask="0x80000" message="$(string.string2)" />
+        <keyword name="network_errors" mask="0x100000" message="$(string.string17)" />
+        <keyword name="verbose" mask="0x200000" message="$(string.string30)" />
+        <keyword name="parse" mask="0x400000" message="$(string.string19)" />
+        <keyword name="referrals" mask="0x800000" message="$(string.string24)" />
+        <keyword name="request" mask="0x1000000" message="$(string.string25)" />
+        <keyword name="connection" mask="0x2000000" message="$(string.string8)" />
+        <keyword name="init_term" mask="0x4000000" message="$(string.string14)" />
+        <keyword name="api_errors" mask="0x8000000" message="$(string.string0)" />
+        <keyword name="errors" mask="0x10000000" message="$(string.string11)" />
+        <keyword name="performance" mask="0x20000000" message="$(string.string20)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Message" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="ScopeOfSearch" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SearchFilter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DistinguishedName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AttributeList" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="api_errors" />
+       <string id="string1" value="ber" />
+       <string id="string2" value="bind" />
+       <string id="string3" value="bytes_received" />
+       <string id="string4" value="bytes_sent" />
+       <string id="string5" value="cache" />
+       <string id="string6" value="cldap" />
+       <string id="string7" value="connect" />
+       <string id="string8" value="connection" />
+       <string id="string9" value="controls" />
+       <string id="string10" value="eom" />
+       <string id="string11" value="errors" />
+       <string id="string12" value="filter" />
+       <string id="string13" value="heap" />
+       <string id="string14" value="init_term" />
+       <string id="string15" value="Microsoft-Windows-LDAP-Client" />
+       <string id="string16" value="Microsoft-Windows-LDAP-Client/Debug" />
+       <string id="string17" value="network_errors" />
+       <string id="string18" value="outmemory" />
+       <string id="string19" value="parse" />
+       <string id="string20" value="performance" />
+       <string id="string21" value="receivedata" />
+       <string id="string22" value="reconnect" />
+       <string id="string23" value="refcnt" />
+       <string id="string24" value="referrals" />
+       <string id="string25" value="request" />
+       <string id="string26" value="search" />
+       <string id="string27" value="serverdown" />
+       <string id="string28" value="spewsearch" />
+       <string id="string29" value="ssl" />
+       <string id="string30" value="verbose" />
+       <string id="string31" value="write" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>
