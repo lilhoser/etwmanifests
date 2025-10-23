@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Direct3D10" name="Microsoft-Windows-Direct3D10" guid="{9b7e4c0f-342c-4106-a19f-4f2704f689f0}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Name" opcode="win:Info" keywords="Names" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Name" opcode="win:DC_Start" keywords="Names" template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Device" opcode="win:Start" keywords="Devices" template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Device" opcode="win:Stop" keywords="Devices"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Device" opcode="win:DC_Start" keywords="Devices"/>
+        <event value="6" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Buffer" opcode="win:Start" keywords="Resources" template="Args6_0"/>
+        <event value="7" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Buffer" opcode="win:Stop" keywords="Resources"/>
+        <event value="8" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Buffer" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="9" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture1D" opcode="win:Start" keywords="Resources"/>
+        <event value="10" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture1D" opcode="win:Stop" keywords="Resources"/>
+        <event value="11" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture1D" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="12" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture2D" opcode="win:Start" keywords="Resources"/>
+        <event value="13" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture2D" opcode="win:Stop" keywords="Resources"/>
+        <event value="14" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture2D" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="15" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture3D" opcode="win:Start" keywords="Resources"/>
+        <event value="16" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture3D" opcode="win:Stop" keywords="Resources"/>
+        <event value="17" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture3D" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="18" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D10/Analytic" task="Texture2D" opcode="win:Info" keywords="Resources" template="Args18_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Direct3D10/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="Names" mask="0x1" message="$(string.string6)" />
+        <keyword name="Devices" mask="0x2" message="$(string.string2)" />
+        <keyword name="Resources" mask="0x4" message="$(string.string7)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Name" message="$(string.string1)">
+        </task>
+        <task value="2" name="Device" message="$(string.string2)">
+        </task>
+        <task value="4" name="Buffer" message="$(string.string4)">
+        </task>
+        <task value="5" name="Texture1D" message="$(string.string5)">
+        </task>
+        <task value="6" name="Texture2D" message="$(string.string6)">
+        </task>
+        <task value="7" name="Texture3D" message="$(string.string7)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchOldDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldDebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchOldDebugObjectName" />
+          <data name="CchNewDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewDebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchNewDebugObjectName" />
+        </template>
+        <template tid="Args2_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchDebugObjectName" />
+        </template>
+        <template tid="Args3_0">
+          <data name="pID3D10Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pIDXGIDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pIDXGIAdapter" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CreationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hKMAdapter" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMAdapter" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMAdapterVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hKMDevice" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMDeviceVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="UMDeviceFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="pID3D10Resource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pIDXGISurface" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D10Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Dimension" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Depth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MipLevels" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ArraySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleQuality" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BindFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CPUAccessFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiscFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hKMResource" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMResourceMiscFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="Resources" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Buffer" />
+       <string id="string1" value="Device" />
+       <string id="string2" value="Devices" />
+       <string id="string3" value="Microsoft-Windows-Direct3D10" />
+       <string id="string4" value="Microsoft-Windows-Direct3D10/Analytic" />
+       <string id="string5" value="Name" />
+       <string id="string6" value="Names" />
+       <string id="string7" value="Resources" />
+       <string id="string8" value="Texture1D" />
+       <string id="string9" value="Texture2D" />
+       <string id="string10" value="Texture3D" />
+       <string id="string11" value="win:DC_Start" />
+       <string id="string12" value="win:Info" />
+       <string id="string13" value="win:Start" />
+       <string id="string14" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

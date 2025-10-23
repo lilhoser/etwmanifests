@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Input-HIDCLASS" name="Microsoft-Windows-Input-HIDCLASS" guid="{6465da78-e7a0-4f39-b084-8f53c7c30dc6}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Input-HIDCLASS-Analytic" task="HIDCLASS_RUNDOWN" opcode="win:Start" keywords="Default"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Input-HIDCLASS-Analytic" task="HIDCLASS_RUNDOWN" opcode="win:Stop" keywords="Default"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Input-HIDCLASS-Analytic" opcode="Information" keywords="Default" template="Args3_0"/>
+        <event value="3" version="1" level="win:Informational"  channel="Microsoft-Windows-Input-HIDCLASS-Analytic" opcode="Information" keywords="Default" template="Args3_1"/>
+        <event value="3" version="2" level="win:Informational"  channel="Microsoft-Windows-Input-HIDCLASS-Analytic" opcode="Information" keywords="Default" template="Args3_2"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Input-HIDCLASS-Analytic" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Default" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="HIDCLASS_RUNDOWN" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="INFORMATION" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="Information" message="$(string.string2)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args3_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VendorID" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="ProductID" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="VersionNumber" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="ReportDescriptorLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReportDescriptor" inType="win:Binary" outType="xs:hexBinary" length="ReportDescriptorLength" />
+        </template>
+        <template tid="Args3_1">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PhysicalDeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VendorID" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="ProductID" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="VersionNumber" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="DeviceInstancePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceUpperFilters" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceLowerFilters" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CollectionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReportDescriptorLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReportDescriptor" inType="win:Binary" outType="xs:hexBinary" length="ReportDescriptorLength" />
+          <data name="DevicePowerState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateMachineCurrentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OpenCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastReadReportSuccessTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="NumReadReports" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSinceStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSincePresence" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSinceD0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSinceCaptureState" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args3_2">
+          <data name="DeviceStartStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="VendorID" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="ProductID" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="VersionNumber" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="DeviceInstancePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceUpperFilters" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceLowerFilters" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CollectionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReportDescriptorLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ReportDescriptor" inType="win:Binary" outType="xs:hexBinary" length="ReportDescriptorLength" />
+          <data name="DevicePowerState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateMachineCurrentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OpenCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastReadReportSuccessTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="NumReadReports" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSinceStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSincePresence" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSinceD0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NumReadReportsSinceCaptureState" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Default" />
+       <string id="string1" value="HIDCLASS_RUNDOWN" />
+       <string id="string2" value="Information" />
+       <string id="string3" value="INFORMATION" />
+       <string id="string4" value="Microsoft-Windows-Input-HIDCLASS" />
+       <string id="string5" value="Microsoft-Windows-Input-HIDCLASS-Analytic" />
+       <string id="string6" value="win:Start" />
+       <string id="string7" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

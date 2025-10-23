@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TerminalServices-ServerUSBDevices" name="Microsoft-Windows-TerminalServices-ServerUSBDevices" guid="{dcbe5aaa-16e2-457c-9337-366950045f0a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2" version="0" level="win:Verbose"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="4" version="0" level="win:Warning"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic"/>
+        <event value="5" version="0" level="win:Error"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic"/>
+        <event value="6" version="0" level="win:Verbose"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="7" version="0" level="win:Verbose"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="8" version="0" level="win:Error"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic"/>
+        <event value="9" version="0" level="win:Error"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic"/>
+        <event value="32" version="0" level="win:Error"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic" template="Args32_0"/>
+        <event value="34" version="0" level="win:Error"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic"/>
+        <event value="35" version="0" level="win:Warning"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Admin" template="Args35_0"/>
+        <event value="36" version="0" level="win:Warning"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Admin"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Operational"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug" template="Args38_0"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="42" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug" template="Args42_0"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-TerminalServices-ServerUSBDevices/Admin" type="Admin"/>
+        <channel value="17" name="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic" type="Analytic"/>
+        <channel value="18" name="Microsoft-Windows-TerminalServices-ServerUSBDevices/Operational" type="Operational"/>
+        <channel value="19" name="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="message" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args32_0">
+          <data name="objectPointer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="deviceName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args38_0">
+          <data name="objectPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ntStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args42_0">
+          <data name="objectPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="nameString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-TerminalServices-ServerUSBDevices" />
+       <string id="string1" value="Microsoft-Windows-TerminalServices-ServerUSBDevices/Admin" />
+       <string id="string2" value="Microsoft-Windows-TerminalServices-ServerUSBDevices/Analytic" />
+       <string id="string3" value="Microsoft-Windows-TerminalServices-ServerUSBDevices/Debug" />
+       <string id="string4" value="Microsoft-Windows-TerminalServices-ServerUSBDevices/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

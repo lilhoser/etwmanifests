@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Disk" name="Microsoft-Windows-Kernel-Disk" guid="{c7bde69a-e1e0-4177-b6ef-283ad1525271}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Disk/Analytic" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Disk/Analytic"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Disk/Analytic"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-Disk/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args10_0">
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IrpFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TransferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reserved" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ByteOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IORequestPacket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HighResResponseTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Kernel-Disk" />
+       <string id="string1" value="Microsoft-Windows-Kernel-Disk/Analytic" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

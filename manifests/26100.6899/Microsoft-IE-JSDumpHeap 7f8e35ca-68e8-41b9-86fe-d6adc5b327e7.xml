@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-IE-JSDumpHeap" name="Microsoft-IE-JSDumpHeap" guid="{7f8e35ca-68e8-41b9-86fe-d6adc5b327e7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  task="JSDumpHeapEnvelope" opcode="win:Start" keywords="jsdumpheap jsdumpheapEnvelopeOnly" template="Args1_0"/>
+        <event value="3" version="0" level="win:Verbose"  task="JSDumpHeapBulkNode" opcode="win:Info" keywords="jsdumpheap" template="Args3_0"/>
+        <event value="4" version="0" level="win:Verbose"  task="JSDumpHeapBulkAttribute" opcode="win:Info" keywords="jsdumpheap"/>
+        <event value="5" version="0" level="win:Verbose"  task="JSDumpHeapBulkEdge" opcode="win:Info" keywords="jsdumpheap"/>
+        <event value="6" version="0" level="win:Verbose"  task="JSDumpHeapStringTable" opcode="win:Info" keywords="jsdumpheap"/>
+        <event value="7" version="0" level="win:Verbose"  task="JSDumpHeapDoubleTable" opcode="win:Info" keywords="jsdumpheap"/>
+        <event value="2" version="1" level="win:Verbose"  task="JSDumpHeapEnvelope" opcode="win:Stop" keywords="jsdumpheap jsdumpheapEnvelopeOnly" template="Args2_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-JSDumpHeap/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="jsdumpheap" mask="0x20" message="$(string.string0)" />
+        <keyword name="jsdumpheapEnvelopeOnly" mask="0x80000000" message="$(string.string6)" />
+      </keywords>
+      <tasks>
+        <task value="321" name="JSDumpHeapEnvelope" message="$(string.string321)">
+        </task>
+        <task value="323" name="JSDumpHeapBulkNode" message="$(string.string323)">
+        </task>
+        <task value="324" name="JSDumpHeapBulkAttribute" message="$(string.string324)">
+        </task>
+        <task value="325" name="JSDumpHeapBulkEdge" message="$(string.string325)">
+        </task>
+        <task value="326" name="JSDumpHeapStringTable" message="$(string.string326)">
+        </task>
+        <task value="327" name="JSDumpHeapDoubleTable" message="$(string.string327)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Settings" inType="win:UnicodeString" outType="xs:int"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="Summary" inType="win:UnicodeString" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="jsdumpheap" />
+       <string id="string1" value="JSDumpHeapBulkAttribute" />
+       <string id="string2" value="JSDumpHeapBulkEdge" />
+       <string id="string3" value="JSDumpHeapBulkNode" />
+       <string id="string4" value="JSDumpHeapDoubleTable" />
+       <string id="string5" value="JSDumpHeapEnvelope" />
+       <string id="string6" value="jsdumpheapEnvelopeOnly" />
+       <string id="string7" value="JSDumpHeapStringTable" />
+       <string id="string8" value="Microsoft-IE-JSDumpHeap" />
+       <string id="string9" value="Microsoft-JSDumpHeap/Diagnostic" />
+       <string id="string10" value="win:Info" />
+       <string id="string11" value="win:Start" />
+       <string id="string12" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

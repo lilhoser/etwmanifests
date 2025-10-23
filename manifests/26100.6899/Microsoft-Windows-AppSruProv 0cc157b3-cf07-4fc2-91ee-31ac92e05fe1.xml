@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-AppSruProv" name="Microsoft-Windows-AppSruProv" guid="{0cc157b3-cf07-4fc2-91ee-31ac92e05fe1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="3000" version="0" level="win:Informational"  channel="Microsoft-Windows-AppSruProv" opcode="win:Info" template="Args3000_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-AppSruProv" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args3000_0">
+          <data name="AppId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserSid" inType="win:SID" outType="xs:string"  />
+          <data name="FgCycles" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BgCycles" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FgClockTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FgCtxSwitches" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BgCtxSwitches" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FgBytesRead" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FgBytesWritten" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FgNumReadOps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FgNumWriteOps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FgNumFlushOps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BgBytesRead" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BgBytesWritten" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BgNumReadOps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BgNumWriteOps" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BgNumFlushOps" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-AppSruProv" />
+       <string id="string1" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

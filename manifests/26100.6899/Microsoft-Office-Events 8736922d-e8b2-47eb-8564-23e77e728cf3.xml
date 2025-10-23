@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Office-Events" name="Microsoft-Office-Events" guid="{8736922d-e8b2-47eb-8564-23e77e728cf3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskCallStack" opcode="CallStack opcode" keywords="CallStack" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskCallStack" opcode="CallStackModule opcode" keywords="CallStack" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="BudgetCreate opcode" keywords="Budget" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="BudgetUpdate opcode" keywords="Budget" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="BudgetDelete opcode" keywords="Budget"/>
+        <event value="6" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="CodeMarker opcode" keywords="CodeMarker" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="SqmDatapoint opcode" keywords="Sqm" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="SqmDatapointAvg opcode" keywords="Sqm" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="SqmStream opcode" keywords="Sqm" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="OfficeChannel" task="etwtaskPerformance" opcode="BudgetSetRate opcode" keywords="Budget"/>
+        <event value="11" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX General Opcode" keywords="PCX" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX General Opcode" keywords="PCX"/>
+        <event value="13" version="0" level="win:Warning"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX General Opcode" keywords="PCX"/>
+        <event value="14" version="0" level="win:Error"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX General Opcode" keywords="PCX"/>
+        <event value="15" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Start" keywords="PCX" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Stop" keywords="PCX" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Start" keywords="PCX" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Stop" keywords="PCX"/>
+        <event value="19" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Start" keywords="PCX" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Stop" keywords="PCX" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Persona Opcode" keywords="PCX" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Persona Opcode" keywords="PCX" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Persona Opcode" keywords="PCX" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX PersonInfo Opcode" keywords="PCX" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX PersonInfo Opcode" keywords="PCX" template="Args25_0"/>
+        <event value="26" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX PersonInfo Opcode" keywords="PCX" template="Args26_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX PersonInfo Opcode" keywords="PCX" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX PersonInfo Opcode" keywords="PCX"/>
+        <event value="29" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX ContactCard Opcode" keywords="PCX" template="Args29_0"/>
+        <event value="30" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Presence Opcode" keywords="PCX" template="Args30_0"/>
+        <event value="31" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Presence Opcode" keywords="PCX"/>
+        <event value="32" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Presence Opcode" keywords="PCX" template="Args32_0"/>
+        <event value="33" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="CallStack opcode" keywords="PCX"/>
+        <event value="34" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="CallStackModule opcode" keywords="PCX"/>
+        <event value="35" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPerfWatson" opcode="PerfWatson Opcode" keywords="PerfWatson"/>
+        <event value="36" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Register idle task" keywords="Idle" template="Args36_0"/>
+        <event value="37" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Deregister idle task" keywords="Idle"/>
+        <event value="38" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Modify idle task" keywords="Idle" template="Args38_0"/>
+        <event value="39" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle execution starting" keywords="Idle" template="Args39_0"/>
+        <event value="40" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle execution ending" keywords="Idle"/>
+        <event value="41" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle execution preempted" keywords="Idle"/>
+        <event value="42" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle task moved to run queue" keywords="Idle"/>
+        <event value="43" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle task demoted to wait queue" keywords="Idle"/>
+        <event value="44" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle task executing" keywords="Idle" template="Args44_0"/>
+        <event value="45" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle timer message received" keywords="Idle"/>
+        <event value="46" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle timer scheduled" keywords="Idle" template="Args46_0"/>
+        <event value="47" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Search Opcode" keywords="PCX" template="Args47_0"/>
+        <event value="48" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Search Opcode" keywords="PCX" template="Args48_0"/>
+        <event value="49" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX ContactInfo Opcode" keywords="PCX" template="Args49_0"/>
+        <event value="50" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskIdle" opcode="Idle update queued" keywords="Idle" template="Args50_0"/>
+        <event value="51" version="0" level="win:Verbose"  channel="OfficeDebugChannel" task="etwtaskSecureReader" opcode="SecureReader Opcode" keywords="SecureReader"/>
+        <event value="52" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskSynchronization" opcode="Synchronization Opcode" keywords="Synchronization" template="Args52_0"/>
+        <event value="53" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Contact Linking Opcode" keywords="PCX" template="Args53_0"/>
+        <event value="54" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Contact Linking Opcode" keywords="PCX" template="Args54_0"/>
+        <event value="55" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Feeds Opcode" keywords="PCX" template="Args55_0"/>
+        <event value="56" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Feeds Opcode" keywords="PCX" template="Args56_0"/>
+        <event value="57" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Feeds Opcode" keywords="PCX" template="Args57_0"/>
+        <event value="58" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Contact Sync Opcode" keywords="PCX" template="Args58_0"/>
+        <event value="59" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX Contact Sync Opcode" keywords="PCX" template="Args59_0"/>
+        <event value="60" version="0" level="win:Verbose"  channel="OfficeDebugChannel" task="etwtaskPerfWatson" opcode="PerfWatson Opcode" keywords="PerfWatson" template="Args60_0"/>
+        <event value="61" version="0" level="win:Verbose"  channel="OfficeDebugChannel" task="etwtaskPerfWatson" opcode="PerfWatson Opcode" keywords="PerfWatson"/>
+        <event value="62" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="Met General Opcode" keywords="Met" template="Args62_0"/>
+        <event value="63" version="0" level="win:Warning"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="Met General Opcode" keywords="Met"/>
+        <event value="64" version="0" level="win:Error"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="Met General Opcode" keywords="Met"/>
+        <event value="65" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="win:Start" keywords="Met"/>
+        <event value="66" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="win:Stop" keywords="Met"/>
+        <event value="67" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="CallStack opcode" keywords="Met"/>
+        <event value="68" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskMet" opcode="CallStackModule opcode" keywords="Met"/>
+        <event value="69" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX ContactInfoPropertyUpdate Opcode" keywords="PCX" template="Args69_0"/>
+        <event value="70" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskMSOLogging" opcode="MSO Logging Opcode" keywords="MSOLogging" template="Args70_0"/>
+        <event value="71" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args71_0"/>
+        <event value="72" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="73" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args73_0"/>
+        <event value="74" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args75_0"/>
+        <event value="76" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args76_0"/>
+        <event value="77" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args77_0"/>
+        <event value="78" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="79" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args79_0"/>
+        <event value="80" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args80_0"/>
+        <event value="81" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="82" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="83" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX" template="Args83_0"/>
+        <event value="84" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="85" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="86" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="87" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="88" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="89" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="PCX General Opcode" keywords="PCX" template="Args89_0"/>
+        <event value="90" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+        <event value="91" version="0" level="win:Informational"  channel="OfficeDebugChannel" task="etwtaskPCX" opcode="win:Info" keywords="PCX"/>
+      </events>
+      <channels>
+        <channel value="16" name="OfficeChannel" type="unknown"/>
+        <channel value="17" name="OfficeDebugChannel" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="CallStack" mask="0x1" message="$(string.string5)" />
+        <keyword name="Budget" mask="0x2" message="$(string.string0)" />
+        <keyword name="CodeMarker" mask="0x4" message="$(string.string8)" />
+        <keyword name="Sqm" mask="0x8" message="$(string.string94)" />
+        <keyword name="PCX" mask="0x10" message="$(string.string77)" />
+        <keyword name="PerfWatson" mask="0x20" message="$(string.string89)" />
+        <keyword name="Idle" mask="0x40" message="$(string.string20)" />
+        <keyword name="SecureReader" mask="0x80" message="$(string.string92)" />
+        <keyword name="Synchronization" mask="0x100" message="$(string.string98)" />
+        <keyword name="Met" mask="0x200" message="$(string.string30)" />
+        <keyword name="MSOLogging" mask="0x400" message="$(string.string35)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="etwtaskCallStack" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="CallStack opcode" message="$(string.string6)"/>
+           <opcode value="11" name="CallStackModule opcode" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="etwtaskPerformance" message="$(string.string2)">
+          <opcodes>
+           <opcode value="12" name="BudgetCreate opcode" message="$(string.string1)"/>
+           <opcode value="13" name="BudgetUpdate opcode" message="$(string.string4)"/>
+           <opcode value="14" name="BudgetDelete opcode" message="$(string.string2)"/>
+           <opcode value="16" name="CodeMarker opcode" message="$(string.string9)"/>
+           <opcode value="17" name="SqmDatapoint opcode" message="$(string.string95)"/>
+           <opcode value="18" name="SqmDatapointAvg opcode" message="$(string.string96)"/>
+           <opcode value="19" name="SqmStream opcode" message="$(string.string97)"/>
+           <opcode value="20" name="BudgetSetRate opcode" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="etwtaskPCX" message="$(string.string3)">
+          <opcodes>
+           <opcode value="21" name="PCX General Opcode" message="$(string.string84)"/>
+           <opcode value="22" name="PCX Persona Opcode" message="$(string.string85)"/>
+           <opcode value="23" name="PCX PersonInfo Opcode" message="$(string.string86)"/>
+           <opcode value="26" name="PCX ContactCard Opcode" message="$(string.string80)"/>
+           <opcode value="24" name="PCX Presence Opcode" message="$(string.string87)"/>
+           <opcode value="10" name="CallStack opcode" message="$(string.string6)"/>
+           <opcode value="11" name="CallStackModule opcode" message="$(string.string7)"/>
+           <opcode value="25" name="PCX Search Opcode" message="$(string.string88)"/>
+           <opcode value="39" name="PCX ContactInfo Opcode" message="$(string.string81)"/>
+           <opcode value="43" name="PCX Contact Linking Opcode" message="$(string.string78)"/>
+           <opcode value="44" name="PCX Feeds Opcode" message="$(string.string83)"/>
+           <opcode value="45" name="PCX Contact Sync Opcode" message="$(string.string79)"/>
+           <opcode value="47" name="PCX ContactInfoPropertyUpdate Opcode" message="$(string.string82)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="etwtaskPerfWatson" message="$(string.string4)">
+          <opcodes>
+           <opcode value="27" name="PerfWatson Opcode" message="$(string.string90)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="etwtaskIdle" message="$(string.string5)">
+          <opcodes>
+           <opcode value="28" name="Register idle task" message="$(string.string91)"/>
+           <opcode value="29" name="Deregister idle task" message="$(string.string10)"/>
+           <opcode value="30" name="Modify idle task" message="$(string.string33)"/>
+           <opcode value="31" name="Idle execution starting" message="$(string.string23)"/>
+           <opcode value="32" name="Idle execution ending" message="$(string.string21)"/>
+           <opcode value="33" name="Idle execution preempted" message="$(string.string22)"/>
+           <opcode value="34" name="Idle task moved to run queue" message="$(string.string26)"/>
+           <opcode value="35" name="Idle task demoted to wait queue" message="$(string.string24)"/>
+           <opcode value="36" name="Idle task executing" message="$(string.string25)"/>
+           <opcode value="37" name="Idle timer message received" message="$(string.string27)"/>
+           <opcode value="38" name="Idle timer scheduled" message="$(string.string28)"/>
+           <opcode value="40" name="Idle update queued" message="$(string.string29)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="etwtaskSecureReader" message="$(string.string6)">
+          <opcodes>
+           <opcode value="41" name="SecureReader Opcode" message="$(string.string93)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="etwtaskSynchronization" message="$(string.string7)">
+          <opcodes>
+           <opcode value="42" name="Synchronization Opcode" message="$(string.string99)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="etwtaskMet" message="$(string.string8)">
+          <opcodes>
+           <opcode value="46" name="Met General Opcode" message="$(string.string31)"/>
+           <opcode value="10" name="CallStack opcode" message="$(string.string6)"/>
+           <opcode value="11" name="CallStackModule opcode" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="etwtaskMSOLogging" message="$(string.string9)">
+          <opcodes>
+           <opcode value="48" name="MSO Logging Opcode" message="$(string.string34)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="opcodeCallStack" message="$(string.string43)"/>
+        <opcode value="11" name="opcodeCallStackModule" message="$(string.string44)"/>
+        <opcode value="12" name="opcodeBudgetCreate" message="$(string.string38)"/>
+        <opcode value="13" name="opcodeBudgetUpdate" message="$(string.string42)"/>
+        <opcode value="14" name="opcodeBudgetDelete" message="$(string.string39)"/>
+        <opcode value="15" name="opcodeBudgetOverflow" message="$(string.string40)"/>
+        <opcode value="16" name="opcodeCodeMarker" message="$(string.string45)"/>
+        <opcode value="17" name="opcodeSqmDatapoint" message="$(string.string73)"/>
+        <opcode value="18" name="opcodeSqmDatapointAvg" message="$(string.string74)"/>
+        <opcode value="19" name="opcodeSqmStream" message="$(string.string75)"/>
+        <opcode value="20" name="opcodeBudgetSetRate" message="$(string.string41)"/>
+        <opcode value="21" name="opcodePCXGeneral" message="$(string.string66)"/>
+        <opcode value="22" name="opcodePCXPersona" message="$(string.string67)"/>
+        <opcode value="23" name="opcodePCXPersonInfo" message="$(string.string68)"/>
+        <opcode value="24" name="opcodePCXPresence" message="$(string.string69)"/>
+        <opcode value="25" name="opcodePCXSearch" message="$(string.string70)"/>
+        <opcode value="26" name="opcodePCXContactCard" message="$(string.string60)"/>
+        <opcode value="27" name="opcodePerfWatson" message="$(string.string71)"/>
+        <opcode value="28" name="opcodeIdleRegisterTask" message="$(string.string52)"/>
+        <opcode value="29" name="opcodeIdleDeregisterTask" message="$(string.string47)"/>
+        <opcode value="30" name="opcodeIdleModifyTask" message="$(string.string50)"/>
+        <opcode value="31" name="opcodeIdleStartExecution" message="$(string.string55)"/>
+        <opcode value="32" name="opcodeIdleEndExecution" message="$(string.string48)"/>
+        <opcode value="33" name="opcodeIdlePreemption" message="$(string.string51)"/>
+        <opcode value="34" name="opcodeIdleReleaseTask" message="$(string.string53)"/>
+        <opcode value="35" name="opcodeIdleDemoteTask" message="$(string.string46)"/>
+        <opcode value="36" name="opcodeIdleExecuteTask" message="$(string.string49)"/>
+        <opcode value="37" name="opcodeIdleTimerFired" message="$(string.string56)"/>
+        <opcode value="38" name="opcodeIdleScheduleTimer" message="$(string.string54)"/>
+        <opcode value="39" name="opcodePCXContactInfo" message="$(string.string61)"/>
+        <opcode value="40" name="opcodeIdleUpdateQueued" message="$(string.string57)"/>
+        <opcode value="41" name="opcodeSecureReader" message="$(string.string72)"/>
+        <opcode value="42" name="opcodeSynchronization" message="$(string.string76)"/>
+        <opcode value="43" name="opcodePCXContactLinking" message="$(string.string63)"/>
+        <opcode value="44" name="opcodePCXFeed" message="$(string.string65)"/>
+        <opcode value="45" name="opcodePCXContactSync" message="$(string.string64)"/>
+        <opcode value="46" name="opcodeMetGeneral" message="$(string.string58)"/>
+        <opcode value="47" name="opcodePCXContactInfoPropertyUpdate" message="$(string.string62)"/>
+        <opcode value="48" name="opcodeMSOLogging" message="$(string.string59)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="cValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Frame" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwBudgetType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Limit" inType="win:Int32" outType="xs:int"  />
+          <data name="dwInterval" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzData" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwBudgetType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Update" inType="win:Int32" outType="xs:int"  />
+          <data name="dwTimeNow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzData" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="dwCodeMarker" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="dwModuleId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="dwDatapoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwTick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="dwDatapoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwTick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwValue1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="dwDatapoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwTick" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="dwLine" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwHResult" inType="win:Int32" outType="xs:int"  />
+          <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="dwLine" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="szCall" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="dwLine" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="szCall" inType="win:AnsiString" outType="xs:string"  />
+          <data name="dwHResult" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szTag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzParameter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzJob" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="szTag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzParameter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzJob" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwHResult" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="wzFriendlyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzAddressSMTP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSip" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzAlias" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzUserInfoId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzPhoneNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzFlags" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzMuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzResID" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzAltEmail" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwStatus" inType="win:Int32" outType="xs:int"  />
+          <data name="dwAvail" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szMessage" inType="win:AnsiString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSPUserId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSPServerInfo" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzManager" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzMuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEmailAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSignInAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzAlias" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzHashKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzResID" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szMessage" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wzContactType" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szMessage" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="bSetFromDL" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="wzSMTPAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzFriendlyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzTitle" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzCompanyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzDepartment" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzOfficeLocation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzWorkPhone" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzMobilePhone" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzHomePhone" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzProperty" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzOldValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzNewValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args29_0">
+          <data name="szString" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="pCardHwnd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pPersona" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pPersonInfo" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzContactType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzCardType" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szMessage" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSigninName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEmail" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzWPhone" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzMPhone" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzHPhone" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args32_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="dwRank" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzSIPAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzDataType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEmailAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzDisplayName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzPhoneNumber" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzTitle" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args36_0">
+          <data name="cookie" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dwID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="priority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="scheduler" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grfTaskFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msecRelease" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msecDeadline" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args38_0">
+          <data name="cookie" inType="win:Int64" outType="xs:long"  />
+          <data name="dwID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="grfModifyFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="priority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="scheduler" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grfTaskFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msecRelease" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msecDeadline" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="fTimerOnly" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fTracking" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fResuming" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args44_0">
+          <data name="cookie" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dwID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="msecsRunIntervalAvg" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args46_0">
+          <data name="msecDelay" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="msecsTolerableDelay" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzFirstTaskName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args47_0">
+          <data name="wzC1Source" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1EntryId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1PersonId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1StampedGalEId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1Email1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1Email2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1Email3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC1DisplayName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2Source" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2EntryId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2PersonId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2StampedGalEId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2Email1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2Email2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2Email3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzC2DisplayName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="dwJobSequence" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwJobCount" inType="win:Int32" outType="xs:int"  />
+          <data name="dwHrResult" inType="win:Int32" outType="xs:int"  />
+          <data name="dwResultCount" inType="win:Int32" outType="xs:int"  />
+          <data name="fLastBatch" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fMoreResults" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args49_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wzRootSourceType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="szSourceType" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzUserID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzMuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzProviderId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzCreationDate" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="cookie" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="grfUpdateType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="wzMessageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="szMessageName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzPersonID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEmail1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEmail2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEmail3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzIM" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzLastModified" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fLInked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="wzGALEntryID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwGALLinkState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="wzLinkRejectHistory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSMTPAddressCache" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args54_0">
+          <data name="szMessageName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzEntryID1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzEntryID2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="szComment" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szCallingFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzFeedProviderName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzFeedHTML" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzFeedData" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzFeedPlainText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzFeedIcon" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzTime" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args56_0">
+          <data name="szComment" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzProviderXML" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args57_0">
+          <data name="szComment" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzUnSanitizedHTML" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzSanitizedHTML" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args58_0">
+          <data name="szComment" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzFriendInfo" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzRetrievalTime" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="szComment" inType="win:AnsiString" outType="xs:string"  />
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzCurrentTime" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzTimeInMinutesForNextSync" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args60_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args62_0">
+          <data name="wzFunction" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwLine" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwHResult" inType="win:Int32" outType="xs:int"  />
+          <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args69_0">
+          <data name="szFunction" inType="win:AnsiString" outType="xs:string"  />
+          <data name="wzProperty" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzPrevValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzNewValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzUniqueKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pPointer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args70_0">
+          <data name="wzLogLine" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args71_0">
+          <data name="dwEntrypoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args73_0">
+          <data name="dwGroupNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwGroupIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwGroupType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fAliasChanged" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fAutoSubscribeChecked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="fResult" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="dwErrorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args75_0">
+          <data name="dwGroupIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fGroupIdManuallyEdited" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args76_0">
+          <data name="fResult" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="dwErrorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwAvailbilityResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args77_0">
+          <data name="dwDialogType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEntrypoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args79_0">
+          <data name="dwDialogType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwAddedMembersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwRemovedMembersCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwAddedAdminsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwRemovedAdminsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args80_0">
+          <data name="operationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fResult" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="dwErrorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args83_0">
+          <data name="fResult" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="dwErrorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwMemberCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwAdminCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args89_0">
+          <data name="dwActionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwEnvironment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwHResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Budget" />
+       <string id="string1" value="BudgetCreate opcode" />
+       <string id="string2" value="BudgetDelete opcode" />
+       <string id="string3" value="BudgetSetRate opcode" />
+       <string id="string4" value="BudgetUpdate opcode" />
+       <string id="string5" value="CallStack" />
+       <string id="string6" value="CallStack opcode" />
+       <string id="string7" value="CallStackModule opcode" />
+       <string id="string8" value="CodeMarker" />
+       <string id="string9" value="CodeMarker opcode" />
+       <string id="string10" value="Deregister idle task" />
+       <string id="string11" value="etwtaskCallStack" />
+       <string id="string12" value="etwtaskIdle" />
+       <string id="string13" value="etwtaskMet" />
+       <string id="string14" value="etwtaskMSOLogging" />
+       <string id="string15" value="etwtaskPCX" />
+       <string id="string16" value="etwtaskPerformance" />
+       <string id="string17" value="etwtaskPerfWatson" />
+       <string id="string18" value="etwtaskSecureReader" />
+       <string id="string19" value="etwtaskSynchronization" />
+       <string id="string20" value="Idle" />
+       <string id="string21" value="Idle execution ending" />
+       <string id="string22" value="Idle execution preempted" />
+       <string id="string23" value="Idle execution starting" />
+       <string id="string24" value="Idle task demoted to wait queue" />
+       <string id="string25" value="Idle task executing" />
+       <string id="string26" value="Idle task moved to run queue" />
+       <string id="string27" value="Idle timer message received" />
+       <string id="string28" value="Idle timer scheduled" />
+       <string id="string29" value="Idle update queued" />
+       <string id="string30" value="Met" />
+       <string id="string31" value="Met General Opcode" />
+       <string id="string32" value="Microsoft-Office-Events" />
+       <string id="string33" value="Modify idle task" />
+       <string id="string34" value="MSO Logging Opcode" />
+       <string id="string35" value="MSOLogging" />
+       <string id="string36" value="OfficeChannel" />
+       <string id="string37" value="OfficeDebugChannel" />
+       <string id="string38" value="opcodeBudgetCreate" />
+       <string id="string39" value="opcodeBudgetDelete" />
+       <string id="string40" value="opcodeBudgetOverflow" />
+       <string id="string41" value="opcodeBudgetSetRate" />
+       <string id="string42" value="opcodeBudgetUpdate" />
+       <string id="string43" value="opcodeCallStack" />
+       <string id="string44" value="opcodeCallStackModule" />
+       <string id="string45" value="opcodeCodeMarker" />
+       <string id="string46" value="opcodeIdleDemoteTask" />
+       <string id="string47" value="opcodeIdleDeregisterTask" />
+       <string id="string48" value="opcodeIdleEndExecution" />
+       <string id="string49" value="opcodeIdleExecuteTask" />
+       <string id="string50" value="opcodeIdleModifyTask" />
+       <string id="string51" value="opcodeIdlePreemption" />
+       <string id="string52" value="opcodeIdleRegisterTask" />
+       <string id="string53" value="opcodeIdleReleaseTask" />
+       <string id="string54" value="opcodeIdleScheduleTimer" />
+       <string id="string55" value="opcodeIdleStartExecution" />
+       <string id="string56" value="opcodeIdleTimerFired" />
+       <string id="string57" value="opcodeIdleUpdateQueued" />
+       <string id="string58" value="opcodeMetGeneral" />
+       <string id="string59" value="opcodeMSOLogging" />
+       <string id="string60" value="opcodePCXContactCard" />
+       <string id="string61" value="opcodePCXContactInfo" />
+       <string id="string62" value="opcodePCXContactInfoPropertyUpdate" />
+       <string id="string63" value="opcodePCXContactLinking" />
+       <string id="string64" value="opcodePCXContactSync" />
+       <string id="string65" value="opcodePCXFeed" />
+       <string id="string66" value="opcodePCXGeneral" />
+       <string id="string67" value="opcodePCXPersona" />
+       <string id="string68" value="opcodePCXPersonInfo" />
+       <string id="string69" value="opcodePCXPresence" />
+       <string id="string70" value="opcodePCXSearch" />
+       <string id="string71" value="opcodePerfWatson" />
+       <string id="string72" value="opcodeSecureReader" />
+       <string id="string73" value="opcodeSqmDatapoint" />
+       <string id="string74" value="opcodeSqmDatapointAvg" />
+       <string id="string75" value="opcodeSqmStream" />
+       <string id="string76" value="opcodeSynchronization" />
+       <string id="string77" value="PCX" />
+       <string id="string78" value="PCX Contact Linking Opcode" />
+       <string id="string79" value="PCX Contact Sync Opcode" />
+       <string id="string80" value="PCX ContactCard Opcode" />
+       <string id="string81" value="PCX ContactInfo Opcode" />
+       <string id="string82" value="PCX ContactInfoPropertyUpdate Opcode" />
+       <string id="string83" value="PCX Feeds Opcode" />
+       <string id="string84" value="PCX General Opcode" />
+       <string id="string85" value="PCX Persona Opcode" />
+       <string id="string86" value="PCX PersonInfo Opcode" />
+       <string id="string87" value="PCX Presence Opcode" />
+       <string id="string88" value="PCX Search Opcode" />
+       <string id="string89" value="PerfWatson" />
+       <string id="string90" value="PerfWatson Opcode" />
+       <string id="string91" value="Register idle task" />
+       <string id="string92" value="SecureReader" />
+       <string id="string93" value="SecureReader Opcode" />
+       <string id="string94" value="Sqm" />
+       <string id="string95" value="SqmDatapoint opcode" />
+       <string id="string96" value="SqmDatapointAvg opcode" />
+       <string id="string97" value="SqmStream opcode" />
+       <string id="string98" value="Synchronization" />
+       <string id="string99" value="Synchronization Opcode" />
+       <string id="string100" value="win:Info" />
+       <string id="string101" value="win:Start" />
+       <string id="string102" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

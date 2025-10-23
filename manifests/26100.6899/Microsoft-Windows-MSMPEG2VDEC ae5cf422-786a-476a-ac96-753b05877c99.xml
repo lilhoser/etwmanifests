@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MSMPEG2VDEC" name="Microsoft-Windows-MSMPEG2VDEC" guid="{ae5cf422-786a-476a-ac96-753b05877c99}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_NotifyDecode" template="Args0_0"/>
+        <event value="1" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_NotifySkip"/>
+        <event value="2" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_NotifyOutput"/>
+        <event value="3" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_DecodeTask" opcode="win:Start" template="Args3_0"/>
+        <event value="4" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_DecodeTask" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_EncryptInput" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_EncryptInput" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_NotifyCorruptedInput"/>
+        <event value="8" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_SetQualityMode" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="H264_FormatChange" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MPEG2_NotifyDiscover"/>
+        <event value="11" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MPEG2_NotifySkip"/>
+        <event value="12" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MPEG2_DecodeTask" opcode="win:Start"/>
+        <event value="14" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MPEG2_NotifyCorruptedInput"/>
+        <event value="15" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_Playback" opcode="win:Start"/>
+        <event value="16" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_Playback" opcode="win:Stop"/>
+        <event value="17" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_NotifyCodec" template="Args17_0"/>
+        <event value="18" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_Receive" opcode="win:Start"/>
+        <event value="19" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_Receive" opcode="win:Stop"/>
+        <event value="20" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_Deliver" opcode="win:Start"/>
+        <event value="21" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_Deliver" opcode="win:Stop"/>
+        <event value="22" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_SetOutputAttribute" template="Args22_0"/>
+        <event value="23" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_NotifyQuality" template="Args23_0"/>
+        <event value="24" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_NewDXVAConfig" template="Args24_0"/>
+        <event value="25" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_GetOutput" opcode="win:Start"/>
+        <event value="26" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DShow_GetOutput" opcode="win:Stop"/>
+        <event value="27" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_Playback" opcode="win:Start"/>
+        <event value="28" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_Playback" opcode="win:Stop"/>
+        <event value="29" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_ProcessInput" opcode="win:Start"/>
+        <event value="30" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_ProcessInput" opcode="win:Stop"/>
+        <event value="31" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_ProcessOutput" opcode="win:Start"/>
+        <event value="32" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_ProcessOutput" opcode="win:Stop"/>
+        <event value="33" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_SetOutputAttribute" template="Args33_0"/>
+        <event value="34" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_NotifySampleLag" template="Args34_0"/>
+        <event value="35" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_ProcessMessage" template="Args35_0"/>
+        <event value="36" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_CreateVideoDecoder" opcode="win:Start" template="Args36_0"/>
+        <event value="37" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_CreateVideoDecoder" opcode="win:Stop"/>
+        <event value="38" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_BeginFrame" opcode="win:Start"/>
+        <event value="39" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_BeginFrame" opcode="win:Stop"/>
+        <event value="40" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_GetBuffer" opcode="win:Start"/>
+        <event value="41" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_GetBuffer" opcode="win:Stop"/>
+        <event value="42" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_ReleaseBuffer" opcode="win:Start"/>
+        <event value="43" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_ReleaseBuffer" opcode="win:Stop"/>
+        <event value="44" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_Execute" opcode="win:Start"/>
+        <event value="45" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_Execute" opcode="win:Stop"/>
+        <event value="46" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_EndFrame" opcode="win:Start"/>
+        <event value="47" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_EndFrame" opcode="win:Stop"/>
+        <event value="48" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MPEG2_EncryptInput" opcode="win:Start"/>
+        <event value="49" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MPEG2_EncryptInput" opcode="win:Stop"/>
+        <event value="50" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_Sleep" opcode="win:Start"/>
+        <event value="51" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_Sleep" opcode="win:Stop"/>
+        <event value="52" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_AllocTexture" opcode="win:Start" template="Args52_0"/>
+        <event value="53" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_AllocTexture" opcode="win:Stop" template="Args53_0"/>
+        <event value="54" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_CreateView" opcode="win:Start"/>
+        <event value="55" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="DXVA_CreateView" opcode="win:Stop"/>
+        <event value="56" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_GetMoreData" opcode="win:Start"/>
+        <event value="57" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_GetMoreData" opcode="win:Stop"/>
+        <event value="58" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_WaitForMoreData" opcode="win:Start"/>
+        <event value="59" version="0" level="win:Verbose"  channel="WINDOWS_MSMPEG2VDEC_CHANNEL" task="MFT_WaitForMoreData" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="WINDOWS_MSMPEG2VDEC_CHANNEL" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="H264_NotifyDecode" message="$(string.string1)">
+        </task>
+        <task value="2" name="H264_NotifySkip" message="$(string.string2)">
+        </task>
+        <task value="3" name="H264_NotifyOutput" message="$(string.string3)">
+        </task>
+        <task value="4" name="H264_DecodeTask" message="$(string.string4)">
+        </task>
+        <task value="5" name="H264_EncryptInput" message="$(string.string5)">
+        </task>
+        <task value="6" name="H264_SetQualityMode" message="$(string.string6)">
+        </task>
+        <task value="7" name="H264_NotifyCorruptedInput" message="$(string.string7)">
+        </task>
+        <task value="8" name="H264_FormatChange" message="$(string.string8)">
+        </task>
+        <task value="9" name="MPEG2_DecodeTask" message="$(string.string9)">
+        </task>
+        <task value="10" name="MPEG2_NotifyDiscover" message="$(string.string10)">
+        </task>
+        <task value="11" name="MPEG2_NotifySkip" message="$(string.string11)">
+        </task>
+        <task value="12" name="MPEG2_NotifyCorruptedInput" message="$(string.string12)">
+        </task>
+        <task value="13" name="DShow_Playback" message="$(string.string13)">
+        </task>
+        <task value="14" name="DShow_NotifyCodec" message="$(string.string14)">
+        </task>
+        <task value="15" name="DShow_Receive" message="$(string.string15)">
+        </task>
+        <task value="16" name="DShow_Deliver" message="$(string.string16)">
+        </task>
+        <task value="17" name="DShow_GetOutput" message="$(string.string17)">
+        </task>
+        <task value="18" name="DShow_SetOutputAttribute" message="$(string.string18)">
+        </task>
+        <task value="19" name="DShow_NotifyQuality" message="$(string.string19)">
+        </task>
+        <task value="20" name="DShow_NewDXVAConfig" message="$(string.string20)">
+        </task>
+        <task value="21" name="MFT_Playback" message="$(string.string21)">
+        </task>
+        <task value="22" name="MFT_ProcessInput" message="$(string.string22)">
+        </task>
+        <task value="23" name="MFT_ProcessOutput" message="$(string.string23)">
+        </task>
+        <task value="24" name="MFT_SetOutputAttribute" message="$(string.string24)">
+        </task>
+        <task value="25" name="MFT_NotifySampleLag" message="$(string.string25)">
+        </task>
+        <task value="26" name="MFT_ProcessMessage" message="$(string.string26)">
+        </task>
+        <task value="27" name="DXVA_CreateVideoDecoder" message="$(string.string27)">
+        </task>
+        <task value="28" name="DXVA_BeginFrame" message="$(string.string28)">
+        </task>
+        <task value="29" name="DXVA_GetBuffer" message="$(string.string29)">
+        </task>
+        <task value="30" name="DXVA_ReleaseBuffer" message="$(string.string30)">
+        </task>
+        <task value="31" name="DXVA_Execute" message="$(string.string31)">
+        </task>
+        <task value="32" name="DXVA_EndFrame" message="$(string.string32)">
+        </task>
+        <task value="33" name="MPEG2_EncryptInput" message="$(string.string33)">
+        </task>
+        <task value="34" name="MFT_Sleep" message="$(string.string34)">
+        </task>
+        <task value="35" name="DXVA_AllocTexture" message="$(string.string35)">
+        </task>
+        <task value="36" name="DXVA_CreateView" message="$(string.string36)">
+        </task>
+        <task value="37" name="MFT_GetMoreData" message="$(string.string37)">
+        </task>
+        <task value="38" name="MFT_WaitForMoreData" message="$(string.string38)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="IDRCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="POC" inType="win:Int32" outType="xs:int"  />
+          <data name="PictureType" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="TaskID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IDRCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="POC" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="QualityMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SARWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SARHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BitDepthLuma" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BitDepthChroma" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ChromaFormat" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="CodecID" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="SampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleDuration" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="QualityType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Proportion" inType="win:Int32" outType="xs:int"  />
+          <data name="Late" inType="win:Int64" outType="xs:long"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="DecoderGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConfigBitstreamEncryption" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConfigMBcontrolEncryption" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConfigResidDiffEncryption" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConfigBitstreamRaw" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigMBcontrolRasterOrder" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigResidDiffHost" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigSpatialResid8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigResid8Subtraction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigSpatialHost8or9Clipping" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigSpatialResidInterleaved" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigIntraResidUnsigned" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigResidDiffAccelerator" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigHostInverseScan" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigSpecificIDCT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Config4GroupedCoefs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConfigMinRenderTargetBuffCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args33_0">
+          <data name="SampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="PicStructPresent" inType="win:Int8" outType="xs:byte"  />
+          <data name="PicStruct" inType="win:Int8" outType="xs:byte"  />
+        </template>
+        <template tid="Args34_0">
+          <data name="SampleLag" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args36_0">
+          <data name="DecoderGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NumSurfaces" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RenderTarget" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="D3DFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DShow_Deliver" />
+       <string id="string1" value="DShow_GetOutput" />
+       <string id="string2" value="DShow_NewDXVAConfig" />
+       <string id="string3" value="DShow_NotifyCodec" />
+       <string id="string4" value="DShow_NotifyQuality" />
+       <string id="string5" value="DShow_Playback" />
+       <string id="string6" value="DShow_Receive" />
+       <string id="string7" value="DShow_SetOutputAttribute" />
+       <string id="string8" value="DXVA_AllocTexture" />
+       <string id="string9" value="DXVA_BeginFrame" />
+       <string id="string10" value="DXVA_CreateVideoDecoder" />
+       <string id="string11" value="DXVA_CreateView" />
+       <string id="string12" value="DXVA_EndFrame" />
+       <string id="string13" value="DXVA_Execute" />
+       <string id="string14" value="DXVA_GetBuffer" />
+       <string id="string15" value="DXVA_ReleaseBuffer" />
+       <string id="string16" value="H264_DecodeTask" />
+       <string id="string17" value="H264_EncryptInput" />
+       <string id="string18" value="H264_FormatChange" />
+       <string id="string19" value="H264_NotifyCorruptedInput" />
+       <string id="string20" value="H264_NotifyDecode" />
+       <string id="string21" value="H264_NotifyOutput" />
+       <string id="string22" value="H264_NotifySkip" />
+       <string id="string23" value="H264_SetQualityMode" />
+       <string id="string24" value="MFT_GetMoreData" />
+       <string id="string25" value="MFT_NotifySampleLag" />
+       <string id="string26" value="MFT_Playback" />
+       <string id="string27" value="MFT_ProcessInput" />
+       <string id="string28" value="MFT_ProcessMessage" />
+       <string id="string29" value="MFT_ProcessOutput" />
+       <string id="string30" value="MFT_SetOutputAttribute" />
+       <string id="string31" value="MFT_Sleep" />
+       <string id="string32" value="MFT_WaitForMoreData" />
+       <string id="string33" value="Microsoft-Windows-MSMPEG2VDEC" />
+       <string id="string34" value="MPEG2_DecodeTask" />
+       <string id="string35" value="MPEG2_EncryptInput" />
+       <string id="string36" value="MPEG2_NotifyCorruptedInput" />
+       <string id="string37" value="MPEG2_NotifyDiscover" />
+       <string id="string38" value="MPEG2_NotifySkip" />
+       <string id="string39" value="win:Start" />
+       <string id="string40" value="win:Stop" />
+       <string id="string41" value="WINDOWS_MSMPEG2VDEC_CHANNEL" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DirectComposition" name="Microsoft-Windows-DirectComposition" guid="{c44219d0-f344-11df-a5e2-b307dfd72085}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RESOURCE_CREATION" opcode="win:Info" keywords="DCompBasic DCompInput" template="Args1_0"/>
+        <event value="2" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="BEGIN_DRAW" opcode="win:Start" keywords="DCompBasic DCompMemory" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="BEGIN_DRAW" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="4" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="END_DRAW" opcode="win:Start" keywords="DCompBasic"/>
+        <event value="5" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="END_DRAW" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="6" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="TRIM" opcode="win:Start" keywords="DCompBasic DCompMemory"/>
+        <event value="7" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="TRIM" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="8" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RESIZE" opcode="win:Start" keywords="DCompBasic DCompMemory"/>
+        <event value="9" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RESIZE" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="10" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="UPDATE_TOKEN" opcode="win:Start" keywords="DCompBasic"/>
+        <event value="11" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="UPDATE_TOKEN" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="12" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="SUSPEND_DRAW" opcode="win:Start" keywords="DCompBasic"/>
+        <event value="13" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="SUSPEND_DRAW" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="14" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RESUME_DRAW" opcode="win:Start" keywords="DCompBasic"/>
+        <event value="15" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RESUME_DRAW" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="16" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_ALLOCATE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args16_0"/>
+        <event value="17" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_FREE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="18" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_ENTRY_ALLOCATE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args18_0"/>
+        <event value="19" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_ENTRY_FREE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="20" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_UTILIZATION" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args20_0"/>
+        <event value="21" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="SCROLL" opcode="win:Start" keywords="DCompBasic"/>
+        <event value="22" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="SCROLL" opcode="win:Stop" keywords="DCompBasic"/>
+        <event value="23" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DEVICE_CREATE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args23_0"/>
+        <event value="24" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DEVICE_DESTROY" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="25" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DEVICE_COMMIT" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args25_0"/>
+        <event value="26" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_USE_INFO" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args26_0"/>
+        <event value="27" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_ENTRY_MARK_FOR_DISPOSE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="28" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_ENTRY_MARK_AVAILABLE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="29" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_ENTRY_REUSE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="30" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RESOURCE_RELEASE" opcode="win:Info" keywords="DCompBasic"/>
+        <event value="31" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="CREATE_CLUMP" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args31_0"/>
+        <event value="32" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DESTROY_CLUMP" opcode="win:Info" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="33" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="PUSH_DOWN" opcode="win:Start" keywords="DCompDiagnostic DCompMemory" template="Args33_0"/>
+        <event value="34" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="PUSH_DOWN" opcode="win:Stop" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="35" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RECLUMP" opcode="win:Start" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="36" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="RECLUMP" opcode="win:Stop" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="37" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="VIRTUAL_SURFACE_COUNTERS" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args37_0"/>
+        <event value="38" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="CAP_ALLOCATION_STATS" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args38_0"/>
+        <event value="39" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="CAP_RELEASE_SURFACE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args39_0"/>
+        <event value="40" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="BLOCK_FOR_EXCESSIVE_PENDING" opcode="win:Start" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="41" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="BLOCK_FOR_EXCESSIVE_PENDING" opcode="win:Stop" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="42" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="OFFER_RECLAIM" opcode="win:Info" keywords="DCompMemory OfferReclaim"/>
+        <event value="43" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="OFFER_RECLAIM" opcode="win:Info" keywords="DCompMemory OfferReclaim" template="Args43_0"/>
+        <event value="44" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="CAP_MAXIMUM" opcode="win:Start" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="45" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="CAP_MAXIMUM" opcode="win:Stop" keywords="DCompDiagnostic DCompMemory"/>
+        <event value="46" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="CREATE_SHARED_MEMORY_SECTION" opcode="win:Info" keywords="DCompDiagnostic DCompSharedMemory" template="Args46_0"/>
+        <event value="47" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DESTROY_SHARED_MEMORY_SECTION" opcode="win:Info" keywords="DCompDiagnostic DCompSharedMemory"/>
+        <event value="48" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ALLOCATE_FROM_SHARED_MEMORY_SECTION" opcode="win:Info" keywords="DCompDiagnostic DCompSharedMemory" template="Args48_0"/>
+        <event value="49" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FREE_FROM_SHARED_MEMORY_SECTION" opcode="win:Info" keywords="DCompDiagnostic DCompSharedMemory"/>
+        <event value="53" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="PRIMITIVE_GROUP_UPDATE" opcode="win:Info" keywords="DCompPrimitives" template="Args53_0"/>
+        <event value="54" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ATLAS_RESIZE" opcode="win:Info" keywords="DCompDiagnostic DCompMemory" template="Args54_0"/>
+        <event value="55" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="VISUAL_SET_INTERACTION" opcode="win:Info" keywords="DCompInput" template="Args55_0"/>
+        <event value="56" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="VISUAL_SET_INPUTSINK" opcode="win:Info" keywords="DCompInput" template="Args56_0"/>
+        <event value="57" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="VISUAL_REDIRECT_MOUSE" opcode="win:Info" keywords="DCompInput" template="Args57_0"/>
+        <event value="58" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="INTERACTION_CONFIGURATION" opcode="win:Info" keywords="DCompInput" template="Args58_0"/>
+        <event value="59" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="INTERACTION_CAPTURE_POINTER" opcode="win:Info" keywords="DCompInput" template="Args59_0"/>
+        <event value="60" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FLIP_CONSUME_PRESENT" opcode="win:Start" keywords="FlipManager"/>
+        <event value="61" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FLIP_CONSUME_PRESENT" opcode="win:Stop" keywords="FlipManager" template="Args61_0"/>
+        <event value="62" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FLIP_CONSUME_PRESENT_CALLOUT" opcode="win:Start" keywords="FlipManager"/>
+        <event value="63" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FLIP_CONSUME_PRESENT_CALLOUT" opcode="win:Stop" keywords="FlipManager"/>
+        <event value="64" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FLIP_PRODUCE_PRESENT" opcode="win:Start" keywords="FlipManager"/>
+        <event value="65" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="FLIP_PRODUCE_PRESENT" opcode="win:Stop" keywords="FlipManager" template="Args65_0"/>
+        <event value="66" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="ANIMATION_ENDED" opcode="win:Info" keywords="DCompAnimationTelemetry" template="Args66_0"/>
+        <event value="67" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="REGISTERANIMATIONTARGET" opcode="win:Info" keywords="DCompAnimationTelemetry" template="Args67_0"/>
+        <event value="68" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="EXPRESSIONANIMATOR_INIT" opcode="win:Info" keywords="DCompAnimationTelemetry" template="Args68_0"/>
+        <event value="69" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="EXPRESSIONANIMATOR_RELEASE_RESOURCES" opcode="win:Info" keywords="DCompAnimationTelemetry"/>
+        <event value="70" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="SHAREALLOCATIONBASE_ONMARSHALERRELEASE" opcode="win:Info" keywords="DCompAnimationTelemetry" template="Args70_0"/>
+        <event value="71" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="SHAREALLOCATIONBASE_DISPOSEONDELAYEDDESTRUCTION" opcode="win:Info" keywords="DCompAnimationTelemetry"/>
+        <event value="72" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DELEGATEDINKTRAIL_COOKIEPUSHED" opcode="win:Info" template="Args72_0"/>
+        <event value="73" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DELEGATEDINKTRAIL_REMOVETRAILPOINTS" opcode="win:Info" template="Args73_0"/>
+        <event value="74" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="DELEGATEDINKTRAIL_STARTNEWTRAIL" opcode="win:Info" template="Args74_0"/>
+        <event value="75" version="0" level="win:Verbose"  channel="Microsoft-Windows-DirectComposition/Diagnostic" task="WINCOMP_EFFECT_CREATE" opcode="win:Info" keywords="DCompBasic" template="Args75_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-DirectComposition/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="DCompBasic" mask="0x1" message="$(string.string23)" />
+        <keyword name="DCompDiagnostic" mask="0x2" message="$(string.string24)" />
+        <keyword name="DCompMemory" mask="0x4" message="$(string.string26)" />
+        <keyword name="OfferReclaim" mask="0x8" message="$(string.string50)" />
+        <keyword name="DCompSharedMemory" mask="0x10" message="$(string.string28)" />
+        <keyword name="DCompAnimationTelemetry" mask="0x20" message="$(string.string22)" />
+        <keyword name="DCompPrimitives" mask="0x40" message="$(string.string27)" />
+        <keyword name="DCompInput" mask="0x80" message="$(string.string25)" />
+        <keyword name="FlipManager" mask="0x100" message="$(string.string43)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="RESOURCE_CREATION" message="$(string.string1)">
+        </task>
+        <task value="2" name="BEGIN_DRAW" message="$(string.string2)">
+        </task>
+        <task value="3" name="END_DRAW" message="$(string.string3)">
+        </task>
+        <task value="4" name="TRIM" message="$(string.string4)">
+        </task>
+        <task value="5" name="RESIZE" message="$(string.string5)">
+        </task>
+        <task value="6" name="UPDATE_TOKEN" message="$(string.string6)">
+        </task>
+        <task value="7" name="SUSPEND_DRAW" message="$(string.string7)">
+        </task>
+        <task value="8" name="RESUME_DRAW" message="$(string.string8)">
+        </task>
+        <task value="9" name="ATLAS_ALLOCATE" message="$(string.string9)">
+        </task>
+        <task value="10" name="ATLAS_FREE" message="$(string.string10)">
+        </task>
+        <task value="11" name="ATLAS_ENTRY_ALLOCATE" message="$(string.string11)">
+        </task>
+        <task value="12" name="ATLAS_ENTRY_FREE" message="$(string.string12)">
+        </task>
+        <task value="13" name="ATLAS_UTILIZATION" message="$(string.string13)">
+        </task>
+        <task value="14" name="SCROLL" message="$(string.string14)">
+        </task>
+        <task value="15" name="DEVICE_CREATE" message="$(string.string15)">
+        </task>
+        <task value="16" name="DEVICE_DESTROY" message="$(string.string16)">
+        </task>
+        <task value="17" name="DEVICE_COMMIT" message="$(string.string17)">
+        </task>
+        <task value="18" name="ATLAS_USE_INFO" message="$(string.string18)">
+        </task>
+        <task value="19" name="ATLAS_ENTRY_MARK_FOR_DISPOSE" message="$(string.string19)">
+        </task>
+        <task value="20" name="ATLAS_ENTRY_MARK_AVAILABLE" message="$(string.string20)">
+        </task>
+        <task value="21" name="ATLAS_ENTRY_REUSE" message="$(string.string21)">
+        </task>
+        <task value="22" name="RESOURCE_RELEASE" message="$(string.string22)">
+        </task>
+        <task value="23" name="CREATE_CLUMP" message="$(string.string23)">
+        </task>
+        <task value="24" name="DESTROY_CLUMP" message="$(string.string24)">
+        </task>
+        <task value="25" name="PUSH_DOWN" message="$(string.string25)">
+        </task>
+        <task value="26" name="RECLUMP" message="$(string.string26)">
+        </task>
+        <task value="27" name="VIRTUAL_SURFACE_COUNTERS" message="$(string.string27)">
+        </task>
+        <task value="28" name="CAP_ALLOCATION_STATS" message="$(string.string28)">
+        </task>
+        <task value="29" name="CAP_RELEASE_SURFACE" message="$(string.string29)">
+        </task>
+        <task value="30" name="BLOCK_FOR_EXCESSIVE_PENDING" message="$(string.string30)">
+        </task>
+        <task value="31" name="OFFER_RECLAIM" message="$(string.string31)">
+        </task>
+        <task value="32" name="CAP_MAXIMUM" message="$(string.string32)">
+        </task>
+        <task value="33" name="CREATE_SHARED_MEMORY_SECTION" message="$(string.string33)">
+        </task>
+        <task value="34" name="DESTROY_SHARED_MEMORY_SECTION" message="$(string.string34)">
+        </task>
+        <task value="35" name="ALLOCATE_FROM_SHARED_MEMORY_SECTION" message="$(string.string35)">
+        </task>
+        <task value="36" name="FREE_FROM_SHARED_MEMORY_SECTION" message="$(string.string36)">
+        </task>
+        <task value="37" name="ANIMATION_SCENARIO_BEGIN" message="$(string.string37)">
+        </task>
+        <task value="38" name="ANIMATION_SCENARIO_REFERENCE" message="$(string.string38)">
+        </task>
+        <task value="39" name="ANIMATION_SCENARIO_UNREFERENCE" message="$(string.string39)">
+        </task>
+        <task value="40" name="PRIMITIVE_GROUP_UPDATE" message="$(string.string40)">
+        </task>
+        <task value="41" name="ATLAS_RESIZE" message="$(string.string41)">
+        </task>
+        <task value="42" name="VISUAL_SET_INTERACTION" message="$(string.string42)">
+        </task>
+        <task value="43" name="VISUAL_SET_INPUTSINK" message="$(string.string43)">
+        </task>
+        <task value="44" name="VISUAL_REDIRECT_MOUSE" message="$(string.string44)">
+        </task>
+        <task value="45" name="INTERACTION_CONFIGURATION" message="$(string.string45)">
+        </task>
+        <task value="46" name="INTERACTION_CAPTURE_POINTER" message="$(string.string46)">
+        </task>
+        <task value="47" name="FLIP_CONSUME_PRESENT" message="$(string.string47)">
+        </task>
+        <task value="48" name="FLIP_CONSUME_PRESENT_CALLOUT" message="$(string.string48)">
+        </task>
+        <task value="49" name="FLIP_PRODUCE_PRESENT" message="$(string.string49)">
+        </task>
+        <task value="50" name="ANIMATION_ENDED" message="$(string.string50)">
+        </task>
+        <task value="51" name="REGISTERANIMATIONTARGET" message="$(string.string51)">
+        </task>
+        <task value="52" name="EXPRESSIONANIMATOR_INIT" message="$(string.string52)">
+        </task>
+        <task value="53" name="EXPRESSIONANIMATOR_RELEASE_RESOURCES" message="$(string.string53)">
+        </task>
+        <task value="54" name="SHAREALLOCATIONBASE_ONMARSHALERRELEASE" message="$(string.string54)">
+        </task>
+        <task value="55" name="SHAREALLOCATIONBASE_DISPOSEONDELAYEDDESTRUCTION" message="$(string.string55)">
+        </task>
+        <task value="56" name="DELEGATEDINKTRAIL_COOKIEPUSHED" message="$(string.string56)">
+        </task>
+        <task value="57" name="DELEGATEDINKTRAIL_REMOVETRAILPOINTS" message="$(string.string57)">
+        </task>
+        <task value="58" name="DELEGATEDINKTRAIL_STARTNEWTRAIL" message="$(string.string58)">
+        </task>
+        <task value="59" name="WINCOMP_EFFECT_CREATE" message="$(string.string59)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="externalHandleAndChannel" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="createShared" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="openShared" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="left" inType="win:Int32" outType="xs:int"  />
+          <data name="top" inType="win:Int32" outType="xs:int"  />
+          <data name="right" inType="win:Int32" outType="xs:int"  />
+          <data name="bottom" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BitDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsTexturingAtlas" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ChannelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PixelFormat" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="AtlasId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="X" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Y" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EntryId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BitDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PercentUsed" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="DeviceId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ChannelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="DeviceId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ChannelHandle" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LastCommittedBatchId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastConfirmedBatchId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="Id" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Owner" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="UseType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="XData" inType="win:Int32" outType="xs:int"  />
+          <data name="YData" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="clumpPointer" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="virtualSurfacePointer" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="left" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="top" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="right" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args33_0">
+          <data name="surfacePointer" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="percentValidTiles" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pixelsPerClump" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args38_0">
+          <data name="ChannelHandle" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LastCommittedBatchId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="largeSurfacesTotalAllocated" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="largeSurfacesInUseAllocated" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="largeSurfacesInUseActual" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="largeSurfacesPeakInUseActual" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="largeSurfacesAllowed" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsTotalAllocated" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsInUseAllocated" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsInUseActual" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsPeakInUseActual" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsAllowed" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="largeSurfacesPendingRelease" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsPendingRelease" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="largeSurfacesMaxStructuralWaste" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="poolsMaxStructuralWaste" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="Id" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args43_0">
+          <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PixelsDiscarded" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SurfaceInvalid" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args46_0">
+          <data name="section" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="section" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="allocationSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sectionSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="heap" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="batchCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="totalPrimitiveCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="boundsLeft" inType="win:Float" outType="xs:float"  />
+          <data name="boundsTop" inType="win:Float" outType="xs:float"  />
+          <data name="boundsRight" inType="win:Float" outType="xs:float"  />
+          <data name="boundsBottom" inType="win:Float" outType="xs:float"  />
+          <data name="singlePrimitiveInfoLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="surfaceInfoLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="surfaceInfo" inType="win:Binary" outType="xs:hexBinary" length="surfaceInfoLength" />
+          <data name="primitivesLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="primitives" inType="win:Binary" outType="xs:hexBinary" length="primitivesLength" />
+        </template>
+        <template tid="Args54_0">
+          <data name="TargetX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequestX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequestY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShrinkX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShrinkY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GrowX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GrowY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AtlasX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AtlasY" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="visualHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="interactionHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="visualAndChannelHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="interactionAndChannelHandle" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args56_0">
+          <data name="visualAndChannelHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="inputSinkHandle" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args57_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="visualHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="visualAndChannelHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="windowHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="mouseConfigMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="mouseConfigValues" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args58_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="interactionHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="interactionAndChannelHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="propertyId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="interactionHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="interactionAndChannelHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="captureType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pointerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pointerTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args61_0">
+          <data name="result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args65_0">
+          <data name="presentId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args66_0">
+          <data name="eventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="callbackId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args67_0">
+          <data name="objectHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="propertyHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animatorResourceHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animatorCallbackId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="expressionAnimatorInstance" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="nodesBuffer" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="cacheBuffer" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="cacheBufferParam" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args70_0">
+          <data name="instance" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args72_0">
+          <data name="CookieTracker" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CookieValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args73_0">
+          <data name="InkTrail" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="GenerationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LookupId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="InkTrail" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PrevGenerationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Color_R" inType="win:Float" outType="xs:float"  />
+          <data name="Color_G" inType="win:Float" outType="xs:float"  />
+          <data name="Color_B" inType="win:Float" outType="xs:float"  />
+          <data name="Color_A" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args75_0">
+          <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Graph" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ALLOCATE_FROM_SHARED_MEMORY_SECTION" />
+       <string id="string1" value="ANIMATION_ENDED" />
+       <string id="string2" value="ANIMATION_SCENARIO_BEGIN" />
+       <string id="string3" value="ANIMATION_SCENARIO_REFERENCE" />
+       <string id="string4" value="ANIMATION_SCENARIO_UNREFERENCE" />
+       <string id="string5" value="ATLAS_ALLOCATE" />
+       <string id="string6" value="ATLAS_ENTRY_ALLOCATE" />
+       <string id="string7" value="ATLAS_ENTRY_FREE" />
+       <string id="string8" value="ATLAS_ENTRY_MARK_AVAILABLE" />
+       <string id="string9" value="ATLAS_ENTRY_MARK_FOR_DISPOSE" />
+       <string id="string10" value="ATLAS_ENTRY_REUSE" />
+       <string id="string11" value="ATLAS_FREE" />
+       <string id="string12" value="ATLAS_RESIZE" />
+       <string id="string13" value="ATLAS_USE_INFO" />
+       <string id="string14" value="ATLAS_UTILIZATION" />
+       <string id="string15" value="BEGIN_DRAW" />
+       <string id="string16" value="BLOCK_FOR_EXCESSIVE_PENDING" />
+       <string id="string17" value="CAP_ALLOCATION_STATS" />
+       <string id="string18" value="CAP_MAXIMUM" />
+       <string id="string19" value="CAP_RELEASE_SURFACE" />
+       <string id="string20" value="CREATE_CLUMP" />
+       <string id="string21" value="CREATE_SHARED_MEMORY_SECTION" />
+       <string id="string22" value="DCompAnimationTelemetry" />
+       <string id="string23" value="DCompBasic" />
+       <string id="string24" value="DCompDiagnostic" />
+       <string id="string25" value="DCompInput" />
+       <string id="string26" value="DCompMemory" />
+       <string id="string27" value="DCompPrimitives" />
+       <string id="string28" value="DCompSharedMemory" />
+       <string id="string29" value="DELEGATEDINKTRAIL_COOKIEPUSHED" />
+       <string id="string30" value="DELEGATEDINKTRAIL_REMOVETRAILPOINTS" />
+       <string id="string31" value="DELEGATEDINKTRAIL_STARTNEWTRAIL" />
+       <string id="string32" value="DESTROY_CLUMP" />
+       <string id="string33" value="DESTROY_SHARED_MEMORY_SECTION" />
+       <string id="string34" value="DEVICE_COMMIT" />
+       <string id="string35" value="DEVICE_CREATE" />
+       <string id="string36" value="DEVICE_DESTROY" />
+       <string id="string37" value="END_DRAW" />
+       <string id="string38" value="EXPRESSIONANIMATOR_INIT" />
+       <string id="string39" value="EXPRESSIONANIMATOR_RELEASE_RESOURCES" />
+       <string id="string40" value="FLIP_CONSUME_PRESENT" />
+       <string id="string41" value="FLIP_CONSUME_PRESENT_CALLOUT" />
+       <string id="string42" value="FLIP_PRODUCE_PRESENT" />
+       <string id="string43" value="FlipManager" />
+       <string id="string44" value="FREE_FROM_SHARED_MEMORY_SECTION" />
+       <string id="string45" value="INTERACTION_CAPTURE_POINTER" />
+       <string id="string46" value="INTERACTION_CONFIGURATION" />
+       <string id="string47" value="Microsoft-Windows-DirectComposition" />
+       <string id="string48" value="Microsoft-Windows-DirectComposition/Diagnostic" />
+       <string id="string49" value="OFFER_RECLAIM" />
+       <string id="string50" value="OfferReclaim" />
+       <string id="string51" value="PRIMITIVE_GROUP_UPDATE" />
+       <string id="string52" value="PUSH_DOWN" />
+       <string id="string53" value="RECLUMP" />
+       <string id="string54" value="REGISTERANIMATIONTARGET" />
+       <string id="string55" value="RESIZE" />
+       <string id="string56" value="RESOURCE_CREATION" />
+       <string id="string57" value="RESOURCE_RELEASE" />
+       <string id="string58" value="RESUME_DRAW" />
+       <string id="string59" value="SCROLL" />
+       <string id="string60" value="SHAREALLOCATIONBASE_DISPOSEONDELAYEDDESTRUCTION" />
+       <string id="string61" value="SHAREALLOCATIONBASE_ONMARSHALERRELEASE" />
+       <string id="string62" value="SUSPEND_DRAW" />
+       <string id="string63" value="TRIM" />
+       <string id="string64" value="UPDATE_TOKEN" />
+       <string id="string65" value="VIRTUAL_SURFACE_COUNTERS" />
+       <string id="string66" value="VISUAL_REDIRECT_MOUSE" />
+       <string id="string67" value="VISUAL_SET_INPUTSINK" />
+       <string id="string68" value="VISUAL_SET_INTERACTION" />
+       <string id="string69" value="win:Info" />
+       <string id="string70" value="win:Start" />
+       <string id="string71" value="win:Stop" />
+       <string id="string72" value="WINCOMP_EFFECT_CREATE" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

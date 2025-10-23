@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WMPDMCUI" name="Microsoft-Windows-WMPDMCUI" guid="{3f9e07bd-0e26-4241-a5a5-28cafa150a75}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2000" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAY_PAUSE_BUTTON" opcode="win:Start"/>
+        <event value="2001" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAY_PAUSE_BUTTON" opcode="win:Stop" template="Args2001_0"/>
+        <event value="2002" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="STOP_BUTTON" opcode="win:Start"/>
+        <event value="2003" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="STOP_BUTTON" opcode="win:Stop"/>
+        <event value="2004" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="REPEAT_BUTTON" opcode="win:Start"/>
+        <event value="2005" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="REPEAT_BUTTON" opcode="win:Stop"/>
+        <event value="2006" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PREVIOUS_BUTTON" opcode="win:Start"/>
+        <event value="2007" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PREVIOUS_BUTTON" opcode="win:Stop"/>
+        <event value="2008" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="NEXT_BUTTON" opcode="win:Start"/>
+        <event value="2009" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="NEXT_BUTTON" opcode="win:Stop"/>
+        <event value="2010" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="MUTE_BUTTON" opcode="win:Start"/>
+        <event value="2011" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="MUTE_BUTTON" opcode="win:Stop"/>
+        <event value="2012" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_INTERNAL_OPERATION_PRECREATEDEVICEFINDER" opcode="win:Info" template="Args2012_0"/>
+        <event value="2013" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_INTERNAL_OPERATION_PREFINDBYUDN" opcode="win:Info"/>
+        <event value="2014" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_INTERNAL_OPERATION_PRECREATEDMCDEVICE" opcode="win:Info"/>
+        <event value="2015" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_INTERNAL_OPERATION_PREADDTOPLAYLIST" opcode="win:Info"/>
+        <event value="2016" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_INTERNAL_OPERATION" opcode="win:Start"/>
+        <event value="2017" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_INTERNAL_OPERATION" opcode="win:Stop" template="Args2017_0"/>
+        <event value="2018" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_LAUNCHUI" opcode="win:Start"/>
+        <event value="2019" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_LAUNCHUI" opcode="win:Info"/>
+        <event value="2020" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_LAUNCHUI" opcode="win:Stop"/>
+        <event value="2021" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_DEVICE_PLAY" opcode="win:Start"/>
+        <event value="2022" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_DEVICE_PLAY" opcode="win:Stop"/>
+        <event value="2023" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_DEVICE_SETAVTRANSPORTURI" opcode="win:Start" template="Args2023_0"/>
+        <event value="2024" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_DEVICE_SETAVTRANSPORTURI" opcode="win:Stop" template="Args2024_0"/>
+        <event value="2025" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_DEVICE_STOP" opcode="win:Start"/>
+        <event value="2026" version="0" level="win:Informational"  channel="Microsoft-Windows-WMPDMCUI/Diagnostic" task="PLAYTO_DEVICE_STOP" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WMPDMCUI/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1000" name="PLAY_PAUSE_BUTTON" message="$(string.string1000)">
+        </task>
+        <task value="1001" name="STOP_BUTTON" message="$(string.string1001)">
+        </task>
+        <task value="1002" name="REPEAT_BUTTON" message="$(string.string1002)">
+        </task>
+        <task value="1003" name="PREVIOUS_BUTTON" message="$(string.string1003)">
+        </task>
+        <task value="1004" name="NEXT_BUTTON" message="$(string.string1004)">
+        </task>
+        <task value="1005" name="MUTE_BUTTON" message="$(string.string1005)">
+        </task>
+        <task value="1006" name="PLAYTO_INTERNAL_OPERATION" message="$(string.string1006)">
+        </task>
+        <task value="1007" name="PLAYTO_INTERNAL_OPERATION_PRECREATEDEVICEFINDER" message="$(string.string1007)">
+        </task>
+        <task value="1008" name="PLAYTO_INTERNAL_OPERATION_PREFINDBYUDN" message="$(string.string1008)">
+        </task>
+        <task value="1009" name="PLAYTO_INTERNAL_OPERATION_PRECREATEDMCDEVICE" message="$(string.string1009)">
+        </task>
+        <task value="1010" name="PLAYTO_INTERNAL_OPERATION_PREADDTOPLAYLIST" message="$(string.string1010)">
+        </task>
+        <task value="1011" name="PLAYTO_LAUNCHUI" message="$(string.string1011)">
+        </task>
+        <task value="1012" name="PLAYTO_DEVICE_PLAY" message="$(string.string1012)">
+        </task>
+        <task value="1013" name="PLAYTO_DEVICE_SETAVTRANSPORTURI" message="$(string.string1013)">
+        </task>
+        <task value="1014" name="PLAYTO_DEVICE_STOP" message="$(string.string1014)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2001_0">
+          <data name="result" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args2012_0">
+          <data name="UDN" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2017_0">
+          <data name="UDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fRenderAlreadyExists" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="result" inType="win:Int32" outType="xs:int"  />
+          <data name="failureReason" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args2023_0">
+          <data name="UDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="URI" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2024_0">
+          <data name="UDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="URI" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="result" inType="win:Int32" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WMPDMCUI" />
+       <string id="string1" value="Microsoft-Windows-WMPDMCUI/Diagnostic" />
+       <string id="string2" value="MUTE_BUTTON" />
+       <string id="string3" value="NEXT_BUTTON" />
+       <string id="string4" value="PLAY_PAUSE_BUTTON" />
+       <string id="string5" value="PLAYTO_DEVICE_PLAY" />
+       <string id="string6" value="PLAYTO_DEVICE_SETAVTRANSPORTURI" />
+       <string id="string7" value="PLAYTO_DEVICE_STOP" />
+       <string id="string8" value="PLAYTO_INTERNAL_OPERATION" />
+       <string id="string9" value="PLAYTO_INTERNAL_OPERATION_PREADDTOPLAYLIST" />
+       <string id="string10" value="PLAYTO_INTERNAL_OPERATION_PRECREATEDEVICEFINDER" />
+       <string id="string11" value="PLAYTO_INTERNAL_OPERATION_PRECREATEDMCDEVICE" />
+       <string id="string12" value="PLAYTO_INTERNAL_OPERATION_PREFINDBYUDN" />
+       <string id="string13" value="PLAYTO_LAUNCHUI" />
+       <string id="string14" value="PREVIOUS_BUTTON" />
+       <string id="string15" value="REPEAT_BUTTON" />
+       <string id="string16" value="STOP_BUTTON" />
+       <string id="string17" value="win:Info" />
+       <string id="string18" value="win:Start" />
+       <string id="string19" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

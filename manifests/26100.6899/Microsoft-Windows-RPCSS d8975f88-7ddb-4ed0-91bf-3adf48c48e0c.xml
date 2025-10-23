@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-RPCSS" name="Microsoft-Windows-RPCSS" guid="{d8975f88-7ddb-4ed0-91bf-3adf48c48e0c}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="1" level="win:Error"  channel="EndpointMapper" keywords="EpmapDebug" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="EndpointMapper" keywords="EpmapInterfaceRegister" template="Args2_1"/>
+        <event value="3" version="1" level="win:Informational"  channel="EndpointMapper" keywords="EpmapInterfaceUnregister"/>
+      </events>
+      <channels>
+        <channel value="16" name="EndpointMapper" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="EpmapDebug" mask="0x100" message="$(string.string1)" />
+        <keyword name="EpmapInterfaceRegister" mask="0x200" message="$(string.string2)" />
+        <keyword name="EpmapInterfaceUnregister" mask="0x400" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_1">
+          <data name="DetectionLocation" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AdditionalData1" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AdditionalData2" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="InterfaceUUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ObjectUUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Protocol" inType="win:AnsiString" outType="xs:string"  />
+          <data name="EndPoint" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="EndpointMapper" />
+       <string id="string1" value="EpmapDebug" />
+       <string id="string2" value="EpmapInterfaceRegister" />
+       <string id="string3" value="EpmapInterfaceUnregister" />
+       <string id="string4" value="Microsoft-Windows-RPCSS" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

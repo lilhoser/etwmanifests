@@ -1,0 +1,1910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Boot" name="Microsoft-Windows-Kernel-Boot" guid="{15ca44ff-4d7a-4baa-bba5-0998955e531e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="FirmwareResolution" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootEnvResolution"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootFileAccess" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootTotalIo" keywords="ms:Telemetry" template="Args5_0"/>
+        <event value="6" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="ImageIntegrityCheck" opcode="win:Info" keywords="LOG_TO_BOOTSTAT ms:Telemetry" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootManager" keywords="ms:Telemetry" template="Args7_0"/>
+        <event value="8" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="ImageHashCheck" opcode="win:Info" keywords="LOG_TO_BOOTSTAT ms:Telemetry"/>
+        <event value="9" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Analytic" keywords="ms:Telemetry" template="Args9_0"/>
+        <event value="10" version="0" level="win:Error"  channel="System" keywords="ms:Telemetry" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="PreBoot" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="SecureBootVariableUsage" template="Args12_0"/>
+        <event value="13" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Analytic" keywords="ms:Telemetry" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic"/>
+        <event value="16" version="0" level="win:Error"  channel="System" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="System"/>
+        <event value="18" version="0" level="win:Informational"  channel="System" task="BootmgrEntryCount" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="System" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="System" task="DirtyBootShutdown" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="System" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  channel="System"/>
+        <event value="23" version="0" level="win:Informational"  channel="System"/>
+        <event value="24" version="0" level="win:Informational"  channel="System"/>
+        <event value="25" version="0" level="win:Informational"  channel="System" task="BootMenuPolicy" template="Args25_0"/>
+        <event value="26" version="0" level="win:Informational"  channel="System" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="27" version="0" level="win:Informational"  channel="System" task="BootType" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  template="Args28_0"/>
+        <event value="29" version="0" level="win:Error"  channel="System"/>
+        <event value="30" version="0" level="win:Informational"  channel="System" task="FirmwareBootData" template="Args30_0"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic"/>
+        <event value="32" version="0" level="win:Informational"  channel="System" task="UserInputTime" template="Args32_0"/>
+        <event value="33" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" keywords="LOG_TO_BOOTSTAT ms:Telemetry" template="Args33_0"/>
+        <event value="34" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" keywords="LOG_TO_BOOTSTAT ms:Telemetry" template="Args34_0"/>
+        <event value="35" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="LOG_TO_BOOTSTAT ms:Telemetry" template="Args35_0"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" template="Args36_0"/>
+        <event value="37" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" keywords="LOG_TO_BOOTSTAT ms:Telemetry"/>
+        <event value="38" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="ImageLoadFailure" keywords="LOG_TO_BOOTSTAT ms:Telemetry"/>
+        <event value="39" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="ms:Telemetry" template="Args39_0"/>
+        <event value="40" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="ms:Telemetry"/>
+        <event value="41" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="ms:Telemetry"/>
+        <event value="42" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="LOG_TO_BOOTSTAT ms:Telemetry" template="Args42_0"/>
+        <event value="43" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="LOG_TO_BOOTSTAT" template="Args43_0"/>
+        <event value="44" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" keywords="LOG_TO_BOOTSTAT" template="Args44_0"/>
+        <event value="45" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmIdkProvisioningStatus"/>
+        <event value="46" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="RetrieveDriverListTime" template="Args46_0"/>
+        <event value="47" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="LoadDrivers" template="Args47_0"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="LoadHive" template="Args48_0"/>
+        <event value="49" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SiPolicyFailure" template="Args49_0"/>
+        <event value="50" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args50_0"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootAppLoadTime" template="Args52_0"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootApplicationExecution" template="Args53_0"/>
+        <event value="54" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" template="Args54_0"/>
+        <event value="55" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="PrepareTargetFailure" template="Args55_0"/>
+        <event value="56" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="57" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" template="Args57_0"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" template="Args58_0"/>
+        <event value="59" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" template="Args59_0"/>
+        <event value="60" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="InvalidNfitTable" opcode="win:Info"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="TxtLaunchPrepared" keywords="LOG_TO_BOOTSTAT" template="Args61_0"/>
+        <event value="62" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="PreviousTxtError" keywords="LOG_TO_BOOTSTAT" template="Args62_0"/>
+        <event value="63" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="InvalidTxtSinitRange" keywords="LOG_TO_BOOTSTAT" template="Args63_0"/>
+        <event value="64" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="InvalidTxtHeapRange" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="65" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="MleLoadFailure" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="66" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="MissingRsdpTable" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="67" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="NoSinitAcm" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="68" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="InvalidTxtHeapBiosDataSize" keywords="LOG_TO_BOOTSTAT" template="Args68_0"/>
+        <event value="69" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="MleHeaderTooOld" keywords="LOG_TO_BOOTSTAT" template="Args69_0"/>
+        <event value="70" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="ComputePmrRangesFailure" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="71" version="0" level="win:Warning"  task="FileOpen" opcode="OpenFailure" template="Args71_0"/>
+        <event value="72" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="PrepareLcpFailure" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="73" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="TxtRejectedFirmwareAcm" template="Args73_0"/>
+        <event value="74" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus"/>
+        <event value="76" version="0" level="win:Informational"  task="BootDebugger" opcode="BdEnabled"/>
+        <event value="77" version="0" level="win:Warning"  task="BootDebugger" opcode="BdInitFailure" template="Args77_0"/>
+        <event value="78" version="0" level="win:Warning"  task="KernelDebugger" opcode="KdInitFailure"/>
+        <event value="79" version="0" level="win:Informational"  task="KernelDebugger" opcode="KdEnabled"/>
+        <event value="81" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational"/>
+        <event value="82" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootDiag" keywords="LOG_TO_BOOTSTAT" template="Args82_0"/>
+        <event value="83" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args83_0"/>
+        <event value="84" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args84_0"/>
+        <event value="85" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args85_0"/>
+        <event value="86" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args86_0"/>
+        <event value="87" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args87_0"/>
+        <event value="88" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args88_0"/>
+        <event value="89" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args89_0"/>
+        <event value="90" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args90_0"/>
+        <event value="91" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args91_0"/>
+        <event value="92" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="DmaProtectedRangeAdjusted" template="Args92_0"/>
+        <event value="100" version="0" level="win:Informational"  task="InitializeLibrary" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="101" version="0" level="win:Informational"  task="InitializeLibrary" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="102" version="0" level="win:Informational"  task="PrepareTarget" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="103" version="0" level="win:Informational"  task="PrepareTarget" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="104" version="0" level="win:Informational"  task="RebuildKernelMemoryMap" opcode="win:Start" keywords="SoftRestart" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  task="RebuildKernelMemoryMap" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="106" version="0" level="win:Informational"  task="PersistMemory" opcode="win:Start" keywords="MemoryPreservation" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  task="PersistMemory" opcode="win:Stop" keywords="MemoryPreservation" template="Args107_0"/>
+        <event value="108" version="0" level="win:Error"  task="FatalError" opcode="win:Info" keywords="SoftRestart MemoryPreservation"/>
+        <event value="109" version="0" level="win:Informational"  task="CleanupPageDatabase" opcode="win:Start" keywords="SoftRestart MemoryPreservation" template="Args109_0"/>
+        <event value="110" version="0" level="win:Informational"  task="CleanupPageDatabase" opcode="win:Stop" keywords="SoftRestart MemoryPreservation"/>
+        <event value="111" version="0" level="win:Informational"  task="FreePersistedMemory" opcode="win:Start" keywords="MemoryPreservation" template="Args111_0"/>
+        <event value="112" version="0" level="win:Informational"  task="FreePersistedMemory" opcode="win:Stop" keywords="MemoryPreservation"/>
+        <event value="113" version="0" level="win:Informational"  task="ClaimPersistedMemory" opcode="win:Start" keywords="MemoryPreservation" template="Args113_0"/>
+        <event value="114" version="0" level="win:Informational"  task="ClaimPersistedMemory" opcode="win:Stop" keywords="MemoryPreservation" template="Args114_0"/>
+        <event value="115" version="0" level="win:Warning"  channel="System" task="CancelBoot" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="116" version="0" level="win:Warning"  channel="System" task="CancelBoot" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="117" version="0" level="win:Informational"  task="AttachPersistentPageDatabase" opcode="win:Start" keywords="SoftRestart MemoryPreservation"/>
+        <event value="118" version="0" level="win:Informational"  task="AttachPersistentPageDatabase" opcode="win:Stop" keywords="SoftRestart MemoryPreservation"/>
+        <event value="119" version="0" level="win:Informational"  task="MemoryBlockRundown" opcode="win:Info" keywords="MemoryBlockRundown"/>
+        <event value="120" version="0" level="win:Informational"  task="BuildKernelMemoryMap" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="121" version="0" level="win:Informational"  task="BuildKernelMemoryMap" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="122" version="0" level="win:Informational"  task="GetMemoryMap" opcode="win:Start" keywords="SoftRestart" template="Args122_0"/>
+        <event value="123" version="0" level="win:Informational"  task="GetMemoryMap" opcode="win:Stop" keywords="SoftRestart" template="Args123_0"/>
+        <event value="124" version="0" level="win:Error"  channel="System" task="VsmPolicyFailure" keywords="LOG_TO_BOOTSTAT ms:Measures" template="Args124_0"/>
+        <event value="126" version="0" level="win:Informational"  task="AllocatePhysicalPagesForMdl" opcode="win:Start" keywords="SoftRestart PhysicalMemory" template="Args126_0"/>
+        <event value="127" version="0" level="win:Informational"  task="AllocatePhysicalPagesForMdl" opcode="win:Stop" keywords="SoftRestart PhysicalMemory" template="Args127_0"/>
+        <event value="128" version="0" level="win:Informational"  task="ExecuteTransition" opcode="win:Start" keywords="SoftRestart" template="Args128_0"/>
+        <event value="129" version="0" level="win:Informational"  task="DisconnectHypervisor" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="130" version="0" level="win:Informational"  task="MemoryMapRundown" opcode="win:Info" keywords="MemoryMapRundown" template="Args130_0"/>
+        <event value="131" version="0" level="win:Informational"  task="MemoryMapRundown" opcode="win:Start" keywords="MemoryMapRundown"/>
+        <event value="132" version="0" level="win:Informational"  task="MemoryMapRundown" opcode="win:Stop" keywords="MemoryMapRundown"/>
+        <event value="133" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="PhysicalPageAllocationFailure" opcode="win:Info" keywords="SoftRestart PhysicalMemory" template="Args133_0"/>
+        <event value="134" version="0" level="win:Informational"  task="WaitForPartitionsRestored" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="135" version="0" level="win:Informational"  task="WaitForPartitionsRestored" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="136" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CleanupPageDatabase" opcode="win:Info" keywords="SoftRestart MemoryPreservation" template="Args136_0"/>
+        <event value="137" version="0" level="win:Informational"  task="MemoryPartitionRestore" opcode="win:Start" keywords="SoftRestart MemoryPreservation" template="Args137_0"/>
+        <event value="138" version="0" level="win:Informational"  task="MemoryPartitionRestore" opcode="win:Stop" keywords="SoftRestart MemoryPreservation" template="Args138_0"/>
+        <event value="139" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MemoryPartitionRestore" opcode="win:Info" keywords="SoftRestart MemoryPreservation"/>
+        <event value="140" version="0" level="win:Informational"  task="PersistMemoryPartition" opcode="win:Start" keywords="SoftRestart MemoryPreservation"/>
+        <event value="141" version="0" level="win:Informational"  task="PersistMemoryPartition" opcode="win:Stop" keywords="SoftRestart MemoryPreservation" template="Args141_0"/>
+        <event value="142" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="RegisterLoader" opcode="win:Info" keywords="SoftRestart" template="Args142_0"/>
+        <event value="143" version="0" level="win:Informational"  task="MemoryPartitionsRestored" opcode="win:Info" keywords="SoftRestart MemoryPreservation"/>
+        <event value="144" version="0" level="win:Informational"  task="QueryStatistics" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="145" version="0" level="win:Informational"  task="QueryStatistics" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="146" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="ConnectSecureLoader" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="147" version="0" level="win:Informational"  task="FreePersistedMemoryBlock" opcode="win:Start" keywords="MemoryPreservation" template="Args147_0"/>
+        <event value="148" version="0" level="win:Informational"  task="FreePersistedMemoryBlock" opcode="win:Stop" keywords="MemoryPreservation"/>
+        <event value="149" version="0" level="win:Informational"  task="PrepareNotification" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="150" version="0" level="win:Informational"  task="PrepareNotification" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="151" version="0" level="win:Informational"  task="PartitionInitialAddMemory" opcode="win:Start" keywords="MemoryPartitions" template="Args151_0"/>
+        <event value="152" version="0" level="win:Informational"  task="PartitionInitialAddMemory" opcode="win:Stop" keywords="MemoryPartitions"/>
+        <event value="153" version="0" level="win:Informational"  channel="System" task="VsmPolicyEnablement" template="Args153_0"/>
+        <event value="154" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootPolicyMigration" opcode="win:Info"/>
+        <event value="155" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootPolicyMigration" opcode="win:Info"/>
+        <event value="156" version="0" level="win:Warning"  channel="System"/>
+        <event value="157" version="0" level="win:Informational"  task="BootDiag" keywords="LOG_TO_BOOTSTAT" template="Args157_0"/>
+        <event value="158" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootDiag" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="159" version="0" level="win:Informational"  task="RemoveEnclavePages" opcode="win:Start" keywords="MemoryPreservation" template="Args159_0"/>
+        <event value="160" version="0" level="win:Informational"  task="CancelNotification" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="161" version="0" level="win:Informational"  task="CancelNotification" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="162" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="GetFirmwareBootDevice" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="163" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="NormalizeBootOptionList" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="164" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CreateLibraryParameters" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="165" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="InitializeLibrary" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="166" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CreateDevices" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="167" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SoftRestartHostCapability" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="168" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="EnumerateEnclavePages" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="169" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="InitializeMeasurementContext" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="170" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="KsrMeasurement" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="171" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="TpmMeasurement" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="172" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CloseMeasurementLog" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="173" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CommitPendingEvents" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="174" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CapTpmPcr" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="175" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CapTpmPcr" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="176" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="InitializeLibrary" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="177" version="0" level="win:Informational"  task="EfiVariableAccess" opcode="GetEfiVariable" keywords="EfiVariables" template="Args177_0"/>
+        <event value="178" version="0" level="win:Informational"  task="EfiVariableAccess" opcode="SetEfiVariable" keywords="EfiVariables"/>
+        <event value="179" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="GetFirmwareInformation" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="180" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VerifyBootEntry" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="181" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="RegisterFilter" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="182" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="IoSpaceMemory" opcode="EnumerateFailure" keywords="SoftRestart"/>
+        <event value="183" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BadMemoryPages" opcode="ListInitializationFailure" keywords="SoftRestart"/>
+        <event value="184" version="0" level="win:Warning"  task="InitializeMeasurementContext" opcode="MeasurementsDisabled" keywords="SoftRestart" template="Args184_0"/>
+        <event value="185" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="PersistBcdFailure" keywords="SoftRestart"/>
+        <event value="186" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="QueryMemdiskInformation" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="TpmCommandResponse" opcode="win:Info" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="TpmCommandResponse" opcode="win:Info" template="Args201_0"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="TpmSubmitError" opcode="win:Info" keywords="LOG_TO_BOOTSTAT" template="Args202_0"/>
+        <event value="203" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="TpmSubmitError" opcode="win:Info" keywords="LOG_TO_BOOTSTAT" template="Args203_0"/>
+        <event value="204" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="TpmBitLockerUsage" opcode="win:Info" template="Args204_0"/>
+        <event value="205" version="0" level="win:Informational"  task="EFICapsuleCreation" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="206" version="0" level="win:Informational"  task="EFICapsuleCreation" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="BootSI" opcode="InitStatus" template="Args207_0"/>
+        <event value="208" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootSI" opcode="EnterInsecureState" keywords="LOG_TO_BOOTSTAT" template="Args208_0"/>
+        <event value="209" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootSI" opcode="DrtmSvnCheck" template="Args209_0"/>
+        <event value="210" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="SinitPerformance" template="Args210_0"/>
+        <event value="211" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MiniFilterStartFailure" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="FileModification" opcode="win:Info" keywords="SoftRestart" template="Args212_0"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="RegistryModification" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="214" version="0" level="win:Informational"  channel="System" task="SoftReboot" opcode="win:Start" keywords="SoftRestart" template="Args214_0"/>
+        <event value="215" version="0" level="win:Informational"  channel="System" task="SoftReboot" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="216" version="0" level="win:Informational"  channel="System" task="SoftReboot" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="217" version="0" level="win:Informational"  channel="System" task="SoftReboot" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="218" version="0" level="win:Error"  channel="System" task="SoftReboot" keywords="SoftRestart MemoryPreservation" template="Args218_0"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="TxtInformation" template="Args219_0"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="DrtmNotSupported"/>
+        <event value="221" version="0" level="win:Error"  channel="System" task="MeasuredLaunch" opcode="DrtmDriversNotSupportVbs"/>
+        <event value="222" version="0" level="win:Error"  channel="System" task="MeasuredLaunch" opcode="PpamFailure" template="Args222_0"/>
+        <event value="223" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="IoSpaceMemory" opcode="AllocationFailure" template="Args223_0"/>
+        <event value="224" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="IoSpaceMemory" opcode="Allocation" template="Args224_0"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmBootNoSecretsMode" opcode="win:Info"/>
+        <event value="226" version="0" level="win:Informational"  task="FinalizeMemoryMap" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="227" version="0" level="win:Informational"  task="FinalizeMemoryMap" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="228" version="0" level="win:Error"  task="FinalizeMemoryMap" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="229" version="0" level="win:Error"  task="RegisterHvloaderPersistenceInterface" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="230" version="0" level="win:Error"  task="LoadHvloaderForPersistence" opcode="win:Info" keywords="SoftRestart"/>
+        <event value="231" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootMenuTimerCanceled" opcode="win:Info" keywords="LOG_TO_BOOTSTAT" template="Args231_0"/>
+        <event value="232" version="0" level="win:Informational"  task="MemoryPartitionFreeUnusedMemory" opcode="win:Start" keywords="SoftRestart MemoryPreservation"/>
+        <event value="233" version="0" level="win:Informational"  task="MemoryPartitionFreeUnusedMemory" opcode="win:Stop" keywords="SoftRestart MemoryPreservation"/>
+        <event value="234" version="0" level="win:Informational"  task="MemoryPartitionRestoreStats" opcode="win:Info" keywords="SoftRestart MemoryPreservation" template="Args234_0"/>
+        <event value="235" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootTpm" opcode="TpmInit" keywords="LOG_TO_BOOTSTAT" template="Args235_0"/>
+        <event value="236" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="SmmLevelCheck" template="Args236_0"/>
+        <event value="237" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MemoryMirroring" opcode="NotSupported" template="Args237_0"/>
+        <event value="238" version="0" level="win:Informational"  channel="System" task="EfiTimeZoneInformation" opcode="win:Info" template="Args238_0"/>
+        <event value="239" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MemoryAllocation" opcode="BlMmAllocationFailure" template="Args239_0"/>
+        <event value="240" version="0" level="win:Informational"  task="FinalizeNotification" opcode="win:Start" keywords="SoftRestart"/>
+        <event value="241" version="0" level="win:Informational"  task="FinalizeNotification" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="242" version="0" level="win:Informational"  channel="System" task="MeasuredLaunch" opcode="SmmIsolation" template="Args242_0"/>
+        <event value="243" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MemoryMirroring" opcode="Enabled" template="Args243_0"/>
+        <event value="244" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Analytic" task="MeasuredLaunch" opcode="TxtSmmIsolationPerf" template="Args244_0"/>
+        <event value="245" version="0" level="win:Informational"  task="UnpersistMemoryPartition" opcode="win:Start" keywords="SoftRestart MemoryPreservation"/>
+        <event value="246" version="0" level="win:Informational"  task="UnpersistMemoryPartition" opcode="win:Stop" keywords="SoftRestart MemoryPreservation"/>
+        <event value="247" version="0" level="win:Informational"  channel="System" task="BootTpm" opcode="PlutonLoadFailure" template="Args247_0"/>
+        <event value="248" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="PreviousAmdSlError" keywords="LOG_TO_BOOTSTAT" template="Args248_0"/>
+        <event value="249" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BindImportsFailure" opcode="win:Info" keywords="SoftRestart" template="Args249_0"/>
+        <event value="250" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SlabAllocationFailure" opcode="win:Info" template="Args250_0"/>
+        <event value="251" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="QuerySystemInformationFailure" keywords="SoftRestart" template="Args251_0"/>
+        <event value="252" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootmgrBltDisplayMenu" opcode="win:Info"/>
+        <event value="253" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="HotPatch" opcode="HotPatchApplyFailure" keywords="LOG_TO_BOOTSTAT" template="Args253_0"/>
+        <event value="254" version="0" level="win:Error"  task="GetPerformanceOptions" keywords="SoftRestart"/>
+        <event value="255" version="0" level="win:Error"  task="SnapshotPolicy" keywords="SoftRestart"/>
+        <event value="256" version="0" level="win:Informational"  channel="System"/>
+        <event value="257" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="BuildImagePathFailure" template="Args257_0"/>
+        <event value="258" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="LoadModuleFailure"/>
+        <event value="259" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="win:Info"/>
+        <event value="260" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="EarlyDumpNotSupported"/>
+        <event value="261" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="PrepareNotification" opcode="Veto" template="Args261_0"/>
+        <event value="262" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="FinalizeNotification" opcode="Veto"/>
+        <event value="263" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="EarlyDumpDisabled"/>
+        <event value="264" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="QueryEarlyDumpInitFailure"/>
+        <event value="265" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="QueryDumpFileNameFailure"/>
+        <event value="266" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="DumpFileNameMismatch" template="Args266_0"/>
+        <event value="267" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="LoadEarlyDumpSupport" opcode="GetDriverListFailure"/>
+        <event value="268" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootEventsLost" opcode="win:Info" template="Args268_0"/>
+        <event value="269" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootDiag" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="270" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootBcdLoaded" opcode="win:Info"/>
+        <event value="271" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="TprSetupRequested" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="272" version="0" level="win:Informational"  channel="System" task="MeasuredLaunch" opcode="PpamManifestInfo" template="Args272_0"/>
+        <event value="273" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SecureBootMitigations" template="Args273_0"/>
+        <event value="274" version="0" level="win:Error"  channel="System" task="BootSI" opcode="BootmgrSvnCheck" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="275" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="AcmInfoTableInfo" template="Args275_0"/>
+        <event value="276" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SecureBootMitigations" template="Args276_0"/>
+        <event value="277" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SecureBootMitigations"/>
+        <event value="291" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SbatUpdate" opcode="SbatUpdateSuccess" keywords="ms:Telemetry" template="Args291_0"/>
+        <event value="292" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="SbatUpdate" opcode="SbatUpdateFailure" keywords="ms:Telemetry"/>
+        <event value="295" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="BootAppRevocation" opcode="BootAppRevoked" keywords="LOG_TO_BOOTSTAT ms:Telemetry" template="Args295_0"/>
+        <event value="312" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="ApiSetSchemaComposition" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="16" version="1" level="win:Error"  channel="System" keywords="LOG_TO_BOOTSTAT" template="Args16_1"/>
+        <event value="20" version="1" level="win:Informational"  channel="System" task="DirtyBootShutdown" template="Args20_1"/>
+        <event value="27" version="1" level="win:Informational"  channel="System" task="BootType" template="Args27_1"/>
+        <event value="29" version="1" level="win:Error"  channel="System" keywords="LOG_TO_BOOTSTAT"/>
+        <event value="50" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args50_1"/>
+        <event value="51" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus"/>
+        <event value="74" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args74_1"/>
+        <event value="75" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus"/>
+        <event value="80" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args80_1"/>
+        <event value="100" version="1" level="win:Informational"  task="InitializeLibrary" opcode="win:Start" keywords="SoftRestart" template="Args100_1"/>
+        <event value="102" version="1" level="win:Informational"  task="PrepareTarget" opcode="win:Start" keywords="SoftRestart" template="Args102_1"/>
+        <event value="133" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="PhysicalPageAllocationFailure" opcode="win:Info" keywords="SoftRestart PhysicalMemory" template="Args133_1"/>
+        <event value="136" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="CleanupPageDatabase" opcode="win:Info" keywords="SoftRestart MemoryPreservation" template="Args136_1"/>
+        <event value="138" version="1" level="win:Informational"  task="MemoryPartitionRestore" opcode="win:Stop" keywords="SoftRestart MemoryPreservation"/>
+        <event value="141" version="1" level="win:Informational"  task="PersistMemoryPartition" opcode="win:Stop" keywords="SoftRestart MemoryPreservation" template="Args141_1"/>
+        <event value="142" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="RegisterLoader" opcode="win:Info" keywords="SoftRestart" template="Args142_1"/>
+        <event value="150" version="1" level="win:Informational"  task="PrepareNotification" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="151" version="1" level="win:Informational"  task="PartitionInitialAddMemory" opcode="win:Start" keywords="MemoryPartitions" template="Args151_1"/>
+        <event value="169" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="InitializeMeasurementContext" opcode="InitializationFailure" keywords="SoftRestart"/>
+        <event value="233" version="1" level="win:Informational"  task="MemoryPartitionFreeUnusedMemory" opcode="win:Stop" keywords="SoftRestart MemoryPreservation" template="Args233_1"/>
+        <event value="238" version="1" level="win:Informational"  channel="System" task="EfiTimeZoneInformation" opcode="win:Info" template="Args238_1"/>
+        <event value="241" version="1" level="win:Informational"  task="FinalizeNotification" opcode="win:Stop" keywords="SoftRestart"/>
+        <event value="248" version="1" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="MeasuredLaunch" opcode="PreviousAmdSlError" keywords="LOG_TO_BOOTSTAT" template="Args248_1"/>
+        <event value="50" version="2" level="win:Error"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus" template="Args50_2"/>
+        <event value="51" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Boot/Operational" task="VsmLKeyProvisioningStatus"/>
+        <event value="102" version="2" level="win:Informational"  task="PrepareTarget" opcode="win:Start" keywords="SoftRestart" template="Args102_2"/>
+        <event value="138" version="2" level="win:Informational"  task="MemoryPartitionRestore" opcode="win:Stop" keywords="SoftRestart MemoryPreservation" template="Args138_2"/>
+        <event value="151" version="2" level="win:Informational"  task="PartitionInitialAddMemory" opcode="win:Start" keywords="MemoryPartitions" template="Args151_2"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Kernel-Boot/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Kernel-Boot/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="SoftRestart" mask="0x1" message="$(string.string171)" />
+        <keyword name="MemoryPreservation" mask="0x2" message="$(string.string114)" />
+        <keyword name="MemoryBlockRundown" mask="0x4" message="$(string.string106)" />
+        <keyword name="PhysicalMemory" mask="0x8" message="$(string.string134)" />
+        <keyword name="MemoryMapRundown" mask="0x10" message="$(string.string107)" />
+        <keyword name="MemoryPartitions" mask="0x20" message="$(string.string112)" />
+        <keyword name="EfiVariables" mask="0x40" message="$(string.string57)" />
+        <keyword name="LOG_TO_BOOTSTAT" mask="0x80000000000" message="$(string.string102)" />
+        <keyword name="ms:ReservedKeyword40" mask="0x100000000000" message="$(string.string124)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string125)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string123)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string122)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="InitializeLibrary" message="$(string.string1)">
+        </task>
+        <task value="2" name="PrepareTarget" message="$(string.string2)">
+        </task>
+        <task value="3" name="RebuildKernelMemoryMap" message="$(string.string3)">
+        </task>
+        <task value="4" name="FatalError" message="$(string.string4)">
+        </task>
+        <task value="5" name="PersistMemory" message="$(string.string5)">
+        </task>
+        <task value="6" name="ClaimPersistedMemory" message="$(string.string6)">
+        </task>
+        <task value="7" name="FreePersistedMemory" message="$(string.string7)">
+        </task>
+        <task value="8" name="CleanupPageDatabase" message="$(string.string8)">
+        </task>
+        <task value="9" name="CancelBoot" message="$(string.string9)">
+        </task>
+        <task value="10" name="AttachPersistentPageDatabase" message="$(string.string10)">
+        </task>
+        <task value="11" name="MemoryBlockRundown" message="$(string.string11)">
+        </task>
+        <task value="12" name="BuildKernelMemoryMap" message="$(string.string12)">
+        </task>
+        <task value="13" name="GetMemoryMap" message="$(string.string13)">
+        </task>
+        <task value="14" name="AllocatePhysicalPagesForMdl" message="$(string.string14)">
+        </task>
+        <task value="15" name="ExecuteTransition" message="$(string.string15)">
+        </task>
+        <task value="16" name="DisconnectHypervisor" message="$(string.string16)">
+        </task>
+        <task value="17" name="MemoryMapRundown" message="$(string.string17)">
+        </task>
+        <task value="18" name="PhysicalPageAllocationFailure" message="$(string.string18)">
+        </task>
+        <task value="19" name="BootManager" message="$(string.string19)">
+        </task>
+        <task value="20" name="PreBoot" message="$(string.string20)">
+        </task>
+        <task value="21" name="FirmwareBootData" message="$(string.string21)">
+        </task>
+        <task value="22" name="LoadDrivers" message="$(string.string22)">
+        </task>
+        <task value="23" name="LoadHive" message="$(string.string23)">
+        </task>
+        <task value="24" name="BootApplicationExecution" message="$(string.string24)">
+        </task>
+        <task value="25" name="WaitForPartitionsRestored" message="$(string.string25)">
+        </task>
+        <task value="26" name="MemoryPartitionRestore" message="$(string.string26)">
+        </task>
+        <task value="27" name="PersistMemoryPartition" message="$(string.string27)">
+        </task>
+        <task value="28" name="RegisterLoader" message="$(string.string28)">
+        </task>
+        <task value="29" name="SiPolicyFailure" message="$(string.string29)">
+        </task>
+        <task value="30" name="BootTotalIo" message="$(string.string30)">
+        </task>
+        <task value="31" name="DirtyBootShutdown" message="$(string.string31)">
+        </task>
+        <task value="32" name="BootMenuPolicy" message="$(string.string32)">
+        </task>
+        <task value="33" name="BootType" message="$(string.string33)">
+        </task>
+        <task value="34" name="MemoryPartitionsRestored" message="$(string.string34)">
+        </task>
+        <task value="35" name="QueryStatistics" message="$(string.string35)">
+        </task>
+        <task value="36" name="ConnectSecureLoader" message="$(string.string36)">
+        </task>
+        <task value="37" name="BootFileAccess" message="$(string.string37)">
+        </task>
+        <task value="38" name="RetrieveDriverListTime" message="$(string.string38)">
+        </task>
+        <task value="39" name="FreePersistedMemoryBlock" message="$(string.string39)">
+        </task>
+        <task value="40" name="PrepareNotification" message="$(string.string40)">
+          <opcodes>
+           <opcode value="13" name="Veto" message="$(string.string187)"/>
+          </opcodes>
+        </task>
+        <task value="41" name="PartitionInitialAddMemory" message="$(string.string41)">
+        </task>
+        <task value="42" name="ImageHashCheck" message="$(string.string42)">
+        </task>
+        <task value="43" name="ImageIntegrityCheck" message="$(string.string43)">
+        </task>
+        <task value="44" name="BootPolicyMigration" message="$(string.string44)">
+        </task>
+        <task value="45" name="RemoveEnclavePages" message="$(string.string45)">
+        </task>
+        <task value="46" name="EnumerateEnclavePages" message="$(string.string46)">
+        </task>
+        <task value="47" name="GetFirmwareBootDevice" message="$(string.string47)">
+        </task>
+        <task value="48" name="NormalizeBootOptionList" message="$(string.string48)">
+        </task>
+        <task value="49" name="CreateLibraryParameters" message="$(string.string49)">
+        </task>
+        <task value="50" name="CreateDevices" message="$(string.string50)">
+        </task>
+        <task value="51" name="SoftRestartHostCapability" message="$(string.string51)">
+        </task>
+        <task value="52" name="CancelNotification" message="$(string.string52)">
+        </task>
+        <task value="53" name="BootDiag" message="$(string.string53)">
+        </task>
+        <task value="54" name="ImageLoadFailure" message="$(string.string54)">
+        </task>
+        <task value="55" name="FirmwareResolution" message="$(string.string55)">
+        </task>
+        <task value="56" name="BootEnvResolution" message="$(string.string56)">
+        </task>
+        <task value="57" name="BootmgrEntryCount" message="$(string.string57)">
+        </task>
+        <task value="58" name="UserInputTime" message="$(string.string58)">
+        </task>
+        <task value="59" name="VsmIdkProvisioningStatus" message="$(string.string59)">
+        </task>
+        <task value="60" name="BootAppLoadTime" message="$(string.string60)">
+        </task>
+        <task value="61" name="PrepareTargetFailure" message="$(string.string61)">
+        </task>
+        <task value="62" name="VsmPolicyEnablement" message="$(string.string62)">
+        </task>
+        <task value="63" name="InitializeMeasurementContext" message="$(string.string63)">
+          <opcodes>
+           <opcode value="12" name="MeasurementsDisabled" message="$(string.string104)"/>
+           <opcode value="11" name="InitializationFailure" message="$(string.string83)"/>
+          </opcodes>
+        </task>
+        <task value="64" name="KsrMeasurement" message="$(string.string64)">
+        </task>
+        <task value="65" name="TpmMeasurement" message="$(string.string65)">
+        </task>
+        <task value="66" name="CloseMeasurementLog" message="$(string.string66)">
+        </task>
+        <task value="67" name="CommitPendingEvents" message="$(string.string67)">
+        </task>
+        <task value="68" name="CapTpmPcr" message="$(string.string68)">
+        </task>
+        <task value="69" name="TpmCommandResponse" message="$(string.string69)">
+        </task>
+        <task value="70" name="TpmSubmitError" message="$(string.string70)">
+        </task>
+        <task value="71" name="TpmBitLockerUsage" message="$(string.string71)">
+        </task>
+        <task value="72" name="EfiVariableAccess" message="$(string.string72)">
+          <opcodes>
+           <opcode value="11" name="GetEfiVariable" message="$(string.string73)"/>
+           <opcode value="12" name="SetEfiVariable" message="$(string.string163)"/>
+          </opcodes>
+        </task>
+        <task value="73" name="GetFirmwareInformation" message="$(string.string73)">
+        </task>
+        <task value="74" name="VerifyBootEntry" message="$(string.string74)">
+        </task>
+        <task value="75" name="InvalidNfitTable" message="$(string.string75)">
+        </task>
+        <task value="76" name="MeasuredLaunch" message="$(string.string76)">
+          <opcodes>
+           <opcode value="11" name="TxtLaunchPrepared" message="$(string.string181)"/>
+           <opcode value="12" name="PreviousTxtError" message="$(string.string145)"/>
+           <opcode value="13" name="InvalidTxtSinitRange" message="$(string.string90)"/>
+           <opcode value="14" name="InvalidTxtHeapRange" message="$(string.string89)"/>
+           <opcode value="15" name="MleLoadFailure" message="$(string.string121)"/>
+           <opcode value="16" name="MissingRsdpTable" message="$(string.string119)"/>
+           <opcode value="17" name="NoSinitAcm" message="$(string.string127)"/>
+           <opcode value="18" name="ComputePmrRangesFailure" message="$(string.string41)"/>
+           <opcode value="19" name="InvalidTxtHeapBiosDataSize" message="$(string.string88)"/>
+           <opcode value="20" name="MleHeaderTooOld" message="$(string.string120)"/>
+           <opcode value="21" name="SinitPerformance" message="$(string.string164)"/>
+           <opcode value="22" name="PrepareLcpFailure" message="$(string.string140)"/>
+           <opcode value="23" name="TxtRejectedFirmwareAcm" message="$(string.string182)"/>
+           <opcode value="24" name="TxtInformation" message="$(string.string180)"/>
+           <opcode value="25" name="DrtmNotSupported" message="$(string.string49)"/>
+           <opcode value="26" name="DrtmDriversNotSupportVbs" message="$(string.string48)"/>
+           <opcode value="27" name="PpamFailure" message="$(string.string137)"/>
+           <opcode value="28" name="SmmLevelCheck" message="$(string.string168)"/>
+           <opcode value="29" name="SmmIsolation" message="$(string.string167)"/>
+           <opcode value="30" name="TxtSmmIsolationPerf" message="$(string.string183)"/>
+           <opcode value="31" name="PreviousAmdSlError" message="$(string.string144)"/>
+           <opcode value="32" name="TprSetupRequested" message="$(string.string179)"/>
+           <opcode value="33" name="PpamManifestInfo" message="$(string.string138)"/>
+           <opcode value="34" name="AcmInfoTableInfo" message="$(string.string0)"/>
+           <opcode value="37" name="DmaProtectedRangeAdjusted" message="$(string.string47)"/>
+          </opcodes>
+        </task>
+        <task value="77" name="EFICapsuleCreation" message="$(string.string77)">
+        </task>
+        <task value="78" name="BootSI" message="$(string.string78)">
+          <opcodes>
+           <opcode value="11" name="InitStatus" message="$(string.string86)"/>
+           <opcode value="12" name="EnterInsecureState" message="$(string.string59)"/>
+           <opcode value="13" name="DrtmSvnCheck" message="$(string.string50)"/>
+           <opcode value="14" name="BootmgrSvnCheck" message="$(string.string26)"/>
+          </opcodes>
+        </task>
+        <task value="79" name="FileOpen" message="$(string.string79)">
+          <opcodes>
+           <opcode value="11" name="OpenFailure" message="$(string.string129)"/>
+          </opcodes>
+        </task>
+        <task value="80" name="VsmPolicyFailure" message="$(string.string80)">
+        </task>
+        <task value="81" name="VsmLKeyProvisioningStatus" message="$(string.string81)">
+        </task>
+        <task value="82" name="SecureBootVariableUsage" message="$(string.string82)">
+        </task>
+        <task value="83" name="MiniFilterStartFailure" message="$(string.string83)">
+        </task>
+        <task value="84" name="FileModification" message="$(string.string84)">
+        </task>
+        <task value="85" name="RegistryModification" message="$(string.string85)">
+        </task>
+        <task value="86" name="SoftReboot" message="$(string.string86)">
+        </task>
+        <task value="87" name="RegisterFilter" message="$(string.string87)">
+        </task>
+        <task value="88" name="BootDebugger" message="$(string.string88)">
+          <opcodes>
+           <opcode value="11" name="BdEnabled" message="$(string.string7)"/>
+           <opcode value="12" name="BdInitFailure" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="89" name="IoSpaceMemory" message="$(string.string89)">
+          <opcodes>
+           <opcode value="11" name="Allocation" message="$(string.string2)"/>
+           <opcode value="12" name="AllocationFailure" message="$(string.string3)"/>
+           <opcode value="13" name="EnumerateFailure" message="$(string.string61)"/>
+          </opcodes>
+        </task>
+        <task value="90" name="FinalizeMemoryMap" message="$(string.string90)">
+        </task>
+        <task value="91" name="RegisterHvloaderPersistenceInterface" message="$(string.string91)">
+        </task>
+        <task value="92" name="LoadHvloaderForPersistence" message="$(string.string92)">
+        </task>
+        <task value="93" name="VsmBootNoSecretsMode" message="$(string.string93)">
+        </task>
+        <task value="94" name="BootMenuTimerCanceled" message="$(string.string94)">
+        </task>
+        <task value="95" name="BadMemoryPages" message="$(string.string95)">
+          <opcodes>
+           <opcode value="11" name="ListInitializationFailure" message="$(string.string96)"/>
+          </opcodes>
+        </task>
+        <task value="96" name="KernelDebugger" message="$(string.string96)">
+          <opcodes>
+           <opcode value="11" name="KdEnabled" message="$(string.string92)"/>
+           <opcode value="12" name="KdInitFailure" message="$(string.string93)"/>
+          </opcodes>
+        </task>
+        <task value="97" name="MemoryPartitionFreeUnusedMemory" message="$(string.string97)">
+        </task>
+        <task value="98" name="MemoryPartitionRestoreStats" message="$(string.string98)">
+        </task>
+        <task value="99" name="BootTpm" message="$(string.string99)">
+          <opcodes>
+           <opcode value="11" name="TpmInit" message="$(string.string176)"/>
+           <opcode value="12" name="PlutonLoadFailure" message="$(string.string136)"/>
+          </opcodes>
+        </task>
+        <task value="100" name="MemoryMirroring" message="$(string.string100)">
+          <opcodes>
+           <opcode value="11" name="NotSupported" message="$(string.string128)"/>
+           <opcode value="12" name="Enabled" message="$(string.string58)"/>
+          </opcodes>
+        </task>
+        <task value="101" name="EfiTimeZoneInformation" message="$(string.string101)">
+        </task>
+        <task value="102" name="MemoryAllocation" message="$(string.string102)">
+          <opcodes>
+           <opcode value="11" name="BlMmAllocationFailure" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="103" name="FinalizeNotification" message="$(string.string103)">
+          <opcodes>
+           <opcode value="13" name="Veto" message="$(string.string187)"/>
+          </opcodes>
+        </task>
+        <task value="104" name="PersistBcdFailure" message="$(string.string104)">
+        </task>
+        <task value="105" name="UnpersistMemoryPartition" message="$(string.string105)">
+        </task>
+        <task value="106" name="BindImportsFailure" message="$(string.string106)">
+        </task>
+        <task value="107" name="SlabAllocationFailure" message="$(string.string107)">
+        </task>
+        <task value="108" name="QuerySystemInformationFailure" message="$(string.string108)">
+        </task>
+        <task value="109" name="BootmgrBltDisplayMenu" message="$(string.string109)">
+        </task>
+        <task value="110" name="HotPatch" message="$(string.string110)">
+          <opcodes>
+           <opcode value="11" name="HotPatchApplyFailure" message="$(string.string79)"/>
+          </opcodes>
+        </task>
+        <task value="111" name="GetPerformanceOptions" message="$(string.string111)">
+        </task>
+        <task value="112" name="SnapshotPolicy" message="$(string.string112)">
+        </task>
+        <task value="113" name="LoadEarlyDumpSupport" message="$(string.string113)">
+          <opcodes>
+           <opcode value="11" name="GetDriverListFailure" message="$(string.string72)"/>
+           <opcode value="12" name="BuildImagePathFailure" message="$(string.string32)"/>
+           <opcode value="13" name="LoadModuleFailure" message="$(string.string101)"/>
+           <opcode value="14" name="EarlyDumpNotSupported" message="$(string.string53)"/>
+           <opcode value="15" name="EarlyDumpDisabled" message="$(string.string52)"/>
+           <opcode value="16" name="QueryEarlyDumpInitFailure" message="$(string.string147)"/>
+           <opcode value="17" name="QueryDumpFileNameFailure" message="$(string.string146)"/>
+           <opcode value="18" name="DumpFileNameMismatch" message="$(string.string51)"/>
+          </opcodes>
+        </task>
+        <task value="114" name="BootEventsLost" message="$(string.string114)">
+        </task>
+        <task value="115" name="BootBcdLoaded" message="$(string.string115)">
+        </task>
+        <task value="116" name="SecureBootMitigations" message="$(string.string116)">
+        </task>
+        <task value="117" name="QueryMemdiskInformation" message="$(string.string117)">
+        </task>
+        <task value="125" name="SbatUpdate" message="$(string.string125)">
+          <opcodes>
+           <opcode value="11" name="SbatUpdateSuccess" message="$(string.string160)"/>
+           <opcode value="12" name="SbatUpdateFailure" message="$(string.string159)"/>
+          </opcodes>
+        </task>
+        <task value="126" name="BootAppRevocation" message="$(string.string126)">
+          <opcodes>
+           <opcode value="11" name="BootAppRevoked" message="$(string.string14)"/>
+          </opcodes>
+        </task>
+        <task value="131" name="ApiSetSchemaComposition" message="$(string.string131)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="InitializationFailure" message="$(string.string83)"/>
+        <opcode value="12" name="MeasurementsDisabled" message="$(string.string104)"/>
+        <opcode value="13" name="Veto" message="$(string.string187)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BitsPerPixel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="BytesPerMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="DeviceID" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BytesRead" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesWritten" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ApplicationGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BytesRead" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesWritten" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Reason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorIgnored" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="BootmgrTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="DriveNumber" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="FwStartPage" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FwPageCount" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FwMemoryType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FwMemoryAttributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BlStartPage" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BlPageCount" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BlMemoryType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BlMemoryAttributes" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="PreBootMgrTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="UefiVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Size" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="ApplicationGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Element" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="FailureStatus" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FailureMsgId" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="EntryCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="ToolsCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="LastShutdownGood" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LastBootGood" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="OptionSelected" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="BootMenuPolicy" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="BootType" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args28_0">
+          <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SqmStreamRowLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="ResetEndStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LoadOSImageStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartOSImageStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ExitBootServicesEntry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ExitBootServicesExit" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32_0">
+          <data name="BitlockerUserInputTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args33_0">
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageLoadStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args34_0">
+          <data name="PeImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PeImageLoadStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="UpdateCapsuleStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args36_0">
+          <data name="DeviceFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PcrBitmap" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UpdateSupportedStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="HiveName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HiveLoadStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args42_0">
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FailedPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args43_0">
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Import" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args44_0">
+          <data name="CachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="IdkGenerationStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MeasuringStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SealingAndCachingStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args46_0">
+          <data name="RetrieveDriverListTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args47_0">
+          <data name="LoadDriversTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LoadHiveTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args49_0">
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SiPolicyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="CachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnsealingCachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="KeyGenerationAndSaveStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SealingStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmPcrMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProtectorAssistedUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProtectorAssistedResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProtectorSealUpdateStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmCounterOpStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmCounterCreateStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupSealedBlobUsed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="ApplicationIdentifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ApplicationLoadTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="ApplicationIdentifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ApplicationExecutionTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args54_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FailurePoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args57_0">
+          <data name="TpmSrkProvisioningStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmSrkPolicyReadStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkSymKeyPolicyValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkSymKeyCapability" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkAesBitsUsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkAsymKeyPolicyValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkAsymKeyCapability" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkRsaBitsUsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args58_0">
+          <data name="TpmSrkProvisioningTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TpmSrkPolicyReadStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkSymKeyPolicyValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkSymKeyCapability" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkAesBitsUsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkAsymKeyPolicyValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkAsymKeyCapability" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpmSrkRsaBitsUsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="TpmBindingProvisioningStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args61_0">
+          <data name="PmrLowBase" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PmrLowSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PmrHighBase" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PmrHighSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FirmwareProvidedAcm" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args62_0">
+          <data name="TxtErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args63_0">
+          <data name="Base" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Size" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="BiosDataSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args69_0">
+          <data name="AcmMinMleHeaderVer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MleHeaderVersion" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args71_0">
+          <data name="DeviceID" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args73_0">
+          <data name="TxtStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="CachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="KeyGenerationStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SealAndSaveStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UEFIKeysStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args77_0">
+          <data name="DebuggerStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args82_0">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Point" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NTStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args83_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="OsDeviceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemRoot" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VsmLKeyRelPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedUnsealPolicyRelPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnlatchedUnsealPolicyRelPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedPrimaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedSecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnlatchedPrimaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnlatchedSecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedProtectorUsedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchTheUnlatchedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UnsupportedRollbackLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UpgradedAntirollbackPolicyExistsLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PkgWasCorruptOrUnavailableLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="CreationStateVerifiedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PrimaryProtectorTargetPcrSealMaskLocal" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LatchedProtectorExists" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UnlatchedProtectorExists" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="KeyPkgIdTpmCounterValue" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UseUnlatchedProtector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealPrimaryProtector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealSecondaryProtector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealPca2023Protector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="pSubStatus->PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->PrimaryBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->V2ProtectorsUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="pSubStatus->LegacyUefiVarQueryStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->LegacyUefiVarCleanupStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->LatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->UnlatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedUnsealPolicyValid" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchedUnsealPolicy->Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LatchedUnsealPolicy->VarDataOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LatchedUnsealPolicy->StructureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedUnsealPolicy->PolicyHashLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->WinloadSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->WinresumeSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->BootmgrSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->LKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnlatchedUnsealPolicyValid" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UnlatchedUnsealPolicy->Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UnlatchedUnsealPolicy->VarDataOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UnlatchedUnsealPolicy->StructureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnlatchedUnsealPolicy->PolicyHashLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->WinloadSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->WinresumeSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->BootmgrSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->LKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args84_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="OsDeviceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemRoot" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PcrSealMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LatchTheUnlatched" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UpgradedAntirollbackPolicyExists" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="EncryptionStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="KeyPkgIdTpmCounterValue" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="EncryptedLKeyArrayPkgSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncryptedLKeyPkgPdGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UnlatchedUnsealPolicySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedProtectorExists" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchedUnsealPolicySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedProtectorExists" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchedUnsealPolicy->Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LatchedUnsealPolicy->VarDataOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LatchedUnsealPolicy->StructureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedUnsealPolicy->PolicyHashLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->WinloadSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->WinresumeSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->BootmgrSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatchedUnsealPolicy->LKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnlatchedUnsealPolicy->Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UnlatchedUnsealPolicy->VarDataOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UnlatchedUnsealPolicy->StructureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnlatchedUnsealPolicy->PolicyHashLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->WinloadSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->WinresumeSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->BootmgrSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnlatchedUnsealPolicy->LKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args85_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="PrimarySealedBlobName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BlobFromUefiVariableSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UefiContentIsSealed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UnsealedBlobSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Pcr7SealingUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PkgTpmSealMaskLocal" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PkgTpmCreationMaskLocal" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NeedToResealKeyPkg" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealBackup" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealPca2023Protector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PlaintextBlobSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PlaintextIsLegacyFormat" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UefiBlobIsCorrupt" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NewKeyID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VerifiedMicrosoftAuthority" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="ContainsAuthorityData" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="BootmgrAuthorityEventCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Authority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pSubStatus->PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->PrimaryBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->V2ProtectorsUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="pSubStatus->LegacyUefiVarQueryStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->LegacyUefiVarCleanupStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->LatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->UnlatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args86_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="SecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NeedToResealPrimaryProtector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealSecondaryProtector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="NeedToResealPca2023Protector" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="SealedBackupEncryptionKeySize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SealedPca2023EncryptionKeySize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UefiBlobIsCorrupt" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="Pcr7SealingUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="CreationStateVerifiedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="VerifiedMicrosoftAuthority" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="ContainsAuthorityData" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="BootmgrAuthorityEventCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrimaryProtectorTargetPcrSealMaskLocal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Authority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pSubStatus->PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->PrimaryBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->V2ProtectorsUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="pSubStatus->LegacyUefiVarQueryStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->LegacyUefiVarCleanupStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->LatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->UnlatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ValidatedUnsealPolicy->Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ValidatedUnsealPolicy->VarDataOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ValidatedUnsealPolicy->StructureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValidatedUnsealPolicy->PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ValidatedUnsealPolicy->PolicyHashLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValidatedUnsealPolicy->WinloadSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValidatedUnsealPolicy->WinresumeSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValidatedUnsealPolicy->BootmgrSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValidatedUnsealPolicy->LKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args87_0">
+          <data name="LegacyMainBlobVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LegacySecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PkgWasCorruptOrUnavailableLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="KeysAreLegacyLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="CreationStateVerifiedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PrimaryProtectorTargetPcrSealMaskLocal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pSubStatus->PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->PrimaryBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->V2ProtectorsUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="pSubStatus->LegacyUefiVarQueryStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->LegacyUefiVarCleanupStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->LatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->UnlatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args88_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="OsDeviceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OsDataDeviceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemRoot" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VsmLKeyRelPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedUnsealPolicyRelPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnlatchedUnsealPolicyRelPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedPrimaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedSecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnlatchedPrimaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnlatchedSecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LegacyMainBlobVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LegacySecondaryProtectorVariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LatchedProtectorUsedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchTheUnlatchedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UnsupportedRollbackLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UpgradedAntirollbackPolicyExistsLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="FirstWriteToDiskLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="WritePkgToUefiLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PkgWasCorruptOrUnavailableLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="KeysAreLegacyLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="CreationStateVerifiedLocal" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="PrimaryProtectorTargetPcrSealMaskLocal" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="pSubStatus->PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pSubStatus->PrimaryBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->BackupBlobResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->V2ProtectorsUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="pSubStatus->LegacyUefiVarQueryStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->LegacyUefiVarCleanupStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="pSubStatus->ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->LatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pSubStatus->UnlatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args89_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="PcrMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnsealPolicyPdGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SealingProtectorFixedBufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SealingProtectorUsedBufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SealedSecretBufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PcrInfoArrayElCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnsealPolicy->Version" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UnsealPolicy->VarDataOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UnsealPolicy->StructureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnsealPolicy->PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnsealPolicy->PolicyHashLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnsealPolicy->WinloadSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnsealPolicy->WinresumeSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnsealPolicy->BootmgrSVN" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnsealPolicy->LKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args90_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ProtectorName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SealedEncryptionKeySize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProtectorBlobFromUefiVariableSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args91_0">
+          <data name="algID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="digestLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PcrIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PcrValue" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args92_0">
+          <data name="RangeAltitude" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RangeEndpoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AlignedAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="OverlappedMemoryType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="ReserveDescriptors" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="ApplicationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="BlockId" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="FreePersistentPages" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args111_0">
+          <data name="ApplicationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FreePersistentPages" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args113_0">
+          <data name="ApplicationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BlockId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="RunsClaimed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args122_0">
+          <data name="Type" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args123_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args124_0">
+          <data name="Phase" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args126_0">
+          <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SkipBytes" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CacheType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args127_0">
+          <data name="Mdl" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args128_0">
+          <data name="StartTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DescriptorCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args133_0">
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MemoryType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args136_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="OutstandingCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args137_0">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PartitionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args138_0">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PartitionPageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedBlockCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedRunCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedPageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="PartitionNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PartitionName" inType="win:UnicodeString" outType="xs:string" length="PartitionNameLength" />
+        </template>
+        <template tid="Args142_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ActualSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExpectedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args147_0">
+          <data name="ApplicationId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BlockId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FreePersistentPages" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="PartitionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args153_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="EnableDisableReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VsmPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="DiagCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args159_0">
+          <data name="BasePage" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args177_0">
+          <data name="VendorGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VariableName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args184_0">
+          <data name="DisableReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TcgLogStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="CommandCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="CommandCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommandData" inType="win:Binary" outType="xs:hexBinary" length="CommandSize" />
+          <data name="ResponseSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResponseData" inType="win:Binary" outType="xs:hexBinary" length="ResponseSize" />
+        </template>
+        <template tid="Args202_0">
+          <data name="CommandCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args203_0">
+          <data name="CommandCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommandData" inType="win:Binary" outType="xs:hexBinary" length="CommandSize" />
+        </template>
+        <template tid="Args204_0">
+          <data name="FveGlobalDataFlags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args207_0">
+          <data name="Phase" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="EnvironmentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args208_0">
+          <data name="InitState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FailureAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ReferenceAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args209_0">
+          <data name="SvnCounterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SvnValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrevSvnValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args210_0">
+          <data name="SinitTimeMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args212_0">
+          <data name="PathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string" length="PathLength" />
+        </template>
+        <template tid="Args214_0">
+          <data name="TryComplete" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args218_0">
+          <data name="Function" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Checkpoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args219_0">
+          <data name="AcmDateDay" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="AcmDateMonth" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="AcmDateYear" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args222_0">
+          <data name="TxtStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Instance" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args223_0">
+          <data name="Phase" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Tries" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemainingNodesCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args224_0">
+          <data name="AllocatedRegions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Tries" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args231_0">
+          <data name="KeyType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Code" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args234_0">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PartitionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AllocatedBlockCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedRunCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedPageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args235_0">
+          <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Position" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args236_0">
+          <data name="TxtStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PolicyLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Argument1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Argument2" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args237_0">
+          <data name="MirrorStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args238_0">
+          <data name="EfiTimeZoneBias" inType="win:Int16" outType="xs:short"  />
+          <data name="EfiDaylightFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args239_0">
+          <data name="Pages" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MemoryType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Attributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="RangeMinimum" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RangeMaximum" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RangeFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args242_0">
+          <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args243_0">
+          <data name="MirrorPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args244_0">
+          <data name="GetCapabilityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="GetResourcesTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResourcesValidationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args247_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args248_0">
+          <data name="Source" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args249_0">
+          <data name="Module" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args250_0">
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="MemoryType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args251_0">
+          <data name="InformationClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args253_0">
+          <data name="FailurePoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="HotPatchPathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="HotPatchPath" inType="win:UnicodeString" outType="xs:string" length="HotPatchPathLength" />
+        </template>
+        <template tid="Args257_0">
+          <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args261_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Tag" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args266_0">
+          <data name="HostDumpFileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TargetDumpFileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args268_0">
+          <data name="ApplicationIdentifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="EventsLostCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args272_0">
+          <data name="PpamStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args273_0">
+          <data name="BcdOption" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BcdElement" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args275_0">
+          <data name="AcmInfoTableVersion" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args276_0">
+          <data name="Version" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args291_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FailurePoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UpdateStatusEnum" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FwLevel" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args295_0">
+          <data name="LoadedBootAppSvn" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnforcedBootAppSvn" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args16_1">
+          <data name="FailureStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FailureMsg" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args20_1">
+          <data name="LastShutdownGood" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LastBootGood" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LastBootId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BootStatusPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args27_1">
+          <data name="BootType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LoadOptions" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args50_1">
+          <data name="CachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PrimaryBlobResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="KeyGenerationAndSaveStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SealingStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmPcrMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmCounterOpStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmCounterCreateStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupSealedBlobUsed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Pca2023ProtectorCleanupPostUpgradeStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args74_1">
+          <data name="CachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="KeyGenerationStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SealAndSaveStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UEFIKeysStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnLatchedCiPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedCiPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedAntiRollbackCounterValue" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CurrentCiPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CurrentAntiRollbackCounterValue" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MinimumUnsealCiPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AuthorizationIsDelegated" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args80_1">
+          <data name="IsFasrCertPresent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidateFasrCertSignatureStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BootmgrAuthorityEventCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="VerifiedMicrosoftAuthority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ValidateFasrPcrValuesStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PcrMismatchIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="FasrCertSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FasrCertWithoutSignature" inType="win:Binary" outType="xs:hexBinary" length="FasrCertSize" />
+          <data name="FasrSignatureSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FasrSignature" inType="win:Binary" outType="xs:hexBinary" length="FasrSignatureSize" />
+        </template>
+        <template tid="Args100_1">
+          <data name="Secure" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args102_1">
+          <data name="SoftRestartCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args133_1">
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MemoryType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProximityId" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args136_1">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="OutstandingCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ApplicationsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args141_1">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoSpaceRunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoSpacePageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="PartitionNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PartitionName" inType="win:UnicodeString" outType="xs:string" length="PartitionNameLength" />
+        </template>
+        <template tid="Args142_1">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ActualSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExpectedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Vtl" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args151_1">
+          <data name="PartitionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RunCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoSpaceMemory" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args233_1">
+          <data name="RangeCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MarkedAsBadRegularPages" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MarkedAsBadIoSpacePages" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MarkErrorsCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args238_1">
+          <data name="EfiTimeZoneBias" inType="win:Int16" outType="xs:short"  />
+          <data name="EfiDaylightFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfiTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args248_1">
+          <data name="AmdSlErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args50_2">
+          <data name="CachedCopyStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PrimaryBlobUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pca2023ProtectorUnsealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobValidityCheckStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Pca2023ProtectorValidityCheckStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pca2023ProtectorStillValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PrimaryBlobResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupBlobResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pca2023ProtectorResealStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="KeyGenerationAndSaveStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SealingStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmPcrMask" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmCounterOpStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TpmCounterCreateStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BackupSealedBlobUsed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Pca2023ProtectorCleanupPostUpgradeStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NeedToRollLkey" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="CreationStateVerified" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="V2ProtectorsUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LegacyUefiVarQueryStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LegacyUefiVarCleanupStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="VbsRollbackDataProtectionEnabled" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="VbsRollbackDataProtectionOptedIn" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="VbsRollbackDataProtectionTpmCounterStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FirstWriteToDisk" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="WritePkgToUefi" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchedProtectorUsed" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="LatchTheUnlatched" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UnsupportedRollback" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="UpgradedVbsPolicyExists" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="TpmCounterIncrementStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ActivePolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UnlatchedPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LatchedPrimaryBlobResealStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LatchedBackupBlobResealStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LatchedPca2023ProtectorResealStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LatchedPca2023ProtectorCleanupPostUpgradeStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnlatchedPrimaryBlobResealStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnlatchedBackupBlobResealStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnlatchedPca2023ProtectorResealStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnlatchedPca2023ProtectorCleanupPostUpgradeStatusV2" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args102_2">
+          <data name="SoftRestartCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Secure" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args138_2">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PartitoinName" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="MemoryRangeCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemorPageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoSpaceRangeCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoSpacePageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedMemoryBlockCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedMemoryRunCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedMemoryPageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedIoSpaceBlockCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedIoSpaceRunCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedIoSpacePageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args151_2">
+          <data name="PartitionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RunCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PageCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoSpaceMemory" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Allocated" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AcmInfoTableInfo" />
+       <string id="string1" value="AllocatePhysicalPagesForMdl" />
+       <string id="string2" value="Allocation" />
+       <string id="string3" value="AllocationFailure" />
+       <string id="string4" value="ApiSetSchemaComposition" />
+       <string id="string5" value="AttachPersistentPageDatabase" />
+       <string id="string6" value="BadMemoryPages" />
+       <string id="string7" value="BdEnabled" />
+       <string id="string8" value="BdInitFailure" />
+       <string id="string9" value="BindImportsFailure" />
+       <string id="string10" value="BlMmAllocationFailure" />
+       <string id="string11" value="BootApplicationExecution" />
+       <string id="string12" value="BootAppLoadTime" />
+       <string id="string13" value="BootAppRevocation" />
+       <string id="string14" value="BootAppRevoked" />
+       <string id="string15" value="BootBcdLoaded" />
+       <string id="string16" value="BootDebugger" />
+       <string id="string17" value="BootDiag" />
+       <string id="string18" value="BootEnvResolution" />
+       <string id="string19" value="BootEventsLost" />
+       <string id="string20" value="BootFileAccess" />
+       <string id="string21" value="BootManager" />
+       <string id="string22" value="BootMenuPolicy" />
+       <string id="string23" value="BootMenuTimerCanceled" />
+       <string id="string24" value="BootmgrBltDisplayMenu" />
+       <string id="string25" value="BootmgrEntryCount" />
+       <string id="string26" value="BootmgrSvnCheck" />
+       <string id="string27" value="BootPolicyMigration" />
+       <string id="string28" value="BootSI" />
+       <string id="string29" value="BootTotalIo" />
+       <string id="string30" value="BootTpm" />
+       <string id="string31" value="BootType" />
+       <string id="string32" value="BuildImagePathFailure" />
+       <string id="string33" value="BuildKernelMemoryMap" />
+       <string id="string34" value="CancelBoot" />
+       <string id="string35" value="CancelNotification" />
+       <string id="string36" value="CapTpmPcr" />
+       <string id="string37" value="ClaimPersistedMemory" />
+       <string id="string38" value="CleanupPageDatabase" />
+       <string id="string39" value="CloseMeasurementLog" />
+       <string id="string40" value="CommitPendingEvents" />
+       <string id="string41" value="ComputePmrRangesFailure" />
+       <string id="string42" value="ConnectSecureLoader" />
+       <string id="string43" value="CreateDevices" />
+       <string id="string44" value="CreateLibraryParameters" />
+       <string id="string45" value="DirtyBootShutdown" />
+       <string id="string46" value="DisconnectHypervisor" />
+       <string id="string47" value="DmaProtectedRangeAdjusted" />
+       <string id="string48" value="DrtmDriversNotSupportVbs" />
+       <string id="string49" value="DrtmNotSupported" />
+       <string id="string50" value="DrtmSvnCheck" />
+       <string id="string51" value="DumpFileNameMismatch" />
+       <string id="string52" value="EarlyDumpDisabled" />
+       <string id="string53" value="EarlyDumpNotSupported" />
+       <string id="string54" value="EFICapsuleCreation" />
+       <string id="string55" value="EfiTimeZoneInformation" />
+       <string id="string56" value="EfiVariableAccess" />
+       <string id="string57" value="EfiVariables" />
+       <string id="string58" value="Enabled" />
+       <string id="string59" value="EnterInsecureState" />
+       <string id="string60" value="EnumerateEnclavePages" />
+       <string id="string61" value="EnumerateFailure" />
+       <string id="string62" value="ExecuteTransition" />
+       <string id="string63" value="FatalError" />
+       <string id="string64" value="FileModification" />
+       <string id="string65" value="FileOpen" />
+       <string id="string66" value="FinalizeMemoryMap" />
+       <string id="string67" value="FinalizeNotification" />
+       <string id="string68" value="FirmwareBootData" />
+       <string id="string69" value="FirmwareResolution" />
+       <string id="string70" value="FreePersistedMemory" />
+       <string id="string71" value="FreePersistedMemoryBlock" />
+       <string id="string72" value="GetDriverListFailure" />
+       <string id="string73" value="GetEfiVariable" />
+       <string id="string74" value="GetFirmwareBootDevice" />
+       <string id="string75" value="GetFirmwareInformation" />
+       <string id="string76" value="GetMemoryMap" />
+       <string id="string77" value="GetPerformanceOptions" />
+       <string id="string78" value="HotPatch" />
+       <string id="string79" value="HotPatchApplyFailure" />
+       <string id="string80" value="ImageHashCheck" />
+       <string id="string81" value="ImageIntegrityCheck" />
+       <string id="string82" value="ImageLoadFailure" />
+       <string id="string83" value="InitializationFailure" />
+       <string id="string84" value="InitializeLibrary" />
+       <string id="string85" value="InitializeMeasurementContext" />
+       <string id="string86" value="InitStatus" />
+       <string id="string87" value="InvalidNfitTable" />
+       <string id="string88" value="InvalidTxtHeapBiosDataSize" />
+       <string id="string89" value="InvalidTxtHeapRange" />
+       <string id="string90" value="InvalidTxtSinitRange" />
+       <string id="string91" value="IoSpaceMemory" />
+       <string id="string92" value="KdEnabled" />
+       <string id="string93" value="KdInitFailure" />
+       <string id="string94" value="KernelDebugger" />
+       <string id="string95" value="KsrMeasurement" />
+       <string id="string96" value="ListInitializationFailure" />
+       <string id="string97" value="LoadDrivers" />
+       <string id="string98" value="LoadEarlyDumpSupport" />
+       <string id="string99" value="LoadHive" />
+       <string id="string100" value="LoadHvloaderForPersistence" />
+       <string id="string101" value="LoadModuleFailure" />
+       <string id="string102" value="LOG_TO_BOOTSTAT" />
+       <string id="string103" value="MeasuredLaunch" />
+       <string id="string104" value="MeasurementsDisabled" />
+       <string id="string105" value="MemoryAllocation" />
+       <string id="string106" value="MemoryBlockRundown" />
+       <string id="string107" value="MemoryMapRundown" />
+       <string id="string108" value="MemoryMirroring" />
+       <string id="string109" value="MemoryPartitionFreeUnusedMemory" />
+       <string id="string110" value="MemoryPartitionRestore" />
+       <string id="string111" value="MemoryPartitionRestoreStats" />
+       <string id="string112" value="MemoryPartitions" />
+       <string id="string113" value="MemoryPartitionsRestored" />
+       <string id="string114" value="MemoryPreservation" />
+       <string id="string115" value="Microsoft-Windows-Kernel-Boot" />
+       <string id="string116" value="Microsoft-Windows-Kernel-Boot/Analytic" />
+       <string id="string117" value="Microsoft-Windows-Kernel-Boot/Operational" />
+       <string id="string118" value="MiniFilterStartFailure" />
+       <string id="string119" value="MissingRsdpTable" />
+       <string id="string120" value="MleHeaderTooOld" />
+       <string id="string121" value="MleLoadFailure" />
+       <string id="string122" value="ms:CriticalData" />
+       <string id="string123" value="ms:Measures" />
+       <string id="string124" value="ms:ReservedKeyword40" />
+       <string id="string125" value="ms:Telemetry" />
+       <string id="string126" value="NormalizeBootOptionList" />
+       <string id="string127" value="NoSinitAcm" />
+       <string id="string128" value="NotSupported" />
+       <string id="string129" value="OpenFailure" />
+       <string id="string130" value="PartitionInitialAddMemory" />
+       <string id="string131" value="PersistBcdFailure" />
+       <string id="string132" value="PersistMemory" />
+       <string id="string133" value="PersistMemoryPartition" />
+       <string id="string134" value="PhysicalMemory" />
+       <string id="string135" value="PhysicalPageAllocationFailure" />
+       <string id="string136" value="PlutonLoadFailure" />
+       <string id="string137" value="PpamFailure" />
+       <string id="string138" value="PpamManifestInfo" />
+       <string id="string139" value="PreBoot" />
+       <string id="string140" value="PrepareLcpFailure" />
+       <string id="string141" value="PrepareNotification" />
+       <string id="string142" value="PrepareTarget" />
+       <string id="string143" value="PrepareTargetFailure" />
+       <string id="string144" value="PreviousAmdSlError" />
+       <string id="string145" value="PreviousTxtError" />
+       <string id="string146" value="QueryDumpFileNameFailure" />
+       <string id="string147" value="QueryEarlyDumpInitFailure" />
+       <string id="string148" value="QueryMemdiskInformation" />
+       <string id="string149" value="QueryStatistics" />
+       <string id="string150" value="QuerySystemInformationFailure" />
+       <string id="string151" value="RebuildKernelMemoryMap" />
+       <string id="string152" value="RegisterFilter" />
+       <string id="string153" value="RegisterHvloaderPersistenceInterface" />
+       <string id="string154" value="RegisterLoader" />
+       <string id="string155" value="RegistryModification" />
+       <string id="string156" value="RemoveEnclavePages" />
+       <string id="string157" value="RetrieveDriverListTime" />
+       <string id="string158" value="SbatUpdate" />
+       <string id="string159" value="SbatUpdateFailure" />
+       <string id="string160" value="SbatUpdateSuccess" />
+       <string id="string161" value="SecureBootMitigations" />
+       <string id="string162" value="SecureBootVariableUsage" />
+       <string id="string163" value="SetEfiVariable" />
+       <string id="string164" value="SinitPerformance" />
+       <string id="string165" value="SiPolicyFailure" />
+       <string id="string166" value="SlabAllocationFailure" />
+       <string id="string167" value="SmmIsolation" />
+       <string id="string168" value="SmmLevelCheck" />
+       <string id="string169" value="SnapshotPolicy" />
+       <string id="string170" value="SoftReboot" />
+       <string id="string171" value="SoftRestart" />
+       <string id="string172" value="SoftRestartHostCapability" />
+       <string id="string173" value="System" />
+       <string id="string174" value="TpmBitLockerUsage" />
+       <string id="string175" value="TpmCommandResponse" />
+       <string id="string176" value="TpmInit" />
+       <string id="string177" value="TpmMeasurement" />
+       <string id="string178" value="TpmSubmitError" />
+       <string id="string179" value="TprSetupRequested" />
+       <string id="string180" value="TxtInformation" />
+       <string id="string181" value="TxtLaunchPrepared" />
+       <string id="string182" value="TxtRejectedFirmwareAcm" />
+       <string id="string183" value="TxtSmmIsolationPerf" />
+       <string id="string184" value="UnpersistMemoryPartition" />
+       <string id="string185" value="UserInputTime" />
+       <string id="string186" value="VerifyBootEntry" />
+       <string id="string187" value="Veto" />
+       <string id="string188" value="VsmBootNoSecretsMode" />
+       <string id="string189" value="VsmIdkProvisioningStatus" />
+       <string id="string190" value="VsmLKeyProvisioningStatus" />
+       <string id="string191" value="VsmPolicyEnablement" />
+       <string id="string192" value="VsmPolicyFailure" />
+       <string id="string193" value="WaitForPartitionsRestored" />
+       <string id="string194" value="win:Info" />
+       <string id="string195" value="win:Start" />
+       <string id="string196" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IPxlatCfg" name="Microsoft-Windows-IPxlatCfg" guid="{3e5ac668-af52-4c15-b99b-a3e7a6616ebd}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Error"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Error"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1003_0"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1005_0"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1006_0"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1007_0"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1008_0"/>
+        <event value="1009" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1009_0"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Debug" opcode="win:Info" template="Args1011_0"/>
+        <event value="1101" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Operational" opcode="win:Start" template="Args1101_0"/>
+        <event value="1102" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Operational" opcode="win:Stop"/>
+        <event value="1103" version="0" level="win:Informational"  channel="Microsoft-Windows-IPxlatCfg/Operational" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-IPxlatCfg/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-IPxlatCfg/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="ErrorString" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="ErrorString" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="InfoString" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1005_0">
+          <data name="IPv4Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="IPv4Prefix" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1006_0">
+          <data name="InfoString" inType="win:AnsiString" outType="xs:string"  />
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1007_0">
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Prefix" inType="win:Binary" outType="win:IPv6"  />
+          <data name="PrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1008_0">
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IPv4Address" inType="win:UInt32" outType="win:IPv4"  />
+        </template>
+        <template tid="Args1009_0">
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IPv6Address" inType="win:Binary" outType="win:IPv6"  />
+        </template>
+        <template tid="Args1011_0">
+          <data name="InfoString" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MTU" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1101_0">
+          <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Metric" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemotePrefix" inType="win:Binary" outType="win:IPv6"  />
+          <data name="RemotePrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalPrefix" inType="win:Binary" outType="win:IPv6"  />
+          <data name="LocalPrefixLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-IPxlatCfg" />
+       <string id="string1" value="Microsoft-Windows-IPxlatCfg/Debug" />
+       <string id="string2" value="Microsoft-Windows-IPxlatCfg/Operational" />
+       <string id="string3" value="win:Info" />
+       <string id="string4" value="win:Start" />
+       <string id="string5" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

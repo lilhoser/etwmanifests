@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Sensors" name="Microsoft-Windows-Sensors" guid="{d8900e18-36cb-4548-966f-13f068d1f78e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_DeviceStartup" opcode="win:Start" keywords="SensPerf" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_DeviceStartup" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_EventLatency" opcode="win:Start" keywords="SensPerf" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_EventLatency" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetProperties" opcode="win:Start" keywords="SensPerf" template="Args1005_0"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetProperties" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_GetPropertyValues" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_GetPropertyValues" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1009" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_GetDataFields" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_GetDataFields" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_PostDataEvent" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1012" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_PostDataEvent" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1013" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_PreAsyncRead" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1014" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_PreAsyncRead" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1015" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_RaiseDataEvent" opcode="win:Info" keywords="SensPerf" template="Args1015_0"/>
+        <event value="1016" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetState" opcode="win:Start" keywords="SensPerf" template="Args1016_0"/>
+        <event value="1017" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetState" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1018" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_PowerOn" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1019" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_PowerOff" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1100" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_OnDataUpdated" opcode="win:Start" keywords="SensPerf" template="Args1100_0"/>
+        <event value="1101" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_OnDataUpdated" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1102" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_WorkingSet" opcode="win:Info" keywords="SensPerf" template="Args1102_0"/>
+        <event value="1103" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_CPUUsage" opcode="win:Info" keywords="SensPerf" template="Args1103_0"/>
+        <event value="1104" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_CollectData" opcode="win:Info" keywords="SensPerf" template="Args1104_0"/>
+        <event value="1105" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_QuadrantAngle" opcode="win:Info" keywords="SensPerf" template="Args1105_0"/>
+        <event value="1106" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_State" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1107" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_DataRetrieved" opcode="win:Info" keywords="SensPerf" template="Args1107_0"/>
+        <event value="1108" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_PitchAngleTest" opcode="win:Info" keywords="SensPerf" template="Args1108_0"/>
+        <event value="1109" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_ThetaCalculation" opcode="win:Info" keywords="SensPerf" template="Args1109_0"/>
+        <event value="1110" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_ThetaNormalization" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1111" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_QuadrantChangeTest" opcode="win:Info" keywords="SensPerf" template="Args1111_0"/>
+        <event value="1112" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationProcessData_TimerQueueStatus" opcode="win:Info" keywords="SensPerf" template="Args1112_0"/>
+        <event value="1113" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationTimerCallback_QuadrantChangeTest" opcode="win:Info" keywords="SensPerf" template="Args1113_0"/>
+        <event value="1114" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Debug" task="SensPerf_Task_RotationTimerCallback_AngularThresholdTest" opcode="win:Info" keywords="SensPerf" template="Args1114_0"/>
+        <event value="1119" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetQuadrantAngleInAggregatedSensor" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1120" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetQuadrantAngleInAggregatedSensor" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1121" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_OnStateChanged" opcode="win:Start" keywords="SensPerf" template="Args1121_0"/>
+        <event value="1122" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_OnStateChanged" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1123" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetStateInAggregatedSensor" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1124" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SetStateInAggregatedSensor" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1201" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_Initialize" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1202" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_Initialize" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1203" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_Uninitialize" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1204" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_Uninitialize" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1205" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_ProcessIoControl" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1206" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_ProcessIoControl" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1207" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_PostEvent" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1208" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_PostEvent" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1209" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorClassExtension_ClientInformation" opcode="win:Info" keywords="SensPerf" template="Args1209_0"/>
+        <event value="1301" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_Fire_OnDataUpdated" opcode="win:Start" keywords="SensPerf" template="Args1301_0"/>
+        <event value="1302" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_Fire_OnDataUpdated" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1303" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_GetData" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1304" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_GetData" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1305" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_GetProperty" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1306" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_GetProperty" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1307" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_GetProperties" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1308" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_GetProperties" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1309" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_SetProperties" opcode="win:Start" keywords="SensPerf"/>
+        <event value="1310" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_SetProperties" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1311" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_Fire_OnStateChanged" opcode="win:Start" keywords="SensPerf" template="Args1311_0"/>
+        <event value="1312" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorAPI_Fire_OnStateChanged" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="1501" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1502" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1503" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1504" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1505" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1506" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1507" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1508" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1509" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_FeatureReport_Failure" opcode="win:Info" keywords="SensPerf" template="Args1509_0"/>
+        <event value="1510" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_InputReport_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1511" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_InputReport_Failure" opcode="win:Info" keywords="SensPerf"/>
+        <event value="1512" version="0" level="win:Error"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorsHIDClassDriver_DeviceReconnect" opcode="win:Info" keywords="SensPerf"/>
+        <event value="2001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_LocationProvider_ConsentPrompt" opcode="win:Start" keywords="SensPerf"/>
+        <event value="2002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_LocationProvider_ConsentPrompt" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="3001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorPlatform_GenericMessage" opcode="win:Info" keywords="SensPerf" template="Args3001_0"/>
+        <event value="3002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_SensorPlatform_DataEvent" opcode="win:Info" keywords="SensPerf" template="Args3002_0"/>
+        <event value="10001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_ScreenAutoRotation_e2e_Cancel" opcode="win:Start" keywords="SensPerf" template="Args10001_0"/>
+        <event value="10002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_ScreenAutoRotation_e2e_Cancel" opcode="win:Stop" keywords="SensPerf"/>
+        <event value="10003" version="0" level="win:Informational"  channel="Microsoft-Windows-Sensors/Performance" task="SensPerf_Task_ScreenAutoRotation_DCON" opcode="win:Info" keywords="SensPerf" template="Args10003_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Sensors/Performance" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-Sensors/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="SensPerf" mask="0x1" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="1001" name="SensPerf_Task_DeviceStartup" message="$(string.string1001)">
+        </task>
+        <task value="1002" name="SensPerf_Task_EventLatency" message="$(string.string1002)">
+        </task>
+        <task value="1003" name="SensPerf_Task_SetProperties" message="$(string.string1003)">
+        </task>
+        <task value="1004" name="SensPerf_Task_GetPropertyValues" message="$(string.string1004)">
+        </task>
+        <task value="1005" name="SensPerf_Task_GetDataFields" message="$(string.string1005)">
+        </task>
+        <task value="1006" name="SensPerf_Task_PostDataEvent" message="$(string.string1006)">
+        </task>
+        <task value="1007" name="SensPerf_Task_PreAsyncRead" message="$(string.string1007)">
+        </task>
+        <task value="1008" name="SensPerf_Task_RaiseDataEvent" message="$(string.string1008)">
+        </task>
+        <task value="1009" name="SensPerf_Task_SetState" message="$(string.string1009)">
+        </task>
+        <task value="1010" name="SensPerf_Task_PowerOn" message="$(string.string1010)">
+        </task>
+        <task value="1011" name="SensPerf_Task_PowerOff" message="$(string.string1011)">
+        </task>
+        <task value="1100" name="SensPerf_Task_OnDataUpdated" message="$(string.string1100)">
+        </task>
+        <task value="1101" name="SensPerf_Task_CollectData" message="$(string.string1101)">
+        </task>
+        <task value="1102" name="SensPerf_Task_Signal" message="$(string.string1102)">
+        </task>
+        <task value="1103" name="SensPerf_Task_QuadrantAngle" message="$(string.string1103)">
+        </task>
+        <task value="1104" name="SensPerf_Task_WorkingSet" message="$(string.string1104)">
+        </task>
+        <task value="1105" name="SensPerf_Task_CPUUsage" message="$(string.string1105)">
+        </task>
+        <task value="1106" name="SensPerf_Task_RotationProcessData_State" message="$(string.string1106)">
+        </task>
+        <task value="1107" name="SensPerf_Task_RotationProcessData_DataRetrieved" message="$(string.string1107)">
+        </task>
+        <task value="1108" name="SensPerf_Task_RotationProcessData_PitchAngleTest" message="$(string.string1108)">
+        </task>
+        <task value="1109" name="SensPerf_Task_RotationProcessData_ThetaCalculation" message="$(string.string1109)">
+        </task>
+        <task value="1110" name="SensPerf_Task_RotationProcessData_ThetaNormalization" message="$(string.string1110)">
+        </task>
+        <task value="1111" name="SensPerf_Task_RotationProcessData_QuadrantChangeTest" message="$(string.string1111)">
+        </task>
+        <task value="1112" name="SensPerf_Task_RotationProcessData_TimerQueueStatus" message="$(string.string1112)">
+        </task>
+        <task value="1113" name="SensPerf_Task_RotationTimerCallback_QuadrantChangeTest" message="$(string.string1113)">
+        </task>
+        <task value="1114" name="SensPerf_Task_RotationTimerCallback_AngularThresholdTest" message="$(string.string1114)">
+        </task>
+        <task value="1119" name="SensPerf_Task_SetQuadrantAngleInAggregatedSensor" message="$(string.string1119)">
+        </task>
+        <task value="1120" name="SensPerf_Task_OnStateChanged" message="$(string.string1120)">
+        </task>
+        <task value="1121" name="SensPerf_Task_SetStateInAggregatedSensor" message="$(string.string1121)">
+        </task>
+        <task value="1201" name="SensPerf_Task_SensorClassExtension_Initialize" message="$(string.string1201)">
+        </task>
+        <task value="1202" name="SensPerf_Task_SensorClassExtension_Uninitialize" message="$(string.string1202)">
+        </task>
+        <task value="1203" name="SensPerf_Task_SensorClassExtension_ProcessIoControl" message="$(string.string1203)">
+        </task>
+        <task value="1204" name="SensPerf_Task_SensorClassExtension_PostEvent" message="$(string.string1204)">
+        </task>
+        <task value="1205" name="SensPerf_Task_SensorClassExtension_ClientInformation" message="$(string.string1205)">
+        </task>
+        <task value="1301" name="SensPerf_Task_SensorAPI_Fire_OnDataUpdated" message="$(string.string1301)">
+        </task>
+        <task value="1302" name="SensPerf_Task_SensorAPI_GetData" message="$(string.string1302)">
+        </task>
+        <task value="1303" name="SensPerf_Task_SensorAPI_GetProperty" message="$(string.string1303)">
+        </task>
+        <task value="1304" name="SensPerf_Task_SensorAPI_GetProperties" message="$(string.string1304)">
+        </task>
+        <task value="1305" name="SensPerf_Task_SensorAPI_SetProperties" message="$(string.string1305)">
+        </task>
+        <task value="1306" name="SensPerf_Task_SensorAPI_Fire_OnStateChanged" message="$(string.string1306)">
+        </task>
+        <task value="1501" name="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" message="$(string.string1501)">
+        </task>
+        <task value="1502" name="SensPerf_Task_SensorsHIDClassDriver_FeatureReport_Failure" message="$(string.string1502)">
+        </task>
+        <task value="1503" name="SensPerf_Task_SensorsHIDClassDriver_InputReport_Failure" message="$(string.string1503)">
+        </task>
+        <task value="1504" name="SensPerf_Task_SensorsHIDClassDriver_DeviceReconnect" message="$(string.string1504)">
+        </task>
+        <task value="2001" name="SensPerf_Task_LocationProvider_ConsentPrompt" message="$(string.string2001)">
+        </task>
+        <task value="3001" name="SensPerf_Task_SensorPlatform_GenericMessage" message="$(string.string3001)">
+        </task>
+        <task value="3002" name="SensPerf_Task_SensorPlatform_DataEvent" message="$(string.string3002)">
+        </task>
+        <task value="10001" name="SensPerf_Task_ScreenAutoRotation_e2e_Cancel" message="$(string.string10001)">
+        </task>
+        <task value="10002" name="SensPerf_Task_ScreenAutoRotation_DCON" message="$(string.string10002)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="DeviceID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="SensorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1005_0">
+          <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1015_0">
+          <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+          <data name="NumSubscribers" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1016_0">
+          <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1100_0">
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args1102_0">
+          <data name="WorkingSet" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1103_0">
+          <data name="CPUUsage" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1104_0">
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="ReportPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SensorStateThisSensor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SensorStateAccumulated" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1105_0">
+          <data name="QuadrantAngle" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1107_0">
+          <data name="AccelerationX" inType="win:Float" outType="xs:float"  />
+          <data name="AccelerationY" inType="win:Float" outType="xs:float"  />
+          <data name="AccelerationZ" inType="win:Float" outType="xs:float"  />
+          <data name="PitchCalibration" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1108_0">
+          <data name="IsPitchGreaterThanThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PitchAngle" inType="win:Float" outType="xs:float"  />
+          <data name="PitchThreshold" inType="win:Float" outType="xs:float"  />
+          <data name="PitchCalibration" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1109_0">
+          <data name="Theta" inType="win:Float" outType="xs:float"  />
+          <data name="AngularCalibration" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1111_0">
+          <data name="GoodAngle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Quadrant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastQuadrant" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1112_0">
+          <data name="TimerQueueStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimerQueueAction" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1113_0">
+          <data name="GoodAngle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Quadrant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastQuadrant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Theta" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1114_0">
+          <data name="GoodAngle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Quadrant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AngularThreshold" inType="win:Float" outType="xs:float"  />
+          <data name="Theta" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args1121_0">
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1209_0">
+          <data name="EventNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EventCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectedClients" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SubscribedClients" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SilentClients" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientBitfield" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1301_0">
+          <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args1311_0">
+          <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1509_0">
+          <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args3001_0">
+          <data name="GenericMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3002_0">
+          <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MethodId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10001_0">
+          <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10003_0">
+          <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QuadrantChangeInterval" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Angle" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Sensors" />
+       <string id="string1" value="Microsoft-Windows-Sensors/Debug" />
+       <string id="string2" value="Microsoft-Windows-Sensors/Performance" />
+       <string id="string3" value="SensPerf" />
+       <string id="string4" value="SensPerf_Task_CollectData" />
+       <string id="string5" value="SensPerf_Task_CPUUsage" />
+       <string id="string6" value="SensPerf_Task_DeviceStartup" />
+       <string id="string7" value="SensPerf_Task_EventLatency" />
+       <string id="string8" value="SensPerf_Task_GetDataFields" />
+       <string id="string9" value="SensPerf_Task_GetPropertyValues" />
+       <string id="string10" value="SensPerf_Task_LocationProvider_ConsentPrompt" />
+       <string id="string11" value="SensPerf_Task_OnDataUpdated" />
+       <string id="string12" value="SensPerf_Task_OnStateChanged" />
+       <string id="string13" value="SensPerf_Task_PostDataEvent" />
+       <string id="string14" value="SensPerf_Task_PowerOff" />
+       <string id="string15" value="SensPerf_Task_PowerOn" />
+       <string id="string16" value="SensPerf_Task_PreAsyncRead" />
+       <string id="string17" value="SensPerf_Task_QuadrantAngle" />
+       <string id="string18" value="SensPerf_Task_RaiseDataEvent" />
+       <string id="string19" value="SensPerf_Task_RotationProcessData_DataRetrieved" />
+       <string id="string20" value="SensPerf_Task_RotationProcessData_PitchAngleTest" />
+       <string id="string21" value="SensPerf_Task_RotationProcessData_QuadrantChangeTest" />
+       <string id="string22" value="SensPerf_Task_RotationProcessData_State" />
+       <string id="string23" value="SensPerf_Task_RotationProcessData_ThetaCalculation" />
+       <string id="string24" value="SensPerf_Task_RotationProcessData_ThetaNormalization" />
+       <string id="string25" value="SensPerf_Task_RotationProcessData_TimerQueueStatus" />
+       <string id="string26" value="SensPerf_Task_RotationTimerCallback_AngularThresholdTest" />
+       <string id="string27" value="SensPerf_Task_RotationTimerCallback_QuadrantChangeTest" />
+       <string id="string28" value="SensPerf_Task_ScreenAutoRotation_DCON" />
+       <string id="string29" value="SensPerf_Task_ScreenAutoRotation_e2e_Cancel" />
+       <string id="string30" value="SensPerf_Task_SensorAPI_Fire_OnDataUpdated" />
+       <string id="string31" value="SensPerf_Task_SensorAPI_Fire_OnStateChanged" />
+       <string id="string32" value="SensPerf_Task_SensorAPI_GetData" />
+       <string id="string33" value="SensPerf_Task_SensorAPI_GetProperties" />
+       <string id="string34" value="SensPerf_Task_SensorAPI_GetProperty" />
+       <string id="string35" value="SensPerf_Task_SensorAPI_SetProperties" />
+       <string id="string36" value="SensPerf_Task_SensorClassExtension_ClientInformation" />
+       <string id="string37" value="SensPerf_Task_SensorClassExtension_Initialize" />
+       <string id="string38" value="SensPerf_Task_SensorClassExtension_PostEvent" />
+       <string id="string39" value="SensPerf_Task_SensorClassExtension_ProcessIoControl" />
+       <string id="string40" value="SensPerf_Task_SensorClassExtension_Uninitialize" />
+       <string id="string41" value="SensPerf_Task_SensorPlatform_DataEvent" />
+       <string id="string42" value="SensPerf_Task_SensorPlatform_GenericMessage" />
+       <string id="string43" value="SensPerf_Task_SensorsHIDClassDriver_DeviceReconnect" />
+       <string id="string44" value="SensPerf_Task_SensorsHIDClassDriver_FeatureReport_Failure" />
+       <string id="string45" value="SensPerf_Task_SensorsHIDClassDriver_InputReport_Failure" />
+       <string id="string46" value="SensPerf_Task_SensorsHIDClassDriver_ReportDescriptorValidaton_Failure" />
+       <string id="string47" value="SensPerf_Task_SetProperties" />
+       <string id="string48" value="SensPerf_Task_SetQuadrantAngleInAggregatedSensor" />
+       <string id="string49" value="SensPerf_Task_SetState" />
+       <string id="string50" value="SensPerf_Task_SetStateInAggregatedSensor" />
+       <string id="string51" value="SensPerf_Task_Signal" />
+       <string id="string52" value="SensPerf_Task_WorkingSet" />
+       <string id="string53" value="win:Info" />
+       <string id="string54" value="win:Start" />
+       <string id="string55" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

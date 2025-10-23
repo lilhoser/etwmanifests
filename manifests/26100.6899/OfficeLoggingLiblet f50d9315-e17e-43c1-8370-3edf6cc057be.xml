@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="OfficeLoggingLiblet" name="OfficeLoggingLiblet" guid="{f50d9315-e17e-43c1-8370-3edf6cc057be}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Error"  channel="General Logging" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet" template="Args100_0"/>
+        <event value="101" version="0" level="win:Warning"  channel="General Logging" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet"/>
+        <event value="102" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet"/>
+        <event value="103" version="0" level="win:Verbose"  channel="General Logging" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet"/>
+        <event value="104" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskLogging" opcode="win:Info" keywords="LoggingLiblet"/>
+        <event value="105" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLoggingScope" opcode="win:Start" keywords="LoggingScope" template="Args105_0"/>
+        <event value="106" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLoggingScope" opcode="win:Stop" keywords="LoggingScope"/>
+        <event value="107" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLoggingScope" opcode="Mso Logging Scope long stop Opcode" keywords="LoggingScope" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLoggingScope" opcode="win:Start" keywords="LoggingScope" template="Args108_0"/>
+        <event value="109" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLoggingScope" opcode="win:Stop" keywords="LoggingScope"/>
+        <event value="110" version="0" level="win:Informational"  channel="General Logging" task="etwtaskLoggingScope" opcode="Mso Logging Scope long stop Opcode" keywords="LoggingScope"/>
+        <event value="200" version="0" level="win:Informational"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="DiskIO" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="NetworkUsage" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="MemoryUsage" template="Args202_0"/>
+        <event value="1000" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1000_0"/>
+        <event value="1001" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1001_0"/>
+        <event value="1002" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1002_0"/>
+        <event value="1003" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1003_0"/>
+        <event value="1004" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1004_0"/>
+        <event value="1005" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1005_0"/>
+        <event value="1006" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1006_0"/>
+        <event value="1007" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1007_0"/>
+        <event value="1008" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic"/>
+        <event value="1009" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic" template="Args1009_0"/>
+        <event value="1010" version="0" level="VerboseEx"  channel="General Logging" task="etwtaskResourceUsage" opcode="win:Info" keywords="ResourceUsageDiagnostic"/>
+      </events>
+      <channels>
+        <channel value="16" name="General Logging" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="LoggingScope" mask="0x100" message="$(string.string6)" />
+        <keyword name="DiskIO" mask="0x200" message="$(string.string0)" />
+        <keyword name="NetworkUsage" mask="0x400" message="$(string.string9)" />
+        <keyword name="ResourceUsageDiagnostic" mask="0x800" message="$(string.string11)" />
+        <keyword name="MemoryUsage" mask="0x1000" message="$(string.string7)" />
+        <keyword name="LoggingLiblet" mask="0x2000" message="$(string.string5)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="etwtaskLogging" message="$(string.string1)">
+        </task>
+        <task value="2" name="etwtaskLoggingScope" message="$(string.string2)">
+          <opcodes>
+           <opcode value="10" name="Mso Logging Scope long stop Opcode" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="etwtaskResourceUsage" message="$(string.string3)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="win:Complete" message="$(string.string12)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args100_0">
+          <data name="wzProduct" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzCategory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzTag" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="wzMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwParentInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="lpScopeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="lpParentScenarioName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwParentScenarioTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwParentInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bWasSuccessful" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bWasErrorCodeSet" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ErrorCode" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args108_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="lpScenarioName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FilesCreated" inType="win:Int64" outType="xs:long"  />
+          <data name="NumberOfFileReads" inType="win:Int64" outType="xs:long"  />
+          <data name="TotalBytesRead" inType="win:Int64" outType="xs:long"  />
+          <data name="NumberOfFileWrites" inType="win:Int64" outType="xs:long"  />
+          <data name="TotalBytesWritten" inType="win:Int64" outType="xs:long"  />
+          <data name="NumberOfSetEndOfFiles" inType="win:Int64" outType="xs:long"  />
+          <data name="NumberOfSeeks" inType="win:Int64" outType="xs:long"  />
+          <data name="NumberOfLocks" inType="win:Int64" outType="xs:long"  />
+          <data name="NumberOfUnlocks" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Requests" inType="win:Int64" outType="xs:long"  />
+          <data name="BytesSent" inType="win:Int64" outType="xs:long"  />
+          <data name="ElapsedMilliseconds" inType="win:Int64" outType="xs:long"  />
+          <data name="BytesReceived" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="dwTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwInstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesUsedDelta" inType="win:Int64" outType="xs:long"  />
+          <data name="BytesUsedAtComplete" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1000_0">
+          <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourceScopePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FileUsagePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ScopePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourceScopePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NetworkUsagePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="ChildScopePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParentScopePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TypeOfData" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1004_0">
+          <data name="Result" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="StartCounter" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1005_0">
+          <data name="Result" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="StartCounter" inType="win:Int64" outType="xs:long"  />
+          <data name="StopCounter" inType="win:Int64" outType="xs:long"  />
+          <data name="ElapsedCounters" inType="win:Int64" outType="xs:long"  />
+          <data name="ElapsedMilliseconds" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1006_0">
+          <data name="Result" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Frequency" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1007_0">
+          <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CurrentResourcePrt" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1009_0">
+          <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourceScopePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MemoryUsagePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DiskIO" />
+       <string id="string1" value="etwtaskLogging" />
+       <string id="string2" value="etwtaskLoggingScope" />
+       <string id="string3" value="etwtaskResourceUsage" />
+       <string id="string4" value="General Logging" />
+       <string id="string5" value="LoggingLiblet" />
+       <string id="string6" value="LoggingScope" />
+       <string id="string7" value="MemoryUsage" />
+       <string id="string8" value="Mso Logging Scope long stop Opcode" />
+       <string id="string9" value="NetworkUsage" />
+       <string id="string10" value="OfficeLoggingLiblet" />
+       <string id="string11" value="ResourceUsageDiagnostic" />
+       <string id="string12" value="win:Complete" />
+       <string id="string13" value="win:Info" />
+       <string id="string14" value="win:Start" />
+       <string id="string15" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

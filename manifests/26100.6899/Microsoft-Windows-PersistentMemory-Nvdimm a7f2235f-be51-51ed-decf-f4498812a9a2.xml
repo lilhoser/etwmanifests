@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PersistentMemory-Nvdimm" name="Microsoft-Windows-PersistentMemory-Nvdimm" guid="{a7f2235f-be51-51ed-decf-f4498812a9a2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="306" version="0" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args306_0"/>
+        <event value="900" version="0" level="win:Verbose"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Diagnostic"/>
+        <event value="205" version="1" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args205_1"/>
+        <event value="303" version="1" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args303_1"/>
+        <event value="304" version="1" level="win:Warning"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="400" version="1" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args400_1"/>
+        <event value="401" version="1" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="402" version="1" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="403" version="1" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="404" version="1" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="405" version="1" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="406" version="1" level="win:Warning"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="407" version="1" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="509" version="1" level="win:Warning"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args509_1"/>
+        <event value="201" version="2" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args201_2"/>
+        <event value="202" version="2" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="203" version="2" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args203_2"/>
+        <event value="206" version="2" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args206_2"/>
+        <event value="207" version="2" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="300" version="2" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args300_2"/>
+        <event value="301" version="2" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="302" version="2" level="win:Warning"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="305" version="2" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="501" version="2" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" template="Args501_2"/>
+        <event value="502" version="2" level="win:Critical"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="503" version="2" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="504" version="2" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="505" version="2" level="win:Warning"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="506" version="2" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="507" version="2" level="win:Error"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+        <event value="508" version="2" level="win:Informational"  channel="Microsoft-Windows-PersistentMemory-Nvdimm/Operational"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-PersistentMemory-Nvdimm/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-PersistentMemory-Nvdimm/Diagnostic" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args306_0">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args205_1">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NtStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args303_1">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MemoryEventCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args400_1">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="LostDataPersistence" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LostWritePersistence" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FatalError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LostDataPersistenceImminent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LostWritePersistenceImminent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FatalErrorImminent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NvdimmNotArmed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args509_1">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecurityState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args201_2">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args203_2">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BaselineUnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args206_2">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SaveFailed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RestoreFailed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PlatformFlushFailed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ArmFailed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TechnologySpecificDetails" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args300_2">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LostPersistence" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WarningThresholdExceeded" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PersistenceRestored" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BelowWarningThreshold" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_VoltageRegulatorFailed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_VddLost" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_VppLost" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_VttLost" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_DramNotInSelfRefresh" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_ControllerHardwareError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_NvmControllerError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_NotEnoughEnergyForSave" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_InvalidFirmwareError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_ConfigDataError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_NoEnergySourcePresent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_EnergySourcePolicyNotSet" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_EnergySourceHardwareError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ModuleHealth_EnergySourceHealthAssessmentError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EncodedModuleTemperature" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorThreshold_NvmLifetimeError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ErrorThreshold_EnergySourceLifetimeError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ErrorThreshold_EnergySourceTemperatureError" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WarningThreshold_NvmLifetimeWarning" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WarningThreshold_EnergySourceLifetimeWarning" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WarningThreshold_EnergySourceTemperatureWarning" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NvmLifetimePercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UncorrectableMemoryErrorCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CorrectableMemoryErrorAboveThresholdEventCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastBackup_TriggerInformation" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="LastBackup_SaveFailureInformation" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args501_2">
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NfitHandle" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SlotNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ProductId" inType="win:AnsiString" outType="xs:string"  />
+          <data name="SerialNumber" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Location" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FatalStatus" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CriticalStatus" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NonCriticalStatus" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SpareBlocksRemainingPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LifetimePercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AlarmTrip_SpareBlocksRemaining" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AlarmTrip_MediaTemperature" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AlarmTrip_ControllerTemperature" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MediaTemperatureInMultiple" inType="win:Int32" outType="xs:int"  />
+          <data name="ControllerTemperatureInMultiple" inType="win:Int32" outType="xs:int"  />
+          <data name="UnsafeShutdownCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AitDramStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastShutdownStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HealthCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="IsEnergyBacked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EnergySourceFailed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnergySourceHealthCheckStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="VendorSpecificDataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorSpecificData" inType="win:Binary" outType="xs:hexBinary" length="VendorSpecificDataSize" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-PersistentMemory-Nvdimm" />
+       <string id="string1" value="Microsoft-Windows-PersistentMemory-Nvdimm/Analytic" />
+       <string id="string2" value="Microsoft-Windows-PersistentMemory-Nvdimm/Diagnostic" />
+       <string id="string3" value="Microsoft-Windows-PersistentMemory-Nvdimm/Operational" />
+       <string id="string4" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

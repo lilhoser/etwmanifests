@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MSMPEG2ADEC" name="Microsoft-Windows-MSMPEG2ADEC" guid="{51311de3-d55e-454a-9c58-43dc7b4c01d2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="OUTPUT_SAMPLE_DELIVERED"/>
+        <event value="1" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="DECODE" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="DECODE" opcode="win:Stop"/>
+        <event value="3" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_MEDIATYPE_CHANGE" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_BINDING_BLOB_TYPE" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="PLAYBACK" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="PLAYBACK" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="GETOUTPUT" opcode="win:Start"/>
+        <event value="8" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="GETOUTPUT" opcode="win:Stop"/>
+        <event value="9" version="0" level="win:Error"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="GETOUTPUT"/>
+        <event value="10" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_DUALMONO_CHANGE" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_DOLBY_MODE_CHANGE"/>
+        <event value="12" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_DOLBY_CUTBOOST_CHANGE"/>
+        <event value="13" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_LEQ_CHANGE"/>
+        <event value="14" version="0" level="win:Error"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUDDECODE_FRAME_ERROR"/>
+        <event value="15" version="0" level="win:Warning"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_RESYNC"/>
+        <event value="16" version="0" level="win:Informational"  channel="WINDOWS_MSMPEG2ADEC_CHANNEL" task="AUD_CODECTYPE_CHANGE"/>
+      </events>
+      <channels>
+        <channel value="16" name="WINDOWS_MSMPEG2ADEC_CHANNEL" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="OUTPUT_SAMPLE_DELIVERED" message="$(string.string1)">
+        </task>
+        <task value="2" name="DECODE" message="$(string.string2)">
+        </task>
+        <task value="3" name="AUD_MEDIATYPE_CHANGE" message="$(string.string3)">
+        </task>
+        <task value="4" name="AUD_BINDING_BLOB_TYPE" message="$(string.string4)">
+        </task>
+        <task value="5" name="PLAYBACK" message="$(string.string5)">
+        </task>
+        <task value="6" name="GETOUTPUT" message="$(string.string6)">
+        </task>
+        <task value="7" name="AUD_DUALMONO_CHANGE" message="$(string.string7)">
+        </task>
+        <task value="8" name="AUD_DOLBY_MODE_CHANGE" message="$(string.string8)">
+        </task>
+        <task value="9" name="AUD_DOLBY_CUTBOOST_CHANGE" message="$(string.string9)">
+        </task>
+        <task value="10" name="AUD_LEQ_CHANGE" message="$(string.string10)">
+        </task>
+        <task value="11" name="AUDDECODE_FRAME_ERROR" message="$(string.string11)">
+        </task>
+        <task value="12" name="AUD_RESYNC" message="$(string.string12)">
+        </task>
+        <task value="13" name="AUD_CODECTYPE_CHANGE" message="$(string.string13)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args3_0">
+          <data name="srcSamplingRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AudioMode" inType="win:Int8" outType="xs:byte"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="BlobVer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LicensorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="dwordarg" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AUD_BINDING_BLOB_TYPE" />
+       <string id="string1" value="AUD_CODECTYPE_CHANGE" />
+       <string id="string2" value="AUD_DOLBY_CUTBOOST_CHANGE" />
+       <string id="string3" value="AUD_DOLBY_MODE_CHANGE" />
+       <string id="string4" value="AUD_DUALMONO_CHANGE" />
+       <string id="string5" value="AUD_LEQ_CHANGE" />
+       <string id="string6" value="AUD_MEDIATYPE_CHANGE" />
+       <string id="string7" value="AUD_RESYNC" />
+       <string id="string8" value="AUDDECODE_FRAME_ERROR" />
+       <string id="string9" value="DECODE" />
+       <string id="string10" value="GETOUTPUT" />
+       <string id="string11" value="Microsoft-Windows-MSMPEG2ADEC" />
+       <string id="string12" value="OUTPUT_SAMPLE_DELIVERED" />
+       <string id="string13" value="PLAYBACK" />
+       <string id="string14" value="win:Start" />
+       <string id="string15" value="win:Stop" />
+       <string id="string16" value="WINDOWS_MSMPEG2ADEC_CHANNEL" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

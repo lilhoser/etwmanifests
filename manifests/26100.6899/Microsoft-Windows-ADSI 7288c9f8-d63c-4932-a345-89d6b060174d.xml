@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ADSI" name="Microsoft-Windows-ADSI" guid="{7288c9f8-d63c-4932-a345-89d6b060174d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-ADSI/Debug" keywords="schema" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  channel="Microsoft-Windows-ADSI/Debug" keywords="schema"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-ADSI/Debug" keywords="changepwd"/>
+        <event value="4" version="0" level="win:Error"  channel="Microsoft-Windows-ADSI/Debug" keywords="changepwd"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-ADSI/Debug" keywords="setpwd"/>
+        <event value="6" version="0" level="win:Error"  channel="Microsoft-Windows-ADSI/Debug" keywords="setpwd"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-ADSI/Debug" keywords="bindcache"/>
+        <event value="8" version="0" level="win:Error"  channel="Microsoft-Windows-ADSI/Debug" keywords="bindcache"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ADSI/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="schema" mask="0x1" message="$(string.string4)" />
+        <keyword name="changepwd" mask="0x2" message="$(string.string1)" />
+        <keyword name="setpwd" mask="0x4" message="$(string.string5)" />
+        <keyword name="bindcache" mask="0x8" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="bindcache" />
+       <string id="string1" value="changepwd" />
+       <string id="string2" value="Microsoft-Windows-ADSI" />
+       <string id="string3" value="Microsoft-Windows-ADSI/Debug" />
+       <string id="string4" value="schema" />
+       <string id="string5" value="setpwd" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

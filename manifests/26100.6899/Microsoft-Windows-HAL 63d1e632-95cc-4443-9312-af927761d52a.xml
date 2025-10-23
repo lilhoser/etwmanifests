@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-HAL" name="Microsoft-Windows-HAL" guid="{63d1e632-95cc-4443-9312-af927761d52a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Warning"  channel="System" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  channel="System"/>
+        <event value="3" version="0" level="win:Warning"  channel="System"/>
+        <event value="4" version="0" level="win:Warning"  channel="System"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-HAL/Debug"/>
+        <event value="7" version="0" level="win:Verbose"  channel="Microsoft-Windows-HAL/Debug" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-HAL/Debug" template="Args8_0"/>
+        <event value="9" version="0" level="win:Verbose"  channel="Microsoft-Windows-HAL/Debug" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-HAL/Debug"/>
+        <event value="11" version="0" level="win:Warning"  channel="System"/>
+        <event value="12" version="0" level="win:Error"  channel="System" keywords="halDiagnostic" template="Args12_0"/>
+        <event value="13" version="0" level="win:Error"  channel="System"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-HAL/Debug"/>
+        <event value="15" version="0" level="win:Error"  channel="System" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="System"/>
+        <event value="17" version="0" level="win:Warning"  channel="System"/>
+        <event value="18" version="0" level="win:Warning"  channel="System"/>
+        <event value="19" version="0" level="win:Error"  channel="System" template="Args19_0"/>
+        <event value="20" version="0" level="win:Error"  channel="System"/>
+        <event value="21" version="0" level="win:Error"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-HAL/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="halDiagnostic" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="LeadProcessor" inType="win:Int32" outType="xs:int"  />
+          <data name="TargetProcessor" inType="win:Int32" outType="xs:int"  />
+          <data name="Delta" inType="win:Int64" outType="xs:long"  />
+          <data name="NopCycles" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="LeadProcessor" inType="win:Int32" outType="xs:int"  />
+          <data name="MaximumPositiveDeltaProcessor" inType="win:Int32" outType="xs:int"  />
+          <data name="MaximumPositiveDelta" inType="win:Int32" outType="xs:int"  />
+          <data name="MaximumNegativeDelta" inType="win:Int32" outType="xs:int"  />
+          <data name="Microseconds" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="SourceProcessor" inType="win:Int32" outType="xs:int"  />
+          <data name="TargetProcessor" inType="win:Int32" outType="xs:int"  />
+          <data name="Delta" inType="win:Int64" outType="xs:long"  />
+          <data name="Bias" inType="win:Int64" outType="xs:long"  />
+          <data name="Wave" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FirstPage" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LastPage" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="SourceId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FaultInformation" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FaultReason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ExtendedData" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="APIIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FailureInformation1" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FailureInformation2" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="halDiagnostic" />
+       <string id="string1" value="Microsoft-Windows-HAL" />
+       <string id="string2" value="Microsoft-Windows-HAL/Debug" />
+       <string id="string3" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

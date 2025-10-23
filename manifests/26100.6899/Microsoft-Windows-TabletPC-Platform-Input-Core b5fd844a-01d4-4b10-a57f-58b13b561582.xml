@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TabletPC-Platform-Input-Core" name="Microsoft-Windows-TabletPC-Platform-Input-Core" guid="{b5fd844a-01d4-4b10-a57f-58b13b561582}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="69" version="0" level="win:Informational"  task="TABLET_INPUT_OverPan_SlideWindow" opcode="win:Start"/>
+        <event value="70" version="0" level="win:Informational"  task="TABLET_INPUT_OverPan_SlideWindow" opcode="win:Stop"/>
+        <event value="71" version="0" level="win:Informational"  task="TABLET_INPUT_OverPan_SnapBack" opcode="win:Start"/>
+        <event value="72" version="0" level="win:Informational"  task="TABLET_INPUT_OverPan_SnapBack" opcode="win:Stop"/>
+        <event value="73" version="0" level="win:Informational"  task="TABLET_INPUT_OverPan_SlideWindow_WithMomentum" opcode="win:Start"/>
+        <event value="74" version="0" level="win:Informational"  task="TABLET_INPUT_OverPan_SlideWindow_WithMomentum" opcode="win:Stop"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="37" name="TABLET_INPUT_OverPan_SlideWindow" message="$(string.string37)">
+        </task>
+        <task value="38" name="TABLET_INPUT_OverPan_SnapBack" message="$(string.string38)">
+        </task>
+        <task value="39" name="TABLET_INPUT_OverPan_SlideWindow_WithMomentum" message="$(string.string39)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-TabletPC-Platform-Input-Core" />
+       <string id="string1" value="TABLET_INPUT_OverPan_SlideWindow" />
+       <string id="string2" value="TABLET_INPUT_OverPan_SlideWindow_WithMomentum" />
+       <string id="string3" value="TABLET_INPUT_OverPan_SnapBack" />
+       <string id="string4" value="win:Start" />
+       <string id="string5" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

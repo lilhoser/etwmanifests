@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Shell-ConnectedAccountState" name="Microsoft-Windows-Shell-ConnectedAccountState" guid="{6df57621-e7e4-410f-a7e9-e43eeb61b11f}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-ConnectedAccountState/ActionCenter" template="Args100_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Shell-ConnectedAccountState/ActionCenter" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Shell-ConnectedAccountState" />
+       <string id="string1" value="Microsoft-Windows-Shell-ConnectedAccountState/ActionCenter" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

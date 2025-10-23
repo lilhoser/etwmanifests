@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-BranchCacheClientEventProvider" name="Microsoft-Windows-BranchCacheClientEventProvider" guid="{e837619c-a2a8-4689-833f-47b48ebd2442}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="10100" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+        <event value="10101" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+        <event value="10102" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+        <event value="10103" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic" template="Args10103_0"/>
+        <event value="10104" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+        <event value="10105" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+        <event value="10106" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+        <event value="10107" version="0" level="win:Informational"  channel="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args10103_0">
+          <data name="ErrorCode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-BranchCacheClientEventProvider" />
+       <string id="string1" value="Microsoft-Windows-BranchCacheClientEventProvider/Diagnostic" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

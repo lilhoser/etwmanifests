@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Volsnap" name="Volsnap" guid="{cb017cd2-1f37-4e65-82bc-3e91f6a37559}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="6" level="win:Error"  template="Args1_6"/>
+        <event value="2" version="6" level="win:Error" />
+        <event value="3" version="6" level="win:Error" />
+        <event value="4" version="6" level="win:Error" />
+        <event value="5" version="6" level="win:Error" />
+        <event value="6" version="6" level="win:Error" />
+        <event value="7" version="6" level="win:Error" />
+        <event value="8" version="6" level="win:Error" />
+        <event value="9" version="6" level="win:Error" />
+        <event value="10" version="6" level="win:Error" />
+        <event value="13" version="6" level="win:Error" />
+        <event value="14" version="6" level="win:Error" />
+        <event value="15" version="6" level="win:Error" />
+        <event value="16" version="6" level="win:Error" />
+        <event value="17" version="6" level="win:Error" />
+        <event value="20" version="6" level="win:Error" />
+        <event value="21" version="6" level="win:Error" />
+        <event value="22" version="6" level="win:Error" />
+        <event value="23" version="6" level="win:Error" />
+        <event value="24" version="6" level="win:Warning" />
+        <event value="25" version="6" level="win:Error" />
+        <event value="27" version="6" level="win:Error" />
+        <event value="28" version="6" level="win:Error" />
+        <event value="29" version="6" level="win:Error" />
+        <event value="30" version="6" level="win:Warning" />
+        <event value="31" version="6" level="win:Error" />
+        <event value="32" version="6" level="win:Error" />
+        <event value="33" version="6" level="win:Informational" />
+        <event value="35" version="6" level="win:Error" />
+        <event value="36" version="6" level="win:Error" />
+        <event value="38" version="6" level="win:Warning" />
+        <event value="39" version="6" level="win:Error" />
+        <event value="40" version="6" level="win:Error" />
+        <event value="41" version="6" level="win:Error" />
+        <event value="48" version="6" level="win:Error" />
+        <event value="58" version="6" level="win:Informational" />
+        <event value="59" version="6" level="win:Error" />
+        <event value="60" version="6" level="win:Error" />
+        <event value="61" version="6" level="win:Warning" />
+        <event value="62" version="6" level="win:Warning" />
+        <event value="63" version="6" level="win:Error" />
+        <event value="64" version="6" level="win:Informational" />
+        <event value="65" version="6" level="win:Informational" />
+        <event value="66" version="6" level="win:Informational" />
+        <event value="67" version="6" level="win:Error" />
+        <event value="80" version="6" level="win:Error" />
+        <event value="81" version="6" level="win:Error" />
+        <event value="82" version="6" level="win:Error" />
+        <event value="83" version="6" level="win:Error" />
+        <event value="84" version="6" level="win:Error" />
+        <event value="85" version="6" level="win:Error" />
+        <event value="86" version="6" level="win:Error" />
+        <event value="87" version="6" level="win:Error" />
+        <event value="88" version="6" level="win:Error" />
+        <event value="89" version="6" level="win:Error" />
+        <event value="90" version="6" level="win:Error" />
+        <event value="91" version="6" level="win:Error" />
+        <event value="92" version="6" level="win:Error" />
+        <event value="93" version="6" level="win:Error" />
+        <event value="94" version="6" level="win:Error" />
+        <event value="95" version="6" level="win:Informational" />
+        <event value="96" version="6" level="win:Error" />
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="192" name=""/>
+        <opcode value="128" name=""/>
+        <opcode value="64" name=""/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_6">
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DiffAreaVolumeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NTSTATUS" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SourceTag" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SourceFileID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SourceLine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="" />
+       <string id="string1" value="System" />
+       <string id="string2" value="Volsnap" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

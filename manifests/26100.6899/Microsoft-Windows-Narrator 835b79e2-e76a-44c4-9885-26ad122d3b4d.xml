@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Narrator" name="Microsoft-Windows-Narrator" guid="{835b79e2-e76a-44c4-9885-26ad122d3b4d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="LaunchApp" opcode="win:Start" keywords="NarratorStartup PerfInstrumentation"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="LaunchApp" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ScrapeWindow" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ScrapeWindow" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitiateSpeaking" opcode="win:Start" keywords="PerfInstrumentation" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitiateSpeaking" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CancelSpeaking" opcode="win:Info" keywords="PerfInstrumentation" template="Args7_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ModeChange" opcode="win:Info" keywords="PerfInstrumentation" template="Args9_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorCommandGenerated" opcode="win:Start" keywords="PerfInstrumentation" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorCommandGenerated" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorCursorUpdated" opcode="win:Info" keywords="PerfInstrumentation" template="Args15_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InvestigationCursorUpdated" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorCheckSAPIVoices" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorCheckSAPIVoices" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="KeyEchoGenerateEvent" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="LaunchSearchAndSelect" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="LaunchSearchAndSelect" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="QueueAppEvent" opcode="win:Info" keywords="PerfInstrumentation" template="Args25_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="AppClose" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SetProgressBarHandler" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SetProgressBarHandler" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TouchModeSwitch" opcode="win:Info" keywords="PerfInstrumentation" template="Args31_0"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ConsoleUpdated" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="OSKToggled" opcode="win:Info" keywords="PerfInstrumentation" template="Args35_0"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ScreenRotated" opcode="win:Info" keywords="PerfInstrumentation" template="Args37_0"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TaskbarIsFlashing" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ExplorerStateChange" opcode="win:Info" keywords="PerfInstrumentation" template="Args41_0"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessFocusChange" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessFocusChange" opcode="win:Stop" keywords="NarratorStartup PerfInstrumentation" template="Args44_0"/>
+        <event value="45" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ToggleSelectionMode" opcode="win:Info" keywords="PerfInstrumentation" template="Args45_0"/>
+        <event value="47" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessNarratorCommand" opcode="win:Start" keywords="PerfInstrumentation" template="Args47_0"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessNarratorCommand" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="49" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SAPISpeechComplete" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorPlaySound" opcode="win:Info" keywords="PerfInstrumentation" template="Args50_0"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="EventQueued" opcode="win:Info" keywords="PerfInstrumentation" template="Args51_0"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessInputEvent" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorGetElementFromPoint" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="54" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorGetElementFromPoint" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="55" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InvestigateUpdateTextPattern" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="56" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InvestigateUpdateTextPattern" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="57" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextPatternUpdateCursor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextPatternUpdateCursor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="59" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SetFocus" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="60" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="RenderFocus" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="RenderFocus" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="62" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextQueued" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="63" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="HighlightCursor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="64" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="HighlightCursor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="65" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SetFocus" opcode="win:Stop" keywords="PerfInstrumentation" template="Args65_0"/>
+        <event value="66" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessInputEvent" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="67" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextDequeued" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="68" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SapiTextSpeak" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="69" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NavigationOriginId" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="70" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NavigationOriginId" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="71" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NavigationTargetId" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="72" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NavigationTargetId" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="74" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaFocusVerification" opcode="win:Start" keywords="PerfInstrumentation" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaFocusVerification" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="76" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaSecondFocusVerification" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="77" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaSecondFocusVerification" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="78" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CheckContext" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="79" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CheckContext" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="82" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitializeGlobals" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="83" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitializeGlobals" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="84" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitializeMonitors" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="85" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitializeMonitors" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="86" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="BeginMonitoring" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="87" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="BeginMonitoring" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="88" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CreateUi" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="89" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CreateUi" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="90" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ExitNarratorSpeech" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="91" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ExitNarratorSpeech" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="92" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownMonitors" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="93" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownMonitors" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="94" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ClearWindowTreeCache" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="95" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ClearWindowTreeCache" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="98" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ClearEventQueue" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="99" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ClearEventQueue" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownComponents" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownComponents" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownUia" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownUia" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GetTargetTextPatternElement" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GetTargetTextPatternElement" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextPatternCommandExecution" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextPatternCommandExecution" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FindNextOrPreviousHeader" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FindNextOrPreviousHeader" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FindActionElement" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FindActionElement" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="DetermineActionSequence" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="DetermineActionSequence" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ExecuteAction" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ExecuteAction" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CalculateEchoCharacter" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CalculateEchoCharacter" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CheckShouldEchoCharacter" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CheckShouldEchoCharacter" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextEventPreprocessing" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextEventPreprocessing" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitializeTextPatternState" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InitializeTextPatternState" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="127" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateTextEventTextChange" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="128" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateTextEventTextChange" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="129" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextEventParentUpdate" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="130" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextEventParentUpdate" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="131" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateNarratorContext" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="132" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateNarratorContext" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="133" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ElementTextGeneration" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="134" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ElementTextGeneration" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="135" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateTextPatternText" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="136" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateTextPatternText" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="137" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FindTextPatternActionElement" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="138" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FindTextPatternActionElement" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="139" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InternalGetTextPatternUnitChange" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="140" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="InternalGetTextPatternUnitChange" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="141" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SaveCharactersAroundTextCursor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="142" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SaveCharactersAroundTextCursor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="143" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateNonDegenerateTextChange" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="144" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateNonDegenerateTextChange" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="145" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownFocusMonitor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="146" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownFocusMonitor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="147" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownMouseMonitor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="148" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownMouseMonitor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="149" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownTouchMonitor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="150" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownTouchMonitor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="151" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownCommandGenerator" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="152" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownCommandGenerator" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="153" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownSystemMonitor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="154" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ShutdownSystemMonitor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="155" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateSoftFocus" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="156" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="BreakChunkIntoFormats" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="157" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="BreakChunkIntoFormats" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="158" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GetFormatReading" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="159" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GetFormatReading" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="160" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="DetailedReadingData" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="161" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="DetailedReadingData" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="162" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="EventQProcess" opcode="win:Start" keywords="PerfInstrumentation" template="Args162_0"/>
+        <event value="163" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="EventQProcess" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="164" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="RebuildCache" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="165" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="RebuildCache" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="168" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CancellationCheck" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="169" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CancellationCheck" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="170" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaFocusEventReceived" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="171" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaFocusEventReceived" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="172" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FocusProcessingEnqueued" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="173" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="FocusProcessingEnqueued" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="174" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorPerformanceScenario" opcode="win:Start" keywords="PerfInstrumentation" template="Args174_0"/>
+        <event value="175" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorPerformanceScenario" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="176" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsElementInPeripheralUI" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="177" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsElementInPeripheralUI" opcode="win:Stop" keywords="PerfInstrumentation" template="Args177_0"/>
+        <event value="178" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateNarratorCursor" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="179" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateNarratorCursor" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="180" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateCursorPosition" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="181" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UpdateCursorPosition" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="182" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsElementOnSoftKeyboard" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="183" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsElementOnSoftKeyboard" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="186" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="HandleNavigationCommand" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="187" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="HandleNavigationCommand" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="188" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessTextPatternCommand" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="189" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessTextPatternCommand" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="190" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="JumpToHeading" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="191" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="JumpToHeading" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="194" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="PlaceCaret" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="195" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="PlaceCaret" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="196" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessSelectionChange" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="197" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessSelectionChange" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessDegenerateSelection" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessDegenerateSelection" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_GenerateSegment" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_GenerateSegment" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GetNextChunk" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GetNextChunk" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsPlaceCaretPosition" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsPlaceCaretPosition" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaEventHandler" opcode="win:Start" keywords="PerfInstrumentation" template="Args208_0"/>
+        <event value="209" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="UiaEventHandler" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="210" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessHookMessage" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="211" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessHookMessage" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="AutomationEventProcessingEnqueued" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="AutomationEventProcessingEnqueued" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextSelectionChangedEventProcessing" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="TextSelectionChangedEventProcessing" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SAPIOneCoreSSMLProcessing" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SAPIOneCoreSSMLProcessing" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SAPIOneCorePopulateAudio" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SAPIOneCorePopulateAudio" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CacheSession" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="221" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="CacheSession" opcode="win:Stop" keywords="PerfInstrumentation" template="Args221_0"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SAPIOneCorePopulateAudio" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorTouchInterpretation" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="224" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorTouchInterpretation" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessTextSegment" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="226" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProcessTextSegment" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="227" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReadingMode" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="228" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReadingMode" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="229" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProgressiveRender" opcode="win:Start" keywords="PerfInstrumentation" template="Args229_0"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ProgressiveRender" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="231" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="AudioPlayBackCompleted" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="232" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="SegmentGeneration" opcode="win:Info" keywords="PerfInstrumentation" template="Args232_0"/>
+        <event value="233" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorInitialize" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="234" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorInitialize" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="235" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorRun" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="236" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorShortcutDisabled" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="237" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorAlreadyRunning" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="238" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorQueueState" opcode="win:Info" keywords="PerfInstrumentation"/>
+        <event value="239" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorFind" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="240" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorFind" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="241" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_SetUpScope" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="242" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_SetUpScope" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="243" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_ProcessSingleChunk" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="244" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_ProcessSingleChunk" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="245" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_GetCompleteTextFragment" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="246" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ContinuousReading_GetCompleteTextFragment" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="247" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ChunkGenerator_GenerateChunks" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="248" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ChunkGenerator_GenerateChunks" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="249" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ChunkGenerator_GenerateSingleChunk" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="250" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ChunkGenerator_GenerateSingleChunk" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="251" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorProcessQueueTrigger" opcode="win:Info" keywords="PerfInstrumentation" template="Args251_0"/>
+        <event value="252" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ControlTemplateReading" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="253" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ControlTemplateReading" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="254" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateAudioStream" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="255" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="GenerateAudioStream" opcode="win:Stop" keywords="PerfInstrumentation" template="Args255_0"/>
+        <event value="256" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorLayoutTableDetection" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="257" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorLayoutTableDetection" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="258" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorIsInterestingElement" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="259" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="NarratorIsInterestingElement" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="260" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ChunkGenerator_GenerateChunksInnerLoop" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="261" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="ChunkGenerator_GenerateChunksInnerLoop" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="262" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsElementValid" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="263" version="0" level="win:Informational"  channel="Microsoft-Windows-Narrator/Diagnostic" task="IsElementValid" opcode="win:Stop" keywords="PerfInstrumentation"/>
+      </events>
+      <channels>
+        <channel value="32" name="Microsoft-Windows-Narrator/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="NarratorStartup" mask="0x1000" message="$(string.string78)" />
+        <keyword name="PerfInstrumentation" mask="0x10000" message="$(string.string84)" />
+        <keyword name="PerfDiagnostics" mask="0x20000" message="$(string.string83)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="LaunchApp" message="$(string.string1)">
+        </task>
+        <task value="3" name="ScrapeWindow" message="$(string.string3)">
+        </task>
+        <task value="5" name="InitiateSpeaking" message="$(string.string5)">
+        </task>
+        <task value="7" name="CancelSpeaking" message="$(string.string7)">
+        </task>
+        <task value="9" name="ModeChange" message="$(string.string9)">
+        </task>
+        <task value="11" name="NarratorCommandGenerated" message="$(string.string11)">
+        </task>
+        <task value="15" name="NarratorCursorUpdated" message="$(string.string15)">
+        </task>
+        <task value="17" name="InvestigationCursorUpdated" message="$(string.string17)">
+        </task>
+        <task value="19" name="NarratorCheckSAPIVoices" message="$(string.string19)">
+        </task>
+        <task value="21" name="KeyEchoGenerateEvent" message="$(string.string21)">
+        </task>
+        <task value="23" name="LaunchSearchAndSelect" message="$(string.string23)">
+        </task>
+        <task value="25" name="QueueAppEvent" message="$(string.string25)">
+        </task>
+        <task value="27" name="AppClose" message="$(string.string27)">
+        </task>
+        <task value="29" name="SetProgressBarHandler" message="$(string.string29)">
+        </task>
+        <task value="31" name="TouchModeSwitch" message="$(string.string31)">
+        </task>
+        <task value="33" name="ConsoleUpdated" message="$(string.string33)">
+        </task>
+        <task value="35" name="OSKToggled" message="$(string.string35)">
+        </task>
+        <task value="37" name="ScreenRotated" message="$(string.string37)">
+        </task>
+        <task value="39" name="TaskbarIsFlashing" message="$(string.string39)">
+        </task>
+        <task value="41" name="ExplorerStateChange" message="$(string.string41)">
+        </task>
+        <task value="43" name="ProcessFocusChange" message="$(string.string43)">
+        </task>
+        <task value="45" name="ToggleSelectionMode" message="$(string.string45)">
+        </task>
+        <task value="47" name="ProcessNarratorCommand" message="$(string.string47)">
+        </task>
+        <task value="49" name="SAPISpeechComplete" message="$(string.string49)">
+        </task>
+        <task value="50" name="NarratorPlaySound" message="$(string.string50)">
+        </task>
+        <task value="51" name="EventQueued" message="$(string.string51)">
+        </task>
+        <task value="52" name="ProcessInputEvent" message="$(string.string52)">
+        </task>
+        <task value="53" name="NarratorGetElementFromPoint" message="$(string.string53)">
+        </task>
+        <task value="55" name="InvestigateUpdateTextPattern" message="$(string.string55)">
+        </task>
+        <task value="57" name="TextPatternUpdateCursor" message="$(string.string57)">
+        </task>
+        <task value="59" name="SetFocus" message="$(string.string59)">
+        </task>
+        <task value="60" name="RenderFocus" message="$(string.string60)">
+        </task>
+        <task value="62" name="TextQueued" message="$(string.string62)">
+        </task>
+        <task value="63" name="HighlightCursor" message="$(string.string63)">
+        </task>
+        <task value="67" name="TextDequeued" message="$(string.string67)">
+        </task>
+        <task value="68" name="SapiTextSpeak" message="$(string.string68)">
+        </task>
+        <task value="69" name="NavigationOriginId" message="$(string.string69)">
+        </task>
+        <task value="71" name="NavigationTargetId" message="$(string.string71)">
+        </task>
+        <task value="74" name="UiaFocusVerification" message="$(string.string74)">
+        </task>
+        <task value="76" name="UiaSecondFocusVerification" message="$(string.string76)">
+        </task>
+        <task value="78" name="CheckContext" message="$(string.string78)">
+        </task>
+        <task value="82" name="InitializeGlobals" message="$(string.string82)">
+        </task>
+        <task value="84" name="InitializeMonitors" message="$(string.string84)">
+        </task>
+        <task value="86" name="BeginMonitoring" message="$(string.string86)">
+        </task>
+        <task value="88" name="CreateUi" message="$(string.string88)">
+        </task>
+        <task value="90" name="ExitNarratorSpeech" message="$(string.string90)">
+        </task>
+        <task value="92" name="ShutdownMonitors" message="$(string.string92)">
+        </task>
+        <task value="94" name="ClearWindowTreeCache" message="$(string.string94)">
+        </task>
+        <task value="98" name="ClearEventQueue" message="$(string.string98)">
+        </task>
+        <task value="100" name="ShutdownComponents" message="$(string.string100)">
+        </task>
+        <task value="102" name="ShutdownUia" message="$(string.string102)">
+        </task>
+        <task value="104" name="GetTargetTextPatternElement" message="$(string.string104)">
+        </task>
+        <task value="106" name="TextPatternCommandExecution" message="$(string.string106)">
+        </task>
+        <task value="108" name="FindNextOrPreviousHeader" message="$(string.string108)">
+        </task>
+        <task value="110" name="FindActionElement" message="$(string.string110)">
+        </task>
+        <task value="112" name="DetermineActionSequence" message="$(string.string112)">
+        </task>
+        <task value="114" name="ExecuteAction" message="$(string.string114)">
+        </task>
+        <task value="116" name="CalculateEchoCharacter" message="$(string.string116)">
+        </task>
+        <task value="118" name="CheckShouldEchoCharacter" message="$(string.string118)">
+        </task>
+        <task value="121" name="TextEventPreprocessing" message="$(string.string121)">
+        </task>
+        <task value="123" name="InitializeTextPatternState" message="$(string.string123)">
+        </task>
+        <task value="127" name="GenerateTextEventTextChange" message="$(string.string127)">
+        </task>
+        <task value="129" name="TextEventParentUpdate" message="$(string.string129)">
+        </task>
+        <task value="131" name="UpdateNarratorContext" message="$(string.string131)">
+        </task>
+        <task value="133" name="ElementTextGeneration" message="$(string.string133)">
+        </task>
+        <task value="135" name="GenerateTextPatternText" message="$(string.string135)">
+        </task>
+        <task value="137" name="FindTextPatternActionElement" message="$(string.string137)">
+        </task>
+        <task value="139" name="InternalGetTextPatternUnitChange" message="$(string.string139)">
+        </task>
+        <task value="141" name="SaveCharactersAroundTextCursor" message="$(string.string141)">
+        </task>
+        <task value="143" name="GenerateNonDegenerateTextChange" message="$(string.string143)">
+        </task>
+        <task value="145" name="ShutdownFocusMonitor" message="$(string.string145)">
+        </task>
+        <task value="147" name="ShutdownMouseMonitor" message="$(string.string147)">
+        </task>
+        <task value="149" name="ShutdownTouchMonitor" message="$(string.string149)">
+        </task>
+        <task value="151" name="ShutdownCommandGenerator" message="$(string.string151)">
+        </task>
+        <task value="153" name="ShutdownSystemMonitor" message="$(string.string153)">
+        </task>
+        <task value="155" name="UpdateSoftFocus" message="$(string.string155)">
+        </task>
+        <task value="156" name="BreakChunkIntoFormats" message="$(string.string156)">
+        </task>
+        <task value="158" name="GetFormatReading" message="$(string.string158)">
+        </task>
+        <task value="160" name="DetailedReadingData" message="$(string.string160)">
+        </task>
+        <task value="162" name="EventQProcess" message="$(string.string162)">
+        </task>
+        <task value="164" name="RebuildCache" message="$(string.string164)">
+        </task>
+        <task value="168" name="CancellationCheck" message="$(string.string168)">
+        </task>
+        <task value="170" name="UiaFocusEventReceived" message="$(string.string170)">
+        </task>
+        <task value="172" name="FocusProcessingEnqueued" message="$(string.string172)">
+        </task>
+        <task value="174" name="NarratorPerformanceScenario" message="$(string.string174)">
+        </task>
+        <task value="176" name="IsElementInPeripheralUI" message="$(string.string176)">
+        </task>
+        <task value="178" name="UpdateNarratorCursor" message="$(string.string178)">
+        </task>
+        <task value="180" name="UpdateCursorPosition" message="$(string.string180)">
+        </task>
+        <task value="182" name="IsElementOnSoftKeyboard" message="$(string.string182)">
+        </task>
+        <task value="186" name="HandleNavigationCommand" message="$(string.string186)">
+        </task>
+        <task value="188" name="ProcessTextPatternCommand" message="$(string.string188)">
+        </task>
+        <task value="190" name="JumpToHeading" message="$(string.string190)">
+        </task>
+        <task value="194" name="PlaceCaret" message="$(string.string194)">
+        </task>
+        <task value="196" name="ProcessSelectionChange" message="$(string.string196)">
+        </task>
+        <task value="200" name="ProcessDegenerateSelection" message="$(string.string200)">
+        </task>
+        <task value="202" name="ContinuousReading_GenerateSegment" message="$(string.string202)">
+        </task>
+        <task value="204" name="GetNextChunk" message="$(string.string204)">
+        </task>
+        <task value="206" name="IsPlaceCaretPosition" message="$(string.string206)">
+        </task>
+        <task value="208" name="UiaEventHandler" message="$(string.string208)">
+        </task>
+        <task value="210" name="ProcessHookMessage" message="$(string.string210)">
+        </task>
+        <task value="212" name="AutomationEventProcessingEnqueued" message="$(string.string212)">
+        </task>
+        <task value="214" name="TextSelectionChangedEventProcessing" message="$(string.string214)">
+        </task>
+        <task value="216" name="SAPIOneCoreSSMLProcessing" message="$(string.string216)">
+        </task>
+        <task value="218" name="SAPIOneCorePopulateAudio" message="$(string.string218)">
+        </task>
+        <task value="220" name="CacheSession" message="$(string.string220)">
+        </task>
+        <task value="223" name="NarratorTouchInterpretation" message="$(string.string223)">
+        </task>
+        <task value="225" name="ProcessTextSegment" message="$(string.string225)">
+        </task>
+        <task value="227" name="ContinuousReadingMode" message="$(string.string227)">
+        </task>
+        <task value="229" name="ProgressiveRender" message="$(string.string229)">
+        </task>
+        <task value="231" name="AudioPlayBackCompleted" message="$(string.string231)">
+        </task>
+        <task value="232" name="SegmentGeneration" message="$(string.string232)">
+        </task>
+        <task value="233" name="NarratorInitialize" message="$(string.string233)">
+        </task>
+        <task value="235" name="NarratorRun" message="$(string.string235)">
+        </task>
+        <task value="236" name="NarratorShortcutDisabled" message="$(string.string236)">
+        </task>
+        <task value="237" name="NarratorAlreadyRunning" message="$(string.string237)">
+        </task>
+        <task value="238" name="NarratorQueueState" message="$(string.string238)">
+        </task>
+        <task value="239" name="NarratorFind" message="$(string.string239)">
+        </task>
+        <task value="241" name="ContinuousReading_SetUpScope" message="$(string.string241)">
+        </task>
+        <task value="243" name="ContinuousReading_ProcessSingleChunk" message="$(string.string243)">
+        </task>
+        <task value="245" name="ContinuousReading_GetCompleteTextFragment" message="$(string.string245)">
+        </task>
+        <task value="247" name="ChunkGenerator_GenerateChunks" message="$(string.string247)">
+        </task>
+        <task value="249" name="ChunkGenerator_GenerateSingleChunk" message="$(string.string249)">
+        </task>
+        <task value="251" name="NarratorProcessQueueTrigger" message="$(string.string251)">
+        </task>
+        <task value="252" name="ControlTemplateReading" message="$(string.string252)">
+        </task>
+        <task value="254" name="GenerateAudioStream" message="$(string.string254)">
+        </task>
+        <task value="256" name="NarratorLayoutTableDetection" message="$(string.string256)">
+        </task>
+        <task value="258" name="NarratorIsInterestingElement" message="$(string.string258)">
+        </task>
+        <task value="260" name="ChunkGenerator_GenerateChunksInnerLoop" message="$(string.string260)">
+        </task>
+        <task value="262" name="IsElementValid" message="$(string.string262)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args5_0">
+          <data name="Channel" inType="win:Int32" outType="xs:int"  />
+          <data name="SpokenText" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="CancelledMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="NewMode" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="Command" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="AutomationContext" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="Priority" inType="win:Int32" outType="xs:int"  />
+          <data name="EventClass" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="IsWindowActive" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="CurrentOSKState" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="CurrentOrientation" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args41_0">
+          <data name="CurrentState" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args44_0">
+          <data name="EventCancelled" inType="win:Int32" outType="xs:int"  />
+          <data name="EventId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args45_0">
+          <data name="SeletionModeEnabled" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args47_0">
+          <data name="CommandId" inType="win:Int32" outType="xs:int"  />
+          <data name="CommandName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="SoundResourceId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args51_0">
+          <data name="EventType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EventId" inType="win:Int32" outType="xs:int"  />
+          <data name="Priority" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args65_0">
+          <data name="WasCanceled" inType="win:Int32" outType="xs:int"  />
+          <data name="EventId" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="ElementAddress" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args162_0">
+          <data name="MessageType" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args174_0">
+          <data name="NarratorPerfScenario" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args177_0">
+          <data name="IsElementInPeripheralUI" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args208_0">
+          <data name="EventType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HandlerObject" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args221_0">
+          <data name="HitCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MissCount" inType="win:Int32" outType="xs:int"  />
+          <data name="IgnoreCount" inType="win:Int32" outType="xs:int"  />
+          <data name="RemoveCount" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args229_0">
+          <data name="GroupNumber" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args232_0">
+          <data name="NumberSegments" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args251_0">
+          <data name="Trigger" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args255_0">
+          <data name="IsCachedStream" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsCancelled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TextLength" inType="win:Int32" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AppClose" />
+       <string id="string1" value="AudioPlayBackCompleted" />
+       <string id="string2" value="AutomationEventProcessingEnqueued" />
+       <string id="string3" value="BeginMonitoring" />
+       <string id="string4" value="BreakChunkIntoFormats" />
+       <string id="string5" value="CacheSession" />
+       <string id="string6" value="CalculateEchoCharacter" />
+       <string id="string7" value="CancellationCheck" />
+       <string id="string8" value="CancelSpeaking" />
+       <string id="string9" value="CheckContext" />
+       <string id="string10" value="CheckShouldEchoCharacter" />
+       <string id="string11" value="ChunkGenerator_GenerateChunks" />
+       <string id="string12" value="ChunkGenerator_GenerateChunksInnerLoop" />
+       <string id="string13" value="ChunkGenerator_GenerateSingleChunk" />
+       <string id="string14" value="ClearEventQueue" />
+       <string id="string15" value="ClearWindowTreeCache" />
+       <string id="string16" value="ConsoleUpdated" />
+       <string id="string17" value="ContinuousReading_GenerateSegment" />
+       <string id="string18" value="ContinuousReading_GetCompleteTextFragment" />
+       <string id="string19" value="ContinuousReading_ProcessSingleChunk" />
+       <string id="string20" value="ContinuousReading_SetUpScope" />
+       <string id="string21" value="ContinuousReadingMode" />
+       <string id="string22" value="ControlTemplateReading" />
+       <string id="string23" value="CreateUi" />
+       <string id="string24" value="DetailedReadingData" />
+       <string id="string25" value="DetermineActionSequence" />
+       <string id="string26" value="ElementTextGeneration" />
+       <string id="string27" value="EventQProcess" />
+       <string id="string28" value="EventQueued" />
+       <string id="string29" value="ExecuteAction" />
+       <string id="string30" value="ExitNarratorSpeech" />
+       <string id="string31" value="ExplorerStateChange" />
+       <string id="string32" value="FindActionElement" />
+       <string id="string33" value="FindNextOrPreviousHeader" />
+       <string id="string34" value="FindTextPatternActionElement" />
+       <string id="string35" value="FocusProcessingEnqueued" />
+       <string id="string36" value="GenerateAudioStream" />
+       <string id="string37" value="GenerateNonDegenerateTextChange" />
+       <string id="string38" value="GenerateTextEventTextChange" />
+       <string id="string39" value="GenerateTextPatternText" />
+       <string id="string40" value="GetFormatReading" />
+       <string id="string41" value="GetNextChunk" />
+       <string id="string42" value="GetTargetTextPatternElement" />
+       <string id="string43" value="HandleNavigationCommand" />
+       <string id="string44" value="HighlightCursor" />
+       <string id="string45" value="InitializeGlobals" />
+       <string id="string46" value="InitializeMonitors" />
+       <string id="string47" value="InitializeTextPatternState" />
+       <string id="string48" value="InitiateSpeaking" />
+       <string id="string49" value="InternalGetTextPatternUnitChange" />
+       <string id="string50" value="InvestigateUpdateTextPattern" />
+       <string id="string51" value="InvestigationCursorUpdated" />
+       <string id="string52" value="IsElementInPeripheralUI" />
+       <string id="string53" value="IsElementOnSoftKeyboard" />
+       <string id="string54" value="IsElementValid" />
+       <string id="string55" value="IsPlaceCaretPosition" />
+       <string id="string56" value="JumpToHeading" />
+       <string id="string57" value="KeyEchoGenerateEvent" />
+       <string id="string58" value="LaunchApp" />
+       <string id="string59" value="LaunchSearchAndSelect" />
+       <string id="string60" value="Microsoft-Windows-Narrator" />
+       <string id="string61" value="Microsoft-Windows-Narrator/Diagnostic" />
+       <string id="string62" value="ModeChange" />
+       <string id="string63" value="NarratorAlreadyRunning" />
+       <string id="string64" value="NarratorCheckSAPIVoices" />
+       <string id="string65" value="NarratorCommandGenerated" />
+       <string id="string66" value="NarratorCursorUpdated" />
+       <string id="string67" value="NarratorFind" />
+       <string id="string68" value="NarratorGetElementFromPoint" />
+       <string id="string69" value="NarratorInitialize" />
+       <string id="string70" value="NarratorIsInterestingElement" />
+       <string id="string71" value="NarratorLayoutTableDetection" />
+       <string id="string72" value="NarratorPerformanceScenario" />
+       <string id="string73" value="NarratorPlaySound" />
+       <string id="string74" value="NarratorProcessQueueTrigger" />
+       <string id="string75" value="NarratorQueueState" />
+       <string id="string76" value="NarratorRun" />
+       <string id="string77" value="NarratorShortcutDisabled" />
+       <string id="string78" value="NarratorStartup" />
+       <string id="string79" value="NarratorTouchInterpretation" />
+       <string id="string80" value="NavigationOriginId" />
+       <string id="string81" value="NavigationTargetId" />
+       <string id="string82" value="OSKToggled" />
+       <string id="string83" value="PerfDiagnostics" />
+       <string id="string84" value="PerfInstrumentation" />
+       <string id="string85" value="PlaceCaret" />
+       <string id="string86" value="ProcessDegenerateSelection" />
+       <string id="string87" value="ProcessFocusChange" />
+       <string id="string88" value="ProcessHookMessage" />
+       <string id="string89" value="ProcessInputEvent" />
+       <string id="string90" value="ProcessNarratorCommand" />
+       <string id="string91" value="ProcessSelectionChange" />
+       <string id="string92" value="ProcessTextPatternCommand" />
+       <string id="string93" value="ProcessTextSegment" />
+       <string id="string94" value="ProgressiveRender" />
+       <string id="string95" value="QueueAppEvent" />
+       <string id="string96" value="RebuildCache" />
+       <string id="string97" value="RenderFocus" />
+       <string id="string98" value="SAPIOneCorePopulateAudio" />
+       <string id="string99" value="SAPIOneCoreSSMLProcessing" />
+       <string id="string100" value="SAPISpeechComplete" />
+       <string id="string101" value="SapiTextSpeak" />
+       <string id="string102" value="SaveCharactersAroundTextCursor" />
+       <string id="string103" value="ScrapeWindow" />
+       <string id="string104" value="ScreenRotated" />
+       <string id="string105" value="SegmentGeneration" />
+       <string id="string106" value="SetFocus" />
+       <string id="string107" value="SetProgressBarHandler" />
+       <string id="string108" value="ShutdownCommandGenerator" />
+       <string id="string109" value="ShutdownComponents" />
+       <string id="string110" value="ShutdownFocusMonitor" />
+       <string id="string111" value="ShutdownMonitors" />
+       <string id="string112" value="ShutdownMouseMonitor" />
+       <string id="string113" value="ShutdownSystemMonitor" />
+       <string id="string114" value="ShutdownTouchMonitor" />
+       <string id="string115" value="ShutdownUia" />
+       <string id="string116" value="TaskbarIsFlashing" />
+       <string id="string117" value="TextDequeued" />
+       <string id="string118" value="TextEventParentUpdate" />
+       <string id="string119" value="TextEventPreprocessing" />
+       <string id="string120" value="TextPatternCommandExecution" />
+       <string id="string121" value="TextPatternUpdateCursor" />
+       <string id="string122" value="TextQueued" />
+       <string id="string123" value="TextSelectionChangedEventProcessing" />
+       <string id="string124" value="ToggleSelectionMode" />
+       <string id="string125" value="TouchModeSwitch" />
+       <string id="string126" value="UiaEventHandler" />
+       <string id="string127" value="UiaFocusEventReceived" />
+       <string id="string128" value="UiaFocusVerification" />
+       <string id="string129" value="UiaSecondFocusVerification" />
+       <string id="string130" value="UpdateCursorPosition" />
+       <string id="string131" value="UpdateNarratorContext" />
+       <string id="string132" value="UpdateNarratorCursor" />
+       <string id="string133" value="UpdateSoftFocus" />
+       <string id="string134" value="win:Info" />
+       <string id="string135" value="win:Start" />
+       <string id="string136" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

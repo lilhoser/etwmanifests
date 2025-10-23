@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Speech-TTS" name="Microsoft-Windows-Speech-TTS" guid="{74dcc47a-846e-4c98-9e2c-80043ed82b15}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-TTS/Diagnostic" task="LoadVoice" opcode="win:Start" keywords="PerfInstrumentation" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-TTS/Diagnostic" task="LoadVoice" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-TTS/Diagnostic" task="Speak" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-TTS/Diagnostic" task="Speak" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-TTS/Diagnostic" task="Speak" opcode="win:Info" keywords="PerfInstrumentation"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-TTS/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="PerfInstrumentation" mask="0x10000" message="$(string.string5)" />
+        <keyword name="PerfDiagnostics" mask="0x20000" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="LoadVoice" message="$(string.string1)">
+        </task>
+        <task value="3" name="Speak" message="$(string.string3)">
+        </task>
+        <task value="5" name="FirstWave" message="$(string.string5)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Instance" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="FirstWave" />
+       <string id="string1" value="LoadVoice" />
+       <string id="string2" value="Microsoft-Windows-Speech-TTS" />
+       <string id="string3" value="Microsoft-Windows-TTS/Diagnostic" />
+       <string id="string4" value="PerfDiagnostics" />
+       <string id="string5" value="PerfInstrumentation" />
+       <string id="string6" value="Speak" />
+       <string id="string7" value="win:Info" />
+       <string id="string8" value="win:Start" />
+       <string id="string9" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

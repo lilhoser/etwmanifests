@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-L2NACP" name="Microsoft-Windows-L2NACP" guid="{85fe7609-ff4a-48e9-9d50-12918e43e1da}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="13003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="Credential ut:Authentication" template="Args13003_0"/>
+        <event value="13004" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="Credential ut:Authentication"/>
+        <event value="13023" version="0" level="win:Informational"  channel="Microsoft-Windows-Wired-AutoConfig/Operational" keywords="Credential ut:Authentication"/>
+        <event value="13024" version="0" level="win:Informational"  channel="Microsoft-Windows-Wired-AutoConfig/Operational" keywords="Credential ut:Authentication"/>
+        <event value="14000" version="0" level="win:Informational"  channel="Microsoft-Windows-L2NA/Diagnostic" keywords="Filter ut:Authentication" template="Args14000_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WLAN-AutoConfig/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Wired-AutoConfig/Operational" type="Operational"/>
+        <channel value="18" name="Microsoft-Windows-L2NA/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Credential" mask="0x1" message="$(string.string0)" />
+        <keyword name="Filter" mask="0x2" message="$(string.string1)" />
+        <keyword name="ut:Authentication" mask="0x2000000000" message="$(string.string6)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args13003_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14000_0">
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Remote" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Dot3Allowed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WlanAllowed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CredentialsFound" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Credential" />
+       <string id="string1" value="Filter" />
+       <string id="string2" value="Microsoft-Windows-L2NA/Diagnostic" />
+       <string id="string3" value="Microsoft-Windows-L2NACP" />
+       <string id="string4" value="Microsoft-Windows-Wired-AutoConfig/Operational" />
+       <string id="string5" value="Microsoft-Windows-WLAN-AutoConfig/Operational" />
+       <string id="string6" value="ut:Authentication" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

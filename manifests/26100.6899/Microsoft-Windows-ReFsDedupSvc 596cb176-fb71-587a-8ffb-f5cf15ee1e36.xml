@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ReFsDedupSvc" name="Microsoft-Windows-ReFsDedupSvc" guid="{596cb176-fb71-587a-8ffb-f5cf15ee1e36}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Start" keywords="svc"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Stop" keywords="svc" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Start" keywords="job vol"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Start" keywords="vol"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Stop" keywords="vol"/>
+        <event value="8" version="0" level="win:Warning"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="job vol"/>
+        <event value="9" version="0" level="win:Warning"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="10" version="0" level="win:Warning"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="11" version="0" level="win:Error"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="13" version="0" level="win:Error"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Stop" keywords="job vol"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="15" version="0" level="win:Warning"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Info" keywords="vol"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-ReFsDedupSvc/Operational" task="Status" opcode="win:Stop" keywords="job vol"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ReFsDedupSvc/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="svc" mask="0x10" message="$(string.string4)" />
+        <keyword name="job" mask="0x20" message="$(string.string0)" />
+        <keyword name="vol" mask="0x40" message="$(string.string5)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Status" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="JSON" inType="win:UnicodeString" outType="win:Json"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="job" />
+       <string id="string1" value="Microsoft-Windows-ReFsDedupSvc" />
+       <string id="string2" value="Microsoft-Windows-ReFsDedupSvc/Operational" />
+       <string id="string3" value="Status" />
+       <string id="string4" value="svc" />
+       <string id="string5" value="vol" />
+       <string id="string6" value="win:Info" />
+       <string id="string7" value="win:Start" />
+       <string id="string8" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

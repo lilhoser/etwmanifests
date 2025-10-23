@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SystemSettingsHandlers" name="Microsoft-Windows-SystemSettingsHandlers" guid="{fbbd52e1-df97-529d-4b67-53f67da99a98}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="CELL DATAMART" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="CELL DATAMART" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="CELL DATAMART" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="CELL DATAMART"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="WIFI DATAMART"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="WIFI DATAMART"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-SystemSettingsHandlers/Debug" keywords="WIFI DATAMART"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SystemSettingsHandlers/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="CELL" mask="0x1" message="$(string.string0)" />
+        <keyword name="WIFI" mask="0x2" message="$(string.string4)" />
+        <keyword name="DATAMART" mask="0x4" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pfn" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Arguments" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Pfns" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CELL" />
+       <string id="string1" value="DATAMART" />
+       <string id="string2" value="Microsoft-Windows-SystemSettingsHandlers" />
+       <string id="string3" value="Microsoft-Windows-SystemSettingsHandlers/Debug" />
+       <string id="string4" value="WIFI" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-OOBE-Machine-Core" name="Microsoft-Windows-OOBE-Machine-Core" guid="{ec276cde-2a17-473c-a010-2ff78d5426d2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5004" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" task="ServiceStartResult" opcode="win:Info" keywords="msoobe" template="Args5004_0"/>
+        <event value="5041" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" task="MandatoryTasks" opcode="win:Start" keywords="msoobe"/>
+        <event value="5042" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" task="MandatoryTasks" opcode="win:Stop" keywords="msoobe"/>
+        <event value="5043" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" task="Finalize" opcode="win:Start" keywords="msoobe"/>
+        <event value="5044" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" task="Finalize" opcode="win:Stop" keywords="msoobe"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="msoobe" mask="0x1" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+        <task value="6004" name="ServiceStartResult" message="$(string.string6004)">
+        </task>
+        <task value="6041" name="MandatoryTasks" message="$(string.string6041)">
+        </task>
+        <task value="6042" name="Finalize" message="$(string.string6042)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args5004_0">
+          <data name="Service" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Started" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Finalize" />
+       <string id="string1" value="MandatoryTasks" />
+       <string id="string2" value="Microsoft-Windows-OOBE-Machine-Core" />
+       <string id="string3" value="Microsoft-Windows-OOBE-Machine-Core/Diagnostic" />
+       <string id="string4" value="msoobe" />
+       <string id="string5" value="ServiceStartResult" />
+       <string id="string6" value="win:Info" />
+       <string id="string7" value="win:Start" />
+       <string id="string8" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

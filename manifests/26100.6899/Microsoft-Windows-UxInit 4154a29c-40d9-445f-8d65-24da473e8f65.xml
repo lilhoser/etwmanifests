@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UxInit" name="Microsoft-Windows-UxInit" guid="{4154a29c-40d9-445f-8d65-24da473e8f65}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="CVSCache_Initializing" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="LoadFromCache" opcode="win:Start"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="LoadFromCache" opcode="win:Stop" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="WriteToCache" opcode="win:Start"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="WriteToCache" opcode="win:Stop"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="InitializeUserTheme" opcode="win:Start" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="InitializeUserTheme" opcode="win:Start"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="ReuseExistingThemeData" opcode="win:Info" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="ApplyNewThemeData" opcode="win:Info"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="LoadThemeAsSystem" opcode="win:Info"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-UxInit/Diagnostic" task="ThemeServiceStart" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-UxInit/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="CVSCache_Initializing" message="$(string.string1)">
+        </task>
+        <task value="2" name="LoadFromCache" message="$(string.string2)">
+        </task>
+        <task value="3" name="WriteToCache" message="$(string.string3)">
+        </task>
+        <task value="4" name="InitializeUserTheme" message="$(string.string4)">
+        </task>
+        <task value="5" name="ReuseExistingThemeData" message="$(string.string5)">
+        </task>
+        <task value="6" name="ApplyNewThemeData" message="$(string.string6)">
+        </task>
+        <task value="7" name="LoadThemeAsSystem" message="$(string.string7)">
+        </task>
+        <task value="8" name="ThemeServiceStart" message="$(string.string8)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="CacheFileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="hr" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="monitorConfig" inType="win:Int32" outType="xs:int"  />
+          <data name="fPolicyCheckOnly" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="monitorConfig" inType="win:Int32" outType="xs:int"  />
+          <data name="systemDpi" inType="win:Int32" outType="xs:int"  />
+          <data name="IsHighContrastMode" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hr" inType="win:Int32" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ApplyNewThemeData" />
+       <string id="string1" value="CVSCache_Initializing" />
+       <string id="string2" value="InitializeUserTheme" />
+       <string id="string3" value="LoadFromCache" />
+       <string id="string4" value="LoadThemeAsSystem" />
+       <string id="string5" value="Microsoft-Windows-UxInit" />
+       <string id="string6" value="Microsoft-Windows-UxInit/Diagnostic" />
+       <string id="string7" value="ReuseExistingThemeData" />
+       <string id="string8" value="ThemeServiceStart" />
+       <string id="string9" value="win:Info" />
+       <string id="string10" value="win:Start" />
+       <string id="string11" value="win:Stop" />
+       <string id="string12" value="WriteToCache" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

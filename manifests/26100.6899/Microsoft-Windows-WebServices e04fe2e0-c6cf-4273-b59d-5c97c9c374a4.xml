@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WebServices" name="Microsoft-Windows-WebServices" guid="{e04fe2e0-c6cf-4273-b59d-5c97c9c374a4}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="API Enter" keywords="keywords.API" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="API ExitSyncSuccess" keywords="keywords.API" template="Args2_0"/>
+        <event value="3" version="0" level="win:Error"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="API ExitSyncFailure" keywords="keywords.API"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="API Pending" keywords="keywords.API"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="API ExitAsyncSuccess" keywords="keywords.API"/>
+        <event value="6" version="0" level="win:Error"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="API ExitAsyncFailure" keywords="keywords.API"/>
+        <event value="7" version="0" level="win:Error"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Error" opcode="Error" keywords="keywords.Error" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.IO" opcode="IO Started" keywords="keywords.IO" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.IO" opcode="IO Completed" keywords="keywords.IO" template="Args9_0"/>
+        <event value="10" version="0" level="win:Error"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.IO" opcode="IO Failed" keywords="keywords.IO" template="Args10_0"/>
+        <event value="11" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Sending  Message - Binary" keywords="keywords.BinaryMessage" template="Args11_0"/>
+        <event value="12" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Received Message - Binary" keywords="keywords.BinaryMessage"/>
+        <event value="13" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Sending  Message - Text" keywords="keywords.Message"/>
+        <event value="14" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Received Message - Text" keywords="keywords.Message"/>
+        <event value="15" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Sending Message  Start" keywords="keywords.Message"/>
+        <event value="16" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Sending Message  Stop" keywords="keywords.Message"/>
+        <event value="17" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Received Message Start" keywords="keywords.Message"/>
+        <event value="18" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.Message" opcode="Received Message Stop" keywords="keywords.Message"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="Sending HTTP headers" keywords="keywords.Message" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="Receiving HTTP headers" keywords="keywords.Message"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-WebServices/Tracing" task="tasks.API" opcode="Trace" keywords="keywords.Error"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WebServices/Tracing" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="keywords.API" mask="0x1" message="$(string.string10)" />
+        <keyword name="keywords.Error" mask="0x2" message="$(string.string12)" />
+        <keyword name="keywords.IO" mask="0x4" message="$(string.string13)" />
+        <keyword name="keywords.Message" mask="0x8" message="$(string.string14)" />
+        <keyword name="keywords.BinaryMessage" mask="0x10" message="$(string.string11)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="tasks.API" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="API Enter" message="$(string.string0)"/>
+           <opcode value="11" name="API ExitSyncSuccess" message="$(string.string4)"/>
+           <opcode value="12" name="API ExitSyncFailure" message="$(string.string3)"/>
+           <opcode value="13" name="API Pending" message="$(string.string5)"/>
+           <opcode value="14" name="API ExitAsyncSuccess" message="$(string.string2)"/>
+           <opcode value="15" name="API ExitAsyncFailure" message="$(string.string1)"/>
+           <opcode value="28" name="Sending HTTP headers" message="$(string.string45)"/>
+           <opcode value="29" name="Receiving HTTP headers" message="$(string.string42)"/>
+           <opcode value="30" name="Trace" message="$(string.string52)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="tasks.Error" message="$(string.string2)">
+          <opcodes>
+           <opcode value="19" name="Error" message="$(string.string6)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="tasks.IO" message="$(string.string3)">
+          <opcodes>
+           <opcode value="16" name="IO Started" message="$(string.string9)"/>
+           <opcode value="17" name="IO Completed" message="$(string.string7)"/>
+           <opcode value="18" name="IO Failed" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="tasks.Message" message="$(string.string4)">
+          <opcodes>
+           <opcode value="20" name="Sending  Message - Binary" message="$(string.string43)"/>
+           <opcode value="21" name="Received Message - Binary" message="$(string.string38)"/>
+           <opcode value="22" name="Sending  Message - Text" message="$(string.string44)"/>
+           <opcode value="23" name="Received Message - Text" message="$(string.string39)"/>
+           <opcode value="24" name="Sending Message  Start" message="$(string.string46)"/>
+           <opcode value="25" name="Sending Message  Stop" message="$(string.string47)"/>
+           <opcode value="26" name="Received Message Start" message="$(string.string40)"/>
+           <opcode value="27" name="Received Message Stop" message="$(string.string41)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="opcodes.ApiEnter" message="$(string.string18)"/>
+        <opcode value="11" name="opcodes.ApiExit" message="$(string.string19)"/>
+        <opcode value="12" name="opcodes.ApiFailedExit" message="$(string.string21)"/>
+        <opcode value="13" name="opcodes.ApiPending" message="$(string.string22)"/>
+        <opcode value="14" name="opcodes.ApiCompleted" message="$(string.string17)"/>
+        <opcode value="15" name="opcodes.ApiFailedCompletion" message="$(string.string20)"/>
+        <opcode value="16" name="opcodes.IOStarted" message="$(string.string26)"/>
+        <opcode value="17" name="opcodes.IOCompleted" message="$(string.string24)"/>
+        <opcode value="18" name="opcodes.IOFailed" message="$(string.string25)"/>
+        <opcode value="19" name="opcodes.Error" message="$(string.string23)"/>
+        <opcode value="20" name="opcodes.SendingMessageBinary" message="$(string.string33)"/>
+        <opcode value="21" name="opcodes.ReceivedMessageBinary" message="$(string.string27)"/>
+        <opcode value="22" name="opcodes.SendingMessageText" message="$(string.string36)"/>
+        <opcode value="23" name="opcodes.ReceivedMessageText" message="$(string.string30)"/>
+        <opcode value="24" name="opcodes.SendingMessageStart" message="$(string.string34)"/>
+        <opcode value="25" name="opcodes.SendingMessageStop" message="$(string.string35)"/>
+        <opcode value="26" name="opcodes.ReceivedMessageStart" message="$(string.string28)"/>
+        <opcode value="27" name="opcodes.ReceivedMessageStop" message="$(string.string29)"/>
+        <opcode value="28" name="opcodes.SendingHttpHeaders" message="$(string.string32)"/>
+        <opcode value="29" name="opcodes.ReceivingHttpHeaders" message="$(string.string31)"/>
+        <opcode value="30" name="opcodes.StringTrace" message="$(string.string37)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="api" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="api" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="result" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="error" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="errorString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="error" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="correlationId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="message" inType="win:UnicodeString" outType="xs:string" length="length" />
+        </template>
+        <template tid="Args19_0">
+          <data name="length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="traceString" inType="win:UnicodeString" outType="xs:string" length="length" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="API Enter" />
+       <string id="string1" value="API ExitAsyncFailure" />
+       <string id="string2" value="API ExitAsyncSuccess" />
+       <string id="string3" value="API ExitSyncFailure" />
+       <string id="string4" value="API ExitSyncSuccess" />
+       <string id="string5" value="API Pending" />
+       <string id="string6" value="Error" />
+       <string id="string7" value="IO Completed" />
+       <string id="string8" value="IO Failed" />
+       <string id="string9" value="IO Started" />
+       <string id="string10" value="keywords.API" />
+       <string id="string11" value="keywords.BinaryMessage" />
+       <string id="string12" value="keywords.Error" />
+       <string id="string13" value="keywords.IO" />
+       <string id="string14" value="keywords.Message" />
+       <string id="string15" value="Microsoft-Windows-WebServices" />
+       <string id="string16" value="Microsoft-Windows-WebServices/Tracing" />
+       <string id="string17" value="opcodes.ApiCompleted" />
+       <string id="string18" value="opcodes.ApiEnter" />
+       <string id="string19" value="opcodes.ApiExit" />
+       <string id="string20" value="opcodes.ApiFailedCompletion" />
+       <string id="string21" value="opcodes.ApiFailedExit" />
+       <string id="string22" value="opcodes.ApiPending" />
+       <string id="string23" value="opcodes.Error" />
+       <string id="string24" value="opcodes.IOCompleted" />
+       <string id="string25" value="opcodes.IOFailed" />
+       <string id="string26" value="opcodes.IOStarted" />
+       <string id="string27" value="opcodes.ReceivedMessageBinary" />
+       <string id="string28" value="opcodes.ReceivedMessageStart" />
+       <string id="string29" value="opcodes.ReceivedMessageStop" />
+       <string id="string30" value="opcodes.ReceivedMessageText" />
+       <string id="string31" value="opcodes.ReceivingHttpHeaders" />
+       <string id="string32" value="opcodes.SendingHttpHeaders" />
+       <string id="string33" value="opcodes.SendingMessageBinary" />
+       <string id="string34" value="opcodes.SendingMessageStart" />
+       <string id="string35" value="opcodes.SendingMessageStop" />
+       <string id="string36" value="opcodes.SendingMessageText" />
+       <string id="string37" value="opcodes.StringTrace" />
+       <string id="string38" value="Received Message - Binary" />
+       <string id="string39" value="Received Message - Text" />
+       <string id="string40" value="Received Message Start" />
+       <string id="string41" value="Received Message Stop" />
+       <string id="string42" value="Receiving HTTP headers" />
+       <string id="string43" value="Sending  Message - Binary" />
+       <string id="string44" value="Sending  Message - Text" />
+       <string id="string45" value="Sending HTTP headers" />
+       <string id="string46" value="Sending Message  Start" />
+       <string id="string47" value="Sending Message  Stop" />
+       <string id="string48" value="tasks.API" />
+       <string id="string49" value="tasks.Error" />
+       <string id="string50" value="tasks.IO" />
+       <string id="string51" value="tasks.Message" />
+       <string id="string52" value="Trace" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

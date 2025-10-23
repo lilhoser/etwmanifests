@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PlayToManager" name="Microsoft-Windows-PlayToManager" guid="{bb311100-2d9f-4cd3-b2d6-f4ea3839c548}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_Startup" opcode="win:Start"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_Startup" opcode="win:Stop"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_GetSourceFromApp" opcode="win:Start"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_GetSourceFromApp" opcode="win:Stop"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_CharmRendering" opcode="win:Start"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_CharmRendering" opcode="win:Stop"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_ConnectionTime" opcode="win:Start"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_ConnectionTime" opcode="win:Stop"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_SourceRequestEventThreadProcTime" opcode="win:Start"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_SourceRequestEventThreadProcTime" opcode="win:Stop"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_SourceRequestEventInvokeTime" opcode="win:Start"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-PlayToManager/Analytic" task="PlayToManager_SourceRequestEventInvokeTime" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-PlayToManager/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="PlayToManager_Startup" message="$(string.string1)">
+        </task>
+        <task value="2" name="PlayToManager_GetSourceFromApp" message="$(string.string2)">
+        </task>
+        <task value="3" name="PlayToManager_CharmRendering" message="$(string.string3)">
+        </task>
+        <task value="4" name="PlayToManager_ConnectionTime" message="$(string.string4)">
+        </task>
+        <task value="5" name="PlayToManager_SourceRequestEventThreadProcTime" message="$(string.string5)">
+        </task>
+        <task value="6" name="PlayToManager_SourceRequestEventInvokeTime" message="$(string.string6)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-PlayToManager" />
+       <string id="string1" value="Microsoft-Windows-PlayToManager/Analytic" />
+       <string id="string2" value="PlayToManager_CharmRendering" />
+       <string id="string3" value="PlayToManager_ConnectionTime" />
+       <string id="string4" value="PlayToManager_GetSourceFromApp" />
+       <string id="string5" value="PlayToManager_SourceRequestEventInvokeTime" />
+       <string id="string6" value="PlayToManager_SourceRequestEventThreadProcTime" />
+       <string id="string7" value="PlayToManager_Startup" />
+       <string id="string8" value="win:Start" />
+       <string id="string9" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

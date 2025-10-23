@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PortableDeviceStatusProvider" name="Microsoft-Windows-PortableDeviceStatusProvider" guid="{8c63b5a5-b484-4381-892d-edd424582df7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="500" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="DLLLifetime" opcode="win:Start"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="DLLLifetime" opcode="win:Stop"/>
+        <event value="502" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="AllSourcesCreation" opcode="win:Start"/>
+        <event value="503" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="AllSourcesCreation" opcode="win:Stop"/>
+        <event value="504" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="WPDSourcesCreation" opcode="win:Start"/>
+        <event value="505" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="WPDSourcesCreation" opcode="win:Stop"/>
+        <event value="506" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="SyncSourcesCreation" opcode="win:Start"/>
+        <event value="507" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="SyncSourcesCreation" opcode="win:Stop"/>
+        <event value="510" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetDeviceStatusService" opcode="win:Start"/>
+        <event value="511" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetDeviceStatusService" opcode="win:Stop"/>
+        <event value="514" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetBattery" opcode="win:Start"/>
+        <event value="515" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetBattery" opcode="win:Stop"/>
+        <event value="516" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetStorage" opcode="win:Start"/>
+        <event value="517" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetStorage" opcode="win:Stop"/>
+        <event value="518" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetStatusServiceProperties" opcode="win:Start"/>
+        <event value="519" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="GetStatusServiceProperties" opcode="win:Stop"/>
+        <event value="520" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="UpdateSyncProperties" opcode="win:Start"/>
+        <event value="521" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="UpdateSyncProperties" opcode="win:Stop"/>
+        <event value="522" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="SyncSourcesCreation" opcode="win:Start"/>
+        <event value="523" version="0" level="win:Informational"  channel="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" task="SyncSourcesCreation" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="64" name="DLLLifetime" message="$(string.string64)">
+        </task>
+        <task value="65" name="AllSourcesCreation" message="$(string.string65)">
+        </task>
+        <task value="66" name="WPDSourcesCreation" message="$(string.string66)">
+        </task>
+        <task value="67" name="SyncSourcesCreation" message="$(string.string67)">
+        </task>
+        <task value="69" name="GetDeviceStatusService" message="$(string.string69)">
+        </task>
+        <task value="70" name="GetBattery" message="$(string.string70)">
+        </task>
+        <task value="71" name="GetStorage" message="$(string.string71)">
+        </task>
+        <task value="72" name="GetStatusServiceProperties" message="$(string.string72)">
+        </task>
+        <task value="73" name="UpdateSyncProperties" message="$(string.string73)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AllSourcesCreation" />
+       <string id="string1" value="DLLLifetime" />
+       <string id="string2" value="GetBattery" />
+       <string id="string3" value="GetDeviceStatusService" />
+       <string id="string4" value="GetStatusServiceProperties" />
+       <string id="string5" value="GetStorage" />
+       <string id="string6" value="Microsoft-Windows-PortableDeviceStatusProvider" />
+       <string id="string7" value="Microsoft-Windows-PortableDeviceStatusProvider/Analytic" />
+       <string id="string8" value="SyncSourcesCreation" />
+       <string id="string9" value="UpdateSyncProperties" />
+       <string id="string10" value="win:Start" />
+       <string id="string11" value="win:Stop" />
+       <string id="string12" value="WPDSourcesCreation" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

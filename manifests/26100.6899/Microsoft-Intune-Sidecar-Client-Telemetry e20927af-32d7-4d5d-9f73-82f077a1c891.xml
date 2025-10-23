@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Intune-Sidecar-Client-Telemetry" name="Microsoft-Intune-Sidecar-Client-Telemetry" guid="{e20927af-32d7-4d5d-9f73-82f077a1c891}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  opcode="win:Info" keywords="Telemetry-Event" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  opcode="win:Info" keywords="Telemetry-Event" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  opcode="win:Info" keywords="Telemetry-Event" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  opcode="win:Info" keywords="Telemetry-Feature"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Telemetry-Event" mask="0x1" message="$(string.string1)" />
+        <keyword name="Telemetry-Feature" mask="0x2" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="level" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppInfo_Id" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppInfo_Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="eventName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="correlationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="parentOperationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="eventMessage" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="customMetadata" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="customJson" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_Code" inType="win:Int32" outType="xs:int"  />
+          <data name="error_Domain" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_StackTrace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_UnderlyingCode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_UnderlyingDomain" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="error_UnderlyingMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="level" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppInfo_Id" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppInfo_Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="eventName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="correlationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="parentOperationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="eventMessage" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="customMetadata" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="customJson" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pageAction_actionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pageAction_actionType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pageAction_areaName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pageAction_contentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pageAction_pageName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="level" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppInfo_Id" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AppInfo_Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="eventName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="correlationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="parentOperationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="sessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="eventMessage" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="custom4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="customMetadata" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="customJson" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="operationName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="operationTargetName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="operationTargetUri" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="result" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="success" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="durationMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Intune-Sidecar-Client-Telemetry" />
+       <string id="string1" value="Telemetry-Event" />
+       <string id="string2" value="Telemetry-Feature" />
+       <string id="string3" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

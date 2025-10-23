@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Interrupt-Steering" name="Microsoft-Windows-Kernel-Interrupt-Steering" guid="{951b41ea-c830-44dc-a671-e2c9958809b8}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  task="InterruptSteeringMaskRundown" opcode="win:Info" keywords="IntSteer" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  task="InterruptSteeringMaskChange" opcode="win:Info" keywords="IntSteer"/>
+        <event value="3" version="0" level="win:Informational"  task="InterruptSteeringStateRundown" opcode="win:Info" keywords="IntSteer" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  task="InterruptSteeringStateConnect" opcode="win:Info" keywords="IntSteer"/>
+        <event value="5" version="0" level="win:Informational"  task="InterruptSteeringStateDisconnect" opcode="win:Info" keywords="IntSteer"/>
+        <event value="6" version="0" level="win:Informational"  task="InterruptSteeringStateRetarget" opcode="win:Info" keywords="IntSteer"/>
+        <event value="7" version="0" level="win:Informational"  task="InterruptSteeringProcRundown" opcode="win:Info" keywords="IntSteer" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  task="InterruptSteeringProcChange" opcode="win:Info" keywords="IntSteer"/>
+        <event value="3" version="1" level="win:Informational"  task="InterruptSteeringStateRundown" opcode="win:Info" keywords="IntSteer" template="Args3_1"/>
+        <event value="4" version="1" level="win:Informational"  task="InterruptSteeringStateConnect" opcode="win:Info" keywords="IntSteer"/>
+        <event value="5" version="1" level="win:Informational"  task="InterruptSteeringStateDisconnect" opcode="win:Info" keywords="IntSteer"/>
+        <event value="6" version="1" level="win:Informational"  task="InterruptSteeringStateRetarget" opcode="win:Info" keywords="IntSteer"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Kernel-Interrupt-Steering/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="IntSteer" mask="0x1" message="$(string.string8)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="InterruptSteeringMaskRundown" message="$(string.string1)">
+        </task>
+        <task value="2" name="InterruptSteeringMaskChange" message="$(string.string2)">
+        </task>
+        <task value="3" name="InterruptSteeringStateRundown" message="$(string.string3)">
+        </task>
+        <task value="4" name="InterruptSteeringStateConnect" message="$(string.string4)">
+        </task>
+        <task value="5" name="InterruptSteeringStateDisconnect" message="$(string.string5)">
+        </task>
+        <task value="6" name="InterruptSteeringStateRetarget" message="$(string.string6)">
+        </task>
+        <task value="7" name="InterruptSteeringProcRundown" message="$(string.string7)">
+        </task>
+        <task value="8" name="InterruptSteeringProcChange" message="$(string.string8)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="LoadPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GsivCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaskCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Gsiv" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewTarget" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldTarget" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Vector" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServiceRoutine" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsrLoad" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DpcLoad" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="ProcIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceInterrupts" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_1">
+          <data name="Gsiv" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NewTarget" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldTarget" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Vector" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServiceRoutine" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsrLoad" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DpcLoad" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="InterruptSteeringMaskChange" />
+       <string id="string1" value="InterruptSteeringMaskRundown" />
+       <string id="string2" value="InterruptSteeringProcChange" />
+       <string id="string3" value="InterruptSteeringProcRundown" />
+       <string id="string4" value="InterruptSteeringStateConnect" />
+       <string id="string5" value="InterruptSteeringStateDisconnect" />
+       <string id="string6" value="InterruptSteeringStateRetarget" />
+       <string id="string7" value="InterruptSteeringStateRundown" />
+       <string id="string8" value="IntSteer" />
+       <string id="string9" value="Microsoft-Windows-Kernel-Interrupt-Steering" />
+       <string id="string10" value="Microsoft-Windows-Kernel-Interrupt-Steering/Diagnostic" />
+       <string id="string11" value="System" />
+       <string id="string12" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

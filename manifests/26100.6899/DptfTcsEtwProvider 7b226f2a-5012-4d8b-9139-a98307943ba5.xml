@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="DptfTcsEtwProvider" name="DptfTcsEtwProvider" guid="{7b226f2a-5012-4d8b-9139-a98307943ba5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  template="Args4_0"/>
+        <event value="5" version="0" level="Log Always"  template="Args5_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Default" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Scope" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Participant" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Property" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ParticipantBinaryLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParticipantBinaryValue" inType="win:Binary" outType="xs:hexBinary" length="ParticipantBinaryLength" />
+        </template>
+        <template tid="Args4_0">
+          <data name="ParticipantName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ParticipantDomainType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ValueType" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ParticipantName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ValueType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Default" />
+       <string id="string1" value="DptfTcsEtwProvider" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

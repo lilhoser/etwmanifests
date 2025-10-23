@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-AppV-Client" name="Microsoft-AppV-Client" guid="{e4f68870-5ae8-4e5b-9ce7-ca9ed75b0245}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="13" version="0" level="win:Warning"  channel="Microsoft-AppV-Client/Operational" task="APIRequest" opcode="win:Info" template="Args13_0"/>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ClientStartup" opcode="win:Start" keywords="Startup"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ClientShutdown" opcode="win:Stop" keywords="Shutdown"/>
+        <event value="3" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Start" keywords="Startup" template="Args3_1"/>
+        <event value="4" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Start" keywords="Startup Logon"/>
+        <event value="5" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UserLogon" opcode="win:Start" keywords="Logon" template="Args5_1"/>
+        <event value="6" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UserLogoff" opcode="win:Stop" keywords="Logoff"/>
+        <event value="7" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="APIRequest" opcode="win:Send" keywords="API"/>
+        <event value="8" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UserLogon" opcode="win:Start" keywords="Logon"/>
+        <event value="9" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="APIRequest" opcode="win:Info" keywords="API" template="Args9_1"/>
+        <event value="10" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="APIRequest" opcode="win:Info" keywords="API"/>
+        <event value="11" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Info" keywords="Startup"/>
+        <event value="12" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ClientShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="14" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ClientStartup" opcode="win:Start" keywords="Startup"/>
+        <event value="15" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ClientStartup" opcode="win:Start" keywords="Startup"/>
+        <event value="16" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Start" keywords="Startup" template="Args16_1"/>
+        <event value="17" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Start" keywords="Startup" template="Args17_1"/>
+        <event value="101" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="APIRequest" opcode="win:Start"/>
+        <event value="102" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="APIRequest" opcode="win:Stop" template="Args102_1"/>
+        <event value="1001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientShutdown" opcode="win:Stop" keywords="Shutdown"/>
+        <event value="1002" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ConfigurePackage" opcode="win:Info" keywords="Publishing" template="Args1002_1"/>
+        <event value="1003" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1004" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1005" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1006" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1007" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing" template="Args1008_1"/>
+        <event value="1009" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ConfigurePackageGroup" opcode="win:Info" keywords="Publishing" template="Args1009_1"/>
+        <event value="1010" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="Publishing" template="Args1010_1"/>
+        <event value="1011" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1012" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1013" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1014" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1015" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="RemovePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1016" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1017" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1018" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing" template="Args1018_1"/>
+        <event value="1019" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1020" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1021" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing" template="Args1021_1"/>
+        <event value="1022" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1023" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1024" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1025" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1026" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1027" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing" template="Args1027_1"/>
+        <event value="1028" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1029" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1030" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1031" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1032" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1033" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1034" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1035" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1036" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1037" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1038" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1039" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1040" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1041" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RepairPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1042" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RepairPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1043" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1044" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="Publishing" template="Args1044_1"/>
+        <event value="1045" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1046" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1047" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1048" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1049" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1050" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1051" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1052" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1053" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1054" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RepairPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1055" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1056" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1057" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1058" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1059" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1060" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1061" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1062" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1063" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1064" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1065" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1066" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1067" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1068" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1069" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1070" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1071" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1072" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1073" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1074" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1075" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackageGroup" opcode="win:Info" keywords="Publishing"/>
+        <event value="1076" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1077" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1078" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing" template="Args1078_1"/>
+        <event value="1079" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1080" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="RemovePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1082" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="1083" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="2001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UserLogon" opcode="win:Info" keywords="Startup Logon Catalog" template="Args2001_1"/>
+        <event value="2002" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="UserLogon" opcode="win:Info" keywords="Startup Logon Catalog"/>
+        <event value="2003" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="UserLogon" opcode="win:Info" keywords="Startup Logon Catalog"/>
+        <event value="2004" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" opcode="win:Info" keywords="Startup Catalog"/>
+        <event value="2005" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Info" keywords="Startup Catalog"/>
+        <event value="2006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Info" keywords="Startup Catalog"/>
+        <event value="3001" version="1" level="win:Critical"  channel="Microsoft-AppV-Client/Admin" task="Impersonation" opcode="win:Stop" keywords="Common"/>
+        <event value="3002" version="1" level="win:Critical"  channel="Microsoft-AppV-Client/Admin" task="Impersonation" opcode="win:Stop" keywords="Common"/>
+        <event value="4001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting" template="Args4001_1"/>
+        <event value="4002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting" template="Args4002_1"/>
+        <event value="4004" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting" template="Args4004_1"/>
+        <event value="4005" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting"/>
+        <event value="4006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting" template="Args4006_1"/>
+        <event value="4007" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting"/>
+        <event value="4008" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting"/>
+        <event value="4009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting"/>
+        <event value="4010" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting"/>
+        <event value="4011" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ExecuteScripts" opcode="win:Info" keywords="EmbeddedScripting"/>
+        <event value="5001" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Virtual Applications" task="VFSRedirection" opcode="win:Info" keywords="VFS"/>
+        <event value="5002" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Virtual Applications" task="VFSRedirection" opcode="win:Info" keywords="VFS"/>
+        <event value="5003" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Virtual Applications" task="VFSRedirection" opcode="win:Info" keywords="VFS"/>
+        <event value="6001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices" template="Args6006_1"/>
+        <event value="6007" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6010" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6011" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6012" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6013" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6014" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6015" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="6016" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigureVirtualServices" opcode="win:Info" keywords="VirtualServices"/>
+        <event value="7001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="SettingChanges" opcode="win:Info" keywords="Settings"/>
+        <event value="8001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ParseDynamicConfigurationFile" opcode="win:Info" keywords="DynamicConfiguration" template="Args8001_1"/>
+        <event value="8002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ParseDynamicConfigurationFile" opcode="win:Info" keywords="DynamicConfiguration" template="Args8002_1"/>
+        <event value="8003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8004" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8005" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8007" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8010" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8011" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8012" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8013" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration" template="Args8013_1"/>
+        <event value="8014" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8015" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="8016" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="DynamicConfiguration" template="Args8016_1"/>
+        <event value="9001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PowerShellInvoke" opcode="win:Info" keywords="ClientManagement" template="Args9001_1"/>
+        <event value="9002" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="PowerShellInvoke" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectGetPropertyValue" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9004" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectGetPropertyValue" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9005" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectGetPropertyValue" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectGetPropertyValue" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9007" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectInvokeMethod" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectInvokeMethod" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PowershellProcess" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9010" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PowershellProcess" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="9012" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PSObjectGetPropertyValue" opcode="win:Info" keywords="ClientManagement"/>
+        <event value="10001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="SubsystemStartup" opcode="win:Info" keywords="Subsystems" template="Args10001_1"/>
+        <event value="10002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ClientStartup" opcode="win:Info" keywords="Subsystems" template="Args10002_1"/>
+        <event value="11002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UnpublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11004" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11005" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11006" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="UnpublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11007" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11010" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11011" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="11012" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="ClientCoExistence"/>
+        <event value="12001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="VirtualEnvironmentStart" opcode="win:Start" keywords="VREG"/>
+        <event value="13001" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="DeleteUserState" opcode="win:Info" keywords="VFS"/>
+        <event value="13002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="DeleteUserState" opcode="win:Info" keywords="VFS"/>
+        <event value="13003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch" template="Args13003_1"/>
+        <event value="13004" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="ConfigurePackage" opcode="win:Info" keywords="VFS"/>
+        <event value="13005" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="PublishPackage" opcode="win:Info" keywords="VFS"/>
+        <event value="13006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="PublishPackageGroup" opcode="win:Info" keywords="VFS"/>
+        <event value="13007" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="13008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch" template="Args13008_1"/>
+        <event value="13009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="13010" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="13011" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="13012" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="14001" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14002" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14004" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14005" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14006" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14007" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14008" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14009" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14010" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14011" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14012" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14013" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14014" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14015" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14016" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14017" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming" template="Args14017_1"/>
+        <event value="14018" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14019" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14020" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConfigurePackage" opcode="win:Info" keywords="Publishing"/>
+        <event value="14021" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming" template="Args14021_1"/>
+        <event value="14022" version="1" level="win:Critical"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14023" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="GeneralStreaming" opcode="win:Info" keywords="Streaming" template="Args14023_1"/>
+        <event value="14024" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="GeneralStreaming" opcode="win:Info" keywords="Streaming" template="Args14024_1"/>
+        <event value="14025" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14026" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14027" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14028" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="BackgroundStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="14029" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="15001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConnectToAppVClientService" opcode="win:Info" keywords="ClientStreamingUX"/>
+        <event value="15002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ConnectToAppVClientService" opcode="win:Info" keywords="ClientStreamingUX" template="Args15002_1"/>
+        <event value="15003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="StopPackageOrGroup" opcode="win:Info" keywords="ClientStreamingUX" template="Args15003_1"/>
+        <event value="16001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="VirtualEnvironmentStart" opcode="win:Info" keywords="VOBJ"/>
+        <event value="16002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="VirtualEnvironmentStart" opcode="win:Info" keywords="VOBJ"/>
+        <event value="16003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="VOBJ"/>
+        <event value="16004" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="VOBJ" template="Args16004_1"/>
+        <event value="17001" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="UploadReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UploadReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17004" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17005" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="UploadReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17007" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17008" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17009" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17010" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17011" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="UploadReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="17012" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="CreateReportingData" opcode="win:Info" keywords="Reporting"/>
+        <event value="18001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="18002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="18003" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="18004" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="18005" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Virtual Applications" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="18006" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="ApplicationLaunch" opcode="win:Info" keywords="VirtualAppLaunch"/>
+        <event value="19001" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19001_1"/>
+        <event value="19002" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19002_1"/>
+        <event value="19010" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19011" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19101" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19102" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19103" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19104" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19104_1"/>
+        <event value="19105" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19106" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19107" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19108" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19108_1"/>
+        <event value="19201" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19202" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19203" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19204" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19205" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19301" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19302" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19303" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19304" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19401" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19401_1"/>
+        <event value="19402" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19402_1"/>
+        <event value="19403" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19404" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19405" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19406" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19407" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19408" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19501" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19502" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19801" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19802" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh" template="Args19802_1"/>
+        <event value="19803" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19804" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="19805" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="PublishingRefresh" opcode="win:Info" keywords="PublishingRefresh"/>
+        <event value="20001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackageGroup" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="20002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="20101" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Admin" task="PublishPackage" opcode="win:Info" keywords="DynamicConfiguration"/>
+        <event value="21001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="Integration" opcode="win:Info" keywords="Integration"/>
+        <event value="21002" version="1" level="win:Informational"  channel="Microsoft-AppV-Client/Operational" task="Integration" opcode="win:Info" keywords="Integration"/>
+        <event value="22001" version="1" level="win:Warning"  channel="Microsoft-AppV-Client/Admin" task="SxS" opcode="win:Info" keywords="SxS"/>
+        <event value="23001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="GeneralStreaming" opcode="win:Info" keywords="Streaming"/>
+        <event value="24001" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="EnableDisableAppV" opcode="win:Info" keywords="AppManagementConfiguration"/>
+        <event value="24002" version="1" level="win:Error"  channel="Microsoft-AppV-Client/Operational" task="EnableDisableAppV" opcode="win:Info" keywords="AppManagementConfiguration"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-AppV-Client/Admin" type="Admin"/>
+        <channel value="17" name="Microsoft-AppV-Client/Operational" type="Operational"/>
+        <channel value="18" name="Microsoft-AppV-Client/Virtual Applications" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Startup" mask="0x1" message="$(string.string50)" />
+        <keyword name="Shutdown" mask="0x2" message="$(string.string49)" />
+        <keyword name="Logon" mask="0x4" message="$(string.string27)" />
+        <keyword name="Logoff" mask="0x8" message="$(string.string26)" />
+        <keyword name="API" mask="0x10" message="$(string.string0)" />
+        <keyword name="ComponentStartup" mask="0x20" message="$(string.string12)" />
+        <keyword name="Common" mask="0x40" message="$(string.string11)" />
+        <keyword name="Catalog" mask="0x80" message="$(string.string5)" />
+        <keyword name="Publishing" mask="0x100" message="$(string.string38)" />
+        <keyword name="EmbeddedScripting" mask="0x200" message="$(string.string20)" />
+        <keyword name="VFS" mask="0x400" message="$(string.string61)" />
+        <keyword name="VirtualServices" mask="0x800" message="$(string.string65)" />
+        <keyword name="Settings" mask="0x1000" message="$(string.string48)" />
+        <keyword name="DynamicConfiguration" mask="0x2000" message="$(string.string19)" />
+        <keyword name="ClientManagement" mask="0x4000" message="$(string.string7)" />
+        <keyword name="Subsystems" mask="0x8000" message="$(string.string53)" />
+        <keyword name="ClientCoExistence" mask="0x10000" message="$(string.string6)" />
+        <keyword name="VREG" mask="0x20000" message="$(string.string67)" />
+        <keyword name="Streaming" mask="0x40000" message="$(string.string52)" />
+        <keyword name="ClientStreamingUX" mask="0x80000" message="$(string.string10)" />
+        <keyword name="VirtualAppLaunch" mask="0x100000" message="$(string.string63)" />
+        <keyword name="VOBJ" mask="0x200000" message="$(string.string66)" />
+        <keyword name="Reporting" mask="0x400000" message="$(string.string46)" />
+        <keyword name="PublishingRefresh" mask="0x800000" message="$(string.string39)" />
+        <keyword name="Integration" mask="0x1000000" message="$(string.string25)" />
+        <keyword name="SxS" mask="0x2000000" message="$(string.string55)" />
+        <keyword name="AppManagementConfiguration" mask="0x4000000" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="ClientStartup" message="$(string.string1)">
+        </task>
+        <task value="2" name="ClientShutdown" message="$(string.string2)">
+        </task>
+        <task value="3" name="UserLogon" message="$(string.string3)">
+        </task>
+        <task value="4" name="UserLogoff" message="$(string.string4)">
+        </task>
+        <task value="5" name="PolicyChange" message="$(string.string5)">
+        </task>
+        <task value="6" name="APIRequest" message="$(string.string6)">
+        </task>
+        <task value="7" name="Impersonation" message="$(string.string7)">
+        </task>
+        <task value="8" name="ConfigurePackage" message="$(string.string8)">
+        </task>
+        <task value="9" name="PublishPackage" message="$(string.string9)">
+        </task>
+        <task value="10" name="UnpublishPackage" message="$(string.string10)">
+        </task>
+        <task value="11" name="RemovePackage" message="$(string.string11)">
+        </task>
+        <task value="12" name="ConfigurePackageGroup" message="$(string.string12)">
+        </task>
+        <task value="13" name="PublishPackageGroup" message="$(string.string13)">
+        </task>
+        <task value="14" name="UnpublishPackageGroup" message="$(string.string14)">
+        </task>
+        <task value="15" name="RemovePackageGroup" message="$(string.string15)">
+        </task>
+        <task value="16" name="ExecuteScripts" message="$(string.string16)">
+        </task>
+        <task value="17" name="VFSRedirection" message="$(string.string17)">
+        </task>
+        <task value="18" name="ConfigureVirtualServices" message="$(string.string18)">
+        </task>
+        <task value="19" name="SettingChanges" message="$(string.string19)">
+        </task>
+        <task value="20" name="ParseDynamicConfigurationFile" message="$(string.string20)">
+        </task>
+        <task value="21" name="PowerShellInvoke" message="$(string.string21)">
+        </task>
+        <task value="22" name="SubsystemStartup" message="$(string.string22)">
+        </task>
+        <task value="23" name="ApplicationLaunch" message="$(string.string23)">
+        </task>
+        <task value="24" name="VirtualEnvironmentStart" message="$(string.string24)">
+        </task>
+        <task value="25" name="DeleteUserState" message="$(string.string25)">
+        </task>
+        <task value="26" name="BackgroundStreaming" message="$(string.string26)">
+        </task>
+        <task value="27" name="PSObjectGetPropertyValue" message="$(string.string27)">
+        </task>
+        <task value="28" name="PSObjectInvokeMethod" message="$(string.string28)">
+        </task>
+        <task value="29" name="ConnectToAppVClientService" message="$(string.string29)">
+        </task>
+        <task value="30" name="PowershellProcess" message="$(string.string30)">
+        </task>
+        <task value="31" name="CreateReportingData" message="$(string.string31)">
+        </task>
+        <task value="32" name="UploadReportingData" message="$(string.string32)">
+        </task>
+        <task value="33" name="GeneralStreaming" message="$(string.string33)">
+        </task>
+        <task value="34" name="RepairPackage" message="$(string.string34)">
+        </task>
+        <task value="35" name="RepairPackageGroup" message="$(string.string35)">
+        </task>
+        <task value="36" name="PublishingRefresh" message="$(string.string36)">
+        </task>
+        <task value="37" name="StopPackageOrGroup" message="$(string.string37)">
+        </task>
+        <task value="38" name="Integration" message="$(string.string38)">
+        </task>
+        <task value="39" name="SxS" message="$(string.string39)">
+        </task>
+        <task value="40" name="EnableDisableAppV" message="$(string.string40)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args13_0">
+          <data name="Error" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args3_1">
+          <data name="Item" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args5_1">
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args9_1">
+          <data name="CurrentImpersonationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args16_1">
+          <data name="StringParam" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args17_1">
+          <data name="StringParam1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StringParam2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args102_1">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args1002_1">
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1008_1">
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Folder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1009_1">
+          <data name="PackageGroup" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1010_1">
+          <data name="PackageGroup" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1018_1">
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ActivityID" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1021_1">
+          <data name="ConnectionGroup" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ActivityID" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1027_1">
+          <data name="Id" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1044_1">
+          <data name="ConnectionGroup" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GroupVersion" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PackageVersion" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1078_1">
+          <data name="PackageId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PackageVersion" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GroupId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GroupVersion" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args2001_1">
+          <data name="LastFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReqFolder" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4001_1">
+          <data name="ScriptScope" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EventType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args4002_1">
+          <data name="Timeout" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ScriptScope" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EventType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4004_1">
+          <data name="ScriptScope" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="EventType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserSid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4006_1">
+          <data name="tGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="tString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args6006_1">
+          <data name="Item1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Item2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8001_1">
+          <data name="Error" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Reason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="line" inType="win:Int64" outType="xs:long"  />
+          <data name="column" inType="win:Int64" outType="xs:long"  />
+          <data name="offset" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args8002_1">
+          <data name="Error" inType="win:Int32" outType="win:HResult"  />
+          <data name="Reason" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8013_1">
+          <data name="ConnectionGroup" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Sid" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8016_1">
+          <data name="tString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PackageVersion" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args9001_1">
+          <data name="Command" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorWarning" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args10001_1">
+          <data name="PID" inType="win:UInt32" outType="win:PID"  />
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SubsystemName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args10002_1">
+          <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13003_1">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Pid" inType="win:UInt32" outType="win:PID"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args13008_1">
+          <data name="ErrorHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ErrorLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ProcessID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PackageId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PackageVersion" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args14017_1">
+          <data name="Package" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Hresult" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args14021_1">
+          <data name="tGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="tString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args14023_1">
+          <data name="File" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Pid" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args14024_1">
+          <data name="File" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Pid" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sid" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15002_1">
+          <data name="HResult" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args15003_1">
+          <data name="VirtualEnvironmentId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VirtualEnvironmentVersion" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ErrorLow" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args16004_1">
+          <data name="PackageId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PackageVersion" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GroupId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GroupVersion" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args19001_1">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flag" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args19002_1">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flag" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args19104_1">
+          <data name="Value1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19108_1">
+          <data name="Guid1" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Guid2" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Guid3" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args19401_1">
+          <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args19402_1">
+          <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args19802_1">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flag1" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Flag2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ErrorHigh" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ErrorLow" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="API" />
+       <string id="string1" value="APIRequest" />
+       <string id="string2" value="ApplicationLaunch" />
+       <string id="string3" value="AppManagementConfiguration" />
+       <string id="string4" value="BackgroundStreaming" />
+       <string id="string5" value="Catalog" />
+       <string id="string6" value="ClientCoExistence" />
+       <string id="string7" value="ClientManagement" />
+       <string id="string8" value="ClientShutdown" />
+       <string id="string9" value="ClientStartup" />
+       <string id="string10" value="ClientStreamingUX" />
+       <string id="string11" value="Common" />
+       <string id="string12" value="ComponentStartup" />
+       <string id="string13" value="ConfigurePackage" />
+       <string id="string14" value="ConfigurePackageGroup" />
+       <string id="string15" value="ConfigureVirtualServices" />
+       <string id="string16" value="ConnectToAppVClientService" />
+       <string id="string17" value="CreateReportingData" />
+       <string id="string18" value="DeleteUserState" />
+       <string id="string19" value="DynamicConfiguration" />
+       <string id="string20" value="EmbeddedScripting" />
+       <string id="string21" value="EnableDisableAppV" />
+       <string id="string22" value="ExecuteScripts" />
+       <string id="string23" value="GeneralStreaming" />
+       <string id="string24" value="Impersonation" />
+       <string id="string25" value="Integration" />
+       <string id="string26" value="Logoff" />
+       <string id="string27" value="Logon" />
+       <string id="string28" value="Microsoft-AppV-Client" />
+       <string id="string29" value="Microsoft-AppV-Client/Admin" />
+       <string id="string30" value="Microsoft-AppV-Client/Operational" />
+       <string id="string31" value="Microsoft-AppV-Client/Virtual Applications" />
+       <string id="string32" value="ParseDynamicConfigurationFile" />
+       <string id="string33" value="PolicyChange" />
+       <string id="string34" value="PowerShellInvoke" />
+       <string id="string35" value="PowershellProcess" />
+       <string id="string36" value="PSObjectGetPropertyValue" />
+       <string id="string37" value="PSObjectInvokeMethod" />
+       <string id="string38" value="Publishing" />
+       <string id="string39" value="PublishingRefresh" />
+       <string id="string40" value="PublishPackage" />
+       <string id="string41" value="PublishPackageGroup" />
+       <string id="string42" value="RemovePackage" />
+       <string id="string43" value="RemovePackageGroup" />
+       <string id="string44" value="RepairPackage" />
+       <string id="string45" value="RepairPackageGroup" />
+       <string id="string46" value="Reporting" />
+       <string id="string47" value="SettingChanges" />
+       <string id="string48" value="Settings" />
+       <string id="string49" value="Shutdown" />
+       <string id="string50" value="Startup" />
+       <string id="string51" value="StopPackageOrGroup" />
+       <string id="string52" value="Streaming" />
+       <string id="string53" value="Subsystems" />
+       <string id="string54" value="SubsystemStartup" />
+       <string id="string55" value="SxS" />
+       <string id="string56" value="UnpublishPackage" />
+       <string id="string57" value="UnpublishPackageGroup" />
+       <string id="string58" value="UploadReportingData" />
+       <string id="string59" value="UserLogoff" />
+       <string id="string60" value="UserLogon" />
+       <string id="string61" value="VFS" />
+       <string id="string62" value="VFSRedirection" />
+       <string id="string63" value="VirtualAppLaunch" />
+       <string id="string64" value="VirtualEnvironmentStart" />
+       <string id="string65" value="VirtualServices" />
+       <string id="string66" value="VOBJ" />
+       <string id="string67" value="VREG" />
+       <string id="string68" value="win:Info" />
+       <string id="string69" value="win:Send" />
+       <string id="string70" value="win:Start" />
+       <string id="string71" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

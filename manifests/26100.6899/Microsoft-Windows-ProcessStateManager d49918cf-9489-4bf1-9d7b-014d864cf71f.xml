@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ProcessStateManager" name="Microsoft-Windows-ProcessStateManager" guid="{d49918cf-9489-4bf1-9d7b-014d864cf71f}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-ProcessStateManager/Diagnostic" task="StateChange" opcode="win:Info" keywords="StateChange" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  task="PolicySuspend" opcode="win:Info" keywords="Policy"/>
+        <event value="3" version="0" level="win:Informational"  task="PolicyResume" opcode="win:Info" keywords="Policy"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-ProcessStateManager/Diagnostic" task="PriorityChange" opcode="win:Info" keywords="PriorityChange" template="Args4_0"/>
+        <event value="100" version="0" level="win:Informational"  task="StateChange" opcode="win:DC_Stop" keywords="StateChange"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-ProcessStateManager/Diagnostic" task="PriorityChange" opcode="win:DC_Stop" keywords="PriorityChange"/>
+        <event value="102" version="0" level="win:Informational"  task="Rundown" opcode="win:DC_Stop" keywords="Rundown" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  task="ProcessRegister" opcode="win:DC_Stop" keywords="ProcessRegister" template="Args103_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ProcessStateManager/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="StateChange" mask="0x1" message="$(string.string8)" />
+        <keyword name="Policy" mask="0x2" message="$(string.string2)" />
+        <keyword name="PriorityChange" mask="0x4" message="$(string.string5)" />
+        <keyword name="Rundown" mask="0x8" message="$(string.string7)" />
+        <keyword name="ProcessRegister" mask="0x10" message="$(string.string6)" />
+      </keywords>
+      <tasks>
+        <task value="100" name="StateChange" message="$(string.string100)">
+        </task>
+        <task value="101" name="PolicySuspend" message="$(string.string101)">
+        </task>
+        <task value="102" name="PolicyResume" message="$(string.string102)">
+        </task>
+        <task value="103" name="PriorityChange" message="$(string.string103)">
+        </task>
+        <task value="104" name="Rundown" message="$(string.string104)">
+        </task>
+        <task value="105" name="ProcessRegister" message="$(string.string105)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MixedWorkItems" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PureWorkItems" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemWorkItems" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NetworkTokens" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PlmRequestedPriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectivePriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PlmRequestedPriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectivePriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CycleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NetworkTokens" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="ApplicationId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PsmKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActivationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HostId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-ProcessStateManager" />
+       <string id="string1" value="Microsoft-Windows-ProcessStateManager/Diagnostic" />
+       <string id="string2" value="Policy" />
+       <string id="string3" value="PolicyResume" />
+       <string id="string4" value="PolicySuspend" />
+       <string id="string5" value="PriorityChange" />
+       <string id="string6" value="ProcessRegister" />
+       <string id="string7" value="Rundown" />
+       <string id="string8" value="StateChange" />
+       <string id="string9" value="win:DC_Stop" />
+       <string id="string10" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

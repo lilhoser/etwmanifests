@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-NlaSvc" name="Microsoft-Windows-NlaSvc" guid="{63b530f8-29c9-4880-a5b4-b8179096e7b8}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4001" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="WaitForIdentification" opcode="win:Start" keywords="Identification ut:StateTransition" template="Args4001_0"/>
+        <event value="4002" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="WaitForIdentification" opcode="win:Stop" keywords="Identification ut:StateTransition"/>
+        <event value="4101" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Trigger" opcode="MediaConnect" keywords="Trigger LwtDiagnostic" template="Args4101_0"/>
+        <event value="4102" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Trigger" opcode="MediaDisconnect" keywords="Trigger LwtDiagnostic"/>
+        <event value="4103" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Trigger" opcode="RouteChange" keywords="Trigger" template="Args4103_0"/>
+        <event value="4104" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Trigger" opcode="AddressChange" keywords="Trigger"/>
+        <event value="4105" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Trigger" opcode="QuarantineStateChange" keywords="Trigger"/>
+        <event value="4106" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Trigger" opcode="DhcpNotification" keywords="Trigger"/>
+        <event value="4201" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="GatewayResolution" opcode="win:Start" keywords="Resolver"/>
+        <event value="4202" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="GatewayResolution" opcode="win:Stop" keywords="Resolver"/>
+        <event value="4203" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="GatewayResolution" opcode="win:Start" keywords="Resolver" template="Args4203_0"/>
+        <event value="4204" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="GatewayResolution" opcode="win:Stop" keywords="Resolver" template="Args4204_0"/>
+        <event value="4205" version="0" level="win:Error"  channel="Microsoft-Windows-NlaSvc/Operational" task="GatewayResolution" opcode="Failed" keywords="Resolver LwtDiagnostic"/>
+        <event value="4251" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Plugin" opcode="DataIndication" keywords="Plugin" template="Args4251_0"/>
+        <event value="4261" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Dhcp" opcode="Stabilized" keywords="Trigger LwtDiagnostic" template="Args4261_0"/>
+        <event value="4301" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="IntranetResolution" opcode="win:Start" keywords="Resolver Intranet"/>
+        <event value="4302" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="IntranetResolution" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4311" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_DnsSuffix" opcode="win:Start" keywords="Resolver Intranet" template="Args4311_0"/>
+        <event value="4312" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_DnsSuffix" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4313" version="0" level="win:Warning"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_DnsSuffix" opcode="Failed" keywords="Resolver Intranet LwtDiagnostic"/>
+        <event value="4321" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_Ds" opcode="win:Start" keywords="Resolver Intranet"/>
+        <event value="4322" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_Ds" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4323" version="0" level="win:Warning"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_Ds" opcode="Failed" keywords="Resolver Intranet LwtDiagnostic"/>
+        <event value="4331" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_RootDomainGuid" opcode="win:Start" keywords="Resolver Intranet"/>
+        <event value="4332" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="DsGetDcName_RootDomainGuid" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4333" version="0" level="win:Error"  channel="Microsoft-Windows-NlaSvc/Operational" task="DsGetDcName_RootDomainGuid" opcode="Failed" keywords="Resolver Intranet LwtDiagnostic"/>
+        <event value="4341" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="LdapAuthentication" opcode="win:Start" keywords="Resolver Intranet" template="Args4341_0"/>
+        <event value="4342" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="LdapAuthentication" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4343" version="0" level="win:Error"  channel="Microsoft-Windows-NlaSvc/Operational" task="LdapAuthentication" opcode="Failed" keywords="Resolver Intranet LwtDiagnostic"/>
+        <event value="4351" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="ldap_connect" opcode="win:Start" keywords="Resolver Intranet" template="Args4351_0"/>
+        <event value="4352" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="ldap_connect" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4353" version="0" level="win:Error"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="ldap_connect" opcode="Failed" keywords="Resolver Intranet LwtDiagnostic"/>
+        <event value="4354" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="ldap_bind" opcode="win:Start" keywords="Resolver Intranet"/>
+        <event value="4355" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="ldap_bind" opcode="win:Stop" keywords="Resolver Intranet"/>
+        <event value="4356" version="0" level="win:Error"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="ldap_bind" opcode="Failed" keywords="Resolver Intranet LwtDiagnostic"/>
+        <event value="4401" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="InsertIdentifyingSignature" opcode="win:Info" keywords="Identification LwtDiagnostic" template="Args4401_0"/>
+        <event value="4402" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="InsertIdentifiedSignature" opcode="win:Info" keywords="Identification LwtDiagnostic"/>
+        <event value="4403" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="RemoveIdentifiedSignature" opcode="win:Info" keywords="Identification LwtDiagnostic"/>
+        <event value="4405" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="InsertIdentifiedSignature" opcode="win:Info" keywords="Identification LwtDiagnostic"/>
+        <event value="4407" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Interface" opcode="MediaConnect" keywords="Identification LwtDiagnostic"/>
+        <event value="4408" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="Interface" opcode="MediaDisconnect" keywords="Identification LwtDiagnostic"/>
+        <event value="4410" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="InsertIdentifiedSignature" opcode="win:Info" keywords="Identification LwtDiagnostic"/>
+        <event value="4451" version="0" level="win:Informational"  channel="Microsoft-Windows-NlaSvc/Diagnostic" task="LdapAuthentication" opcode="win:Info" template="Args4451_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-NlaSvc/Diagnostic" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-NlaSvc/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="Identification" mask="0x1" message="$(string.string9)" />
+        <keyword name="Resolver" mask="0x2" message="$(string.string27)" />
+        <keyword name="Intranet" mask="0x4" message="$(string.string13)" />
+        <keyword name="Trigger" mask="0x8" message="$(string.string30)" />
+        <keyword name="Plugin" mask="0x10" message="$(string.string24)" />
+        <keyword name="LwtDiagnostic" mask="0x20" message="$(string.string18)" />
+        <keyword name="ut:SendPath" mask="0x100000000" message="$(string.string42)" />
+        <keyword name="ut:ReceivePath" mask="0x200000000" message="$(string.string41)" />
+        <keyword name="ut:L3ConnectPath" mask="0x400000000" message="$(string.string38)" />
+        <keyword name="ut:L2ConnectPath" mask="0x800000000" message="$(string.string37)" />
+        <keyword name="ut:ClosePath" mask="0x1000000000" message="$(string.string33)" />
+        <keyword name="ut:Authentication" mask="0x2000000000" message="$(string.string32)" />
+        <keyword name="ut:Configuration" mask="0x4000000000" message="$(string.string34)" />
+        <keyword name="ut:Global" mask="0x8000000000" message="$(string.string36)" />
+        <keyword name="ut:Dropped" mask="0x10000000000" message="$(string.string35)" />
+        <keyword name="ut:PiiPresent" mask="0x20000000000" message="$(string.string40)" />
+        <keyword name="ut:Packet" mask="0x40000000000" message="$(string.string39)" />
+        <keyword name="ut:Address" mask="0x80000000000" message="$(string.string31)" />
+        <keyword name="ut:StdTemplateHint" mask="0x100000000000" message="$(string.string44)" />
+        <keyword name="ut:StateTransition" mask="0x200000000000" message="$(string.string43)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="WaitForIdentification" message="$(string.string1)">
+        </task>
+        <task value="2" name="Trigger" message="$(string.string2)">
+          <opcodes>
+           <opcode value="31" name="MediaConnect" message="$(string.string19)"/>
+           <opcode value="32" name="MediaDisconnect" message="$(string.string20)"/>
+           <opcode value="33" name="RouteChange" message="$(string.string28)"/>
+           <opcode value="34" name="AddressChange" message="$(string.string0)"/>
+           <opcode value="35" name="QuarantineStateChange" message="$(string.string25)"/>
+           <opcode value="36" name="DhcpNotification" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="GatewayResolution" message="$(string.string3)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="Plugin" message="$(string.string4)">
+          <opcodes>
+           <opcode value="51" name="DataIndication" message="$(string.string1)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="Dhcp" message="$(string.string5)">
+          <opcodes>
+           <opcode value="61" name="Stabilized" message="$(string.string29)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="IntranetResolution" message="$(string.string6)">
+        </task>
+        <task value="7" name="DsGetDcName_DnsSuffix" message="$(string.string7)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="DsGetDcName_Ds" message="$(string.string8)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="DsGetDcName_RootDomainGuid" message="$(string.string9)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="10" name="LdapAuthentication" message="$(string.string10)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="ldap_connect" message="$(string.string11)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="12" name="ldap_bind" message="$(string.string12)">
+          <opcodes>
+           <opcode value="21" name="Failed" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="InsertIdentifyingSignature" message="$(string.string13)">
+        </task>
+        <task value="14" name="InsertIdentifiedSignature" message="$(string.string14)">
+        </task>
+        <task value="15" name="RemoveIdentifiedSignature" message="$(string.string15)">
+        </task>
+        <task value="16" name="Interface" message="$(string.string16)">
+          <opcodes>
+           <opcode value="31" name="MediaConnect" message="$(string.string19)"/>
+           <opcode value="32" name="MediaDisconnect" message="$(string.string20)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="21" name="Failed" message="$(string.string7)"/>
+        <opcode value="31" name="MediaConnect" message="$(string.string19)"/>
+        <opcode value="32" name="MediaDisconnect" message="$(string.string20)"/>
+        <opcode value="33" name="RouteChange" message="$(string.string28)"/>
+        <opcode value="34" name="AddressChange" message="$(string.string0)"/>
+        <opcode value="35" name="QuarantineStateChange" message="$(string.string25)"/>
+        <opcode value="36" name="DhcpNotification" message="$(string.string3)"/>
+        <opcode value="51" name="DataIndication" message="$(string.string1)"/>
+        <opcode value="61" name="Stabilized" message="$(string.string29)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args4001_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args4101_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AdapterName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4103_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MibNotificationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4203_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GatewayIpAddress" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4204_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="GatewayIpAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="NlnsState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MacAddrLen" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MacAddr" inType="win:Binary" outType="xs:hexBinary" length="MacAddrLen" />
+        </template>
+        <template tid="Args4251_0">
+          <data name="PluginName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EntityName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IndicatedRowCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="RowsWithInterfacesIndicatedCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args4261_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NlaState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4311_0">
+          <data name="DnsSuffix" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="RetrievedDomain" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RetrievedForest" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4341_0">
+          <data name="Interface Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Addresses" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Try Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args4351_0">
+          <data name="Addresses" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DcName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Try Number" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Try Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args4401_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SignatureLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Signature" inType="win:Binary" outType="xs:hexBinary" length="SignatureLength" />
+          <data name="SignatureSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4451_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AuthCapUnlikelyReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SpeculativeTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AddressChange" />
+       <string id="string1" value="DataIndication" />
+       <string id="string2" value="Dhcp" />
+       <string id="string3" value="DhcpNotification" />
+       <string id="string4" value="DsGetDcName_DnsSuffix" />
+       <string id="string5" value="DsGetDcName_Ds" />
+       <string id="string6" value="DsGetDcName_RootDomainGuid" />
+       <string id="string7" value="Failed" />
+       <string id="string8" value="GatewayResolution" />
+       <string id="string9" value="Identification" />
+       <string id="string10" value="InsertIdentifiedSignature" />
+       <string id="string11" value="InsertIdentifyingSignature" />
+       <string id="string12" value="Interface" />
+       <string id="string13" value="Intranet" />
+       <string id="string14" value="IntranetResolution" />
+       <string id="string15" value="ldap_bind" />
+       <string id="string16" value="ldap_connect" />
+       <string id="string17" value="LdapAuthentication" />
+       <string id="string18" value="LwtDiagnostic" />
+       <string id="string19" value="MediaConnect" />
+       <string id="string20" value="MediaDisconnect" />
+       <string id="string21" value="Microsoft-Windows-NlaSvc" />
+       <string id="string22" value="Microsoft-Windows-NlaSvc/Diagnostic" />
+       <string id="string23" value="Microsoft-Windows-NlaSvc/Operational" />
+       <string id="string24" value="Plugin" />
+       <string id="string25" value="QuarantineStateChange" />
+       <string id="string26" value="RemoveIdentifiedSignature" />
+       <string id="string27" value="Resolver" />
+       <string id="string28" value="RouteChange" />
+       <string id="string29" value="Stabilized" />
+       <string id="string30" value="Trigger" />
+       <string id="string31" value="ut:Address" />
+       <string id="string32" value="ut:Authentication" />
+       <string id="string33" value="ut:ClosePath" />
+       <string id="string34" value="ut:Configuration" />
+       <string id="string35" value="ut:Dropped" />
+       <string id="string36" value="ut:Global" />
+       <string id="string37" value="ut:L2ConnectPath" />
+       <string id="string38" value="ut:L3ConnectPath" />
+       <string id="string39" value="ut:Packet" />
+       <string id="string40" value="ut:PiiPresent" />
+       <string id="string41" value="ut:ReceivePath" />
+       <string id="string42" value="ut:SendPath" />
+       <string id="string43" value="ut:StateTransition" />
+       <string id="string44" value="ut:StdTemplateHint" />
+       <string id="string45" value="WaitForIdentification" />
+       <string id="string46" value="win:Info" />
+       <string id="string47" value="win:Start" />
+       <string id="string48" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

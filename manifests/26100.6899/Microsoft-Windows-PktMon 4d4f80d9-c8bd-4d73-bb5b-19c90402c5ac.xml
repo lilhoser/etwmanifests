@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PktMon" name="Microsoft-Windows-PktMon" guid="{4d4f80d9-c8bd-4d73-bb5b-19c90402c5ac}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="10" version="0" level="win:Error"  keywords="Config" template="Args10_0"/>
+        <event value="20" version="0" level="win:Informational"  keywords="Rundown" template="Args20_0"/>
+        <event value="30" version="0" level="win:Informational"  keywords="Rundown" template="Args30_0"/>
+        <event value="40" version="0" level="win:Informational"  keywords="Rundown" template="Args40_0"/>
+        <event value="50" version="0" level="win:Informational"  keywords="Rundown" template="Args50_0"/>
+        <event value="60" version="0" level="win:Informational"  keywords="Rundown" template="Args60_0"/>
+        <event value="65" version="0" level="win:Informational"  keywords="Rundown" template="Args65_0"/>
+        <event value="66" version="0" level="win:Informational"  keywords="Rundown" template="Args66_0"/>
+        <event value="70" version="0" level="win:Informational"  keywords="Rundown" template="Args70_0"/>
+        <event value="73" version="0" level="win:Informational"  keywords="Rundown" template="Args73_0"/>
+        <event value="75" version="0" level="win:Informational"  keywords="Rundown" template="Args75_0"/>
+        <event value="80" version="0" level="win:Informational"  keywords="Rundown" template="Args80_0"/>
+        <event value="90" version="0" level="win:Informational"  keywords="Rundown" template="Args90_0"/>
+        <event value="100" version="0" level="win:Informational"  keywords="Rundown" template="Args100_0"/>
+        <event value="110" version="0" level="win:Informational"  keywords="Rundown" template="Args110_0"/>
+        <event value="120" version="0" level="win:Informational"  keywords="NblParsed" template="Args120_0"/>
+        <event value="130" version="0" level="win:Informational"  keywords="NblParsed" template="Args130_0"/>
+        <event value="140" version="0" level="win:Informational"  keywords="NblParsed"/>
+        <event value="150" version="0" level="win:Informational"  keywords="NblParsed"/>
+        <event value="160" version="0" level="win:Informational"  keywords="Payload" template="Args160_0"/>
+        <event value="170" version="0" level="win:Informational"  keywords="Payload"/>
+        <event value="180" version="0" level="win:Informational"  keywords="NblInfo" template="Args180_0"/>
+        <event value="190" version="0" level="win:Informational"  keywords="NblInfo"/>
+        <event value="200" version="0" level="win:Informational"  keywords="Payload" template="Args200_0"/>
+        <event value="210" version="0" level="win:Informational"  keywords="Payload"/>
+        <event value="220" version="0" level="win:Informational"  keywords="Payload" template="Args220_0"/>
+        <event value="230" version="0" level="win:Informational"  keywords="Payload"/>
+        <event value="240" version="0" level="win:Informational"  keywords="Payload"/>
+        <event value="250" version="0" level="win:Informational"  keywords="NblInfo" template="Args250_0"/>
+        <event value="260" version="0" level="win:Informational"  keywords="NblInfo"/>
+        <event value="270" version="0" level="win:Informational"  keywords="CompRegister"/>
+        <event value="280" version="0" level="win:Informational"  keywords="CompRegister"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Config" mask="0x1" message="$(string.string1)" />
+        <keyword name="Rundown" mask="0x2" message="$(string.string6)" />
+        <keyword name="NblParsed" mask="0x4" message="$(string.string4)" />
+        <keyword name="NblInfo" mask="0x8" message="$(string.string3)" />
+        <keyword name="Payload" mask="0x10" message="$(string.string5)" />
+        <keyword name="CompRegister" mask="0x20" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args10_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="Id" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args40_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args60_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args65_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IpAddress" inType="win:UInt32" outType="win:IPv4"  />
+        </template>
+        <template tid="Args66_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IpAddress" inType="win:Binary" outType="win:IPv6"  />
+        </template>
+        <template tid="Args70_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="Size" />
+        </template>
+        <template tid="Args73_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args75_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EtherType" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args80_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTagIn" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketsIn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesIn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DirTagOut" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketsOut" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesOut" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args90_0">
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTagIn" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketsIn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesIn" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DirTagOut" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketsOut" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesOut" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MacAddress1" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="MacAddress2" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="EtherType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VlanId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IpAddress1" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="IpAddress2" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Port1" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Port2" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TCPFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args110_0">
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MacAddress1" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="MacAddress2" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="EtherType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VlanId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="IpAddress1" inType="win:Binary" outType="win:IPv6"  />
+          <data name="IpAddress2" inType="win:Binary" outType="win:IPv6"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Port1" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Port2" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TCPFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args120_0">
+          <data name="DestinationMAC" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="SourceMAC" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="EtherType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VlanId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DestinationIP" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="SourceIP" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DestinationPort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SourcePort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TCPFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PktGroupId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PktCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AppearanceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="DestinationMAC" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="SourceMAC" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="EtherType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VlanId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DestinationIP" inType="win:Binary" outType="win:IPv6"  />
+          <data name="SourceIP" inType="win:Binary" outType="win:IPv6"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DestinationPort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SourcePort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TCPFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PktGroupId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PktCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AppearanceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="PktGroupId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PktNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AppearanceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OriginalPayloadSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LoggedPayloadSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="LoggedPayloadSize" />
+        </template>
+        <template tid="Args180_0">
+          <data name="PktGroupId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PktCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AppearanceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TcpIpChecksum" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TcpLargeSend" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Ieee8021Q" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HashInfo" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HashValue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VirtualSubnetInfo" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TcpRecvSegCoalesceInfo" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NrtNameResolutionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TcpSendOffloadsSupplementalInfo" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SwitchForwardingDetail" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="GftOffloadInfo" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="GftFlowEntryId" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DestinationIP" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="SourceIP" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DestinationPort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SourcePort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OriginalPayloadSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LoggedPayloadSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="LoggedPayloadSize" />
+        </template>
+        <template tid="Args220_0">
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DestinationIP" inType="win:Binary" outType="win:IPv6"  />
+          <data name="SourceIP" inType="win:Binary" outType="win:IPv6"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DestinationPort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SourcePort" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OriginalPayloadSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LoggedPayloadSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="LoggedPayloadSize" />
+        </template>
+        <template tid="Args250_0">
+          <data name="PktGroupId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PktNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AppearanceCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DirTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PacketType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComponentId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EdgeId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DropLocation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PktContext" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CompRegister" />
+       <string id="string1" value="Config" />
+       <string id="string2" value="Microsoft-Windows-PktMon" />
+       <string id="string3" value="NblInfo" />
+       <string id="string4" value="NblParsed" />
+       <string id="string5" value="Payload" />
+       <string id="string6" value="Rundown" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

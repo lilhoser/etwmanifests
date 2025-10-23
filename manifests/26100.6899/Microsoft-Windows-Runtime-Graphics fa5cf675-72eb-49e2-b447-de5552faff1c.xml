@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Runtime-Graphics" name="Microsoft-Windows-Runtime-Graphics" guid="{fa5cf675-72eb-49e2-b447-de5552faff1c}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-Runtime-Graphics/Analytic" task="DisplayProperties" opcode="win:Info" keywords="DisplayProperties" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-Runtime-Graphics/Analytic" task="DisplayProperties" opcode="win:Info" keywords="DisplayProperties"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-Runtime-Graphics/Analytic" task="DisplayProperties" opcode="win:Info" keywords="DisplayProperties"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Runtime-Graphics/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="DisplayProperties" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="DisplayProperties" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="WnfStateNameData0" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="WnfStateNameData1" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DisplayProperties" />
+       <string id="string1" value="Microsoft-Windows-Runtime-Graphics" />
+       <string id="string2" value="Microsoft-Windows-Runtime-Graphics/Analytic" />
+       <string id="string3" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Sudo" name="Microsoft-Windows-Sudo" guid="{9d74dc62-b75f-54cd-be9e-c28940b5feed}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Sudo/Admin" keywords="Client" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Sudo/Admin" keywords="Server"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Sudo/Admin" type="Admin"/>
+      </channels>
+      <keywords>
+        <keyword name="Client" mask="0x1" message="$(string.string0)" />
+        <keyword name="Server" mask="0x2" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Application" inType="win:AnsiString" outType="win:Binary"  />
+          <data name="ArgsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentWorkingDirectory" inType="win:AnsiString" outType="win:Binary"  />
+          <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InheritEnvironment" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="Redirected" inType="win:UInt8" outType="xs:boolean"  />
+          <data name="FullCommandline" inType="win:AnsiString" outType="win:Binary"  />
+          <data name="RequestID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Client" />
+       <string id="string1" value="Microsoft-Windows-Sudo" />
+       <string id="string2" value="Microsoft-Windows-Sudo/Admin" />
+       <string id="string3" value="Server" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

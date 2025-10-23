@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WCN-Config-Registrar-Secure" name="Microsoft-Windows-WCN-Config-Registrar-Secure" guid="{c100becc-d33a-4a4b-bf23-bbef4663d017}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="9000" version="0" level="win:Informational"  channel="Microsoft-Windows-WCN-Config-Registrar/Diagnostic" template="Args9000_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WCN-Config-Registrar/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args9000_0">
+          <data name="MessageGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WCN-Config-Registrar-Secure" />
+       <string id="string1" value="Microsoft-Windows-WCN-Config-Registrar/Diagnostic" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

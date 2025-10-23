@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PerfProc" name="Microsoft-Windows-PerfProc" guid="{72d211e1-4c54-4a93-9520-4901681b2271}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="1" level="win:Warning"  channel="Application"/>
+        <event value="2001" version="1" level="win:Warning"  channel="Application" template="Args2001_1"/>
+        <event value="2002" version="1" level="win:Warning"  channel="Application" template="Args2002_1"/>
+        <event value="2003" version="1" level="win:Warning"  channel="Application"/>
+        <event value="2004" version="1" level="win:Warning"  channel="Application"/>
+        <event value="2005" version="1" level="win:Warning"  channel="Application"/>
+        <event value="2006" version="1" level="win:Warning"  channel="Application"/>
+        <event value="8192" version="1" level="win:Warning"  channel="Application"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args2001_1">
+          <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args2002_1">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Microsoft-Windows-PerfProc" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

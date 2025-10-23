@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="NetJoin" name="NetJoin" guid="{9741fd4e-3757-479f-a3c6-fc49f6d5edd0}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4096" version="0" level="win:Informational"  channel="System" template="Args4096_0"/>
+        <event value="4097" version="0" level="win:Error"  channel="System" template="Args4097_0"/>
+        <event value="4100" version="0" level="win:Informational"  channel="System"/>
+        <event value="4101" version="0" level="win:Error"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args4096_0">
+          <data name="DomainName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4097_0">
+          <data name="DomainName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NetStatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="NetJoin" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

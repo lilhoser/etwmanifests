@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SetupPlatform" name="Microsoft-Windows-SetupPlatform" guid="{530fb9b9-c515-4472-9313-fb346f9255e3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-SetupPlatform/Analytic" task="OperationRun" opcode="win:Start" keywords="keyPerformance" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-SetupPlatform/Analytic" task="OperationRun" opcode="win:Stop" keywords="keyPerformance"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-SetupPlatform/Analytic" task="OnlineGatherRun" opcode="win:Start" keywords="keyPerformance" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-SetupPlatform/Analytic" task="OnlineGatherRun" opcode="win:Stop" keywords="keyPerformance"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-SetupPlatform/Analytic" task="OfflineGatherRun" opcode="win:Start" keywords="keyPerformance"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-SetupPlatform/Analytic" task="OfflineGatherRun" opcode="win:Stop" keywords="keyPerformance"/>
+        <event value="2005" version="0" level="win:Informational"  channel="System" task="InstallWindows" opcode="win:Info" template="Args2005_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-SetupPlatform/Analytic" type="Analytic"/>
+        <channel value="17" name="Setup" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="keyPerformance" mask="0x1" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="1000" name="OperationRun" message="$(string.string1000)">
+        </task>
+        <task value="1001" name="OnlineGatherRun" message="$(string.string1001)">
+        </task>
+        <task value="1002" name="OfflineGatherRun" message="$(string.string1002)">
+        </task>
+        <task value="1003" name="InstallWindows" message="$(string.string1003)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="OfflineWinDir" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MachineSpecific" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2005_0">
+          <data name="Installation choice" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Host OS Major version" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Host OS Minor version" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Host OS Build number" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Host OS Service pack major number" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Host OS Service pack minor number" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="InstallWindows" />
+       <string id="string1" value="keyPerformance" />
+       <string id="string2" value="Microsoft-Windows-SetupPlatform" />
+       <string id="string3" value="Microsoft-Windows-SetupPlatform/Analytic" />
+       <string id="string4" value="OfflineGatherRun" />
+       <string id="string5" value="OnlineGatherRun" />
+       <string id="string6" value="OperationRun" />
+       <string id="string7" value="Setup" />
+       <string id="string8" value="System" />
+       <string id="string9" value="win:Info" />
+       <string id="string10" value="win:Start" />
+       <string id="string11" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

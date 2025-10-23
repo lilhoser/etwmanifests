@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Proximity-Common" name="Microsoft-Windows-Proximity-Common" guid="{28058203-d394-4afc-b2a6-2f9155a3bb95}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_DeviceArrivalTrigger" opcode="win:Start" template="Args5_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Informational" task="Proximity_OOBMessageProcessing" opcode="win:Start" keywords="ProximityAssociation"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Informational" task="Proximity_OOBMessagePublishing" opcode="win:Start" keywords="ProximityAssociation" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Informational" task="Proximity_OOBMessagePublishing" opcode="win:Stop"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Informational" task="Proximity_OOBMessageProcessing" opcode="win:Stop"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_DeviceAssociation" opcode="win:Start" template="Args14_0"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_DeviceAssociation" opcode="win:Stop"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SessionAppLaunch" opcode="win:Start" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SessionAppLaunch" opcode="win:Stop"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_ReceiveSharedContent" opcode="win:Start"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_ReceiveSharedContent" opcode="win:Stop"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SessionProtocol" opcode="win:Start"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SessionProtocol" opcode="win:Stop"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SessionConnect" opcode="win:Start"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SessionConnect" opcode="win:Stop" template="Args23_0"/>
+        <event value="24" version="0" level="win:Error"  channel="Microsoft-Windows-Proximity-Common/Diagnostic" template="Args24_0"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_ReceiveSharedContent" opcode="win:Start"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_ReceiveSharedContent" opcode="win:Stop"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SocketConnect" opcode="win:Start"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-Proximity-Common/Performance" task="Proximity_SocketConnect" opcode="win:Stop" template="Args41_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Proximity-Common/Informational" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-Proximity-Common/Performance" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Proximity-Common/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="ProximityAssociation" mask="0x1" message="$(string.string13)" />
+      </keywords>
+      <tasks>
+        <task value="10" name="Proximity_DeviceArrivalTrigger" message="$(string.string10)">
+        </task>
+        <task value="11" name="Proximity_OOBMessageProcessing" message="$(string.string11)">
+        </task>
+        <task value="12" name="Proximity_OOBMessagePublishing" message="$(string.string12)">
+        </task>
+        <task value="13" name="Proximity_DeviceAssociation" message="$(string.string13)">
+        </task>
+        <task value="14" name="Proximity_SessionAppLaunch" message="$(string.string14)">
+        </task>
+        <task value="15" name="Proximity_ReceiveSharedContent" message="$(string.string15)">
+        </task>
+        <task value="16" name="Proximity_SessionProtocol" message="$(string.string16)">
+        </task>
+        <task value="17" name="Proximity_SessionConnect" message="$(string.string17)">
+        </task>
+        <task value="18" name="Proximity_SocketConnect" message="$(string.string18)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args5_0">
+          <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="Pointer1" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="String2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="String3" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="HrResult" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DeviceCategory" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="Integer4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="String1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="String2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args41_0">
+          <data name="TransportType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HrConnectResult" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Proximity-Common" />
+       <string id="string1" value="Microsoft-Windows-Proximity-Common/Diagnostic" />
+       <string id="string2" value="Microsoft-Windows-Proximity-Common/Informational" />
+       <string id="string3" value="Microsoft-Windows-Proximity-Common/Performance" />
+       <string id="string4" value="Proximity_DeviceArrivalTrigger" />
+       <string id="string5" value="Proximity_DeviceAssociation" />
+       <string id="string6" value="Proximity_OOBMessageProcessing" />
+       <string id="string7" value="Proximity_OOBMessagePublishing" />
+       <string id="string8" value="Proximity_ReceiveSharedContent" />
+       <string id="string9" value="Proximity_SessionAppLaunch" />
+       <string id="string10" value="Proximity_SessionConnect" />
+       <string id="string11" value="Proximity_SessionProtocol" />
+       <string id="string12" value="Proximity_SocketConnect" />
+       <string id="string13" value="ProximityAssociation" />
+       <string id="string14" value="win:Start" />
+       <string id="string15" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

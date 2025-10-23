@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SmartCard-Audit" name="Microsoft-Windows-SmartCard-Audit" guid="{09ac07b9-6ac9-43bc-a50f-58419a797c69}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Error"  channel="Microsoft-Windows-SmartCard-Audit/Authentication" task="Failure" keywords="AuditFailure SmartCard CHV PIN" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-SmartCard-Audit/Authentication" task="Success" keywords="AuditSuccess SmartCard CHV PIN"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SmartCard-Audit/Authentication" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="AuditFailure" mask="0x1" message="$(string.string0)" />
+        <keyword name="AuditSuccess" mask="0x2" message="$(string.string1)" />
+        <keyword name="SmartCard" mask="0x4" message="$(string.string7)" />
+        <keyword name="CHV" mask="0x8" message="$(string.string2)" />
+        <keyword name="PIN" mask="0x10" message="$(string.string6)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Success" message="$(string.string1)">
+        </task>
+        <task value="2" name="Failure" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="Process" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AuditFailure" />
+       <string id="string1" value="AuditSuccess" />
+       <string id="string2" value="CHV" />
+       <string id="string3" value="Failure" />
+       <string id="string4" value="Microsoft-Windows-SmartCard-Audit" />
+       <string id="string5" value="Microsoft-Windows-SmartCard-Audit/Authentication" />
+       <string id="string6" value="PIN" />
+       <string id="string7" value="SmartCard" />
+       <string id="string8" value="Success" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

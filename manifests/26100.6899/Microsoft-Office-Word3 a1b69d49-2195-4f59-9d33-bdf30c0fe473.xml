@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Office-Word3" name="Microsoft-Office-Word3" guid="{a1b69d49-2195-4f59-9d33-bdf30c0fe473}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="WordChannel" task="tskVclok" keywords="OCSB"/>
+        <event value="2" version="0" level="win:Informational"  channel="WordChannel" task="tskVclok" opcode="opcodeVclokEntryPacketDelayed" keywords="OCSB" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="WordChannel" task="tskVclok" keywords="OCSB"/>
+        <event value="5" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagAdded" keywords="Hashtags"/>
+        <event value="6" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagRemoved" keywords="Hashtags"/>
+        <event value="7" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagError" keywords="Hashtags"/>
+        <event value="8" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagFlyoutInvoke" keywords="Hashtags"/>
+        <event value="9" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagFlyoutDismiss" keywords="Hashtags"/>
+        <event value="10" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagDocOpen" keywords="Hashtags"/>
+        <event value="11" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagDocOpen" keywords="Hashtags"/>
+        <event value="12" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagNotificationCollectorProcessList" keywords="Hashtags"/>
+        <event value="13" version="0" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="opcodeHashtagNotificationCollectorResetList" keywords="Hashtags"/>
+        <event value="14" version="0" level="win:Verbose"  channel="WordChannel" task="tskEmojis" opcode="opcodeEmojiFlyoutInvoke" keywords="Emojis"/>
+        <event value="15" version="0" level="win:Verbose"  channel="WordChannel" task="tskEmojis" opcode="opcodeEmojiFlyoutDismiss" keywords="Emojis" template="Args15_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="WordChannel" task="tskForms" opcode="opcodeDocHasFormsField" keywords="Forms" template="Args18_0"/>
+        <event value="21" version="0" level="win:Verbose"  channel="WordChannel" task="tskInval" opcode="opcodeInvalDoc" keywords="Inval" template="Args21_0"/>
+        <event value="22" version="0" level="win:Verbose"  channel="WordChannel" task="tskInval" opcode="opcodeInvalCp" keywords="Inval" template="Args22_0"/>
+        <event value="23" version="0" level="win:Verbose"  channel="WordChannel" task="tskInval" opcode="opcodeInvalRegion" keywords="Inval" template="Args23_0"/>
+        <event value="24" version="0" level="wls:Verbose50"  channel="WordChannel" task="tskInval" opcode="opcodeInvalRegionVerbose" keywords="Inval" template="Args24_0"/>
+        <event value="31" version="0" level="win:Error"  channel="WordChannel" task="tskCoauthUndo" opcode="opcodeCoauthUndoDeleteDomoRangeError" keywords="CoauthUndo" template="Args31_0"/>
+        <event value="104" version="0" level="win:Informational"  channel="WordChannel" task="tskMailMerge" opcode="opcodeMailMergeStarted" keywords="MailMerge"/>
+        <event value="105" version="0" level="win:Informational"  channel="WordChannel" task="tskMailMerge" opcode="opcodeMailMergeFinished" keywords="MailMerge"/>
+        <event value="250" version="0" level="win:Informational"  channel="WordChannel" task="tskFastCoauth" opcode="opcodeFastCoauthChangeReceived" keywords="FastCoauth" template="Args250_0"/>
+        <event value="251" version="0" level="win:Informational"  channel="WordChannel" task="tskFastCoauth" opcode="opcodeFastCoauthDocumentReplicated" keywords="FastCoauth"/>
+        <event value="300" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibPastedFrom" keywords="EasyBib"/>
+        <event value="301" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibRibbonOrChunkHidden" keywords="EasyBib"/>
+        <event value="302" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibAddinBlocked" keywords="EasyBib"/>
+        <event value="303" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibCalloutDisplayed" keywords="EasyBib"/>
+        <event value="304" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibCalloutDismissClicked" keywords="EasyBib"/>
+        <event value="305" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibCalloutLaunchClicked" keywords="EasyBib"/>
+        <event value="306" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibCalloutOutsideClicked" keywords="EasyBib"/>
+        <event value="307" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibStoreClicked" keywords="EasyBib"/>
+        <event value="308" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibAddinInsertedFromCallout" keywords="EasyBib"/>
+        <event value="309" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibAddinLoadedBefore" keywords="EasyBib"/>
+        <event value="310" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibFeatureOff" keywords="EasyBib"/>
+        <event value="311" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibNotEnglish" keywords="EasyBib"/>
+        <event value="312" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibDisplayedManyTimes" keywords="EasyBib"/>
+        <event value="313" version="0" level="win:Informational"  channel="WordChannel" task="tskEasyBibCallout" opcode="opcodeEasyBibSendStatusEvent" keywords="EasyBib"/>
+        <event value="351" version="0" level="win:Informational"  channel="WordChannel" task="tskFocusModeEntryPoint" opcode="opcodeFocusModeEntryPoint" keywords="FocusMode" template="Args351_0"/>
+        <event value="352" version="0" level="win:Informational"  channel="WordChannel" task="tskFocusModeExitPoint" opcode="opcodeFocusModeExitPoint" keywords="FocusMode" template="Args352_0"/>
+        <event value="361" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorIdleStart" keywords="AddinMonitor"/>
+        <event value="362" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorIdleStop" keywords="AddinMonitor"/>
+        <event value="363" version="0" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorNotifyUserResult" keywords="AddinMonitor" template="Args363_0"/>
+        <event value="364" version="0" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorShowNotificationResult" keywords="AddinMonitor" template="Args364_0"/>
+        <event value="365" version="0" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorInit" keywords="AddinMonitor"/>
+        <event value="366" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorInitLoadBoot" keywords="AddinMonitor"/>
+        <event value="367" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorInitLoadConnect" keywords="AddinMonitor"/>
+        <event value="368" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorEnumReg" keywords="AddinMonitor" template="Args368_0"/>
+        <event value="369" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDeserializeCValue" keywords="AddinMonitor" template="Args369_0"/>
+        <event value="370" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDeserializeValue" keywords="AddinMonitor" template="Args370_0"/>
+        <event value="371" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorGateBizbar" keywords="AddinMonitor" template="Args371_0"/>
+        <event value="372" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorGateOM" keywords="AddinMonitor"/>
+        <event value="373" version="0" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorShouldNotify" keywords="AddinMonitor" template="Args373_0"/>
+        <event value="374" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDisplayBizbar" keywords="AddinMonitor" template="Args374_0"/>
+        <event value="375" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorSlowest" keywords="AddinMonitor"/>
+        <event value="376" version="0" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDialogShow" keywords="AddinMonitor"/>
+        <event value="378" version="0" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDialogOnEvent" keywords="AddinMonitor" template="Args378_0"/>
+        <event value="379" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDwConnect" keywords="AddinMonitor" template="Args379_0"/>
+        <event value="380" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDwPolicy" keywords="AddinMonitor" template="Args380_0"/>
+        <event value="381" version="0" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorGateVBA" keywords="AddinMonitor"/>
+        <event value="441" version="0" level="win:Informational"  channel="WordChannel" task="tskDragDrop" opcode="opcodeDragImageSize" keywords="OLE" template="Args441_0"/>
+        <event value="451" version="0" level="win:Informational"  channel="WordChannel" task="tskOleAutoActivation" opcode="opcodeOleAutoActivatedOnOpen" keywords="OLE" template="Args451_0"/>
+        <event value="461" version="0" level="win:Informational"  channel="WordChannel" task="tskEditAggregationFromSave" opcode="opcodeEditAggregationFromSave" keywords="FastCoauth" template="Args461_0"/>
+        <event value="462" version="0" level="win:Informational"  channel="WordChannel" task="tskEditAggregationFromMerge" opcode="opcodeEditAggregationFromMerge" keywords="FastCoauth"/>
+        <event value="463" version="0" level="win:Informational"  channel="WordChannel" task="tskQMUnsafeOpSource" opcode="opcodeQMUnsafeOpSource" keywords="FastCoauth" template="Args463_0"/>
+        <event value="464" version="0" level="win:Informational"  channel="WordChannel" task="tskQMUnsafeProperty" opcode="opcodeQMUnsafeProperty" keywords="FastCoauth" template="Args464_0"/>
+        <event value="471" version="0" level="win:Informational"  channel="WordChannel" keywords="SmartLinks"/>
+        <event value="472" version="0" level="win:Informational"  channel="WordChannel" keywords="SmartLinks" template="Args472_0"/>
+        <event value="481" version="0" level="win:Verbose"  channel="WordChannel" task="tskPerformance" opcode="opcodeProfilerJson" keywords="Performance" template="Args481_0"/>
+        <event value="2032" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="OCSB" template="Args2032_0"/>
+        <event value="2033" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="CoauthUndo"/>
+        <event value="2034" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Hashtags"/>
+        <event value="2035" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Emojis"/>
+        <event value="2036" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="AsyncEdit"/>
+        <event value="2037" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Forms"/>
+        <event value="2038" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="FileNew"/>
+        <event value="2039" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Inval"/>
+        <event value="2040" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="SuggestionService"/>
+        <event value="2041" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="DocTiling"/>
+        <event value="2042" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="OLE"/>
+        <event value="2043" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="MailMerge"/>
+        <event value="2044" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Language"/>
+        <event value="2045" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="FlashEdits"/>
+        <event value="2046" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="EasyBib"/>
+        <event value="2047" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="FastCoauth"/>
+        <event value="2048" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="DigitalPrint"/>
+        <event value="2049" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="FocusMode"/>
+        <event value="2050" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="AsyncCoAuthoring"/>
+        <event value="2051" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="AddinMonitor"/>
+        <event value="2052" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Acronyms"/>
+        <event value="2053" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Rewrite"/>
+        <event value="2054" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="SmartLinks"/>
+        <event value="2055" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="DocumentTasks"/>
+        <event value="2056" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Shutdown"/>
+        <event value="2057" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Sidetrack"/>
+        <event value="2058" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="Performance"/>
+        <event value="2059" version="0" level="win:Warning"  channel="WordChannel" opcode="opcodeWarning" keywords="InfoProtection"/>
+        <event value="2064" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="OCSB" template="Args2064_0"/>
+        <event value="2065" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="CoauthUndo"/>
+        <event value="2066" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Hashtags"/>
+        <event value="2067" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Emojis"/>
+        <event value="2068" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="AsyncEdit"/>
+        <event value="2069" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Forms"/>
+        <event value="2070" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="FileNew"/>
+        <event value="2071" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Inval"/>
+        <event value="2072" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="SuggestionService"/>
+        <event value="2073" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="DocTiling"/>
+        <event value="2074" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="OLE"/>
+        <event value="2075" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="MailMerge"/>
+        <event value="2076" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Language"/>
+        <event value="2077" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="FlashEdits"/>
+        <event value="2078" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="EasyBib"/>
+        <event value="2079" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="FastCoauth"/>
+        <event value="2080" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="DigitalPrint"/>
+        <event value="2081" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="FocusMode"/>
+        <event value="2082" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="AsyncCoAuthoring"/>
+        <event value="2083" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="AddinMonitor"/>
+        <event value="2084" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Acronyms"/>
+        <event value="2085" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Rewrite"/>
+        <event value="2086" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="SmartLinks"/>
+        <event value="2087" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="DocumentTasks"/>
+        <event value="2088" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Shutdown"/>
+        <event value="2089" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Sidetrack"/>
+        <event value="2090" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="Performance"/>
+        <event value="2091" version="0" level="win:Informational"  channel="WordChannel" opcode="opcodeInformational" keywords="InfoProtection"/>
+        <event value="4" version="1" level="win:Informational"  channel="WordChannel" task="tskVclok" opcode="opcodeVclokOnUploadComplete" keywords="OCSB" template="Args4_1"/>
+        <event value="20" version="1" level="win:Verbose"  channel="WordChannel" task="tskInval" opcode="opcodeTrashWwdPages" keywords="Inval" template="Args20_1"/>
+        <event value="25" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskInval" opcode="opcodeInvalCpDisp" keywords="Inval" template="Args25_1"/>
+        <event value="30" version="1" level="win:Informational"  channel="WordChannel" task="tskCoauthUndo" opcode="opcodeCoauthUndoAttemptUndoWithConflict" keywords="CoauthUndo" template="Args30_1"/>
+        <event value="100" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskInval" opcode="opcodeUpdateInvalidWwd" keywords="Inval" template="Args100_1"/>
+        <event value="101" version="1" level="win:Verbose"  channel="WordChannel" task="tskInval" opcode="opcodeRequestPprUpdate" keywords="Inval" template="Args101_1"/>
+        <event value="377" version="1" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="opcodeAddinMonitorDialogAddPadii" keywords="AddinMonitor" template="Args377_1"/>
+        <event value="2000" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="OCSB" template="Args2000_1"/>
+        <event value="2001" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="CoauthUndo"/>
+        <event value="2002" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Hashtags"/>
+        <event value="2003" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Emojis"/>
+        <event value="2004" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="AsyncEdit"/>
+        <event value="2005" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Forms"/>
+        <event value="2006" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="FileNew"/>
+        <event value="2007" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Inval"/>
+        <event value="2008" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="SuggestionService"/>
+        <event value="2009" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="DocTiling"/>
+        <event value="2010" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="OLE"/>
+        <event value="2011" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="MailMerge"/>
+        <event value="2012" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Language"/>
+        <event value="2013" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="FlashEdits"/>
+        <event value="2014" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="EasyBib"/>
+        <event value="2015" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="FastCoauth"/>
+        <event value="2016" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="DigitalPrint"/>
+        <event value="2017" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="FocusMode"/>
+        <event value="2018" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="AsyncCoAuthoring"/>
+        <event value="2019" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="AddinMonitor"/>
+        <event value="2020" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Acronyms"/>
+        <event value="2021" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Rewrite"/>
+        <event value="2022" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="SmartLinks"/>
+        <event value="2023" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="DocumentTasks"/>
+        <event value="2024" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Shutdown"/>
+        <event value="2025" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Sidetrack"/>
+        <event value="2026" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="Performance"/>
+        <event value="2027" version="1" level="win:Error"  channel="WordChannel" opcode="opcodeError" keywords="InfoProtection"/>
+        <event value="30579" version="1" level="win:Critical"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB" template="Args30579_1"/>
+        <event value="30580" version="1" level="win:Error"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30581" version="1" level="win:Warning"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30582" version="1" level="win:Informational"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30583" version="1" level="win:Verbose"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30584" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30585" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30586" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30587" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskOCSB" opcode="win:Info" keywords="OCSB"/>
+        <event value="30588" version="1" level="win:Critical"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30589" version="1" level="win:Error"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30590" version="1" level="win:Warning"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30591" version="1" level="win:Informational"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30592" version="1" level="win:Verbose"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30593" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30594" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30595" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30596" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskCoauthUndo" opcode="win:Info" keywords="CoauthUndo"/>
+        <event value="30597" version="1" level="win:Critical"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30598" version="1" level="win:Error"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30599" version="1" level="win:Warning"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30600" version="1" level="win:Informational"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30601" version="1" level="win:Verbose"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30602" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30603" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30604" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30605" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskHashtags" opcode="win:Info" keywords="Hashtags"/>
+        <event value="30606" version="1" level="win:Critical"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30607" version="1" level="win:Error"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30608" version="1" level="win:Warning"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30609" version="1" level="win:Informational"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30610" version="1" level="win:Verbose"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30611" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30612" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30613" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30614" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskEmojis" opcode="win:Info" keywords="Emojis"/>
+        <event value="30615" version="1" level="win:Critical"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30616" version="1" level="win:Error"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30617" version="1" level="win:Warning"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30618" version="1" level="win:Informational"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30619" version="1" level="win:Verbose"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30620" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30621" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30622" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30623" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskAsyncEdit" opcode="win:Info" keywords="AsyncEdit"/>
+        <event value="30624" version="1" level="win:Critical"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30625" version="1" level="win:Error"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30626" version="1" level="win:Warning"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30627" version="1" level="win:Informational"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30628" version="1" level="win:Verbose"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30629" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30630" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30631" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30632" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskForms" opcode="win:Info" keywords="Forms"/>
+        <event value="30633" version="1" level="win:Critical"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30634" version="1" level="win:Error"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30635" version="1" level="win:Warning"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30636" version="1" level="win:Informational"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30637" version="1" level="win:Verbose"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30638" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30639" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30640" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30641" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskFileNew" opcode="win:Info" keywords="FileNew"/>
+        <event value="30642" version="1" level="win:Critical"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30643" version="1" level="win:Error"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30644" version="1" level="win:Warning"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30645" version="1" level="win:Informational"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30646" version="1" level="win:Verbose"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30647" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30648" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30649" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30650" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskInval" opcode="win:Info" keywords="Inval"/>
+        <event value="30651" version="1" level="win:Critical"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30652" version="1" level="win:Error"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30653" version="1" level="win:Warning"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30654" version="1" level="win:Informational"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30655" version="1" level="win:Verbose"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30656" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30657" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30658" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30659" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskSuggestionService" opcode="win:Info" keywords="SuggestionService"/>
+        <event value="30660" version="1" level="win:Critical"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30661" version="1" level="win:Error"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30662" version="1" level="win:Warning"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30663" version="1" level="win:Informational"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30664" version="1" level="win:Verbose"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30665" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30666" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30667" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30668" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskDocTiling" opcode="win:Info" keywords="DocTiling"/>
+        <event value="30669" version="1" level="win:Critical"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30670" version="1" level="win:Error"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30671" version="1" level="win:Warning"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30672" version="1" level="win:Informational"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30673" version="1" level="win:Verbose"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30674" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30675" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30676" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30677" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskOLE" opcode="win:Info" keywords="OLE"/>
+        <event value="30678" version="1" level="win:Critical"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30679" version="1" level="win:Error"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30680" version="1" level="win:Warning"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30681" version="1" level="win:Informational"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30682" version="1" level="win:Verbose"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30683" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30684" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30685" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30686" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskMailMerge" opcode="win:Info" keywords="MailMerge"/>
+        <event value="30687" version="1" level="win:Critical"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30688" version="1" level="win:Error"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30689" version="1" level="win:Warning"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30690" version="1" level="win:Informational"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30691" version="1" level="win:Verbose"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30692" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30693" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30694" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30695" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskLanguage" opcode="win:Info" keywords="Language"/>
+        <event value="30696" version="1" level="win:Critical"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30697" version="1" level="win:Error"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30698" version="1" level="win:Warning"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30699" version="1" level="win:Informational"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30700" version="1" level="win:Verbose"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30701" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30702" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30703" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30704" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskFlashEdits" opcode="win:Info" keywords="FlashEdits"/>
+        <event value="30705" version="1" level="win:Critical"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30706" version="1" level="win:Error"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30707" version="1" level="win:Warning"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30708" version="1" level="win:Informational"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30709" version="1" level="win:Verbose"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30710" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30711" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30712" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30713" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskEasyBib" opcode="win:Info" keywords="EasyBib"/>
+        <event value="30714" version="1" level="win:Critical"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30715" version="1" level="win:Error"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30716" version="1" level="win:Warning"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30717" version="1" level="win:Informational"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30718" version="1" level="win:Verbose"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30719" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30720" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30721" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30722" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskFastCoauth" opcode="win:Info" keywords="FastCoauth"/>
+        <event value="30723" version="1" level="win:Critical"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30724" version="1" level="win:Error"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30725" version="1" level="win:Warning"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30726" version="1" level="win:Informational"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30727" version="1" level="win:Verbose"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30728" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30729" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30730" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30731" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskDigitalPrint" opcode="win:Info" keywords="DigitalPrint"/>
+        <event value="30732" version="1" level="win:Critical"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30733" version="1" level="win:Error"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30734" version="1" level="win:Warning"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30735" version="1" level="win:Informational"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30736" version="1" level="win:Verbose"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30737" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30738" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30739" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30740" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskFocusMode" opcode="win:Info" keywords="FocusMode"/>
+        <event value="30741" version="1" level="win:Critical"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30742" version="1" level="win:Error"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30743" version="1" level="win:Warning"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30744" version="1" level="win:Informational"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30745" version="1" level="win:Verbose"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30746" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30747" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30748" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30749" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskAsyncCoAuthoring" opcode="win:Info" keywords="AsyncCoAuthoring"/>
+        <event value="30750" version="1" level="win:Critical"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30751" version="1" level="win:Error"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30752" version="1" level="win:Warning"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30753" version="1" level="win:Informational"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30754" version="1" level="win:Verbose"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30755" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30756" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30757" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30758" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskAddinMonitor" opcode="win:Info" keywords="AddinMonitor"/>
+        <event value="30759" version="1" level="win:Critical"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30760" version="1" level="win:Error"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30761" version="1" level="win:Warning"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30762" version="1" level="win:Informational"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30763" version="1" level="win:Verbose"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30764" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30765" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30766" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30767" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskAcronyms" opcode="win:Info" keywords="Acronyms"/>
+        <event value="30768" version="1" level="win:Critical"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30769" version="1" level="win:Error"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30770" version="1" level="win:Warning"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30771" version="1" level="win:Informational"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30772" version="1" level="win:Verbose"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30773" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30774" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30775" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30776" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskRewrite" opcode="win:Info" keywords="Rewrite"/>
+        <event value="30777" version="1" level="win:Critical"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30778" version="1" level="win:Error"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30779" version="1" level="win:Warning"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30780" version="1" level="win:Informational"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30781" version="1" level="win:Verbose"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30782" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30783" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30784" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30785" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskSmartLinks" opcode="win:Info" keywords="SmartLinks"/>
+        <event value="30786" version="1" level="win:Critical"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30787" version="1" level="win:Error"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30788" version="1" level="win:Warning"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30789" version="1" level="win:Informational"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30790" version="1" level="win:Verbose"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30791" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30792" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30793" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30794" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskDocumentTasks" opcode="win:Info" keywords="DocumentTasks"/>
+        <event value="30795" version="1" level="win:Critical"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30796" version="1" level="win:Error"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30797" version="1" level="win:Warning"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30798" version="1" level="win:Informational"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30799" version="1" level="win:Verbose"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30800" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30801" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30802" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30803" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskShutdown" opcode="win:Info" keywords="Shutdown"/>
+        <event value="30804" version="1" level="win:Critical"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30805" version="1" level="win:Error"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30806" version="1" level="win:Warning"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30807" version="1" level="win:Informational"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30808" version="1" level="win:Verbose"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30809" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30810" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30811" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30812" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskSidetrack" opcode="win:Info" keywords="Sidetrack"/>
+        <event value="30813" version="1" level="win:Critical"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30814" version="1" level="win:Error"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30815" version="1" level="win:Warning"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30816" version="1" level="win:Informational"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30817" version="1" level="win:Verbose"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30818" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30819" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30820" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30821" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskPerformance" opcode="win:Info" keywords="Performance"/>
+        <event value="30822" version="1" level="win:Critical"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30823" version="1" level="win:Error"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30824" version="1" level="win:Warning"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30825" version="1" level="win:Informational"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30826" version="1" level="win:Verbose"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30827" version="1" level="wls:Verbose10"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30828" version="1" level="wls:Verbose50"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30829" version="1" level="wls:Verbose100"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="30830" version="1" level="wls:Verbose200"  channel="WordChannel" task="tskInfoProtection" opcode="win:Info" keywords="InfoProtection"/>
+        <event value="26" version="2" level="win:Informational"  channel="WordChannel" task="tskFileNew" opcode="opcodeAutoCreateEventHandlerStart" keywords="FileNew" template="Args26_2"/>
+        <event value="27" version="2" level="win:Informational"  channel="WordChannel" task="tskFileNew" opcode="opcodeAutoCreateEventHandlerUpdate" keywords="FileNew"/>
+        <event value="28" version="2" level="win:Informational"  channel="WordChannel" task="tskFileNew" opcode="opcodeAutoCreateEventHandlerEnd" keywords="FileNew"/>
+        <event value="16" version="5" level="win:Informational"  channel="WordChannel" task="tskVclok" opcode="opcodeVclokOnSaveComplete" keywords="OCSB" template="Args16_5"/>
+        <event value="1" version="8" level="win:Informational"  channel="WordChannel" task="tskVclok" opcode="opcodeVclokOnDocDisplay" keywords="OCSB" template="Args1_8"/>
+      </events>
+      <channels>
+        <channel value="16" name="WordChannel" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="OCSB" mask="0x1" message="$(string.string21)" />
+        <keyword name="CoauthUndo" mask="0x2" message="$(string.string4)" />
+        <keyword name="Hashtags" mask="0x4" message="$(string.string15)" />
+        <keyword name="Emojis" mask="0x8" message="$(string.string9)" />
+        <keyword name="AsyncEdit" mask="0x10" message="$(string.string3)" />
+        <keyword name="Forms" mask="0x20" message="$(string.string14)" />
+        <keyword name="FileNew" mask="0x40" message="$(string.string11)" />
+        <keyword name="Inval" mask="0x80" message="$(string.string17)" />
+        <keyword name="SuggestionService" mask="0x100" message="$(string.string107)" />
+        <keyword name="DocTiling" mask="0x200" message="$(string.string6)" />
+        <keyword name="OLE" mask="0x400" message="$(string.string22)" />
+        <keyword name="MailMerge" mask="0x1000" message="$(string.string19)" />
+        <keyword name="Language" mask="0x2000" message="$(string.string18)" />
+        <keyword name="FlashEdits" mask="0x8000" message="$(string.string12)" />
+        <keyword name="EasyBib" mask="0x10000" message="$(string.string8)" />
+        <keyword name="FastCoauth" mask="0x20000" message="$(string.string10)" />
+        <keyword name="DigitalPrint" mask="0x40000" message="$(string.string5)" />
+        <keyword name="FocusMode" mask="0x80000" message="$(string.string13)" />
+        <keyword name="AsyncCoAuthoring" mask="0x200000" message="$(string.string2)" />
+        <keyword name="AddinMonitor" mask="0x400000" message="$(string.string1)" />
+        <keyword name="Acronyms" mask="0x800000" message="$(string.string0)" />
+        <keyword name="Rewrite" mask="0x1000000" message="$(string.string103)" />
+        <keyword name="SmartLinks" mask="0x2000000" message="$(string.string106)" />
+        <keyword name="DocumentTasks" mask="0x4000000" message="$(string.string7)" />
+        <keyword name="Shutdown" mask="0x8000000" message="$(string.string104)" />
+        <keyword name="Sidetrack" mask="0x10000000" message="$(string.string105)" />
+        <keyword name="Performance" mask="0x20000000" message="$(string.string102)" />
+        <keyword name="InfoProtection" mask="0x40000000" message="$(string.string16)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="tskVclok" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="opcodeVclokOnDocDisplay" message="$(string.string98)"/>
+           <opcode value="12" name="opcodeVclokEntryPacketDelayed" message="$(string.string97)"/>
+           <opcode value="14" name="opcodeVclokOnUploadComplete" message="$(string.string100)"/>
+           <opcode value="15" name="opcodeVclokOnSaveComplete" message="$(string.string99)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="tskHashtags" message="$(string.string2)">
+          <opcodes>
+           <opcode value="10" name="opcodeHashtagAdded" message="$(string.string74)"/>
+           <opcode value="11" name="opcodeHashtagRemoved" message="$(string.string81)"/>
+           <opcode value="12" name="opcodeHashtagError" message="$(string.string76)"/>
+           <opcode value="13" name="opcodeHashtagFlyoutInvoke" message="$(string.string78)"/>
+           <opcode value="14" name="opcodeHashtagFlyoutDismiss" message="$(string.string77)"/>
+           <opcode value="15" name="opcodeHashtagDocOpen" message="$(string.string75)"/>
+           <opcode value="16" name="opcodeHashtagNotificationCollectorProcessList" message="$(string.string79)"/>
+           <opcode value="17" name="opcodeHashtagNotificationCollectorResetList" message="$(string.string80)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="tskEmojis" message="$(string.string3)">
+          <opcodes>
+           <opcode value="10" name="opcodeEmojiFlyoutInvoke" message="$(string.string68)"/>
+           <opcode value="11" name="opcodeEmojiFlyoutDismiss" message="$(string.string67)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="tskCoauthUndo" message="$(string.string4)">
+          <opcodes>
+           <opcode value="10" name="opcodeCoauthUndoAttemptUndoWithConflict" message="$(string.string47)"/>
+           <opcode value="11" name="opcodeCoauthUndoDeleteDomoRangeError" message="$(string.string48)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="tskFileNew" message="$(string.string5)">
+          <opcodes>
+           <opcode value="11" name="opcodeAutoCreateEventHandlerStart" message="$(string.string45)"/>
+           <opcode value="12" name="opcodeAutoCreateEventHandlerUpdate" message="$(string.string46)"/>
+           <opcode value="13" name="opcodeAutoCreateEventHandlerEnd" message="$(string.string44)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="tskInval" message="$(string.string6)">
+          <opcodes>
+           <opcode value="10" name="opcodeTrashWwdPages" message="$(string.string95)"/>
+           <opcode value="11" name="opcodeInvalDoc" message="$(string.string85)"/>
+           <opcode value="12" name="opcodeInvalCp" message="$(string.string83)"/>
+           <opcode value="13" name="opcodeInvalRegion" message="$(string.string86)"/>
+           <opcode value="14" name="opcodeInvalRegionVerbose" message="$(string.string87)"/>
+           <opcode value="15" name="opcodeInvalCpDisp" message="$(string.string84)"/>
+           <opcode value="16" name="opcodeUpdateInvalidWwd" message="$(string.string96)"/>
+           <opcode value="17" name="opcodeRequestPprUpdate" message="$(string.string94)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="tskMailMerge" message="$(string.string8)">
+          <opcodes>
+           <opcode value="10" name="opcodeMailMergeStarted" message="$(string.string89)"/>
+           <opcode value="11" name="opcodeMailMergeFinished" message="$(string.string88)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="tskPerformance" message="$(string.string9)">
+          <opcodes>
+           <opcode value="10" name="opcodeProfilerJson" message="$(string.string91)"/>
+          </opcodes>
+        </task>
+        <task value="41" name="tskForms" message="$(string.string41)">
+          <opcodes>
+           <opcode value="10" name="opcodeDocHasFormsField" message="$(string.string49)"/>
+          </opcodes>
+        </task>
+        <task value="64" name="tskFastCoauth" message="$(string.string64)">
+          <opcodes>
+           <opcode value="10" name="opcodeFastCoauthChangeReceived" message="$(string.string70)"/>
+           <opcode value="11" name="opcodeFastCoauthDocumentReplicated" message="$(string.string71)"/>
+          </opcodes>
+        </task>
+        <task value="65" name="tskEasyBibCallout" message="$(string.string65)">
+          <opcodes>
+           <opcode value="10" name="opcodeEasyBibPastedFrom" message="$(string.string61)"/>
+           <opcode value="11" name="opcodeEasyBibRibbonOrChunkHidden" message="$(string.string62)"/>
+           <opcode value="12" name="opcodeEasyBibAddinBlocked" message="$(string.string51)"/>
+           <opcode value="13" name="opcodeEasyBibCalloutDisplayed" message="$(string.string55)"/>
+           <opcode value="14" name="opcodeEasyBibCalloutDismissClicked" message="$(string.string54)"/>
+           <opcode value="15" name="opcodeEasyBibCalloutLaunchClicked" message="$(string.string56)"/>
+           <opcode value="16" name="opcodeEasyBibCalloutOutsideClicked" message="$(string.string57)"/>
+           <opcode value="17" name="opcodeEasyBibStoreClicked" message="$(string.string64)"/>
+           <opcode value="18" name="opcodeEasyBibAddinInsertedFromCallout" message="$(string.string52)"/>
+           <opcode value="19" name="opcodeEasyBibAddinLoadedBefore" message="$(string.string53)"/>
+           <opcode value="20" name="opcodeEasyBibFeatureOff" message="$(string.string59)"/>
+           <opcode value="21" name="opcodeEasyBibNotEnglish" message="$(string.string60)"/>
+           <opcode value="22" name="opcodeEasyBibDisplayedManyTimes" message="$(string.string58)"/>
+           <opcode value="23" name="opcodeEasyBibSendStatusEvent" message="$(string.string63)"/>
+          </opcodes>
+        </task>
+        <task value="66" name="tskFocusModeEntryPoint" message="$(string.string66)">
+          <opcodes>
+           <opcode value="10" name="opcodeFocusModeEntryPoint" message="$(string.string72)"/>
+          </opcodes>
+        </task>
+        <task value="67" name="tskFocusModeExitPoint" message="$(string.string67)">
+          <opcodes>
+           <opcode value="10" name="opcodeFocusModeExitPoint" message="$(string.string73)"/>
+          </opcodes>
+        </task>
+        <task value="68" name="tskAddinMonitor" message="$(string.string68)">
+          <opcodes>
+           <opcode value="10" name="opcodeAddinMonitorIdleStart" message="$(string.string35)"/>
+           <opcode value="11" name="opcodeAddinMonitorIdleStop" message="$(string.string36)"/>
+           <opcode value="12" name="opcodeAddinMonitorNotifyUserResult" message="$(string.string40)"/>
+           <opcode value="13" name="opcodeAddinMonitorShowNotificationResult" message="$(string.string42)"/>
+           <opcode value="14" name="opcodeAddinMonitorInit" message="$(string.string37)"/>
+           <opcode value="15" name="opcodeAddinMonitorInitLoadBoot" message="$(string.string38)"/>
+           <opcode value="16" name="opcodeAddinMonitorInitLoadConnect" message="$(string.string39)"/>
+           <opcode value="17" name="opcodeAddinMonitorEnumReg" message="$(string.string31)"/>
+           <opcode value="18" name="opcodeAddinMonitorDeserializeCValue" message="$(string.string23)"/>
+           <opcode value="19" name="opcodeAddinMonitorDeserializeValue" message="$(string.string24)"/>
+           <opcode value="20" name="opcodeAddinMonitorGateBizbar" message="$(string.string32)"/>
+           <opcode value="21" name="opcodeAddinMonitorGateOM" message="$(string.string33)"/>
+           <opcode value="22" name="opcodeAddinMonitorShouldNotify" message="$(string.string41)"/>
+           <opcode value="23" name="opcodeAddinMonitorDisplayBizbar" message="$(string.string28)"/>
+           <opcode value="24" name="opcodeAddinMonitorSlowest" message="$(string.string43)"/>
+           <opcode value="25" name="opcodeAddinMonitorDialogShow" message="$(string.string27)"/>
+           <opcode value="26" name="opcodeAddinMonitorDialogAddPadii" message="$(string.string25)"/>
+           <opcode value="27" name="opcodeAddinMonitorDialogOnEvent" message="$(string.string26)"/>
+           <opcode value="28" name="opcodeAddinMonitorDwConnect" message="$(string.string29)"/>
+           <opcode value="29" name="opcodeAddinMonitorDwPolicy" message="$(string.string30)"/>
+           <opcode value="30" name="opcodeAddinMonitorGateVBA" message="$(string.string34)"/>
+          </opcodes>
+        </task>
+        <task value="70" name="tskDragDrop" message="$(string.string70)">
+          <opcodes>
+           <opcode value="10" name="opcodeDragImageSize" message="$(string.string50)"/>
+          </opcodes>
+        </task>
+        <task value="71" name="tskOleAutoActivation" message="$(string.string71)">
+          <opcodes>
+           <opcode value="10" name="opcodeOleAutoActivatedOnOpen" message="$(string.string90)"/>
+          </opcodes>
+        </task>
+        <task value="72" name="tskEditAggregationFromSave" message="$(string.string72)">
+          <opcodes>
+           <opcode value="10" name="opcodeEditAggregationFromSave" message="$(string.string66)"/>
+          </opcodes>
+        </task>
+        <task value="73" name="tskEditAggregationFromMerge" message="$(string.string73)">
+          <opcodes>
+           <opcode value="10" name="opcodeEditAggregationFromMerge" message="$(string.string65)"/>
+          </opcodes>
+        </task>
+        <task value="74" name="tskQMUnsafeOpSource" message="$(string.string74)">
+          <opcodes>
+           <opcode value="10" name="opcodeQMUnsafeOpSource" message="$(string.string92)"/>
+          </opcodes>
+        </task>
+        <task value="75" name="tskQMUnsafeProperty" message="$(string.string75)">
+          <opcodes>
+           <opcode value="10" name="opcodeQMUnsafeProperty" message="$(string.string93)"/>
+          </opcodes>
+        </task>
+        <task value="1065" name="tskOCSB" message="$(string.string1065)">
+        </task>
+        <task value="1069" name="tskAsyncEdit" message="$(string.string1069)">
+        </task>
+        <task value="1073" name="tskSuggestionService" message="$(string.string1073)">
+        </task>
+        <task value="1074" name="tskDocTiling" message="$(string.string1074)">
+        </task>
+        <task value="1075" name="tskOLE" message="$(string.string1075)">
+        </task>
+        <task value="1077" name="tskLanguage" message="$(string.string1077)">
+        </task>
+        <task value="1078" name="tskFlashEdits" message="$(string.string1078)">
+        </task>
+        <task value="1079" name="tskEasyBib" message="$(string.string1079)">
+        </task>
+        <task value="1081" name="tskDigitalPrint" message="$(string.string1081)">
+        </task>
+        <task value="1082" name="tskFocusMode" message="$(string.string1082)">
+        </task>
+        <task value="1083" name="tskAsyncCoAuthoring" message="$(string.string1083)">
+        </task>
+        <task value="1085" name="tskAcronyms" message="$(string.string1085)">
+        </task>
+        <task value="1086" name="tskRewrite" message="$(string.string1086)">
+        </task>
+        <task value="1087" name="tskSmartLinks" message="$(string.string1087)">
+        </task>
+        <task value="1088" name="tskDocumentTasks" message="$(string.string1088)">
+        </task>
+        <task value="1089" name="tskShutdown" message="$(string.string1089)">
+        </task>
+        <task value="1090" name="tskSidetrack" message="$(string.string1090)">
+        </task>
+        <task value="1092" name="tskInfoProtection" message="$(string.string1092)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="opcodeError" message="$(string.string69)"/>
+        <opcode value="12" name="opcodeInformational" message="$(string.string82)"/>
+        <opcode value="11" name="opcodeWarning" message="$(string.string101)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args2_0">
+          <data name="receivingClientVclokId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="sendingClientVclokId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="sendingClientVclokValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="Dismissal Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="fDocHasFormsField" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dk" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dk" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="cpFirst" inType="win:Int32" outType="xs:int"  />
+          <data name="dcp" inType="win:Int32" outType="xs:int"  />
+          <data name="grfef_low" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grfef_high" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grfef2_low" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grfef2_high" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="drk" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Bounding Box" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="drk" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Bounding Box" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Rectangles" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="ETW_TrackbackTag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="IdomoMacUsk" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="idomoUndoLim" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="idomoRedoLim" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="idomoFirst" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cdomo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UAD.fci" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args250_0">
+          <data name="xszText" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args351_0">
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EntryType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ViewType" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args352_0">
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ExitType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackgroundColor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BackgroundType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args363_0">
+          <data name="NotifyUserResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args364_0">
+          <data name="ShowNotificationResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args368_0">
+          <data name="dwIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="dwType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="cb" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args369_0">
+          <data name="dwCValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args370_0">
+          <data name="dwValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args371_0">
+          <data name="GateValue" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args373_0">
+          <data name="secBootLengthThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pctBootPercentageThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AddinScenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="time" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args374_0">
+          <data name="name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fDisplay" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args378_0">
+          <data name="name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SelectedAction" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args379_0">
+          <data name="dwConnect" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args380_0">
+          <data name="dwPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args441_0">
+          <data name="areaPoints" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args451_0">
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fRTF" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="callType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args461_0">
+          <data name="changes" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args463_0">
+          <data name="mrtTag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="source" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args464_0">
+          <data name="property" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args472_0">
+          <data name="CountOfRecipients" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LinkPermissionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CountOfRecipientsOptimizedAway" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args481_0">
+          <data name="featureDwTag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProfilerModules" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfilerSamples" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2032_0">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfoString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrIdOptional" inType="win:Int32" outType="xs:int"  />
+          <data name="HROptional" inType="win:Int32" outType="win:HResult"  />
+          <data name="InfoOptDeci" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InfoOptHex" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ETW_TrackbackTag" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2064_0">
+          <data name="InfoOptional1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InfoOptional2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InfoOptional3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InfoOptional4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ETW_TrackbackTag" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="savingClientVclokId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="savingClientVclokValueMin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="savingClientVclokValueMax" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uploadDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="editToUploadTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="rtcBrkEditToUploadTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="saveToUploadInitTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args20_1">
+          <data name="pwwd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dk" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="cpFirst" inType="win:Int32" outType="xs:int"  />
+          <data name="cpLim" inType="win:Int32" outType="xs:int"  />
+          <data name="grftr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25_1">
+          <data name="pwwd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dk" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="cpFirst" inType="win:Int32" outType="xs:int"  />
+          <data name="dcp" inType="win:Int32" outType="xs:int"  />
+          <data name="fNoLayoutChange" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fSelectionChange" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fUpdateArtvNVersion" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fDirtyMtxi" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="grfef_low" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="grfef_high" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30_1">
+          <data name="Reason for Conflict" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fciUser" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fciCoauth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="User CA type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="camoUser.cp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="camoUser.dcpOld" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="camoUser.dcpNew" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="camoCoauth.cp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="camoCoauth.dcpOld" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="camoCoauth.dcpNew" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fUndo" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fRepeat" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args100_1">
+          <data name="pwwd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fPrivateInvalRgn" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Sum of Pixel Count for Rects" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Bounding Box Pixel Count" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Rectangles" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Bounding Box" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args101_1">
+          <data name="pwwd" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ppr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="grfrpu" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args377_1">
+          <data name="name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FIsCOMAddin" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FIsGroupPolicyDisabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2000_1">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfoString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrIdOptional" inType="win:Int32" outType="xs:int"  />
+          <data name="HROptional" inType="win:Int32" outType="win:HResult"  />
+          <data name="InfoOptDeci" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InfoOptHex" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VoidPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ETW_TrackbackTag" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args30579_1">
+          <data name="tag" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="xsz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args26_2">
+          <data name="Tag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="pdod" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AutoCreateEventHandler" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="tSucceeded" inType="win:Int32" outType="xs:int"  />
+          <data name="fDocRenamed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args16_5">
+          <data name="savingClientVclokId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="savingClientVclokValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="saveTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="rtcBrkEditToSaveTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="editToSaveTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="firstRtcBrkEditId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="firstEditId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="minOcsAutoSaveIntervalMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="idleAutoSaveDelayTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="autoSaveIdleToSaveTimeMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="deepSleepDurationMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="saveActionGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1_8">
+          <data name="receivingClientVclokId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="sendingClientVclokId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="senderSaveActionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="sendingClientVclokValueMin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="sendingClientVclokValueMax" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="uploadDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="rtcPacketArrivalToMergeDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="rtcPacketArrivalToDownloadStartDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="downloadStartToEndDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="downloadEndToMergeDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="mergeToDisplayDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="e2eDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="deepSleepDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="mergeStartToEndDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="downloadBranchNotificationDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="idleDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="loadDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="fMergedContent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="rtcBrkSenderDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="rtcBrkE2EDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="idleDocLoadEndToMergeStartDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Acronyms" />
+       <string id="string1" value="AddinMonitor" />
+       <string id="string2" value="AsyncCoAuthoring" />
+       <string id="string3" value="AsyncEdit" />
+       <string id="string4" value="CoauthUndo" />
+       <string id="string5" value="DigitalPrint" />
+       <string id="string6" value="DocTiling" />
+       <string id="string7" value="DocumentTasks" />
+       <string id="string8" value="EasyBib" />
+       <string id="string9" value="Emojis" />
+       <string id="string10" value="FastCoauth" />
+       <string id="string11" value="FileNew" />
+       <string id="string12" value="FlashEdits" />
+       <string id="string13" value="FocusMode" />
+       <string id="string14" value="Forms" />
+       <string id="string15" value="Hashtags" />
+       <string id="string16" value="InfoProtection" />
+       <string id="string17" value="Inval" />
+       <string id="string18" value="Language" />
+       <string id="string19" value="MailMerge" />
+       <string id="string20" value="Microsoft-Office-Word3" />
+       <string id="string21" value="OCSB" />
+       <string id="string22" value="OLE" />
+       <string id="string23" value="opcodeAddinMonitorDeserializeCValue" />
+       <string id="string24" value="opcodeAddinMonitorDeserializeValue" />
+       <string id="string25" value="opcodeAddinMonitorDialogAddPadii" />
+       <string id="string26" value="opcodeAddinMonitorDialogOnEvent" />
+       <string id="string27" value="opcodeAddinMonitorDialogShow" />
+       <string id="string28" value="opcodeAddinMonitorDisplayBizbar" />
+       <string id="string29" value="opcodeAddinMonitorDwConnect" />
+       <string id="string30" value="opcodeAddinMonitorDwPolicy" />
+       <string id="string31" value="opcodeAddinMonitorEnumReg" />
+       <string id="string32" value="opcodeAddinMonitorGateBizbar" />
+       <string id="string33" value="opcodeAddinMonitorGateOM" />
+       <string id="string34" value="opcodeAddinMonitorGateVBA" />
+       <string id="string35" value="opcodeAddinMonitorIdleStart" />
+       <string id="string36" value="opcodeAddinMonitorIdleStop" />
+       <string id="string37" value="opcodeAddinMonitorInit" />
+       <string id="string38" value="opcodeAddinMonitorInitLoadBoot" />
+       <string id="string39" value="opcodeAddinMonitorInitLoadConnect" />
+       <string id="string40" value="opcodeAddinMonitorNotifyUserResult" />
+       <string id="string41" value="opcodeAddinMonitorShouldNotify" />
+       <string id="string42" value="opcodeAddinMonitorShowNotificationResult" />
+       <string id="string43" value="opcodeAddinMonitorSlowest" />
+       <string id="string44" value="opcodeAutoCreateEventHandlerEnd" />
+       <string id="string45" value="opcodeAutoCreateEventHandlerStart" />
+       <string id="string46" value="opcodeAutoCreateEventHandlerUpdate" />
+       <string id="string47" value="opcodeCoauthUndoAttemptUndoWithConflict" />
+       <string id="string48" value="opcodeCoauthUndoDeleteDomoRangeError" />
+       <string id="string49" value="opcodeDocHasFormsField" />
+       <string id="string50" value="opcodeDragImageSize" />
+       <string id="string51" value="opcodeEasyBibAddinBlocked" />
+       <string id="string52" value="opcodeEasyBibAddinInsertedFromCallout" />
+       <string id="string53" value="opcodeEasyBibAddinLoadedBefore" />
+       <string id="string54" value="opcodeEasyBibCalloutDismissClicked" />
+       <string id="string55" value="opcodeEasyBibCalloutDisplayed" />
+       <string id="string56" value="opcodeEasyBibCalloutLaunchClicked" />
+       <string id="string57" value="opcodeEasyBibCalloutOutsideClicked" />
+       <string id="string58" value="opcodeEasyBibDisplayedManyTimes" />
+       <string id="string59" value="opcodeEasyBibFeatureOff" />
+       <string id="string60" value="opcodeEasyBibNotEnglish" />
+       <string id="string61" value="opcodeEasyBibPastedFrom" />
+       <string id="string62" value="opcodeEasyBibRibbonOrChunkHidden" />
+       <string id="string63" value="opcodeEasyBibSendStatusEvent" />
+       <string id="string64" value="opcodeEasyBibStoreClicked" />
+       <string id="string65" value="opcodeEditAggregationFromMerge" />
+       <string id="string66" value="opcodeEditAggregationFromSave" />
+       <string id="string67" value="opcodeEmojiFlyoutDismiss" />
+       <string id="string68" value="opcodeEmojiFlyoutInvoke" />
+       <string id="string69" value="opcodeError" />
+       <string id="string70" value="opcodeFastCoauthChangeReceived" />
+       <string id="string71" value="opcodeFastCoauthDocumentReplicated" />
+       <string id="string72" value="opcodeFocusModeEntryPoint" />
+       <string id="string73" value="opcodeFocusModeExitPoint" />
+       <string id="string74" value="opcodeHashtagAdded" />
+       <string id="string75" value="opcodeHashtagDocOpen" />
+       <string id="string76" value="opcodeHashtagError" />
+       <string id="string77" value="opcodeHashtagFlyoutDismiss" />
+       <string id="string78" value="opcodeHashtagFlyoutInvoke" />
+       <string id="string79" value="opcodeHashtagNotificationCollectorProcessList" />
+       <string id="string80" value="opcodeHashtagNotificationCollectorResetList" />
+       <string id="string81" value="opcodeHashtagRemoved" />
+       <string id="string82" value="opcodeInformational" />
+       <string id="string83" value="opcodeInvalCp" />
+       <string id="string84" value="opcodeInvalCpDisp" />
+       <string id="string85" value="opcodeInvalDoc" />
+       <string id="string86" value="opcodeInvalRegion" />
+       <string id="string87" value="opcodeInvalRegionVerbose" />
+       <string id="string88" value="opcodeMailMergeFinished" />
+       <string id="string89" value="opcodeMailMergeStarted" />
+       <string id="string90" value="opcodeOleAutoActivatedOnOpen" />
+       <string id="string91" value="opcodeProfilerJson" />
+       <string id="string92" value="opcodeQMUnsafeOpSource" />
+       <string id="string93" value="opcodeQMUnsafeProperty" />
+       <string id="string94" value="opcodeRequestPprUpdate" />
+       <string id="string95" value="opcodeTrashWwdPages" />
+       <string id="string96" value="opcodeUpdateInvalidWwd" />
+       <string id="string97" value="opcodeVclokEntryPacketDelayed" />
+       <string id="string98" value="opcodeVclokOnDocDisplay" />
+       <string id="string99" value="opcodeVclokOnSaveComplete" />
+       <string id="string100" value="opcodeVclokOnUploadComplete" />
+       <string id="string101" value="opcodeWarning" />
+       <string id="string102" value="Performance" />
+       <string id="string103" value="Rewrite" />
+       <string id="string104" value="Shutdown" />
+       <string id="string105" value="Sidetrack" />
+       <string id="string106" value="SmartLinks" />
+       <string id="string107" value="SuggestionService" />
+       <string id="string108" value="tskAcronyms" />
+       <string id="string109" value="tskAddinMonitor" />
+       <string id="string110" value="tskAsyncCoAuthoring" />
+       <string id="string111" value="tskAsyncEdit" />
+       <string id="string112" value="tskCoauthUndo" />
+       <string id="string113" value="tskDigitalPrint" />
+       <string id="string114" value="tskDocTiling" />
+       <string id="string115" value="tskDocumentTasks" />
+       <string id="string116" value="tskDragDrop" />
+       <string id="string117" value="tskEasyBib" />
+       <string id="string118" value="tskEasyBibCallout" />
+       <string id="string119" value="tskEditAggregationFromMerge" />
+       <string id="string120" value="tskEditAggregationFromSave" />
+       <string id="string121" value="tskEmojis" />
+       <string id="string122" value="tskFastCoauth" />
+       <string id="string123" value="tskFileNew" />
+       <string id="string124" value="tskFlashEdits" />
+       <string id="string125" value="tskFocusMode" />
+       <string id="string126" value="tskFocusModeEntryPoint" />
+       <string id="string127" value="tskFocusModeExitPoint" />
+       <string id="string128" value="tskForms" />
+       <string id="string129" value="tskHashtags" />
+       <string id="string130" value="tskInfoProtection" />
+       <string id="string131" value="tskInval" />
+       <string id="string132" value="tskLanguage" />
+       <string id="string133" value="tskMailMerge" />
+       <string id="string134" value="tskOCSB" />
+       <string id="string135" value="tskOLE" />
+       <string id="string136" value="tskOleAutoActivation" />
+       <string id="string137" value="tskPerformance" />
+       <string id="string138" value="tskQMUnsafeOpSource" />
+       <string id="string139" value="tskQMUnsafeProperty" />
+       <string id="string140" value="tskRewrite" />
+       <string id="string141" value="tskShutdown" />
+       <string id="string142" value="tskSidetrack" />
+       <string id="string143" value="tskSmartLinks" />
+       <string id="string144" value="tskSuggestionService" />
+       <string id="string145" value="tskVclok" />
+       <string id="string146" value="win:Info" />
+       <string id="string147" value="WordChannel" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

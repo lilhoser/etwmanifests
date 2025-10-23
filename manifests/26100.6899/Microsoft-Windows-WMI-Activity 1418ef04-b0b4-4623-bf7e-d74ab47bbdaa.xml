@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WMI-Activity" name="Microsoft-Windows-WMI-Activity" guid="{1418ef04-b0b4-4623-bf7e-d74ab47bbdaa}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args14_0"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace" template="Args24_0"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-WMI-Activity/Trace"/>
+        <event value="100" version="0" level="win:Verbose"  channel="Microsoft-Windows-WMI-Activity/Debug" template="Args100_0"/>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-WMI-Activity/Debug" template="Args101_0"/>
+        <event value="5857" version="0" level="win:Verbose"  channel="Microsoft-Windows-WMI-Activity/Operational" template="Args5857_0"/>
+        <event value="5858" version="0" level="win:Error"  channel="Microsoft-Windows-WMI-Activity/Operational" template="Args5858_0"/>
+        <event value="5859" version="0" level="win:Verbose"  channel="Microsoft-Windows-WMI-Activity/Operational" template="Args5859_0"/>
+        <event value="5860" version="0" level="win:Verbose"  channel="Microsoft-Windows-WMI-Activity/Operational" template="Args5860_0"/>
+        <event value="5861" version="0" level="win:Verbose"  channel="Microsoft-Windows-WMI-Activity/Operational" template="Args5861_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WMI-Activity/Trace" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-WMI-Activity/Operational" type="Operational"/>
+        <channel value="18" name="Microsoft-Windows-WMI-Activity/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderGuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachineFQDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessCreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsLocal" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HostId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderGuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResultCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCategory" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TargetName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Protocol" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Namespace" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="ConsumerType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PossibleCause" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="OperationID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientMachineFQDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessCreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IsLocal" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="OperationID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientMachineFQDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessCreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IsLocal" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImplementationClass" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachineFQDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessCreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsLocal" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="CorrelationId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Commandline" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CreatedProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreatedProcessCreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientMachine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachineFQDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessCreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IsLocal" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Query" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MessageDetail" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorDetail" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5857_0">
+          <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Code" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="HostProcess" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProviderPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5858_0">
+          <data name="Id" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientMachine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Component" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Operation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PossibleCause" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5859_0">
+          <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Query" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="processid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="providerName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="queryid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PossibleCause" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5860_0">
+          <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Query" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="processid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MachineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PossibleCause" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5861_0">
+          <data name="Namespace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ESS" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CONSUMER" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PossibleCause" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WMI-Activity" />
+       <string id="string1" value="Microsoft-Windows-WMI-Activity/Debug" />
+       <string id="string2" value="Microsoft-Windows-WMI-Activity/Operational" />
+       <string id="string3" value="Microsoft-Windows-WMI-Activity/Trace" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

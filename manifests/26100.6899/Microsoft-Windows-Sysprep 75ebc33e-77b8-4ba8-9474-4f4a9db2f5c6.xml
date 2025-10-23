@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Sysprep" name="Microsoft-Windows-Sysprep" guid="{75ebc33e-77b8-4ba8-9474-4f4a9db2f5c6}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskRunRegistryDlls" opcode="win:Start" keywords="keyPerformance keySysprep ms:Measures" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskRunRegistryDlls" opcode="win:Stop" keywords="keyPerformance keySysprep ms:Measures" template="Args1002_0"/>
+        <event value="2001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskCallSysprepFunction" opcode="win:Start" keywords="keyPerformance keySysprep ms:CriticalData" template="Args2001_0"/>
+        <event value="2002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskCallSysprepFunction" opcode="win:Stop" keywords="keyPerformance keySysprep ms:CriticalData"/>
+        <event value="3001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskLoadActionMetadata" opcode="win:Start" keywords="keyPerformance keySysprep ms:Measures" template="Args3001_0"/>
+        <event value="3002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskLoadActionMetadata" opcode="win:Stop" keywords="keyPerformance keySysprep ms:Measures"/>
+        <event value="4001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskCreateActionList" opcode="win:Start" keywords="keyPerformance keySysprep ms:Measures" template="Args4001_0"/>
+        <event value="4002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskCreateActionList" opcode="win:Stop" keywords="keyPerformance keySysprep ms:Measures"/>
+        <event value="5001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskDeleteFile" opcode="win:Start" keywords="keyPerformance keySysprep ms:Measures" template="Args5001_0"/>
+        <event value="5002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskDeleteFile" opcode="win:Stop" keywords="keyPerformance keySysprep ms:Measures" template="Args5002_0"/>
+        <event value="6001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskDeleteDirectory" opcode="win:Start" keywords="keyPerformance keySysprep ms:Measures"/>
+        <event value="6002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskDeleteDirectory" opcode="win:Stop" keywords="keyPerformance keySysprep ms:Measures"/>
+        <event value="7001" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskExecuteFullPhase" opcode="win:Start" keywords="keyPerformance keySysprep ms:Measures"/>
+        <event value="7002" version="0" level="win:Informational"  channel="Microsoft-Windows-Sysprep/Analytic" task="tskExecuteFullPhase" opcode="win:Stop" keywords="keyPerformance keySysprep ms:Measures"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Sysprep/Analytic" type="Analytic"/>
+        <channel value="17" name="Setup" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="keyPerformance" mask="0x1" message="$(string.string0)" />
+        <keyword name="keySysprep" mask="0x2" message="$(string.string1)" />
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string6)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string7)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string5)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+        <task value="1000" name="tskRunRegistryDlls" message="$(string.string1000)">
+        </task>
+        <task value="2000" name="tskCallSysprepFunction" message="$(string.string2000)">
+        </task>
+        <task value="3000" name="tskLoadActionMetadata" message="$(string.string3000)">
+        </task>
+        <task value="4000" name="tskCreateActionList" message="$(string.string4000)">
+        </task>
+        <task value="5000" name="tskDeleteFile" message="$(string.string5000)">
+        </task>
+        <task value="6000" name="tskDeleteDirectory" message="$(string.string6000)">
+        </task>
+        <task value="7000" name="tskExecuteFullPhase" message="$(string.string7000)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="BasePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Phase" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2001_0">
+          <data name="DllName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FunctionName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3001_0">
+          <data name="ActionFilePath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4001_0">
+          <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5001_0">
+          <data name="DirectoryPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FilePattern" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5002_0">
+          <data name="DirectoryPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FilePattern" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="keyPerformance" />
+       <string id="string1" value="keySysprep" />
+       <string id="string2" value="Microsoft-Windows-Sysprep" />
+       <string id="string3" value="Microsoft-Windows-Sysprep/Analytic" />
+       <string id="string4" value="ms:CriticalData" />
+       <string id="string5" value="ms:Measures" />
+       <string id="string6" value="ms:ReservedKeyword44" />
+       <string id="string7" value="ms:Telemetry" />
+       <string id="string8" value="Setup" />
+       <string id="string9" value="tskCallSysprepFunction" />
+       <string id="string10" value="tskCreateActionList" />
+       <string id="string11" value="tskDeleteDirectory" />
+       <string id="string12" value="tskDeleteFile" />
+       <string id="string13" value="tskExecuteFullPhase" />
+       <string id="string14" value="tskLoadActionMetadata" />
+       <string id="string15" value="tskRunRegistryDlls" />
+       <string id="string16" value="win:Start" />
+       <string id="string17" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

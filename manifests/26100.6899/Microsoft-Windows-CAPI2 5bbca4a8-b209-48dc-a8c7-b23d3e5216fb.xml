@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-CAPI2" name="Microsoft-Windows-CAPI2" guid="{5bbca4a8-b209-48dc-a8c7-b23d3e5216fb}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertGetCertificateChain" opcode="win:Start" keywords="PathValidation PathDiscovery" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertGetCertificateChain" opcode="win:Stop" keywords="PathValidation PathDiscovery"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAIAUrlRetrievalCache" opcode="win:Start" keywords="PathDiscovery Cache"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAIAUrlRetrievalCache" opcode="win:Stop" keywords="PathDiscovery Cache"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAIAUrlRetrievalWire" opcode="win:Start" keywords="PathDiscovery Retrieval"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAIAUrlRetrievalWire" opcode="win:Stop" keywords="PathDiscovery Retrieval"/>
+        <event value="16" version="0" level="win:Error"  channel="Microsoft-Windows-CAPI2/Operational" task="CertRejectAIAUrlRetrieval" opcode="win:Info" keywords="PathDiscovery Cache Retrieval"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAutoRootUrlRetrievalCache" opcode="win:Start" keywords="PathDiscovery Cache AutoRootUpdate"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAutoRootUrlRetrievalCache" opcode="win:Stop" keywords="PathDiscovery Cache AutoRootUpdate"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAutoRootUrlRetrievalWire" opcode="win:Start" keywords="PathDiscovery Retrieval AutoRootUpdate"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertAutoRootUrlRetrievalWire" opcode="win:Stop" keywords="PathDiscovery Retrieval AutoRootUpdate"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertCrossCertUrlRetrievalCache" opcode="win:Start" keywords="PathDiscovery Cache"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertCrossCertUrlRetrievalCache" opcode="win:Stop" keywords="PathDiscovery Cache"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertCrossCertUrlRetrievalWire" opcode="win:Start" keywords="PathDiscovery Retrieval"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertCrossCertUrlRetrievalWire" opcode="win:Stop" keywords="PathDiscovery Retrieval"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertVerifyCertificateChainPolicy" opcode="win:Info" keywords="PathValidation"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertVerifyRevocation" opcode="win:Start" keywords="PathValidation Revocation"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CertVerifyRevocation" opcode="win:Stop" keywords="PathValidation Revocation"/>
+        <event value="42" version="0" level="win:Error"  channel="Microsoft-Windows-CAPI2/Operational" task="CertRejectedRevocationInfo" opcode="win:Info" keywords="PathValidation Revocation"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptRetrieveObjectByUrlCache" opcode="win:Start" keywords="PathDiscovery Revocation Cache AutoRootUpdate"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptRetrieveObjectByUrlCache" opcode="win:Stop" keywords="PathDiscovery Revocation Cache AutoRootUpdate"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptRetrieveObjectByUrlWire" opcode="win:Start" keywords="PathDiscovery Revocation Retrieval AutoRootUpdate"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptRetrieveObjectByUrlWire" opcode="win:Stop" keywords="PathDiscovery Revocation Retrieval AutoRootUpdate"/>
+        <event value="60" version="0" level="win:Verbose"  channel="Microsoft-Windows-CAPI2/Operational" task="CertOpenStore" opcode="win:Info" keywords="CertificateStore"/>
+        <event value="70" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptAcquireCertificatePrivateKey" opcode="win:Info" keywords="PrivateKey"/>
+        <event value="71" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptSignCertificate" opcode="win:Info" keywords="PrivateKey"/>
+        <event value="80" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="WinVerifyTrust" opcode="win:Start" keywords="WinVerifyTrust"/>
+        <event value="81" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="WinVerifyTrust" opcode="win:Stop" keywords="WinVerifyTrust"/>
+        <event value="82" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="CryptCATAdminEnumCatalogFromHash" opcode="win:Info" keywords="Catalog"/>
+        <event value="90" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Operational" task="X509Objects" opcode="win:Info" keywords="CertificateDetails"/>
+        <event value="256" version="0" level="win:Error"  channel="Application" template="Args256_0"/>
+        <event value="257" version="0" level="win:Error"  channel="Application"/>
+        <event value="512" version="0" level="win:Critical"  channel="Application"/>
+        <event value="513" version="0" level="win:Critical"  channel="Application"/>
+        <event value="4097" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4098" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4099" version="0" level="win:Error"  channel="Application"/>
+        <event value="4100" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4101" version="0" level="win:Error"  channel="Application"/>
+        <event value="4102" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4103" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4104" version="0" level="win:Error"  channel="Application"/>
+        <event value="4105" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4106" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4107" version="0" level="win:Error"  channel="Application"/>
+        <event value="4108" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4109" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4110" version="0" level="win:Error"  channel="Application"/>
+        <event value="4111" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4112" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4113" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4114" version="0" level="win:Error"  channel="Application" template="Args4114_0"/>
+        <event value="4115" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4116" version="0" level="win:Error"  channel="Application"/>
+        <event value="4117" version="0" level="win:Warning"  channel="Application" template="Args4117_0"/>
+        <event value="4128" version="0" level="win:Informational"  channel="Application"/>
+        <event value="4129" version="0" level="win:Error"  channel="Application"/>
+        <event value="4130" version="0" level="win:Error"  channel="Application"/>
+        <event value="4131" version="0" level="win:Error"  channel="Application"/>
+        <event value="4176" version="0" level="win:Error"  channel="Application"/>
+        <event value="4177" version="0" level="win:Error"  channel="Application"/>
+        <event value="4178" version="0" level="win:Error"  channel="Application"/>
+        <event value="8192" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBAddCatalog" opcode="win:Start" keywords="Catalog" template="Args8192_0"/>
+        <event value="8193" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBAddCatalog" opcode="win:Stop" keywords="Catalog" template="Args8193_0"/>
+        <event value="8194" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBRemoveCatalog" opcode="win:Start" keywords="Catalog"/>
+        <event value="8195" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBRemoveCatalog" opcode="win:Stop" keywords="Catalog"/>
+        <event value="8196" version="0" level="win:Verbose"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBSyncCatalog" opcode="win:Start" keywords="Catalog"/>
+        <event value="8197" version="0" level="win:Verbose"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBSyncCatalog" opcode="win:Stop" keywords="Catalog"/>
+        <event value="8198" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBRebuildDatabase" opcode="win:Start" keywords="Catalog"/>
+        <event value="8199" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBRebuildDatabase" opcode="win:Stop" keywords="Catalog"/>
+        <event value="8200" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBEnumCatalogFromHash" opcode="win:Start" keywords="Catalog" template="Args8200_0"/>
+        <event value="8201" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBEnumCatalogFromHash" opcode="win:Stop" keywords="Catalog" template="Args8201_0"/>
+        <event value="8202" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBSyncCatalog" opcode="win:Start" keywords="Catalog"/>
+        <event value="8203" version="0" level="win:Informational"  channel="Microsoft-Windows-CAPI2/Catalog Database Debug" task="CatDBSyncCatalog" opcode="win:Stop" keywords="Catalog"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-CAPI2/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-CAPI2/Catalog Database Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="PathValidation" mask="0x1" message="$(string.string32)" />
+        <keyword name="PathDiscovery" mask="0x2" message="$(string.string31)" />
+        <keyword name="Revocation" mask="0x4" message="$(string.string35)" />
+        <keyword name="Cache" mask="0x8" message="$(string.string2)" />
+        <keyword name="Retrieval" mask="0x10" message="$(string.string34)" />
+        <keyword name="AutoRootUpdate" mask="0x20" message="$(string.string1)" />
+        <keyword name="WinVerifyTrust" mask="0x40" message="$(string.string39)" />
+        <keyword name="PrivateKey" mask="0x80" message="$(string.string33)" />
+        <keyword name="CertificateStore" mask="0x100" message="$(string.string17)" />
+        <keyword name="CertificateDetails" mask="0x200" message="$(string.string16)" />
+        <keyword name="Catalog" mask="0x400" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="11" name="CertGetCertificateChain" message="$(string.string11)">
+        </task>
+        <task value="13" name="CertAIAUrlRetrievalCache" message="$(string.string13)">
+        </task>
+        <task value="15" name="CertAIAUrlRetrievalWire" message="$(string.string15)">
+        </task>
+        <task value="16" name="CertRejectAIAUrlRetrieval" message="$(string.string16)">
+        </task>
+        <task value="18" name="CertAutoRootUrlRetrievalCache" message="$(string.string18)">
+        </task>
+        <task value="20" name="CertAutoRootUrlRetrievalWire" message="$(string.string20)">
+        </task>
+        <task value="22" name="CertCrossCertUrlRetrievalCache" message="$(string.string22)">
+        </task>
+        <task value="24" name="CertCrossCertUrlRetrievalWire" message="$(string.string24)">
+        </task>
+        <task value="30" name="CertVerifyCertificateChainPolicy" message="$(string.string30)">
+        </task>
+        <task value="41" name="CertVerifyRevocation" message="$(string.string41)">
+        </task>
+        <task value="42" name="CertRejectedRevocationInfo" message="$(string.string42)">
+        </task>
+        <task value="51" name="CryptRetrieveObjectByUrlCache" message="$(string.string51)">
+        </task>
+        <task value="53" name="CryptRetrieveObjectByUrlWire" message="$(string.string53)">
+        </task>
+        <task value="60" name="CertOpenStore" message="$(string.string60)">
+        </task>
+        <task value="70" name="CryptAcquireCertificatePrivateKey" message="$(string.string70)">
+        </task>
+        <task value="71" name="CryptSignCertificate" message="$(string.string71)">
+        </task>
+        <task value="80" name="WinVerifyTrust" message="$(string.string80)">
+        </task>
+        <task value="82" name="CryptCATAdminEnumCatalogFromHash" message="$(string.string82)">
+        </task>
+        <task value="90" name="X509Objects" message="$(string.string90)">
+        </task>
+        <task value="500" name="CatDBAddCatalog" message="$(string.string500)">
+        </task>
+        <task value="501" name="CatDBRemoveCatalog" message="$(string.string501)">
+        </task>
+        <task value="502" name="CatDBSyncCatalog" message="$(string.string502)">
+        </task>
+        <task value="503" name="CatDBRebuildDatabase" message="$(string.string503)">
+        </task>
+        <task value="504" name="CatDBEnumCatalogFromHash" message="$(string.string504)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args10_0">
+          <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"  />
+        </template>
+        <template tid="Args256_0">
+          <data name="%1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4114_0">
+          <data name="%1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%5" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%6" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%7" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4117_0">
+          <data name="%1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%5" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%6" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%7" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%8" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%9" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="%10" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8192_0">
+          <data name="Subsystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8193_0">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args8200_0">
+          <data name="Subsystem" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Algorithm" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args8201_0">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="AutoRootUpdate" />
+       <string id="string2" value="Cache" />
+       <string id="string3" value="Catalog" />
+       <string id="string4" value="CatDBAddCatalog" />
+       <string id="string5" value="CatDBEnumCatalogFromHash" />
+       <string id="string6" value="CatDBRebuildDatabase" />
+       <string id="string7" value="CatDBRemoveCatalog" />
+       <string id="string8" value="CatDBSyncCatalog" />
+       <string id="string9" value="CertAIAUrlRetrievalCache" />
+       <string id="string10" value="CertAIAUrlRetrievalWire" />
+       <string id="string11" value="CertAutoRootUrlRetrievalCache" />
+       <string id="string12" value="CertAutoRootUrlRetrievalWire" />
+       <string id="string13" value="CertCrossCertUrlRetrievalCache" />
+       <string id="string14" value="CertCrossCertUrlRetrievalWire" />
+       <string id="string15" value="CertGetCertificateChain" />
+       <string id="string16" value="CertificateDetails" />
+       <string id="string17" value="CertificateStore" />
+       <string id="string18" value="CertOpenStore" />
+       <string id="string19" value="CertRejectAIAUrlRetrieval" />
+       <string id="string20" value="CertRejectedRevocationInfo" />
+       <string id="string21" value="CertVerifyCertificateChainPolicy" />
+       <string id="string22" value="CertVerifyRevocation" />
+       <string id="string23" value="CryptAcquireCertificatePrivateKey" />
+       <string id="string24" value="CryptCATAdminEnumCatalogFromHash" />
+       <string id="string25" value="CryptRetrieveObjectByUrlCache" />
+       <string id="string26" value="CryptRetrieveObjectByUrlWire" />
+       <string id="string27" value="CryptSignCertificate" />
+       <string id="string28" value="Microsoft-Windows-CAPI2" />
+       <string id="string29" value="Microsoft-Windows-CAPI2/Catalog Database Debug" />
+       <string id="string30" value="Microsoft-Windows-CAPI2/Operational" />
+       <string id="string31" value="PathDiscovery" />
+       <string id="string32" value="PathValidation" />
+       <string id="string33" value="PrivateKey" />
+       <string id="string34" value="Retrieval" />
+       <string id="string35" value="Revocation" />
+       <string id="string36" value="win:Info" />
+       <string id="string37" value="win:Start" />
+       <string id="string38" value="win:Stop" />
+       <string id="string39" value="WinVerifyTrust" />
+       <string id="string40" value="X509Objects" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>
