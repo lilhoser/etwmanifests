@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WHEA-Logger" name="Microsoft-Windows-WHEA-Logger" guid="{c26c4f3c-3f66-4e99-8f8a-39405cfed220}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="System" keywords="Errlog" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  channel="System" keywords="Errlog"/>
+        <event value="3" version="0" level="win:Informational"  channel="System" keywords="Errlog"/>
+        <event value="16" version="0" level="win:Error"  channel="System" template="Args16_0"/>
+        <event value="17" version="0" level="win:Warning"  channel="System"/>
+        <event value="18" version="0" level="win:Error"  channel="System" template="Args18_0"/>
+        <event value="19" version="0" level="win:Warning"  channel="System"/>
+        <event value="20" version="0" level="win:Error"  channel="System"/>
+        <event value="21" version="0" level="win:Warning"  channel="System"/>
+        <event value="22" version="0" level="win:Error"  channel="System" template="Args22_0"/>
+        <event value="23" version="0" level="win:Warning"  channel="System"/>
+        <event value="24" version="0" level="win:Error"  channel="System" template="Args24_0"/>
+        <event value="25" version="0" level="win:Warning"  channel="System"/>
+        <event value="26" version="0" level="win:Error"  channel="System" template="Args26_0"/>
+        <event value="27" version="0" level="win:Warning"  channel="System"/>
+        <event value="28" version="0" level="win:Warning"  channel="System" template="Args28_0"/>
+        <event value="29" version="0" level="win:Warning"  channel="System"/>
+        <event value="40" version="0" level="win:Error"  channel="System"/>
+        <event value="41" version="0" level="win:Warning"  channel="System"/>
+        <event value="42" version="0" level="win:Error"  channel="System"/>
+        <event value="43" version="0" level="win:Warning"  channel="System"/>
+        <event value="44" version="0" level="win:Error"  channel="System"/>
+        <event value="45" version="0" level="win:Warning"  channel="System"/>
+        <event value="46" version="0" level="win:Error"  channel="System"/>
+        <event value="47" version="0" level="win:Warning"  channel="System"/>
+        <event value="48" version="0" level="win:Error"  channel="System" template="Args48_0"/>
+        <event value="49" version="0" level="win:Warning"  channel="System"/>
+        <event value="16" version="1" level="win:Error"  channel="System" template="Args16_1"/>
+        <event value="17" version="1" level="win:Warning"  channel="System"/>
+        <event value="40" version="1" level="win:Error"  channel="System"/>
+        <event value="41" version="1" level="win:Warning"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Init" mask="0x1" message="$(string.string1)" />
+        <keyword name="Errlog" mask="0x2" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args16_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FRUId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FRUText" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Version" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Command" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Device" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Function" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args18_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args22_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FRUId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FRUText" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Node" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Card" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Module" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Device" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Row" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Column" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Extended" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RankNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CardHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args24_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FRUId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FRUText" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Command" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args26_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FRUId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FRUText" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args28_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MPIDR_EL1" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MIDR_EL1" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RunningState" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PSCIState" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorType" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CacheLevel" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="AffinityLevel" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TLBOperationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AddressSpace" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AccessMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrecisePC" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RestartablePC" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VirtualFaultAddress" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PhysicalFaultAddress" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args48_0">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="MciStatus" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="FRUText" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args16_1">
+          <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FRUId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FRUText" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Version" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Command" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Device" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Function" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SecondaryDevice" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SecondaryFunction" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="PrimaryDeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecondaryDeviceName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Errlog" />
+       <string id="string1" value="Init" />
+       <string id="string2" value="Microsoft-Windows-WHEA-Logger" />
+       <string id="string3" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

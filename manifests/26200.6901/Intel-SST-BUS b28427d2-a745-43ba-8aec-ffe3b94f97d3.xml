@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Intel-SST-BUS" name="Intel-SST-BUS" guid="{b28427d2-a745-43ba-8aec-ffe3b94f97d3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="402" version="0" level="win:Error"  channel="Intel-SST-BUS/Debug" task="PnP" template="Args402_0"/>
+        <event value="0" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="DriverEntry" opcode="win:Start"/>
+        <event value="1" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="DriverEntry" opcode="win:Stop" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="DeviceAdd" opcode="win:Start"/>
+        <event value="3" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="DeviceAdd"/>
+        <event value="4" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power" template="Args4_1"/>
+        <event value="5" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="6" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="7" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="8" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="9" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="10" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="11" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="Power"/>
+        <event value="12" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP" template="Args12_1"/>
+        <event value="13" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="14" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="15" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="16" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="17" version="1" level="win:Verbose"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="18" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="19" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="PnP"/>
+        <event value="23" version="1" level="win:Informational"  channel="Intel-SST-BUS/Debug" task="IsrInterrupt" template="Args23_1"/>
+        <event value="200" version="1" level="win:Warning"  channel="Intel-SST-BUS/Debug" task="LimitEnforcement" template="Args200_1"/>
+        <event value="401" version="1" level="win:Error"  channel="Intel-SST-BUS/Debug" task="Power"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Intel-SST-BUS/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="DriverEntry" message="$(string.string1)">
+        </task>
+        <task value="2" name="DeviceAdd" message="$(string.string2)">
+        </task>
+        <task value="3" name="PnP" message="$(string.string3)">
+        </task>
+        <task value="4" name="Power" message="$(string.string4)">
+        </task>
+        <task value="5" name="IsrInterrupt" message="$(string.string5)">
+        </task>
+        <task value="6" name="LimitEnforcement" message="$(string.string6)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args402_0">
+          <data name="status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="lineNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1_1">
+          <data name="status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="WDFDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_1">
+          <data name="device" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args23_1">
+          <data name="intStatusAndControl" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterruptStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RIRBStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CORBStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dspStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="stateSTS" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args200_1">
+          <data name="variant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="value" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="threshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DeviceAdd" />
+       <string id="string1" value="DriverEntry" />
+       <string id="string2" value="Intel-SST-BUS" />
+       <string id="string3" value="Intel-SST-BUS/Debug" />
+       <string id="string4" value="IsrInterrupt" />
+       <string id="string5" value="LimitEnforcement" />
+       <string id="string6" value="PnP" />
+       <string id="string7" value="Power" />
+       <string id="string8" value="System" />
+       <string id="string9" value="win:Start" />
+       <string id="string10" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

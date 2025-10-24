@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-CPU-Partition" name="Microsoft-Windows-Kernel-CPU-Partition" guid="{3a493674-937f-5a23-f598-d56b9bd10d28}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-CPU-Partition/Analytic" task="CPU_PARTITION_TASK_VIOLATION" opcode="AffinityViolation" keywords="CpuPartitionAffinityViolation" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-CPU-Partition/Analytic" task="CPU_PARTITION_TASK_VIOLATION" opcode="DpcSchedulingViolation" keywords="CpuPartitionDpcViolation" template="Args2_0"/>
+        <event value="3" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-CPU-Partition/Analytic" task="CPU_PARTITION_TASK_VIOLATION" opcode="GenericDpcViolation" keywords="CpuPartitionGenericDpcViolation"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-CPU-Partition/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="CpuPartitionAffinityViolation" mask="0x1" message="$(string.string2)" />
+        <keyword name="CpuPartitionDpcViolation" mask="0x2" message="$(string.string3)" />
+        <keyword name="CpuPartitionGenericDpcViolation" mask="0x4" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="CPU_PARTITION_TASK_VIOLATION" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="AffinityViolation" message="$(string.string0)"/>
+           <opcode value="12" name="DpcSchedulingViolation" message="$(string.string5)"/>
+           <opcode value="13" name="GenericDpcViolation" message="$(string.string6)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="KernelAffinitization" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="DeferredRoutineAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestedProcessorNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AffinityViolation" />
+       <string id="string1" value="CPU_PARTITION_TASK_VIOLATION" />
+       <string id="string2" value="CpuPartitionAffinityViolation" />
+       <string id="string3" value="CpuPartitionDpcViolation" />
+       <string id="string4" value="CpuPartitionGenericDpcViolation" />
+       <string id="string5" value="DpcSchedulingViolation" />
+       <string id="string6" value="GenericDpcViolation" />
+       <string id="string7" value="Microsoft-Windows-Kernel-CPU-Partition" />
+       <string id="string8" value="Microsoft-Windows-Kernel-CPU-Partition/Analytic" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

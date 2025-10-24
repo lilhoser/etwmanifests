@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ZTraceMaps" name="Microsoft-Windows-ZTraceMaps" guid="{b865b57b-bdda-4e1d-a2c8-adfa69fe6ab9}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1050" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Function" keywords="Debug" template="Args1050_0"/>
+        <event value="1051" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Function" keywords="Debug" template="Args1051_0"/>
+        <event value="1052" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Function" keywords="Debug"/>
+        <event value="1053" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Function" keywords="Debug"/>
+        <event value="1054" version="0" level="win:Warning"  channel="Microsoft-Windows-ZTraceMaps/Function" keywords="Debug"/>
+        <event value="1055" version="0" level="win:Warning"  channel="Microsoft-Windows-ZTraceMaps/Function" keywords="Debug"/>
+        <event value="1061" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug" template="Args1061_0"/>
+        <event value="1062" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug" template="Args1062_0"/>
+        <event value="1063" version="0" level="win:Error"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug" template="Args1063_0"/>
+        <event value="1071" version="0" level="win:Warning"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1072" version="0" level="win:Warning"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1073" version="0" level="win:Warning"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1081" version="0" level="win:Informational"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1082" version="0" level="win:Informational"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1083" version="0" level="win:Informational"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1091" version="0" level="win:Verbose"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1092" version="0" level="win:Verbose"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1093" version="0" level="win:Verbose"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+        <event value="1100" version="0" level="win:Informational"  channel="Microsoft-Windows-ZTraceMaps/Operational" keywords="Debug"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ZTraceMaps/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-ZTraceMaps/Function" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Debug" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1050_0">
+          <data name="Error" inType="win:Int32" outType="win:HResult"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1051_0">
+          <data name="Error" inType="win:Int32" outType="win:HResult"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="This" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Line" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1061_0">
+          <data name="MyMessage" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1062_0">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1063_0">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string"  />
+          <data name="This" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Line" inType="win:Int32" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Debug" />
+       <string id="string1" value="Microsoft-Windows-ZTraceMaps" />
+       <string id="string2" value="Microsoft-Windows-ZTraceMaps/Function" />
+       <string id="string3" value="Microsoft-Windows-ZTraceMaps/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

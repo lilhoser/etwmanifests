@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PhotoAcq" name="Microsoft-Windows-PhotoAcq" guid="{76cfa528-b26e-b773-62d0-9588270442a6}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="EnumerateItems" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="EnumerateItems" opcode="win:Stop"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="TransferItem" opcode="win:Start"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="TransferItem" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="PrecacheItem" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="PrecacheItem" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="EndToEnd" opcode="win:Start"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-PhotoAcq/Analytic" task="EndToEnd" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-PhotoAcq/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="100" name="EnumerateItems" message="$(string.string100)">
+        </task>
+        <task value="101" name="TransferItem" message="$(string.string101)">
+        </task>
+        <task value="102" name="PrecacheItem" message="$(string.string102)">
+        </task>
+        <task value="103" name="EndToEnd" message="$(string.string103)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="EndToEnd" />
+       <string id="string1" value="EnumerateItems" />
+       <string id="string2" value="Microsoft-Windows-PhotoAcq" />
+       <string id="string3" value="Microsoft-Windows-PhotoAcq/Analytic" />
+       <string id="string4" value="PrecacheItem" />
+       <string id="string5" value="TransferItem" />
+       <string id="string6" value="win:Start" />
+       <string id="string7" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

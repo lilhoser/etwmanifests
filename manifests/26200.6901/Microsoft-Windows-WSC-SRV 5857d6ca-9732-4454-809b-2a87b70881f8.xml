@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WSC-SRV" name="Microsoft-Windows-WSC-SRV" guid="{5857d6ca-9732-4454-809b-2a87b70881f8}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="StartService" opcode="win:Start" keywords="Service"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="StartService" opcode="win:Info" keywords="Service"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="StartService" opcode="win:Stop" keywords="Service"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="StopService" opcode="win:Start" keywords="Service"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="StopService" opcode="win:Stop" keywords="Service"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="LaunchUI" opcode="win:Start" keywords="UI"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="LaunchUI" opcode="win:Stop" keywords="UI"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="EnableFirewall" opcode="win:Start" keywords="UI"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="EnableFirewall" opcode="win:Stop" keywords="UI"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="EnableAntiSpyware" opcode="win:Start" keywords="UI"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="EnableAntiSpyware" opcode="win:Stop" keywords="UI"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="LaunchDialog" opcode="win:Start" keywords="UI"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="LaunchDialog" opcode="win:Stop" keywords="UI"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="GenericMarker" opcode="win:Start" keywords="Service"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="GenericMarker" opcode="win:Start" keywords="Service"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="GenericMarker" opcode="win:Start" keywords="Service"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="GenericMarker" opcode="win:Stop" keywords="UI"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="GenericMarker" opcode="win:Stop" keywords="UI"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-WSC-SRV/Diagnostic" task="GenericMarker" opcode="win:Stop" keywords="UI"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WSC-SRV/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Service" mask="0x10000" message="$(string.string7)" />
+        <keyword name="UI" mask="0x20000" message="$(string.string10)" />
+      </keywords>
+      <tasks>
+        <task value="101" name="StartService" message="$(string.string101)">
+        </task>
+        <task value="104" name="StopService" message="$(string.string104)">
+        </task>
+        <task value="106" name="LaunchUI" message="$(string.string106)">
+        </task>
+        <task value="108" name="EnableFirewall" message="$(string.string108)">
+        </task>
+        <task value="110" name="EnableAntiSpyware" message="$(string.string110)">
+        </task>
+        <task value="112" name="LaunchDialog" message="$(string.string112)">
+        </task>
+        <task value="114" name="GenericMarker" message="$(string.string114)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="EnableAntiSpyware" />
+       <string id="string1" value="EnableFirewall" />
+       <string id="string2" value="GenericMarker" />
+       <string id="string3" value="LaunchDialog" />
+       <string id="string4" value="LaunchUI" />
+       <string id="string5" value="Microsoft-Windows-WSC-SRV" />
+       <string id="string6" value="Microsoft-Windows-WSC-SRV/Diagnostic" />
+       <string id="string7" value="Service" />
+       <string id="string8" value="StartService" />
+       <string id="string9" value="StopService" />
+       <string id="string10" value="UI" />
+       <string id="string11" value="win:Info" />
+       <string id="string12" value="win:Start" />
+       <string id="string13" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

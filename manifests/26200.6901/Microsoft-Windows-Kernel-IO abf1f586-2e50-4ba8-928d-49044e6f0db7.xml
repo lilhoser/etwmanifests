@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-IO" name="Microsoft-Windows-Kernel-IO" guid="{abf1f586-2e50-4ba8-928d-49044e6f0db7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-IO/Operational" task="VolumeMount" opcode="win:Start" keywords="VolumeMounts" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-IO/Operational" task="VolumeMount" opcode="win:Stop" keywords="VolumeMounts"/>
+        <event value="3" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-IO/Operational" task="VolumeMount" opcode="win:Stop" keywords="VolumeMounts" template="Args3_0"/>
+        <event value="1205" version="0" level="win:Error"  channel="System" opcode="win:Info" template="Args1205_0"/>
+        <event value="1206" version="0" level="win:Error"  channel="System" opcode="win:Info" template="Args1206_0"/>
+        <event value="1207" version="0" level="win:Error"  channel="System" opcode="win:Info" template="Args1207_0"/>
+        <event value="1212" version="0" level="win:Error"  channel="System" opcode="win:Info" template="Args1212_0"/>
+        <event value="1213" version="0" level="win:Error"  channel="System" opcode="win:Info"/>
+        <event value="1300" version="0" level="win:Informational"  task="LoadBootHotPatches" opcode="win:Start" keywords="HotPatch"/>
+        <event value="1301" version="0" level="win:Informational"  task="LoadBootHotPatches" opcode="win:Stop" keywords="HotPatch"/>
+        <event value="1302" version="0" level="win:Informational"  task="WheaInitialize" opcode="win:Start" keywords="BootPerf" template="Args1302_0"/>
+        <event value="1303" version="0" level="win:Informational"  task="WheaInitialize" opcode="win:Stop" keywords="BootPerf"/>
+        <event value="1304" version="0" level="win:Informational"  task="CrashDumpInitialize" opcode="win:Start" keywords="BootPerf"/>
+        <event value="1305" version="0" level="win:Informational"  task="CrashDumpInitialize" opcode="win:Stop" keywords="BootPerf" template="Args1305_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Kernel-IO/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="VolumeMounts" mask="0x1" message="$(string.string8)" />
+        <keyword name="HotPatch" mask="0x2" message="$(string.string2)" />
+        <keyword name="BootPerf" mask="0x4" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="VolumeMount" message="$(string.string1)">
+        </task>
+        <task value="2" name="LoadBootHotPatches" message="$(string.string2)">
+        </task>
+        <task value="3" name="WheaInitialize" message="$(string.string3)">
+        </task>
+        <task value="4" name="CrashDumpInitialize" message="$(string.string4)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+        </template>
+        <template tid="Args3_0">
+          <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1205_0">
+          <data name="FilterNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterName" inType="win:UnicodeString" outType="xs:string" length="FilterNameLength" />
+        </template>
+        <template tid="Args1206_0">
+          <data name="FilterNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FilterName" inType="win:UnicodeString" outType="xs:string" length="FilterNameLength" />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+        </template>
+        <template tid="Args1207_0">
+          <data name="DumpEncryptionFailureReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1212_0">
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1302_0">
+          <data name="Phase" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1305_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="BootPerf" />
+       <string id="string1" value="CrashDumpInitialize" />
+       <string id="string2" value="HotPatch" />
+       <string id="string3" value="LoadBootHotPatches" />
+       <string id="string4" value="Microsoft-Windows-Kernel-IO" />
+       <string id="string5" value="Microsoft-Windows-Kernel-IO/Operational" />
+       <string id="string6" value="System" />
+       <string id="string7" value="VolumeMount" />
+       <string id="string8" value="VolumeMounts" />
+       <string id="string9" value="WheaInitialize" />
+       <string id="string10" value="win:Info" />
+       <string id="string11" value="win:Start" />
+       <string id="string12" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

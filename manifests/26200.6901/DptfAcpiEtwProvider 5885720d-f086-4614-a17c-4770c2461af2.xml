@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="DptfAcpiEtwProvider" name="DptfAcpiEtwProvider" guid="{5885720d-f086-4614-a17c-4770c2461af2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="Log Always"  template="Args0_0"/>
+        <event value="100" version="0" level="win:Informational"  opcode="win:Start" keywords="ApiTrace Windows Interrupt" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  opcode="win:Stop" keywords="ApiTrace Windows Interrupt" template="Args101_0"/>
+        <event value="102" version="0" level="win:Verbose"  keywords="Windows Interrupt" template="Args102_0"/>
+        <event value="103" version="0" level="win:Error"  keywords="Windows Interrupt"/>
+        <event value="104" version="0" level="win:Warning"  keywords="Windows Interrupt"/>
+        <event value="105" version="0" level="win:Informational"  keywords="Windows Interrupt"/>
+        <event value="106" version="0" level="win:Informational"  keywords="Windows Interrupt" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  keywords="ApiTrace Windows Interrupt" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  opcode="win:Stop" keywords="ApiTrace Windows Interrupt"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="ApiTrace" mask="0x1" message="$(string.string8)" />
+        <keyword name="Action_const" mask="0x2" message="$(string.string3)" />
+        <keyword name="Action_msr" mask="0x4" message="$(string.string7)" />
+        <keyword name="Action_mmio" mask="0x8" message="$(string.string6)" />
+        <keyword name="Action_acpi" mask="0x10" message="$(string.string1)" />
+        <keyword name="IPC" mask="0x20" message="$(string.string19)" />
+        <keyword name="Command" mask="0x40" message="$(string.string9)" />
+        <keyword name="Primitive" mask="0x80" message="$(string.string26)" />
+        <keyword name="Action" mask="0x100" message="$(string.string0)" />
+        <keyword name="Cpc" mask="0x200" message="$(string.string10)" />
+        <keyword name="Power" mask="0x400" message="$(string.string25)" />
+        <keyword name="Dsp" mask="0x800" message="$(string.string14)" />
+        <keyword name="Event" mask="0x1000" message="$(string.string16)" />
+        <keyword name="Elf" mask="0x2000" message="$(string.string15)" />
+        <keyword name="Pmg" mask="0x4000" message="$(string.string23)" />
+        <keyword name="Queue" mask="0x8000" message="$(string.string27)" />
+        <keyword name="Hash" mask="0x10000" message="$(string.string17)" />
+        <keyword name="Pnp" mask="0x20000" message="$(string.string24)" />
+        <keyword name="Action_code" mask="0x40000" message="$(string.string2)" />
+        <keyword name="Domain" mask="0x80000" message="$(string.string11)" />
+        <keyword name="Action_mbi" mask="0x100000" message="$(string.string5)" />
+        <keyword name="Drvm" mask="0x200000" message="$(string.string13)" />
+        <keyword name="Windows" mask="0x400000" message="$(string.string30)" />
+        <keyword name="Linux" mask="0x800000" message="$(string.string21)" />
+        <keyword name="Action_delegate" mask="0x1000000" message="$(string.string4)" />
+        <keyword name="Lp" mask="0x2000000" message="$(string.string22)" />
+        <keyword name="KIoctl" mask="0x4000000" message="$(string.string20)" />
+        <keyword name="Interrupt" mask="0x100000000" message="$(string.string18)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="stringPtr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="Interrupt" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MessageID" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="Status" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="Interrupt" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AssociatedObject" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Action" />
+       <string id="string1" value="Action_acpi" />
+       <string id="string2" value="Action_code" />
+       <string id="string3" value="Action_const" />
+       <string id="string4" value="Action_delegate" />
+       <string id="string5" value="Action_mbi" />
+       <string id="string6" value="Action_mmio" />
+       <string id="string7" value="Action_msr" />
+       <string id="string8" value="ApiTrace" />
+       <string id="string9" value="Command" />
+       <string id="string10" value="Cpc" />
+       <string id="string11" value="Domain" />
+       <string id="string12" value="DptfAcpiEtwProvider" />
+       <string id="string13" value="Drvm" />
+       <string id="string14" value="Dsp" />
+       <string id="string15" value="Elf" />
+       <string id="string16" value="Event" />
+       <string id="string17" value="Hash" />
+       <string id="string18" value="Interrupt" />
+       <string id="string19" value="IPC" />
+       <string id="string20" value="KIoctl" />
+       <string id="string21" value="Linux" />
+       <string id="string22" value="Lp" />
+       <string id="string23" value="Pmg" />
+       <string id="string24" value="Pnp" />
+       <string id="string25" value="Power" />
+       <string id="string26" value="Primitive" />
+       <string id="string27" value="Queue" />
+       <string id="string28" value="win:Start" />
+       <string id="string29" value="win:Stop" />
+       <string id="string30" value="Windows" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

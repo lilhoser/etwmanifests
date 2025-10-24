@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-NetworkProfileTriggerProvider" name="Microsoft-Windows-NetworkProfileTriggerProvider" guid="{fbcfac3f-8460-419f-8e48-1f0b49cdb85e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  opcode="Opcode_ProfileChange" keywords="Keyword_ProfileChange" template="Args1_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Keyword_ProfileChange" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="100" name="Opcode_ProfileChange" message="$(string.string2)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ProfileChange" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Keyword_ProfileChange" />
+       <string id="string1" value="Microsoft-Windows-NetworkProfileTriggerProvider" />
+       <string id="string2" value="Opcode_ProfileChange" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

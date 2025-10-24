@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UI-Search" name="Microsoft-Windows-UI-Search" guid="{d8965fcf-7397-4e0e-b750-21a4580bd880}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlViewStartup" opcode="win:Start" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlViewStartup" opcode="win:Stop" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="Perftrack_SearchPaneViewSetup" opcode="win:Start"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="Perftrack_SearchPaneViewSetup" opcode="win:Stop"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ASTAThread" opcode="win:Start" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ASTAThread" opcode="win:Stop"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ResourceManager" opcode="win:Start"/>
+        <event value="302" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ResourceManager" opcode="win:Stop"/>
+        <event value="401" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XAMLContent" opcode="win:Start"/>
+        <event value="402" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XAMLContent" opcode="win:Stop"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ViewServiceInit" opcode="win:Start" template="Args501_0"/>
+        <event value="502" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ViewServiceInit" opcode="win:Stop" template="Args502_0"/>
+        <event value="503" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ViewServiceSubscribe" opcode="win:Start"/>
+        <event value="504" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="ViewServiceSubscribe" opcode="win:Stop"/>
+        <event value="601" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlViewShutdown" opcode="win:Start"/>
+        <event value="602" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlViewShutdown" opcode="win:Stop"/>
+        <event value="709" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlHostCreateWindow" opcode="win:Start"/>
+        <event value="710" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlHostCreateWindow" opcode="win:Stop"/>
+        <event value="711" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="SearchPane_QueryChanged" opcode="win:Info" template="Args711_0"/>
+        <event value="910" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="TemplateManager_XAMLCallbackException" opcode="win:Info" template="Args910_0"/>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="XamlHostWindow_VisibilityChanged" opcode="win:Info" template="Args1001_0"/>
+        <event value="1836" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="GetSearchLaunchModeForWindow_Result" opcode="win:Info" template="Args1836_0"/>
+        <event value="3001" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="PerfTrack_SearchPaneOpen" opcode="win:Start"/>
+        <event value="3002" version="0" level="win:Informational"  channel="Microsoft-Windows-SearchUI/Diagnostic" task="PerfTrack_SearchPaneOpen" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SearchUI/Diagnostic" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-SearchUI/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="100" name="XamlViewStartup" message="$(string.string100)">
+        </task>
+        <task value="110" name="Perftrack_SearchPaneViewSetup" message="$(string.string110)">
+        </task>
+        <task value="200" name="ASTAThread" message="$(string.string200)">
+        </task>
+        <task value="300" name="ResourceManager" message="$(string.string300)">
+        </task>
+        <task value="400" name="XAMLContent" message="$(string.string400)">
+        </task>
+        <task value="500" name="ViewServiceInit" message="$(string.string500)">
+        </task>
+        <task value="501" name="ViewServiceSubscribe" message="$(string.string501)">
+        </task>
+        <task value="600" name="XamlViewShutdown" message="$(string.string600)">
+        </task>
+        <task value="800" name="XamlHostCreateWindow" message="$(string.string800)">
+        </task>
+        <task value="907" name="TemplateManager_XAMLCallbackException" message="$(string.string907)">
+        </task>
+        <task value="1000" name="XamlHostWindow_VisibilityChanged" message="$(string.string1000)">
+        </task>
+        <task value="1836" name="GetSearchLaunchModeForWindow_Result" message="$(string.string1836)">
+        </task>
+        <task value="1851" name="SearchPane_QueryChanged" message="$(string.string1851)">
+        </task>
+        <task value="3000" name="PerfTrack_SearchPaneOpen" message="$(string.string3000)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args101_0">
+          <data name="XAMLView" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="XAMLView" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="XAMLView" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args501_0">
+          <data name="ServiceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args502_0">
+          <data name="ServiceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args711_0">
+          <data name="QueryString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args910_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="Visibility" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="XAMLView" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1836_0">
+          <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="LaunchMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ASTAThread" />
+       <string id="string1" value="GetSearchLaunchModeForWindow_Result" />
+       <string id="string2" value="Microsoft-Windows-SearchUI/Diagnostic" />
+       <string id="string3" value="Microsoft-Windows-SearchUI/Operational" />
+       <string id="string4" value="Microsoft-Windows-UI-Search" />
+       <string id="string5" value="PerfTrack_SearchPaneOpen" />
+       <string id="string6" value="Perftrack_SearchPaneViewSetup" />
+       <string id="string7" value="ResourceManager" />
+       <string id="string8" value="SearchPane_QueryChanged" />
+       <string id="string9" value="TemplateManager_XAMLCallbackException" />
+       <string id="string10" value="ViewServiceInit" />
+       <string id="string11" value="ViewServiceSubscribe" />
+       <string id="string12" value="win:Info" />
+       <string id="string13" value="win:Start" />
+       <string id="string14" value="win:Stop" />
+       <string id="string15" value="XAMLContent" />
+       <string id="string16" value="XamlHostCreateWindow" />
+       <string id="string17" value="XamlHostWindow_VisibilityChanged" />
+       <string id="string18" value="XamlViewShutdown" />
+       <string id="string19" value="XamlViewStartup" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

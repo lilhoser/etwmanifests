@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WLAN-Driver" name="Microsoft-Windows-WLAN-Driver" guid="{daa6a96b-f3e7-4d4d-a0d6-31a350e6a445}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Transmit" keywords="DataPath" template="Args0_1"/>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Transmit" keywords="DataPath" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Transmit" keywords="DataPath" template="Args2_1"/>
+        <event value="3" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Transmit" keywords="DataPath"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Receive" keywords="DataPath" template="Args4_1"/>
+        <event value="5" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Receive" keywords="DataPath" template="Args5_1"/>
+        <event value="6" version="1" level="win:Informational"  channel="Microsoft-Windows-WLAN-Driver/Analytic" task="DataTransmitReceive" opcode="Receive" keywords="DataPath" template="Args6_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WLAN-Driver/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="DataPath" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="DataTransmitReceive" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="Transmit" message="$(string.string5)"/>
+           <opcode value="12" name="Receive" message="$(string.string4)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args0_1">
+          <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PeerID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PayloadLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="QueueState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1_1">
+          <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="QueueState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RetryCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TID" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PeerID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PayloadLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Retransmit" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5_1">
+          <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RxBacklog" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_1">
+          <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="RxBacklog" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DataPath" />
+       <string id="string1" value="DataTransmitReceive" />
+       <string id="string2" value="Microsoft-Windows-WLAN-Driver" />
+       <string id="string3" value="Microsoft-Windows-WLAN-Driver/Analytic" />
+       <string id="string4" value="Receive" />
+       <string id="string5" value="Transmit" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

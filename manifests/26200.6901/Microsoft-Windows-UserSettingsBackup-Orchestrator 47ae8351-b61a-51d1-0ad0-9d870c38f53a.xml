@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UserSettingsBackup-Orchestrator" name="Microsoft-Windows-UserSettingsBackup-Orchestrator" guid="{47ae8351-b61a-51d1-0ad0-9d870c38f53a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="4" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="6" version="0" level="win:Error"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" template="Args6_0"/>
+        <event value="7" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="8" version="0" level="win:Error"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" template="Args10_0"/>
+        <event value="11" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="13" version="0" level="win:Error"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="14" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="File" inType="win:AnsiString" outType="xs:string"  />
+          <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Context" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Scope" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="Context" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Scope" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="UnitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="OverallResult" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="ContextTag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-UserSettingsBackup-Orchestrator" />
+       <string id="string1" value="Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

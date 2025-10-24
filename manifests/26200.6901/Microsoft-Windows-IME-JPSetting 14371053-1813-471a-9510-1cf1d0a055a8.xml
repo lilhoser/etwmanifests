@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IME-JPSetting" name="Microsoft-Windows-IME-JPSetting" guid="{14371053-1813-471a-9510-1cf1d0a055a8}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-JPSetting/Analytic" task="IME_ShowSetting" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-JPSetting/Analytic" task="IME_ShowSetting" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-IME-JPSetting/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="100" name="IME_ShowSetting" message="$(string.string100)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="IME_ShowSetting" />
+       <string id="string1" value="Microsoft-Windows-IME-JPSetting" />
+       <string id="string2" value="Microsoft-Windows-IME-JPSetting/Analytic" />
+       <string id="string3" value="win:Start" />
+       <string id="string4" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

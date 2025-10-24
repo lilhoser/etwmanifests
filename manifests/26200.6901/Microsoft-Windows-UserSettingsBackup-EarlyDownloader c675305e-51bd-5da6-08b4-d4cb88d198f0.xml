@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UserSettingsBackup-EarlyDownloader" name="Microsoft-Windows-UserSettingsBackup-EarlyDownloader" guid="{c675305e-51bd-5da6-08b4-d4cb88d198f0}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args8_0"/>
+        <event value="15" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args15_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args105_0"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args107_0"/>
+        <event value="109" version="0" level="win:Warning"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args109_0"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" template="Args111_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="File" inType="win:AnsiString" outType="xs:string"  />
+          <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="ContextTag" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="OverallResult" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="DownloadUnitIdTypeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DownloadUnitIdCollectionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DownloadUnitIdIsPerDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DownloadRequestUri" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="DownloadAssetIdName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DownloadAssetUriName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DownloadRequestUri" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="Uri" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Response" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="DownloadAssetIdName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DownloadAssetUriName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="Uri" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Response" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args111_0">
+          <data name="Partition" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Collection" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Instance" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Encoding" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-UserSettingsBackup-EarlyDownloader" />
+       <string id="string1" value="Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

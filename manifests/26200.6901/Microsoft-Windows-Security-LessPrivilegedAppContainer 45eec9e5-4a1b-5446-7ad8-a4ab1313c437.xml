@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Security-LessPrivilegedAppContainer" name="Microsoft-Windows-Security-LessPrivilegedAppContainer" guid="{45eec9e5-4a1b-5446-7ad8-a4ab1313c437}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-Security-LessPrivilegedAppContainer/Operational" task="AccessFailure" template="Args1_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Security-LessPrivilegedAppContainer/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="AccessFailure" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="FailureTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="StackHash" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AccessFailure" />
+       <string id="string1" value="Microsoft-Windows-Security-LessPrivilegedAppContainer" />
+       <string id="string2" value="Microsoft-Windows-Security-LessPrivilegedAppContainer/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MMCSS" name="Microsoft-Windows-MMCSS" guid="{36008301-e154-466c-acec-5f4cbd6b4694}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="1" level="win:Informational"  task="Scheduler_Priority_Change" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  task="Scheduler_Wakeup" template="Args2_1"/>
+        <event value="3" version="1" level="win:Informational"  task="Scheduler_Sleep" template="Args3_1"/>
+        <event value="5" version="1" level="win:Informational"  task="Service_Start"/>
+        <event value="6" version="1" level="win:Informational"  task="Service_Stop"/>
+        <event value="7" version="1" level="win:Informational"  task="Thread_Join" template="Args7_1"/>
+        <event value="8" version="1" level="win:Informational"  task="Thread_Leave" template="Args8_1"/>
+        <event value="12" version="1" level="win:Informational"  task="TaskIndex_Yield" template="Args12_1"/>
+        <event value="13" version="1" level="win:Informational"  task="TaskIndex_YieldCancel"/>
+        <event value="14" version="1" level="win:Informational"  task="Set_MultimediaMode" template="Args14_1"/>
+        <event value="15" version="1" level="win:Informational"  task="TaskIndex_DeadlineExpired"/>
+        <event value="16" version="1" level="win:Informational"  task="TurboEngaged" template="Args16_1"/>
+        <event value="17" version="1" level="win:Informational"  task="ThreadBuffering" opcode="win:Start" template="Args17_1"/>
+        <event value="18" version="1" level="win:Informational"  task="ThreadBuffering" opcode="win:Stop"/>
+        <event value="19" version="1" level="win:Informational"  task="TaskIndex_PreDeadlineExpired"/>
+        <event value="20" version="1" level="win:Informational"  task="Thread_SetChars" template="Args20_1"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="100" name="Scheduler_Priority_Change" message="$(string.string100)">
+        </task>
+        <task value="101" name="Scheduler_Wakeup" message="$(string.string101)">
+        </task>
+        <task value="102" name="Scheduler_Sleep" message="$(string.string102)">
+        </task>
+        <task value="104" name="Service_Start" message="$(string.string104)">
+        </task>
+        <task value="105" name="Service_Stop" message="$(string.string105)">
+        </task>
+        <task value="106" name="Thread_Join" message="$(string.string106)">
+        </task>
+        <task value="107" name="Thread_Leave" message="$(string.string107)">
+        </task>
+        <task value="111" name="TaskIndex_Yield" message="$(string.string111)">
+        </task>
+        <task value="112" name="TaskIndex_YieldCancel" message="$(string.string112)">
+        </task>
+        <task value="113" name="Set_MultimediaMode" message="$(string.string113)">
+        </task>
+        <task value="114" name="TaskIndex_DeadlineExpired" message="$(string.string114)">
+        </task>
+        <task value="115" name="TurboEngaged" message="$(string.string115)">
+        </task>
+        <task value="116" name="ThreadBuffering" message="$(string.string116)">
+        </task>
+        <task value="117" name="TaskIndex_PreDeadlineExpired" message="$(string.string117)">
+        </task>
+        <task value="118" name="Thread_SetChars" message="$(string.string118)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_1">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="Priority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="Reason" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args3_1">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_1">
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="MediumPriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LowPriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UberLowPriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Category" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args8_1">
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="OriginalBasePriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args12_1">
+          <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14_1">
+          <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ThreadTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args16_1">
+          <data name="TurboEngaged" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args17_1">
+          <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20_1">
+          <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TaskName1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskName2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-MMCSS" />
+       <string id="string1" value="Scheduler_Priority_Change" />
+       <string id="string2" value="Scheduler_Sleep" />
+       <string id="string3" value="Scheduler_Wakeup" />
+       <string id="string4" value="Service_Start" />
+       <string id="string5" value="Service_Stop" />
+       <string id="string6" value="Set_MultimediaMode" />
+       <string id="string7" value="TaskIndex_DeadlineExpired" />
+       <string id="string8" value="TaskIndex_PreDeadlineExpired" />
+       <string id="string9" value="TaskIndex_Yield" />
+       <string id="string10" value="TaskIndex_YieldCancel" />
+       <string id="string11" value="Thread_Join" />
+       <string id="string12" value="Thread_Leave" />
+       <string id="string13" value="Thread_SetChars" />
+       <string id="string14" value="ThreadBuffering" />
+       <string id="string15" value="TurboEngaged" />
+       <string id="string16" value="win:Start" />
+       <string id="string17" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

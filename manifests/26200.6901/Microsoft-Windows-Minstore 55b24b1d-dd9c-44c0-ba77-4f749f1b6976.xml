@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Minstore" name="Microsoft-Windows-Minstore" guid="{55b24b1d-dd9c-44c0-ba77-4f749f1b6976}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Split" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Merge"/>
+        <event value="10" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TreeUpdateTask" opcode="Write B+ tree" template="Args10_1"/>
+        <event value="11" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="VolumeCheckpoint" opcode="Checkpoint"/>
+        <event value="12" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TreeUpdateTask" opcode="Started writing B+ tree"/>
+        <event value="13" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TreeUpdateTask" opcode="Finished writing B+ tree"/>
+        <event value="20" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="ForwardProgress" opcode="LFF: Redo Log" template="Args20_1"/>
+        <event value="21" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="ForwardProgress" opcode="LFF: Protected Space"/>
+        <event value="22" version="1" level="win:Verbose"  channel="Microsoft-Windows-Minstore/Debug" task="Allocation" opcode="Allocation range" template="Args22_1"/>
+        <event value="23" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="ForwardProgress" opcode="Log tail advance"/>
+        <event value="24" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="ForwardProgress" opcode="Log pulse lazy writer"/>
+        <event value="25" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="Allocation" opcode="Container move" template="Args25_1"/>
+        <event value="26" version="1" level="win:Warning"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log skip replay" template="Args26_1"/>
+        <event value="27" version="1" level="win:Error"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log replay failure"/>
+        <event value="50" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="Contention" opcode="Bucket read collision" template="Args50_1"/>
+        <event value="51" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="Contention" opcode="Bucket lock collision"/>
+        <event value="52" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="Contention" opcode="Bucket cow collision"/>
+        <event value="100" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="ErrorDetected" opcode="B+ node CRC mismatch" template="Args100_1"/>
+        <event value="101" version="1" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="ErrorDetected" opcode="B+ node repaired via redundant copy"/>
+        <event value="1000" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Split"/>
+        <event value="1002" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Split"/>
+        <event value="1003" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Merge"/>
+        <event value="1004" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Merge"/>
+        <event value="1005" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Split"/>
+        <event value="1006" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Split"/>
+        <event value="1007" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Merge"/>
+        <event value="1008" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="TableEvent" opcode="Bucket Merge"/>
+        <event value="1011" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo" template="Args1011_2"/>
+        <event value="1012" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1013" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1014" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1015" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1016" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1017" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1018" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1019" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1020" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LogRedo" opcode="Log Redo"/>
+        <event value="1030" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LazyWriter" opcode="Lazy Writer"/>
+        <event value="1031" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LazyWriter" opcode="Lazy Writer"/>
+        <event value="1032" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LazyWriter" opcode="Lazy Writer" template="Args1032_2"/>
+        <event value="1033" version="2" level="win:Informational"  channel="Microsoft-Windows-Minstore/Analytic" task="LazyWriter" opcode="Lazy Writer"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Minstore/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Minstore/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="TreeUpdateTask" message="$(string.string1)">
+          <opcodes>
+           <opcode value="15" name="Write B+ tree" message="$(string.string50)"/>
+           <opcode value="20" name="Started writing B+ tree" message="$(string.string43)"/>
+           <opcode value="21" name="Finished writing B+ tree" message="$(string.string21)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="TableEvent" message="$(string.string2)">
+          <opcodes>
+           <opcode value="13" name="Bucket Split" message="$(string.string9)"/>
+           <opcode value="14" name="Bucket Merge" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="VolumeCheckpoint" message="$(string.string3)">
+          <opcodes>
+           <opcode value="16" name="Checkpoint" message="$(string.string15)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="ForwardProgress" message="$(string.string4)">
+          <opcodes>
+           <opcode value="17" name="LFF: Redo Log" message="$(string.string27)"/>
+           <opcode value="18" name="LFF: Protected Space" message="$(string.string26)"/>
+           <opcode value="22" name="Log tail advance" message="$(string.string32)"/>
+           <opcode value="24" name="Log pulse lazy writer" message="$(string.string28)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="Allocation" message="$(string.string5)">
+          <opcodes>
+           <opcode value="19" name="Allocation range" message="$(string.string1)"/>
+           <opcode value="25" name="Container move" message="$(string.string16)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="LogRedo" message="$(string.string6)">
+          <opcodes>
+           <opcode value="26" name="Log skip replay" message="$(string.string31)"/>
+           <opcode value="27" name="Log replay failure" message="$(string.string30)"/>
+           <opcode value="23" name="Log Redo" message="$(string.string29)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="LazyWriter" message="$(string.string7)">
+          <opcodes>
+           <opcode value="60" name="Lazy Writer" message="$(string.string24)"/>
+          </opcodes>
+        </task>
+        <task value="50" name="Contention" message="$(string.string50)">
+          <opcodes>
+           <opcode value="50" name="Bucket read collision" message="$(string.string8)"/>
+           <opcode value="51" name="Bucket lock collision" message="$(string.string6)"/>
+           <opcode value="52" name="Bucket cow collision" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="100" name="ErrorDetected" message="$(string.string100)">
+          <opcodes>
+           <opcode value="100" name="B+ node CRC mismatch" message="$(string.string3)"/>
+           <opcode value="101" name="B+ node repaired via redundant copy" message="$(string.string4)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="13" name="BucketSplit" message="$(string.string14)"/>
+        <opcode value="14" name="BucketMerge" message="$(string.string12)"/>
+        <opcode value="15" name="TreeUpdate" message="$(string.string45)"/>
+        <opcode value="16" name="VolumeCheckpoint" message="$(string.string49)"/>
+        <opcode value="17" name="LogFullRedoLog" message="$(string.string35)"/>
+        <opcode value="18" name="LogFullFreeSpace" message="$(string.string34)"/>
+        <opcode value="19" name="AllocationRange" message="$(string.string2)"/>
+        <opcode value="20" name="TreeUpdateStart" message="$(string.string47)"/>
+        <opcode value="21" name="TreeUpdateEnd" message="$(string.string46)"/>
+        <opcode value="22" name="LogAdvance" message="$(string.string33)"/>
+        <opcode value="23" name="LogRedo" message="$(string.string37)"/>
+        <opcode value="24" name="LogPulseLazyWriter" message="$(string.string36)"/>
+        <opcode value="25" name="ContainerMove" message="$(string.string17)"/>
+        <opcode value="26" name="LogSkipReplay" message="$(string.string39)"/>
+        <opcode value="27" name="LogReplayFailure" message="$(string.string38)"/>
+        <opcode value="50" name="BucketReadCollision" message="$(string.string13)"/>
+        <opcode value="51" name="BucketLockCollision" message="$(string.string11)"/>
+        <opcode value="52" name="BucketCowCollision" message="$(string.string10)"/>
+        <opcode value="60" name="LazyWriter" message="$(string.string25)"/>
+        <opcode value="100" name="CorruptBucket" message="$(string.string19)"/>
+        <opcode value="101" name="FixedBucket" message="$(string.string22)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_1">
+          <data name="IdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="TableType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_1">
+          <data name="PageCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args20_1">
+          <data name="Pending" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Amount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Lsn1" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Lsn2" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Lsn3" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args22_1">
+          <data name="IsMetadata" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RequestedTier" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActualTier" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequestedStartOfRange" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RequestedCountOfRange" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedStartOfRange" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocatedCountOfRange" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args25_1">
+          <data name="SourceTier" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetTier" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceStartOfRange" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="SourceCountOfRange" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="TargetPhysicalOffset" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="SsdFillRatio" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HddFillRatio" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsTargetReserved" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DestageAllocationCount" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="FailedSsdDestage" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args26_1">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args50_1">
+          <data name="IdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Lcn" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Level" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args100_1">
+          <data name="IdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PageLcn" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Lcn" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="PageVirtualClock" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="VolumeVirtualClock" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Scrubbing" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1011_2">
+          <data name="StartLsn" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="EndLsn" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="TransactionsRemaining" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1032_2">
+          <data name="IdHigh" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="IdLow" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Allocation" />
+       <string id="string1" value="Allocation range" />
+       <string id="string2" value="AllocationRange" />
+       <string id="string3" value="B+ node CRC mismatch" />
+       <string id="string4" value="B+ node repaired via redundant copy" />
+       <string id="string5" value="Bucket cow collision" />
+       <string id="string6" value="Bucket lock collision" />
+       <string id="string7" value="Bucket Merge" />
+       <string id="string8" value="Bucket read collision" />
+       <string id="string9" value="Bucket Split" />
+       <string id="string10" value="BucketCowCollision" />
+       <string id="string11" value="BucketLockCollision" />
+       <string id="string12" value="BucketMerge" />
+       <string id="string13" value="BucketReadCollision" />
+       <string id="string14" value="BucketSplit" />
+       <string id="string15" value="Checkpoint" />
+       <string id="string16" value="Container move" />
+       <string id="string17" value="ContainerMove" />
+       <string id="string18" value="Contention" />
+       <string id="string19" value="CorruptBucket" />
+       <string id="string20" value="ErrorDetected" />
+       <string id="string21" value="Finished writing B+ tree" />
+       <string id="string22" value="FixedBucket" />
+       <string id="string23" value="ForwardProgress" />
+       <string id="string24" value="Lazy Writer" />
+       <string id="string25" value="LazyWriter" />
+       <string id="string26" value="LFF: Protected Space" />
+       <string id="string27" value="LFF: Redo Log" />
+       <string id="string28" value="Log pulse lazy writer" />
+       <string id="string29" value="Log Redo" />
+       <string id="string30" value="Log replay failure" />
+       <string id="string31" value="Log skip replay" />
+       <string id="string32" value="Log tail advance" />
+       <string id="string33" value="LogAdvance" />
+       <string id="string34" value="LogFullFreeSpace" />
+       <string id="string35" value="LogFullRedoLog" />
+       <string id="string36" value="LogPulseLazyWriter" />
+       <string id="string37" value="LogRedo" />
+       <string id="string38" value="LogReplayFailure" />
+       <string id="string39" value="LogSkipReplay" />
+       <string id="string40" value="Microsoft-Windows-Minstore" />
+       <string id="string41" value="Microsoft-Windows-Minstore/Analytic" />
+       <string id="string42" value="Microsoft-Windows-Minstore/Debug" />
+       <string id="string43" value="Started writing B+ tree" />
+       <string id="string44" value="TableEvent" />
+       <string id="string45" value="TreeUpdate" />
+       <string id="string46" value="TreeUpdateEnd" />
+       <string id="string47" value="TreeUpdateStart" />
+       <string id="string48" value="TreeUpdateTask" />
+       <string id="string49" value="VolumeCheckpoint" />
+       <string id="string50" value="Write B+ tree" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

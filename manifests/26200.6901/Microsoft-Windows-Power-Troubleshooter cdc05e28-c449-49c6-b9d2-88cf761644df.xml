@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Power-Troubleshooter" name="Microsoft-Windows-Power-Troubleshooter" guid="{cdc05e28-c449-49c6-b9d2-88cf761644df}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="System" template="Args1_0"/>
+        <event value="1" version="1" level="win:Informational"  channel="System" template="Args1_1"/>
+        <event value="1" version="2" level="win:Informational"  channel="System" template="Args1_2"/>
+        <event value="1" version="3" level="win:Informational"  channel="System" template="Args1_3"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="SleepTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="WakeTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength" />
+        </template>
+        <template tid="Args1_1">
+          <data name="SleepTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="WakeTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength" />
+          <data name="WakeTimerOwnerLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeTimerContextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeTimerOwner" inType="win:UnicodeString" outType="xs:string" length="WakeTimerOwnerLength" />
+          <data name="WakeTimerContext" inType="win:UnicodeString" outType="xs:string" length="WakeTimerContextLength" />
+        </template>
+        <template tid="Args1_2">
+          <data name="SleepTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="WakeTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength" />
+          <data name="WakeTimerOwnerLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeTimerContextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NoMultiStageResumeReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeTimerOwner" inType="win:UnicodeString" outType="xs:string" length="WakeTimerOwnerLength" />
+          <data name="WakeTimerContext" inType="win:UnicodeString" outType="xs:string" length="WakeTimerContextLength" />
+        </template>
+        <template tid="Args1_3">
+          <data name="SleepTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="WakeTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength" />
+          <data name="WakeTimerOwnerLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WakeTimerContextLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NoMultiStageResumeReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WakeTimerOwner" inType="win:UnicodeString" outType="xs:string" length="WakeTimerOwnerLength" />
+          <data name="WakeTimerContext" inType="win:UnicodeString" outType="xs:string" length="WakeTimerContextLength" />
+          <data name="CheckpointDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Power-Troubleshooter" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

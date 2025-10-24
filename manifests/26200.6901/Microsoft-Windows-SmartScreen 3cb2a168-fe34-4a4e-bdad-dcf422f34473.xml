@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SmartScreen" name="Microsoft-Windows-SmartScreen" guid="{3cb2a168-fe34-4a4e-bdad-dcf422f34473}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="0" level="win:Informational"  channel="Microsoft-Windows-SmartScreen/Debug" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-SmartScreen/Debug" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-SmartScreen/Debug" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Verbose"  channel="Microsoft-Windows-SmartScreen/Debug" template="Args1003_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SmartScreen/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1000_0">
+          <data name="FilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FullFileHash" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AuthenticodeHash" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AuthenticodeAlgorithm" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MarkOfTheWeb" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CallingProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallingProcessCreationTime" inType="win:UInt64" outType="win:ETWTIME"  />
+          <data name="Sid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Enforcement" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Experience" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="Uri" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReferrerUri" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReferrerIP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Recommendation" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HitType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NavigationType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProductType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CallingProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallingProcessCreationTime" inType="win:UInt64" outType="win:ETWTIME"  />
+          <data name="Sid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Enforcement" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Experience" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="Action" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActivitiyId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="Data" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-SmartScreen" />
+       <string id="string1" value="Microsoft-Windows-SmartScreen/Debug" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

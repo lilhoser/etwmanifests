@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TaskbarCPL" name="Microsoft-Windows-TaskbarCPL" guid="{05d7b0f0-2121-4eff-bf6b-ed3f69b894d7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskbarCPL/Diagnostic" task="TaskbarCPL_Open" opcode="win:Start"/>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskbarCPL/Diagnostic" task="TaskbarCPL_Open" opcode="win:Stop"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskbarCPL/Diagnostic" task="TaskbarCPL_Cancel" opcode="win:Start"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskbarCPL/Diagnostic" task="TaskbarCPL_Cancel" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-TaskbarCPL/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="TaskbarCPL_Open" message="$(string.string1)">
+        </task>
+        <task value="2" name="TaskbarCPL_Cancel" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-TaskbarCPL" />
+       <string id="string1" value="Microsoft-Windows-TaskbarCPL/Diagnostic" />
+       <string id="string2" value="TaskbarCPL_Cancel" />
+       <string id="string3" value="TaskbarCPL_Open" />
+       <string id="string4" value="win:Start" />
+       <string id="string5" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

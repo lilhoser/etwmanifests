@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Diagnosis-WDI" name="Microsoft-Windows-Diagnosis-WDI" guid="{e01b1a7c-c5c9-4e67-99a9-5e85acfb2e10}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="140" version="0" level="win:Error"  channel="Microsoft-Windows-Diagnosis-WDI/Debug" task="WDI_LIBRARY_TASK_DEBUG" opcode="WDI_LIBRARY_OPCODE_DEBUG" keywords="debug" template="Args140_0"/>
+        <event value="5016" version="0" level="win:Verbose"  keywords="memory" template="Args5016_0"/>
+        <event value="5017" version="0" level="win:Verbose"  keywords="memory"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Diagnosis-WDI/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="memory" mask="0x200" message="$(string.string1)" />
+        <keyword name="debug" mask="0x400000000" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="2" name="WDI_LIBRARY_TASK_DEBUG" message="$(string.string2)">
+          <opcodes>
+           <opcode value="10" name="WDI_LIBRARY_OPCODE_DEBUG" message="$(string.string4)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args140_0">
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LineNumber" inType="win:Int32" outType="xs:int"  />
+          <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5016_0">
+          <data name="FileName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Size" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="debug" />
+       <string id="string1" value="memory" />
+       <string id="string2" value="Microsoft-Windows-Diagnosis-WDI" />
+       <string id="string3" value="Microsoft-Windows-Diagnosis-WDI/Debug" />
+       <string id="string4" value="WDI_LIBRARY_OPCODE_DEBUG" />
+       <string id="string5" value="WDI_LIBRARY_TASK_DEBUG" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Hyper-V-UiDevices" name="Microsoft-Windows-Hyper-V-UiDevices" guid="{339aad0a-4124-4968-8147-4cbbb1f8b3d5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1500" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" template="Args1500_0"/>
+        <event value="1510" version="0" level="win:Warning"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic"/>
+        <event value="1520" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic"/>
+        <event value="1530" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic"/>
+        <event value="12460" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin" template="Args12460_0"/>
+        <event value="12461" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12480" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12481" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12530" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin" template="Args12530_0"/>
+        <event value="12531" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12540" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12541" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12550" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12551" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32700" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin" template="Args32700_0"/>
+        <event value="32701" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32702" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32703" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32704" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32705" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32706" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32707" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32708" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32709" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32710" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32711" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32712" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32713" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32714" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32715" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32716" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32717" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32718" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="32719" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin" template="Args32719_0"/>
+        <event value="32720" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Hyper-V-Worker-Admin" type="unknown"/>
+        <channel value="17" name="Microsoft-Windows-Hyper-V-Worker-Analytic" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1500_0">
+          <data name="TraceData" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12460_0">
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args12530_0">
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Device" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args32700_0">
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Device" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCodeString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ContextParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContextParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContextParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args32719_0">
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Device" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ServerVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Hyper-V-UiDevices" />
+       <string id="string1" value="Microsoft-Windows-Hyper-V-Worker-Admin" />
+       <string id="string2" value="Microsoft-Windows-Hyper-V-Worker-Analytic" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

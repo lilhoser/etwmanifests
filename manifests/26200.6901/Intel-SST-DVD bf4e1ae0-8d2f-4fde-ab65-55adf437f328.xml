@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Intel-SST-DVD" name="Intel-SST-DVD" guid="{bf4e1ae0-8d2f-4fde-ab65-55adf437f328}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Intel-SST-DVD/DVD_ETW_Telemetry" task="Task_DVD_DCA_Telemetry" opcode="Opcode_DVD_DCA_Telemetry" template="Args1_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Intel-SST-DVD/DVD_ETW_Telemetry" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="Task_DVD_DCA_Telemetry" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="Opcode_DVD_DCA_Telemetry" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Version" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Intel-SST-DVD" />
+       <string id="string1" value="Intel-SST-DVD/DVD_ETW_Telemetry" />
+       <string id="string2" value="Opcode_DVD_DCA_Telemetry" />
+       <string id="string3" value="System" />
+       <string id="string4" value="Task_DVD_DCA_Telemetry" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

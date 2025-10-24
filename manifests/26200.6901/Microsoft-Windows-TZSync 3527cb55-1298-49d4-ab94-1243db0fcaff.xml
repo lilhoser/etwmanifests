@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TZSync" name="Microsoft-Windows-TZSync" guid="{3527cb55-1298-49d4-ab94-1243db0fcaff}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Operational" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Operational" opcode="win:Stop"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Analytic" task="Initialization" opcode="win:Start"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Analytic" task="Initialization" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Analytic" task="Conversion" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Analytic" task="Conversion" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Analytic" task="Conversion" opcode="win:Start" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-TZSync/Analytic" task="Conversion" opcode="win:Stop"/>
+        <event value="9" version="0" level="win:Error"  channel="Microsoft-Windows-TZSync/Operational" task="Initialization" opcode="win:Info"/>
+        <event value="10" version="0" level="win:Error"  channel="Microsoft-Windows-TZSync/Operational" task="Conversion" opcode="win:Info"/>
+        <event value="11" version="0" level="win:Error"  channel="Microsoft-Windows-TZSync/Operational" task="Conversion" opcode="win:Info"/>
+        <event value="12" version="0" level="win:Error"  channel="Microsoft-Windows-TZSync/Operational" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-TZSync/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-TZSync/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="Initialization" message="$(string.string1)">
+        </task>
+        <task value="2" name="Conversion" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args7_0">
+          <data name="TimeZoneId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Conversion" />
+       <string id="string1" value="Initialization" />
+       <string id="string2" value="Microsoft-Windows-TZSync" />
+       <string id="string3" value="Microsoft-Windows-TZSync/Analytic" />
+       <string id="string4" value="Microsoft-Windows-TZSync/Operational" />
+       <string id="string5" value="win:Info" />
+       <string id="string6" value="win:Start" />
+       <string id="string7" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DXGIDebug" name="Microsoft-Windows-DXGIDebug" guid="{f1ff64ef-faf3-5699-8e51-f6ec2fbd97d1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-DXGIDebug/Logging" task="ErrorMessage" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-DXGIDebug/Logging" task="WarningMessage"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-DXGIDebug/Logging" task="InfoMessage"/>
+        <event value="4" version="0" level="win:Verbose"  channel="Microsoft-Windows-DXGIDebug/Logging" task="FilteredOutMessage"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-DXGIDebug/Logging" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="ErrorMessage" message="$(string.string1)">
+        </task>
+        <task value="2" name="WarningMessage" message="$(string.string2)">
+        </task>
+        <task value="3" name="InfoMessage" message="$(string.string3)">
+        </task>
+        <task value="4" name="FilteredOutMessage" message="$(string.string4)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Producer" inType="win:GUID" outType="xs:GUID"  />
+          <data name="pProducer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Severity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DebugMessageByteLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DebugMessage" inType="win:AnsiString" outType="xs:string" length="DebugMessageByteLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ErrorMessage" />
+       <string id="string1" value="FilteredOutMessage" />
+       <string id="string2" value="InfoMessage" />
+       <string id="string3" value="Microsoft-Windows-DXGIDebug" />
+       <string id="string4" value="Microsoft-Windows-DXGIDebug/Logging" />
+       <string id="string5" value="WarningMessage" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

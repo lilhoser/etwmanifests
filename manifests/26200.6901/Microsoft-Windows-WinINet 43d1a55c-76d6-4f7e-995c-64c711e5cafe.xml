@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WinINet" name="Microsoft-Windows-WinINet" guid="{43d1a55c-76d6-4f7e-995c-64c711e5cafe}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_ROOT_HANDLE_CREATED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_OPEN_URL_HANDLE_CREATED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_CONNECT_HANDLE_CREATED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES" template="Args103_0"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_REQUEST_HANDLE_CREATED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES WININET_KEYWORD_HTTPDIAG" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HANDLE_CLOSED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES WININET_KEYWORD_HTTPDIAG"/>
+        <event value="106" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HANDLE_CREATE_FAILED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES" template="Args106_0"/>
+        <event value="107" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HANDLE_CLOSE_FAILED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_REQUEST_HANDLE_CREATED" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES WININET_KEYWORD_HTTPDIAG"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_REQUEST" opcode="win:Start" keywords="WININET_KEYWORD_HTTP"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_REQUEST" opcode="win:Stop" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG" template="Args201_0"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_REQUEST" opcode="Fail" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_AOAC" template="Args202_0"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_RESPONSE" opcode="win:Stop" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG" template="Args203_0"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_RESPONSE" opcode="Fail" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_AOAC"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_CONNECTION_CLOSED" opcode="win:Info" keywords="WININET_KEYWORD_HTTP" template="Args205_0"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_KEEP_ALIVE_CONNECTION_REUSED" opcode="win:Info" keywords="WININET_KEYWORD_HTTP"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_KEEP_ALIVE_CONNECTION_POOLED" opcode="win:Info" keywords="WININET_KEYWORD_HTTP"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_KEEP_ALIVE_CONNECTION_CLOSED" opcode="win:Info" keywords="WININET_KEYWORD_HTTP"/>
+        <event value="209" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_RESPONSE_BODY_RECEIVED" opcode="win:Info" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG"/>
+        <event value="210" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_REQUEST_HEADER" opcode="win:Info" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG WININET_KEYWORD_PII_PRESENT" template="Args210_0"/>
+        <event value="211" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_RESPONSE_HEADER" opcode="win:Info" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG WININET_KEYWORD_PII_PRESENT"/>
+        <event value="212" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_REQUEST_HEADER_OPTIONAL" opcode="win:Info" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_PII_PRESENT"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_RESPONSE_BODY_READ_ERROR" opcode="win:Info" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_AOAC" template="Args213_0"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_TCP_CONNECTION" opcode="win:Start" keywords="WININET_KEYWORD_CONNECTION WININET_KEYWORD_HTTPDIAG" template="Args301_0"/>
+        <event value="302" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_TCP_CONNECTION" opcode="Fail" keywords="WININET_KEYWORD_CONNECTION WININET_KEYWORD_AOAC" template="Args302_0"/>
+        <event value="303" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_TCP_CONNECTION" opcode="win:Stop" keywords="WININET_KEYWORD_CONNECTION WININET_KEYWORD_HTTPDIAG"/>
+        <event value="304" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_DNS_QUERY" opcode="win:Start" keywords="WININET_KEYWORD_CONNECTION" template="Args304_0"/>
+        <event value="305" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_DNS_QUERY" opcode="win:Stop" keywords="WININET_KEYWORD_CONNECTION" template="Args305_0"/>
+        <event value="306" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_DNS_QUERY" opcode="Fail" keywords="WININET_KEYWORD_CONNECTION WININET_KEYWORD_AOAC" template="Args306_0"/>
+        <event value="307" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_DNS_QUERY" opcode="win:Stop" keywords="WININET_KEYWORD_CONNECTION"/>
+        <event value="308" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_NETWORK_CHANGE_DETECTED" opcode="win:Info" keywords="WININET_KEYWORD_CONNECTION"/>
+        <event value="400" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketUpgrade" opcode="win:Info" keywords="WININET_KEYWORD_PII_PRESENT" template="Args400_0"/>
+        <event value="401" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketUpgrade" opcode="win:Info" keywords="WININET_KEYWORD_PII_PRESENT" template="Args401_0"/>
+        <event value="402" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Start"/>
+        <event value="403" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Stop" template="Args403_0"/>
+        <event value="404" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" keywords="WININET_KEYWORD_PII_PRESENT" template="Args404_0"/>
+        <event value="405" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" keywords="WININET_KEYWORD_PII_PRESENT"/>
+        <event value="406" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="407" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" template="Args407_0"/>
+        <event value="408" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="409" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="410" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="411" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="412" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="413" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info"/>
+        <event value="414" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" keywords="WININET_KEYWORD_SEND WININET_KEYWORD_PII_PRESENT WININET_KEYWORD_PACKET" template="Args414_0"/>
+        <event value="415" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" keywords="WININET_KEYWORD_RECEIVE WININET_KEYWORD_PII_PRESENT WININET_KEYWORD_PACKET"/>
+        <event value="416" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" keywords="WININET_KEYWORD_SEND WININET_KEYWORD_PII_PRESENT WININET_KEYWORD_PACKET"/>
+        <event value="417" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/WebSocket" task="Wininet_WebSocketSession" opcode="win:Info" keywords="WININET_KEYWORD_RECEIVE WININET_KEYWORD_PII_PRESENT WININET_KEYWORD_PACKET"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_HEADER_RECEIVED" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES" template="Args501_0"/>
+        <event value="502" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_STORED" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES" template="Args502_0"/>
+        <event value="503" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_DELETED" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES"/>
+        <event value="504" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_BLOCKED" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES"/>
+        <event value="505" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_P3P_REJECTED" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES"/>
+        <event value="506" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_REQUEST_HEADER_CREATED" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES"/>
+        <event value="507" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_COOKIE_ADDED_TO_HEADER" opcode="win:Info" keywords="WININET_KEYWORD_COOKIES"/>
+        <event value="601" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTH_RESPONSE_RECEIVED" opcode="win:Info" keywords="WININET_KEYWORD_AUTH" template="Args601_0"/>
+        <event value="602" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTH_CLIENT_SETS_USERNAME" opcode="win:Info" keywords="WININET_KEYWORD_AUTH"/>
+        <event value="603" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTH_CLIENT_SETS_PASSWORD" opcode="win:Info" keywords="WININET_KEYWORD_AUTH"/>
+        <event value="604" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTH_USING_CACHED_CREDS" opcode="win:Info" keywords="WININET_KEYWORD_AUTH"/>
+        <event value="605" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTH_USING_DEFAULT_CREDS" opcode="win:Info" keywords="WININET_KEYWORD_AUTH"/>
+        <event value="606" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTH_CLIENT_ADD_HEADERS" opcode="win:Info" keywords="WININET_KEYWORD_AUTH"/>
+        <event value="701" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_NEGOTIATION" opcode="win:Start" keywords="WININET_KEYWORD_HTTPS WININET_KEYWORD_HTTPDIAG"/>
+        <event value="702" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_NEGOTIATION" opcode="win:Stop" keywords="WININET_KEYWORD_HTTPS WININET_KEYWORD_HTTPDIAG"/>
+        <event value="703" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_NEGOTIATION" opcode="Fail" keywords="WININET_KEYWORD_HTTPS WININET_KEYWORD_AOAC"/>
+        <event value="704" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_SERVER_CERT_ERROR" opcode="win:Info" keywords="WININET_KEYWORD_HTTPS WININET_KEYWORD_AOAC"/>
+        <event value="705" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_SERVER_CERT_VALIDATED" opcode="win:Info" keywords="WININET_KEYWORD_HTTPS" template="Args705_0"/>
+        <event value="706" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_CLIENT_CERT_REQUIRED" opcode="win:Info" keywords="WININET_KEYWORD_HTTPS"/>
+        <event value="707" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_CLIENT_CERT_UNAVAILABLE" opcode="win:Info" keywords="WININET_KEYWORD_HTTPS WININET_KEYWORD_AOAC"/>
+        <event value="708" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_CLIENT_CERT_SELECTED" opcode="win:Info" keywords="WININET_KEYWORD_HTTPS"/>
+        <event value="711" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_RENEGOTIATION" opcode="win:Start" keywords="WININET_KEYWORD_HTTPS"/>
+        <event value="712" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_RENEGOTIATION" opcode="win:Stop" keywords="WININET_KEYWORD_HTTPS"/>
+        <event value="713" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTPS_RENEGOTIATION" opcode="Fail" keywords="WININET_KEYWORD_HTTPS WININET_KEYWORD_AOAC"/>
+        <event value="801" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_SEARCH" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY" template="Args801_0"/>
+        <event value="802" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DHCP" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY" template="Args802_0"/>
+        <event value="803" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DHCP" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY" template="Args803_0"/>
+        <event value="804" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DHCP" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args804_0"/>
+        <event value="805" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DNS" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="806" version="0" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DNS" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY" template="Args806_0"/>
+        <event value="807" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DNS" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args807_0"/>
+        <event value="808" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_SEARCH" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC"/>
+        <event value="809" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="810" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="811" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC"/>
+        <event value="812" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args812_0"/>
+        <event value="813" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="814" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY" template="Args814_0"/>
+        <event value="815" version="0" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args815_0"/>
+        <event value="816" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_BLOCKING_AUTOPROXY_DETERMINATION" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="817" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_BLOCKING_AUTOPROXY_DETERMINATION" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="818" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_TRANSFER" opcode="win:Info" keywords="WININET_KEYWORD_HANDLES"/>
+        <event value="819" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_SWPAD" opcode="win:Info" keywords="WININET_KEYWORD_AUTOPROXY" template="Args819_0"/>
+        <event value="820" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="821" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="822" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="823" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="824" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_KNOWN_DETECTION" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="825" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_KNOWN_DETECTION" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="826" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="827" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="828" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="829" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="834" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_ALL" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY" template="Args834_0"/>
+        <event value="835" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_PERFTRACK_ALL" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="901" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_APPLICATION_OFFLINE_CHECK" opcode="win:Start" keywords="WININET_KEYWORD_MOBILE" template="Args901_0"/>
+        <event value="902" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_APPLICATION_OFFLINE_CHECK" opcode="win:Stop" keywords="WININET_KEYWORD_MOBILE" template="Args902_0"/>
+        <event value="1000" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_TEST_EVENT" opcode="win:Info" keywords="WININET_KEYWORD_CONNECTION" template="Args1000_0"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SendRequest" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1007_0"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SendRequest" opcode="win:Stop" keywords="WININET_KEYWORD_IE" template="Args1008_0"/>
+        <event value="1009" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_OfflineCacheLookup" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_OfflineCacheHit" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1013" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_OfflineCacheMiss" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1015" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_PreNet_CacheLookup" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1017" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_PreNet_CacheHit" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1019" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_PreNet_CacheMiss" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1021" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_PostNet_CacheLookup" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1023" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_PostNet_CacheHit" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1025" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_PostNet_CacheMiss" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1027" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AutodialIfNotLocalHost" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1027_0"/>
+        <event value="1028" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AutodialIfNotLocalHost" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1029" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_ResolveHost" opcode="win:Start" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1030" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_ResolveHost" opcode="win:Stop" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1031" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SendRequest_Main" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG" template="Args1031_0"/>
+        <event value="1033" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SendRequest_Extra" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1035" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SendRequest_CRLF" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1037" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_ReadData" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1039" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_ReadDataPostReceiveBuf" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1041" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SendRequest_PostReceiveBuf" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1043" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DrainResponsePostReceiveBuf" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1045" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Connect" opcode="win:Start" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1046" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Connect" opcode="win:Stop" keywords="WININET_KEYWORD_IE" template="Args1046_0"/>
+        <event value="1047" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_LookupConnection" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1048" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_LookupConnection" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1049" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Redirect" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1051" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Getaddrinfo" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1051_0"/>
+        <event value="1052" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Getaddrinfo" opcode="win:Stop" keywords="WININET_KEYWORD_IE" template="Args1052_0"/>
+        <event value="1053" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DHCP_I252WPAD" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1053_0"/>
+        <event value="1054" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DHCP_I252WPAD" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1055" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Select" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1055_0"/>
+        <event value="1056" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Select" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1057" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/UsageLog" task="Wininet_UsageLogRequest" opcode="win:Info" keywords="WININET_KEYWORD_PII_PRESENT" template="Args1057_0"/>
+        <event value="1058" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/UsageLog" task="Wininet_UsageLogScavenge" opcode="win:Info" keywords="WININET_KEYWORD_PII_PRESENT"/>
+        <event value="1059" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SocketConnect" opcode="win:Start" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG" template="Args1059_0"/>
+        <event value="1060" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SocketConnect" opcode="win:Stop" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG"/>
+        <event value="1061" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheLookup" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1061_0"/>
+        <event value="1062" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheLookup" opcode="win:Stop" keywords="WININET_KEYWORD_IE" template="Args1062_0"/>
+        <event value="1063" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_RequestPrioritySet" opcode="win:Info" keywords="WININET_KEYWORD_IE" template="Args1063_0"/>
+        <event value="1064" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_STREAM_DATA_INDICATED" opcode="win:Info" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG" template="Args1064_0"/>
+        <event value="1065" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SecurityContext" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1065_0"/>
+        <event value="1066" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SecurityContext" opcode="win:Stop" keywords="WININET_KEYWORD_IE" template="Args1066_0"/>
+        <event value="1067" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SocketReceiveDelay" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1068" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SocketReceiveDelay" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1069" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_FileIO" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1069_0"/>
+        <event value="1070" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_FileIO" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1071" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_FileIO" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1071_0"/>
+        <event value="1072" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_FileIO" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1073" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1073_0"/>
+        <event value="1074" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE" template="Args1074_0"/>
+        <event value="1075" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1075_0"/>
+        <event value="1076" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1077" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1078" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1079" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1079_0"/>
+        <event value="1080" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1081" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1082" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1083" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1084" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1085" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1086" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1087" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1088" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheHandle" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1089" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1089_0"/>
+        <event value="1090" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1091" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1092" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1093" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1094" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1095" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1096" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1097" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1098" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1099" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1099_0"/>
+        <event value="1100" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1101" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1101_0"/>
+        <event value="1102" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1103" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1104" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1105" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1106" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1107" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1108" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1109" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1110" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_AppCacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1111" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1112" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1113" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1114" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1115" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1116" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1117" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1118" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1119" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1120" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1121" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1122" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1123" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1124" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_BlobServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1125" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheClientBloomFilter" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1126" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheClientBloomFilter" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1127" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheClientBloomFilter" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1128" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheClientBloomFilter" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1129" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1130" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1131" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1132" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1133" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1133_0"/>
+        <event value="1134" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1135" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1136" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1137" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1137_0"/>
+        <event value="1138" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1139" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1140" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CookieServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1141" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheClientCounters" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1142" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheClientCounters" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1143" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1143_0"/>
+        <event value="1144" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1145" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1146" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1147" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1148" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1149" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1149_0"/>
+        <event value="1150" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1151" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1152" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_DependencyServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1153" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1154" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1155" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1156" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1157" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1157_0"/>
+        <event value="1158" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1159" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1159_0"/>
+        <event value="1160" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1161" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1162" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_HstsServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1163" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerConnection" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1164" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerConnection" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1165" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerConnection" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1166" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerConnection" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1167" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerEntryEnum" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1168" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerEntryEnum" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1169" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerEntryEnum" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1169_0"/>
+        <event value="1170" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerEntryEnum" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1171" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerEntryEnum" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1172" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerEntryEnum" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1173" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1173_0"/>
+        <event value="1174" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1175" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1175_0"/>
+        <event value="1176" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1177" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1177_0"/>
+        <event value="1178" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1179" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1180" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1181" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1182" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1183" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1184" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1185" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1186" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1187" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1188" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1189" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1189_0"/>
+        <event value="1190" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1191" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1192" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1193" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1194" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1195" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1195_0"/>
+        <event value="1196" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1197" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1197_0"/>
+        <event value="1198" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1199" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1200" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1201" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1202" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1203" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1204" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1205" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1206" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1207" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1207_0"/>
+        <event value="1208" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1209" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1210" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1211" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1212" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1213" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1214" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1215" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1215_0"/>
+        <event value="1216" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1217" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1217_0"/>
+        <event value="1218" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1219" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1220" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_CacheServerContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1221" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1221_0"/>
+        <event value="1222" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1223" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1224" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1225" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1226" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1227" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1227_0"/>
+        <event value="1228" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1229" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1230" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1231" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1232" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1233" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE" template="Args1233_0"/>
+        <event value="1234" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1235" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1236" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1237" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1238" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_UrlCacheContainer" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1239" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncInternetOpen" opcode="win:Info" keywords="WININET_KEYWORD_IE"/>
+        <event value="1240" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncSendRequest" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1241" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncSendRequest" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1242" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncQueryDataAvailable" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1243" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncQueryDataAvailable" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1244" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncReadFile" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1245" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncReadFile" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="1246" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncWriteFile" opcode="win:Start" keywords="WININET_KEYWORD_IE"/>
+        <event value="1247" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_SyncWriteFile" opcode="win:Stop" keywords="WININET_KEYWORD_IE"/>
+        <event value="200" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_HTTP_REQUEST" opcode="win:Start" keywords="WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG" template="Args200_1"/>
+        <event value="801" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_SEARCH" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY" template="Args801_1"/>
+        <event value="802" version="1" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DHCP" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY" template="Args802_1"/>
+        <event value="803" version="1" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DHCP" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY" template="Args803_1"/>
+        <event value="804" version="1" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DHCP" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args804_1"/>
+        <event value="806" version="1" level="win:Verbose"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DNS" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY" template="Args806_1"/>
+        <event value="809" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="810" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY"/>
+        <event value="811" version="1" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC"/>
+        <event value="812" version="1" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_DOWNLOAD" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args812_1"/>
+        <event value="813" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" opcode="win:Start" keywords="WININET_KEYWORD_AUTOPROXY" template="Args813_1"/>
+        <event value="814" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" opcode="win:Stop" keywords="WININET_KEYWORD_AUTOPROXY" template="Args814_1"/>
+        <event value="815" version="1" level="win:Error"  channel="Microsoft-Windows-WinINet/Analytic" task="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" opcode="Fail" keywords="WININET_KEYWORD_AUTOPROXY WININET_KEYWORD_AOAC" template="Args815_1"/>
+        <event value="1046" version="1" level="win:Informational"  channel="Microsoft-Windows-WinINet/Analytic" task="Wininet_Connect" opcode="win:Stop" keywords="WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG" template="Args1046_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WinINet/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-WinINet/UsageLog" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-WinINet/WebSocket" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="WININET_KEYWORD_HANDLES" mask="0x1" message="$(string.string90)" />
+        <keyword name="WININET_KEYWORD_HTTP" mask="0x2" message="$(string.string91)" />
+        <keyword name="WININET_KEYWORD_CONNECTION" mask="0x4" message="$(string.string88)" />
+        <keyword name="WININET_KEYWORD_AUTH" mask="0x8" message="$(string.string86)" />
+        <keyword name="WININET_KEYWORD_HTTPS" mask="0x10" message="$(string.string93)" />
+        <keyword name="WININET_KEYWORD_AUTOPROXY" mask="0x20" message="$(string.string87)" />
+        <keyword name="WININET_KEYWORD_COOKIES" mask="0x40" message="$(string.string89)" />
+        <keyword name="WININET_KEYWORD_IE" mask="0x80" message="$(string.string94)" />
+        <keyword name="WININET_KEYWORD_AOAC" mask="0x100" message="$(string.string85)" />
+        <keyword name="WININET_KEYWORD_HTTPDIAG" mask="0x200" message="$(string.string92)" />
+        <keyword name="WININET_KEYWORD_SEND" mask="0x100000000" message="$(string.string99)" />
+        <keyword name="WININET_KEYWORD_RECEIVE" mask="0x200000000" message="$(string.string98)" />
+        <keyword name="WININET_KEYWORD_MOBILE" mask="0x400000000" message="$(string.string95)" />
+        <keyword name="WININET_KEYWORD_PII_PRESENT" mask="0x20000000000" message="$(string.string97)" />
+        <keyword name="WININET_KEYWORD_PACKET" mask="0x40000000000" message="$(string.string96)" />
+      </keywords>
+      <tasks>
+        <task value="500" name="Task.WININET_ROOT_HANDLE_CREATED" message="$(string.string500)">
+        </task>
+        <task value="501" name="Task.WININET_OPEN_URL_HANDLE_CREATED" message="$(string.string501)">
+        </task>
+        <task value="502" name="Task.WININET_CONNECT_HANDLE_CREATED" message="$(string.string502)">
+        </task>
+        <task value="503" name="Task.WININET_HTTP_REQUEST_HANDLE_CREATED" message="$(string.string503)">
+        </task>
+        <task value="504" name="Task.WININET_HANDLE_CLOSED" message="$(string.string504)">
+        </task>
+        <task value="505" name="Task.WININET_HANDLE_CREATE_FAILED" message="$(string.string505)">
+        </task>
+        <task value="506" name="Task.WININET_HANDLE_CLOSE_FAILED" message="$(string.string506)">
+        </task>
+        <task value="507" name="Task.WININET_HTTP_REQUEST" message="$(string.string507)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="508" name="Task.WININET_HTTP_RESPONSE" message="$(string.string508)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="509" name="Task.WININET_HTTP_CONNECTION_CLOSED" message="$(string.string509)">
+        </task>
+        <task value="510" name="Task.WININET_KEEP_ALIVE_CONNECTION_REUSED" message="$(string.string510)">
+        </task>
+        <task value="511" name="Task.WININET_KEEP_ALIVE_CONNECTION_POOLED" message="$(string.string511)">
+        </task>
+        <task value="512" name="Task.WININET_KEEP_ALIVE_CONNECTION_CLOSED" message="$(string.string512)">
+        </task>
+        <task value="513" name="Task.WININET_HTTP_RESPONSE_BODY_RECEIVED" message="$(string.string513)">
+        </task>
+        <task value="514" name="Task.WININET_TCP_CONNECTION" message="$(string.string514)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="515" name="Task.WININET_DNS_QUERY" message="$(string.string515)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="516" name="Task.WININET_NETWORK_CHANGE_DETECTED" message="$(string.string516)">
+        </task>
+        <task value="517" name="Task.WININET_COOKIE_HEADER_RECEIVED" message="$(string.string517)">
+        </task>
+        <task value="518" name="Task.WININET_COOKIE_STORED" message="$(string.string518)">
+        </task>
+        <task value="519" name="Task.WININET_COOKIE_DELETED" message="$(string.string519)">
+        </task>
+        <task value="520" name="Task.WININET_COOKIE_BLOCKED" message="$(string.string520)">
+        </task>
+        <task value="521" name="Task.WININET_COOKIE_P3P_REJECTED" message="$(string.string521)">
+        </task>
+        <task value="522" name="Task.WININET_COOKIE_REQUEST_HEADER_CREATED" message="$(string.string522)">
+        </task>
+        <task value="523" name="Task.WININET_COOKIE_ADDED_TO_HEADER" message="$(string.string523)">
+        </task>
+        <task value="524" name="Task.WININET_AUTH_RESPONSE_RECEIVED" message="$(string.string524)">
+        </task>
+        <task value="525" name="Task.WININET_AUTH_CLIENT_SETS_USERNAME" message="$(string.string525)">
+        </task>
+        <task value="526" name="Task.WININET_AUTH_CLIENT_SETS_PASSWORD" message="$(string.string526)">
+        </task>
+        <task value="527" name="Task.WININET_AUTH_USING_CACHED_CREDS" message="$(string.string527)">
+        </task>
+        <task value="528" name="Task.WININET_AUTH_USING_DEFAULT_CREDS" message="$(string.string528)">
+        </task>
+        <task value="529" name="Task.WININET_AUTH_CLIENT_ADD_HEADERS" message="$(string.string529)">
+        </task>
+        <task value="530" name="Task.WININET_HTTPS_NEGOTIATION" message="$(string.string530)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="531" name="Task.WININET_HTTPS_SERVER_CERT_ERROR" message="$(string.string531)">
+        </task>
+        <task value="532" name="Task.WININET_HTTPS_SERVER_CERT_VALIDATED" message="$(string.string532)">
+        </task>
+        <task value="533" name="Task.WININET_HTTPS_CLIENT_CERT_REQUIRED" message="$(string.string533)">
+        </task>
+        <task value="534" name="Task.WININET_HTTPS_CLIENT_CERT_UNAVAILABLE" message="$(string.string534)">
+        </task>
+        <task value="535" name="Task.WININET_HTTPS_CLIENT_CERT_SELECTED" message="$(string.string535)">
+        </task>
+        <task value="536" name="Task.WININET_HTTPS_RENEGOTIATION" message="$(string.string536)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="537" name="Task.WININET_AUTOPROXY_SEARCH" message="$(string.string537)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="538" name="Task.WININET_AUTOPROXY_DHCP" message="$(string.string538)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="539" name="Task.WININET_AUTOPROXY_DNS" message="$(string.string539)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="540" name="Task.WININET_AUTOPROXY_DOWNLOAD" message="$(string.string540)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="541" name="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" message="$(string.string541)">
+          <opcodes>
+           <opcode value="11" name="Fail" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="542" name="Task.WININET_TEST_EVENT" message="$(string.string542)">
+        </task>
+        <task value="543" name="Task.WININET_BLOCKING_AUTOPROXY_DETERMINATION" message="$(string.string543)">
+        </task>
+        <task value="544" name="Task.WININET_TRANSFER" message="$(string.string544)">
+        </task>
+        <task value="545" name="Task.WININET_AUTOPROXY_SWPAD" message="$(string.string545)">
+        </task>
+        <task value="546" name="Task.WININET_REQUEST_HEADER" message="$(string.string546)">
+        </task>
+        <task value="547" name="Task.WININET_RESPONSE_HEADER" message="$(string.string547)">
+        </task>
+        <task value="548" name="Task.WININET_REQUEST_HEADER_OPTIONAL" message="$(string.string548)">
+        </task>
+        <task value="550" name="Wininet_SendRequest" message="$(string.string550)">
+        </task>
+        <task value="551" name="Wininet_OfflineCacheLookup" message="$(string.string551)">
+        </task>
+        <task value="552" name="Wininet_OfflineCacheHit" message="$(string.string552)">
+        </task>
+        <task value="553" name="Wininet_OfflineCacheMiss" message="$(string.string553)">
+        </task>
+        <task value="554" name="Wininet_PreNet_CacheLookup" message="$(string.string554)">
+        </task>
+        <task value="555" name="Wininet_PreNet_CacheHit" message="$(string.string555)">
+        </task>
+        <task value="556" name="Wininet_PreNet_CacheMiss" message="$(string.string556)">
+        </task>
+        <task value="557" name="Wininet_PostNet_CacheLookup" message="$(string.string557)">
+        </task>
+        <task value="558" name="Wininet_PostNet_CacheHit" message="$(string.string558)">
+        </task>
+        <task value="559" name="Wininet_PostNet_CacheMiss" message="$(string.string559)">
+        </task>
+        <task value="560" name="Wininet_AutodialIfNotLocalHost" message="$(string.string560)">
+        </task>
+        <task value="561" name="Wininet_ResolveHost" message="$(string.string561)">
+        </task>
+        <task value="562" name="Wininet_SendRequest_Main" message="$(string.string562)">
+        </task>
+        <task value="563" name="Wininet_SendRequest_Extra" message="$(string.string563)">
+        </task>
+        <task value="564" name="Wininet_SendRequest_CRLF" message="$(string.string564)">
+        </task>
+        <task value="565" name="Wininet_ReadData" message="$(string.string565)">
+        </task>
+        <task value="566" name="Wininet_ReadDataPostReceiveBuf" message="$(string.string566)">
+        </task>
+        <task value="567" name="Wininet_SendRequest_PostReceiveBuf" message="$(string.string567)">
+        </task>
+        <task value="568" name="Wininet_DrainResponsePostReceiveBuf" message="$(string.string568)">
+        </task>
+        <task value="569" name="Wininet_Connect" message="$(string.string569)">
+        </task>
+        <task value="570" name="Wininet_LookupConnection" message="$(string.string570)">
+        </task>
+        <task value="571" name="Wininet_Redirect" message="$(string.string571)">
+        </task>
+        <task value="572" name="Wininet_Getaddrinfo" message="$(string.string572)">
+        </task>
+        <task value="573" name="Wininet_DHCP_I252WPAD" message="$(string.string573)">
+        </task>
+        <task value="574" name="Wininet_Select" message="$(string.string574)">
+        </task>
+        <task value="575" name="Wininet_UsageLogRequest" message="$(string.string575)">
+        </task>
+        <task value="576" name="Wininet_UsageLogScavenge" message="$(string.string576)">
+        </task>
+        <task value="577" name="Wininet_SocketConnect" message="$(string.string577)">
+        </task>
+        <task value="578" name="Wininet_AppCacheLookup" message="$(string.string578)">
+        </task>
+        <task value="579" name="Wininet_RequestPrioritySet" message="$(string.string579)">
+        </task>
+        <task value="580" name="Task.WININET_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP" message="$(string.string580)">
+        </task>
+        <task value="581" name="Task.WININET_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP" message="$(string.string581)">
+        </task>
+        <task value="582" name="Task.WININET_AUTOPROXY_PERFTRACK_KNOWN_DETECTION" message="$(string.string582)">
+        </task>
+        <task value="583" name="Task.WININET_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION" message="$(string.string583)">
+        </task>
+        <task value="584" name="Task.WININET_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD" message="$(string.string584)">
+        </task>
+        <task value="587" name="Task.WININET_AUTOPROXY_PERFTRACK_ALL" message="$(string.string587)">
+        </task>
+        <task value="588" name="Task.WININET_HTTP_RESPONSE_BODY_READ_ERROR" message="$(string.string588)">
+        </task>
+        <task value="589" name="Task.WININET_STREAM_DATA_INDICATED" message="$(string.string589)">
+        </task>
+        <task value="590" name="Task.WININET_APPLICATION_OFFLINE_CHECK" message="$(string.string590)">
+        </task>
+        <task value="591" name="Wininet_SecurityContext" message="$(string.string591)">
+        </task>
+        <task value="592" name="Wininet_SocketReceiveDelay" message="$(string.string592)">
+        </task>
+        <task value="593" name="Wininet_FileIO" message="$(string.string593)">
+        </task>
+        <task value="594" name="Wininet_AppCacheHandle" message="$(string.string594)">
+        </task>
+        <task value="595" name="Wininet_AppCacheServerContainer" message="$(string.string595)">
+        </task>
+        <task value="596" name="Wininet_BlobServerContainer" message="$(string.string596)">
+        </task>
+        <task value="597" name="Wininet_CacheClientBloomFilter" message="$(string.string597)">
+        </task>
+        <task value="598" name="Wininet_CookieServerContainer" message="$(string.string598)">
+        </task>
+        <task value="599" name="Wininet_CacheClientCounters" message="$(string.string599)">
+        </task>
+        <task value="600" name="Wininet_WebSocketUpgrade" message="$(string.string600)">
+        </task>
+        <task value="601" name="Wininet_WebSocketSession" message="$(string.string601)">
+        </task>
+        <task value="603" name="Wininet_DependencyServerContainer" message="$(string.string603)">
+        </task>
+        <task value="604" name="Wininet_HstsServerContainer" message="$(string.string604)">
+        </task>
+        <task value="605" name="Wininet_CacheServerConnection" message="$(string.string605)">
+        </task>
+        <task value="606" name="Wininet_CacheServerEntryEnum" message="$(string.string606)">
+        </task>
+        <task value="607" name="Wininet_CacheServerContainer" message="$(string.string607)">
+        </task>
+        <task value="608" name="Wininet_UrlCacheContainer" message="$(string.string608)">
+        </task>
+        <task value="609" name="Wininet_SyncInternetOpen" message="$(string.string609)">
+        </task>
+        <task value="610" name="Wininet_SyncSendRequest" message="$(string.string610)">
+        </task>
+        <task value="611" name="Wininet_SyncQueryDataAvailable" message="$(string.string611)">
+        </task>
+        <task value="612" name="Wininet_SyncReadFile" message="$(string.string612)">
+        </task>
+        <task value="613" name="Wininet_SyncWriteFile" message="$(string.string613)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="Opcode.Fail" message="$(string.string5)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args101_0">
+          <data name="HINTERNET" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_UserAgentLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserAgent" inType="win:AnsiString" outType="xs:string" length="_UserAgentLength" />
+          <data name="_AccessTypeLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AccessType" inType="win:AnsiString" outType="xs:string" length="_AccessTypeLength" />
+          <data name="_ProxyListLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProxyList" inType="win:AnsiString" outType="xs:string" length="_ProxyListLength" />
+          <data name="_ProxyBypassListLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProxyBypassList" inType="win:AnsiString" outType="xs:string" length="_ProxyBypassListLength" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="ConnectionHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParentHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="URL" inType="win:AnsiString" outType="xs:string" length="_URLLength" />
+          <data name="_HeadersLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Headers" inType="win:AnsiString" outType="xs:string" length="_HeadersLength" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="ConnectionHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParentHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:AnsiString" outType="xs:string" length="_ServerNameLength" />
+          <data name="ServerPort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_ServiceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Service" inType="win:AnsiString" outType="xs:string" length="_ServiceLength" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="ConnectionHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParentHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_VerbLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Verb" inType="win:AnsiString" outType="xs:string" length="_VerbLength" />
+          <data name="_ObjectNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ObjectName" inType="win:AnsiString" outType="xs:string" length="_ObjectNameLength" />
+          <data name="_VersionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Version" inType="win:AnsiString" outType="xs:string" length="_VersionLength" />
+          <data name="_ReferrerLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Referrer" inType="win:AnsiString" outType="xs:string" length="_ReferrerLength" />
+          <data name="_AcceptTypesLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AcceptTypes" inType="win:AnsiString" outType="xs:string" length="_AcceptTypesLength" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="HINTERNET" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_VerbLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Verb" inType="win:AnsiString" outType="xs:string" length="_VerbLength" />
+          <data name="Cookie" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args203_0">
+          <data name="ResponseCode" inType="win:Int32" outType="xs:int"  />
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_VerbLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Verb" inType="win:AnsiString" outType="xs:string" length="_VerbLength" />
+          <data name="_ContentLengthStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ContentLength" inType="win:AnsiString" outType="xs:string" length="_ContentLengthStrLength" />
+        </template>
+        <template tid="Args205_0">
+          <data name="ConnectionHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_ReasonLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Reason" inType="win:AnsiString" outType="xs:string" length="_ReasonLength" />
+        </template>
+        <template tid="Args210_0">
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Headers" inType="win:AnsiString" outType="xs:string" length="Length" />
+        </template>
+        <template tid="Args213_0">
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args301_0">
+          <data name="_ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:AnsiString" outType="xs:string" length="_ServerNameLength" />
+          <data name="ConnectionHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LocalPort" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args302_0">
+          <data name="_ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:AnsiString" outType="xs:string" length="_ServerNameLength" />
+          <data name="ConnectionHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args304_0">
+          <data name="_HostNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="HostName" inType="win:AnsiString" outType="xs:string" length="_HostNameLength" />
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args305_0">
+          <data name="_HostNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="HostName" inType="win:AnsiString" outType="xs:string" length="_HostNameLength" />
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_AddressListLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AddressList" inType="win:AnsiString" outType="xs:string" length="_AddressListLength" />
+        </template>
+        <template tid="Args306_0">
+          <data name="_HostNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="HostName" inType="win:AnsiString" outType="xs:string" length="_HostNameLength" />
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args400_0">
+          <data name="CorrelationID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InternetFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Headers" inType="win:AnsiString" outType="xs:string" length="Length" />
+        </template>
+        <template tid="Args401_0">
+          <data name="CorrelationID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ResponseCode" inType="win:Int32" outType="xs:int"  />
+          <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Headers" inType="win:AnsiString" outType="xs:string" length="Length" />
+        </template>
+        <template tid="Args403_0">
+          <data name="CorrelationID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args404_0">
+          <data name="CorrelationID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Length" inType="win:Int64" outType="xs:long"  />
+          <data name="TruncatedLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TruncatedData" inType="win:UnicodeString" outType="xs:string" length="TruncatedLength" />
+        </template>
+        <template tid="Args407_0">
+          <data name="CorrelationID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:AnsiString" outType="xs:string" length="Length" />
+        </template>
+        <template tid="Args414_0">
+          <data name="CorrelationID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PayloadByteLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="PayloadByteLength" />
+        </template>
+        <template tid="Args501_0">
+          <data name="URLLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="URL" inType="win:AnsiString" outType="xs:string" length="URLLength" />
+        </template>
+        <template tid="Args502_0">
+          <data name="_DomainLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Domain" inType="win:AnsiString" outType="xs:string" length="_DomainLength" />
+          <data name="_PathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Path" inType="win:AnsiString" outType="xs:string" length="_PathLength" />
+          <data name="_NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:AnsiString" outType="xs:string" length="_NameLength" />
+          <data name="_ValueLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Value" inType="win:AnsiString" outType="xs:string" length="_ValueLength" />
+        </template>
+        <template tid="Args601_0">
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_SchemeLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Scheme" inType="win:AnsiString" outType="xs:string" length="_SchemeLength" />
+          <data name="IsProxy" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args705_0">
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="_CertHashLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CertHash" inType="win:AnsiString" outType="xs:string" length="_CertHashLength" />
+          <data name="WarningFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args801_0">
+          <data name="_ConnectionNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConnectionName" inType="win:AnsiString" outType="xs:string" length="_ConnectionNameLength" />
+          <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args802_0">
+          <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:AnsiString" outType="xs:string" length="_InterfaceLength" />
+        </template>
+        <template tid="Args803_0">
+          <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:AnsiString" outType="xs:string" length="_InterfaceLength" />
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength" />
+        </template>
+        <template tid="Args804_0">
+          <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:AnsiString" outType="xs:string" length="_InterfaceLength" />
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength" />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args806_0">
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength" />
+          <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args807_0">
+          <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args812_0">
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength" />
+          <data name="_MIMETypeLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MIMEType" inType="win:AnsiString" outType="xs:string" length="_MIMETypeLength" />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args814_0">
+          <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="URL" inType="win:AnsiString" outType="xs:string" length="_URLLength" />
+          <data name="_ProxyStringLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProxyString" inType="win:AnsiString" outType="xs:string" length="_ProxyStringLength" />
+        </template>
+        <template tid="Args815_0">
+          <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="URL" inType="win:AnsiString" outType="xs:string" length="_URLLength" />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args819_0">
+          <data name="WPADNetworkDecision" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NetworkCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args834_0">
+          <data name="UniqueId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args901_0">
+          <data name="AppPackageSid" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args902_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Offline" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1000_0">
+          <data name="_TestStr0Length" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TestStr0" inType="win:AnsiString" outType="xs:string" length="_TestStr0Length" />
+          <data name="_TestStr1Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TestStr1" inType="win:AnsiString" outType="xs:string" length="_TestStr1Length" />
+          <data name="_TestStr2Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TestStr2" inType="win:AnsiString" outType="xs:string" length="_TestStr2Length" />
+          <data name="_TestStr0WLength" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TestStr0W" inType="win:UnicodeString" outType="xs:string" length="_TestStr0WLength" />
+          <data name="_TestStr1WLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TestStr1W" inType="win:UnicodeString" outType="xs:string" length="_TestStr1WLength" />
+          <data name="_TestStr2WLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TestStr2W" inType="win:UnicodeString" outType="xs:string" length="_TestStr2WLength" />
+          <data name="TestStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TestStr" inType="win:AnsiString" outType="xs:string" length="TestStrLength" />
+          <data name="TestStrWLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TestStrW" inType="win:UnicodeString" outType="xs:string" length="TestStrWLength" />
+        </template>
+        <template tid="Args1007_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AddressName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1008_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StatusLineLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StatusLine" inType="win:AnsiString" outType="xs:string" length="StatusLineLength" />
+        </template>
+        <template tid="Args1027_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HostName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1031_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1046_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1051_0">
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AddressName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1052_0">
+          <data name="error" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AddressName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1053_0">
+          <data name="Order" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AddressName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1055_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1057_0">
+          <data name="URL" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Verb" inType="win:AnsiString" outType="xs:string"  />
+          <data name="RequestHeaders" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ResponseHeaders" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UsageLogRequestCache" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1059_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1061_0">
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1062_0">
+          <data name="ManifestURL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1063_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldPriority" inType="win:Int32" outType="xs:int"  />
+          <data name="NewPriority" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1064_0">
+          <data name="RequestHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Headers" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1065_0">
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HostName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="NegotiationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Socket" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1066_0">
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HostName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="NegotiationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Socket" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1069_0">
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadInfoUIType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsSync" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1071_0">
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadInfoUIType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsSync" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1073_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LocalFileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1074_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1075_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1079_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1089_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Directory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsIEAppContainer" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1099_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1101_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MasterUrl" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ManifestURL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EntryType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeaderSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1133_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MinimizedRDomain" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1137_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Hash" inType="win:Int64" outType="xs:long"  />
+          <data name="OperationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1143_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BlobSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1149_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsCreateContainer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Directory" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1157_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MinimizedRDomain" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Hash" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1159_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Hash" inType="win:Int64" outType="xs:long"  />
+          <data name="HstsEntryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1169_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Filter" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupId" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1173_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EntryMaxAge" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1175_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Redirect" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Filename" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Extension" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1177_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ValidateCreationTime" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1189_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Fields" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1195_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Limit" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1197_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Factor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Filter" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1207_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="GroupId" inType="win:Int64" outType="xs:long"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1215_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="GroupId" inType="win:Int64" outType="xs:long"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1217_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Directory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Limit" inType="win:Int64" outType="xs:long"  />
+          <data name="EntryMaxAge" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1221_0">
+          <data name="TargetSize" inType="win:Int64" outType="xs:long"  />
+          <data name="Filter" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1227_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prefix" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Directory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RootPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Limit" inType="win:Int64" outType="xs:long"  />
+          <data name="Options" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1233_0">
+          <data name="LimitType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Limit" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args200_1">
+          <data name="HINTERNET" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args801_1">
+          <data name="_ConnectionNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string" length="_ConnectionNameLength" />
+          <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args802_1">
+          <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="_InterfaceLength" />
+        </template>
+        <template tid="Args803_1">
+          <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="_InterfaceLength" />
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength" />
+        </template>
+        <template tid="Args804_1">
+          <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="_InterfaceLength" />
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength" />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args806_1">
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength" />
+          <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args812_1">
+          <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength" />
+          <data name="_MIMETypeLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MIMEType" inType="win:UnicodeString" outType="xs:string" length="_MIMETypeLength" />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args813_1">
+          <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string" length="_URLLength" />
+        </template>
+        <template tid="Args814_1">
+          <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string" length="_URLLength" />
+          <data name="_ProxyStringLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProxyString" inType="win:UnicodeString" outType="xs:string" length="_ProxyStringLength" />
+        </template>
+        <template tid="Args815_1">
+          <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string" length="_URLLength" />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1046_1">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Protocol" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Fail" />
+       <string id="string1" value="Microsoft-Windows-WinINet" />
+       <string id="string2" value="Microsoft-Windows-WinINet/Analytic" />
+       <string id="string3" value="Microsoft-Windows-WinINet/UsageLog" />
+       <string id="string4" value="Microsoft-Windows-WinINet/WebSocket" />
+       <string id="string5" value="Opcode.Fail" />
+       <string id="string6" value="Task.WININET_APPLICATION_OFFLINE_CHECK" />
+       <string id="string7" value="Task.WININET_AUTH_CLIENT_ADD_HEADERS" />
+       <string id="string8" value="Task.WININET_AUTH_CLIENT_SETS_PASSWORD" />
+       <string id="string9" value="Task.WININET_AUTH_CLIENT_SETS_USERNAME" />
+       <string id="string10" value="Task.WININET_AUTH_RESPONSE_RECEIVED" />
+       <string id="string11" value="Task.WININET_AUTH_USING_CACHED_CREDS" />
+       <string id="string12" value="Task.WININET_AUTH_USING_DEFAULT_CREDS" />
+       <string id="string13" value="Task.WININET_AUTOPROXY_DHCP" />
+       <string id="string14" value="Task.WININET_AUTOPROXY_DNS" />
+       <string id="string15" value="Task.WININET_AUTOPROXY_DOWNLOAD" />
+       <string id="string16" value="Task.WININET_AUTOPROXY_FIND_INFO_FOR_URL" />
+       <string id="string17" value="Task.WININET_AUTOPROXY_PERFTRACK_ALL" />
+       <string id="string18" value="Task.WININET_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP" />
+       <string id="string19" value="Task.WININET_AUTOPROXY_PERFTRACK_KNOWN_DETECTION" />
+       <string id="string20" value="Task.WININET_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD" />
+       <string id="string21" value="Task.WININET_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP" />
+       <string id="string22" value="Task.WININET_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION" />
+       <string id="string23" value="Task.WININET_AUTOPROXY_SEARCH" />
+       <string id="string24" value="Task.WININET_AUTOPROXY_SWPAD" />
+       <string id="string25" value="Task.WININET_BLOCKING_AUTOPROXY_DETERMINATION" />
+       <string id="string26" value="Task.WININET_CONNECT_HANDLE_CREATED" />
+       <string id="string27" value="Task.WININET_COOKIE_ADDED_TO_HEADER" />
+       <string id="string28" value="Task.WININET_COOKIE_BLOCKED" />
+       <string id="string29" value="Task.WININET_COOKIE_DELETED" />
+       <string id="string30" value="Task.WININET_COOKIE_HEADER_RECEIVED" />
+       <string id="string31" value="Task.WININET_COOKIE_P3P_REJECTED" />
+       <string id="string32" value="Task.WININET_COOKIE_REQUEST_HEADER_CREATED" />
+       <string id="string33" value="Task.WININET_COOKIE_STORED" />
+       <string id="string34" value="Task.WININET_DNS_QUERY" />
+       <string id="string35" value="Task.WININET_HANDLE_CLOSE_FAILED" />
+       <string id="string36" value="Task.WININET_HANDLE_CLOSED" />
+       <string id="string37" value="Task.WININET_HANDLE_CREATE_FAILED" />
+       <string id="string38" value="Task.WININET_HTTP_CONNECTION_CLOSED" />
+       <string id="string39" value="Task.WININET_HTTP_REQUEST" />
+       <string id="string40" value="Task.WININET_HTTP_REQUEST_HANDLE_CREATED" />
+       <string id="string41" value="Task.WININET_HTTP_RESPONSE" />
+       <string id="string42" value="Task.WININET_HTTP_RESPONSE_BODY_READ_ERROR" />
+       <string id="string43" value="Task.WININET_HTTP_RESPONSE_BODY_RECEIVED" />
+       <string id="string44" value="Task.WININET_HTTPS_CLIENT_CERT_REQUIRED" />
+       <string id="string45" value="Task.WININET_HTTPS_CLIENT_CERT_SELECTED" />
+       <string id="string46" value="Task.WININET_HTTPS_CLIENT_CERT_UNAVAILABLE" />
+       <string id="string47" value="Task.WININET_HTTPS_NEGOTIATION" />
+       <string id="string48" value="Task.WININET_HTTPS_RENEGOTIATION" />
+       <string id="string49" value="Task.WININET_HTTPS_SERVER_CERT_ERROR" />
+       <string id="string50" value="Task.WININET_HTTPS_SERVER_CERT_VALIDATED" />
+       <string id="string51" value="Task.WININET_KEEP_ALIVE_CONNECTION_CLOSED" />
+       <string id="string52" value="Task.WININET_KEEP_ALIVE_CONNECTION_POOLED" />
+       <string id="string53" value="Task.WININET_KEEP_ALIVE_CONNECTION_REUSED" />
+       <string id="string54" value="Task.WININET_NETWORK_CHANGE_DETECTED" />
+       <string id="string55" value="Task.WININET_OPEN_URL_HANDLE_CREATED" />
+       <string id="string56" value="Task.WININET_REQUEST_HEADER" />
+       <string id="string57" value="Task.WININET_REQUEST_HEADER_OPTIONAL" />
+       <string id="string58" value="Task.WININET_RESPONSE_HEADER" />
+       <string id="string59" value="Task.WININET_ROOT_HANDLE_CREATED" />
+       <string id="string60" value="Task.WININET_STREAM_DATA_INDICATED" />
+       <string id="string61" value="Task.WININET_TCP_CONNECTION" />
+       <string id="string62" value="Task.WININET_TEST_EVENT" />
+       <string id="string63" value="Task.WININET_TRANSFER" />
+       <string id="string64" value="win:Info" />
+       <string id="string65" value="win:Start" />
+       <string id="string66" value="win:Stop" />
+       <string id="string67" value="Wininet_AppCacheHandle" />
+       <string id="string68" value="Wininet_AppCacheLookup" />
+       <string id="string69" value="Wininet_AppCacheServerContainer" />
+       <string id="string70" value="Wininet_AutodialIfNotLocalHost" />
+       <string id="string71" value="Wininet_BlobServerContainer" />
+       <string id="string72" value="Wininet_CacheClientBloomFilter" />
+       <string id="string73" value="Wininet_CacheClientCounters" />
+       <string id="string74" value="Wininet_CacheServerConnection" />
+       <string id="string75" value="Wininet_CacheServerContainer" />
+       <string id="string76" value="Wininet_CacheServerEntryEnum" />
+       <string id="string77" value="Wininet_Connect" />
+       <string id="string78" value="Wininet_CookieServerContainer" />
+       <string id="string79" value="Wininet_DependencyServerContainer" />
+       <string id="string80" value="Wininet_DHCP_I252WPAD" />
+       <string id="string81" value="Wininet_DrainResponsePostReceiveBuf" />
+       <string id="string82" value="Wininet_FileIO" />
+       <string id="string83" value="Wininet_Getaddrinfo" />
+       <string id="string84" value="Wininet_HstsServerContainer" />
+       <string id="string85" value="WININET_KEYWORD_AOAC" />
+       <string id="string86" value="WININET_KEYWORD_AUTH" />
+       <string id="string87" value="WININET_KEYWORD_AUTOPROXY" />
+       <string id="string88" value="WININET_KEYWORD_CONNECTION" />
+       <string id="string89" value="WININET_KEYWORD_COOKIES" />
+       <string id="string90" value="WININET_KEYWORD_HANDLES" />
+       <string id="string91" value="WININET_KEYWORD_HTTP" />
+       <string id="string92" value="WININET_KEYWORD_HTTPDIAG" />
+       <string id="string93" value="WININET_KEYWORD_HTTPS" />
+       <string id="string94" value="WININET_KEYWORD_IE" />
+       <string id="string95" value="WININET_KEYWORD_MOBILE" />
+       <string id="string96" value="WININET_KEYWORD_PACKET" />
+       <string id="string97" value="WININET_KEYWORD_PII_PRESENT" />
+       <string id="string98" value="WININET_KEYWORD_RECEIVE" />
+       <string id="string99" value="WININET_KEYWORD_SEND" />
+       <string id="string100" value="Wininet_LookupConnection" />
+       <string id="string101" value="Wininet_OfflineCacheHit" />
+       <string id="string102" value="Wininet_OfflineCacheLookup" />
+       <string id="string103" value="Wininet_OfflineCacheMiss" />
+       <string id="string104" value="Wininet_PostNet_CacheHit" />
+       <string id="string105" value="Wininet_PostNet_CacheLookup" />
+       <string id="string106" value="Wininet_PostNet_CacheMiss" />
+       <string id="string107" value="Wininet_PreNet_CacheHit" />
+       <string id="string108" value="Wininet_PreNet_CacheLookup" />
+       <string id="string109" value="Wininet_PreNet_CacheMiss" />
+       <string id="string110" value="Wininet_ReadData" />
+       <string id="string111" value="Wininet_ReadDataPostReceiveBuf" />
+       <string id="string112" value="Wininet_Redirect" />
+       <string id="string113" value="Wininet_RequestPrioritySet" />
+       <string id="string114" value="Wininet_ResolveHost" />
+       <string id="string115" value="Wininet_SecurityContext" />
+       <string id="string116" value="Wininet_Select" />
+       <string id="string117" value="Wininet_SendRequest" />
+       <string id="string118" value="Wininet_SendRequest_CRLF" />
+       <string id="string119" value="Wininet_SendRequest_Extra" />
+       <string id="string120" value="Wininet_SendRequest_Main" />
+       <string id="string121" value="Wininet_SendRequest_PostReceiveBuf" />
+       <string id="string122" value="Wininet_SocketConnect" />
+       <string id="string123" value="Wininet_SocketReceiveDelay" />
+       <string id="string124" value="Wininet_SyncInternetOpen" />
+       <string id="string125" value="Wininet_SyncQueryDataAvailable" />
+       <string id="string126" value="Wininet_SyncReadFile" />
+       <string id="string127" value="Wininet_SyncSendRequest" />
+       <string id="string128" value="Wininet_SyncWriteFile" />
+       <string id="string129" value="Wininet_UrlCacheContainer" />
+       <string id="string130" value="Wininet_UsageLogRequest" />
+       <string id="string131" value="Wininet_UsageLogScavenge" />
+       <string id="string132" value="Wininet_WebSocketSession" />
+       <string id="string133" value="Wininet_WebSocketUpgrade" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

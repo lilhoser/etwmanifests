@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Schannel" name="Schannel" guid="{1f678132-5938-4686-9fdc-c8ff68f15c85}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="36864" version="0" level="win:Informational"  channel="System"/>
+        <event value="36865" version="0" level="win:Error"  channel="System" template="Args36865_0"/>
+        <event value="36867" version="0" level="win:Informational"  channel="System" template="Args36867_0"/>
+        <event value="36868" version="0" level="win:Informational"  channel="System" template="Args36868_0"/>
+        <event value="36869" version="0" level="win:Error"  channel="System"/>
+        <event value="36870" version="0" level="win:Error"  channel="System" template="Args36870_0"/>
+        <event value="36871" version="0" level="win:Error"  channel="System" template="Args36871_0"/>
+        <event value="36872" version="0" level="win:Error"  channel="System" template="Args36872_0"/>
+        <event value="36873" version="0" level="win:Error"  channel="System"/>
+        <event value="36874" version="0" level="win:Error"  channel="System" template="Args36874_0"/>
+        <event value="36875" version="0" level="win:Warning"  channel="System"/>
+        <event value="36876" version="0" level="win:Error"  channel="System" template="Args36876_0"/>
+        <event value="36877" version="0" level="win:Warning"  channel="System"/>
+        <event value="36878" version="0" level="win:Warning"  channel="System"/>
+        <event value="36879" version="0" level="win:Warning"  channel="System"/>
+        <event value="36880" version="0" level="win:Informational"  channel="System" template="Args36880_0"/>
+        <event value="36881" version="0" level="win:Error"  channel="System" template="Args36881_0"/>
+        <event value="36882" version="0" level="win:Error"  channel="System"/>
+        <event value="36883" version="0" level="win:Error"  channel="System"/>
+        <event value="36884" version="0" level="win:Error"  channel="System" template="Args36884_0"/>
+        <event value="36885" version="0" level="win:Warning"  channel="System"/>
+        <event value="36886" version="0" level="win:Warning"  channel="System"/>
+        <event value="36887" version="0" level="win:Informational"  channel="System" template="Args36887_0"/>
+        <event value="36888" version="0" level="win:Informational"  channel="System" template="Args36888_0"/>
+        <event value="36889" version="0" level="win:Error"  channel="System"/>
+        <event value="36896" version="0" level="win:Warning"  channel="System"/>
+        <event value="36897" version="0" level="win:Warning"  channel="System"/>
+        <event value="36898" version="0" level="win:Informational"  channel="System"/>
+        <event value="36899" version="0" level="win:Informational"  channel="System"/>
+        <event value="36912" version="0" level="win:Error"  channel="System" template="Args36912_0"/>
+        <event value="36928" version="0" level="win:Error"  channel="System" template="Args36928_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args36865_0">
+          <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args36867_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binaryData" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args36868_0">
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CSPName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CSPType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="KeyType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="KeyFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EncodedCert" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args36870_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args36871_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args36872_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CertFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CredContext" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args36874_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Protocol" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args36876_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pCertificateContext" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args36880_0">
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Protocol" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CipherSuite" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ExchangeStrength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TargetName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LocalCertSubjectName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RemoteCertSubjectName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args36881_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="certificateContext" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args36884_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="certificateContext" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args36887_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AlertDesc" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args36888_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AlertDesc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args36912_0">
+          <data name="CallerProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallerProcessImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args36928_0">
+          <data name="FailureReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OCSPResponderURL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ThisUpdate" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="NextUpdate" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Certificate" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Schannel" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

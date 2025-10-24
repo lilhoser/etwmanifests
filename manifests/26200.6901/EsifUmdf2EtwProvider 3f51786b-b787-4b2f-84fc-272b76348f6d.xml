@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="EsifUmdf2EtwProvider" name="EsifUmdf2EtwProvider" guid="{3f51786b-b787-4b2f-84fc-272b76348f6d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="Log Always"  template="Args0_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Default" mask="0x1" message="$(string.string7)" />
+        <keyword name="DPTF" mask="0x2" message="$(string.string9)" />
+        <keyword name="Shell" mask="0x4" message="$(string.string21)" />
+        <keyword name="UF" mask="0x8" message="$(string.string24)" />
+        <keyword name="Action" mask="0x10" message="$(string.string1)" />
+        <keyword name="App" mask="0x20" message="$(string.string3)" />
+        <keyword name="Conjure" mask="0x40" message="$(string.string5)" />
+        <keyword name="Domain" mask="0x80" message="$(string.string8)" />
+        <keyword name="DSP" mask="0x100" message="$(string.string10)" />
+        <keyword name="Event" mask="0x200" message="$(string.string12)" />
+        <keyword name="IPC" mask="0x400" message="$(string.string13)" />
+        <keyword name="Participant" mask="0x800" message="$(string.string16)" />
+        <keyword name="Primitive" mask="0x1000" message="$(string.string19)" />
+        <keyword name="Service" mask="0x2000" message="$(string.string20)" />
+        <keyword name="Datavault" mask="0x4000" message="$(string.string6)" />
+        <keyword name="WebServer_Deprecated" mask="0x8000" message="$(string.string31)" />
+        <keyword name="Windows" mask="0x10000" message="$(string.string32)" />
+        <keyword name="ACT" mask="0x20000" message="$(string.string0)" />
+        <keyword name="UMDF" mask="0x40000" message="$(string.string25)" />
+        <keyword name="ThermalAPI" mask="0x80000" message="$(string.string23)" />
+        <keyword name="Linux" mask="0x100000" message="$(string.string14)" />
+        <keyword name="Logging" mask="0x200000" message="$(string.string15)" />
+        <keyword name="ApiTrace" mask="0x400000" message="$(string.string2)" />
+        <keyword name="Power" mask="0x800000" message="$(string.string18)" />
+        <keyword name="Pnp" mask="0x1000000" message="$(string.string17)" />
+        <keyword name="TableObject" mask="0x2000000" message="$(string.string22)" />
+        <keyword name="Arbitration" mask="0x4000000" message="$(string.string4)" />
+        <keyword name="Unused1" mask="0x8000000" message="$(string.string26)" />
+        <keyword name="Unused2" mask="0x10000000" message="$(string.string27)" />
+        <keyword name="Unused3" mask="0x20000000" message="$(string.string28)" />
+        <keyword name="Unused4" mask="0x40000000" message="$(string.string29)" />
+        <keyword name="Verbose" mask="0x80000000" message="$(string.string30)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="stringPtr" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ACT" />
+       <string id="string1" value="Action" />
+       <string id="string2" value="ApiTrace" />
+       <string id="string3" value="App" />
+       <string id="string4" value="Arbitration" />
+       <string id="string5" value="Conjure" />
+       <string id="string6" value="Datavault" />
+       <string id="string7" value="Default" />
+       <string id="string8" value="Domain" />
+       <string id="string9" value="DPTF" />
+       <string id="string10" value="DSP" />
+       <string id="string11" value="EsifUmdf2EtwProvider" />
+       <string id="string12" value="Event" />
+       <string id="string13" value="IPC" />
+       <string id="string14" value="Linux" />
+       <string id="string15" value="Logging" />
+       <string id="string16" value="Participant" />
+       <string id="string17" value="Pnp" />
+       <string id="string18" value="Power" />
+       <string id="string19" value="Primitive" />
+       <string id="string20" value="Service" />
+       <string id="string21" value="Shell" />
+       <string id="string22" value="TableObject" />
+       <string id="string23" value="ThermalAPI" />
+       <string id="string24" value="UF" />
+       <string id="string25" value="UMDF" />
+       <string id="string26" value="Unused1" />
+       <string id="string27" value="Unused2" />
+       <string id="string28" value="Unused3" />
+       <string id="string29" value="Unused4" />
+       <string id="string30" value="Verbose" />
+       <string id="string31" value="WebServer_Deprecated" />
+       <string id="string32" value="Windows" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

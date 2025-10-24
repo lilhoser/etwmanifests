@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WindowsBackup" name="Microsoft-Windows-WindowsBackup" guid="{01979c6a-42fa-414c-b8aa-eee2c8202018}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-WindowsBackup/ActionCenter" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-WindowsBackup/ActionCenter"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WindowsBackup/ActionCenter" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwszTimeStamp" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WindowsBackup" />
+       <string id="string1" value="Microsoft-Windows-WindowsBackup/ActionCenter" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

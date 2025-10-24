@@ -1,0 +1,2318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SMBServer" name="Microsoft-Windows-SMBServer" guid="{d48ce617-33a2-4bc3-a5c7-11aa4f29619e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2WorkItemTransition" opcode="win:Info" keywords="Transition" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2WorkItemStart" opcode="win:Start" keywords="PerfOptional" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2WorkItemStop" opcode="win:Stop" keywords="PerfOptional"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2WorkItemActivityTransfer" opcode="win:Send" keywords="Correlation"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2WorkItemActivityStop" opcode="win:Stop" keywords="Correlation"/>
+        <event value="500" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2ConnectionAccept" opcode="win:Start" keywords="Connection" template="Args500_0"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2ConnectionDisconnectEvent" opcode="win:Info" keywords="Connection" template="Args501_0"/>
+        <event value="502" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2ConnectionTerminate" opcode="win:Stop" keywords="Connection" template="Args502_0"/>
+        <event value="550" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2SessionAllocate" opcode="win:Start" keywords="Session" template="Args550_0"/>
+        <event value="551" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2SessionAuthFailure" opcode="win:Info" keywords="Session" template="Args551_0"/>
+        <event value="552" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2SessionAuthenticated" opcode="win:Info" keywords="Session" template="Args552_0"/>
+        <event value="553" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2SessionBind" opcode="win:Info" keywords="Session" template="Args553_0"/>
+        <event value="554" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2SessionTerminate" opcode="win:Stop" keywords="Session" template="Args554_0"/>
+        <event value="555" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2SessionClose" opcode="win:Stop" keywords="Session" template="Args555_0"/>
+        <event value="600" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2TreeConnectAllocate" opcode="win:Start" keywords="TreeConnect" template="Args600_0"/>
+        <event value="601" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2TreeConnectDisconnect" opcode="win:Info" keywords="TreeConnect"/>
+        <event value="602" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2TreeConnectTerminate" opcode="win:Stop" keywords="TreeConnect"/>
+        <event value="603" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2TreeConnectFailedDueToPending" opcode="win:Info" keywords="TreeConnect" template="Args603_0"/>
+        <event value="604" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2TreeConnectForceClientReconnect" opcode="win:Info" keywords="TreeConnect"/>
+        <event value="605" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2TreeConnectForceClientReconnect" opcode="win:Info" keywords="TreeConnect"/>
+        <event value="650" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileOpen" opcode="win:Start" keywords="File" template="Args650_0"/>
+        <event value="651" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileDisconnect" opcode="win:Info" keywords="File"/>
+        <event value="652" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileReconnect" opcode="win:Info" keywords="File"/>
+        <event value="653" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileSuspend" opcode="win:Info" keywords="File"/>
+        <event value="654" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileClose" opcode="win:Info" keywords="File"/>
+        <event value="655" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileTimeout" opcode="win:Info" keywords="File"/>
+        <event value="656" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileTerminate" opcode="win:Info" keywords="File"/>
+        <event value="657" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2FileCCFClose" opcode="win:Info" keywords="File" template="Args657_0"/>
+        <event value="658" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2FileCCFCloseAudit" opcode="win:Info" keywords="Operational" template="Args658_0"/>
+        <event value="700" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2ShareAdd" opcode="win:Info" keywords="Share" template="Args700_0"/>
+        <event value="701" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2ShareModify" opcode="win:Info" keywords="Share"/>
+        <event value="702" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="Smb2ShareDelete" opcode="win:Info" keywords="Share"/>
+        <event value="1000" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvS4U2SelfFailure" opcode="win:Info" keywords="Operational" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvDisabled" opcode="win:Info" keywords="Operational" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2RkfFailure" opcode="win:Info" keywords="Operational" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvUnencryptedAcccessFailure" opcode="win:Info" keywords="Operational" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSignatureValidationFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1005" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNegotiateValidationFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1006" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="SrvShareAccessCheckFailure" opcode="win:Info" keywords="Operational" template="Args1006_0"/>
+        <event value="1007" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="SrvShareAnonymousAccessDeniedFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1009" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="SrvSessionAnonymousAccessDenied" opcode="win:Info" keywords="Operational" template="Args1009_0"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvEndpointAdded" opcode="win:Info" keywords="Operational" template="Args1010_0"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvEndpointRemoved" opcode="win:Info" keywords="Operational"/>
+        <event value="1012" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetNameInfoChange" opcode="win:Info" keywords="Operational" template="Args1012_0"/>
+        <event value="1013" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvEndpointOnline" opcode="win:Info" keywords="Operational" template="Args1013_0"/>
+        <event value="1014" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvEndpointOffline" opcode="win:Info" keywords="Operational"/>
+        <event value="1015" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="SrvDecryptionFailure" opcode="win:Info" keywords="Operational" template="Args1015_0"/>
+        <event value="1016" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvReopenFailure" opcode="win:Info" keywords="Operational" template="Args1016_0"/>
+        <event value="1017" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvHandleScavenge" opcode="win:Info" keywords="Operational" template="Args1017_0"/>
+        <event value="1018" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSessionInvalidate" opcode="win:Info" keywords="Operational" template="Args1018_0"/>
+        <event value="1019" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvFileInvalidate" opcode="win:Info" keywords="Operational" template="Args1019_0"/>
+        <event value="1020" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSlowFsOperation" opcode="win:Info" keywords="Operational" template="Args1020_0"/>
+        <event value="1021" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Security" task="SrvLmCompatibilityLevelNonDefault" opcode="win:Info" keywords="Operational" template="Args1021_0"/>
+        <event value="1022" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Connectivity" task="SrvFileSharingFirewallRuleEnabled" opcode="win:Info" keywords="Operational"/>
+        <event value="1023" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvABESharesPresent" opcode="win:Info" keywords="Operational"/>
+        <event value="1024" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSmb2Disabled" opcode="win:Info" keywords="Operational"/>
+        <event value="1025" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNullSessionsAllowed" opcode="win:Info" keywords="Operational"/>
+        <event value="1026" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvLeasingDisabled" opcode="win:Info" keywords="Operational"/>
+        <event value="1027" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvFirewallPortsClosed" opcode="win:Info" keywords="Operational"/>
+        <event value="1028" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2MaxClusterDialectUpdated" opcode="win:Info" keywords="Operational" template="Args1028_0"/>
+        <event value="1029" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2CipherSuiteOrder" opcode="win:Info" keywords="Operational" template="Args1029_0"/>
+        <event value="1030" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2MdlIoCompletionFailure" opcode="win:Info" keywords="Operational" template="Args1030_0"/>
+        <event value="1031" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2LiveDumpSucceeded" opcode="win:Info" keywords="Operational"/>
+        <event value="1032" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2LiveDumpThrotteled" opcode="win:Info" keywords="Operational"/>
+        <event value="1033" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMASendEndpointNotification" opcode="win:Info" keywords="Nsi" template="Args1033_0"/>
+        <event value="1034" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMASendEndpointNotificationFailure" opcode="win:Info" keywords="Nsi" template="Args1034_0"/>
+        <event value="1035" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMAEndpointChange" opcode="win:Info" keywords="Nsi" template="Args1035_0"/>
+        <event value="1036" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMAEndpointAllocationFailure" opcode="win:Info" keywords="Nsi"/>
+        <event value="1037" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMACreateListenerFailure" opcode="win:Info" keywords="Nsi"/>
+        <event value="1038" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMASendEndpointNotificationRPCFailure" opcode="win:Info" keywords="Nsi"/>
+        <event value="1039" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMANsiNotificationReceived" opcode="win:Info" keywords="Nsi" template="Args1039_0"/>
+        <event value="1040" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Srv2RDMAMibNotificationReceived" opcode="win:Info" keywords="Nsi"/>
+        <event value="1041" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvAdminFsctlPropertiesListReadingFailure" opcode="win:Info" keywords="Operational" template="Args1041_0"/>
+        <event value="1042" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="ServerCertMappingExpiring" opcode="win:Info" keywords="Operational" template="Args1042_0"/>
+        <event value="1043" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetRdmaConnectionClosed" opcode="win:Info" keywords="Operational" template="Args1043_0"/>
+        <event value="1044" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetQuicShutdownFailure" opcode="win:Info" keywords="Quic" template="Args1044_0"/>
+        <event value="1045" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="ServerCertMappingUpdateFailure" opcode="win:Info" keywords="Cert" template="Args1045_0"/>
+        <event value="1046" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNoNegotiatedCipher" opcode="win:Info" keywords="Operational" template="Args1046_0"/>
+        <event value="1047" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2SlowCommand" opcode="win:Info" keywords="Operational" template="Args1047_0"/>
+        <event value="1048" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2CommandTimeDistribution" opcode="win:Info" keywords="Operational" template="Args1048_0"/>
+        <event value="1049" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="ServerCertMappingExpired" opcode="win:Info" keywords="Operational"/>
+        <event value="1050" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2ClosedEndpointsOutsideUnicastIPTable" opcode="win:Info" keywords="Nsi" template="Args1050_0"/>
+        <event value="1051" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNegotiateCipherFailure" opcode="win:Info" keywords="Operational" template="Args1051_0"/>
+        <event value="1052" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="ServerCertMappingRestoreFailure" opcode="win:Info" keywords="Cert" template="Args1052_0"/>
+        <event value="1053" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="ServerCertMappingRestoreSummary" opcode="win:Info" keywords="Cert" template="Args1053_0"/>
+        <event value="1054" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSlowNetworkOperation" opcode="win:Info" keywords="Operational" template="Args1054_0"/>
+        <event value="1055" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetRdmaRundownActive" opcode="win:Info" keywords="Operational" template="Args1055_0"/>
+        <event value="1056" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetRdmaRundownComplete" opcode="win:Info" keywords="Operational" template="Args1056_0"/>
+        <event value="1057" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetRdmaReactivation" opcode="win:Info" keywords="Operational"/>
+        <event value="1058" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetRdmaReactivationComplete" opcode="win:Info" keywords="Operational"/>
+        <event value="1059" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetSmbDirectLoad" opcode="win:Info" keywords="Operational" template="Args1059_0"/>
+        <event value="1060" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2DirectDataPlacementSecurityChanged" opcode="win:Info" keywords="Operational" template="Args1060_0"/>
+        <event value="1061" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2RequestNegotiate" opcode="win:Info" keywords="Operational" template="Args1061_0"/>
+        <event value="1062" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="Smb2DialectChange" opcode="win:Info" keywords="Operational" template="Args1062_0"/>
+        <event value="1080" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetComponentCapabilities" opcode="win:Info" keywords="Operational" template="Args1080_0"/>
+        <event value="1800" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SSClusterCaFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1801" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SSRkfCaFailure" opcode="win:Info" keywords="Operational" template="Args1801_0"/>
+        <event value="1802" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetGetNextIdFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1803" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SecurityCertificateChanged" opcode="win:Info" keywords="Operational" template="Args1803_0"/>
+        <event value="1900" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="TdiModeEnabled" opcode="win:Info" keywords="Nsi" template="Args1900_0"/>
+        <event value="1901" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="NsiTableAllocationFailed" opcode="win:Info" keywords="Nsi"/>
+        <event value="1902" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="NsiInterfaceAdded" opcode="win:Info" keywords="Nsi" template="Args1902_0"/>
+        <event value="1903" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="NsiInterfaceRemoved" opcode="win:Info" keywords="Nsi"/>
+        <event value="1904" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="IPInterfaceNotFound" opcode="win:Info" keywords="Nsi" template="Args1904_0"/>
+        <event value="1905" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSessionInvalidate" opcode="win:Info" keywords="Operational" template="Args1905_0"/>
+        <event value="1906" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="Srv2SessionKeyTooShort" opcode="win:Info" keywords="Operational" template="Args1906_0"/>
+        <event value="1907" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Analytic" task="ReceivedNullReparseBuffer" opcode="win:Info" keywords="Operational"/>
+        <event value="1908" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Analytic" task="AllowListLoadFailed" opcode="win:Info" keywords="Operational"/>
+        <event value="1909" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetQuicSendEndpointNotificationFailure" opcode="win:Info" keywords="Nsi"/>
+        <event value="1910" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetEventDisableRdmaListenSocketsState" opcode="win:Info" keywords="Operational" template="Args1910_0"/>
+        <event value="1911" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="ServerCertificateFailure" opcode="win:Info" keywords="Nsi" template="Args1911_0"/>
+        <event value="1912" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="ShareQosPolicySettingFailure" opcode="win:Info" keywords="Nsi" template="Args1912_0"/>
+        <event value="1913" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetConnectionEstablished" opcode="win:Info" keywords="Operational" template="Args1913_0"/>
+        <event value="1914" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetClientCertificateChainRevocationChecksFailed" opcode="win:Info" keywords="Operational" template="Args1914_0"/>
+        <event value="2000" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Diagnostic" task="PacketFragment" opcode="win:Info" keywords="ut:Packet" template="Args2000_0"/>
+        <event value="3000" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="AuditSmb1Access" opcode="win:Info"/>
+        <event value="3004" version="0" level="win:Informational"  task="SrvAdminFileRundown" keywords="Rundown" template="Args3004_0"/>
+        <event value="3005" version="0" level="win:Informational"  task="SrvAdminSessionRundown" keywords="Rundown" template="Args3005_0"/>
+        <event value="3006" version="0" level="win:Informational"  task="SrvAdminShareRundown" keywords="Rundown" template="Args3006_0"/>
+        <event value="3007" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="MutualAuthClientAccessDenied" opcode="win:Info" template="Args3007_0"/>
+        <event value="3008" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="MutualAuthClientAccessAllowed" opcode="win:Info"/>
+        <event value="3009" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Audit" task="MutualAuthClientAccessError" opcode="win:Info" template="Args3009_0"/>
+        <event value="3010" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetAddEndpointListenerRulePortNotSupported" opcode="win:Info" keywords="ListenerRule" template="Args3010_0"/>
+        <event value="3011" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetAddEndpointListenerRuleSuccess" opcode="win:Info" keywords="ListenerRule" template="Args3011_0"/>
+        <event value="3012" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetAddEndpointListenerRuleFailure" opcode="win:Info" keywords="ListenerRule"/>
+        <event value="3013" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetAddListenerRuleNew" opcode="win:Info" keywords="ListenerRule"/>
+        <event value="3014" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetAddListenerRuleUpdate" opcode="win:Info" keywords="ListenerRule"/>
+        <event value="3015" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetAddListenerRuleRemove" opcode="win:Info" keywords="ListenerRule"/>
+        <event value="3016" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetEnableImplicitLoopbackInterfaceError" opcode="win:Info" keywords="Interface" template="Args3016_0"/>
+        <event value="3017" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetDisableImplicitLoopbackInterfaceError" opcode="win:Info" keywords="Interface"/>
+        <event value="3018" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="AlternativePortFirewallRuleAlreadyAdded" opcode="win:Info" template="Args3018_0"/>
+        <event value="3019" version="0" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="AlternativePortFirewallRuleAddFailure" opcode="win:Info"/>
+        <event value="3020" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="AlternativePortFirewallRuleAddSuccess" opcode="win:Info"/>
+        <event value="3021" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="Smb2ClientDoesNotSupportSigning" opcode="win:Info" template="Args3021_0"/>
+        <event value="3022" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="Smb2ClientDoesNotSupportEncryption" opcode="win:Info" template="Args3022_0"/>
+        <event value="3023" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="InsecureGuestLogon" opcode="win:Info"/>
+        <event value="3024" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="SrvNetClientDoesNotSupportSpn" opcode="win:Info" template="Args3024_0"/>
+        <event value="3025" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="SrvNetClientSentUnrecognizedSpn" opcode="win:Info" template="Args3025_0"/>
+        <event value="3026" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="SrvNetClientSentEmptySpn" opcode="win:Info"/>
+        <event value="3027" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="Smb1ClientDoesNotSupportSigning" opcode="win:Info"/>
+        <event value="4000" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Connectivity" task="Smb2ShareConnectionEstablished" opcode="win:Info" template="Args4000_0"/>
+        <event value="40000" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Diagnostic" task="Packet" opcode="win:Info" keywords="ut:Packet" template="Args40000_0"/>
+        <event value="551" version="1" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="Smb2SessionAuthFailure" opcode="win:Info" keywords="Operational" template="Args551_1"/>
+        <event value="1001" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvDisabled" opcode="win:Info" keywords="Operational"/>
+        <event value="1003" version="1" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvUnencryptedAcccessFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1004" version="1" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSignatureValidationFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1005" version="1" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNegotiateValidationFailure" opcode="win:Info" keywords="Operational" template="Args1005_1"/>
+        <event value="1020" version="1" level="win:Warning"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvSlowFsOperation" opcode="win:Info" keywords="Operational"/>
+        <event value="1059" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetSmbDirectLoad" opcode="win:Info" keywords="Operational" template="Args1059_1"/>
+        <event value="1804" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Analytic" task="NoSmb1ObservedInLastPeriod" opcode="win:Info" keywords="Connection" template="Args1804_1"/>
+        <event value="1910" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetEventDisableRdmaListenSocketsState" opcode="win:Info" keywords="Operational" template="Args1910_1"/>
+        <event value="1914" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNetClientCertificateChainRevocationChecksFailed" opcode="win:Info" keywords="Operational" template="Args1914_1"/>
+        <event value="3002" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="AuditSmb1Access" opcode="win:Info" keywords="Connection"/>
+        <event value="3003" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="UninstallSmb1Server" opcode="win:Info" keywords="Connection"/>
+        <event value="3007" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="MutualAuthClientAccessDenied" opcode="win:Info" template="Args3007_1"/>
+        <event value="3008" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="MutualAuthClientAccessAllowed" opcode="win:Info"/>
+        <event value="3009" version="1" level="win:Error"  channel="Microsoft-Windows-SMBServer/Audit" task="MutualAuthClientAccessError" opcode="win:Info" template="Args3009_1"/>
+        <event value="3021" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Audit" task="Smb2ClientDoesNotSupportSigning" opcode="win:Info" template="Args3021_1"/>
+        <event value="1" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestNegotiate" opcode="win:Info" keywords="Request"/>
+        <event value="2" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestSessionSetup" opcode="win:Info" keywords="Request" template="Args2_2"/>
+        <event value="3" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestLogoff" opcode="win:Info" keywords="Request"/>
+        <event value="4" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestTreeConnect" opcode="win:Info" keywords="Request" template="Args4_2"/>
+        <event value="5" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestTreeDisconnect" opcode="win:Info" keywords="Request" template="Args5_2"/>
+        <event value="6" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestEcho" opcode="win:Info" keywords="Request"/>
+        <event value="7" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestCancel" opcode="win:Info" keywords="Request"/>
+        <event value="8" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestCreate" opcode="win:Info" keywords="Request" template="Args8_2"/>
+        <event value="9" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestClose" opcode="win:Info" keywords="Request" template="Args9_2"/>
+        <event value="10" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestFlush" opcode="win:Info" keywords="Request"/>
+        <event value="11" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestRead" opcode="win:Info" keywords="Request" template="Args11_2"/>
+        <event value="12" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestWrite" opcode="win:Info" keywords="Request" template="Args12_2"/>
+        <event value="13" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestBreakOplock" opcode="win:Info" keywords="Request" template="Args13_2"/>
+        <event value="14" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestNotifyBreakLease" opcode="win:Info" keywords="Request" template="Args14_2"/>
+        <event value="15" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestAcknowledgeBreakLease" opcode="win:Info" keywords="Request" template="Args15_2"/>
+        <event value="16" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestLock" opcode="win:Info" keywords="Request" template="Args16_2"/>
+        <event value="17" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestIoctl" opcode="win:Info" keywords="Request" template="Args17_2"/>
+        <event value="18" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestQueryDirectory" opcode="win:Info" keywords="Request" template="Args18_2"/>
+        <event value="19" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestChangeNotify" opcode="win:Info" keywords="Request" template="Args19_2"/>
+        <event value="20" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestQueryInfo" opcode="win:Info" keywords="Request" template="Args20_2"/>
+        <event value="21" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2RequestSetInfo" opcode="win:Info" keywords="Request" template="Args21_2"/>
+        <event value="101" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseNegotiate" opcode="win:Info" keywords="Response" template="Args101_2"/>
+        <event value="102" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseSessionSetup" opcode="win:Info" keywords="Response" template="Args102_2"/>
+        <event value="103" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseLogoff" opcode="win:Info" keywords="Response"/>
+        <event value="104" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseTreeConnect" opcode="win:Info" keywords="Response" template="Args104_2"/>
+        <event value="105" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseTreeDisconnect" opcode="win:Info" keywords="Response"/>
+        <event value="106" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseEcho" opcode="win:Info" keywords="Response"/>
+        <event value="108" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseCreate" opcode="win:Info" keywords="Response" template="Args108_2"/>
+        <event value="109" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseClose" opcode="win:Info" keywords="Response" template="Args109_2"/>
+        <event value="110" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseFlush" opcode="win:Info" keywords="Response"/>
+        <event value="111" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseRead" opcode="win:Info" keywords="Response" template="Args111_2"/>
+        <event value="112" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseWrite" opcode="win:Info" keywords="Response" template="Args112_2"/>
+        <event value="113" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseBreakOplock" opcode="win:Info" keywords="Response"/>
+        <event value="115" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseAcknowledgeBreakLease" opcode="win:Info" keywords="Response" template="Args115_2"/>
+        <event value="116" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseLock" opcode="win:Info" keywords="Response"/>
+        <event value="117" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseIoctl" opcode="win:Info" keywords="Response" template="Args117_2"/>
+        <event value="118" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseQueryDirectory" opcode="win:Info" keywords="Response"/>
+        <event value="119" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseChangeNotify" opcode="win:Info" keywords="Response"/>
+        <event value="120" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseQueryInfo" opcode="win:Info" keywords="Response" template="Args120_2"/>
+        <event value="121" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseSetInfo" opcode="win:Info" keywords="Response"/>
+        <event value="122" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBServer/Performance" task="Smb2ResponseError" opcode="win:Info" keywords="Response"/>
+        <event value="551" version="2" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="Smb2SessionAuthFailure" opcode="win:Info" keywords="Operational" template="Args551_2"/>
+        <event value="1005" version="2" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNegotiateValidationFailure" opcode="win:Info" keywords="Operational"/>
+        <event value="1051" version="2" level="win:Error"  channel="Microsoft-Windows-SMBServer/Operational" task="SrvNegotiateCipherFailure" opcode="win:Info" keywords="Operational" template="Args1051_2"/>
+        <event value="551" version="3" level="win:Error"  channel="Microsoft-Windows-SMBServer/Security" task="Smb2SessionAuthFailure" opcode="win:Info" keywords="Operational" template="Args551_3"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SMBServer/Performance" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-SMBServer/Analytic" type="Analytic"/>
+        <channel value="18" name="Microsoft-Windows-SMBServer/Operational" type="Operational"/>
+        <channel value="19" name="Microsoft-Windows-SMBServer/Diagnostic" type="Debug"/>
+        <channel value="20" name="Microsoft-Windows-SMBServer/Security" type="Debug"/>
+        <channel value="21" name="Microsoft-Windows-SMBServer/Connectivity" type="Debug"/>
+        <channel value="22" name="Microsoft-Windows-SMBServer/Audit" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Request" mask="0x1" message="$(string.string38)" />
+        <keyword name="Response" mask="0x2" message="$(string.string39)" />
+        <keyword name="Transition" mask="0x4" message="$(string.string208)" />
+        <keyword name="Operational" mask="0x8" message="$(string.string29)" />
+        <keyword name="Connection" mask="0x10" message="$(string.string6)" />
+        <keyword name="Session" mask="0x20" message="$(string.string48)" />
+        <keyword name="TreeConnect" mask="0x40" message="$(string.string209)" />
+        <keyword name="File" mask="0x80" message="$(string.string8)" />
+        <keyword name="Share" mask="0x100" message="$(string.string49)" />
+        <keyword name="Nsi" mask="0x200" message="$(string.string25)" />
+        <keyword name="Cert" mask="0x400" message="$(string.string5)" />
+        <keyword name="Quic" mask="0x800" message="$(string.string36)" />
+        <keyword name="Correlation" mask="0x1000" message="$(string.string7)" />
+        <keyword name="Rundown" mask="0x10000" message="$(string.string40)" />
+        <keyword name="ListenerRule" mask="0x20000" message="$(string.string12)" />
+        <keyword name="Interface" mask="0x40000" message="$(string.string10)" />
+        <keyword name="PerfOptional" mask="0x80000" message="$(string.string35)" />
+        <keyword name="PacketStart" mask="0x40000000" message="$(string.string33)" />
+        <keyword name="PacketEnd" mask="0x80000000" message="$(string.string31)" />
+        <keyword name="ut:SendPath" mask="0x100000000" message="$(string.string213)" />
+        <keyword name="ut:ReceivePath" mask="0x200000000" message="$(string.string212)" />
+        <keyword name="ut:Packet" mask="0x40000000000" message="$(string.string211)" />
+        <keyword name="PduFull" mask="0x800000000000" message="$(string.string34)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Smb2RequestNegotiate" message="$(string.string1)">
+        </task>
+        <task value="2" name="Smb2RequestSessionSetup" message="$(string.string2)">
+        </task>
+        <task value="3" name="Smb2RequestLogoff" message="$(string.string3)">
+        </task>
+        <task value="4" name="Smb2RequestTreeConnect" message="$(string.string4)">
+        </task>
+        <task value="5" name="Smb2RequestTreeDisconnect" message="$(string.string5)">
+        </task>
+        <task value="6" name="Smb2RequestEcho" message="$(string.string6)">
+        </task>
+        <task value="7" name="Smb2RequestCancel" message="$(string.string7)">
+        </task>
+        <task value="8" name="Smb2RequestCreate" message="$(string.string8)">
+        </task>
+        <task value="9" name="Smb2RequestClose" message="$(string.string9)">
+        </task>
+        <task value="10" name="Smb2RequestFlush" message="$(string.string10)">
+        </task>
+        <task value="11" name="Smb2RequestRead" message="$(string.string11)">
+        </task>
+        <task value="12" name="Smb2RequestWrite" message="$(string.string12)">
+        </task>
+        <task value="13" name="Smb2RequestBreakOplock" message="$(string.string13)">
+        </task>
+        <task value="14" name="Smb2RequestNotifyBreakLease" message="$(string.string14)">
+        </task>
+        <task value="15" name="Smb2RequestAcknowledgeBreakLease" message="$(string.string15)">
+        </task>
+        <task value="16" name="Smb2RequestLock" message="$(string.string16)">
+        </task>
+        <task value="17" name="Smb2RequestIoctl" message="$(string.string17)">
+        </task>
+        <task value="18" name="Smb2RequestQueryDirectory" message="$(string.string18)">
+        </task>
+        <task value="19" name="Smb2RequestChangeNotify" message="$(string.string19)">
+        </task>
+        <task value="20" name="Smb2RequestQueryInfo" message="$(string.string20)">
+        </task>
+        <task value="21" name="Smb2RequestSetInfo" message="$(string.string21)">
+        </task>
+        <task value="101" name="Smb2ResponseNegotiate" message="$(string.string101)">
+        </task>
+        <task value="102" name="Smb2ResponseSessionSetup" message="$(string.string102)">
+        </task>
+        <task value="103" name="Smb2ResponseLogoff" message="$(string.string103)">
+        </task>
+        <task value="104" name="Smb2ResponseTreeConnect" message="$(string.string104)">
+        </task>
+        <task value="105" name="Smb2ResponseTreeDisconnect" message="$(string.string105)">
+        </task>
+        <task value="106" name="Smb2ResponseEcho" message="$(string.string106)">
+        </task>
+        <task value="108" name="Smb2ResponseCreate" message="$(string.string108)">
+        </task>
+        <task value="109" name="Smb2ResponseClose" message="$(string.string109)">
+        </task>
+        <task value="110" name="Smb2ResponseFlush" message="$(string.string110)">
+        </task>
+        <task value="111" name="Smb2ResponseRead" message="$(string.string111)">
+        </task>
+        <task value="112" name="Smb2ResponseWrite" message="$(string.string112)">
+        </task>
+        <task value="113" name="Smb2ResponseBreakOplock" message="$(string.string113)">
+        </task>
+        <task value="115" name="Smb2ResponseAcknowledgeBreakLease" message="$(string.string115)">
+        </task>
+        <task value="116" name="Smb2ResponseLock" message="$(string.string116)">
+        </task>
+        <task value="117" name="Smb2ResponseIoctl" message="$(string.string117)">
+        </task>
+        <task value="118" name="Smb2ResponseQueryDirectory" message="$(string.string118)">
+        </task>
+        <task value="119" name="Smb2ResponseChangeNotify" message="$(string.string119)">
+        </task>
+        <task value="120" name="Smb2ResponseQueryInfo" message="$(string.string120)">
+        </task>
+        <task value="121" name="Smb2ResponseSetInfo" message="$(string.string121)">
+        </task>
+        <task value="122" name="Smb2ResponseError" message="$(string.string122)">
+        </task>
+        <task value="200" name="Smb2WorkItemTransition" message="$(string.string200)">
+        </task>
+        <task value="201" name="Smb2WorkItemStart" message="$(string.string201)">
+        </task>
+        <task value="202" name="Smb2WorkItemStop" message="$(string.string202)">
+        </task>
+        <task value="203" name="Smb2WorkItemActivityTransfer" message="$(string.string203)">
+        </task>
+        <task value="204" name="Smb2WorkItemActivityStop" message="$(string.string204)">
+        </task>
+        <task value="500" name="Smb2ConnectionAccept" message="$(string.string500)">
+        </task>
+        <task value="501" name="Smb2ConnectionDisconnectEvent" message="$(string.string501)">
+        </task>
+        <task value="502" name="Smb2ConnectionTerminate" message="$(string.string502)">
+        </task>
+        <task value="550" name="Smb2SessionAllocate" message="$(string.string550)">
+        </task>
+        <task value="551" name="Smb2SessionAuthFailure" message="$(string.string551)">
+        </task>
+        <task value="552" name="Smb2SessionAuthenticated" message="$(string.string552)">
+        </task>
+        <task value="553" name="Smb2SessionBind" message="$(string.string553)">
+        </task>
+        <task value="554" name="Smb2SessionTerminate" message="$(string.string554)">
+        </task>
+        <task value="555" name="Smb2SessionClose" message="$(string.string555)">
+        </task>
+        <task value="600" name="Smb2TreeConnectAllocate" message="$(string.string600)">
+        </task>
+        <task value="601" name="Smb2TreeConnectDisconnect" message="$(string.string601)">
+        </task>
+        <task value="602" name="Smb2TreeConnectTerminate" message="$(string.string602)">
+        </task>
+        <task value="603" name="Smb2TreeConnectFailedDueToPending" message="$(string.string603)">
+        </task>
+        <task value="604" name="Smb2TreeConnectForceClientReconnect" message="$(string.string604)">
+        </task>
+        <task value="650" name="Smb2FileOpen" message="$(string.string650)">
+        </task>
+        <task value="651" name="Smb2FileDisconnect" message="$(string.string651)">
+        </task>
+        <task value="652" name="Smb2FileReconnect" message="$(string.string652)">
+        </task>
+        <task value="653" name="Smb2FileSuspend" message="$(string.string653)">
+        </task>
+        <task value="654" name="Smb2FileClose" message="$(string.string654)">
+        </task>
+        <task value="655" name="Smb2FileTimeout" message="$(string.string655)">
+        </task>
+        <task value="656" name="Smb2FileTerminate" message="$(string.string656)">
+        </task>
+        <task value="657" name="Smb2FileCCFClose" message="$(string.string657)">
+        </task>
+        <task value="658" name="Smb2FileCCFCloseAudit" message="$(string.string658)">
+        </task>
+        <task value="700" name="Smb2ShareAdd" message="$(string.string700)">
+        </task>
+        <task value="701" name="Smb2ShareModify" message="$(string.string701)">
+        </task>
+        <task value="702" name="Smb2ShareDelete" message="$(string.string702)">
+        </task>
+        <task value="900" name="SrvEmptyParameterTemplate" message="$(string.string900)">
+        </task>
+        <task value="1000" name="SrvS4U2SelfFailure" message="$(string.string1000)">
+        </task>
+        <task value="1001" name="SrvDisabled" message="$(string.string1001)">
+        </task>
+        <task value="1002" name="Smb2RkfFailure" message="$(string.string1002)">
+        </task>
+        <task value="1003" name="SrvUnencryptedAcccessFailure" message="$(string.string1003)">
+        </task>
+        <task value="1004" name="SrvSignatureValidationFailure" message="$(string.string1004)">
+        </task>
+        <task value="1005" name="SrvNegotiateValidationFailure" message="$(string.string1005)">
+        </task>
+        <task value="1006" name="SrvShareAccessCheckFailure" message="$(string.string1006)">
+        </task>
+        <task value="1007" name="SrvShareAnonymousAccessDeniedFailure" message="$(string.string1007)">
+        </task>
+        <task value="1009" name="SrvSessionAnonymousAccessDenied" message="$(string.string1009)">
+        </task>
+        <task value="1010" name="SrvEndpointAdded" message="$(string.string1010)">
+        </task>
+        <task value="1011" name="SrvEndpointRemoved" message="$(string.string1011)">
+        </task>
+        <task value="1012" name="SrvNetNameInfoChange" message="$(string.string1012)">
+        </task>
+        <task value="1013" name="SrvEndpointOnline" message="$(string.string1013)">
+        </task>
+        <task value="1014" name="SrvEndpointOffline" message="$(string.string1014)">
+        </task>
+        <task value="1015" name="SrvDecryptionFailure" message="$(string.string1015)">
+        </task>
+        <task value="1016" name="SrvReopenFailure" message="$(string.string1016)">
+        </task>
+        <task value="1017" name="SrvHandleScavenge" message="$(string.string1017)">
+        </task>
+        <task value="1018" name="SrvSessionInvalidate" message="$(string.string1018)">
+        </task>
+        <task value="1019" name="SrvFileInvalidate" message="$(string.string1019)">
+        </task>
+        <task value="1020" name="SrvSlowFsOperation" message="$(string.string1020)">
+        </task>
+        <task value="1021" name="SrvLmCompatibilityLevelNonDefault" message="$(string.string1021)">
+        </task>
+        <task value="1022" name="SrvFileSharingFirewallRuleEnabled" message="$(string.string1022)">
+        </task>
+        <task value="1023" name="SrvABESharesPresent" message="$(string.string1023)">
+        </task>
+        <task value="1024" name="SrvSmb2Disabled" message="$(string.string1024)">
+        </task>
+        <task value="1025" name="SrvNullSessionsAllowed" message="$(string.string1025)">
+        </task>
+        <task value="1026" name="SrvLeasingDisabled" message="$(string.string1026)">
+        </task>
+        <task value="1027" name="SrvFirewallPortsClosed" message="$(string.string1027)">
+        </task>
+        <task value="1054" name="SrvSlowNetworkOperation" message="$(string.string1054)">
+        </task>
+        <task value="1800" name="SSClusterCaFailure" message="$(string.string1800)">
+        </task>
+        <task value="1801" name="SSRkfCaFailure" message="$(string.string1801)">
+        </task>
+        <task value="2000" name="SrvNetGetNextIdFailure" message="$(string.string2000)">
+        </task>
+        <task value="2001" name="SrvNetConnectionEstablished" message="$(string.string2001)">
+        </task>
+        <task value="2002" name="SrvNetClientCertificateChainRevocationChecksFailed" message="$(string.string2002)">
+        </task>
+        <task value="3004" name="SrvAdminFileRundown" message="$(string.string3004)">
+        </task>
+        <task value="3005" name="SrvAdminSessionRundown" message="$(string.string3005)">
+        </task>
+        <task value="3006" name="SrvAdminShareRundown" message="$(string.string3006)">
+        </task>
+        <task value="3007" name="Smb2MaxClusterDialectUpdated" message="$(string.string3007)">
+        </task>
+        <task value="3008" name="Smb2CipherSuiteOrder" message="$(string.string3008)">
+        </task>
+        <task value="3009" name="Smb2MdlIoCompletionFailure" message="$(string.string3009)">
+        </task>
+        <task value="3010" name="Srv2LiveDumpSucceeded" message="$(string.string3010)">
+        </task>
+        <task value="3011" name="Srv2LiveDumpThrotteled" message="$(string.string3011)">
+        </task>
+        <task value="3012" name="Srv2RDMASendEndpointNotification" message="$(string.string3012)">
+        </task>
+        <task value="3013" name="Srv2RDMASendEndpointNotificationFailure" message="$(string.string3013)">
+        </task>
+        <task value="3014" name="Srv2RDMAEndpointChange" message="$(string.string3014)">
+        </task>
+        <task value="3015" name="Srv2RDMAEndpointAllocationFailure" message="$(string.string3015)">
+        </task>
+        <task value="3016" name="Srv2RDMACreateListenerFailure" message="$(string.string3016)">
+        </task>
+        <task value="3017" name="Srv2RDMASendEndpointNotificationRPCFailure" message="$(string.string3017)">
+        </task>
+        <task value="3018" name="Srv2RDMANsiNotificationReceived" message="$(string.string3018)">
+        </task>
+        <task value="3019" name="Srv2RDMAMibNotificationReceived" message="$(string.string3019)">
+        </task>
+        <task value="3020" name="SrvAdminFsctlPropertiesListReadingFailure" message="$(string.string3020)">
+        </task>
+        <task value="3021" name="SrvNetRdmaConnectionClosed" message="$(string.string3021)">
+        </task>
+        <task value="3022" name="ServerCertMappingExpiring" message="$(string.string3022)">
+        </task>
+        <task value="3023" name="SrvNetQuicShutdownFailure" message="$(string.string3023)">
+        </task>
+        <task value="3024" name="ServerCertMappingUpdateFailure" message="$(string.string3024)">
+        </task>
+        <task value="3025" name="SrvNoNegotiatedCipher" message="$(string.string3025)">
+        </task>
+        <task value="3026" name="Smb2SlowCommand" message="$(string.string3026)">
+        </task>
+        <task value="3027" name="Smb2CommandTimeDistribution" message="$(string.string3027)">
+        </task>
+        <task value="3028" name="ServerCertMappingExpired" message="$(string.string3028)">
+        </task>
+        <task value="3029" name="Smb2ClosedEndpointsOutsideUnicastIPTable" message="$(string.string3029)">
+        </task>
+        <task value="3030" name="SrvNegotiateCipherFailure" message="$(string.string3030)">
+        </task>
+        <task value="3031" name="ServerCertMappingRestoreFailure" message="$(string.string3031)">
+        </task>
+        <task value="3032" name="ServerCertMappingRestoreSummary" message="$(string.string3032)">
+        </task>
+        <task value="3033" name="SrvNetRdmaRundownActive" message="$(string.string3033)">
+        </task>
+        <task value="3034" name="SrvNetRdmaRundownComplete" message="$(string.string3034)">
+        </task>
+        <task value="3035" name="SrvNetRdmaReactivation" message="$(string.string3035)">
+        </task>
+        <task value="3036" name="SrvNetRdmaReactivationComplete" message="$(string.string3036)">
+        </task>
+        <task value="3037" name="SrvNetSmbDirectLoad" message="$(string.string3037)">
+        </task>
+        <task value="3038" name="Smb2DirectDataPlacementSecurityChanged" message="$(string.string3038)">
+        </task>
+        <task value="3039" name="Smb2DialectChange" message="$(string.string3039)">
+        </task>
+        <task value="3040" name="SecurityCertificateChanged" message="$(string.string3040)">
+        </task>
+        <task value="3041" name="NoSmb1ObservedInLastPeriod" message="$(string.string3041)">
+        </task>
+        <task value="3042" name="TdiModeEnabled" message="$(string.string3042)">
+        </task>
+        <task value="3043" name="NsiTableAllocationFailed" message="$(string.string3043)">
+        </task>
+        <task value="3044" name="NsiInterfaceAdded" message="$(string.string3044)">
+        </task>
+        <task value="3045" name="NsiInterfaceRemoved" message="$(string.string3045)">
+        </task>
+        <task value="3046" name="IPInterfaceNotFound" message="$(string.string3046)">
+        </task>
+        <task value="3047" name="Srv2SessionKeyTooShort" message="$(string.string3047)">
+        </task>
+        <task value="3048" name="ReceivedNullReparseBuffer" message="$(string.string3048)">
+        </task>
+        <task value="3049" name="AllowListLoadFailed" message="$(string.string3049)">
+        </task>
+        <task value="3050" name="SrvNetQuicSendEndpointNotificationFailure" message="$(string.string3050)">
+        </task>
+        <task value="3051" name="SrvNetEventDisableRdmaListenSocketsState" message="$(string.string3051)">
+        </task>
+        <task value="3052" name="ServerCertificateFailure" message="$(string.string3052)">
+        </task>
+        <task value="3053" name="ShareQosPolicySettingFailure" message="$(string.string3053)">
+        </task>
+        <task value="3054" name="PacketFragment" message="$(string.string3054)">
+        </task>
+        <task value="3055" name="Packet" message="$(string.string3055)">
+        </task>
+        <task value="3056" name="AuditSmb1Access" message="$(string.string3056)">
+        </task>
+        <task value="3057" name="UninstallSmb1Server" message="$(string.string3057)">
+        </task>
+        <task value="3058" name="MutualAuthClientAccessDenied" message="$(string.string3058)">
+        </task>
+        <task value="3059" name="MutualAuthClientAccessAllowed" message="$(string.string3059)">
+        </task>
+        <task value="3060" name="MutualAuthClientAccessError" message="$(string.string3060)">
+        </task>
+        <task value="3061" name="SrvNetAddEndpointListenerRulePortNotSupported" message="$(string.string3061)">
+        </task>
+        <task value="3062" name="SrvNetAddEndpointListenerRuleSuccess" message="$(string.string3062)">
+        </task>
+        <task value="3063" name="SrvNetAddEndpointListenerRuleFailure" message="$(string.string3063)">
+        </task>
+        <task value="3064" name="SrvNetAddListenerRuleNew" message="$(string.string3064)">
+        </task>
+        <task value="3065" name="SrvNetAddListenerRuleUpdate" message="$(string.string3065)">
+        </task>
+        <task value="3066" name="SrvNetAddListenerRuleRemove" message="$(string.string3066)">
+        </task>
+        <task value="3067" name="SrvNetEnableImplicitLoopbackInterfaceError" message="$(string.string3067)">
+        </task>
+        <task value="3068" name="SrvNetDisableImplicitLoopbackInterfaceError" message="$(string.string3068)">
+        </task>
+        <task value="3069" name="SrvNetComponentCapabilities" message="$(string.string3069)">
+        </task>
+        <task value="3070" name="AlternativePortFirewallRuleAlreadyAdded" message="$(string.string3070)">
+        </task>
+        <task value="3071" name="AlternativePortFirewallRuleAddFailure" message="$(string.string3071)">
+        </task>
+        <task value="3072" name="AlternativePortFirewallRuleAddSuccess" message="$(string.string3072)">
+        </task>
+        <task value="3073" name="Smb2ClientDoesNotSupportSigning" message="$(string.string3073)">
+        </task>
+        <task value="3074" name="Smb2ClientDoesNotSupportEncryption" message="$(string.string3074)">
+        </task>
+        <task value="3075" name="InsecureGuestLogon" message="$(string.string3075)">
+        </task>
+        <task value="3076" name="Smb2ShareConnectionEstablished" message="$(string.string3076)">
+        </task>
+        <task value="3077" name="SrvNetClientDoesNotSupportSpn" message="$(string.string3077)">
+        </task>
+        <task value="3078" name="SrvNetClientSentUnrecognizedSpn" message="$(string.string3078)">
+        </task>
+        <task value="3079" name="SrvNetClientSentEmptySpn" message="$(string.string3079)">
+        </task>
+        <task value="3080" name="Smb1ClientDoesNotSupportSigning" message="$(string.string3080)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args200_0">
+          <data name="ComponentId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FunctionNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FunctionName" inType="win:AnsiString" outType="xs:string" length="FunctionNameLength" />
+        </template>
+        <template tid="Args201_0">
+          <data name="WorkItem" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args500_0">
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="TransportLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportLength" />
+        </template>
+        <template tid="Args501_0">
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="TransportLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportLength" />
+        </template>
+        <template tid="Args502_0">
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="TransportLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportLength" />
+        </template>
+        <template tid="Args550_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args551_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args552_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="DomainNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainName" inType="win:UnicodeString" outType="xs:string" length="DomainNameLength" />
+        </template>
+        <template tid="Args553_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="BindingSessionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args554_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args555_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InvalidateSession" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args600_0">
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ShareGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ScopeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ScopeName" inType="win:UnicodeString" outType="xs:string" length="ScopeNameLength" />
+          <data name="ShareProperties" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args603_0">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ScopeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ScopeName" inType="win:UnicodeString" outType="xs:string" length="ScopeNameLength" />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args650_0">
+          <data name="OpenGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ShareGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="LeaseId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="DesiredAccess" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SharingMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreateOptions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileAttributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsReplay" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsResume" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args657_0">
+          <data name="OpenGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AppInstanceGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args658_0">
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ComputerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComputerName" inType="win:UnicodeString" outType="xs:string" length="ComputerNameLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+        </template>
+        <template tid="Args700_0">
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="PathNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PathName" inType="win:UnicodeString" outType="xs:string" length="PathNameLength" />
+          <data name="CSCState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClusterShareType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareProperties" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CaTimeOut" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1000_0">
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="DomainNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainName" inType="win:UnicodeString" outType="xs:string" length="DomainNameLength" />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="LogEventCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+        </template>
+        <template tid="Args1003_0">
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+        </template>
+        <template tid="Args1006_0">
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="SharePathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SharePath" inType="win:UnicodeString" outType="xs:string" length="SharePathLength" />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="MappedAccess" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="GrantedAccess" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ShareSecurityDescriptorLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareSecurityDescriptor" inType="win:Binary" outType="xs:hexBinary" length="ShareSecurityDescriptorLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="SessionID" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1009_0">
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1010_0">
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="DomainNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainName" inType="win:UnicodeString" outType="xs:string" length="DomainNameLength" />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+          <data name="TransportFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1012_0">
+          <data name="ChangeType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NetNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NetName" inType="win:UnicodeString" outType="xs:string" length="NetNameLength" />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Capability" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="LinkSpeed" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientAddressLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+        </template>
+        <template tid="Args1013_0">
+          <data name="EndpointNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndpointName" inType="win:UnicodeString" outType="xs:string" length="EndpointNameLength" />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+        </template>
+        <template tid="Args1015_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:AnsiString" outType="xs:string" length="ClientNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="SessionID" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1016_0">
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="RKFStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedRKFStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="DurableHandle" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ResilientHandle" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PersistentHandle" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ResumeKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1017_0">
+          <data name="DurableHandle" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ResilientHandle" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PersistentFID" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="VolatileFID" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ResumeKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+        </template>
+        <template tid="Args1018_0">
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="TaskStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedTaskStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1019_0">
+          <data name="ResumeKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="TaskStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedTaskStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1020_0">
+          <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ConnectionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="DurationInMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ThresholdInMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1021_0">
+          <data name="ConfiguredLmCompatibilityLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultLmCompatibilityLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1028_0">
+          <data name="NewDialect" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OldDialect" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args1029_0">
+          <data name="CipherSuiteOrder" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1030_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="IsRead" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1033_0">
+          <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InterfaceName" inType="win:UnicodeString" outType="xs:string" length="InterfaceNameLength" />
+        </template>
+        <template tid="Args1034_0">
+          <data name="FailureType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+          <data name="ExtraInformation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1035_0">
+          <data name="EndpointState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+        </template>
+        <template tid="Args1039_0">
+          <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NdkOperationalState" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args1041_0">
+          <data name="FailureType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RegistryValueNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RegistryValueName" inType="win:UnicodeString" outType="xs:string" length="RegistryValueNameLength" />
+        </template>
+        <template tid="Args1042_0">
+          <data name="CertSubjectNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CertSubjectName" inType="win:UnicodeString" outType="xs:string" length="CertSubjectNameLength" />
+          <data name="CertThumbprintLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CertThumbprint" inType="win:UnicodeString" outType="xs:string" length="CertThumbprintLength" />
+          <data name="Expiring" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args1043_0">
+          <data name="CloseOperationDurationInMillieconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+          <data name="EndpointShutdown" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EndpointRemoved" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args1044_0">
+          <data name="ErrorCode" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Reason" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndpointNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndpointName" inType="win:UnicodeString" outType="xs:string" length="EndpointNameLength" />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+        </template>
+        <template tid="Args1045_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="SubjectLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Subject" inType="win:UnicodeString" outType="xs:string" length="SubjectLength" />
+          <data name="ThumbPrintLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThumbPrint" inType="win:UnicodeString" outType="xs:string" length="ThumbPrintLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="RemovedLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Removed" inType="win:UnicodeString" outType="xs:string" length="RemovedLength" />
+        </template>
+        <template tid="Args1046_0">
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="SessionID" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args1047_0">
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Smb2PerfBlock" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Threshold" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1048_0">
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AcquireLockTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IoTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Threshold" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1050_0">
+          <data name="InterfaceID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfEndpointsFound" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfEndpointsClosed" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1051_0">
+          <data name="ClientCipherSuiteOrderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCipherSuiteOrder" inType="win:UnicodeString" outType="xs:string" length="ClientCipherSuiteOrderLength" />
+          <data name="ServerCipherSuiteOrderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerCipherSuiteOrder" inType="win:UnicodeString" outType="xs:string" length="ServerCipherSuiteOrderLength" />
+        </template>
+        <template tid="Args1052_0">
+          <data name="SubjectLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Subject" inType="win:UnicodeString" outType="xs:string" length="SubjectLength" />
+          <data name="ThumbprintLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string" length="ThumbprintLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1053_0">
+          <data name="CountOfCertsTotal" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CountOfCertsRestored" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1054_0">
+          <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="ConnectionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="DurationInMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ThresholdInMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CtlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SubCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TunneledControl" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1055_0">
+          <data name="ActiveRdmaResourceCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1056_0">
+          <data name="NoOp" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1059_0">
+          <data name="IsSuccess" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LoadStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ServicePathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServicePath" inType="win:UnicodeString" outType="xs:string" length="ServicePathLength" />
+        </template>
+        <template tid="Args1060_0">
+          <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1061_0">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityMode" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Capabilities" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DialectCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MinSmb2Dialect" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="MaxSmb2Dialect" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+        </template>
+        <template tid="Args1062_0">
+          <data name="SmbDialect" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldDialect" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="NewDialect" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1080_0">
+          <data name="SrvNetComponentCapabilities" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PatchNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1801_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1803_0">
+          <data name="DescriptorName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1900_0">
+          <data name="IsTdiEnabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1902_0">
+          <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NetLuid" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1904_0">
+          <data name="NetLuid" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args1905_0">
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1906_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="SessionKeyLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequiredSessionKeyLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AuthProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1910_0">
+          <data name="CurrentDisableOverrideState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NewState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SrvNetIsRDMASupportEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ActionTaken" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1911_0">
+          <data name="FailureType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="MappingNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MappingName" inType="win:UnicodeString" outType="xs:string" length="MappingNameLength" />
+          <data name="ThumprintLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string" length="ThumprintLength" />
+        </template>
+        <template tid="Args1912_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+        </template>
+        <template tid="Args1913_0">
+          <data name="EndpointNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndpointName" inType="win:UnicodeString" outType="xs:string" length="EndpointNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ServerSocketAddressLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+          <data name="MutualAuthentication" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AccessControlCheck" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1914_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="EndpointNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndpointName" inType="win:UnicodeString" outType="xs:string" length="EndpointNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ServerSocketAddressLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+        </template>
+        <template tid="Args2000_0">
+          <data name="ReassembledEventID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentData" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize" />
+        </template>
+        <template tid="Args3004_0">
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ShareId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args3005_0">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ComputerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ComputerName" inType="win:UnicodeString" outType="xs:string" length="ComputerNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="DomainNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainName" inType="win:UnicodeString" outType="xs:string" length="DomainNameLength" />
+          <data name="DomainAndUserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainAndUserName" inType="win:UnicodeString" outType="xs:string" length="DomainAndUserNameLength" />
+          <data name="ClientOsLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientOs" inType="win:UnicodeString" outType="xs:string" length="ClientOsLength" />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="StartTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastActiveTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args3006_0">
+          <data name="ShareId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+        </template>
+        <template tid="Args3007_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+          <data name="SupportedHashAlgsStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SupportedHashAlgsStr" inType="win:UnicodeString" outType="xs:string" length="SupportedHashAlgsStrLength" />
+          <data name="CertChainPropertiesStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CertChainPropertiesStr" inType="win:UnicodeString" outType="xs:string" length="CertChainPropertiesStrLength" />
+          <data name="DenySidsStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DenySidsStr" inType="win:UnicodeString" outType="xs:string" length="DenySidsStrLength" />
+          <data name="AllowSidsStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AllowSidsStr" inType="win:UnicodeString" outType="xs:string" length="AllowSidsStrLength" />
+        </template>
+        <template tid="Args3009_0">
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+        </template>
+        <template tid="Args3010_0">
+          <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args3011_0">
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+          <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SrvInstances" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args3016_0">
+          <data name="Interface" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args3018_0">
+          <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProtocolType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3021_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="ServerRequiresSigning" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args3022_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="ServerRequiresEncryption" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SmbClientDoesNotSupportEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3024_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SPNValidationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3025_0">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="SPN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ServiceClassIsValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PrincipalNameIsValid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SPNValidationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4000_0">
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TreeId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SigningUsed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EncyptionUsed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CompressionUsed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args40000_0">
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PeerAddress" inType="win:Binary" outType="win:SocketAddress" length="PeerAddressLength" />
+          <data name="PacketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="PacketSize" />
+        </template>
+        <template tid="Args551_1">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+        </template>
+        <template tid="Args1005_1">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="ExpectedDialect" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ExpectedCapabilities" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ExpectedSecurityMode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ReceivedDialect" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ReceivedCapabilities" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ReceivedSecurityMode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SessionID" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1059_1">
+          <data name="IsSuccess" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LoadStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ServicePathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServicePath" inType="win:UnicodeString" outType="xs:string" length="ServicePathLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+        </template>
+        <template tid="Args1804_1">
+          <data name="Days" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1910_1">
+          <data name="CurrentDisableOverrideState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NewState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SrvNetEnableRdmaSupport" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SrvNetEvaluateRdmaEnabledPolicy" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SrvNetIsSMBDirectSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ActionTaken" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1914_1">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="EndpointNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="EndpointName" inType="win:UnicodeString" outType="xs:string" length="EndpointNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+        </template>
+        <template tid="Args3007_1">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+          <data name="SupportedHashAlgsStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SupportedHashAlgsStr" inType="win:UnicodeString" outType="xs:string" length="SupportedHashAlgsStrLength" />
+          <data name="CertChainPropertiesStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CertChainPropertiesStr" inType="win:UnicodeString" outType="xs:string" length="CertChainPropertiesStrLength" />
+          <data name="DenySidsStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DenySidsStr" inType="win:UnicodeString" outType="xs:string" length="DenySidsStrLength" />
+          <data name="AllowSidsStrLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AllowSidsStr" inType="win:UnicodeString" outType="xs:string" length="AllowSidsStrLength" />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+        </template>
+        <template tid="Args3009_1">
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ClientSocketAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientSocketAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientSocketAddressLength" />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+        </template>
+        <template tid="Args3021_1">
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ServerRequiresSigning" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VcNumber" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SecurityMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Capabilities" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousSessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args4_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string" length="PathLength" />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args5_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args8_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RequestedOplockLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ImpersonationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreateFlags" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RootDirectoryFid" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DesiredAccess" inType="win:Int32" outType="xs:int"  />
+          <data name="FileAttributes" inType="win:Int32" outType="xs:int"  />
+          <data name="ShareAccess" inType="win:Int32" outType="xs:int"  />
+          <data name="CreateDisposition" inType="win:Int32" outType="xs:int"  />
+          <data name="CreateOptions" inType="win:Int32" outType="xs:int"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="CreateContextsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LeaseLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args9_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CloseFlags" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args11_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MinimumCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemainingBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReadChannelInfoOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ReadChannelInfoLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args12_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Channel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemainingBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteChannelInfoOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WriteChannelInfoLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WriteFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args13_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OplockLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args14_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentLeaseState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewLeaseState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BreakReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AccessMaskHint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareMaskHint" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args15_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="LeaseKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args16_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LockCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args17_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ControlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoctlFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args18_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileInformationClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="QueryDirectoryFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FileIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OutputBufferLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args19_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ChangeNotifyFlags" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OutputBufferLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CompletionFilter" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args20_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InfoType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="InfoClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OutputBufferLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityInformation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueryInfoFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args21_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InfoType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="InfoClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SecurityInformation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OutputBufferLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputBuffer" inType="win:Binary" outType="xs:hexBinary" length="OutputBufferLength" />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args101_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityMode" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DialectRevision" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Capabilities" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxTransactSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxReadSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxWriteSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args102_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionFlags" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args104_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ShareType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ShareFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Capabilities" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaximalAccess" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args108_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OplockLevel" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CreateAction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastAccessTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastWriteTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastChangeTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocationSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="EndOfFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileAttributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateContextsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LeaseLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args109_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CloseFlags" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreationTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastAccessTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastWriteTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ChangeTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AllocationSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="EndOfFile" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileAttributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args111_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportDPHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportDPTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LengthRead" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args112_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportDPHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportDPTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LengthWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Remaining" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteChannelInfoOffset" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WriteChannelInfoLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args115_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LeaseFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LeaseDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="LeaseKey" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args117_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ControlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoctlFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args120_2">
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MasterMessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Srv2Instance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessingTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueueHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueueTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FileSystemSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FileSystemSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportFastHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportFastTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TransportSlowHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransportSlowTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SecurityHits" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecurityTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OutputBufferLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputBuffer" inType="win:Binary" outType="xs:hexBinary" length="OutputBufferLength" />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="TreeConnectGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="FileGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args551_2">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="SPN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SPNValidationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1051_2">
+          <data name="ClientCipherSuiteOrderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCipherSuiteOrder" inType="win:UnicodeString" outType="xs:string" length="ClientCipherSuiteOrderLength" />
+          <data name="ServerCipherSuiteOrderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerCipherSuiteOrder" inType="win:UnicodeString" outType="xs:string" length="ServerCipherSuiteOrderLength" />
+          <data name="ClientCipherCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LoggedClientCipherCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args551_3">
+          <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ConnectionGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TranslatedStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ClientAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientAddress" inType="win:Binary" outType="win:SocketAddress" length="ClientAddressLength" />
+          <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="ClientNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ClientName" inType="win:UnicodeString" outType="xs:string" length="ClientNameLength" />
+          <data name="SPN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SPNValidationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AllowListLoadFailed" />
+       <string id="string1" value="AlternativePortFirewallRuleAddFailure" />
+       <string id="string2" value="AlternativePortFirewallRuleAddSuccess" />
+       <string id="string3" value="AlternativePortFirewallRuleAlreadyAdded" />
+       <string id="string4" value="AuditSmb1Access" />
+       <string id="string5" value="Cert" />
+       <string id="string6" value="Connection" />
+       <string id="string7" value="Correlation" />
+       <string id="string8" value="File" />
+       <string id="string9" value="InsecureGuestLogon" />
+       <string id="string10" value="Interface" />
+       <string id="string11" value="IPInterfaceNotFound" />
+       <string id="string12" value="ListenerRule" />
+       <string id="string13" value="Microsoft-Windows-SMBServer" />
+       <string id="string14" value="Microsoft-Windows-SMBServer/Analytic" />
+       <string id="string15" value="Microsoft-Windows-SMBServer/Audit" />
+       <string id="string16" value="Microsoft-Windows-SMBServer/Connectivity" />
+       <string id="string17" value="Microsoft-Windows-SMBServer/Diagnostic" />
+       <string id="string18" value="Microsoft-Windows-SMBServer/Operational" />
+       <string id="string19" value="Microsoft-Windows-SMBServer/Performance" />
+       <string id="string20" value="Microsoft-Windows-SMBServer/Security" />
+       <string id="string21" value="MutualAuthClientAccessAllowed" />
+       <string id="string22" value="MutualAuthClientAccessDenied" />
+       <string id="string23" value="MutualAuthClientAccessError" />
+       <string id="string24" value="NoSmb1ObservedInLastPeriod" />
+       <string id="string25" value="Nsi" />
+       <string id="string26" value="NsiInterfaceAdded" />
+       <string id="string27" value="NsiInterfaceRemoved" />
+       <string id="string28" value="NsiTableAllocationFailed" />
+       <string id="string29" value="Operational" />
+       <string id="string30" value="Packet" />
+       <string id="string31" value="PacketEnd" />
+       <string id="string32" value="PacketFragment" />
+       <string id="string33" value="PacketStart" />
+       <string id="string34" value="PduFull" />
+       <string id="string35" value="PerfOptional" />
+       <string id="string36" value="Quic" />
+       <string id="string37" value="ReceivedNullReparseBuffer" />
+       <string id="string38" value="Request" />
+       <string id="string39" value="Response" />
+       <string id="string40" value="Rundown" />
+       <string id="string41" value="SecurityCertificateChanged" />
+       <string id="string42" value="ServerCertificateFailure" />
+       <string id="string43" value="ServerCertMappingExpired" />
+       <string id="string44" value="ServerCertMappingExpiring" />
+       <string id="string45" value="ServerCertMappingRestoreFailure" />
+       <string id="string46" value="ServerCertMappingRestoreSummary" />
+       <string id="string47" value="ServerCertMappingUpdateFailure" />
+       <string id="string48" value="Session" />
+       <string id="string49" value="Share" />
+       <string id="string50" value="ShareQosPolicySettingFailure" />
+       <string id="string51" value="Smb1ClientDoesNotSupportSigning" />
+       <string id="string52" value="Smb2CipherSuiteOrder" />
+       <string id="string53" value="Smb2ClientDoesNotSupportEncryption" />
+       <string id="string54" value="Smb2ClientDoesNotSupportSigning" />
+       <string id="string55" value="Smb2ClosedEndpointsOutsideUnicastIPTable" />
+       <string id="string56" value="Smb2CommandTimeDistribution" />
+       <string id="string57" value="Smb2ConnectionAccept" />
+       <string id="string58" value="Smb2ConnectionDisconnectEvent" />
+       <string id="string59" value="Smb2ConnectionTerminate" />
+       <string id="string60" value="Smb2DialectChange" />
+       <string id="string61" value="Smb2DirectDataPlacementSecurityChanged" />
+       <string id="string62" value="Smb2FileCCFClose" />
+       <string id="string63" value="Smb2FileCCFCloseAudit" />
+       <string id="string64" value="Smb2FileClose" />
+       <string id="string65" value="Smb2FileDisconnect" />
+       <string id="string66" value="Smb2FileOpen" />
+       <string id="string67" value="Smb2FileReconnect" />
+       <string id="string68" value="Smb2FileSuspend" />
+       <string id="string69" value="Smb2FileTerminate" />
+       <string id="string70" value="Smb2FileTimeout" />
+       <string id="string71" value="Smb2MaxClusterDialectUpdated" />
+       <string id="string72" value="Smb2MdlIoCompletionFailure" />
+       <string id="string73" value="Smb2RequestAcknowledgeBreakLease" />
+       <string id="string74" value="Smb2RequestBreakOplock" />
+       <string id="string75" value="Smb2RequestCancel" />
+       <string id="string76" value="Smb2RequestChangeNotify" />
+       <string id="string77" value="Smb2RequestClose" />
+       <string id="string78" value="Smb2RequestCreate" />
+       <string id="string79" value="Smb2RequestEcho" />
+       <string id="string80" value="Smb2RequestFlush" />
+       <string id="string81" value="Smb2RequestIoctl" />
+       <string id="string82" value="Smb2RequestLock" />
+       <string id="string83" value="Smb2RequestLogoff" />
+       <string id="string84" value="Smb2RequestNegotiate" />
+       <string id="string85" value="Smb2RequestNotifyBreakLease" />
+       <string id="string86" value="Smb2RequestQueryDirectory" />
+       <string id="string87" value="Smb2RequestQueryInfo" />
+       <string id="string88" value="Smb2RequestRead" />
+       <string id="string89" value="Smb2RequestSessionSetup" />
+       <string id="string90" value="Smb2RequestSetInfo" />
+       <string id="string91" value="Smb2RequestTreeConnect" />
+       <string id="string92" value="Smb2RequestTreeDisconnect" />
+       <string id="string93" value="Smb2RequestWrite" />
+       <string id="string94" value="Smb2ResponseAcknowledgeBreakLease" />
+       <string id="string95" value="Smb2ResponseBreakOplock" />
+       <string id="string96" value="Smb2ResponseChangeNotify" />
+       <string id="string97" value="Smb2ResponseClose" />
+       <string id="string98" value="Smb2ResponseCreate" />
+       <string id="string99" value="Smb2ResponseEcho" />
+       <string id="string100" value="Smb2ResponseError" />
+       <string id="string101" value="Smb2ResponseFlush" />
+       <string id="string102" value="Smb2ResponseIoctl" />
+       <string id="string103" value="Smb2ResponseLock" />
+       <string id="string104" value="Smb2ResponseLogoff" />
+       <string id="string105" value="Smb2ResponseNegotiate" />
+       <string id="string106" value="Smb2ResponseQueryDirectory" />
+       <string id="string107" value="Smb2ResponseQueryInfo" />
+       <string id="string108" value="Smb2ResponseRead" />
+       <string id="string109" value="Smb2ResponseSessionSetup" />
+       <string id="string110" value="Smb2ResponseSetInfo" />
+       <string id="string111" value="Smb2ResponseTreeConnect" />
+       <string id="string112" value="Smb2ResponseTreeDisconnect" />
+       <string id="string113" value="Smb2ResponseWrite" />
+       <string id="string114" value="Smb2RkfFailure" />
+       <string id="string115" value="Smb2SessionAllocate" />
+       <string id="string116" value="Smb2SessionAuthenticated" />
+       <string id="string117" value="Smb2SessionAuthFailure" />
+       <string id="string118" value="Smb2SessionBind" />
+       <string id="string119" value="Smb2SessionClose" />
+       <string id="string120" value="Smb2SessionTerminate" />
+       <string id="string121" value="Smb2ShareAdd" />
+       <string id="string122" value="Smb2ShareConnectionEstablished" />
+       <string id="string123" value="Smb2ShareDelete" />
+       <string id="string124" value="Smb2ShareModify" />
+       <string id="string125" value="Smb2SlowCommand" />
+       <string id="string126" value="Smb2TreeConnectAllocate" />
+       <string id="string127" value="Smb2TreeConnectDisconnect" />
+       <string id="string128" value="Smb2TreeConnectFailedDueToPending" />
+       <string id="string129" value="Smb2TreeConnectForceClientReconnect" />
+       <string id="string130" value="Smb2TreeConnectTerminate" />
+       <string id="string131" value="Smb2WorkItemActivityStop" />
+       <string id="string132" value="Smb2WorkItemActivityTransfer" />
+       <string id="string133" value="Smb2WorkItemStart" />
+       <string id="string134" value="Smb2WorkItemStop" />
+       <string id="string135" value="Smb2WorkItemTransition" />
+       <string id="string136" value="Srv2LiveDumpSucceeded" />
+       <string id="string137" value="Srv2LiveDumpThrotteled" />
+       <string id="string138" value="Srv2RDMACreateListenerFailure" />
+       <string id="string139" value="Srv2RDMAEndpointAllocationFailure" />
+       <string id="string140" value="Srv2RDMAEndpointChange" />
+       <string id="string141" value="Srv2RDMAMibNotificationReceived" />
+       <string id="string142" value="Srv2RDMANsiNotificationReceived" />
+       <string id="string143" value="Srv2RDMASendEndpointNotification" />
+       <string id="string144" value="Srv2RDMASendEndpointNotificationFailure" />
+       <string id="string145" value="Srv2RDMASendEndpointNotificationRPCFailure" />
+       <string id="string146" value="Srv2SessionKeyTooShort" />
+       <string id="string147" value="SrvABESharesPresent" />
+       <string id="string148" value="SrvAdminFileRundown" />
+       <string id="string149" value="SrvAdminFsctlPropertiesListReadingFailure" />
+       <string id="string150" value="SrvAdminSessionRundown" />
+       <string id="string151" value="SrvAdminShareRundown" />
+       <string id="string152" value="SrvDecryptionFailure" />
+       <string id="string153" value="SrvDisabled" />
+       <string id="string154" value="SrvEmptyParameterTemplate" />
+       <string id="string155" value="SrvEndpointAdded" />
+       <string id="string156" value="SrvEndpointOffline" />
+       <string id="string157" value="SrvEndpointOnline" />
+       <string id="string158" value="SrvEndpointRemoved" />
+       <string id="string159" value="SrvFileInvalidate" />
+       <string id="string160" value="SrvFileSharingFirewallRuleEnabled" />
+       <string id="string161" value="SrvFirewallPortsClosed" />
+       <string id="string162" value="SrvHandleScavenge" />
+       <string id="string163" value="SrvLeasingDisabled" />
+       <string id="string164" value="SrvLmCompatibilityLevelNonDefault" />
+       <string id="string165" value="SrvNegotiateCipherFailure" />
+       <string id="string166" value="SrvNegotiateValidationFailure" />
+       <string id="string167" value="SrvNetAddEndpointListenerRuleFailure" />
+       <string id="string168" value="SrvNetAddEndpointListenerRulePortNotSupported" />
+       <string id="string169" value="SrvNetAddEndpointListenerRuleSuccess" />
+       <string id="string170" value="SrvNetAddListenerRuleNew" />
+       <string id="string171" value="SrvNetAddListenerRuleRemove" />
+       <string id="string172" value="SrvNetAddListenerRuleUpdate" />
+       <string id="string173" value="SrvNetClientCertificateChainRevocationChecksFailed" />
+       <string id="string174" value="SrvNetClientDoesNotSupportSpn" />
+       <string id="string175" value="SrvNetClientSentEmptySpn" />
+       <string id="string176" value="SrvNetClientSentUnrecognizedSpn" />
+       <string id="string177" value="SrvNetComponentCapabilities" />
+       <string id="string178" value="SrvNetConnectionEstablished" />
+       <string id="string179" value="SrvNetDisableImplicitLoopbackInterfaceError" />
+       <string id="string180" value="SrvNetEnableImplicitLoopbackInterfaceError" />
+       <string id="string181" value="SrvNetEventDisableRdmaListenSocketsState" />
+       <string id="string182" value="SrvNetGetNextIdFailure" />
+       <string id="string183" value="SrvNetNameInfoChange" />
+       <string id="string184" value="SrvNetQuicSendEndpointNotificationFailure" />
+       <string id="string185" value="SrvNetQuicShutdownFailure" />
+       <string id="string186" value="SrvNetRdmaConnectionClosed" />
+       <string id="string187" value="SrvNetRdmaReactivation" />
+       <string id="string188" value="SrvNetRdmaReactivationComplete" />
+       <string id="string189" value="SrvNetRdmaRundownActive" />
+       <string id="string190" value="SrvNetRdmaRundownComplete" />
+       <string id="string191" value="SrvNetSmbDirectLoad" />
+       <string id="string192" value="SrvNoNegotiatedCipher" />
+       <string id="string193" value="SrvNullSessionsAllowed" />
+       <string id="string194" value="SrvReopenFailure" />
+       <string id="string195" value="SrvS4U2SelfFailure" />
+       <string id="string196" value="SrvSessionAnonymousAccessDenied" />
+       <string id="string197" value="SrvSessionInvalidate" />
+       <string id="string198" value="SrvShareAccessCheckFailure" />
+       <string id="string199" value="SrvShareAnonymousAccessDeniedFailure" />
+       <string id="string200" value="SrvSignatureValidationFailure" />
+       <string id="string201" value="SrvSlowFsOperation" />
+       <string id="string202" value="SrvSlowNetworkOperation" />
+       <string id="string203" value="SrvSmb2Disabled" />
+       <string id="string204" value="SrvUnencryptedAcccessFailure" />
+       <string id="string205" value="SSClusterCaFailure" />
+       <string id="string206" value="SSRkfCaFailure" />
+       <string id="string207" value="TdiModeEnabled" />
+       <string id="string208" value="Transition" />
+       <string id="string209" value="TreeConnect" />
+       <string id="string210" value="UninstallSmb1Server" />
+       <string id="string211" value="ut:Packet" />
+       <string id="string212" value="ut:ReceivePath" />
+       <string id="string213" value="ut:SendPath" />
+       <string id="string214" value="win:Info" />
+       <string id="string215" value="win:Send" />
+       <string id="string216" value="win:Start" />
+       <string id="string217" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Sensors-Core-Performance" name="Microsoft-Windows-Sensors-Core-Performance" guid="{9e051eaa-7fee-4f9f-8897-d86f3692e8af}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Verbose"  task="SensorsIoctlTask" opcode="win:Start" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Verbose"  task="SensorsIoctlTask" opcode="win:Stop"/>
+        <event value="1003" version="0" level="win:Verbose"  task="CollectionListSerializationTask" opcode="win:Start" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Verbose"  task="CollectionListSerializationTask" opcode="win:Stop"/>
+        <event value="1005" version="0" level="win:Verbose"  task="CollectionListAllocateAndSerializationTask" opcode="win:Start"/>
+        <event value="1006" version="0" level="win:Verbose"  task="CollectionListAllocateAndSerializationTask" opcode="win:Stop"/>
+        <event value="1007" version="0" level="win:Verbose"  task="CollectionListDeserializationTask" opcode="win:Start"/>
+        <event value="1008" version="0" level="win:Verbose"  task="CollectionListDeserializationTask" opcode="win:Stop"/>
+        <event value="1009" version="0" level="win:Verbose"  task="SensorsNativeIoctlTask" opcode="win:Start"/>
+        <event value="1010" version="0" level="win:Verbose"  task="SensorsNativeIoctlTask" opcode="win:Stop"/>
+        <event value="1011" version="0" level="win:Verbose"  task="NativeToCxIoctlTransferTask" opcode="win:Start"/>
+        <event value="1012" version="0" level="win:Verbose"  task="NativeToCxIoctlTransferTask" opcode="win:Stop"/>
+        <event value="1013" version="0" level="win:Verbose"  task="CxToNativeIoctlTransferTask" opcode="win:Start"/>
+        <event value="1014" version="0" level="win:Verbose"  task="CxToNativeIoctlTransferTask" opcode="win:Stop"/>
+        <event value="1015" version="0" level="win:Verbose"  task="SensorsCxReadTask" opcode="win:Start" template="Args1015_0"/>
+        <event value="1016" version="0" level="win:Verbose"  task="SensorsCxReadTask" opcode="win:Stop"/>
+        <event value="1017" version="0" level="win:Verbose"  task="NativeToCxReadTransferTask" opcode="win:Start"/>
+        <event value="1018" version="0" level="win:Verbose"  task="NativeToCxReadTransferTask" opcode="win:Stop"/>
+        <event value="1019" version="0" level="win:Verbose"  task="CxToNativeReadTransferTask" opcode="win:Start"/>
+        <event value="1020" version="0" level="win:Verbose"  task="CxToNativeReadTransferTask" opcode="win:Stop"/>
+        <event value="1021" version="0" level="win:Verbose"  task="SensorSubscription" opcode="win:Info" template="Args1021_0"/>
+        <event value="1022" version="0" level="win:Verbose"  task="SensorsCxReadTask" opcode="win:Info" template="Args1022_0"/>
+        <event value="1023" version="0" level="win:Verbose"  task="SensorsCxReadTask" opcode="win:Info" template="Args1023_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="101" name="SensorsIoctlTask" message="$(string.string101)">
+        </task>
+        <task value="102" name="CollectionListSerializationTask" message="$(string.string102)">
+        </task>
+        <task value="103" name="CollectionListAllocateAndSerializationTask" message="$(string.string103)">
+        </task>
+        <task value="104" name="CollectionListDeserializationTask" message="$(string.string104)">
+        </task>
+        <task value="105" name="SensorsNativeIoctlTask" message="$(string.string105)">
+        </task>
+        <task value="106" name="SensorsCxReadTask" message="$(string.string106)">
+        </task>
+        <task value="107" name="NativeToCxIoctlTransferTask" message="$(string.string107)">
+        </task>
+        <task value="108" name="CxToNativeIoctlTransferTask" message="$(string.string108)">
+        </task>
+        <task value="109" name="NativeToCxReadTransferTask" message="$(string.string109)">
+        </task>
+        <task value="110" name="CxToNativeReadTransferTask" message="$(string.string110)">
+        </task>
+        <task value="111" name="SensorSubscription" message="$(string.string111)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="IoctlType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SensorObj" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="PayloadSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1015_0">
+          <data name="SensorObj" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CollectionListPtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1021_0">
+          <data name="Driver" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sensor" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ClientPID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Type" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Interval" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1022_0">
+          <data name="Sensor" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DriverCollectionList" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1023_0">
+          <data name="Sensor" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DriverCollectionList" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferCollectionList" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CollectionListAllocateAndSerializationTask" />
+       <string id="string1" value="CollectionListDeserializationTask" />
+       <string id="string2" value="CollectionListSerializationTask" />
+       <string id="string3" value="CxToNativeIoctlTransferTask" />
+       <string id="string4" value="CxToNativeReadTransferTask" />
+       <string id="string5" value="Microsoft-Windows-Sensors-Core-Performance" />
+       <string id="string6" value="NativeToCxIoctlTransferTask" />
+       <string id="string7" value="NativeToCxReadTransferTask" />
+       <string id="string8" value="SensorsCxReadTask" />
+       <string id="string9" value="SensorsIoctlTask" />
+       <string id="string10" value="SensorsNativeIoctlTask" />
+       <string id="string11" value="SensorSubscription" />
+       <string id="string12" value="win:Info" />
+       <string id="string13" value="win:Start" />
+       <string id="string14" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

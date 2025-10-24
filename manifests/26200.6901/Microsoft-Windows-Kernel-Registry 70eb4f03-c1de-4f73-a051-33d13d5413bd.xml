@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Registry" name="Microsoft-Windows-Kernel-Registry" guid="{70eb4f03-c1de-4f73-a051-33d13d5413bd}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="CreateKey" keywords="CreateKey" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="OpenKey" keywords="OpenKey"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="DeleteKey" keywords="DeleteKey" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="QueryKey" keywords="QueryKey" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="SetValueKey" keywords="SetValueKey" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="DeleteValueKey" keywords="DeleteValueKey"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="QueryValueKey" keywords="QueryValueKey" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="EnumerateKey" keywords="EnumerateKey" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="EnumerateValueKey" keywords="EnumerateValueKey"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="QueryMultipleValueKey" keywords="QueryMultipleValueKey" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="SetInformationKey" keywords="SetInformationKey"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="FlushKey" keywords="FlushKey"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="CloseKey" keywords="CloseKey"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="QuerySecurityKey" keywords="QuerySecurityKey"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Analytic" opcode="SetSecurityKey" keywords="SetSecurityKey"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveMount" opcode="win:Start"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveMount" opcode="RegPerfOpHiveMountBaseFileMounted" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveMount" opcode="RegPerfOpHiveMountLogEntryApplied" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveMount" opcode="win:Stop" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveUnload" opcode="win:Start" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveUnload" opcode="win:Stop"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="win:Start" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushBecameActiveFlusher"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushGatheredLogData" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushGatheredPrimaryData"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushWroteLogFile" template="Args26_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushWrotePrimaryFile"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushBoostedActiveFlusher"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushStartWaitForActive"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="RegPerfOpHiveFlushFinishWaitForActive"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveFlush" opcode="win:Stop"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskShutdown" opcode="win:Start"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskShutdown" opcode="win:Start"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskShutdown" opcode="RegPerfOpShutdownFlushStart"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskShutdown" opcode="RegPerfOpShutdownFlushStop"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskShutdown" opcode="win:Stop"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveLoad" opcode="win:Start" template="Args37_0"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveLoad" opcode="win:Stop"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveRestore" opcode="win:Start"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveRestore" opcode="win:Stop"/>
+        <event value="41" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveSave" opcode="win:Start" template="Args41_0"/>
+        <event value="42" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveSave" opcode="RegPerfOpSaveFileCopied"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveSave" opcode="RegPerfOpSaveTreeCopied"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveSave" opcode="RegPerfOpSaveFileWritten"/>
+        <event value="45" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Registry/Performance" task="RegPerfTaskHiveSave" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-Registry/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Kernel-Registry/Performance" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="CloseKey" mask="0x1" message="$(string.string0)" />
+        <keyword name="QuerySecurityKey" mask="0x2" message="$(string.string13)" />
+        <keyword name="SetSecurityKey" mask="0x4" message="$(string.string39)" />
+        <keyword name="EnumerateValueKey" mask="0x10" message="$(string.string5)" />
+        <keyword name="QueryMultipleValueKey" mask="0x20" message="$(string.string12)" />
+        <keyword name="SetInformationKey" mask="0x40" message="$(string.string38)" />
+        <keyword name="FlushKey" mask="0x80" message="$(string.string6)" />
+        <keyword name="SetValueKey" mask="0x100" message="$(string.string40)" />
+        <keyword name="DeleteValueKey" mask="0x200" message="$(string.string3)" />
+        <keyword name="QueryValueKey" mask="0x400" message="$(string.string14)" />
+        <keyword name="EnumerateKey" mask="0x800" message="$(string.string4)" />
+        <keyword name="CreateKey" mask="0x1000" message="$(string.string1)" />
+        <keyword name="OpenKey" mask="0x2000" message="$(string.string10)" />
+        <keyword name="DeleteKey" mask="0x4000" message="$(string.string2)" />
+        <keyword name="QueryKey" mask="0x8000" message="$(string.string11)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="RegPerfTaskHiveMount" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="RegPerfOpHiveMountBaseFileMounted" message="$(string.string23)"/>
+           <opcode value="11" name="RegPerfOpHiveMountLogEntryApplied" message="$(string.string24)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="RegPerfTaskHiveUnload" message="$(string.string2)">
+        </task>
+        <task value="3" name="RegPerfTaskHiveFlush" message="$(string.string3)">
+          <opcodes>
+           <opcode value="10" name="RegPerfOpHiveFlushBecameActiveFlusher" message="$(string.string15)"/>
+           <opcode value="11" name="RegPerfOpHiveFlushGatheredLogData" message="$(string.string18)"/>
+           <opcode value="12" name="RegPerfOpHiveFlushGatheredPrimaryData" message="$(string.string19)"/>
+           <opcode value="13" name="RegPerfOpHiveFlushWroteLogFile" message="$(string.string21)"/>
+           <opcode value="14" name="RegPerfOpHiveFlushWrotePrimaryFile" message="$(string.string22)"/>
+           <opcode value="15" name="RegPerfOpHiveFlushBoostedActiveFlusher" message="$(string.string16)"/>
+           <opcode value="16" name="RegPerfOpHiveFlushStartWaitForActive" message="$(string.string20)"/>
+           <opcode value="17" name="RegPerfOpHiveFlushFinishWaitForActive" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="RegPerfTaskShutdown" message="$(string.string4)">
+          <opcodes>
+           <opcode value="10" name="RegPerfOpShutdownRundownComplete" message="$(string.string30)"/>
+           <opcode value="11" name="RegPerfOpShutdownFlushStart" message="$(string.string28)"/>
+           <opcode value="12" name="RegPerfOpShutdownFlushStop" message="$(string.string29)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="RegPerfTaskHiveLoad" message="$(string.string5)">
+        </task>
+        <task value="6" name="RegPerfTaskHiveRestore" message="$(string.string6)">
+        </task>
+        <task value="7" name="RegPerfTaskHiveSave" message="$(string.string7)">
+          <opcodes>
+           <opcode value="10" name="RegPerfOpSaveFileCopied" message="$(string.string25)"/>
+           <opcode value="11" name="RegPerfOpSaveTreeCopied" message="$(string.string27)"/>
+           <opcode value="12" name="RegPerfOpSaveFileWritten" message="$(string.string26)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="32" name="CreateKey" message="$(string.string1)"/>
+        <opcode value="33" name="OpenKey" message="$(string.string10)"/>
+        <opcode value="34" name="DeleteKey" message="$(string.string2)"/>
+        <opcode value="35" name="QueryKey" message="$(string.string11)"/>
+        <opcode value="36" name="SetValueKey" message="$(string.string40)"/>
+        <opcode value="37" name="DeleteValueKey" message="$(string.string3)"/>
+        <opcode value="38" name="QueryValueKey" message="$(string.string14)"/>
+        <opcode value="39" name="EnumerateKey" message="$(string.string4)"/>
+        <opcode value="40" name="EnumerateValueKey" message="$(string.string5)"/>
+        <opcode value="41" name="QueryMultipleValueKey" message="$(string.string12)"/>
+        <opcode value="42" name="SetInformationKey" message="$(string.string38)"/>
+        <opcode value="43" name="FlushKey" message="$(string.string6)"/>
+        <opcode value="44" name="CloseKey" message="$(string.string0)"/>
+        <opcode value="45" name="QuerySecurityKey" message="$(string.string13)"/>
+        <opcode value="46" name="SetSecurityKey" message="$(string.string39)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="BaseObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Disposition" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BaseName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RelativeName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize" />
+        </template>
+        <template tid="Args5_0">
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ValueName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize" />
+          <data name="PreviousDataType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousDataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousDataCapturedSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PreviousData" inType="win:Binary" outType="xs:hexBinary" length="PreviousDataCapturedSize" />
+        </template>
+        <template tid="Args7_0">
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ValueName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize" />
+        </template>
+        <template tid="Args8_0">
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize" />
+        </template>
+        <template tid="Args10_0">
+          <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="KeyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="HiveFilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="TotalEntrySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesRecovered" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="HiveFilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HiveMountPoint" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="HiveFilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HiveMountPoint" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FlushFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="BytesGathered" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="WritesIssued" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesWritten" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="SourceFile" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args41_0">
+          <data name="SourceKeyPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CloseKey" />
+       <string id="string1" value="CreateKey" />
+       <string id="string2" value="DeleteKey" />
+       <string id="string3" value="DeleteValueKey" />
+       <string id="string4" value="EnumerateKey" />
+       <string id="string5" value="EnumerateValueKey" />
+       <string id="string6" value="FlushKey" />
+       <string id="string7" value="Microsoft-Windows-Kernel-Registry" />
+       <string id="string8" value="Microsoft-Windows-Kernel-Registry/Analytic" />
+       <string id="string9" value="Microsoft-Windows-Kernel-Registry/Performance" />
+       <string id="string10" value="OpenKey" />
+       <string id="string11" value="QueryKey" />
+       <string id="string12" value="QueryMultipleValueKey" />
+       <string id="string13" value="QuerySecurityKey" />
+       <string id="string14" value="QueryValueKey" />
+       <string id="string15" value="RegPerfOpHiveFlushBecameActiveFlusher" />
+       <string id="string16" value="RegPerfOpHiveFlushBoostedActiveFlusher" />
+       <string id="string17" value="RegPerfOpHiveFlushFinishWaitForActive" />
+       <string id="string18" value="RegPerfOpHiveFlushGatheredLogData" />
+       <string id="string19" value="RegPerfOpHiveFlushGatheredPrimaryData" />
+       <string id="string20" value="RegPerfOpHiveFlushStartWaitForActive" />
+       <string id="string21" value="RegPerfOpHiveFlushWroteLogFile" />
+       <string id="string22" value="RegPerfOpHiveFlushWrotePrimaryFile" />
+       <string id="string23" value="RegPerfOpHiveMountBaseFileMounted" />
+       <string id="string24" value="RegPerfOpHiveMountLogEntryApplied" />
+       <string id="string25" value="RegPerfOpSaveFileCopied" />
+       <string id="string26" value="RegPerfOpSaveFileWritten" />
+       <string id="string27" value="RegPerfOpSaveTreeCopied" />
+       <string id="string28" value="RegPerfOpShutdownFlushStart" />
+       <string id="string29" value="RegPerfOpShutdownFlushStop" />
+       <string id="string30" value="RegPerfOpShutdownRundownComplete" />
+       <string id="string31" value="RegPerfTaskHiveFlush" />
+       <string id="string32" value="RegPerfTaskHiveLoad" />
+       <string id="string33" value="RegPerfTaskHiveMount" />
+       <string id="string34" value="RegPerfTaskHiveRestore" />
+       <string id="string35" value="RegPerfTaskHiveSave" />
+       <string id="string36" value="RegPerfTaskHiveUnload" />
+       <string id="string37" value="RegPerfTaskShutdown" />
+       <string id="string38" value="SetInformationKey" />
+       <string id="string39" value="SetSecurityKey" />
+       <string id="string40" value="SetValueKey" />
+       <string id="string41" value="win:Start" />
+       <string id="string42" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

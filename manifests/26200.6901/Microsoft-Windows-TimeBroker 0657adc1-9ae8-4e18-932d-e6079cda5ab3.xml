@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TimeBroker" name="Microsoft-Windows-TimeBroker" guid="{0657adc1-9ae8-4e18-932d-e6079cda5ab3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="1" level="win:Verbose"  channel="TimeBroker" keywords="EventState" template="Args1_1"/>
+        <event value="2" version="1" level="win:Verbose"  channel="TimeBroker" keywords="EventState" template="Args2_1"/>
+        <event value="3" version="1" level="win:Informational"  channel="TimeBroker" keywords="Api" template="Args3_1"/>
+        <event value="4" version="1" level="win:Informational"  channel="TimeBroker" keywords="Api"/>
+      </events>
+      <channels>
+        <channel value="16" name="TimeBroker" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Api" mask="0x1" message="$(string.string0)" />
+        <keyword name="EventState" mask="0x2" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_1">
+          <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="StartTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="EndTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args3_1">
+          <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:Win32Error"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Api" />
+       <string id="string1" value="EventState" />
+       <string id="string2" value="Microsoft-Windows-TimeBroker" />
+       <string id="string3" value="TimeBroker" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

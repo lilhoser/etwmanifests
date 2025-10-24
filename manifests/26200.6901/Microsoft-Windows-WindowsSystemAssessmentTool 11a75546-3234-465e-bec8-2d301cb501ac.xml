@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WindowsSystemAssessmentTool" name="Microsoft-Windows-WindowsSystemAssessmentTool" guid="{11a75546-3234-465e-bec8-2d301cb501ac}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  task="Application" opcode="win:Info" template="Args0_0"/>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Start" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info" template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Stop" template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info" template="Args4_0"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info" template="Args5_0"/>
+        <event value="6" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info"/>
+        <event value="7" version="0" level="Log Always"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info"/>
+        <event value="8" version="0" level="win:Informational"  task="Application" opcode="win:Info" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" task="Application" opcode="win:Info"/>
+        <event value="11" version="0" level="win:Informational"  task="Application" opcode="win:Info"/>
+        <event value="12" version="0" level="win:Informational"  task="Application" opcode="win:Info"/>
+        <event value="13" version="0" level="win:Informational"  task="Application" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-WindowsSystemAssessmentTool/Tracing" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="Application" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="TestV1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TestV2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TestV3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TestV4" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1_0">
+          <data name="StartTimeOfDay" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="CommandLineSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CommandLine" inType="win:UnicodeString" outType="xs:string" length="CommandLineSize" />
+        </template>
+        <template tid="Args3_0">
+          <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Win32Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CantMsgSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CantMsg" inType="win:UnicodeString" outType="xs:string" length="CantMsgSize" />
+        </template>
+        <template tid="Args5_0">
+          <data name="FailingHresult" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="FailingInterfaceCLSID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SourceSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Source" inType="win:UnicodeString" outType="xs:string" length="SourceSize" />
+          <data name="InfterfaceSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="InfterfaceSize" />
+          <data name="ErrorMsgSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string" length="ErrorMsgSize" />
+          <data name="CantMsgSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CantMsg" inType="win:UnicodeString" outType="xs:string" length="CantMsgSize" />
+        </template>
+        <template tid="Args8_0">
+          <data name="MessageSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string" length="MessageSize" />
+        </template>
+        <template tid="Args9_0">
+          <data name="PhaseID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DescriptionSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string" length="DescriptionSize" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Microsoft-Windows-WindowsSystemAssessmentTool" />
+       <string id="string2" value="Microsoft-Windows-WindowsSystemAssessmentTool/Operational" />
+       <string id="string3" value="Microsoft-Windows-WindowsSystemAssessmentTool/Tracing" />
+       <string id="string4" value="win:Info" />
+       <string id="string5" value="win:Start" />
+       <string id="string6" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

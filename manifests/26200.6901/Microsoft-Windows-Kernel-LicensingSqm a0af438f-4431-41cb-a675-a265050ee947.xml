@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-LicensingSqm" name="Microsoft-Windows-Kernel-LicensingSqm" guid="{a0af438f-4431-41cb-a675-a265050ee947}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="6" version="0" level="win:Informational"  template="Args6_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args6_0">
+          <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SqmDWORDDatapointValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Kernel-LicensingSqm" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

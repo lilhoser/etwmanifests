@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WinINet-Config" name="Microsoft-Windows-WinINet-Config" guid="{5402e5ea-1bdd-4390-82be-e108f1e634f5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5600" version="0" level="win:Informational"  channel="Microsoft-Windows-WinINet-Config/ProxyConfigChanged" template="Args5600_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WinINet-Config/ProxyConfigChanged" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args5600_0">
+          <data name="fAutoDetect" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pwszAutoConfigUrl" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwszProxy" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwszProxyBypass" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WinINet-Config" />
+       <string id="string1" value="Microsoft-Windows-WinINet-Config/ProxyConfigChanged" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

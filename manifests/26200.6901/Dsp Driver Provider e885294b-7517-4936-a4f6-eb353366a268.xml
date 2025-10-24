@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="" name="" guid="{00000000-0000-0000-0000-000000000000}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+      </events>
+      <channels>
+        <channel value="16" name="Dsp Driver Provider/DSP_ETW_Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Vision" mask="0x1" message="$(string.string9)" />
+        <keyword name="HAL" mask="0x2" message="$(string.string2)" />
+        <keyword name="AudioDspFw" mask="0x4" message="$(string.string0)" />
+        <keyword name="tools_reserved" mask="0x40000000000" message="$(string.string8)" />
+        <keyword name="output_WPP" mask="0x80000000000" message="$(string.string7)" />
+        <keyword name="output_SRAM" mask="0x100000000000" message="$(string.string6)" />
+        <keyword name="output_PTI" mask="0x200000000000" message="$(string.string5)" />
+        <keyword name="output_local" mask="0x400000000000" message="$(string.string3)" />
+        <keyword name="output_NPK" mask="0x800000000000" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AudioDspFw" />
+       <string id="string1" value="Dsp Driver Provider/DSP_ETW_Debug" />
+       <string id="string2" value="HAL" />
+       <string id="string3" value="output_local" />
+       <string id="string4" value="output_NPK" />
+       <string id="string5" value="output_PTI" />
+       <string id="string6" value="output_SRAM" />
+       <string id="string7" value="output_WPP" />
+       <string id="string8" value="tools_reserved" />
+       <string id="string9" value="Vision" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

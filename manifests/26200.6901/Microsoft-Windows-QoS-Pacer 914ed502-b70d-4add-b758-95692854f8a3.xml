@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-QoS-Pacer" name="Microsoft-Windows-QoS-Pacer" guid="{914ed502-b70d-4add-b758-95692854f8a3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" keywords="ut:Configuration" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" keywords="ut:Configuration" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" keywords="ut:Global" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Stop" keywords="ut:Configuration" template="Args6_0"/>
+        <event value="7" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:Dropped ut:Packet" template="Args7_0"/>
+        <event value="8" version="0" level="win:Warning"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:Packet" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:Global" template="Args9_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:SendPath" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:SendPath" template="Args12_0"/>
+        <event value="13" version="0" level="win:Verbose"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:SendPath" template="Args13_0"/>
+        <event value="14" version="0" level="win:Verbose"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:SendPath" template="Args14_0"/>
+        <event value="15" version="0" level="win:Verbose"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:SendPath" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:SendPath" template="Args16_0"/>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Start" keywords="ut:Configuration" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:Configuration" template="Args2_1"/>
+        <event value="3" version="1" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:Global" template="Args3_1"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-QoS-Pacer/Diagnostic" opcode="win:Info" keywords="ut:Global"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-QoS-Pacer/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="ut:SendPath" mask="0x100000000" message="$(string.string13)" />
+        <keyword name="ut:ReceivePath" mask="0x200000000" message="$(string.string12)" />
+        <keyword name="ut:L3ConnectPath" mask="0x400000000" message="$(string.string9)" />
+        <keyword name="ut:L2ConnectPath" mask="0x800000000" message="$(string.string8)" />
+        <keyword name="ut:ClosePath" mask="0x1000000000" message="$(string.string4)" />
+        <keyword name="ut:Authentication" mask="0x2000000000" message="$(string.string3)" />
+        <keyword name="ut:Configuration" mask="0x4000000000" message="$(string.string5)" />
+        <keyword name="ut:Global" mask="0x8000000000" message="$(string.string7)" />
+        <keyword name="ut:Dropped" mask="0x10000000000" message="$(string.string6)" />
+        <keyword name="ut:PiiPresent" mask="0x20000000000" message="$(string.string11)" />
+        <keyword name="ut:Packet" mask="0x40000000000" message="$(string.string10)" />
+        <keyword name="ut:Address" mask="0x80000000000" message="$(string.string2)" />
+        <keyword name="ut:StdTemplateHint" mask="0x100000000000" message="$(string.string15)" />
+        <keyword name="ut:StateTransition" mask="0x200000000000" message="$(string.string14)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="QoSObjectBufferLen" />
+        </template>
+        <template tid="Args2_0">
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OldSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NewSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewQoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewQoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="NewQoSObjectBufferLen" />
+        </template>
+        <template tid="Args3_0">
+          <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="NdisMediumType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OldSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NewSendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewQoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewQoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="NewQoSObjectBufferLen" />
+          <data name="AffectedPackets" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="DroppedPackets" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketsScheduled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketsTransmitted" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesScheduled" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesTransmitted" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NblSent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NblComplete" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="DsClass" inType="win:Int16" outType="xs:short"  />
+          <data name="TrafficClass" inType="win:Int16" outType="xs:short"  />
+          <data name="Wmm" inType="win:Int16" outType="xs:short"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="Allow" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesDropped" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinSendWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Weight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SBytesRequested" inType="win:Int64" outType="xs:long"  />
+          <data name="DropRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleIntervals" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RcSendWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RcEpisodeLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RcStatMuxFactor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RcExitThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AverageMaxBytesRequested" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ActiveFlows" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveWeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewSendWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="FlowConformanceEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastConformanceTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PeakConformanceTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Tokens" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxTokens" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Rate" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LastConformanceCredits" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="FlowSendQueueEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DelayTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesRequested" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesQueued" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="TimerEvent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SetTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RunTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FlowsProcessed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NblsSent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NblsDropped" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="NetLuid" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="CurrentTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesRequested" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesCompleted" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BytesInQueue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferAvailable" inType="win:Int64" outType="xs:long"  />
+          <data name="BetaTerm" inType="win:Int64" outType="xs:long"  />
+          <data name="AlphaTerm" inType="win:Int64" outType="xs:long"  />
+          <data name="DeltaSendWindow" inType="win:Int64" outType="xs:long"  />
+          <data name="NewSendWindow" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1_1">
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DsClass" inType="win:Int16" outType="xs:short"  />
+          <data name="TrafficClass" inType="win:Int16" outType="xs:short"  />
+          <data name="QoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="QoSObjectBufferLen" />
+          <data name="DefaultSystemFlow" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="FlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.TokenRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.ServiceType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SendSpec.MaxSduSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendSpec.MinimumPolicedSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DsClass" inType="win:Int16" outType="xs:short"  />
+          <data name="TrafficClass" inType="win:Int16" outType="xs:short"  />
+          <data name="NewQoSObjectBufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewQoSObjectBuffer" inType="win:Binary" outType="xs:hexBinary" length="NewQoSObjectBufferLen" />
+          <data name="AffectedPackets" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_1">
+          <data name="NetLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="NdisMediumType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FriendlyNameLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string" length="FriendlyNameLen" />
+          <data name="DeviceNameLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLen" />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-QoS-Pacer" />
+       <string id="string1" value="Microsoft-Windows-QoS-Pacer/Diagnostic" />
+       <string id="string2" value="ut:Address" />
+       <string id="string3" value="ut:Authentication" />
+       <string id="string4" value="ut:ClosePath" />
+       <string id="string5" value="ut:Configuration" />
+       <string id="string6" value="ut:Dropped" />
+       <string id="string7" value="ut:Global" />
+       <string id="string8" value="ut:L2ConnectPath" />
+       <string id="string9" value="ut:L3ConnectPath" />
+       <string id="string10" value="ut:Packet" />
+       <string id="string11" value="ut:PiiPresent" />
+       <string id="string12" value="ut:ReceivePath" />
+       <string id="string13" value="ut:SendPath" />
+       <string id="string14" value="ut:StateTransition" />
+       <string id="string15" value="ut:StdTemplateHint" />
+       <string id="string16" value="win:Info" />
+       <string id="string17" value="win:Start" />
+       <string id="string18" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UserDataAccess-UserDataUtils" name="Microsoft-Windows-UserDataAccess-UserDataUtils" guid="{d1f688bf-012f-4aec-a38c-e7d4649f8cd2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  keywords="Error" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="3" version="0" level="win:Verbose"  task="tracemessage" keywords="debug" template="Args3_0"/>
+        <event value="101" version="0" level="win:Error"  keywords="Error" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  keywords="ServiceBase ms:Measures"/>
+        <event value="103" version="0" level="win:Informational"  keywords="ServiceBase"/>
+        <event value="104" version="0" level="win:Informational"  keywords="ServiceBase ms:Measures"/>
+        <event value="105" version="0" level="win:Informational"  keywords="ServiceBase" template="Args105_0"/>
+        <event value="106" version="0" level="win:Error"  keywords="Error ServiceBase ms:Measures"/>
+        <event value="107" version="0" level="win:Error"  keywords="Error ServiceBase ms:Measures"/>
+        <event value="301" version="0" level="win:Error"  keywords="Error" template="Args301_0"/>
+        <event value="401" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="402" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="403" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="501" version="0" level="win:Error"  keywords="Error ms:Measures" template="Args501_0"/>
+        <event value="502" version="0" level="win:Error"  keywords="Error ms:Measures"/>
+        <event value="600" version="0" level="win:Informational"  keywords="UserDataAccessUtils"/>
+        <event value="601" version="0" level="win:Informational"  keywords="UserDataAccessUtils" template="Args601_0"/>
+        <event value="602" version="0" level="win:Informational"  keywords="UserDataAccessUtils" template="Args602_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Error" mask="0x1" message="$(string.string1)" />
+        <keyword name="Performance" mask="0x2" message="$(string.string7)" />
+        <keyword name="UserDataAccessUtils" mask="0x4" message="$(string.string11)" />
+        <keyword name="ServiceBase" mask="0x8" message="$(string.string8)" />
+        <keyword name="debug" mask="0x100" message="$(string.string0)" />
+        <keyword name="Warning" mask="0x4000000000" message="$(string.string12)" />
+        <keyword name="StateTransition" mask="0x8000000000" message="$(string.string9)" />
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string5)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string6)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string4)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="tracemessage" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="P1_HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="P2_String" inType="win:AnsiString" outType="xs:string"  />
+          <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Message" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="Prop_LINE_UInt32" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_Trace_UnicodeString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="P1_UnicodeString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="P1_UInt32" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args301_0">
+          <data name="P1_HexInt32" inType="win:Int32" outType="win:HResult"  />
+          <data name="Prop_Handle" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Prop_Handle2" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args501_0">
+          <data name="P1_Int32" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args601_0">
+          <data name="P1_UnicodeString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="P2_UnicodeString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args602_0">
+          <data name="P1_HexInt32" inType="win:Int32" outType="win:HResult"  />
+          <data name="P2_HexInt32" inType="win:Int32" outType="win:HResult"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="debug" />
+       <string id="string1" value="Error" />
+       <string id="string2" value="Microsoft-Windows-UserDataAccess-UserDataUtils" />
+       <string id="string3" value="ms:CriticalData" />
+       <string id="string4" value="ms:Measures" />
+       <string id="string5" value="ms:ReservedKeyword44" />
+       <string id="string6" value="ms:Telemetry" />
+       <string id="string7" value="Performance" />
+       <string id="string8" value="ServiceBase" />
+       <string id="string9" value="StateTransition" />
+       <string id="string10" value="tracemessage" />
+       <string id="string11" value="UserDataAccessUtils" />
+       <string id="string12" value="Warning" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Ntfs" name="Ntfs" guid="{dd70bc80-ef44-421b-8ac3-cd31da613a4e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="55" version="0" level="win:Error"  channel="System" template="Args55_0"/>
+        <event value="130" version="0" level="win:Warning"  channel="System" template="Args130_0"/>
+        <event value="131" version="0" level="win:Error"  channel="System"/>
+        <event value="132" version="0" level="win:Warning"  channel="System"/>
+        <event value="133" version="0" level="win:Informational"  channel="System" template="Args133_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args55_0">
+          <data name="DriveName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CorruptionState" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="HeaderFlags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Severity" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Origin" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Verb" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Signature" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Outcome" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SampleLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SampleData" inType="win:Binary" outType="xs:hexBinary" length="SampleLength" />
+          <data name="SourceFile" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SourceLine" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SourceTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdditionalInfo" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="CallStack" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="VolumeIdLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeId" inType="win:UnicodeString" outType="xs:string" length="VolumeIdLength" />
+          <data name="RepairDetail" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RepairDataLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="RepairData" inType="win:Binary" outType="xs:hexBinary" length="RepairDataLength" />
+        </template>
+        <template tid="Args133_0">
+          <data name="Total Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BadFrs Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OrphanChildFRS Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BadClusters Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BadFreeClusters Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CrossLink Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SDEntry Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InvalidSid Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexAttribute Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexSubtree Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexOffset Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexEntry Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IndexOrder Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Connect Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BreakCycle Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FRSAllocate Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Others Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Ntfs" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

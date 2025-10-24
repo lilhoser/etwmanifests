@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-UserAccountControl" name="Microsoft-Windows-UserAccountControl" guid="{2683b597-3cca-410a-97fe-6f7ee3d09b94}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-UserAccountControl/Diagnostic" task="UserAccountControl_UIReady" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-UserAccountControl/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="6000" name="UserAccountControl_UIReady" message="$(string.string6000)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-UserAccountControl" />
+       <string id="string1" value="Microsoft-Windows-UserAccountControl/Diagnostic" />
+       <string id="string2" value="UserAccountControl_UIReady" />
+       <string id="string3" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Network-ExecutionContext" name="Microsoft-Windows-Network-ExecutionContext" guid="{0075e1ab-e1d1-5d1f-35f5-da36fb4f41b1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Warning"  channel="System" task="Task_Scheduling" opcode="Opcode_Polling" keywords="Keyword_ExceededLimit" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-ExecutionContext/Operational" task="Task_Scheduling" opcode="Opcode_StateChange" keywords="Keyword_Execution" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-ExecutionContext/Operational" task="Task_Scheduling" opcode="Opcode_StateChange" keywords="Keyword_Dispatcher"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-ExecutionContext/Operational" task="Task_Scheduling" opcode="Opcode_StateChange" keywords="Keyword_Dispatcher" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-ExecutionContext/Operational" task="Task_Scheduling" opcode="Opcode_StateChange" keywords="Keyword_Dispatcher"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-ExecutionContext/Operational" task="Task_Scheduling" opcode="Opcode_StateChange" keywords="Keyword_Dispatcher"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-ExecutionContext/Operational" task="Task_Scheduling" opcode="Opcode_StateChange" keywords="Keyword_Dispatcher"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Network-ExecutionContext/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="Keyword_ExceededLimit" mask="0x1" message="$(string.string1)" />
+        <keyword name="Keyword_Execution" mask="0x2" message="$(string.string2)" />
+        <keyword name="Keyword_Dispatcher" mask="0x4" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Task_Scheduling" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="Opcode_Polling" message="$(string.string5)"/>
+           <opcode value="20" name="Opcode_StateChange" message="$(string.string6)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="IfGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="IfName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TimeWarningInSec" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExceededCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastIntervalInSec" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="Identifier" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskCounter" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IterationCounter" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WorkCounter" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Dispatcher" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Dispatcher" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Header" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Object" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Priority" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Keyword_Dispatcher" />
+       <string id="string1" value="Keyword_ExceededLimit" />
+       <string id="string2" value="Keyword_Execution" />
+       <string id="string3" value="Microsoft-Windows-Network-ExecutionContext" />
+       <string id="string4" value="Microsoft-Windows-Network-ExecutionContext/Operational" />
+       <string id="string5" value="Opcode_Polling" />
+       <string id="string6" value="Opcode_StateChange" />
+       <string id="string7" value="System" />
+       <string id="string8" value="Task_Scheduling" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

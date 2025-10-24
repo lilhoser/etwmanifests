@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WebIO" name="Microsoft-Windows-WebIO" guid="{50b3e73c-9370-461d-bb9f-26f32d68887d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ApiInit" opcode="win:Info" keywords="Keyword.API" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ApiInit" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ApiTerminate" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="4" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ApiTerminate" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SessionCreate" opcode="win:Info" keywords="Keyword.API" template="Args5_0"/>
+        <event value="6" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SessionCreate" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SessionClose" opcode="win:Start" keywords="Keyword.API"/>
+        <event value="8" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SessionClose" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.API" opcode="win:Start" keywords="Keyword.API" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.API" opcode="win:Stop" keywords="Keyword.API" template="Args10_0"/>
+        <event value="11" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.API" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.API" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.API" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="14" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.API" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestConfiguration" opcode="Set" keywords="Keyword.API Keyword.CONFIGURATION" template="Args15_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestCreate" opcode="win:Info" keywords="Keyword.API Keyword.CONFIGURATION" template="Args17_0"/>
+        <event value="18" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestCreate" opcode="win:Info" keywords="Keyword.API Keyword.CONFIGURATION"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestClose" opcode="win:Start" keywords="Keyword.API"/>
+        <event value="20" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestClose" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SyncApiWait" opcode="win:Info" keywords="Keyword.API" template="Args21_0"/>
+        <event value="22" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SyncApiWait" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestConfiguration" opcode="Set" keywords="Keyword.API Keyword.CONFIGURATION" template="Args23_0"/>
+        <event value="24" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestConfiguration" opcode="Set" keywords="Keyword.API Keyword.CONFIGURATION"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestConfiguration" opcode="Set" keywords="Keyword.API Keyword.CONFIGURATION"/>
+        <event value="26" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestConfiguration" opcode="Set" keywords="Keyword.API Keyword.CONFIGURATION"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Information" opcode="win:Info" keywords="Keyword.API" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Information" opcode="win:Info" keywords="Keyword.API"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SessionClose" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestClose" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestHeader" opcode="win:Info" keywords="Keyword.SEND Keyword.PII_PRESENT" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestHeader" opcode="win:Info" keywords="Keyword.RECEIVE Keyword.PII_PRESENT"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProxyResolution" opcode="win:Start" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProxyResolution" opcode="win:Stop"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestWaitingForConnection" opcode="win:Stop" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Endpoint" opcode="win:Info" template="Args105_0"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestGenerateHeaders" opcode="win:Stop" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestSendEntity" opcode="win:Start" keywords="Keyword.API Keyword.SEND" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestSendEntity" opcode="win:Stop" keywords="Keyword.API Keyword.SEND"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestEntityTracker" opcode="Queue" keywords="Keyword.SEND" template="Args109_0"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestEntityTracker" opcode="win:Start" keywords="Keyword.SEND" template="Args110_0"/>
+        <event value="111" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestEntityTracker" opcode="win:Info" keywords="Keyword.SEND Keyword.PII_PRESENT" template="Args111_0"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestEntityTracker" opcode="win:Stop" keywords="Keyword.SEND"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestEntityCompleteCallback" opcode="win:Start" keywords="Keyword.API Keyword.SEND" template="Args113_0"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestEntityCompleteCallback" opcode="win:Stop" keywords="Keyword.API Keyword.SEND"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseRecieveEntity" opcode="win:Start" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseRecieveEntity" opcode="win:Stop" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseEntityCompleteCallback" opcode="win:Start" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseEntityCompleteCallback" opcode="win:Stop" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="119" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseConnectionBufferReceive" opcode="Reallocate" keywords="Keyword.RECEIVE" template="Args119_0"/>
+        <event value="120" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseConnectionBufferReceive" opcode="win:Start" keywords="Keyword.RECEIVE" template="Args120_0"/>
+        <event value="121" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseConnectionBufferReceive" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="122" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseConnectionBufferReceive" opcode="win:Info" keywords="Keyword.RECEIVE Keyword.PII_PRESENT"/>
+        <event value="123" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseParser" opcode="win:Start" keywords="Keyword.RECEIVE" template="Args123_0"/>
+        <event value="124" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseParser" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseParser" opcode="Reset" keywords="Keyword.RECEIVE" template="Args125_0"/>
+        <event value="126" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseParser" opcode="win:Info" keywords="Keyword.RECEIVE" template="Args126_0"/>
+        <event value="127" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseDirectReceiveEntity" opcode="win:Start" keywords="Keyword.RECEIVE" template="Args127_0"/>
+        <event value="128" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseDirectReceiveEntity" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="129" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseDirectReceiveEntity" opcode="win:Info" keywords="Keyword.RECEIVE Keyword.PII_PRESENT"/>
+        <event value="130" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestSend" opcode="win:Start" keywords="Keyword.API Keyword.SEND"/>
+        <event value="131" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestSend" opcode="win:Stop" keywords="Keyword.API Keyword.SEND"/>
+        <event value="132" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseReceive" opcode="win:Start" keywords="Keyword.API Keyword.RECEIVE" template="Args132_0"/>
+        <event value="133" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseReceive" opcode="win:Stop" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="134" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseReceiveCompleteCallback" opcode="win:Start" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="135" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ResponseReceiveCompleteCallback" opcode="win:Stop" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="136" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestCancel" opcode="win:Start" keywords="Keyword.API"/>
+        <event value="137" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestCancel" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketConnect" opcode="win:Start" keywords="Keyword.L3_CONNECT" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketConnect" opcode="win:Stop" keywords="Keyword.L3_CONNECT"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketConnect" opcode="win:Stop" keywords="Keyword.L3_CONNECT"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketCreate" opcode="win:Info"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketClose" opcode="win:Info" template="Args204_0"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolutionRequest" opcode="win:Start" template="Args205_0"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolutionRequest" opcode="win:Stop" template="Args206_0"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolutionRequest" opcode="win:Stop" template="Args207_0"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolutionRequest" opcode="win:Info" template="Args208_0"/>
+        <event value="209" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolutionRequest" opcode="win:Info" template="Args209_0"/>
+        <event value="210" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolutionRequest" opcode="win:Info"/>
+        <event value="211" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolution" opcode="win:Start" template="Args211_0"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionNameResolution" opcode="win:Stop"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketSend" opcode="win:Start" keywords="Keyword.SEND" template="Args213_0"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketSend" opcode="win:Stop" keywords="Keyword.SEND"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketReceive" opcode="win:Start" keywords="Keyword.RECEIVE"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketReceive" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Http3ConnectionGetStream" opcode="win:Info" template="Args217_0"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.StreamDataIndicated" opcode="win:Info" keywords="Keyword.RECEIVE" template="Args218_0"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.StreamCreated" opcode="win:Info" keywords="Keyword.SEND"/>
+        <event value="220" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.StreamAborted" opcode="win:Info" template="Args220_0"/>
+        <event value="221" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProcessSettingsFrame" opcode="win:Info" template="Args221_0"/>
+        <event value="222" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RecvWindowUpdateFrame" opcode="win:Info" template="Args222_0"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RecvGoawayFrame" opcode="win:Info" template="Args223_0"/>
+        <event value="224" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Http2ConnectionAborted" opcode="win:Info"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Http2WindowStalled" opcode="win:Info"/>
+        <event value="700" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLInitializeSecurityContext" opcode="win:Start" keywords="Keyword.SECURITY" template="Args700_0"/>
+        <event value="703" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLInitializeSecurityContext" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+        <event value="704" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLInitializeSecurityContext" opcode="win:Info" keywords="Keyword.SECURITY" template="Args704_0"/>
+        <event value="705" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLInitializeSecurityContext" opcode="win:Info" keywords="Keyword.SECURITY" template="Args705_0"/>
+        <event value="706" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLEncryptMessage" opcode="win:Start" keywords="Keyword.SEND Keyword.SECURITY" template="Args706_0"/>
+        <event value="707" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLEncryptMessage" opcode="win:Stop" keywords="Keyword.SEND Keyword.SECURITY"/>
+        <event value="708" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLEncryptMessage" opcode="win:Stop" keywords="Keyword.SEND Keyword.SECURITY"/>
+        <event value="709" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLEncryptMessage" opcode="win:Info" keywords="Keyword.SEND Keyword.SECURITY" template="Args709_0"/>
+        <event value="710" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLSendEntity" opcode="win:Start" keywords="Keyword.SEND" template="Args710_0"/>
+        <event value="711" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLSendEntity" opcode="win:Stop" keywords="Keyword.SEND"/>
+        <event value="712" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLCertValidation" opcode="win:Stop" keywords="Keyword.SECURITY" template="Args712_0"/>
+        <event value="713" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLCertValidation" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+        <event value="720" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLReceiveEntity" opcode="win:Start" keywords="Keyword.RECEIVE"/>
+        <event value="721" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLReceiveEntity" opcode="win:Stop" keywords="Keyword.RECEIVE" template="Args721_0"/>
+        <event value="722" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLDecryptMessage" opcode="win:Start" keywords="Keyword.RECEIVE" template="Args722_0"/>
+        <event value="723" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLDecryptMessage" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="724" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLConnectionBufferReceive" opcode="win:Start" keywords="Keyword.RECEIVE" template="Args724_0"/>
+        <event value="725" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLConnectionBufferReceive" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="726" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLConnectionBufferReceive" opcode="win:Info" keywords="Keyword.RECEIVE" template="Args726_0"/>
+        <event value="727" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLConnectionBufferReceive" opcode="Reallocate" keywords="Keyword.RECEIVE"/>
+        <event value="728" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLAcquireCredentialsHandle" opcode="win:Start" keywords="Keyword.SECURITY" template="Args728_0"/>
+        <event value="729" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLAcquireCredentialsHandle" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+        <event value="730" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLAcquireCredentialsHandle" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+        <event value="731" version="0" level="win:Error"  channel="Microsoft-Windows-WebIO/Operational" task="Task.QuicTls13Disabled" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+        <event value="900" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.CreateProtocolHandle" opcode="win:Info" keywords="Keyword.API Keyword.CONFIGURATION" template="Args900_0"/>
+        <event value="901" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.CreateProtocolHandle" opcode="win:Info" keywords="Keyword.API Keyword.CONFIGURATION"/>
+        <event value="902" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolCancelHandle" opcode="win:Start" keywords="Keyword.API"/>
+        <event value="903" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolCancelHandle" opcode="win:Stop" keywords="Keyword.API"/>
+        <event value="904" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.CloseProtocolHandle" opcode="win:Start" keywords="Keyword.API"/>
+        <event value="905" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.CloseProtocolHandle" opcode="win:Start" keywords="Keyword.API"/>
+        <event value="906" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolConfiguration" opcode="Set" keywords="Keyword.API Keyword.CONFIGURATION"/>
+        <event value="907" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolSendData" opcode="win:Start" keywords="Keyword.API Keyword.SEND"/>
+        <event value="908" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolSendData" opcode="win:Stop" keywords="Keyword.API Keyword.SEND"/>
+        <event value="909" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolSendDataCallback" opcode="win:Start" keywords="Keyword.API Keyword.SEND" template="Args909_0"/>
+        <event value="910" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolSendDataCallback" opcode="win:Stop" keywords="Keyword.API Keyword.SEND"/>
+        <event value="911" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolReceiveData" opcode="win:Start" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="912" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolReceiveData" opcode="win:Stop" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="913" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolReceiveDataCallback" opcode="win:Start" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="914" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ProtocolReceiveDataCallback" opcode="win:Stop" keywords="Keyword.API Keyword.RECEIVE"/>
+        <event value="2100" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2101" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2102" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2111" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2112" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2113" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2114" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2120" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2121" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2122" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2123" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2130" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2131" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2132" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2140" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="2141" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.RequestState" opcode="win:Info"/>
+        <event value="59992" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadToken" opcode="win:Stop" template="Args59992_0"/>
+        <event value="59993" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadToken" opcode="win:Start" template="Args59993_0"/>
+        <event value="59994" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadToken" opcode="Get" template="Args59994_0"/>
+        <event value="59995" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadAction" opcode="Cancel" template="Args59995_0"/>
+        <event value="59996" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadAction" opcode="Queue"/>
+        <event value="59997" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadAction" opcode="win:Stop"/>
+        <event value="59998" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ThreadAction" opcode="win:Start"/>
+        <event value="59999" version="0" level="win:Verbose"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.Debug" opcode="win:Info" template="Args59999_0"/>
+        <event value="200" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketConnect" opcode="win:Start" keywords="Keyword.L3_CONNECT" template="Args200_1"/>
+        <event value="201" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketConnect" opcode="win:Stop" keywords="Keyword.L3_CONNECT"/>
+        <event value="202" version="1" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketConnect" opcode="win:Stop" keywords="Keyword.L3_CONNECT"/>
+        <event value="203" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketCreate" opcode="win:Info"/>
+        <event value="204" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketClose" opcode="win:Info" template="Args204_1"/>
+        <event value="213" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketSend" opcode="win:Start" keywords="Keyword.SEND" template="Args213_1"/>
+        <event value="214" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketSend" opcode="win:Stop" keywords="Keyword.SEND"/>
+        <event value="215" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketReceive" opcode="win:Start" keywords="Keyword.RECEIVE"/>
+        <event value="216" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.ConnectionSocketReceive" opcode="win:Stop" keywords="Keyword.RECEIVE"/>
+        <event value="728" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLAcquireCredentialsHandle" opcode="win:Start" keywords="Keyword.SECURITY" template="Args728_1"/>
+        <event value="729" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLAcquireCredentialsHandle" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+        <event value="730" version="1" level="win:Error"  channel="Microsoft-Windows-WebIO/Diagnostic" task="Task.SSLAcquireCredentialsHandle" opcode="win:Stop" keywords="Keyword.SECURITY"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WebIO/Diagnostic" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-WebIO-NDF/Diagnostic" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-WebIO/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="Keyword.API" mask="0x1" message="$(string.string3)" />
+        <keyword name="Keyword.SEND" mask="0x100000000" message="$(string.string14)" />
+        <keyword name="Keyword.RECEIVE" mask="0x200000000" message="$(string.string12)" />
+        <keyword name="Keyword.L3_CONNECT" mask="0x400000000" message="$(string.string9)" />
+        <keyword name="Keyword.CLOSE" mask="0x1000000000" message="$(string.string4)" />
+        <keyword name="Keyword.SECURITY" mask="0x2000000000" message="$(string.string13)" />
+        <keyword name="Keyword.CONFIGURATION" mask="0x4000000000" message="$(string.string5)" />
+        <keyword name="Keyword.GLOBAL" mask="0x8000000000" message="$(string.string8)" />
+        <keyword name="Keyword.DROPPED" mask="0x10000000000" message="$(string.string7)" />
+        <keyword name="Keyword.PII_PRESENT" mask="0x20000000000" message="$(string.string11)" />
+        <keyword name="Keyword.PACKET" mask="0x40000000000" message="$(string.string10)" />
+        <keyword name="Keyword.ADDRESS" mask="0x80000000000" message="$(string.string2)" />
+        <keyword name="Keyword.CONTEXT_EVENT" mask="0x100000000000" message="$(string.string6)" />
+        <keyword name="Keyword.STATE_TRANSITION" mask="0x200000000000" message="$(string.string15)" />
+      </keywords>
+      <tasks>
+        <task value="109" name="Task.API" message="$(string.string109)">
+        </task>
+        <task value="110" name="Task.Debug" message="$(string.string110)">
+        </task>
+        <task value="111" name="Task.ApiInit" message="$(string.string111)">
+        </task>
+        <task value="112" name="Task.ApiTerminate" message="$(string.string112)">
+        </task>
+        <task value="113" name="Task.SessionCreate" message="$(string.string113)">
+        </task>
+        <task value="114" name="Task.SessionClose" message="$(string.string114)">
+        </task>
+        <task value="115" name="Task.SyncApiWait" message="$(string.string115)">
+        </task>
+        <task value="200" name="Task.RequestCreate" message="$(string.string200)">
+        </task>
+        <task value="201" name="Task.RequestConfiguration" message="$(string.string201)">
+          <opcodes>
+           <opcode value="14" name="Set" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+        <task value="202" name="Task.RequestClose" message="$(string.string202)">
+        </task>
+        <task value="400" name="Task.RequestHeader" message="$(string.string400)">
+        </task>
+        <task value="401" name="Task.ProxyResolution" message="$(string.string401)">
+        </task>
+        <task value="403" name="Task.Endpoint" message="$(string.string403)">
+        </task>
+        <task value="404" name="Task.RequestGenerateHeaders" message="$(string.string404)">
+        </task>
+        <task value="405" name="Task.RequestSendEntity" message="$(string.string405)">
+        </task>
+        <task value="406" name="Task.RequestEntityTracker" message="$(string.string406)">
+          <opcodes>
+           <opcode value="11" name="Queue" message="$(string.string27)"/>
+          </opcodes>
+        </task>
+        <task value="407" name="Task.RequestEntityCompleteCallback" message="$(string.string407)">
+        </task>
+        <task value="408" name="Task.ResponseRecieveEntity" message="$(string.string408)">
+        </task>
+        <task value="409" name="Task.ResponseEntityCompleteCallback" message="$(string.string409)">
+        </task>
+        <task value="410" name="Task.RequestWaitingForConnection" message="$(string.string410)">
+        </task>
+        <task value="411" name="Task.ResponseParser" message="$(string.string411)">
+          <opcodes>
+           <opcode value="16" name="Reset" message="$(string.string29)"/>
+          </opcodes>
+        </task>
+        <task value="412" name="Task.ResponseDirectReceiveEntity" message="$(string.string412)">
+        </task>
+        <task value="413" name="Task.RequestSend" message="$(string.string413)">
+        </task>
+        <task value="414" name="Task.ResponseReceive" message="$(string.string414)">
+        </task>
+        <task value="415" name="Task.ResponseConnectionBufferReceive" message="$(string.string415)">
+          <opcodes>
+           <opcode value="15" name="Reallocate" message="$(string.string28)"/>
+          </opcodes>
+        </task>
+        <task value="416" name="Task.RequestCancel" message="$(string.string416)">
+        </task>
+        <task value="417" name="Task.ConnectionSocketConnect" message="$(string.string417)">
+        </task>
+        <task value="418" name="Task.ConnectionSocketCreate" message="$(string.string418)">
+        </task>
+        <task value="419" name="Task.ConnectionSocketClose" message="$(string.string419)">
+        </task>
+        <task value="420" name="Task.ConnectionNameResolution" message="$(string.string420)">
+        </task>
+        <task value="421" name="Task.ConnectionSocketSend" message="$(string.string421)">
+        </task>
+        <task value="423" name="Task.ConnectionSocketReceive" message="$(string.string423)">
+        </task>
+        <task value="424" name="Task.SSLEncryptMessage" message="$(string.string424)">
+        </task>
+        <task value="425" name="Task.SSLInitializeSecurityContext" message="$(string.string425)">
+        </task>
+        <task value="426" name="Task.SSLSendEntity" message="$(string.string426)">
+        </task>
+        <task value="427" name="Task.SSLCertValidation" message="$(string.string427)">
+        </task>
+        <task value="428" name="Task.SSLReceiveEntity" message="$(string.string428)">
+        </task>
+        <task value="429" name="Task.SSLDecryptMessage" message="$(string.string429)">
+        </task>
+        <task value="430" name="Task.SSLConnectionBufferReceive" message="$(string.string430)">
+          <opcodes>
+           <opcode value="15" name="Reallocate" message="$(string.string28)"/>
+          </opcodes>
+        </task>
+        <task value="431" name="Task.ThreadToken" message="$(string.string431)">
+          <opcodes>
+           <opcode value="13" name="Get" message="$(string.string1)"/>
+          </opcodes>
+        </task>
+        <task value="432" name="Task.ResponseReceiveCompleteCallback" message="$(string.string432)">
+        </task>
+        <task value="433" name="Task.ThreadAction" message="$(string.string433)">
+          <opcodes>
+           <opcode value="12" name="Cancel" message="$(string.string0)"/>
+           <opcode value="11" name="Queue" message="$(string.string27)"/>
+          </opcodes>
+        </task>
+        <task value="434" name="Task.Information" message="$(string.string434)">
+        </task>
+        <task value="435" name="Task.ConnectionNameResolutionRequest" message="$(string.string435)">
+        </task>
+        <task value="436" name="Task.SSLAcquireCredentialsHandle" message="$(string.string436)">
+        </task>
+        <task value="437" name="Task.Http3ConnectionGetStream" message="$(string.string437)">
+        </task>
+        <task value="438" name="Task.StreamDataIndicated" message="$(string.string438)">
+        </task>
+        <task value="439" name="Task.StreamCreated" message="$(string.string439)">
+        </task>
+        <task value="440" name="Task.StreamAborted" message="$(string.string440)">
+        </task>
+        <task value="441" name="Task.QuicTls13Disabled" message="$(string.string441)">
+        </task>
+        <task value="442" name="Task.ProcessSettingsFrame" message="$(string.string442)">
+        </task>
+        <task value="443" name="Task.RecvWindowUpdateFrame" message="$(string.string443)">
+        </task>
+        <task value="444" name="Task.RecvGoawayFrame" message="$(string.string444)">
+        </task>
+        <task value="445" name="Task.Http2ConnectionAborted" message="$(string.string445)">
+        </task>
+        <task value="446" name="Task.Http2WindowStalled" message="$(string.string446)">
+        </task>
+        <task value="500" name="Task.ProtocolSendData" message="$(string.string500)">
+        </task>
+        <task value="501" name="Task.ProtocolSendDataCallback" message="$(string.string501)">
+        </task>
+        <task value="502" name="Task.ProtocolReceiveData" message="$(string.string502)">
+        </task>
+        <task value="503" name="Task.ProtocolReceiveDataCallback" message="$(string.string503)">
+        </task>
+        <task value="504" name="Task.ProtocolCancelHandle" message="$(string.string504)">
+        </task>
+        <task value="505" name="Task.ProtocolConfiguration" message="$(string.string505)">
+          <opcodes>
+           <opcode value="14" name="Set" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+        <task value="506" name="Task.CreateProtocolHandle" message="$(string.string506)">
+        </task>
+        <task value="507" name="Task.CloseProtocolHandle" message="$(string.string507)">
+        </task>
+        <task value="901" name="Task.RequestState" message="$(string.string901)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="Opcode.NoOp" message="$(string.string22)"/>
+        <opcode value="11" name="Opcode.Queue" message="$(string.string23)"/>
+        <opcode value="12" name="Opcode.Cancel" message="$(string.string20)"/>
+        <opcode value="13" name="Opcode.Get" message="$(string.string21)"/>
+        <opcode value="14" name="Opcode.Set" message="$(string.string26)"/>
+        <opcode value="15" name="Opcode.Reallocate" message="$(string.string24)"/>
+        <opcode value="16" name="Opcode.Reset" message="$(string.string25)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ApiObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ApiVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ApiObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Session" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SessionHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Api" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Api" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Result" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Option" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Length" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Session" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SessionHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Method" inType="win:AnsiString" outType="xs:string"  />
+          <data name="URI" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VersionMajor" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="VersionMinor" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="Handle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Event" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Information" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="InformationRoutine" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="InformationContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PendingCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="InformationRoutine" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="InformationContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Information" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="InformationLength" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Headers" inType="win:AnsiString" outType="xs:string" length="Length" />
+        </template>
+        <template tid="Args102_0">
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ConnMgr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ServerEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProxyEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ConnectionManager" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunkCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CompletionContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TotalChunkLength" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IsEntity" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RequestEntityComplete" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args110_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PendingSendCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LastSend" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args111_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args113_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="CompletionContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CompletionInformation" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldBuffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldBufferLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NewBuffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewBufferLength" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args120_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferLengthConsumed" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Information" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args123_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferLengthConsumed" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ChunkData" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ChunkDataLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args125_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HttpResponseCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args126_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ChunkData" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ChunkDataLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="CompletionContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CompletionInformation" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args127_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BytesToReceive" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="CompletionContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CompletionInformation" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args132_0">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ResponseFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CompletionContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:UnicodeString" outType="xs:string" length="AddressLength" />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RemainingAddressCount" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args204_0">
+          <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args205_0">
+          <data name="DnsQuery" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HostName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Timeout" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CompletionContext" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args206_0">
+          <data name="DnsQuery" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FQDN" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CanonicalName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AddressCount" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SockaddrLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SockAddr" inType="win:Binary" outType="xs:hexBinary" length="SockaddrLength" />
+        </template>
+        <template tid="Args207_0">
+          <data name="DnsQuery" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args208_0">
+          <data name="DnsQuery" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CacheEntry" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args209_0">
+          <data name="ReferenceContext" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args211_0">
+          <data name="CacheEntry" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ResolveName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="AddressCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args213_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Information" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Http3ClientConnectionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="StreamConnection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Http3ClientStreamId" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args218_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Headers" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args220_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:Int32" outType="xs:int"  />
+          <data name="ResetCode" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args221_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SettingId" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="SettingValue" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args222_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="WindowIncrement" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="IsSession" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args223_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LastStreamId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args700_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SecurityHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SecurityHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CredHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CredHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HostName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InputFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="OutputFlags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunkBufferLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Result" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args704_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SecurityHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SecurityHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="BufferLengthData" />
+        </template>
+        <template tid="Args705_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SecurityHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SecurityHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunkBufferLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataChunkBufferLength" />
+        </template>
+        <template tid="Args706_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SslIOContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CredHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CredHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args709_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SslIOContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CredHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CredHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Length" />
+        </template>
+        <template tid="Args710_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SslIOContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestDisconnect" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args712_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ContextHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ContextHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IgnoredServerCertErrors" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServerCertErrors" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Reason" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args721_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SslIOContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PlainData" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PlainDataLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Information" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args722_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ContextHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ContextHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PlainData" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PlainDataLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SecStatus" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args724_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Consumed" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Available" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Information" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args726_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BufferLengthData" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="BufferLengthRemaining" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="BufferLengthData" />
+          <data name="DummyWorkaroundVal" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args728_0">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EnabledProtocols" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SSLClientCert" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EnableRevertToSelfClientCertificate" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="CredHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CredHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Result" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args900_0">
+          <data name="ProtocolObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProtocolHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RequestHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Session" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SessionHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args909_0">
+          <data name="ProtocolObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Handle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Information" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args59992_0">
+          <data name="Token" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args59993_0">
+          <data name="Token" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="OldToken" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args59994_0">
+          <data name="Token" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SID" inType="win:SID" outType="xs:string"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args59995_0">
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EtwQueueActionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59999_0">
+          <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string" length="Length" />
+        </template>
+        <template tid="Args200_1">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:UnicodeString" outType="xs:string" length="AddressLength" />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RemainingAddressCount" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Http3ClientConnectionId" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args204_1">
+          <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Http3ClientConnectionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Aborted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args213_1">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DataChunks" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SocketHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Context" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Information" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Http3ClientStreamId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="BufferLength" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IsEof" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsHeaderPairs" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args728_1">
+          <data name="Connection" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EnabledProtocols" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SSLClientCert" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EnableRevertToSelfClientCertificate" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="CipherConfig" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CredHandleHigh" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CredHandleLow" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Result" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Cancel" />
+       <string id="string1" value="Get" />
+       <string id="string2" value="Keyword.ADDRESS" />
+       <string id="string3" value="Keyword.API" />
+       <string id="string4" value="Keyword.CLOSE" />
+       <string id="string5" value="Keyword.CONFIGURATION" />
+       <string id="string6" value="Keyword.CONTEXT_EVENT" />
+       <string id="string7" value="Keyword.DROPPED" />
+       <string id="string8" value="Keyword.GLOBAL" />
+       <string id="string9" value="Keyword.L3_CONNECT" />
+       <string id="string10" value="Keyword.PACKET" />
+       <string id="string11" value="Keyword.PII_PRESENT" />
+       <string id="string12" value="Keyword.RECEIVE" />
+       <string id="string13" value="Keyword.SECURITY" />
+       <string id="string14" value="Keyword.SEND" />
+       <string id="string15" value="Keyword.STATE_TRANSITION" />
+       <string id="string16" value="Microsoft-Windows-WebIO" />
+       <string id="string17" value="Microsoft-Windows-WebIO-NDF/Diagnostic" />
+       <string id="string18" value="Microsoft-Windows-WebIO/Diagnostic" />
+       <string id="string19" value="Microsoft-Windows-WebIO/Operational" />
+       <string id="string20" value="Opcode.Cancel" />
+       <string id="string21" value="Opcode.Get" />
+       <string id="string22" value="Opcode.NoOp" />
+       <string id="string23" value="Opcode.Queue" />
+       <string id="string24" value="Opcode.Reallocate" />
+       <string id="string25" value="Opcode.Reset" />
+       <string id="string26" value="Opcode.Set" />
+       <string id="string27" value="Queue" />
+       <string id="string28" value="Reallocate" />
+       <string id="string29" value="Reset" />
+       <string id="string30" value="Set" />
+       <string id="string31" value="Task.API" />
+       <string id="string32" value="Task.ApiInit" />
+       <string id="string33" value="Task.ApiTerminate" />
+       <string id="string34" value="Task.CloseProtocolHandle" />
+       <string id="string35" value="Task.ConnectionNameResolution" />
+       <string id="string36" value="Task.ConnectionNameResolutionRequest" />
+       <string id="string37" value="Task.ConnectionSocketClose" />
+       <string id="string38" value="Task.ConnectionSocketConnect" />
+       <string id="string39" value="Task.ConnectionSocketCreate" />
+       <string id="string40" value="Task.ConnectionSocketReceive" />
+       <string id="string41" value="Task.ConnectionSocketSend" />
+       <string id="string42" value="Task.CreateProtocolHandle" />
+       <string id="string43" value="Task.Debug" />
+       <string id="string44" value="Task.Endpoint" />
+       <string id="string45" value="Task.Http2ConnectionAborted" />
+       <string id="string46" value="Task.Http2WindowStalled" />
+       <string id="string47" value="Task.Http3ConnectionGetStream" />
+       <string id="string48" value="Task.Information" />
+       <string id="string49" value="Task.ProcessSettingsFrame" />
+       <string id="string50" value="Task.ProtocolCancelHandle" />
+       <string id="string51" value="Task.ProtocolConfiguration" />
+       <string id="string52" value="Task.ProtocolReceiveData" />
+       <string id="string53" value="Task.ProtocolReceiveDataCallback" />
+       <string id="string54" value="Task.ProtocolSendData" />
+       <string id="string55" value="Task.ProtocolSendDataCallback" />
+       <string id="string56" value="Task.ProxyResolution" />
+       <string id="string57" value="Task.QuicTls13Disabled" />
+       <string id="string58" value="Task.RecvGoawayFrame" />
+       <string id="string59" value="Task.RecvWindowUpdateFrame" />
+       <string id="string60" value="Task.RequestCancel" />
+       <string id="string61" value="Task.RequestClose" />
+       <string id="string62" value="Task.RequestConfiguration" />
+       <string id="string63" value="Task.RequestCreate" />
+       <string id="string64" value="Task.RequestEntityCompleteCallback" />
+       <string id="string65" value="Task.RequestEntityTracker" />
+       <string id="string66" value="Task.RequestGenerateHeaders" />
+       <string id="string67" value="Task.RequestHeader" />
+       <string id="string68" value="Task.RequestSend" />
+       <string id="string69" value="Task.RequestSendEntity" />
+       <string id="string70" value="Task.RequestState" />
+       <string id="string71" value="Task.RequestWaitingForConnection" />
+       <string id="string72" value="Task.ResponseConnectionBufferReceive" />
+       <string id="string73" value="Task.ResponseDirectReceiveEntity" />
+       <string id="string74" value="Task.ResponseEntityCompleteCallback" />
+       <string id="string75" value="Task.ResponseParser" />
+       <string id="string76" value="Task.ResponseReceive" />
+       <string id="string77" value="Task.ResponseReceiveCompleteCallback" />
+       <string id="string78" value="Task.ResponseRecieveEntity" />
+       <string id="string79" value="Task.SessionClose" />
+       <string id="string80" value="Task.SessionCreate" />
+       <string id="string81" value="Task.SSLAcquireCredentialsHandle" />
+       <string id="string82" value="Task.SSLCertValidation" />
+       <string id="string83" value="Task.SSLConnectionBufferReceive" />
+       <string id="string84" value="Task.SSLDecryptMessage" />
+       <string id="string85" value="Task.SSLEncryptMessage" />
+       <string id="string86" value="Task.SSLInitializeSecurityContext" />
+       <string id="string87" value="Task.SSLReceiveEntity" />
+       <string id="string88" value="Task.SSLSendEntity" />
+       <string id="string89" value="Task.StreamAborted" />
+       <string id="string90" value="Task.StreamCreated" />
+       <string id="string91" value="Task.StreamDataIndicated" />
+       <string id="string92" value="Task.SyncApiWait" />
+       <string id="string93" value="Task.ThreadAction" />
+       <string id="string94" value="Task.ThreadToken" />
+       <string id="string95" value="win:Info" />
+       <string id="string96" value="win:Start" />
+       <string id="string97" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

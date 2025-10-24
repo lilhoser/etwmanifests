@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="OpenSSH" name="OpenSSH" guid="{c4b57d35-0636-4bc3-a262-370f249f9802}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Critical"  channel="OpenSSH/Admin" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  channel="OpenSSH/Admin"/>
+        <event value="3" version="0" level="win:Warning"  channel="OpenSSH/Operational"/>
+        <event value="4" version="0" level="win:Informational"  channel="OpenSSH/Operational"/>
+        <event value="6" version="0" level="Debug"  channel="OpenSSH/Debug"/>
+      </events>
+      <channels>
+        <channel value="16" name="OpenSSH/Admin" type="Admin"/>
+        <channel value="17" name="OpenSSH/Operational" type="Operational"/>
+        <channel value="18" name="OpenSSH/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="process" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="payload" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="OpenSSH" />
+       <string id="string1" value="OpenSSH/Admin" />
+       <string id="string2" value="OpenSSH/Debug" />
+       <string id="string3" value="OpenSSH/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Privacy-Auditing-OneSettingsClient" name="Microsoft-Windows-Privacy-Auditing-OneSettingsClient" guid="{23f0f2c7-c77c-51ee-0ac1-5ac7796a85df}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Privacy-Auditing/Operational" task="SettingsEndpointDownload" keywords="SettingsDownload" template="Args1_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Privacy-Auditing/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="SettingsDownload" mask="0x1" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="SettingsEndpointDownload" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="CallerId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Partner" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Feature" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DownloadResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Privacy-Auditing-OneSettingsClient" />
+       <string id="string1" value="Microsoft-Windows-Privacy-Auditing/Operational" />
+       <string id="string2" value="SettingsDownload" />
+       <string id="string3" value="SettingsEndpointDownload" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

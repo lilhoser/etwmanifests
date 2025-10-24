@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-OneBackup" name="Microsoft-Windows-OneBackup" guid="{72561cf0-c85c-4f78-9e8d-cba9093df62d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="0" level="win:Error"  channel="Microsoft-Windows-OneBackup/Debug" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Warning"  channel="Microsoft-Windows-OneBackup/Debug"/>
+        <event value="1002" version="0" level="win:Verbose"  channel="Microsoft-Windows-OneBackup/Debug"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-OneBackup/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1000_0">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-OneBackup" />
+       <string id="string1" value="Microsoft-Windows-OneBackup/Debug" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

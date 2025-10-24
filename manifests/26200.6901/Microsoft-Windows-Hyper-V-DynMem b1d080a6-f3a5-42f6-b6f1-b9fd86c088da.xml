@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Hyper-V-DynMem" name="Microsoft-Windows-Hyper-V-DynMem" guid="{b1d080a6-f3a5-42f6-b6f1-b9fd86c088da}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1500" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" template="Args1500_0"/>
+        <event value="1510" version="0" level="win:Warning"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic"/>
+        <event value="1520" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic"/>
+        <event value="1530" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic"/>
+        <event value="12540" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin" template="Args12540_0"/>
+        <event value="12541" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12542" version="0" level="win:Warning"  channel="Microsoft-Windows-Hyper-V-Worker-Admin" template="Args12542_0"/>
+        <event value="12543" version="0" level="win:Warning"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12544" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12545" version="0" level="win:Critical"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12546" version="0" level="win:Warning"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="12547" version="0" level="win:Warning"  channel="Microsoft-Windows-Hyper-V-Worker-Admin"/>
+        <event value="25001" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_RESERVE" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF" template="Args25001_0"/>
+        <event value="25002" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_RESERVE" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF" template="Args25002_0"/>
+        <event value="25003" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_COMMIT" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25004" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_COMMIT" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25005" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_DECOMMIT" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25006" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_DECOMMIT" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25007" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_HOTADD" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25008" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_HOTADD" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25009" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_UNBALLOON" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25010" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_UNBALLOON" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25011" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_BALLOON" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25012" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_BALLOON" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25013" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_HOTADDUNDO" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25014" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_HOTADDUNDO" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25015" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_RELEASE" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25016" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_MEMORY_RELEASE" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25017" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_BACK_PAGES" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25018" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_BACK_PAGES" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25019" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_GREEDY_BALLOON" opcode="win:Start" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+        <event value="25020" version="0" level="win:Informational"  channel="Microsoft-Windows-Hyper-V-Worker-Analytic" task="VMT_DM_OPERATION_GUEST_GREEDY_BALLOON" opcode="win:Stop" keywords="VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Hyper-V-Worker-Admin" type="unknown"/>
+        <channel value="17" name="Microsoft-Windows-Hyper-V-Worker-Analytic" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="VMK_HYPERV_PERF_OUTER" mask="0x1" message="$(string.string5)" />
+        <keyword name="VMK_HYPERV_PERF_INNER" mask="0x2" message="$(string.string4)" />
+        <keyword name="VMK_HYPERV_PERF_VERBOSE" mask="0x4" message="$(string.string6)" />
+        <keyword name="VMK_HYPERV_PERF" mask="0x1000" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="1032" name="VMT_DM_OPERATION_MEMORY_RESERVE" message="$(string.string1032)">
+        </task>
+        <task value="1033" name="VMT_DM_OPERATION_MEMORY_COMMIT" message="$(string.string1033)">
+        </task>
+        <task value="1034" name="VMT_DM_OPERATION_MEMORY_DECOMMIT" message="$(string.string1034)">
+        </task>
+        <task value="1035" name="VMT_DM_OPERATION_GUEST_HOTADD" message="$(string.string1035)">
+        </task>
+        <task value="1036" name="VMT_DM_OPERATION_GUEST_UNBALLOON" message="$(string.string1036)">
+        </task>
+        <task value="1037" name="VMT_DM_OPERATION_GUEST_BALLOON" message="$(string.string1037)">
+        </task>
+        <task value="1038" name="VMT_DM_OPERATION_HOTADDUNDO" message="$(string.string1038)">
+        </task>
+        <task value="1049" name="VMT_DM_OPERATION_MEMORY_RELEASE" message="$(string.string1049)">
+        </task>
+        <task value="1050" name="VMT_DM_OPERATION_BACK_PAGES" message="$(string.string1050)">
+        </task>
+        <task value="1051" name="VMT_DM_OPERATION_GUEST_GREEDY_BALLOON" message="$(string.string1051)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1500_0">
+          <data name="TraceData" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12540_0">
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Device" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args12542_0">
+          <data name="VmName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InaccessiblePages" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args25001_0">
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args25002_0">
+          <data name="VmId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Time" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter0" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Hyper-V-DynMem" />
+       <string id="string1" value="Microsoft-Windows-Hyper-V-Worker-Admin" />
+       <string id="string2" value="Microsoft-Windows-Hyper-V-Worker-Analytic" />
+       <string id="string3" value="VMK_HYPERV_PERF" />
+       <string id="string4" value="VMK_HYPERV_PERF_INNER" />
+       <string id="string5" value="VMK_HYPERV_PERF_OUTER" />
+       <string id="string6" value="VMK_HYPERV_PERF_VERBOSE" />
+       <string id="string7" value="VMT_DM_OPERATION_BACK_PAGES" />
+       <string id="string8" value="VMT_DM_OPERATION_GUEST_BALLOON" />
+       <string id="string9" value="VMT_DM_OPERATION_GUEST_GREEDY_BALLOON" />
+       <string id="string10" value="VMT_DM_OPERATION_GUEST_HOTADD" />
+       <string id="string11" value="VMT_DM_OPERATION_GUEST_UNBALLOON" />
+       <string id="string12" value="VMT_DM_OPERATION_HOTADDUNDO" />
+       <string id="string13" value="VMT_DM_OPERATION_MEMORY_COMMIT" />
+       <string id="string14" value="VMT_DM_OPERATION_MEMORY_DECOMMIT" />
+       <string id="string15" value="VMT_DM_OPERATION_MEMORY_RELEASE" />
+       <string id="string16" value="VMT_DM_OPERATION_MEMORY_RESERVE" />
+       <string id="string17" value="win:Start" />
+       <string id="string18" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Serial-ClassExtension" name="Microsoft-Windows-Serial-ClassExtension" guid="{47bc9477-a8ba-452e-b951-4f2ed3593cf9}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_Startup" opcode="win:Info" template="Args1000_1"/>
+        <event value="1001" version="1" level="win:Error"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_Startup" opcode="win:Info"/>
+        <event value="1002" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_Ioctl" opcode="win:Start" template="Args1002_1"/>
+        <event value="1003" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_Ioctl" opcode="win:Stop"/>
+        <event value="1004" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_TxRx" opcode="win:Start" template="Args1004_1"/>
+        <event value="1005" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_TxRx" opcode="win:Start"/>
+        <event value="1006" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_TxRx" opcode="win:Stop" template="Args1006_1"/>
+        <event value="1007" version="1" level="win:Verbose"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_TxRx" opcode="win:Info" template="Args1007_1"/>
+        <event value="1008" version="1" level="win:Informational"  channel="Microsoft-Windows-Serial-ClassExtension/Analytic" task="SER_CX_TxRx" opcode="win:Info" template="Args1008_1"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Serial-ClassExtension/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="SER_CX_Startup" message="$(string.string1)">
+        </task>
+        <task value="2" name="SER_CX_Ioctl" message="$(string.string2)">
+        </task>
+        <task value="3" name="SER_CX_TxRx" message="$(string.string3)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1000_1">
+          <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1002_1">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IoControlCodeString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1004_1">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1006_1">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1007_1">
+          <data name="Data" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args1008_1">
+          <data name="Request" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Queue" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Serial-ClassExtension" />
+       <string id="string1" value="Microsoft-Windows-Serial-ClassExtension/Analytic" />
+       <string id="string2" value="SER_CX_Ioctl" />
+       <string id="string3" value="SER_CX_Startup" />
+       <string id="string4" value="SER_CX_TxRx" />
+       <string id="string5" value="System" />
+       <string id="string6" value="win:Info" />
+       <string id="string7" value="win:Start" />
+       <string id="string8" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

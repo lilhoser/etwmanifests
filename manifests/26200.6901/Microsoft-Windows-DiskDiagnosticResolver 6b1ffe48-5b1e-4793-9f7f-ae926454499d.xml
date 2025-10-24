@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DiskDiagnosticResolver" name="Microsoft-Windows-DiskDiagnosticResolver" guid="{6b1ffe48-5b1e-4793-9f7f-ae926454499d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="7" version="0" level="win:Warning"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticResolver/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-DiskDiagnosticResolver/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args7_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-DiskDiagnosticResolver" />
+       <string id="string1" value="Microsoft-Windows-DiskDiagnosticResolver/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

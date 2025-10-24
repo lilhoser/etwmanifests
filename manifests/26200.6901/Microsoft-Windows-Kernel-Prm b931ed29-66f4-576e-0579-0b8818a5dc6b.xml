@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Prm" name="Microsoft-Windows-Kernel-Prm" guid="{b931ed29-66f4-576e-0579-0b8818a5dc6b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-PRM/Operational"/>
+        <event value="2" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-PRM/Operational" template="Args2_0"/>
+        <event value="3" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-PRM/Operational" template="Args3_0"/>
+        <event value="4" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-PRM/Operational" template="Args4_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-PRM/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="ModuleGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ModuleVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="NtStatus" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="HandlerGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ModuleGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ModuleVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InterfaceStatus" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HandlerStatus" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="HandlerGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ModuleGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ModuleVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Kernel-Prm" />
+       <string id="string1" value="Microsoft-Windows-Kernel-PRM/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

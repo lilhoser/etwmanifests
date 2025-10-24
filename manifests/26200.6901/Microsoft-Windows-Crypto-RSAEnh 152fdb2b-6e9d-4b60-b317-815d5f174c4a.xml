@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Crypto-RSAEnh" name="Microsoft-Windows-Crypto-RSAEnh" guid="{152fdb2b-6e9d-4b60-b317-815d5f174c4a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="OperationFailed" template="Args1_0"/>
+        <event value="2" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="GetUserStorageAreaFailed" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="OpenFileInStorageArea" template="Args3_0"/>
+        <event value="4" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="DeleteFileInStorageArea" template="Args4_0"/>
+        <event value="5" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="DeleteKeyContainer" template="Args5_0"/>
+        <event value="6" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="MyCreateFile" template="Args6_0"/>
+        <event value="7" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="SetSecurityOnContainer" template="Args7_0"/>
+        <event value="8" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="CreateFileW"/>
+        <event value="9" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="DeleteFileW"/>
+        <event value="10" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="ReadContainerInfo" template="Args10_0"/>
+        <event value="11" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="WriteContainerInfo" template="Args11_0"/>
+        <event value="12" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="DeleteContainerInfo" template="Args12_0"/>
+        <event value="13" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="ReadContainerInfo"/>
+        <event value="14" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="WriteContainerInfo"/>
+        <event value="15" version="0" level="win:Verbose"  channel="Microsoft-Windows-Crypto-RSAEnh/Analytic" task="DeleteContainerInfo"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Crypto-RSAEnh/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="OperationFailed" message="$(string.string1)">
+        </task>
+        <task value="2" name="GetUserStorageAreaFailed" message="$(string.string2)">
+        </task>
+        <task value="3" name="OpenFileInStorageArea" message="$(string.string3)">
+        </task>
+        <task value="4" name="DeleteFileInStorageArea" message="$(string.string4)">
+        </task>
+        <task value="5" name="DeleteKeyContainer" message="$(string.string5)">
+        </task>
+        <task value="6" name="MyCreateFile" message="$(string.string6)">
+        </task>
+        <task value="7" name="SetSecurityOnContainer" message="$(string.string7)">
+        </task>
+        <task value="8" name="CreateFileW" message="$(string.string8)">
+        </task>
+        <task value="9" name="DeleteFileW" message="$(string.string9)">
+        </task>
+        <task value="10" name="ReadContainerInfo" message="$(string.string10)">
+        </task>
+        <task value="11" name="WriteContainerInfo" message="$(string.string11)">
+        </task>
+        <task value="12" name="DeleteContainerInfo" message="$(string.string12)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MachineKeyset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppContainer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MachineKeyset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DesiredAccess" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UserStorageArea" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserStoragePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserStoragePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="AppContainer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MachineKeyset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DesiredAccess" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreationDisposition" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Attributes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MachineKeyset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SecurityInformation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppContainer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContainerName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MachineKeyset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContainerName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MachineKeyset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProviderType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContainerName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MachineKeyset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AppContainer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CreateFileW" />
+       <string id="string1" value="DeleteContainerInfo" />
+       <string id="string2" value="DeleteFileInStorageArea" />
+       <string id="string3" value="DeleteFileW" />
+       <string id="string4" value="DeleteKeyContainer" />
+       <string id="string5" value="GetUserStorageAreaFailed" />
+       <string id="string6" value="Microsoft-Windows-Crypto-RSAEnh" />
+       <string id="string7" value="Microsoft-Windows-Crypto-RSAEnh/Analytic" />
+       <string id="string8" value="MyCreateFile" />
+       <string id="string9" value="OpenFileInStorageArea" />
+       <string id="string10" value="OperationFailed" />
+       <string id="string11" value="ReadContainerInfo" />
+       <string id="string12" value="SetSecurityOnContainer" />
+       <string id="string13" value="WriteContainerInfo" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

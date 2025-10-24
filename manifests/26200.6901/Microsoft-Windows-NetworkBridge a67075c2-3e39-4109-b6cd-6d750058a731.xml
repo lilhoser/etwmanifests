@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-NetworkBridge" name="Microsoft-Windows-NetworkBridge" guid="{a67075c2-3e39-4109-b6cd-6d750058a731}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2001" version="0" level="win:Informational"  channel="Microsoft-Windows-NetworkBridge/Diagnostic" task="TaskDebugTrace" opcode="OpcodeDebugTrace" keywords="KeywordDebugTrace" template="Args2001_0"/>
+        <event value="3001" version="0" level="win:Error"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-NetworkBridge/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="KeywordDebugTrace" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1001" name="TaskDebugTrace" message="$(string.string1001)">
+          <opcodes>
+           <opcode value="10" name="OpcodeDebugTrace" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2001_0">
+          <data name="_DebugString" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="KeywordDebugTrace" />
+       <string id="string1" value="Microsoft-Windows-NetworkBridge" />
+       <string id="string2" value="Microsoft-Windows-NetworkBridge/Diagnostic" />
+       <string id="string3" value="OpcodeDebugTrace" />
+       <string id="string4" value="System" />
+       <string id="string5" value="TaskDebugTrace" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

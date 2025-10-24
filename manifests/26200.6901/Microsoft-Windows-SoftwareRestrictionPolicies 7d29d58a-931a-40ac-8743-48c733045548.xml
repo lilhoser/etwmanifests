@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SoftwareRestrictionPolicies" name="Microsoft-Windows-SoftwareRestrictionPolicies" guid="{7d29d58a-931a-40ac-8743-48c733045548}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="50" version="0" level="win:Informational"  channel="Application" template="Args50_0"/>
+        <event value="865" version="0" level="win:Warning"  channel="Application"/>
+        <event value="866" version="0" level="win:Warning"  channel="Application" template="Args866_0"/>
+        <event value="867" version="0" level="win:Warning"  channel="Application"/>
+        <event value="868" version="0" level="win:Warning"  channel="Application"/>
+        <event value="882" version="0" level="win:Warning"  channel="Application"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args50_0">
+          <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SrpRuleGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args866_0">
+          <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SrpRuleGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RulePath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Microsoft-Windows-SoftwareRestrictionPolicies" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

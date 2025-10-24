@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DeviceUpdateAgent" name="Microsoft-Windows-DeviceUpdateAgent" guid="{e8f9af91-afbe-5a03-dfec-5d591686326c}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args100_0"/>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args101_0"/>
+        <event value="200" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args201_0"/>
+        <event value="300" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="301" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args301_0"/>
+        <event value="302" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="303" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="304" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args304_0"/>
+        <event value="305" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="306" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args306_0"/>
+        <event value="307" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args307_0"/>
+        <event value="400" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="500" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="600" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="601" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="700" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="800" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="801" version="0" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="802" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args802_0"/>
+        <event value="803" version="0" level="win:Warning"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args803_0"/>
+        <event value="804" version="0" level="win:Warning"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args804_0"/>
+        <event value="805" version="0" level="win:Warning"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args805_0"/>
+        <event value="900" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="1000" version="0" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args1000_0"/>
+        <event value="100" version="1" level="win:Informational"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args100_1"/>
+        <event value="101" version="1" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational" template="Args101_1"/>
+        <event value="200" version="1" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+        <event value="300" version="1" level="win:Error"  channel="Microsoft-Windows-DeviceUpdateAgent/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-DeviceUpdateAgent/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="Prop_SessionId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="Prop_NumFiles" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_RequestSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args301_0">
+          <data name="Win32Error" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Prop_UnicodeString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args304_0">
+          <data name="Prop_Id" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args306_0">
+          <data name="Prop_SetId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_SuccessfulUpdates" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_TotalUpdates" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_ElapsedMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args307_0">
+          <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args802_0">
+          <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_MissingUpdates" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_MissingDrivers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_UnpublishedDrivers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_PublishedDrivers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Prop_AnalysisErrorDrivers" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args803_0">
+          <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args804_0">
+          <data name="Prop_DeviceInstancePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_DriverPackageId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_ProblemCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args805_0">
+          <data name="Prop_DeviceInstancePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_DriverPackageId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_InstallError" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1000_0">
+          <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_Version1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_Version2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args100_1">
+          <data name="Prop_SessionId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_UpdateId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_FlightId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args101_1">
+          <data name="Prop_UpdateId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_FlightId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-DeviceUpdateAgent" />
+       <string id="string1" value="Microsoft-Windows-DeviceUpdateAgent/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

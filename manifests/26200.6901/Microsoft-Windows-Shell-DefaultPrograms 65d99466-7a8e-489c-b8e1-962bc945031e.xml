@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Shell-DefaultPrograms" name="Microsoft-Windows-Shell-DefaultPrograms" guid="{65d99466-7a8e-489c-b8e1-962bc945031e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_Hub_SetYourDefaultProgramsClicks" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_Hub_FileAssociationClicks" opcode="win:Info"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_Hub_AutoplayClicks" opcode="win:Info"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_Hub_SpadClicks" opcode="win:Info"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_ProgramsPage_SetAsDefaultClicks" opcode="win:Info"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_ProgramsPage_ChooseDefaultsClicks" opcode="win:Info"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_Advanced_SaveClicks" opcode="win:Info"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" task="CPL_DefaultPrograms_Advanced_3rdPartyInvocations" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="CPL_DefaultPrograms_Hub_SetYourDefaultProgramsClicks" message="$(string.string1)">
+        </task>
+        <task value="2" name="CPL_DefaultPrograms_Hub_FileAssociationClicks" message="$(string.string2)">
+        </task>
+        <task value="3" name="CPL_DefaultPrograms_Hub_AutoplayClicks" message="$(string.string3)">
+        </task>
+        <task value="4" name="CPL_DefaultPrograms_Hub_SpadClicks" message="$(string.string4)">
+        </task>
+        <task value="5" name="CPL_DefaultPrograms_ProgramsPage_SetAsDefaultClicks" message="$(string.string5)">
+        </task>
+        <task value="6" name="CPL_DefaultPrograms_ProgramsPage_ChooseDefaultsClicks" message="$(string.string6)">
+        </task>
+        <task value="7" name="CPL_DefaultPrograms_Advanced_SaveClicks" message="$(string.string7)">
+        </task>
+        <task value="8" name="CPL_DefaultPrograms_Advanced_3rdPartyInvocations" message="$(string.string8)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SqmDWORDDatapointValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CPL_DefaultPrograms_Advanced_3rdPartyInvocations" />
+       <string id="string1" value="CPL_DefaultPrograms_Advanced_SaveClicks" />
+       <string id="string2" value="CPL_DefaultPrograms_Hub_AutoplayClicks" />
+       <string id="string3" value="CPL_DefaultPrograms_Hub_FileAssociationClicks" />
+       <string id="string4" value="CPL_DefaultPrograms_Hub_SetYourDefaultProgramsClicks" />
+       <string id="string5" value="CPL_DefaultPrograms_Hub_SpadClicks" />
+       <string id="string6" value="CPL_DefaultPrograms_ProgramsPage_ChooseDefaultsClicks" />
+       <string id="string7" value="CPL_DefaultPrograms_ProgramsPage_SetAsDefaultClicks" />
+       <string id="string8" value="Microsoft-Windows-Shell-DefaultPrograms" />
+       <string id="string9" value="Microsoft-Windows-Shell-DefaultPrograms/Diagnostic" />
+       <string id="string10" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

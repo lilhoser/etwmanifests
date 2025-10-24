@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-StorageManagement-WSP-Spaces" name="Microsoft-Windows-StorageManagement-WSP-Spaces" guid="{88c09888-118d-48fc-8863-e1c6d39ca4df}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2000" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2000_1"/>
+        <event value="2001" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2001_1"/>
+        <event value="2002" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2003" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2003_1"/>
+        <event value="2004" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2004_1"/>
+        <event value="2005" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2005_1"/>
+        <event value="2006" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2007" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2008" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2009" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2009_1"/>
+        <event value="2010" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2010_1"/>
+        <event value="2011" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2011_1"/>
+        <event value="2012" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2012_1"/>
+        <event value="2013" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2013_1"/>
+        <event value="2014" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2015" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2016" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2017" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2017_1"/>
+        <event value="2018" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2019" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2019_1"/>
+        <event value="2020" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2020_1"/>
+        <event value="2021" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2022" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2023" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2023_1"/>
+        <event value="2024" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2024_1"/>
+        <event value="2025" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2026" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2027" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2028" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2028_1"/>
+        <event value="2029" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2030" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2031" version="1" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2031_1"/>
+        <event value="2032" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2032_1"/>
+        <event value="2033" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2034" version="1" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+        <event value="2036" version="1" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2036_1"/>
+        <event value="2003" version="2" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational" template="Args2003_2"/>
+        <event value="2008" version="2" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-StorageManagement/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args2000_1">
+          <data name="SubsystemID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SubsystemURI" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Username" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2001_1">
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2003_1">
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2004_1">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2005_1">
+          <data name="JobName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2009_1">
+          <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SecondaryErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2010_1">
+          <data name="LoadTime_msecs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MI_Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2011_1">
+          <data name="ClusterName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2012_1">
+          <data name="ClusterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InitializationPhase" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2013_1">
+          <data name="Node" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NodeState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2017_1">
+          <data name="ControlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ControlCodeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Runtime_msecs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args2019_1">
+          <data name="ControlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ControlCodeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Nodes" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UnresponsiveNodes" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2020_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="MI_Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2023_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Runtime_msecs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args2024_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MI_Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2028_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args2031_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Runtime_msecs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DriveId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PoolName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PoolVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PoolMetadataLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PoolMinimumAllocationSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SpaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SpaceProvisioningType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SpaceAllocationSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SpaceResiliencyType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MinimumFreeSizeRequired" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args2032_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Callee" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="DriveId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PoolName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PoolVersion" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PoolMetadataLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PoolMinimumAllocationSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SpaceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SpaceProvisioningType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SpaceAllocationSize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SpaceResiliencyType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MinimumFreeSizeRequired" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args2036_1">
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Stage" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2003_2">
+          <data name="ClassName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MethodName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ObjectId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExtendedStatusMsgId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-StorageManagement-WSP-Spaces" />
+       <string id="string1" value="Microsoft-Windows-StorageManagement/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

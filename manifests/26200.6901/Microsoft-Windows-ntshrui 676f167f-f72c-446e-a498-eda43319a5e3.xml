@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ntshrui" name="Microsoft-Windows-ntshrui" guid="{676f167f-f72c-446e-a498-eda43319a5e3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Sharing" opcode="win:Start"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Sharing" opcode="win:Stop"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="StopSharing" opcode="win:Start"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="StopSharing" opcode="win:Stop"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="SMB_Sharing" opcode="win:Start"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="SMB_Sharing" opcode="win:Stop"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="SMB_StopSharing" opcode="win:Start"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="SMB_StopSharing" opcode="win:Stop"/>
+        <event value="1009" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Inplace_Sharing" opcode="win:Start"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Inplace_Sharing" opcode="win:Stop"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Inplace_StopSharing" opcode="win:Start"/>
+        <event value="1012" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Inplace_StopSharing" opcode="win:Stop"/>
+        <event value="1013" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Sharing_End_To_End_Including_UI" opcode="win:Start"/>
+        <event value="1014" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Sharing_End_To_End_Including_UI" opcode="win:Stop"/>
+        <event value="1015" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Sharing_Add_User_To_Sharing_Permissions" opcode="win:Start"/>
+        <event value="1016" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Sharing_Add_User_To_Sharing_Permissions" opcode="win:Stop"/>
+        <event value="1017" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="SharingWizard_Display" opcode="win:Start"/>
+        <event value="1018" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="SharingWizard_Display" opcode="win:Stop"/>
+        <event value="1019" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Publish_Items" opcode="win:Start"/>
+        <event value="1020" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Publish_Items" opcode="win:Stop"/>
+        <event value="1021" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Minimized_Sharing_Wizard_End_To_End" opcode="win:Start"/>
+        <event value="1022" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui" task="Minimized_Sharing_Wizard_End_To_End" opcode="win:Stop"/>
+        <event value="5001" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui-perf" task="Perf_ContextMenu_SpecificUsers" opcode="win:Start"/>
+        <event value="5002" version="0" level="win:Informational"  channel="Microsoft-Windows-ntshrui-perf" task="Perf_ContextMenu_SpecificUsers" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ntshrui" type="unknown"/>
+        <channel value="17" name="Microsoft-Windows-ntshrui-perf" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1000" name="Sharing" message="$(string.string1000)">
+        </task>
+        <task value="1001" name="StopSharing" message="$(string.string1001)">
+        </task>
+        <task value="1200" name="SMB_Sharing" message="$(string.string1200)">
+        </task>
+        <task value="1201" name="SMB_StopSharing" message="$(string.string1201)">
+        </task>
+        <task value="1300" name="Inplace_Sharing" message="$(string.string1300)">
+        </task>
+        <task value="1301" name="Inplace_StopSharing" message="$(string.string1301)">
+        </task>
+        <task value="1500" name="Sharing_End_To_End_Including_UI" message="$(string.string1500)">
+        </task>
+        <task value="1600" name="Sharing_Add_User_To_Sharing_Permissions" message="$(string.string1600)">
+        </task>
+        <task value="1700" name="SharingWizard_Display" message="$(string.string1700)">
+        </task>
+        <task value="1800" name="Publish_Items" message="$(string.string1800)">
+        </task>
+        <task value="1900" name="Minimized_Sharing_Wizard_End_To_End" message="$(string.string1900)">
+        </task>
+        <task value="5001" name="Perf_ContextMenu_SpecificUsers" message="$(string.string5001)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Inplace_Sharing" />
+       <string id="string1" value="Inplace_StopSharing" />
+       <string id="string2" value="Microsoft-Windows-ntshrui" />
+       <string id="string3" value="Microsoft-Windows-ntshrui-perf" />
+       <string id="string4" value="Minimized_Sharing_Wizard_End_To_End" />
+       <string id="string5" value="Perf_ContextMenu_SpecificUsers" />
+       <string id="string6" value="Publish_Items" />
+       <string id="string7" value="Sharing" />
+       <string id="string8" value="Sharing_Add_User_To_Sharing_Permissions" />
+       <string id="string9" value="Sharing_End_To_End_Including_UI" />
+       <string id="string10" value="SharingWizard_Display" />
+       <string id="string11" value="SMB_Sharing" />
+       <string id="string12" value="SMB_StopSharing" />
+       <string id="string13" value="StopSharing" />
+       <string id="string14" value="win:Start" />
+       <string id="string15" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

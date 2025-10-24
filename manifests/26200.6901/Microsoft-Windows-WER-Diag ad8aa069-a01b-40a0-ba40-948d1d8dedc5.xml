@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WER-Diag" name="Microsoft-Windows-WER-Diag" guid="{ad8aa069-a01b-40a0-ba40-948d1d8dedc5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-WER-Diag/Operational" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-WER-Diag/Operational" opcode="win:Info"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-WER-Diag/Operational" opcode="win:Info" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-WER-Diag/Operational" opcode="win:Info" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-WER-Diag/Operational" opcode="win:Info" template="Args5_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WER-Diag/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="CorruptedFilePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CrashedAppName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExceptionCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExceptionStatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleNameLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleName" inType="win:UnicodeString" outType="xs:string" length="ModuleNameLength" />
+        </template>
+        <template tid="Args4_0">
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StartTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CrashTimeFromStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="AppPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="Is64Bit" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CallReturnAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CallReturnModName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CallReturnModOffset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallReturnInstructionBytesLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallReturnInstructionBytes" inType="win:Binary" outType="xs:hexBinary" length="CallReturnInstructionBytesLength" />
+          <data name="CallReturnBaseAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CallReturnRegionSize" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CallReturnState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallReturnProtect" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallReturnType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TargetModName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TargetModOffset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetInstructionBytesLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetInstructionBytes" inType="win:Binary" outType="xs:hexBinary" length="TargetInstructionBytesLength" />
+          <data name="TargetBaseAddress" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TargetRegionSize" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetProtect" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WER-Diag" />
+       <string id="string1" value="Microsoft-Windows-WER-Diag/Operational" />
+       <string id="string2" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

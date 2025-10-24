@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-QoS-qWAVE" name="Microsoft-Windows-QoS-qWAVE" guid="{6ba132c4-da49-415b-a7f4-31870dc9fe25}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args2_0"/>
+        <event value="3" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args3_0"/>
+        <event value="4" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args4_0"/>
+        <event value="5" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args5_0"/>
+        <event value="6" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+        <event value="7" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+        <event value="8" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args13_0"/>
+        <event value="14" version="0" level="win:Error"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-QoS-qWAVE/Debug"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-QoS-qWAVE/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SetFlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SetFlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LLTD Supported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QueryFlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NotifyFlowType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen" />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen" />
+          <data name="TrafficType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="SourceAddressLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceAddress" inType="win:Binary" outType="win:SocketAddress" length="SourceAddressLen" />
+          <data name="DestAddressLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestAddress" inType="win:Binary" outType="win:SocketAddress" length="DestAddressLen" />
+          <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"  />
+          <data name="Is 802.1p Supported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="SourceAddressLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceAddress" inType="win:Binary" outType="win:SocketAddress" length="SourceAddressLen" />
+          <data name="DestAddressLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestAddress" inType="win:Binary" outType="win:SocketAddress" length="DestAddressLen" />
+          <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"  />
+          <data name="Available Bandwidth" inType="win:Double" outType="xs:double"  />
+          <data name="Is 802.1p Supported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="Process ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Thread ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QoS Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="Local Collection Error" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Remote Collection Error" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Cross Traffic Collection Error" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Path Analysis Result" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Remote Analysis Result" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Local Analysis Result" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Source Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="Destination Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"  />
+          <data name="Available Bandwidth" inType="win:Double" outType="xs:double"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Source Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="Destination Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="Quiescent" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen" />
+          <data name="TrafficType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Offlink" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Non-LLTD Enabled Machine" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+        </template>
+        <template tid="Args19_0">
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LLTD Enabled Machine" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+        </template>
+        <template tid="Args20_0">
+          <data name="CurrentTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequestedBandwidth" inType="win:Double" outType="xs:double"  />
+          <data name="NumBursts" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BurstSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-QoS-qWAVE" />
+       <string id="string1" value="Microsoft-Windows-QoS-qWAVE/Debug" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

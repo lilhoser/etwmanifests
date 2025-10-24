@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MF" name="Microsoft-Windows-MF" guid="{a7364e1a-894f-4b3d-a930-2ed9c8c4c811}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_QueueBuffersToDevice" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SendBuffersToDevice" opcode="win:Start" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SendBuffersToDevice" opcode="win:Stop"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_ProcessInput" opcode="win:Info" template="Args4_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_Output" opcode="Devproxy ProcessOutput" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SetInputType" opcode="win:Start" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SetInputType" opcode="win:Stop"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SetOutputType" opcode="win:Start"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SetOutputType" opcode="win:Stop"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_Flush" opcode="win:Info" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_KSPinStateChange" opcode="win:Info" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_VideoPlugin_Load" opcode="win:Start" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_VideoPlugin_Load" opcode="win:Stop"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_VideoPlugin_ProcessInput" opcode="win:Start" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_VideoPlugin_ProcessInput" opcode="win:Stop"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_VideoPlugin_ProcessOutput" opcode="win:Start"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_VideoPlugin_ProcessOutput" opcode="win:Stop"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_D3DAllocator" opcode="D3D Allocator Created" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_D3DAllocator" opcode="D3D Allocator Released"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_MFT" opcode="Devproxy loaded"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_MFT" opcode="Devproxy MFT unloaded"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_MFT_DynamicFormatChange" opcode="win:Start"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_MFT_DynamicFormatChange" opcode="win:Stop" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_MFT_StreamState" opcode="win:Start"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_MFT_StreamState" opcode="win:Stop"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_SendBuffersToDevice" opcode="win:Info"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" opcode="win:Info" template="Args28_0"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" opcode="win:Info" template="Args29_0"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" opcode="win:Info" template="Args30_0"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_PhotoConfirmation" opcode="win:Info"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_DMFT_Notification" opcode="win:Start"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_DMFT_Notification" opcode="win:Stop"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_DMFT_Notification_Init" opcode="win:Info"/>
+        <event value="1000" version="0" level="win:Informational"  channel="MediaFoundationPipeline" task="LoadTopologyTask" opcode="win:Start"/>
+        <event value="1001" version="0" level="win:Informational"  channel="MediaFoundationPipeline" task="LoadTopologyTask" opcode="win:Stop" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="MediaFoundationPipeline" task="LoadTopologyTask" opcode="win:Info" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Informational"  channel="MediaFoundationPipeline" task="FallBackToDefaultD3DFmt" opcode="win:Info" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Informational"  channel="MediaFoundationPipeline" task="DestRectChanged" opcode="win:Info" template="Args1004_0"/>
+        <event value="1005" version="0" level="win:Informational"  channel="MediaFoundationPipeline" task="SrcRectChanged" opcode="win:Info"/>
+        <event value="1006" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="DispatchDelayedEvents" opcode="win:Start" template="Args1006_0"/>
+        <event value="1007" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="DispatchDelayedEvents" opcode="win:Stop" template="Args1007_0"/>
+        <event value="1008" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleStreamEvent" opcode="win:Start" template="Args1008_0"/>
+        <event value="1009" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleStreamEvent" opcode="win:Stop" template="Args1009_0"/>
+        <event value="1010" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleMFTEvent" opcode="win:Start" template="Args1010_0"/>
+        <event value="1011" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleMFTEvent" opcode="win:Stop" template="Args1011_0"/>
+        <event value="1012" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProcStreamRequestSample" opcode="win:Start" template="Args1012_0"/>
+        <event value="1013" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProcStreamRequestSample" opcode="win:Stop" template="Args1013_0"/>
+        <event value="1014" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleSinkEvent" opcode="win:Start"/>
+        <event value="1015" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleSinkEvent" opcode="win:Stop"/>
+        <event value="1016" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="PathLock" opcode="win:Start" template="Args1016_0"/>
+        <event value="1017" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="PathLock" opcode="win:Stop"/>
+        <event value="1018" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleMediaSample" opcode="win:Start" template="Args1018_0"/>
+        <event value="1019" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleMediaSample" opcode="win:Stop"/>
+        <event value="1020" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleMediaSample_Process" opcode="win:Start" template="Args1020_0"/>
+        <event value="1021" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="HandleMediaSample_Process" opcode="win:Stop"/>
+        <event value="1022" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="DispatchNodeInputEvent" opcode="win:Start" template="Args1022_0"/>
+        <event value="1023" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="DispatchNodeInputEvent" opcode="win:Stop" template="Args1023_0"/>
+        <event value="1024" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProcSourceManagerOnStreamSample" opcode="win:Start" template="Args1024_0"/>
+        <event value="1025" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProcSourceManagerOnStreamSample" opcode="win:Stop" template="Args1025_0"/>
+        <event value="1026" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProcStreamRequestSample_Process" opcode="win:Start" template="Args1026_0"/>
+        <event value="1027" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProcStreamRequestSample_Process" opcode="win:Stop" template="Args1027_0"/>
+        <event value="1028" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProc_SourceNode_ProcessSample" opcode="win:Start" template="Args1028_0"/>
+        <event value="1029" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MediaProc_SourceNode_ProcessSample" opcode="win:Stop" template="Args1029_0"/>
+        <event value="1030" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MFTopo_MFT_Inserted" opcode="win:Info" template="Args1030_0"/>
+        <event value="1098" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="OTAFailoverToConstricted" opcode="win:Info" template="Args1098_0"/>
+        <event value="1099" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="OPMPoll" opcode="win:Info" template="Args1099_0"/>
+        <event value="1100" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFInputTrustAuthority_RequestAccess" opcode="win:Info" template="Args1100_0"/>
+        <event value="1101" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFInputTrustAuthority_GetDecrypter" opcode="win:Info" template="Args1101_0"/>
+        <event value="1102" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFInputTrustAuthority_GetPolicy" opcode="win:Info" template="Args1102_0"/>
+        <event value="1103" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFInputTrustAuthority_Reset" opcode="win:Info" template="Args1103_0"/>
+        <event value="1104" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFInputTrustAuthority_BindAccess" opcode="win:Info"/>
+        <event value="1105" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFInputTrustAuthority_UpdateAccess" opcode="win:Info"/>
+        <event value="1106" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="IMFTrustedInput_GetInputTrustAuthority" opcode="win:Start" template="Args1106_0"/>
+        <event value="1107" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="Decrypt" opcode="win:Info" template="Args1107_0"/>
+        <event value="1108" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFSampleProtection_GetInputProtectionVersion" opcode="win:Info" template="Args1108_0"/>
+        <event value="1109" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFSampleProtection_GetOutputProtectionVersion" opcode="win:Info"/>
+        <event value="1110" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFSampleProtection_GetProtectionCertificate" opcode="win:Info"/>
+        <event value="1111" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFSampleProtection_InitInputProtection" opcode="win:Info" template="Args1111_0"/>
+        <event value="1112" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFSampleProtection_InitOutputProtection" opcode="win:Info"/>
+        <event value="1113" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="CreateMFPMP" opcode="win:Info" template="Args1113_0"/>
+        <event value="1114" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="ContentEnablerEvent" opcode="win:Info" template="Args1114_0"/>
+        <event value="1115" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="IMFPMPHost_CreateObjectByCLSID" opcode="win:Info" template="Args1115_0"/>
+        <event value="1116" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="IMFOutputPolicy_GenerateRequiredSchemas" opcode="win:Info" template="Args1116_0"/>
+        <event value="1117" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="RequiredSchema" opcode="win:Info" template="Args1117_0"/>
+        <event value="1118" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="PolicyEvent" opcode="win:Info" template="Args1118_0"/>
+        <event value="1119" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="IMFPMPHostApp_ActivateClassById" opcode="win:Info" template="Args1119_0"/>
+        <event value="1120" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="AppCert" opcode="win:Start"/>
+        <event value="1121" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="AppCert" opcode="win:Stop"/>
+        <event value="1123" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="OTAApplyProtection" opcode="win:Info" template="Args1123_0"/>
+        <event value="1124" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperNeedInput" opcode="win:Info" template="Args1124_0"/>
+        <event value="1126" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTProcessInput" opcode="win:Start" template="Args1126_0"/>
+        <event value="1127" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTProcessInput" opcode="win:Stop" template="Args1127_0"/>
+        <event value="1128" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTProcessOutput" opcode="win:Start"/>
+        <event value="1129" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTProcessOutput" opcode="win:Stop" template="Args1129_0"/>
+        <event value="1130" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperHaveOutput" opcode="win:Info" template="Args1130_0"/>
+        <event value="1131" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperProcessOutput" opcode="win:Info" template="Args1131_0"/>
+        <event value="1132" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTRunning" opcode="win:Start" template="Args1132_0"/>
+        <event value="1133" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTRunning" opcode="win:Stop"/>
+        <event value="1134" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperSetWorkQueue" opcode="win:Info"/>
+        <event value="1135" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapper" opcode="win:Start" template="Args1135_0"/>
+        <event value="1136" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapper" opcode="win:Stop"/>
+        <event value="1137" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperDeadline" opcode="win:Start" template="Args1137_0"/>
+        <event value="1138" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperDeadline" opcode="win:Stop"/>
+        <event value="1139" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTLoopActive" opcode="win:Start"/>
+        <event value="1140" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperMFTLoopActive" opcode="win:Stop"/>
+        <event value="1141" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperCompactedOutput" opcode="win:Info" template="Args1141_0"/>
+        <event value="1145" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperProcessInput" opcode="win:Start" template="Args1145_0"/>
+        <event value="1146" version="0" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="AsyncWrapperProcessInput" opcode="win:Stop"/>
+        <event value="1150" version="0" level="win:Verbose"  channel="MediaFoundationContentProtection" task="VideoFrameConstrict" opcode="win:Info" template="Args1150_0"/>
+        <event value="1151" version="0" level="win:Error"  channel="MediaFoundationContentProtection" task="OPMFail" opcode="win:Info"/>
+        <event value="1160" version="0" level="win:Informational"  channel="MediaFoundationContentProtection" task="PMPServerProxy_LaunchedProcess" opcode="win:Info" template="Args1160_0"/>
+        <event value="1200" version="0" level="win:Informational"  channel="MediaFoundationPipeline" opcode="win:Info" template="Args1200_0"/>
+        <event value="1201" version="0" level="win:Informational"  channel="MediaFoundationPipeline" opcode="win:Info"/>
+        <event value="1202" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy-MFT-ProcessMessage-Task" opcode="win:Info" template="Args1202_0"/>
+        <event value="1203" version="0" level="win:Verbose"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_D3DDeviceLost" opcode="win:Info"/>
+        <event value="1204" version="0" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF-Devproxy-sample-TimeStamp-Task" opcode="win:Info"/>
+        <event value="1205" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MFTLongRunning" opcode="win:Start" template="Args1205_0"/>
+        <event value="1206" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MFTLongRunning" opcode="win:Stop"/>
+        <event value="1207" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="SyncMFTNodeProcessInput" opcode="win:Start" template="Args1207_0"/>
+        <event value="1208" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="SyncMFTNodeProcessInput" opcode="win:Stop"/>
+        <event value="1209" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="SyncMFTNodeProcessOutput" opcode="win:Start"/>
+        <event value="1210" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="SyncMFTNodeProcessOutput" opcode="win:Stop"/>
+        <event value="1211" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="AsyncMFTNodeProcessInput" opcode="win:Start"/>
+        <event value="1212" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="AsyncMFTNodeProcessInput" opcode="win:Stop"/>
+        <event value="1213" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="AsyncMFTNodeProcessOutput" opcode="win:Start"/>
+        <event value="1214" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="AsyncMFTNodeProcessOutput" opcode="win:Stop"/>
+        <event value="1215" version="0" level="win:Verbose"  channel="MediaFoundationPipeline" task="MFTInfoSetWorkQueue" opcode="win:Info"/>
+        <event value="1300" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_ReceiveSampleCP" opcode="win:Info" template="Args1300_0"/>
+        <event value="1301" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_SendSampleEvent" opcode="win:Info" template="Args1301_0"/>
+        <event value="1302" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_SamplePoolPending" opcode="win:Info" template="Args1302_0"/>
+        <event value="1303" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_QueueSample" opcode="win:Info" template="Args1303_0"/>
+        <event value="1304" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_RequestSample" opcode="win:Info" template="Args1304_0"/>
+        <event value="1305" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_FillSampleRequest" opcode="win:Info" template="Args1305_0"/>
+        <event value="1306" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_GetTime" opcode="win:Info" template="Args1306_0"/>
+        <event value="1307" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_State" opcode="win:Start"/>
+        <event value="1308" version="0" level="win:Verbose"  channel="MediaFoundationDS" task="MFDS_State" opcode="win:Stop"/>
+        <event value="1310" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcPrefetch_FillBuffer" opcode="win:Start"/>
+        <event value="1311" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcPrefetch_FillBuffer" opcode="win:Stop"/>
+        <event value="1312" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcStreamEOSState" opcode="win:Info" template="Args1312_0"/>
+        <event value="1313" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcStreamNeedMoreSamples" opcode="win:Info" template="Args1313_0"/>
+        <event value="1314" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcPrefetch_Timeout" opcode="win:Start"/>
+        <event value="1315" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcPrefetch_Timeout" opcode="win:Stop"/>
+        <event value="1316" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcPrefetch_Timeout" opcode="win:Info"/>
+        <event value="1317" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcStreamRequestSample" opcode="win:Start"/>
+        <event value="1318" version="0" level="win:Verbose"  channel="MediaFoundationSrcPrefetch" task="SrcStreamRequestSample" opcode="win:Stop"/>
+        <event value="1350" version="0" level="win:Verbose"  channel="MediaFoundationMP4" task="MP4_CreateQTMovie" opcode="win:Start"/>
+        <event value="1351" version="0" level="win:Verbose"  channel="MediaFoundationMP4" task="MP4_CreateQTMovie" opcode="win:Stop" template="Args1351_0"/>
+        <event value="1352" version="0" level="win:Verbose"  channel="MediaFoundationMP4" task="MP4_SampleQueue" opcode="win:Info" template="Args1352_0"/>
+        <event value="1353" version="0" level="win:Verbose"  channel="MediaFoundationMP4" task="MP4_CompactAudioSample" opcode="win:Info" template="Args1353_0"/>
+        <event value="1417" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_InitializeTransform" opcode="win:Start" template="Args1417_0"/>
+        <event value="1418" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_InitializeTransform" opcode="win:Start"/>
+        <event value="1419" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_SetOutputType" opcode="win:Start" template="Args1419_0"/>
+        <event value="1420" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_SetOutputType" opcode="win:Stop"/>
+        <event value="1421" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_OnInputStreamStateChanged" opcode="win:Start"/>
+        <event value="1422" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_OnInputStreamStateChanged" opcode="win:Stop"/>
+        <event value="1423" version="0" level="win:Verbose"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_MFT_ProcessOutput" opcode="win:Info"/>
+        <event value="1424" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="MF_DeviceMFTM_MEError_Thrown" opcode="win:Info"/>
+        <event value="1425" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="DeviceMFTM_DeviceTransform_SetOutputType" opcode="win:Start"/>
+        <event value="1426" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="DeviceMFTM_DeviceTransform_SetOutputType" opcode="win:Stop"/>
+        <event value="1427" version="0" level="win:Informational"  channel="MF_MediaFoundationDeviceMFT" task="DeviceMFTM_DeviceTransform_OutputSample" opcode="win:Info" template="Args1427_0"/>
+        <event value="5" version="1" level="win:Informational"  channel="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" task="MF_Devproxy_Output" opcode="ME TransformHave Output" template="Args5_1"/>
+        <event value="1147" version="2" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="Multisample_Expand" opcode="win:Info" template="Args1147_2"/>
+        <event value="1148" version="2" level="win:Verbose"  channel="MediaFoundationAsyncWrapper" task="Multisample_Compact" opcode="win:Info" template="Args1148_2"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" type="Debug"/>
+        <channel value="17" name="MF_MediaFoundationDeviceMFT" type="unknown"/>
+        <channel value="18" name="MediaFoundationPipeline" type="unknown"/>
+        <channel value="19" name="MediaFoundationContentProtection" type="unknown"/>
+        <channel value="20" name="MediaFoundationAsyncWrapper" type="unknown"/>
+        <channel value="21" name="MediaFoundationDS" type="unknown"/>
+        <channel value="22" name="MediaFoundationSrcPrefetch" type="unknown"/>
+        <channel value="23" name="MediaFoundationMP4" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="MF_Devproxy_QueueBuffersToDevice" message="$(string.string1)">
+        </task>
+        <task value="2" name="MF_Devproxy_SendBuffersToDevice" message="$(string.string2)">
+        </task>
+        <task value="3" name="MF_Devproxy_ProcessInput" message="$(string.string3)">
+        </task>
+        <task value="4" name="MF_Devproxy_Output" message="$(string.string4)">
+          <opcodes>
+           <opcode value="12" name="Devproxy ProcessOutput" message="$(string.string27)"/>
+           <opcode value="11" name="ME TransformHave Output" message="$(string.string53)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="MF_Devproxy_SetInputType" message="$(string.string5)">
+        </task>
+        <task value="6" name="MF_Devproxy_SetOutputType" message="$(string.string6)">
+        </task>
+        <task value="7" name="MF_Devproxy_Flush" message="$(string.string7)">
+        </task>
+        <task value="8" name="MF_Devproxy_KSPinStateChange" message="$(string.string8)">
+        </task>
+        <task value="9" name="MF_Devproxy_VideoPlugin_Load" message="$(string.string9)">
+        </task>
+        <task value="10" name="MF_Devproxy_VideoPlugin_ProcessInput" message="$(string.string10)">
+        </task>
+        <task value="11" name="MF_Devproxy_VideoPlugin_ProcessOutput" message="$(string.string11)">
+        </task>
+        <task value="12" name="MF_Devproxy_D3DAllocator" message="$(string.string12)">
+          <opcodes>
+           <opcode value="13" name="D3D Allocator Created" message="$(string.string17)"/>
+           <opcode value="14" name="D3D Allocator Released" message="$(string.string18)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="MF_Devproxy_MFT" message="$(string.string13)">
+          <opcodes>
+           <opcode value="15" name="Devproxy loaded" message="$(string.string25)"/>
+           <opcode value="16" name="Devproxy MFT unloaded" message="$(string.string26)"/>
+          </opcodes>
+        </task>
+        <task value="14" name="MF_Devproxy_MFT_DynamicFormatChange" message="$(string.string14)">
+        </task>
+        <task value="15" name="MF_Devproxy_MFT_StreamState" message="$(string.string15)">
+        </task>
+        <task value="16" name="MF_Devproxy_OnPinBufferCompletion" message="$(string.string16)">
+        </task>
+        <task value="17" name="MF_Devproxy_PhotoConfirmation" message="$(string.string17)">
+        </task>
+        <task value="18" name="MF_Devproxy_DMFT_Notification" message="$(string.string18)">
+        </task>
+        <task value="19" name="MF_Devproxy_DMFT_Notification_Init" message="$(string.string19)">
+        </task>
+        <task value="20" name="MF_DeviceMFTM_InitializeTransform" message="$(string.string20)">
+        </task>
+        <task value="21" name="MF_DeviceMFTM_SetOutputType" message="$(string.string21)">
+        </task>
+        <task value="22" name="MF_DeviceMFTM_OnInputStreamStateChanged" message="$(string.string22)">
+        </task>
+        <task value="23" name="MF_DeviceMFTM_MFT_ProcessOutput" message="$(string.string23)">
+        </task>
+        <task value="24" name="MF_DeviceMFTM_MEError_Thrown" message="$(string.string24)">
+        </task>
+        <task value="25" name="DeviceMFTM_DeviceTransform_SetOutputType" message="$(string.string25)">
+        </task>
+        <task value="26" name="DeviceMFTM_DeviceTransform_OutputSample" message="$(string.string26)">
+        </task>
+        <task value="103" name="LoadTopologyTask" message="$(string.string103)">
+        </task>
+        <task value="104" name="FallBackToDefaultD3DFmt" message="$(string.string104)">
+        </task>
+        <task value="105" name="DestRectChanged" message="$(string.string105)">
+        </task>
+        <task value="106" name="SrcRectChanged" message="$(string.string106)">
+        </task>
+        <task value="107" name="DispatchDelayedEvents" message="$(string.string107)">
+        </task>
+        <task value="108" name="HandleStreamEvent" message="$(string.string108)">
+        </task>
+        <task value="109" name="HandleMFTEvent" message="$(string.string109)">
+        </task>
+        <task value="110" name="MediaProcStreamRequestSample" message="$(string.string110)">
+        </task>
+        <task value="111" name="HandleSinkEvent" message="$(string.string111)">
+        </task>
+        <task value="112" name="PathLock" message="$(string.string112)">
+        </task>
+        <task value="113" name="HandleMediaSample" message="$(string.string113)">
+        </task>
+        <task value="114" name="HandleMediaSample_Process" message="$(string.string114)">
+        </task>
+        <task value="115" name="DispatchNodeInputEvent" message="$(string.string115)">
+        </task>
+        <task value="116" name="MediaProcSourceManagerOnStreamSample" message="$(string.string116)">
+        </task>
+        <task value="117" name="MediaProcStreamRequestSample_Process" message="$(string.string117)">
+        </task>
+        <task value="118" name="MediaProc_SourceNode_ProcessSample" message="$(string.string118)">
+        </task>
+        <task value="119" name="MFTopo_MFT_Inserted" message="$(string.string119)">
+        </task>
+        <task value="1098" name="OTAFailoverToConstricted" message="$(string.string1098)">
+        </task>
+        <task value="1099" name="OPMPoll" message="$(string.string1099)">
+        </task>
+        <task value="1100" name="IMFInputTrustAuthority_RequestAccess" message="$(string.string1100)">
+        </task>
+        <task value="1101" name="IMFInputTrustAuthority_GetDecrypter" message="$(string.string1101)">
+        </task>
+        <task value="1102" name="IMFInputTrustAuthority_GetPolicy" message="$(string.string1102)">
+        </task>
+        <task value="1103" name="IMFInputTrustAuthority_Reset" message="$(string.string1103)">
+        </task>
+        <task value="1104" name="IMFInputTrustAuthority_BindAccess" message="$(string.string1104)">
+        </task>
+        <task value="1105" name="IMFInputTrustAuthority_UpdateAccess" message="$(string.string1105)">
+        </task>
+        <task value="1106" name="IMFTrustedInput_GetInputTrustAuthority" message="$(string.string1106)">
+        </task>
+        <task value="1107" name="Decrypt" message="$(string.string1107)">
+        </task>
+        <task value="1108" name="IMFSampleProtection_GetInputProtectionVersion" message="$(string.string1108)">
+        </task>
+        <task value="1109" name="IMFSampleProtection_GetOutputProtectionVersion" message="$(string.string1109)">
+        </task>
+        <task value="1110" name="IMFSampleProtection_GetProtectionCertificate" message="$(string.string1110)">
+        </task>
+        <task value="1111" name="IMFSampleProtection_InitInputProtection" message="$(string.string1111)">
+        </task>
+        <task value="1112" name="IMFSampleProtection_InitOutputProtection" message="$(string.string1112)">
+        </task>
+        <task value="1113" name="CreateMFPMP" message="$(string.string1113)">
+        </task>
+        <task value="1114" name="ContentEnablerEvent" message="$(string.string1114)">
+        </task>
+        <task value="1115" name="IMFPMPHost_CreateObjectByCLSID" message="$(string.string1115)">
+        </task>
+        <task value="1116" name="IMFOutputPolicy_GenerateRequiredSchemas" message="$(string.string1116)">
+        </task>
+        <task value="1117" name="RequiredSchema" message="$(string.string1117)">
+        </task>
+        <task value="1118" name="PolicyEvent" message="$(string.string1118)">
+        </task>
+        <task value="1119" name="IMFPMPHostApp_ActivateClassById" message="$(string.string1119)">
+        </task>
+        <task value="1120" name="AppCert" message="$(string.string1120)">
+        </task>
+        <task value="1122" name="OTAApplyProtection" message="$(string.string1122)">
+        </task>
+        <task value="1123" name="AsyncWrapperNeedInput" message="$(string.string1123)">
+        </task>
+        <task value="1124" name="AsyncWrapperProcessInput" message="$(string.string1124)">
+        </task>
+        <task value="1125" name="AsyncWrapperMFTProcessInput" message="$(string.string1125)">
+        </task>
+        <task value="1126" name="AsyncWrapperMFTProcessOutput" message="$(string.string1126)">
+        </task>
+        <task value="1127" name="AsyncWrapperHaveOutput" message="$(string.string1127)">
+        </task>
+        <task value="1128" name="AsyncWrapperProcessOutput" message="$(string.string1128)">
+        </task>
+        <task value="1129" name="MF_Devproxy-MFT-ProcessMessage-Task" message="$(string.string1129)">
+        </task>
+        <task value="1130" name="MF_D3DDeviceLost" message="$(string.string1130)">
+        </task>
+        <task value="1131" name="MF-Devproxy-sample-TimeStamp-Task" message="$(string.string1131)">
+        </task>
+        <task value="1132" name="AsyncWrapperMFTRunning" message="$(string.string1132)">
+        </task>
+        <task value="1133" name="AsyncWrapperSetWorkQueue" message="$(string.string1133)">
+        </task>
+        <task value="1134" name="AsyncWrapper" message="$(string.string1134)">
+        </task>
+        <task value="1135" name="AsyncWrapperDeadline" message="$(string.string1135)">
+        </task>
+        <task value="1136" name="AsyncWrapperMFTLoopActive" message="$(string.string1136)">
+        </task>
+        <task value="1137" name="AsyncWrapperCompactedOutput" message="$(string.string1137)">
+        </task>
+        <task value="1138" name="Multisample_Expand" message="$(string.string1138)">
+        </task>
+        <task value="1139" name="Multisample_Compact" message="$(string.string1139)">
+        </task>
+        <task value="1140" name="MFTLongRunning" message="$(string.string1140)">
+        </task>
+        <task value="1141" name="SyncMFTNodeProcessInput" message="$(string.string1141)">
+        </task>
+        <task value="1142" name="SyncMFTNodeProcessOutput" message="$(string.string1142)">
+        </task>
+        <task value="1143" name="AsyncMFTNodeProcessInput" message="$(string.string1143)">
+        </task>
+        <task value="1144" name="AsyncMFTNodeProcessOutput" message="$(string.string1144)">
+        </task>
+        <task value="1145" name="MFTInfoSetWorkQueue" message="$(string.string1145)">
+        </task>
+        <task value="1150" name="VideoFrameConstrict" message="$(string.string1150)">
+        </task>
+        <task value="1151" name="OPMFail" message="$(string.string1151)">
+        </task>
+        <task value="1160" name="PMPServerProxy_LaunchedProcess" message="$(string.string1160)">
+        </task>
+        <task value="1200" name="MFDS_ReceiveSampleCP" message="$(string.string1200)">
+        </task>
+        <task value="1201" name="MFDS_SendSampleEvent" message="$(string.string1201)">
+        </task>
+        <task value="1202" name="MFDS_SamplePoolPending" message="$(string.string1202)">
+        </task>
+        <task value="1203" name="MFDS_FillSampleRequest" message="$(string.string1203)">
+        </task>
+        <task value="1204" name="MFDS_QueueSample" message="$(string.string1204)">
+        </task>
+        <task value="1205" name="MFDS_RequestSample" message="$(string.string1205)">
+        </task>
+        <task value="1206" name="MFDS_GetTime" message="$(string.string1206)">
+        </task>
+        <task value="1207" name="MFDS_State" message="$(string.string1207)">
+        </task>
+        <task value="1210" name="SrcPrefetch_FillBuffer" message="$(string.string1210)">
+        </task>
+        <task value="1211" name="SrcStreamEOSState" message="$(string.string1211)">
+        </task>
+        <task value="1212" name="SrcStreamNeedMoreSamples" message="$(string.string1212)">
+        </task>
+        <task value="1213" name="SrcPrefetch_Timeout" message="$(string.string1213)">
+        </task>
+        <task value="1214" name="SrcStreamRequestSample" message="$(string.string1214)">
+        </task>
+        <task value="1220" name="MP4_CreateQTMovie" message="$(string.string1220)">
+        </task>
+        <task value="1221" name="MP4_SampleQueue" message="$(string.string1221)">
+        </task>
+        <task value="1222" name="MP4_CompactAudioSample" message="$(string.string1222)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="METransformHaveOutput" message="$(string.string64)"/>
+        <opcode value="12" name="ProcessOutput" message="$(string.string118)"/>
+        <opcode value="13" name="D3DAllocatorCreated" message="$(string.string19)"/>
+        <opcode value="14" name="D3DAllocatorReleased" message="$(string.string20)"/>
+        <opcode value="15" name="Load" message="$(string.string51)"/>
+        <opcode value="16" name="Unload" message="$(string.string128)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsStreaming" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="AsyncTaskPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PinPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParentPointer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="OutputBufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputSamplesPtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="MediaType" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="StreamingState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="PinHandle" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="D3DManagerPtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="FormatInfoStruct" inType="win:UnicodeString" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args28_0">
+          <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="samplePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ExpectedSampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ActualSampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args29_0">
+          <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DriverQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="samplePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DriverTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SystemTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FlagTimeStamp" inType="win:AnsiString" outType="xs:string"  />
+          <data name="StreamName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="CLSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="D3DFmt" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1004_0">
+          <data name="left" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="top" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="right" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bottom" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1006_0">
+          <data name="Bitpump" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1007_0">
+          <data name="QueuePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1008_0">
+          <data name="Bitpump" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1009_0">
+          <data name="Bitpump" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1010_0">
+          <data name="MFT" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1011_0">
+          <data name="MFT" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1012_0">
+          <data name="MPStream" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Node" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1013_0">
+          <data name="MPStream" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Node" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1016_0">
+          <data name="PathLock" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1018_0">
+          <data name="Bitpump" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1020_0">
+          <data name="Bitpump" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pSample" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1022_0">
+          <data name="Node" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1023_0">
+          <data name="Node" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1024_0">
+          <data name="MP" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Node" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1025_0">
+          <data name="MP" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1026_0">
+          <data name="MPStream" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Node" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1027_0">
+          <data name="MPStream" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Node" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1028_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="node" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OutputIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1029_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="node" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1030_0">
+          <data name="IsHWMFT" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DecoderGUID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1098_0">
+          <data name="fromtype" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1099_0">
+          <data name="exitPolling" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1100_0">
+          <data name="stream" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="action" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="enablerReturned" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1101_0">
+          <data name="streamid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1102_0">
+          <data name="streamid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="policyReturned" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1103_0">
+          <data name="object" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1106_0">
+          <data name="streamId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1107_0">
+          <data name="bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1108_0">
+          <data name="value" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1111_0">
+          <data name="version" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="streamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1113_0">
+          <data name="isProtected" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1114_0">
+          <data name="type" inType="win:GUID" outType="xs:GUID"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1115_0">
+          <data name="CLSID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1116_0">
+          <data name="attributes" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="outputSubtype" inType="win:GUID" outType="xs:GUID"  />
+          <data name="cSchemas" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1117_0">
+          <data name="context" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="type" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args1118_0">
+          <data name="type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="streamId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1119_0">
+          <data name="classId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1123_0">
+          <data name="type" inType="win:GUID" outType="xs:GUID"  />
+          <data name="level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1124_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputRequestsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1126_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1127_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1129_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1130_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OutputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1131_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OutputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1132_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1135_0">
+          <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MFTPtr" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1137_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeadlineHNS" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1141_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Duration0" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Duration1" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DurationResult" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1145_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShatterInputSamples" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1150_0">
+          <data name="bandwidthInPixels" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1160_0">
+          <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1200_0">
+          <data name="ComponentType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SettingType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args1202_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="eMessage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ulParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1205_0">
+          <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1207_0">
+          <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RemainingInputRequests" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemainingQueuedInputSamples" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1300_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Timestamp" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1301_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Timestamp" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1302_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PendingCount" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1303_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+          <data name="QueueLen" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1304_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="Token" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QueueLen" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1305_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Token" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleQueueLen" inType="win:Int32" outType="xs:int"  />
+          <data name="RequestQueueLen" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1306_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="tsOrig" inType="win:Int64" outType="xs:long"  />
+          <data name="sysOrig" inType="win:Int64" outType="xs:long"  />
+          <data name="tsFixed" inType="win:Int64" outType="xs:long"  />
+          <data name="sysFixed" inType="win:Int64" outType="xs:long"  />
+          <data name="rtNow" inType="win:Int64" outType="xs:long"  />
+          <data name="tsOut" inType="win:Int64" outType="xs:long"  />
+          <data name="tsOut_ms" inType="win:Int64" outType="xs:long"  />
+          <data name="Diff_Now_LastSys_ms" inType="win:Int64" outType="xs:long"  />
+          <data name="Fixed" inType="win:Int32" outType="xs:int"  />
+          <data name="State" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1312_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="Old state" inType="win:Int32" outType="xs:int"  />
+          <data name="New state" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1313_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UseSampleBasedBuffering" inType="win:Int32" outType="xs:int"  />
+          <data name="Rate" inType="win:Float" outType="xs:float"  />
+          <data name="IsEOS" inType="win:Int32" outType="xs:int"  />
+          <data name="UnprocessedSamples" inType="win:Int32" outType="xs:int"  />
+          <data name="Prerolled" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1351_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1352_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="SampleCount" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1353_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamID" inType="win:Int32" outType="xs:int"  />
+          <data name="timestamps" inType="win:Int64" outType="xs:long"  />
+          <data name="prevDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="newDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="mergedDuration" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1417_0">
+          <data name="SymLink" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1419_0">
+          <data name="PinId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MediaType" inType="win:AnsiString" outType="xs:string"  />
+          <data name="PinState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1427_0">
+          <data name="DMFTPtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StreamId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CaptureTimestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CaptureTimestamp Present" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CaptureDelta" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args5_1">
+          <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReadySampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Sample" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="now" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Delta_us" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1147_2">
+          <data name="Buffer Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1148_2">
+          <data name="Buffer Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OrigDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AddDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NewDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AppCert" />
+       <string id="string1" value="AsyncMFTNodeProcessInput" />
+       <string id="string2" value="AsyncMFTNodeProcessOutput" />
+       <string id="string3" value="AsyncWrapper" />
+       <string id="string4" value="AsyncWrapperCompactedOutput" />
+       <string id="string5" value="AsyncWrapperDeadline" />
+       <string id="string6" value="AsyncWrapperHaveOutput" />
+       <string id="string7" value="AsyncWrapperMFTLoopActive" />
+       <string id="string8" value="AsyncWrapperMFTProcessInput" />
+       <string id="string9" value="AsyncWrapperMFTProcessOutput" />
+       <string id="string10" value="AsyncWrapperMFTRunning" />
+       <string id="string11" value="AsyncWrapperNeedInput" />
+       <string id="string12" value="AsyncWrapperProcessInput" />
+       <string id="string13" value="AsyncWrapperProcessOutput" />
+       <string id="string14" value="AsyncWrapperSetWorkQueue" />
+       <string id="string15" value="ContentEnablerEvent" />
+       <string id="string16" value="CreateMFPMP" />
+       <string id="string17" value="D3D Allocator Created" />
+       <string id="string18" value="D3D Allocator Released" />
+       <string id="string19" value="D3DAllocatorCreated" />
+       <string id="string20" value="D3DAllocatorReleased" />
+       <string id="string21" value="Decrypt" />
+       <string id="string22" value="DestRectChanged" />
+       <string id="string23" value="DeviceMFTM_DeviceTransform_OutputSample" />
+       <string id="string24" value="DeviceMFTM_DeviceTransform_SetOutputType" />
+       <string id="string25" value="Devproxy loaded" />
+       <string id="string26" value="Devproxy MFT unloaded" />
+       <string id="string27" value="Devproxy ProcessOutput" />
+       <string id="string28" value="DispatchDelayedEvents" />
+       <string id="string29" value="DispatchNodeInputEvent" />
+       <string id="string30" value="FallBackToDefaultD3DFmt" />
+       <string id="string31" value="HandleMediaSample" />
+       <string id="string32" value="HandleMediaSample_Process" />
+       <string id="string33" value="HandleMFTEvent" />
+       <string id="string34" value="HandleSinkEvent" />
+       <string id="string35" value="HandleStreamEvent" />
+       <string id="string36" value="IMFInputTrustAuthority_BindAccess" />
+       <string id="string37" value="IMFInputTrustAuthority_GetDecrypter" />
+       <string id="string38" value="IMFInputTrustAuthority_GetPolicy" />
+       <string id="string39" value="IMFInputTrustAuthority_RequestAccess" />
+       <string id="string40" value="IMFInputTrustAuthority_Reset" />
+       <string id="string41" value="IMFInputTrustAuthority_UpdateAccess" />
+       <string id="string42" value="IMFOutputPolicy_GenerateRequiredSchemas" />
+       <string id="string43" value="IMFPMPHost_CreateObjectByCLSID" />
+       <string id="string44" value="IMFPMPHostApp_ActivateClassById" />
+       <string id="string45" value="IMFSampleProtection_GetInputProtectionVersion" />
+       <string id="string46" value="IMFSampleProtection_GetOutputProtectionVersion" />
+       <string id="string47" value="IMFSampleProtection_GetProtectionCertificate" />
+       <string id="string48" value="IMFSampleProtection_InitInputProtection" />
+       <string id="string49" value="IMFSampleProtection_InitOutputProtection" />
+       <string id="string50" value="IMFTrustedInput_GetInputTrustAuthority" />
+       <string id="string51" value="Load" />
+       <string id="string52" value="LoadTopologyTask" />
+       <string id="string53" value="ME TransformHave Output" />
+       <string id="string54" value="MediaFoundationAsyncWrapper" />
+       <string id="string55" value="MediaFoundationContentProtection" />
+       <string id="string56" value="MediaFoundationDS" />
+       <string id="string57" value="MediaFoundationMP4" />
+       <string id="string58" value="MediaFoundationPipeline" />
+       <string id="string59" value="MediaFoundationSrcPrefetch" />
+       <string id="string60" value="MediaProc_SourceNode_ProcessSample" />
+       <string id="string61" value="MediaProcSourceManagerOnStreamSample" />
+       <string id="string62" value="MediaProcStreamRequestSample" />
+       <string id="string63" value="MediaProcStreamRequestSample_Process" />
+       <string id="string64" value="METransformHaveOutput" />
+       <string id="string65" value="MF_D3DDeviceLost" />
+       <string id="string66" value="MF_DeviceMFTM_InitializeTransform" />
+       <string id="string67" value="MF_DeviceMFTM_MEError_Thrown" />
+       <string id="string68" value="MF_DeviceMFTM_MFT_ProcessOutput" />
+       <string id="string69" value="MF_DeviceMFTM_OnInputStreamStateChanged" />
+       <string id="string70" value="MF_DeviceMFTM_SetOutputType" />
+       <string id="string71" value="MF_Devproxy_D3DAllocator" />
+       <string id="string72" value="MF_Devproxy_DMFT_Notification" />
+       <string id="string73" value="MF_Devproxy_DMFT_Notification_Init" />
+       <string id="string74" value="MF_Devproxy_Flush" />
+       <string id="string75" value="MF_Devproxy_KSPinStateChange" />
+       <string id="string76" value="MF_Devproxy_MFT" />
+       <string id="string77" value="MF_Devproxy_MFT_DynamicFormatChange" />
+       <string id="string78" value="MF_Devproxy_MFT_StreamState" />
+       <string id="string79" value="MF_Devproxy_OnPinBufferCompletion" />
+       <string id="string80" value="MF_Devproxy_Output" />
+       <string id="string81" value="MF_Devproxy_PhotoConfirmation" />
+       <string id="string82" value="MF_Devproxy_ProcessInput" />
+       <string id="string83" value="MF_Devproxy_QueueBuffersToDevice" />
+       <string id="string84" value="MF_Devproxy_SendBuffersToDevice" />
+       <string id="string85" value="MF_Devproxy_SetInputType" />
+       <string id="string86" value="MF_Devproxy_SetOutputType" />
+       <string id="string87" value="MF_Devproxy_VideoPlugin_Load" />
+       <string id="string88" value="MF_Devproxy_VideoPlugin_ProcessInput" />
+       <string id="string89" value="MF_Devproxy_VideoPlugin_ProcessOutput" />
+       <string id="string90" value="MF_Devproxy-MFT-ProcessMessage-Task" />
+       <string id="string91" value="MF_MediaFoundationDeviceMFT" />
+       <string id="string92" value="MF-Devproxy-sample-TimeStamp-Task" />
+       <string id="string93" value="MFDS_FillSampleRequest" />
+       <string id="string94" value="MFDS_GetTime" />
+       <string id="string95" value="MFDS_QueueSample" />
+       <string id="string96" value="MFDS_ReceiveSampleCP" />
+       <string id="string97" value="MFDS_RequestSample" />
+       <string id="string98" value="MFDS_SamplePoolPending" />
+       <string id="string99" value="MFDS_SendSampleEvent" />
+       <string id="string100" value="MFDS_State" />
+       <string id="string101" value="MFTInfoSetWorkQueue" />
+       <string id="string102" value="MFTLongRunning" />
+       <string id="string103" value="MFTopo_MFT_Inserted" />
+       <string id="string104" value="Microsoft-Windows-MF" />
+       <string id="string105" value="Microsoft-Windows-MF-MediaFoundation/MF_DeviceProxy" />
+       <string id="string106" value="MP4_CompactAudioSample" />
+       <string id="string107" value="MP4_CreateQTMovie" />
+       <string id="string108" value="MP4_SampleQueue" />
+       <string id="string109" value="Multisample_Compact" />
+       <string id="string110" value="Multisample_Expand" />
+       <string id="string111" value="OPMFail" />
+       <string id="string112" value="OPMPoll" />
+       <string id="string113" value="OTAApplyProtection" />
+       <string id="string114" value="OTAFailoverToConstricted" />
+       <string id="string115" value="PathLock" />
+       <string id="string116" value="PMPServerProxy_LaunchedProcess" />
+       <string id="string117" value="PolicyEvent" />
+       <string id="string118" value="ProcessOutput" />
+       <string id="string119" value="RequiredSchema" />
+       <string id="string120" value="SrcPrefetch_FillBuffer" />
+       <string id="string121" value="SrcPrefetch_Timeout" />
+       <string id="string122" value="SrcRectChanged" />
+       <string id="string123" value="SrcStreamEOSState" />
+       <string id="string124" value="SrcStreamNeedMoreSamples" />
+       <string id="string125" value="SrcStreamRequestSample" />
+       <string id="string126" value="SyncMFTNodeProcessInput" />
+       <string id="string127" value="SyncMFTNodeProcessOutput" />
+       <string id="string128" value="Unload" />
+       <string id="string129" value="VideoFrameConstrict" />
+       <string id="string130" value="win:Info" />
+       <string id="string131" value="win:Start" />
+       <string id="string132" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

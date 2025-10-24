@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-VolumeControl" name="Microsoft-Windows-VolumeControl" guid="{07de7879-1c96-41ce-afbd-c659a0e8e643}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="AudioPerf_Task_LaunchFlyout" opcode="win:Start" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="AudioPerf_Task_LaunchFlyout" opcode="win:Stop"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_SubscribeWnf" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_UnsubscribeWnf"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_WnfCallback"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_WnfCallback_Skip" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_WnfCallback_ScheduleUI" template="Args108_0"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_IsChildAccount" template="Args109_0"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="win:Start" template="Args110_0"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_UIThread_PopupWindowFactory"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_UIThread_PopupUI"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="win:Stop"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_UserSelection" template="Args114_0"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_PropogateToDriver" template="Args115_0"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-VolumeControl/Performance" task="task_VolumeLimit_UI" opcode="VolumeLimit_UserSelectionPropogationResult"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-VolumeControl/Performance" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="101" name="AudioPerf_Task_LaunchFlyout" message="$(string.string101)">
+        </task>
+        <task value="102" name="task_VolumeLimit_UI" message="$(string.string102)">
+          <opcodes>
+           <opcode value="11" name="VolumeLimit_SubscribeWnf" message="$(string.string17)"/>
+           <opcode value="12" name="VolumeLimit_UnsubscribeWnf" message="$(string.string20)"/>
+           <opcode value="13" name="VolumeLimit_WnfCallback" message="$(string.string23)"/>
+           <opcode value="14" name="VolumeLimit_WnfCallback_Skip" message="$(string.string25)"/>
+           <opcode value="15" name="VolumeLimit_WnfCallback_ScheduleUI" message="$(string.string24)"/>
+           <opcode value="16" name="VolumeLimit_IsChildAccount" message="$(string.string15)"/>
+           <opcode value="17" name="VolumeLimit_UIThread_PopupWindowFactory" message="$(string.string19)"/>
+           <opcode value="18" name="VolumeLimit_UIThread_PopupUI" message="$(string.string18)"/>
+           <opcode value="19" name="VolumeLimit_UserSelection" message="$(string.string21)"/>
+           <opcode value="20" name="VolumeLimit_PropogateToDriver" message="$(string.string16)"/>
+           <opcode value="21" name="VolumeLimit_UserSelectionPropogationResult" message="$(string.string22)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="op_VolumeLimit_SubscribeWnf" message="$(string.string5)"/>
+        <opcode value="12" name="op_VolumeLimit_UnsubscribeWnf" message="$(string.string8)"/>
+        <opcode value="13" name="op_VolumeLimit_WnfCallback" message="$(string.string11)"/>
+        <opcode value="14" name="op_VolumeLimit_WnfCallback_Skip" message="$(string.string13)"/>
+        <opcode value="15" name="op_VolumeLimit_WnfCallback_ScheduleUI" message="$(string.string12)"/>
+        <opcode value="16" name="op_VolumeLimit_IsChildAccount" message="$(string.string3)"/>
+        <opcode value="17" name="op_VolumeLimit_UIThread_PopupWindowFactory" message="$(string.string7)"/>
+        <opcode value="18" name="op_VolumeLimit_UIThread_PopupUI" message="$(string.string6)"/>
+        <opcode value="19" name="op_VolumeLimit_UserSelection" message="$(string.string9)"/>
+        <opcode value="20" name="op_VolumeLimit_PropogateToDriver" message="$(string.string4)"/>
+        <opcode value="21" name="op_VolumeLimit_UserSelectionPropogationResult" message="$(string.string10)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args102_0">
+          <data name="Object" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ChangeStamp" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PrevChangeStamp" inType="win:Int32" outType="xs:int"  />
+          <data name="ChangeStamp" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args108_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_pUIWorkItem" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsChildAccount" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args110_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pSystemModalDialog" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AllowsButton" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NotAllowsButton" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="OkButton" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args115_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bEngageVolumeLimit" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AudioPerf_Task_LaunchFlyout" />
+       <string id="string1" value="Microsoft-Windows-VolumeControl" />
+       <string id="string2" value="Microsoft-Windows-VolumeControl/Performance" />
+       <string id="string3" value="op_VolumeLimit_IsChildAccount" />
+       <string id="string4" value="op_VolumeLimit_PropogateToDriver" />
+       <string id="string5" value="op_VolumeLimit_SubscribeWnf" />
+       <string id="string6" value="op_VolumeLimit_UIThread_PopupUI" />
+       <string id="string7" value="op_VolumeLimit_UIThread_PopupWindowFactory" />
+       <string id="string8" value="op_VolumeLimit_UnsubscribeWnf" />
+       <string id="string9" value="op_VolumeLimit_UserSelection" />
+       <string id="string10" value="op_VolumeLimit_UserSelectionPropogationResult" />
+       <string id="string11" value="op_VolumeLimit_WnfCallback" />
+       <string id="string12" value="op_VolumeLimit_WnfCallback_ScheduleUI" />
+       <string id="string13" value="op_VolumeLimit_WnfCallback_Skip" />
+       <string id="string14" value="task_VolumeLimit_UI" />
+       <string id="string15" value="VolumeLimit_IsChildAccount" />
+       <string id="string16" value="VolumeLimit_PropogateToDriver" />
+       <string id="string17" value="VolumeLimit_SubscribeWnf" />
+       <string id="string18" value="VolumeLimit_UIThread_PopupUI" />
+       <string id="string19" value="VolumeLimit_UIThread_PopupWindowFactory" />
+       <string id="string20" value="VolumeLimit_UnsubscribeWnf" />
+       <string id="string21" value="VolumeLimit_UserSelection" />
+       <string id="string22" value="VolumeLimit_UserSelectionPropogationResult" />
+       <string id="string23" value="VolumeLimit_WnfCallback" />
+       <string id="string24" value="VolumeLimit_WnfCallback_ScheduleUI" />
+       <string id="string25" value="VolumeLimit_WnfCallback_Skip" />
+       <string id="string26" value="win:Start" />
+       <string id="string27" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

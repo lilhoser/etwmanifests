@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Services-Svchost" name="Microsoft-Windows-Services-Svchost" guid="{06184c97-5201-480e-92af-3a3626c5b140}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Services-Svchost/Diagnostic" task="ServiceMain" opcode="win:Start" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Services-Svchost/Diagnostic" task="ServiceMain" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Services-Svchost/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="ServiceMain" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args101_0">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Services-Svchost" />
+       <string id="string1" value="Microsoft-Windows-Services-Svchost/Diagnostic" />
+       <string id="string2" value="ServiceMain" />
+       <string id="string3" value="win:Start" />
+       <string id="string4" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

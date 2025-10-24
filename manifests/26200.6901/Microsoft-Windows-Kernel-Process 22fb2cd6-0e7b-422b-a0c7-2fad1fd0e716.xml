@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Process" name="Microsoft-Windows-Kernel-Process" guid="{22fb2cd6-0e7b-422b-a0c7-2fad1fd0e716}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStop" opcode="win:Stop" keywords="WINEVENT_KEYWORD_PROCESS" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ThreadStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_THREAD" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ThreadStop" opcode="win:Stop" keywords="WINEVENT_KEYWORD_THREAD"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ImageLoad" opcode="win:Info" keywords="WINEVENT_KEYWORD_IMAGE" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ImageUnload" opcode="win:Info" keywords="WINEVENT_KEYWORD_IMAGE"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="CpuBasePriorityChange" opcode="win:Info" keywords="WINEVENT_KEYWORD_CPU_PRIORITY" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="CpuPriorityChange" opcode="win:Info" keywords="WINEVENT_KEYWORD_CPU_PRIORITY"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PagePriorityChange" opcode="win:Info" keywords="WINEVENT_KEYWORD_OTHER_PRIORITY"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="IoPriorityChange" opcode="win:Info" keywords="WINEVENT_KEYWORD_OTHER_PRIORITY"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessFreeze" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS_FREEZE" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessFreeze" opcode="win:Stop" keywords="WINEVENT_KEYWORD_PROCESS_FREEZE"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="JobStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="JobTerminate" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessRundown" opcode="win:Info" keywords="WINEVENT_KEYWORD_PROCESS" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  opcode="win:Info" keywords="WINEVENT_KEYWORD_ENABLE_PROCESS_TRACING_CALLBACKS"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsDiskIoAttribution" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB_IO" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsDiskIoAttribution" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB_IO"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsIoRateControl" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB_IO" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsIoRateControl" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB_IO"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ThreadWorkOnBehalfUpdate" opcode="win:Info" keywords="WINEVENT_KEYWORD_WORK_ON_BEHALF" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="JobServerSiloStateChange" opcode="win:Info" keywords="WINEVENT_KEYWORD_JOB_SILO" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ServerSiloCreateCallback" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB_SILO" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ServerSiloCreateCallback" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB_SILO" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ServerSiloTerminateCallback" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB_SILO"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ServerSiloTerminateCallback" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB_SILO"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessInPrivateSet" opcode="win:Info" keywords="WINEVENT_KEYWORD_PROCESS" template="Args27_0"/>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStop" opcode="win:Stop" keywords="WINEVENT_KEYWORD_PROCESS" template="Args2_1"/>
+        <event value="3" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ThreadStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_THREAD" template="Args3_1"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ThreadStop" opcode="win:Stop" keywords="WINEVENT_KEYWORD_THREAD" template="Args4_1"/>
+        <event value="11" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessFreeze" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS_FREEZE" template="Args11_1"/>
+        <event value="12" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessFreeze" opcode="win:Stop" keywords="WINEVENT_KEYWORD_PROCESS_FREEZE"/>
+        <event value="15" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessRundown" opcode="win:Info" keywords="WINEVENT_KEYWORD_PROCESS" template="Args15_1"/>
+        <event value="19" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsIoRateControl" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB_IO" template="Args19_1"/>
+        <event value="20" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsIoRateControl" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB_IO"/>
+        <event value="1" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS"/>
+        <event value="2" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStop" opcode="win:Stop" keywords="WINEVENT_KEYWORD_PROCESS" template="Args2_2"/>
+        <event value="15" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessRundown" opcode="win:Info" keywords="WINEVENT_KEYWORD_PROCESS" template="Args15_2"/>
+        <event value="19" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsIoRateControl" opcode="win:Start" keywords="WINEVENT_KEYWORD_JOB_IO" template="Args19_2"/>
+        <event value="20" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="PsIoRateControl" opcode="win:Stop" keywords="WINEVENT_KEYWORD_JOB_IO"/>
+        <event value="1" version="3" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS"/>
+        <event value="1" version="4" level="win:Informational"  channel="Microsoft-Windows-Kernel-Process/Analytic" task="ProcessStart" opcode="win:Start" keywords="WINEVENT_KEYWORD_PROCESS"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-Process/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="WINEVENT_KEYWORD_PROCESS" mask="0x10" message="$(string.string33)" />
+        <keyword name="WINEVENT_KEYWORD_THREAD" mask="0x20" message="$(string.string35)" />
+        <keyword name="WINEVENT_KEYWORD_IMAGE" mask="0x40" message="$(string.string28)" />
+        <keyword name="WINEVENT_KEYWORD_CPU_PRIORITY" mask="0x80" message="$(string.string26)" />
+        <keyword name="WINEVENT_KEYWORD_OTHER_PRIORITY" mask="0x100" message="$(string.string32)" />
+        <keyword name="WINEVENT_KEYWORD_PROCESS_FREEZE" mask="0x200" message="$(string.string34)" />
+        <keyword name="WINEVENT_KEYWORD_JOB" mask="0x400" message="$(string.string29)" />
+        <keyword name="WINEVENT_KEYWORD_ENABLE_PROCESS_TRACING_CALLBACKS" mask="0x800" message="$(string.string27)" />
+        <keyword name="WINEVENT_KEYWORD_JOB_IO" mask="0x1000" message="$(string.string30)" />
+        <keyword name="WINEVENT_KEYWORD_WORK_ON_BEHALF" mask="0x2000" message="$(string.string36)" />
+        <keyword name="WINEVENT_KEYWORD_JOB_SILO" mask="0x4000" message="$(string.string31)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="ProcessStart" message="$(string.string1)">
+        </task>
+        <task value="2" name="ProcessStop" message="$(string.string2)">
+        </task>
+        <task value="3" name="ThreadStart" message="$(string.string3)">
+        </task>
+        <task value="4" name="ThreadStop" message="$(string.string4)">
+        </task>
+        <task value="5" name="ImageLoad" message="$(string.string5)">
+        </task>
+        <task value="6" name="ImageUnload" message="$(string.string6)">
+        </task>
+        <task value="7" name="CpuBasePriorityChange" message="$(string.string7)">
+        </task>
+        <task value="8" name="CpuPriorityChange" message="$(string.string8)">
+        </task>
+        <task value="9" name="PagePriorityChange" message="$(string.string9)">
+        </task>
+        <task value="10" name="IoPriorityChange" message="$(string.string10)">
+        </task>
+        <task value="11" name="ProcessFreeze" message="$(string.string11)">
+        </task>
+        <task value="13" name="JobStart" message="$(string.string13)">
+        </task>
+        <task value="14" name="JobTerminate" message="$(string.string14)">
+        </task>
+        <task value="15" name="ProcessRundown" message="$(string.string15)">
+        </task>
+        <task value="16" name="PsDiskIoAttribution" message="$(string.string16)">
+        </task>
+        <task value="17" name="PsIoRateControl" message="$(string.string17)">
+        </task>
+        <task value="18" name="ThreadWorkOnBehalfUpdate" message="$(string.string18)">
+        </task>
+        <task value="19" name="JobServerSiloStateChange" message="$(string.string19)">
+        </task>
+        <task value="20" name="ProcessInPrivateSet" message="$(string.string20)">
+        </task>
+        <task value="21" name="ServerSiloCreateCallback" message="$(string.string21)">
+        </task>
+        <task value="22" name="ServerSiloTerminateCallback" message="$(string.string22)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ParentProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExitTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TokenElevationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HandleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommitPeak" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ImageName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="StackBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StackLimit" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UserStackBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UserStackLimit" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StartAddr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Win32StartAddr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TebBase" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ImageBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ImageSize" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ImageCheckSum" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="OldPriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NewPriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="FrozenProcessID" inType="win:UInt32" outType="win:PID"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="Container ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ParentProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageChecksum" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TimeDateStamp" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageRelativeAppId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskIoAttribution" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoRateControl" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ControlType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RateType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RateAmount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="OldWorkOnBehalfThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="NewWorkOnBehalfThreadID" inType="win:UInt32" outType="win:TID"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="Container ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="State" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="Container ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MonitorName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="Container ID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="MonitorName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExitTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TokenElevationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HandleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommitPeak" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CPUCycleCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadOperationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteOperationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReadTransferKiloBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteTransferKiloBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HardFaultCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_1">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="StackBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StackLimit" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UserStackBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UserStackLimit" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StartAddr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Win32StartAddr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TebBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SubProcessTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ThreadID" inType="win:UInt32" outType="win:TID"  />
+          <data name="StackBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StackLimit" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UserStackBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UserStackLimit" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StartAddr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Win32StartAddr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TebBase" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SubProcessTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CycleTime" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11_1">
+          <data name="FrozenProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args15_1">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ProcessSequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ParentProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ParentProcessSequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessTokenElevationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessTokenIsElevated" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MandatoryLabel" inType="win:SID" outType="xs:string"  />
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageChecksum" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TimeDateStamp" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageRelativeAppId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args19_1">
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoRateControl" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MaxIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservationIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalReservationIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_2">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ProcessSequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExitTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TokenElevationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HandleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommitPeak" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CPUCycleCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadOperationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteOperationCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReadTransferKiloBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WriteTransferKiloBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HardFaultCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageName" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args15_2">
+          <data name="ProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ProcessSequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="ParentProcessID" inType="win:UInt32" outType="win:PID"  />
+          <data name="ParentProcessSequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessTokenElevationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessTokenIsElevated" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MandatoryLabel" inType="win:SID" outType="xs:string"  />
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageChecksum" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TimeDateStamp" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageRelativeAppId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecurityMitigations" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_2">
+          <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IoRateControl" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MaxIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservationIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalReservationIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CriticalReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SoftMaxIops" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SoftMaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SoftMaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CpuBasePriorityChange" />
+       <string id="string1" value="CpuPriorityChange" />
+       <string id="string2" value="ImageLoad" />
+       <string id="string3" value="ImageUnload" />
+       <string id="string4" value="IoPriorityChange" />
+       <string id="string5" value="JobServerSiloStateChange" />
+       <string id="string6" value="JobStart" />
+       <string id="string7" value="JobTerminate" />
+       <string id="string8" value="Microsoft-Windows-Kernel-Process" />
+       <string id="string9" value="Microsoft-Windows-Kernel-Process/Analytic" />
+       <string id="string10" value="PagePriorityChange" />
+       <string id="string11" value="ProcessFreeze" />
+       <string id="string12" value="ProcessInPrivateSet" />
+       <string id="string13" value="ProcessRundown" />
+       <string id="string14" value="ProcessStart" />
+       <string id="string15" value="ProcessStop" />
+       <string id="string16" value="PsDiskIoAttribution" />
+       <string id="string17" value="PsIoRateControl" />
+       <string id="string18" value="ServerSiloCreateCallback" />
+       <string id="string19" value="ServerSiloTerminateCallback" />
+       <string id="string20" value="ThreadStart" />
+       <string id="string21" value="ThreadStop" />
+       <string id="string22" value="ThreadWorkOnBehalfUpdate" />
+       <string id="string23" value="win:Info" />
+       <string id="string24" value="win:Start" />
+       <string id="string25" value="win:Stop" />
+       <string id="string26" value="WINEVENT_KEYWORD_CPU_PRIORITY" />
+       <string id="string27" value="WINEVENT_KEYWORD_ENABLE_PROCESS_TRACING_CALLBACKS" />
+       <string id="string28" value="WINEVENT_KEYWORD_IMAGE" />
+       <string id="string29" value="WINEVENT_KEYWORD_JOB" />
+       <string id="string30" value="WINEVENT_KEYWORD_JOB_IO" />
+       <string id="string31" value="WINEVENT_KEYWORD_JOB_SILO" />
+       <string id="string32" value="WINEVENT_KEYWORD_OTHER_PRIORITY" />
+       <string id="string33" value="WINEVENT_KEYWORD_PROCESS" />
+       <string id="string34" value="WINEVENT_KEYWORD_PROCESS_FREEZE" />
+       <string id="string35" value="WINEVENT_KEYWORD_THREAD" />
+       <string id="string36" value="WINEVENT_KEYWORD_WORK_ON_BEHALF" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

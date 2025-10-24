@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Security-Vault" name="Microsoft-Windows-Security-Vault" guid="{e6c92fb8-89d7-4d1f-be46-d56e59804783}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Start"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Stop"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Start"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Stop"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Start"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Stop"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Start"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Stop"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Start"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Stop"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Start"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-Security-Vault/Performance" task="CATEGORY_PERF" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Security-Vault/Performance" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="CATEGORY_PERF" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CATEGORY_PERF" />
+       <string id="string1" value="Microsoft-Windows-Security-Vault" />
+       <string id="string2" value="Microsoft-Windows-Security-Vault/Performance" />
+       <string id="string3" value="win:Start" />
+       <string id="string4" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

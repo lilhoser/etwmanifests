@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MCCS-SyncUtil" name="Microsoft-Windows-MCCS-SyncUtil" guid="{dca074ce-547c-4595-ae90-56229b8e3bd9}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  keywords="Error" template="Args1_0"/>
+        <event value="2" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="101" version="0" level="win:Informational"  keywords="CommsService" template="Args101_0"/>
+        <event value="104" version="0" level="win:Verbose"  template="Args104_0"/>
+        <event value="121" version="0" level="win:Informational"  task="SPERF_TAG_LOAD_XMLDOM" opcode="win:Start" keywords="Performance" template="Args121_0"/>
+        <event value="122" version="0" level="win:Informational"  task="SPERF_TAG_LOAD_XMLDOM" opcode="win:Stop" keywords="Performance"/>
+        <event value="202" version="0" level="win:Warning"  keywords="Warning" template="Args202_0"/>
+        <event value="203" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="204" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="205" version="0" level="win:Warning"  keywords="Warning"/>
+        <event value="206" version="0" level="win:Warning"  keywords="Warning" template="Args206_0"/>
+        <event value="301" version="0" level="win:Error"  keywords="Error"/>
+        <event value="600" version="0" level="win:Informational" />
+        <event value="601" version="0" level="win:Informational" />
+        <event value="800" version="0" level="win:Informational"  keywords="Warning" template="Args800_0"/>
+        <event value="802" version="0" level="win:Informational"  keywords="Warning"/>
+        <event value="803" version="0" level="win:Error"  keywords="Error"/>
+        <event value="804" version="0" level="win:Error"  keywords="Error" template="Args804_0"/>
+        <event value="810" version="0" level="win:Informational"  keywords="StateTransition"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Error" mask="0x1" message="$(string.string1)" />
+        <keyword name="Performance" mask="0x2" message="$(string.string3)" />
+        <keyword name="CommsService" mask="0x1000000000" message="$(string.string0)" />
+        <keyword name="Warning" mask="0x4000000000" message="$(string.string6)" />
+        <keyword name="StateTransition" mask="0x8000000000" message="$(string.string5)" />
+      </keywords>
+      <tasks>
+        <task value="2" name="SPERF_TAG_LOAD_XMLDOM" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="P1_HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="P2_String" inType="win:AnsiString" outType="xs:string"  />
+          <data name="P3_UInt32" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="Prop_Dword" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Prop_StringA_1" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Prop_StringA_2" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="Prop_String1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_String2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_String3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_AnsiString" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args121_0">
+          <data name="P1_UnicodeString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="P1_HexInt32" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args206_0">
+          <data name="P1_Int32" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args800_0">
+          <data name="Prop_String1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Prop_FileTime1" inType="win:FILETIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args804_0">
+          <data name="Prop_HexInt32" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Prop_String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CommsService" />
+       <string id="string1" value="Error" />
+       <string id="string2" value="Microsoft-Windows-MCCS-SyncUtil" />
+       <string id="string3" value="Performance" />
+       <string id="string4" value="SPERF_TAG_LOAD_XMLDOM" />
+       <string id="string5" value="StateTransition" />
+       <string id="string6" value="Warning" />
+       <string id="string7" value="win:Start" />
+       <string id="string8" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>
