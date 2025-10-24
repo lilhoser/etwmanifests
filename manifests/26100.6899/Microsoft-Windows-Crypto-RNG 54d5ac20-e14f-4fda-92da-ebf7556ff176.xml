@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Crypto-RNG" name="Microsoft-Windows-Crypto-RNG" guid="{54d5ac20-e14f-4fda-92da-ebf7556ff176}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Start" keywords="KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Stop" keywords="KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_ENTROPY_DATA" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_ENTROPY_DATA" template="Args4_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_ENTROPY_DATA" template="Args16_0"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_ENTROPY_DATA" template="Args32_0"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="GatherEntropy" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_ENTROPY_DATA" template="Args33_0"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="Prng" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_PRNG" template="Args48_0"/>
+        <event value="49" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="Prng" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_PRNG" template="Args49_0"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-Crypto-RNG/Analytic" task="Prng" opcode="win:Info" keywords="KEYWORD_SYSTEMRNG_PRNG"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Crypto-RNG/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+        <keyword name="KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION" mask="0x1" message="$(string.string2)" />
+        <keyword name="KEYWORD_SYSTEMRNG_ENTROPY_DATA" mask="0x2" message="$(string.string1)" />
+        <keyword name="KEYWORD_SYSTEMRNG_PRNG" mask="0x4" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+        <task value="10" name="GatherEntropy" message="$(string.string10)">
+        </task>
+        <task value="20" name="Prng" message="$(string.string20)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SourceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SourceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesProvided" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EntropyEstimate" inType="win:Int32" outType="xs:int"  />
+          <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData" />
+          <data name="Counter" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResultStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="TimeTaken" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="Source" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Policy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResultStatus" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Time" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BytesProvided" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData" />
+        </template>
+        <template tid="Args32_0">
+          <data name="PoolReseedCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReseedType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData" />
+          <data name="Counter" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args33_0">
+          <data name="PoolNo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData" />
+          <data name="Counter" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="PrngAddress" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData" />
+          <data name="UserMode" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Counter" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args49_0">
+          <data name="PrngAddress" inType="win:HexInt64" outType="win:HexInt64"  />
+          <data name="BytesProduced" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData" />
+          <data name="UserMode" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Counter" inType="win:HexInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="GatherEntropy" />
+       <string id="string1" value="KEYWORD_SYSTEMRNG_ENTROPY_DATA" />
+       <string id="string2" value="KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION" />
+       <string id="string3" value="KEYWORD_SYSTEMRNG_PRNG" />
+       <string id="string4" value="Microsoft-Windows-Crypto-RNG" />
+       <string id="string5" value="Microsoft-Windows-Crypto-RNG/Analytic" />
+       <string id="string6" value="Prng" />
+       <string id="string7" value="win:Info" />
+       <string id="string8" value="win:Start" />
+       <string id="string9" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

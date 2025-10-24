@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-USB-MAUSBHOST" name="Microsoft-Windows-USB-MAUSBHOST" guid="{7725b5f9-1f2e-4e21-baeb-b2af4690bc87}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="win:Start" keywords="Default Rundown"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="win:Stop" keywords="Default Rundown"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_RUNDOWN" opcode="Information" keywords="Default Rundown" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_DEVICE_RUNDOWN" opcode="Information" keywords="Default Rundown" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_ENDPOINT_RUNDOWN" opcode="Information" keywords="Default Rundown" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_CREATE" opcode="Information" keywords="Default"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_DELETE" opcode="Information" keywords="Default"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_DEVICE_CREATE" opcode="Information" keywords="Default"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_DEVICE_UPDATE" opcode="Information" keywords="Default"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_DEVICE_DELETE" opcode="Information" keywords="Default"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_ENDPOINT_CREATE" opcode="Information" keywords="Default" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_ENDPOINT_UPDATE" opcode="Information" keywords="Default"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_ENDPOINT_DELETE" opcode="Information" keywords="Default"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_D0_ENTRY" opcode="win:Start" keywords="Default Power" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_D0_ENTRY" opcode="win:Stop" keywords="Default Power" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_D0_EXIT" opcode="win:Start" keywords="Default Power"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_D0_EXIT" opcode="win:Stop" keywords="Default Power"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_RESET" opcode="win:Start" keywords="Default"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_RESET" opcode="win:Stop" keywords="Default"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_CONTROLLER_QUERY_CAPABILITY" opcode="Information" keywords="Default IRP" template="Args21_0"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default" template="Args50_0"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default"/>
+        <event value="54" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default HWVerifyHost ms:Measures" template="Args54_0"/>
+        <event value="55" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default HWVerifyHost" template="Args55_0"/>
+        <event value="56" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default HWVerifyHost" template="Args56_0"/>
+        <event value="57" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default HWVerifyHost"/>
+        <event value="58" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default HWVerifyHost"/>
+        <event value="59" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default HWVerifyHost" template="Args59_0"/>
+        <event value="60" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine" template="Args60_0"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine" template="Args61_0"/>
+        <event value="62" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="63" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="64" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="65" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="66" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="67" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="70" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="Default IRP" template="Args70_0"/>
+        <event value="71" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="Default IRP" template="Args71_0"/>
+        <event value="72" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="IRP MAUSBTraffic" template="Args72_0"/>
+        <event value="73" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="IRP MAUSBTraffic" template="Args73_0"/>
+        <event value="74" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="IRP MAUSBTraffic" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures" template="Args75_0"/>
+        <event value="76" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures" template="Args76_0"/>
+        <event value="77" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures"/>
+        <event value="78" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures" template="Args78_0"/>
+        <event value="79" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures" template="Args79_0"/>
+        <event value="80" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures" template="Args80_0"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_IP_DATA_TRANSFER" opcode="Information" keywords="Default IRP" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_IP_DATA_TRANSFER" opcode="Information" keywords="Default IRP" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_IP_DATA_TRANSFER" opcode="Information" keywords="Default IRP"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_IP_DATA_TRANSFER" opcode="Information" keywords="Default IRP"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_IP_SOCKET" opcode="Information" keywords="Default" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_IP_SOCKET" opcode="Information" keywords="Default"/>
+        <event value="106" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_ENDPOINT_CREATE" opcode="Information" keywords="Default ms:Measures"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures" template="Args108_0"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" opcode="Information" keywords="Default ms:Measures"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="112" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_STATE_MACHINE" opcode="Information" keywords="Default StateMachine"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="IRP MAUSBTraffic" template="Args114_0"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_USB_TRANSFER" opcode="Information" keywords="IRP MAUSBTraffic"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_WSB" opcode="Information" keywords="Default" template="Args116_0"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_WSB" opcode="Information" keywords="Default Rundown"/>
+        <event value="118" version="0" level="win:Error"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_ENDPOINT_CREATE" opcode="Information" keywords="Default HWVerifyHost ms:Measures"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" task="MAUSBHOST_RUNDOWN" opcode="Information" keywords="Default Rundown" template="Args125_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args203_0"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args206_0"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args208_0"/>
+        <event value="209" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="210" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args210_0"/>
+        <event value="211" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args212_0"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args214_0"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args215_0"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args217_0"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args220_0"/>
+        <event value="221" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args223_0"/>
+        <event value="224" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args224_0"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args225_0"/>
+        <event value="226" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="227" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="228" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="229" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args230_0"/>
+        <event value="231" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic" template="Args231_0"/>
+        <event value="232" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+        <event value="233" version="0" level="win:Informational"  channel="Microsoft-Windows-USB-MAUSBHOST-Analytic" opcode="INFORMATION" keywords="MAUSBTraffic"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-USB-MAUSBHOST-Analytic" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Default" mask="0x1" message="$(string.string1)" />
+        <keyword name="USBError" mask="0x2" message="$(string.string49)" />
+        <keyword name="IRP" mask="0x4" message="$(string.string12)" />
+        <keyword name="Power" mask="0x8" message="$(string.string45)" />
+        <keyword name="PnP" mask="0x10" message="$(string.string44)" />
+        <keyword name="Performance" mask="0x20" message="$(string.string43)" />
+        <keyword name="HeadersBusTrace" mask="0x40" message="$(string.string5)" />
+        <keyword name="PartialDataBusTrace" mask="0x80" message="$(string.string42)" />
+        <keyword name="FullDataBusTrace" mask="0x100" message="$(string.string4)" />
+        <keyword name="StateMachine" mask="0x200" message="$(string.string47)" />
+        <keyword name="Enumeration" mask="0x400" message="$(string.string3)" />
+        <keyword name="VerifyDriver" mask="0x800" message="$(string.string50)" />
+        <keyword name="HWVerifyHost" mask="0x1000" message="$(string.string8)" />
+        <keyword name="HWVerifyHub" mask="0x2000" message="$(string.string9)" />
+        <keyword name="HWVerifyDevice" mask="0x4000" message="$(string.string7)" />
+        <keyword name="Rundown" mask="0x8000" message="$(string.string46)" />
+        <keyword name="Device" mask="0x10000" message="$(string.string2)" />
+        <keyword name="Hub" mask="0x20000" message="$(string.string6)" />
+        <keyword name="Compat" mask="0x40000" message="$(string.string0)" />
+        <keyword name="MAUSBTraffic" mask="0x80000" message="$(string.string35)" />
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string40)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string41)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string39)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string38)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="MAUSBHOST_RUNDOWN" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="MAUSBHOST_CONTROLLER_RUNDOWN" message="$(string.string2)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="MAUSBHOST_DEVICE_RUNDOWN" message="$(string.string3)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="MAUSBHOST_ENDPOINT_RUNDOWN" message="$(string.string4)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="MAUSBHOST_CONTROLLER_CREATE" message="$(string.string5)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="MAUSBHOST_CONTROLLER_DELETE" message="$(string.string6)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="MAUSBHOST_DEVICE_CREATE" message="$(string.string7)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="MAUSBHOST_DEVICE_UPDATE" message="$(string.string8)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="MAUSBHOST_DEVICE_DELETE" message="$(string.string9)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="10" name="MAUSBHOST_ENDPOINT_CREATE" message="$(string.string10)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="MAUSBHOST_ENDPOINT_UPDATE" message="$(string.string11)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="12" name="MAUSBHOST_ENDPOINT_DELETE" message="$(string.string12)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="MAUSBHOST_CONTROLLER_D0_ENTRY" message="$(string.string13)">
+        </task>
+        <task value="14" name="MAUSBHOST_CONTROLLER_D0_EXIT" message="$(string.string14)">
+        </task>
+        <task value="15" name="MAUSBHOST_CONTROLLER_RESET" message="$(string.string15)">
+        </task>
+        <task value="16" name="MAUSBHOST_CONTROLLER_QUERY_CAPABILITY" message="$(string.string16)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="25" name="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" message="$(string.string25)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="26" name="MAUSBHOST_STATE_MACHINE" message="$(string.string26)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="27" name="MAUSBHOST_USB_TRANSFER" message="$(string.string27)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="28" name="MAUSBHOST_IP_DATA_TRANSFER" message="$(string.string28)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="29" name="MAUSBHOST_IP_SOCKET" message="$(string.string29)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+        <task value="30" name="MAUSBHOST_WSB" message="$(string.string30)">
+          <opcodes>
+           <opcode value="10" name="Information" message="$(string.string10)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="INFORMATION" message="$(string.string11)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args3_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_WdfDevicePowerState" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbTtHubDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DeviceSpeed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortPathDepth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortPath" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_MaUsbDeviceHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_DeviceIsHub" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_NumberOfPorts" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_NumberOfTTs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_USB_Device_Descriptor" inType="win:Float" outType="xs:GUID"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USB_Endpoint_Descriptor" inType="win:Float" outType="xs:unsignedShort"  />
+          <data name="fid_IsLinkManaged" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_CreditConsumptionUnit" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_BufferSize" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_IsochProgrammingDelay" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_IsochResponseDelay" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_IsochSegmentsPerFrame" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_MaxIsochSegmentSize" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_USB_Endpoint_Descriptor" inType="win:UInt8" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_DeviceState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_PowerAction" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_DeviceState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_PowerAction" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Capability" inType="win:GUID" outType="xs:GUID"  />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_NumStaticStreams" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_WdfRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_SubType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="fid_DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Ssid" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args54_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Error" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_ExpectedSubtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_ActualSubtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args56_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Subtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Subtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_ObjectHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_TransitionType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_SourceState" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TargetState" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args61_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_ObjectHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Exception" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_State" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args70_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MaUsbEndpointHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_UsbTransferRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_TransferType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TransferDirection" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args71_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MaUsbEndpointHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_UsbTransferRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_BytesTransferred" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args72_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbTransferRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_EndpointHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_TransferType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TransferDirection" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_RemainingSizeOrCredit" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_BytesTotal" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_RequestId" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SequenceNumber" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args73_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbTransferRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_EndpointHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_TransferType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TransferDirection" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_RequestId" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SequenceNumber" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_MaUsbStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_EndpointHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_TransferType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TransferDirection" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_RequestId" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SequenceNumber" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_MaUsbStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_AckRequest" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_RemainingSizeOrCredit" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_EndOfTransfer" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args75_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MAUSB_Device_Speed_Capability_Descriptor" inType="win:AnsiString" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args76_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MAUSB_Device_P_Out_Capability_Descriptor" inType="win:AnsiString" outType="xs:byte"  />
+        </template>
+        <template tid="Args78_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MAUSB_Device_Synch_Capability_Descriptor" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args79_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MAUSB_Device_Container_Id_Capability_Descriptor" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args80_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_MAUSB_Device_Link_Sleep_Capability_Descriptor" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="fid_WdfRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_IoChannelHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_NumberOfBytes" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="fid_WdfRequest" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_NumberOfBytes" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="fid_FdoContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="fid_LocalAddressLength" />
+          <data name="fid_RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fid_RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="fid_RemoteAddressLength" />
+          <data name="fid_NtStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args108_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_ControllerResetReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_EndpointHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_TransferType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_TransferDirection" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_RequestId" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SequenceNumber" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_MaUsbStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_AckRequest" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_NegativeCredit" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_EndOfTransfer" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_NumberOfIsochHeaders" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_MTDValid" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_ASAPDelivery" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_PresentationTime" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_NumberOfIsochSegments" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NominalBusInterval" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args116_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_PortNumber" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_RemotePortNumber" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_IsUdp" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args125_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_NumberOfEndpoints" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfDevices" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_NumberOfStreams" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_DeviceType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_MaxOutstandingTransferRequests" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_MaxOutstandingManagementRequests" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_ResponseTimeout" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args203_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_RouteStringPort1" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_RouteStringPort2" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_RouteStringPort3" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_RouteStringPort4" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_RouteStringPort5" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_USBSpeed" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_HubDeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_ParentHSHubDeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_ParentHSHubPort" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_MTT" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_LaneSpeedExponent" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SublinkType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_LaneCount" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_LinkProtocol" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_LaneSpeedMantissa" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args206_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_USBDeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args208_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_EP0Handle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_MaxPacketSize" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args210_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEpHandlesToInactivate" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SuspendFlag" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args212_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_UpdateDevReqFields" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args214_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEpHandlesWithError" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args215_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEpHandlesToDelete" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEPHandlesWithError" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_EPHandle" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args220_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEPResetInformationBlocks" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_EPHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_TransferStatePreserve" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args223_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_UsbDeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args224_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEpDescriptors" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args225_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEndpoints" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfDevices" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_NumberOfStreams" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_DeviceType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_DescriptorCount" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_DescriptorLength" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fid_MaxOutstandingTransferRequests" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_MaxOutstandingManagementRequests" inType="win:UInt16" outType="win:HexInt16"  />
+        </template>
+        <template tid="Args230_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEpDescriptors" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_SizeOfEPDescriptor" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+        <template tid="Args231_0">
+          <data name="fid_Controller" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fid_Header.Version" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitHost" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitRetry" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.FlagBitTimeStamp" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SubType" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Type" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.Length" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceHandle" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_Header.DeviceAddress" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.SSID" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.StatusCode" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="fid_Header.DialogToken" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="fid_NumberOfEpHandlesToActivate" inType="win:UInt8" outType="win:HexInt8"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Compat" />
+       <string id="string1" value="Default" />
+       <string id="string2" value="Device" />
+       <string id="string3" value="Enumeration" />
+       <string id="string4" value="FullDataBusTrace" />
+       <string id="string5" value="HeadersBusTrace" />
+       <string id="string6" value="Hub" />
+       <string id="string7" value="HWVerifyDevice" />
+       <string id="string8" value="HWVerifyHost" />
+       <string id="string9" value="HWVerifyHub" />
+       <string id="string10" value="Information" />
+       <string id="string11" value="INFORMATION" />
+       <string id="string12" value="IRP" />
+       <string id="string13" value="MAUSBHOST_CONTROLLER_CREATE" />
+       <string id="string14" value="MAUSBHOST_CONTROLLER_D0_ENTRY" />
+       <string id="string15" value="MAUSBHOST_CONTROLLER_D0_EXIT" />
+       <string id="string16" value="MAUSBHOST_CONTROLLER_DELETE" />
+       <string id="string17" value="MAUSBHOST_CONTROLLER_QUERY_CAPABILITY" />
+       <string id="string18" value="MAUSBHOST_CONTROLLER_RESET" />
+       <string id="string19" value="MAUSBHOST_CONTROLLER_RUNDOWN" />
+       <string id="string20" value="MAUSBHOST_DEVICE_CREATE" />
+       <string id="string21" value="MAUSBHOST_DEVICE_DELETE" />
+       <string id="string22" value="MAUSBHOST_DEVICE_RUNDOWN" />
+       <string id="string23" value="MAUSBHOST_DEVICE_UPDATE" />
+       <string id="string24" value="MAUSBHOST_ENDPOINT_CREATE" />
+       <string id="string25" value="MAUSBHOST_ENDPOINT_DELETE" />
+       <string id="string26" value="MAUSBHOST_ENDPOINT_RUNDOWN" />
+       <string id="string27" value="MAUSBHOST_ENDPOINT_UPDATE" />
+       <string id="string28" value="MAUSBHOST_IP_DATA_TRANSFER" />
+       <string id="string29" value="MAUSBHOST_IP_SOCKET" />
+       <string id="string30" value="MAUSBHOST_PAL_MANAGEMENT_CHANNEL" />
+       <string id="string31" value="MAUSBHOST_RUNDOWN" />
+       <string id="string32" value="MAUSBHOST_STATE_MACHINE" />
+       <string id="string33" value="MAUSBHOST_USB_TRANSFER" />
+       <string id="string34" value="MAUSBHOST_WSB" />
+       <string id="string35" value="MAUSBTraffic" />
+       <string id="string36" value="Microsoft-Windows-USB-MAUSBHOST" />
+       <string id="string37" value="Microsoft-Windows-USB-MAUSBHOST-Analytic" />
+       <string id="string38" value="ms:CriticalData" />
+       <string id="string39" value="ms:Measures" />
+       <string id="string40" value="ms:ReservedKeyword44" />
+       <string id="string41" value="ms:Telemetry" />
+       <string id="string42" value="PartialDataBusTrace" />
+       <string id="string43" value="Performance" />
+       <string id="string44" value="PnP" />
+       <string id="string45" value="Power" />
+       <string id="string46" value="Rundown" />
+       <string id="string47" value="StateMachine" />
+       <string id="string48" value="System" />
+       <string id="string49" value="USBError" />
+       <string id="string50" value="VerifyDriver" />
+       <string id="string51" value="win:Start" />
+       <string id="string52" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

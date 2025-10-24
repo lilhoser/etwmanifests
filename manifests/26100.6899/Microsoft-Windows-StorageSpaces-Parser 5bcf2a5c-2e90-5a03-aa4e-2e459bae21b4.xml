@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-StorageSpaces-Parser" name="Microsoft-Windows-StorageSpaces-Parser" guid="{5bcf2a5c-2e90-5a03-aa4e-2e459bae21b4}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational" template="Args100_0"/>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational" template="Args101_0"/>
+        <event value="102" version="0" level="win:Error"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational"/>
+        <event value="105" version="0" level="win:Error"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational" template="Args200_0"/>
+        <event value="201" version="0" level="win:Error"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational" template="Args202_0"/>
+        <event value="203" version="0" level="win:Warning"  channel="Microsoft-Windows-StorageSpaces-Parser/Diagnostic"/>
+        <event value="204" version="0" level="win:Error"  channel="Microsoft-Windows-StorageSpaces-Parser/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-StorageSpaces-Parser/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-StorageSpaces-Parser/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="PoolId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SpaceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="PoolId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SpaceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="PoolId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SpaceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Operation" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="PoolId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SpaceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Cdb" inType="win:UInt8" outType="win:HexInt8"  />
+          <data name="Function" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-StorageSpaces-Parser" />
+       <string id="string1" value="Microsoft-Windows-StorageSpaces-Parser/Diagnostic" />
+       <string id="string2" value="Microsoft-Windows-StorageSpaces-Parser/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

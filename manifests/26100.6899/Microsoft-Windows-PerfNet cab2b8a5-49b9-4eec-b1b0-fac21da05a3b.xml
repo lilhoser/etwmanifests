@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PerfNet" name="Microsoft-Windows-PerfNet" guid="{cab2b8a5-49b9-4eec-b1b0-fac21da05a3b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="1" level="win:Warning"  channel="Application" keywords="Debug" template="Args1000_1"/>
+        <event value="1001" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="2000" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="2001" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="2002" version="1" level="win:Warning"  channel="Application" keywords="Debug" template="Args2002_1"/>
+        <event value="2003" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="2004" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="2005" version="1" level="win:Warning"  channel="Application" keywords="Debug" template="Args2005_1"/>
+        <event value="2006" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="2007" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="3000" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="3099" version="1" level="win:Informational"  keywords="Debug"/>
+        <event value="3100" version="1" level="win:Verbose"  keywords="Debug" template="Args3100_1"/>
+        <event value="3101" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="3102" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="3103" version="1" level="win:Warning"  keywords="Debug" template="Args3103_1"/>
+        <event value="3199" version="1" level="win:Informational"  keywords="Debug"/>
+        <event value="3200" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="4000" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="4001" version="1" level="win:Error"  keywords="Debug"/>
+        <event value="4002" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="4010" version="1" level="win:Warning"  channel="Application" keywords="Debug" template="Args4010_1"/>
+        <event value="4099" version="1" level="win:Informational"  keywords="Debug"/>
+        <event value="4100" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="4105" version="1" level="win:Informational"  keywords="Debug" template="Args4105_1"/>
+        <event value="4106" version="1" level="win:Warning"  keywords="Debug"/>
+        <event value="4108" version="1" level="win:Error"  keywords="Debug"/>
+        <event value="4110" version="1" level="win:Error"  keywords="Debug"/>
+        <event value="4111" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="4112" version="1" level="win:Warning"  keywords="Debug"/>
+        <event value="4113" version="1" level="win:Error"  keywords="Debug"/>
+        <event value="4114" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="4116" version="1" level="win:Warning"  keywords="Debug"/>
+        <event value="4121" version="1" level="win:Warning"  channel="Application" keywords="Debug"/>
+        <event value="4199" version="1" level="win:Informational"  keywords="Debug"/>
+        <event value="4200" version="1" level="win:Verbose"  keywords="Debug"/>
+        <event value="2001" version="2" level="win:Warning"  channel="Application" keywords="Debug"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Debug" mask="0x1" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1000_1">
+          <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args2002_1">
+          <data name="NTSTATUS" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args2005_1">
+          <data name="NTSTATUS" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="IO Completion NTSTATUS" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args3100_1">
+          <data name="ValueName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3103_1">
+          <data name="Available" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Required" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4010_1">
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args4105_1">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Debug" />
+       <string id="string2" value="Microsoft-Windows-PerfNet" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

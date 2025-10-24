@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-FMS" name="Microsoft-Windows-FMS" guid="{dea07764-0790-44de-b9c4-49677b17174f}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="2015" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="ApiEntryCalls" opcode="win:Info" template="Args2015_0"/>
+        <event value="2016" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="ApiExitCalls" opcode="win:Info"/>
+        <event value="30000" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="PerfTrack_DisplayFmsInit" opcode="win:Start"/>
+        <event value="30001" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="PerfTrack_DisplayFmsInit" opcode="win:Stop"/>
+        <event value="40000" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="NameResolution"/>
+        <event value="40001" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="GetFontNameTable Start"/>
+        <event value="40002" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="GetFontNameTable Stop"/>
+        <event value="40003" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="Get Name Record Start"/>
+        <event value="40004" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="Get Name Record Stop"/>
+        <event value="40005" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="Get Name Strings Start"/>
+        <event value="40006" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="Get Name Strings Stop"/>
+        <event value="40007" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="Get Font Data Start"/>
+        <event value="40008" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="Get Font Data Stop"/>
+        <event value="40009" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="GdiGetFontRealizationInfo Start"/>
+        <event value="40010" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="GdiGetFontRealizationInfo Stop"/>
+        <event value="40011" version="0" level="win:Informational"  channel="Microsoft-Windows-FMS/Analytic" task="FMS_SingleTask" opcode="FmsErrorMessage"/>
+        <event value="1000" version="1" level="win:Error"  channel="System" task="ModuleInitialization" opcode="win:Start"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-FMS/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-FMS/Analytic" type="Analytic"/>
+        <channel value="18" name="Microsoft-Windows-FMS/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="30" name="ModuleInitialization" message="$(string.string30)">
+        </task>
+        <task value="31" name="PerfTrack_DisplayFmsInit" message="$(string.string31)">
+        </task>
+        <task value="32" name="FMS_SingleTask" message="$(string.string32)">
+          <opcodes>
+           <opcode value="16" name="NameResolution" message="$(string.string30)"/>
+           <opcode value="17" name="GetFontNameTable Start" message="$(string.string17)"/>
+           <opcode value="18" name="GetFontNameTable Stop" message="$(string.string18)"/>
+           <opcode value="19" name="Get Name Record Start" message="$(string.string11)"/>
+           <opcode value="20" name="Get Name Record Stop" message="$(string.string12)"/>
+           <opcode value="21" name="Get Name Strings Start" message="$(string.string13)"/>
+           <opcode value="22" name="Get Name Strings Stop" message="$(string.string14)"/>
+           <opcode value="23" name="Get Font Data Start" message="$(string.string9)"/>
+           <opcode value="24" name="Get Font Data Stop" message="$(string.string10)"/>
+           <opcode value="25" name="GdiGetFontRealizationInfo Start" message="$(string.string5)"/>
+           <opcode value="26" name="GdiGetFontRealizationInfo Stop" message="$(string.string6)"/>
+           <opcode value="27" name="FmsErrorMessage" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="35" name="ApiEntryCalls" message="$(string.string35)">
+        </task>
+        <task value="36" name="ApiExitCalls" message="$(string.string36)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="16" name="NameResOp" message="$(string.string31)"/>
+        <opcode value="17" name="GetFontNameTableStartOp" message="$(string.string19)"/>
+        <opcode value="18" name="GetFontNameTableStopOp" message="$(string.string20)"/>
+        <opcode value="19" name="GetNameRecordStartOp" message="$(string.string21)"/>
+        <opcode value="20" name="GetNameRecordStopOp" message="$(string.string22)"/>
+        <opcode value="21" name="GetNameStringsStartOp" message="$(string.string23)"/>
+        <opcode value="22" name="GetNameStringsStopOp" message="$(string.string24)"/>
+        <opcode value="23" name="GetFontDataStartOp" message="$(string.string15)"/>
+        <opcode value="24" name="GetFontDataStopOp" message="$(string.string16)"/>
+        <opcode value="25" name="GdiGetFontRealizationInfoStartOp" message="$(string.string7)"/>
+        <opcode value="26" name="GdiGetFontRealizationInfoStopOp" message="$(string.string8)"/>
+        <opcode value="27" name="FmsErrorOp" message="$(string.string4)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args2015_0">
+          <data name="ApiName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ApiEntryCalls" />
+       <string id="string1" value="ApiExitCalls" />
+       <string id="string2" value="FMS_SingleTask" />
+       <string id="string3" value="FmsErrorMessage" />
+       <string id="string4" value="FmsErrorOp" />
+       <string id="string5" value="GdiGetFontRealizationInfo Start" />
+       <string id="string6" value="GdiGetFontRealizationInfo Stop" />
+       <string id="string7" value="GdiGetFontRealizationInfoStartOp" />
+       <string id="string8" value="GdiGetFontRealizationInfoStopOp" />
+       <string id="string9" value="Get Font Data Start" />
+       <string id="string10" value="Get Font Data Stop" />
+       <string id="string11" value="Get Name Record Start" />
+       <string id="string12" value="Get Name Record Stop" />
+       <string id="string13" value="Get Name Strings Start" />
+       <string id="string14" value="Get Name Strings Stop" />
+       <string id="string15" value="GetFontDataStartOp" />
+       <string id="string16" value="GetFontDataStopOp" />
+       <string id="string17" value="GetFontNameTable Start" />
+       <string id="string18" value="GetFontNameTable Stop" />
+       <string id="string19" value="GetFontNameTableStartOp" />
+       <string id="string20" value="GetFontNameTableStopOp" />
+       <string id="string21" value="GetNameRecordStartOp" />
+       <string id="string22" value="GetNameRecordStopOp" />
+       <string id="string23" value="GetNameStringsStartOp" />
+       <string id="string24" value="GetNameStringsStopOp" />
+       <string id="string25" value="Microsoft-Windows-FMS" />
+       <string id="string26" value="Microsoft-Windows-FMS/Analytic" />
+       <string id="string27" value="Microsoft-Windows-FMS/Debug" />
+       <string id="string28" value="Microsoft-Windows-FMS/Operational" />
+       <string id="string29" value="ModuleInitialization" />
+       <string id="string30" value="NameResolution" />
+       <string id="string31" value="NameResOp" />
+       <string id="string32" value="PerfTrack_DisplayFmsInit" />
+       <string id="string33" value="System" />
+       <string id="string34" value="win:Info" />
+       <string id="string35" value="win:Start" />
+       <string id="string36" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

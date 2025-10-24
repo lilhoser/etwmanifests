@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MediaFoundation-Performance-Core" name="Microsoft-Windows-MediaFoundation-Performance-Core" guid="{b20e65ac-c905-4014-8f78-1b6a508142eb}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_SetWorkQueue" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_AudEngineStream Event" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_DelAudEngineStream Event"/>
+        <event value="4" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_ReleaseStream Event"/>
+        <event value="5" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_BeginStreamSwitch_Task" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_BeginStreamSwitch_Task" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_Flush_Task" opcode="win:Start"/>
+        <event value="8" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_Flush_Task" opcode="win:Stop"/>
+        <event value="9" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_SetState_Task" opcode="win:Start" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_SetState_Task" opcode="win:Stop"/>
+        <event value="11" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_GetPositionInternal_Task" opcode="win:Start"/>
+        <event value="12" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_GetPositionInternal_Task" opcode="win:Stop" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_HandleStarvation_Task" opcode="win:Start" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_HandleStarvation_ReadForStreamSwitch"/>
+        <event value="15" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_HandleStarvation_Starved_Glitch" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_HandleStarvation_ForceSilence"/>
+        <event value="17" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_HandleEOSBuffer_Info" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_HandleStarvation_Task" opcode="win:Stop"/>
+        <event value="19" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_HandleEOSBuffer_Task" opcode="win:Start"/>
+        <event value="20" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_HandleEOSBuffer_Task" opcode="win:Stop"/>
+        <event value="21" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_ScheduleEOSTimer_Task" opcode="win:Start"/>
+        <event value="22" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_ScheduleEOSTimer_Task" opcode="win:Stop"/>
+        <event value="23" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_FillRenderBuffer_Task" opcode="win:Start" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_FillRenderBuffer_Task" opcode="AudEngineStream_FillRenderBuffer_BufferInfo" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_FillRenderBuffer_Task" opcode="AudEngineStream_FillRenderBuffer_LastBufferFrameCount" template="Args25_0"/>
+        <event value="26" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_FillRenderBuffer_Task" opcode="AudEngineStream_FillRenderBuffer_NotEnoughData" template="Args26_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_FillRenderBuffer_Task" opcode="AudEngineStream_FillRenderBuffer_FillSilence_Glitch" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_FillRenderBuffer_Task" opcode="win:Stop"/>
+        <event value="29" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_BeginEOS" template="Args29_0"/>
+        <event value="30" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_InsertMarker_Task" opcode="win:Start"/>
+        <event value="31" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_InsertMarker_Task" opcode="win:Stop" template="Args31_0"/>
+        <event value="32" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_FreeRenderContainer" template="Args32_0"/>
+        <event value="33" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_StartLocalGraph_Task" opcode="win:Start" template="Args33_0"/>
+        <event value="34" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_StartLocalGraph_Task" opcode="win:Stop"/>
+        <event value="35" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_StopLocalGraph_Task" opcode="win:Start" template="Args35_0"/>
+        <event value="36" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudEngineStream_StopLocalGraph_InvokeStreamSwitching"/>
+        <event value="37" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_StopLocalGraph_Task" opcode="win:Stop"/>
+        <event value="38" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_DoWork_Task" opcode="win:Start"/>
+        <event value="39" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_DoWork_Task" opcode="AudEngineStream_CMFPump_DoWork_States" template="Args39_0"/>
+        <event value="40" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_DoWork_Task" opcode="win:Stop"/>
+        <event value="41" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CheckForEOS_Task" opcode="win:Start"/>
+        <event value="42" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_CheckForEOS_PumpStopped"/>
+        <event value="43" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CheckForEOS_Task" opcode="win:Stop"/>
+        <event value="44" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_RetryDoWork_Task" opcode="win:Start"/>
+        <event value="45" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_RetryDoWork_Task" opcode="win:Stop"/>
+        <event value="46" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_DelayStart_Task" opcode="win:Start"/>
+        <event value="47" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_DelayStart_Task" opcode="win:Stop"/>
+        <event value="48" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_Start_Task" opcode="win:Start" template="Args48_0"/>
+        <event value="49" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_Start_Task" opcode="win:Stop"/>
+        <event value="50" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_Stop_Task" opcode="win:Start"/>
+        <event value="51" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_Stop_Task" opcode="win:Stop"/>
+        <event value="52" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_OnSessionDisconnected" template="Args52_0"/>
+        <event value="53" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_AudStreamSink" template="Args53_0"/>
+        <event value="54" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DelAudStreamSink_Task" opcode="win:Start"/>
+        <event value="55" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DelAudStreamSink_Task" opcode="win:Stop"/>
+        <event value="56" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InitializeMediaTypeHandlerList_Task" opcode="win:Start"/>
+        <event value="57" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InitializeMediaTypeHandlerList_Task" opcode="win:Stop"/>
+        <event value="58" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_ShouldSampleBeDropped" template="Args58_0"/>
+        <event value="59" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_ProcessSample_Task" opcode="win:Start"/>
+        <event value="61" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_ProcessSample_SampleInfo" template="Args61_0"/>
+        <event value="62" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_ProcessSample_PrerollDone" template="Args62_0"/>
+        <event value="63" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_ProcessSample_NeedMoreData" template="Args63_0"/>
+        <event value="64" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_ProcessSample_Task" opcode="win:Stop"/>
+        <event value="65" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_PlaceMarker_Task" opcode="win:Start" template="Args65_0"/>
+        <event value="66" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_PlaceMarker_Info" template="Args66_0"/>
+        <event value="67" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_PlaceMarker_Task" opcode="win:Stop"/>
+        <event value="68" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InternalFlush_Task" opcode="win:Start" template="Args68_0"/>
+        <event value="69" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InternalFlush_Task" opcode="win:Stop" template="Args69_0"/>
+        <event value="70" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_Flush_Task" opcode="win:Start"/>
+        <event value="71" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_Flush_Task" opcode="win:Stop"/>
+        <event value="72" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_StartPrerolling_Task" opcode="win:Start"/>
+        <event value="73" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_StartPrerolling_Task" opcode="win:Stop"/>
+        <event value="74" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_FlushMarkers_Enter"/>
+        <event value="75" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_EOSMarkerFired"/>
+        <event value="76" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RemoveFromSink_Task" opcode="win:Start"/>
+        <event value="77" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RemoveFromSink_Task" opcode="win:Stop"/>
+        <event value="78" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_SetMediaType_Task" opcode="win:Start"/>
+        <event value="79" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_SetMediaType_States" template="Args79_0"/>
+        <event value="80" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_SetMediaType_Task" opcode="win:Stop"/>
+        <event value="81" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InternalGetTime_Task" opcode="win:Start"/>
+        <event value="82" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InternalGetTime_Task" opcode="win:Stop" template="Args82_0"/>
+        <event value="83" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetTime_Task" opcode="win:Start"/>
+        <event value="84" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_GetTime_Task" opcode="AudStreamSink_GetTime_BadStreamTime" template="Args84_0"/>
+        <event value="85" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_GetTime_Task" opcode="AudStreamSink_InternalGetTime_Info" template="Args85_0"/>
+        <event value="86" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetTime_Task" opcode="win:Stop"/>
+        <event value="87" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockStart_Task" opcode="win:Start" template="Args87_0"/>
+        <event value="88" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockStart_Task" opcode="win:Stop"/>
+        <event value="89" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_PostOnClockStart_Task" opcode="win:Start"/>
+        <event value="90" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_PostOnClockStart_Task" opcode="win:Stop"/>
+        <event value="91" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_UpdateStartTime_Task" opcode="win:Start" template="Args91_0"/>
+        <event value="92" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_UpdateStartTime_Task" opcode="win:Stop" template="Args92_0"/>
+        <event value="93" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InternalOnClockStop_Task" opcode="win:Start"/>
+        <event value="94" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InternalOnClockStop_Task" opcode="win:Stop"/>
+        <event value="95" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockStop_Task" opcode="win:Start"/>
+        <event value="96" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockStop_Task" opcode="win:Stop"/>
+        <event value="97" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockPause_Task" opcode="win:Start"/>
+        <event value="98" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockPause_Task" opcode="win:Stop"/>
+        <event value="99" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockSetRate_Task" opcode="win:Start" template="Args99_0"/>
+        <event value="100" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FinishOnClockSetRate_Task" opcode="win:Stop"/>
+        <event value="101" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_PostOnClockSetRate_Task" opcode="win:Start"/>
+        <event value="102" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_PostOnClockSetRate_Task" opcode="win:Stop"/>
+        <event value="103" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_CreateAudioStreamInternal_Task" opcode="win:Start" template="Args103_0"/>
+        <event value="104" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_CreateAudioStreamInternal_Task" opcode="win:Stop" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetDevicePosition_Task" opcode="win:Start"/>
+        <event value="106" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetDevicePosition_Task" opcode="win:Stop" template="Args106_0"/>
+        <event value="107" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_SubmitSilence_Task" opcode="win:Start" template="Args107_0"/>
+        <event value="108" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_SubmitSilence_Task" opcode="win:Stop"/>
+        <event value="109" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DispatchMarker_Task" opcode="win:Start"/>
+        <event value="110" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DispatchMarker_Task" opcode="win:Stop"/>
+        <event value="111" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnFreeRenderContainer_Task" opcode="win:Start"/>
+        <event value="112" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_OnFreeRenderContainer_QueueNotEmpty"/>
+        <event value="113" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnFreeRenderContainer_Task" opcode="win:Stop"/>
+        <event value="114" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnInvokeStreamSwitch_Task" opcode="win:Start"/>
+        <event value="115" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnInvokeStreamSwitch_Task" opcode="win:Stop"/>
+        <event value="116" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_HandleScrubSample_Task" opcode="win:Start"/>
+        <event value="117" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_HandleScrubSample_Task" opcode="win:Stop"/>
+        <event value="118" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_SubmitData_Task" opcode="win:Start"/>
+        <event value="119" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_SubmitData_Task" opcode="win:Stop"/>
+        <event value="120" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_ComputeRenderPosition_Task" opcode="win:Start" template="Args120_0"/>
+        <event value="121" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_ComputeRenderPosition_Task" opcode="win:Stop" template="Args121_0"/>
+        <event value="122" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetPresentationTime_Task" opcode="win:Start"/>
+        <event value="123" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetPresentationTime_Task" opcode="win:Stop"/>
+        <event value="124" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RenderSample_Task" opcode="win:Start"/>
+        <event value="125" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RenderSample_Task" opcode="win:Stop"/>
+        <event value="126" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetPositionWrapper_Task" opcode="win:Start" template="Args126_0"/>
+        <event value="127" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_GetPositionWrapper_Task" opcode="win:Stop" template="Args127_0"/>
+        <event value="128" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_TrimBuffer_Task" opcode="win:Start" template="Args128_0"/>
+        <event value="129" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_TrimBuffer_Task" opcode="win:Stop"/>
+        <event value="130" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_EnableSampleRequests" template="Args130_0"/>
+        <event value="131" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RequestMoreSamples_Task" opcode="win:Start" template="Args131_0"/>
+        <event value="132" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RequestMoreSamples_Task" opcode="win:Stop"/>
+        <event value="133" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DoneWithReceivedSample_Task" opcode="win:Start"/>
+        <event value="134" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DoneWithReceivedSample_Task" opcode="win:Stop"/>
+        <event value="135" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_CheckAllocationLimits_Offload" template="Args135_0"/>
+        <event value="136" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_CheckAllocationLimits_NeedMoreData" template="Args136_0"/>
+        <event value="137" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_CheckAllocationLimits_LowerMaxRequest"/>
+        <event value="138" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_HandleDeviceRemoved_Task" opcode="win:Start"/>
+        <event value="139" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_HandleDeviceRemoved_AlreadyInProgress"/>
+        <event value="140" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_HandleDeviceRemoved_Task" opcode="win:Stop"/>
+        <event value="141" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnHandleDeviceRemovedWorker_Task" opcode="win:Start"/>
+        <event value="142" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty"/>
+        <event value="143" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout" template="Args143_0"/>
+        <event value="144" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnHandleDeviceRemovedWorker_Task" opcode="win:Stop"/>
+        <event value="145" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnSoundLevelChanged_Task" opcode="win:Start"/>
+        <event value="146" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_OnSoundLevelChanged_Task" opcode="win:Stop"/>
+        <event value="147" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DoInvalidateAudEngineStream_Task" opcode="win:Start" template="Args147_0"/>
+        <event value="148" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream" template="Args148_0"/>
+        <event value="149" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce"/>
+        <event value="150" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream"/>
+        <event value="151" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate" template="Args151_0"/>
+        <event value="152" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DoInvalidateAudEngineStream_Task" opcode="win:Stop"/>
+        <event value="153" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InvokePipelineFormatChange_Task" opcode="win:Start"/>
+        <event value="154" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated"/>
+        <event value="155" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InvokePipelineFormatChange_Task" opcode="win:Stop"/>
+        <event value="156" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RecreateAudioStream_Task" opcode="win:Start" template="Args156_0"/>
+        <event value="157" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_RecreateAudioStream_EngineStreamPending" template="Args157_0"/>
+        <event value="158" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_RecreateAudioStream_ReleaseStream"/>
+        <event value="159" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_RecreateAudioStream_Task" opcode="win:Stop"/>
+        <event value="160" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_QueueAudioSessionChangedEvent_Task" opcode="win:Start" template="Args160_0"/>
+        <event value="161" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady"/>
+        <event value="162" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_QueueAudioSessionChangedEvent_Task" opcode="win:Stop"/>
+        <event value="163" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InvalidateInternalStream_Task" opcode="win:Start"/>
+        <event value="164" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="AudStreamSink_InvalidateInternalStream_QueueCallback"/>
+        <event value="165" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_InvalidateInternalStream_Task" opcode="win:Stop"/>
+        <event value="166" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="Notification_OnDefaultDeviceChanged_Task" opcode="win:Start"/>
+        <event value="167" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="Notification_OnDefaultDeviceChanged_QueueEventToEngineStream"/>
+        <event value="168" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="Notification_OnDefaultDeviceChanged_Task" opcode="win:Stop"/>
+        <event value="169" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="Notification_OnDeviceStateChanged_Enter" template="Args169_0"/>
+        <event value="170" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent"/>
+        <event value="171" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="Notification_OnDeviceStateChanged_Task" opcode="win:Stop"/>
+        <event value="172" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="Notification_OnDeviceAdded_Enter"/>
+        <event value="173" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="Notification_OnDeviceRemoved_Task" opcode="win:Start"/>
+        <event value="174" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="Notification_OnDeviceRemoved_QueueDeviceRemovedEvent"/>
+        <event value="175" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="Notification_OnDeviceRemoved_Task" opcode="win:Stop"/>
+        <event value="176" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_MediaSink_Task" opcode="AudioMediaSink_TestStreamInvalidation"/>
+        <event value="177" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_RenderContainer_FreeSample" template="Args177_0"/>
+        <event value="178" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_EngineStream_Task" opcode="AudEngineStream_FillRenderBuffer_FirstReleaseBuffer" template="Args178_0"/>
+        <event value="179" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_MediaSink_Task" opcode="AudioMediaSink_GetCorrelatedTime" template="Args179_0"/>
+        <event value="180" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_CheckMediaType_Task" opcode="win:Start"/>
+        <event value="181" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_CheckMediaType_Task" opcode="win:Stop" template="Args181_0"/>
+        <event value="182" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_WaveFormat" template="Args182_0"/>
+        <event value="183" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_IsFormatSupported_Task" opcode="win:Start"/>
+        <event value="184" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_IsFormatSupported_Task" opcode="win:Stop" template="Args184_0"/>
+        <event value="185" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="win:Start"/>
+        <event value="186" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamInvalidation_Task" opcode="win:Stop"/>
+        <event value="187" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_IsFormatSupportedInternal_Task" opcode="win:Start"/>
+        <event value="188" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_IsFormatSupportedInternal_Task" opcode="win:Stop"/>
+        <event value="189" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DetermineAudioClientBufferDuration_Task" opcode="win:Start"/>
+        <event value="190" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DetermineAudioClientBufferDuration_Task" opcode="win:Stop" template="Args190_0"/>
+        <event value="191" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DoLateBinding_Task" opcode="win:Start"/>
+        <event value="192" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_DoLateBinding_Task" opcode="win:Stop"/>
+        <event value="193" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudEngineStream_CMFPump_DoWork_Task" opcode="AudEngineStream_CMFPump_Schedule_RetryDoWork"/>
+        <event value="194" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_DelayEOSMarker"/>
+        <event value="195" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FillState_Task" opcode="win:Start"/>
+        <event value="196" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_FillState_Task" opcode="win:Stop"/>
+        <event value="197" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_Timer_Task" opcode="win:Start" template="Args197_0"/>
+        <event value="198" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_Timer_Task" opcode="win:Stop"/>
+        <event value="199" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_Dejitterer_Task" opcode="AudStreamSink_Dejitterer_Reset"/>
+        <event value="200" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudStreamSink_Dejitterer_Task" opcode="AudStreamSink_Dejitterer_ClockSmooth" template="Args200_0"/>
+        <event value="500" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_ReadCaptureBuffer" template="Args500_0"/>
+        <event value="501" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_QueueAudioSessionChangedEvent" template="Args501_0"/>
+        <event value="502" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_UpdateStreamingCharacteristics" template="Args502_0"/>
+        <event value="503" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Shutdown_Task" opcode="win:Start" template="Args503_0"/>
+        <event value="504" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Shutdown_Task" opcode="win:Stop"/>
+        <event value="505" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Initialize_Task" opcode="win:Start" template="Args505_0"/>
+        <event value="506" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Initialize_Task" opcode="win:Stop"/>
+        <event value="507" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_BindToMicrophone_Task" opcode="win:Start"/>
+        <event value="508" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_BindToMicrophone_Task" opcode="win:Stop" template="Args508_0"/>
+        <event value="509" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_CreateAudioClient2_Task" opcode="win:Start"/>
+        <event value="510" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_CreateAudioClient2_Task" opcode="win:Stop" template="Args510_0"/>
+        <event value="511" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_CreateCaptureStream_Task" opcode="win:Start" template="Args511_0"/>
+        <event value="512" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_CreateCaptureStream_Task" opcode="win:Stop" template="Args512_0"/>
+        <event value="513" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_ReadCaptureBuffer_Task" opcode="win:Start" template="Args513_0"/>
+        <event value="514" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_ReadCaptureBuffer_Task" opcode="win:Stop"/>
+        <event value="515" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_FlushSamples_Task" opcode="win:Start"/>
+        <event value="516" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_FlushSamples_Task" opcode="win:Stop"/>
+        <event value="517" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_StartStream_Task" opcode="win:Start" template="Args517_0"/>
+        <event value="518" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_StartStream_Task" opcode="win:Stop" template="Args518_0"/>
+        <event value="519" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_StopStream_Task" opcode="win:Start" template="Args519_0"/>
+        <event value="520" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_StopStream_Task" opcode="win:Stop"/>
+        <event value="521" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Pump_Start_Task" opcode="win:Start"/>
+        <event value="522" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Pump_Start_Task" opcode="win:Stop"/>
+        <event value="523" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Pump_Stop_Task" opcode="win:Start"/>
+        <event value="524" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Pump_Stop_Task" opcode="win:Stop"/>
+        <event value="525" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Pump_DoWork_Task" opcode="win:Start"/>
+        <event value="526" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Pump_DoWork_Task" opcode="win:Stop"/>
+        <event value="527" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudioCaptureSessionNotify_OnSessionDisconnected" template="Args527_0"/>
+        <event value="528" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_ReadCaptureBuffer_GetBuffer" template="Args528_0"/>
+        <event value="529" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_SetMasterVolume" template="Args529_0"/>
+        <event value="530" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_SetMute" template="Args530_0"/>
+        <event value="531" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Constructor_Task" opcode="win:Start" template="Args531_0"/>
+        <event value="532" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Constructor_Task" opcode="win:Stop"/>
+        <event value="533" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Destructor_Task" opcode="win:Start"/>
+        <event value="534" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Destructor_Task" opcode="win:Stop"/>
+        <event value="535" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_DestroyCaptureStream_Task" opcode="win:Start" template="Args535_0"/>
+        <event value="536" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_DestroyCaptureStream_Task" opcode="win:Stop"/>
+        <event value="537" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_CreateCaptureStream_WAVEFORMAT"/>
+        <event value="538" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_GetMediaType_WAVEFORMAT"/>
+        <event value="539" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_GetMediaType"/>
+        <event value="540" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_GetCurrentMediaType"/>
+        <event value="541" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_GetSample" template="Args541_0"/>
+        <event value="542" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_AddSample"/>
+        <event value="543" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_SetCurrentMediaType_Task" opcode="win:Start" template="Args543_0"/>
+        <event value="544" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_SetCurrentMediaType_Task" opcode="win:Stop" template="Args544_0"/>
+        <event value="545" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_SetMediaType_WAVEFORMAT"/>
+        <event value="546" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_GetService" template="Args546_0"/>
+        <event value="547" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="AudCaptureStream_Info_Task" opcode="AudCaptureStream_ReadCaptureBuffer_CurrentPadding" template="Args547_0"/>
+        <event value="600" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="PresClock_SetState_Task" template="Args600_0"/>
+        <event value="650" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="QM_SampleLag_Task" template="Args650_0"/>
+        <event value="651" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="QM_AdviseClientsOnBranch" opcode="win:Start" template="Args651_0"/>
+        <event value="652" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="QM_AdviseClientsOnBranch" opcode="win:Stop"/>
+        <event value="700" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MPEG2Mux_ProcessInput_Task" template="Args700_0"/>
+        <event value="701" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MPEG2Mux_MuxSample_Task" template="Args701_0"/>
+        <event value="702" version="0" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MPEG2Mux_UpdatePCR_Task" template="Args702_0"/>
+        <event value="60" version="1" level="win:Informational"  channel="MediaFoundationPerformanceCore" task="MFAudio_Render_StreamSink_Task" opcode="AudStreamSink_ProcessSample_Info" template="Args60_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="MediaFoundationPerformanceCore" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="MFAudio_Render_EngineStream_Task" message="$(string.string1)">
+          <opcodes>
+           <opcode value="12" name="AudEngineStream_AudEngineStream Event" message="$(string.string32)"/>
+           <opcode value="13" name="AudEngineStream_DelAudEngineStream Event" message="$(string.string42)"/>
+           <opcode value="14" name="AudEngineStream_ReleaseStream Event" message="$(string.string61)"/>
+           <opcode value="15" name="AudEngineStream_HandleStarvation_ReadForStreamSwitch" message="$(string.string56)"/>
+           <opcode value="16" name="AudEngineStream_HandleStarvation_Starved_Glitch" message="$(string.string57)"/>
+           <opcode value="18" name="AudEngineStream_HandleStarvation_ForceSilence" message="$(string.string55)"/>
+           <opcode value="19" name="AudEngineStream_HandleEOSBuffer_Info" message="$(string.string53)"/>
+           <opcode value="24" name="AudEngineStream_BeginEOS" message="$(string.string33)"/>
+           <opcode value="25" name="AudEngineStream_FreeRenderContainer" message="$(string.string51)"/>
+           <opcode value="28" name="AudEngineStream_CheckForEOS_PumpStopped" message="$(string.string35)"/>
+           <opcode value="29" name="AudEngineStream_OnSessionDisconnected" message="$(string.string60)"/>
+           <opcode value="65" name="AudEngineStream_FillRenderBuffer_FirstReleaseBuffer" message="$(string.string46)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="MFAudio_Render_StreamSink_Task" message="$(string.string2)">
+          <opcodes>
+           <opcode value="11" name="AudStreamSink_SetWorkQueue" message="$(string.string148)"/>
+           <opcode value="30" name="AudStreamSink_AudStreamSink" message="$(string.string71)"/>
+           <opcode value="31" name="AudStreamSink_ShouldSampleBeDropped" message="$(string.string149)"/>
+           <opcode value="33" name="AudStreamSink_ProcessSample_SampleInfo" message="$(string.string135)"/>
+           <opcode value="34" name="AudStreamSink_ProcessSample_PrerollDone" message="$(string.string134)"/>
+           <opcode value="35" name="AudStreamSink_ProcessSample_NeedMoreData" message="$(string.string133)"/>
+           <opcode value="36" name="AudStreamSink_PlaceMarker_Info" message="$(string.string128)"/>
+           <opcode value="37" name="AudStreamSink_FlushMarkers_Enter" message="$(string.string100)"/>
+           <opcode value="38" name="AudStreamSink_EOSMarkerFired" message="$(string.string93)"/>
+           <opcode value="39" name="AudStreamSink_SetMediaType_States" message="$(string.string146)"/>
+           <opcode value="42" name="AudStreamSink_OnFreeRenderContainer_QueueNotEmpty" message="$(string.string121)"/>
+           <opcode value="43" name="AudStreamSink_EnableSampleRequests" message="$(string.string92)"/>
+           <opcode value="44" name="AudStreamSink_CheckAllocationLimits_Offload" message="$(string.string74)"/>
+           <opcode value="45" name="AudStreamSink_CheckAllocationLimits_NeedMoreData" message="$(string.string73)"/>
+           <opcode value="46" name="AudStreamSink_CheckAllocationLimits_LowerMaxRequest" message="$(string.string72)"/>
+           <opcode value="64" name="AudStreamSink_RenderContainer_FreeSample" message="$(string.string143)"/>
+           <opcode value="68" name="AudStreamSink_WaveFormat" message="$(string.string156)"/>
+           <opcode value="70" name="AudStreamSink_DelayEOSMarker" message="$(string.string82)"/>
+           <opcode value="32" name="AudStreamSink_ProcessSample_Info" message="$(string.string132)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="MFAudio_Render_GetTime_Task" message="$(string.string3)">
+          <opcodes>
+           <opcode value="40" name="AudStreamSink_GetTime_BadStreamTime" message="$(string.string104)"/>
+           <opcode value="41" name="AudStreamSink_InternalGetTime_Info" message="$(string.string111)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="MFAudio_Render_StreamInvalidation_Task" message="$(string.string4)">
+          <opcodes>
+           <opcode value="26" name="AudEngineStream_StopLocalGraph_InvokeStreamSwitching" message="$(string.string66)"/>
+           <opcode value="47" name="AudStreamSink_HandleDeviceRemoved_AlreadyInProgress" message="$(string.string106)"/>
+           <opcode value="48" name="AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty" message="$(string.string124)"/>
+           <opcode value="49" name="AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout" message="$(string.string123)"/>
+           <opcode value="50" name="AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream" message="$(string.string85)"/>
+           <opcode value="51" name="AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce" message="$(string.string86)"/>
+           <opcode value="52" name="AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream" message="$(string.string87)"/>
+           <opcode value="53" name="AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate" message="$(string.string89)"/>
+           <opcode value="54" name="AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated" message="$(string.string117)"/>
+           <opcode value="55" name="AudStreamSink_RecreateAudioStream_EngineStreamPending" message="$(string.string139)"/>
+           <opcode value="56" name="AudStreamSink_RecreateAudioStream_ReleaseStream" message="$(string.string140)"/>
+           <opcode value="57" name="AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady" message="$(string.string137)"/>
+           <opcode value="58" name="AudStreamSink_InvalidateInternalStream_QueueCallback" message="$(string.string114)"/>
+           <opcode value="59" name="Notification_OnDefaultDeviceChanged_QueueEventToEngineStream" message="$(string.string167)"/>
+           <opcode value="66" name="Notification_OnDeviceStateChanged_Enter" message="$(string.string172)"/>
+           <opcode value="60" name="Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent" message="$(string.string173)"/>
+           <opcode value="61" name="Notification_OnDeviceAdded_Enter" message="$(string.string169)"/>
+           <opcode value="62" name="Notification_OnDeviceRemoved_QueueDeviceRemovedEvent" message="$(string.string170)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="MFAudio_Render_MediaSink_Task" message="$(string.string5)">
+          <opcodes>
+           <opcode value="63" name="AudioMediaSink_TestStreamInvalidation" message="$(string.string70)"/>
+           <opcode value="67" name="AudioMediaSink_GetCorrelatedTime" message="$(string.string69)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="AudEngineStream_BeginStreamSwitch_Task" message="$(string.string6)">
+        </task>
+        <task value="7" name="AudEngineStream_Flush_Task" message="$(string.string7)">
+        </task>
+        <task value="8" name="AudEngineStream_SetState_Task" message="$(string.string8)">
+        </task>
+        <task value="10" name="AudEngineStream_GetPositionInternal_Task" message="$(string.string10)">
+        </task>
+        <task value="11" name="AudEngineStream_HandleStarvation_Task" message="$(string.string11)">
+        </task>
+        <task value="12" name="AudEngineStream_HandleEOSBuffer_Task" message="$(string.string12)">
+        </task>
+        <task value="13" name="AudEngineStream_ScheduleEOSTimer_Task" message="$(string.string13)">
+        </task>
+        <task value="14" name="AudEngineStream_FillRenderBuffer_Task" message="$(string.string14)">
+          <opcodes>
+           <opcode value="20" name="AudEngineStream_FillRenderBuffer_BufferInfo" message="$(string.string44)"/>
+           <opcode value="21" name="AudEngineStream_FillRenderBuffer_LastBufferFrameCount" message="$(string.string47)"/>
+           <opcode value="22" name="AudEngineStream_FillRenderBuffer_NotEnoughData" message="$(string.string48)"/>
+           <opcode value="23" name="AudEngineStream_FillRenderBuffer_FillSilence_Glitch" message="$(string.string45)"/>
+          </opcodes>
+        </task>
+        <task value="15" name="AudEngineStream_InsertMarker_Task" message="$(string.string15)">
+        </task>
+        <task value="16" name="AudEngineStream_StartLocalGraph_Task" message="$(string.string16)">
+        </task>
+        <task value="17" name="AudEngineStream_StopLocalGraph_Task" message="$(string.string17)">
+        </task>
+        <task value="18" name="AudEngineStream_CMFPump_DoWork_Task" message="$(string.string18)">
+          <opcodes>
+           <opcode value="27" name="AudEngineStream_CMFPump_DoWork_States" message="$(string.string37)"/>
+           <opcode value="69" name="AudEngineStream_CMFPump_Schedule_RetryDoWork" message="$(string.string39)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="AudEngineStream_CheckForEOS_Task" message="$(string.string19)">
+        </task>
+        <task value="20" name="AudEngineStream_RetryDoWork_Task" message="$(string.string20)">
+        </task>
+        <task value="21" name="AudEngineStream_DelayStart_Task" message="$(string.string21)">
+        </task>
+        <task value="22" name="AudEngineStream_CMFPump_Start_Task" message="$(string.string22)">
+        </task>
+        <task value="23" name="AudEngineStream_CMFPump_Stop_Task" message="$(string.string23)">
+        </task>
+        <task value="24" name="AudStreamSink_DelAudStreamSink_Task" message="$(string.string24)">
+        </task>
+        <task value="25" name="AudStreamSink_InitializeMediaTypeHandlerList_Task" message="$(string.string25)">
+        </task>
+        <task value="26" name="AudStreamSink_ProcessSample_Task" message="$(string.string26)">
+        </task>
+        <task value="27" name="AudStreamSink_PlaceMarker_Task" message="$(string.string27)">
+        </task>
+        <task value="28" name="AudStreamSink_InternalFlush_Task" message="$(string.string28)">
+        </task>
+        <task value="29" name="AudStreamSink_Flush_Task" message="$(string.string29)">
+        </task>
+        <task value="30" name="AudStreamSink_StartPrerolling_Task" message="$(string.string30)">
+        </task>
+        <task value="31" name="AudStreamSink_RemoveFromSink_Task" message="$(string.string31)">
+        </task>
+        <task value="32" name="AudStreamSink_SetMediaType_Task" message="$(string.string32)">
+        </task>
+        <task value="33" name="AudStreamSink_InternalGetTime_Task" message="$(string.string33)">
+        </task>
+        <task value="34" name="AudStreamSink_GetTime_Task" message="$(string.string34)">
+        </task>
+        <task value="35" name="AudStreamSink_FinishOnClockStart_Task" message="$(string.string35)">
+        </task>
+        <task value="36" name="AudStreamSink_PostOnClockStart_Task" message="$(string.string36)">
+        </task>
+        <task value="37" name="AudStreamSink_UpdateStartTime_Task" message="$(string.string37)">
+        </task>
+        <task value="38" name="AudStreamSink_InternalOnClockStop_Task" message="$(string.string38)">
+        </task>
+        <task value="39" name="AudStreamSink_FinishOnClockStop_Task" message="$(string.string39)">
+        </task>
+        <task value="40" name="AudStreamSink_FinishOnClockPause_Task" message="$(string.string40)">
+        </task>
+        <task value="41" name="AudStreamSink_FinishOnClockSetRate_Task" message="$(string.string41)">
+        </task>
+        <task value="42" name="AudStreamSink_PostOnClockSetRate_Task" message="$(string.string42)">
+        </task>
+        <task value="43" name="AudStreamSink_CreateAudioStreamInternal_Task" message="$(string.string43)">
+        </task>
+        <task value="44" name="AudStreamSink_GetDevicePosition_Task" message="$(string.string44)">
+        </task>
+        <task value="45" name="AudStreamSink_SubmitSilence_Task" message="$(string.string45)">
+        </task>
+        <task value="46" name="AudStreamSink_DispatchMarker_Task" message="$(string.string46)">
+        </task>
+        <task value="47" name="AudStreamSink_OnFreeRenderContainer_Task" message="$(string.string47)">
+        </task>
+        <task value="48" name="AudStreamSink_OnInvokeStreamSwitch_Task" message="$(string.string48)">
+        </task>
+        <task value="49" name="AudStreamSink_HandleScrubSample_Task" message="$(string.string49)">
+        </task>
+        <task value="50" name="AudStreamSink_SubmitData_Task" message="$(string.string50)">
+        </task>
+        <task value="51" name="AudStreamSink_ComputeRenderPosition_Task" message="$(string.string51)">
+        </task>
+        <task value="52" name="AudStreamSink_GetPresentationTime_Task" message="$(string.string52)">
+        </task>
+        <task value="53" name="AudStreamSink_RenderSample_Task" message="$(string.string53)">
+        </task>
+        <task value="54" name="AudStreamSink_GetPositionWrapper_Task" message="$(string.string54)">
+        </task>
+        <task value="55" name="AudStreamSink_TrimBuffer_Task" message="$(string.string55)">
+        </task>
+        <task value="56" name="AudStreamSink_RequestMoreSamples_Task" message="$(string.string56)">
+        </task>
+        <task value="57" name="AudStreamSink_DoneWithReceivedSample_Task" message="$(string.string57)">
+        </task>
+        <task value="58" name="AudStreamSink_HandleDeviceRemoved_Task" message="$(string.string58)">
+        </task>
+        <task value="59" name="AudStreamSink_OnHandleDeviceRemovedWorker_Task" message="$(string.string59)">
+        </task>
+        <task value="60" name="AudStreamSink_OnSoundLevelChanged_Task" message="$(string.string60)">
+        </task>
+        <task value="61" name="AudStreamSink_DoInvalidateAudEngineStream_Task" message="$(string.string61)">
+        </task>
+        <task value="62" name="AudStreamSink_InvokePipelineFormatChange_Task" message="$(string.string62)">
+        </task>
+        <task value="63" name="AudStreamSink_RecreateAudioStream_Task" message="$(string.string63)">
+        </task>
+        <task value="64" name="AudStreamSink_QueueAudioSessionChangedEvent_Task" message="$(string.string64)">
+        </task>
+        <task value="65" name="AudStreamSink_InvalidateInternalStream_Task" message="$(string.string65)">
+        </task>
+        <task value="66" name="Notification_OnDefaultDeviceChanged_Task" message="$(string.string66)">
+        </task>
+        <task value="67" name="Notification_OnDeviceStateChanged_Task" message="$(string.string67)">
+        </task>
+        <task value="68" name="Notification_OnDeviceRemoved_Task" message="$(string.string68)">
+        </task>
+        <task value="69" name="AudStreamSink_CheckMediaType_Task" message="$(string.string69)">
+        </task>
+        <task value="70" name="AudStreamSink_InvalidatingStream_Task" message="$(string.string70)">
+        </task>
+        <task value="71" name="AudStreamSink_IsFormatSupported_Task" message="$(string.string71)">
+        </task>
+        <task value="72" name="AudStreamSink_IsFormatSupportedInternal_Task" message="$(string.string72)">
+        </task>
+        <task value="73" name="AudStreamSink_DetermineAudioClientBufferDuration_Task" message="$(string.string73)">
+        </task>
+        <task value="74" name="AudStreamSink_DoLateBinding_Task" message="$(string.string74)">
+        </task>
+        <task value="75" name="AudStreamSink_FillState_Task" message="$(string.string75)">
+        </task>
+        <task value="76" name="AudStreamSink_Timer_Task" message="$(string.string76)">
+        </task>
+        <task value="77" name="AudStreamSink_Dejitterer_Task" message="$(string.string77)">
+          <opcodes>
+           <opcode value="87" name="AudStreamSink_Dejitterer_Reset" message="$(string.string79)"/>
+           <opcode value="88" name="AudStreamSink_Dejitterer_ClockSmooth" message="$(string.string78)"/>
+          </opcodes>
+        </task>
+        <task value="500" name="AudCaptureStream_Info_Task" message="$(string.string500)">
+          <opcodes>
+           <opcode value="77" name="AudCaptureStream_ReadCaptureBuffer" message="$(string.string20)"/>
+           <opcode value="71" name="AudCaptureStream_QueueAudioSessionChangedEvent" message="$(string.string19)"/>
+           <opcode value="72" name="AudCaptureStream_UpdateStreamingCharacteristics" message="$(string.string31)"/>
+           <opcode value="73" name="AudioCaptureSessionNotify_OnSessionDisconnected" message="$(string.string68)"/>
+           <opcode value="74" name="AudCaptureStream_ReadCaptureBuffer_GetBuffer" message="$(string.string22)"/>
+           <opcode value="75" name="AudCaptureStream_SetMasterVolume" message="$(string.string25)"/>
+           <opcode value="76" name="AudCaptureStream_SetMute" message="$(string.string27)"/>
+           <opcode value="78" name="AudCaptureStream_CreateCaptureStream_WAVEFORMAT" message="$(string.string5)"/>
+           <opcode value="79" name="AudCaptureStream_GetMediaType_WAVEFORMAT" message="$(string.string11)"/>
+           <opcode value="80" name="AudCaptureStream_GetMediaType" message="$(string.string10)"/>
+           <opcode value="81" name="AudCaptureStream_GetCurrentMediaType" message="$(string.string9)"/>
+           <opcode value="82" name="AudCaptureStream_GetSample" message="$(string.string12)"/>
+           <opcode value="83" name="AudCaptureStream_AddSample" message="$(string.string0)"/>
+           <opcode value="84" name="AudCaptureStream_SetMediaType_WAVEFORMAT" message="$(string.string26)"/>
+           <opcode value="85" name="AudCaptureStream_GetService" message="$(string.string13)"/>
+           <opcode value="86" name="AudCaptureStream_ReadCaptureBuffer_CurrentPadding" message="$(string.string21)"/>
+          </opcodes>
+        </task>
+        <task value="501" name="AudCaptureStream_Shutdown_Task" message="$(string.string501)">
+        </task>
+        <task value="502" name="AudCaptureStream_Initialize_Task" message="$(string.string502)">
+        </task>
+        <task value="503" name="AudCaptureStream_BindToMicrophone_Task" message="$(string.string503)">
+        </task>
+        <task value="504" name="AudCaptureStream_CreateAudioClient2_Task" message="$(string.string504)">
+        </task>
+        <task value="505" name="AudCaptureStream_CreateCaptureStream_Task" message="$(string.string505)">
+        </task>
+        <task value="506" name="AudCaptureStream_ReadCaptureBuffer_Task" message="$(string.string506)">
+        </task>
+        <task value="507" name="AudCaptureStream_FlushSamples_Task" message="$(string.string507)">
+        </task>
+        <task value="508" name="AudCaptureStream_StartStream_Task" message="$(string.string508)">
+        </task>
+        <task value="509" name="AudCaptureStream_StopStream_Task" message="$(string.string509)">
+        </task>
+        <task value="510" name="AudCaptureStream_Pump_Start_Task" message="$(string.string510)">
+        </task>
+        <task value="511" name="AudCaptureStream_Pump_Stop_Task" message="$(string.string511)">
+        </task>
+        <task value="512" name="AudCaptureStream_Pump_DoWork_Task" message="$(string.string512)">
+        </task>
+        <task value="513" name="AudCaptureStream_Constructor_Task" message="$(string.string513)">
+        </task>
+        <task value="514" name="AudCaptureStream_Destructor_Task" message="$(string.string514)">
+        </task>
+        <task value="515" name="AudCaptureStream_DestroyCaptureStream_Task" message="$(string.string515)">
+        </task>
+        <task value="516" name="AudCaptureStream_SetCurrentMediaType_Task" message="$(string.string516)">
+        </task>
+        <task value="600" name="PresClock_SetState_Task" message="$(string.string600)">
+        </task>
+        <task value="650" name="QM_SampleLag_Task" message="$(string.string650)">
+        </task>
+        <task value="651" name="QM_AdviseClientsOnBranch" message="$(string.string651)">
+        </task>
+        <task value="700" name="MPEG2Mux_ProcessInput_Task" message="$(string.string700)">
+        </task>
+        <task value="701" name="MPEG2Mux_MuxSample_Task" message="$(string.string701)">
+        </task>
+        <task value="702" name="MPEG2Mux_UpdatePCR_Task" message="$(string.string702)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="op_AudStreamSink_SetWorkQueue" message="$(string.string244)"/>
+        <opcode value="12" name="op_AudEngineStream_AudEngineStream" message="$(string.string190)"/>
+        <opcode value="13" name="op_AudEngineStream_DelAudEngineStream" message="$(string.string195)"/>
+        <opcode value="14" name="op_AudEngineStream_ReleaseStream" message="$(string.string207)"/>
+        <opcode value="15" name="op_AudEngineStream_HandleStarvation_ReadForStreamSwitch" message="$(string.string204)"/>
+        <opcode value="16" name="op_AudEngineStream_HandleStarvation_Starved_Glitch" message="$(string.string205)"/>
+        <opcode value="18" name="op_AudEngineStream_HandleStarvation_ForceSilence" message="$(string.string203)"/>
+        <opcode value="19" name="op_AudEngineStream_HandleEOSBuffer_Info" message="$(string.string202)"/>
+        <opcode value="20" name="op_AudEngineStream_FillRenderBuffer_BufferInfo" message="$(string.string196)"/>
+        <opcode value="21" name="op_AudEngineStream_FillRenderBuffer_LastBufferFrameCount" message="$(string.string199)"/>
+        <opcode value="22" name="op_AudEngineStream_FillRenderBuffer_NotEnoughData" message="$(string.string200)"/>
+        <opcode value="23" name="op_AudEngineStream_FillRenderBuffer_FillSilence_Glitch" message="$(string.string197)"/>
+        <opcode value="24" name="op_AudEngineStream_BeginEOS" message="$(string.string191)"/>
+        <opcode value="25" name="op_AudEngineStream_FreeRenderContainer" message="$(string.string201)"/>
+        <opcode value="26" name="op_AudEngineStream_StopLocalGraph_InvokeStreamSwitching" message="$(string.string208)"/>
+        <opcode value="27" name="op_AudEngineStream_CMFPump_DoWork_States" message="$(string.string193)"/>
+        <opcode value="28" name="op_AudEngineStream_CheckForEOS_PumpStopped" message="$(string.string192)"/>
+        <opcode value="29" name="op_AudEngineStream_OnSessionDisconnected" message="$(string.string206)"/>
+        <opcode value="30" name="op_AudStreamSink_AudStreamSink" message="$(string.string212)"/>
+        <opcode value="31" name="op_AudStreamSink_ShouldSampleBeDropped" message="$(string.string245)"/>
+        <opcode value="32" name="op_AudStreamSink_ProcessSample_Info" message="$(string.string235)"/>
+        <opcode value="33" name="op_AudStreamSink_ProcessSample_SampleInfo" message="$(string.string238)"/>
+        <opcode value="34" name="op_AudStreamSink_ProcessSample_PrerollDone" message="$(string.string237)"/>
+        <opcode value="35" name="op_AudStreamSink_ProcessSample_NeedMoreData" message="$(string.string236)"/>
+        <opcode value="36" name="op_AudStreamSink_PlaceMarker_Info" message="$(string.string234)"/>
+        <opcode value="37" name="op_AudStreamSink_FlushMarkers_Enter" message="$(string.string225)"/>
+        <opcode value="38" name="op_AudStreamSink_EOSMarkerFired" message="$(string.string224)"/>
+        <opcode value="39" name="op_AudStreamSink_SetMediaType_States" message="$(string.string243)"/>
+        <opcode value="40" name="op_AudStreamSink_GetTime_BadStreamTime" message="$(string.string226)"/>
+        <opcode value="41" name="op_AudStreamSink_InternalGetTime_Info" message="$(string.string228)"/>
+        <opcode value="42" name="op_AudStreamSink_OnFreeRenderContainer_QueueNotEmpty" message="$(string.string231)"/>
+        <opcode value="43" name="op_AudStreamSink_EnableSampleRequests" message="$(string.string223)"/>
+        <opcode value="44" name="op_AudStreamSink_CheckAllocationLimits_Offload" message="$(string.string215)"/>
+        <opcode value="45" name="op_AudStreamSink_CheckAllocationLimits_NeedMoreData" message="$(string.string214)"/>
+        <opcode value="46" name="op_AudStreamSink_CheckAllocationLimits_LowerMaxRequest" message="$(string.string213)"/>
+        <opcode value="47" name="op_AudStreamSink_HandleDeviceRemoved_AlreadyInProgress" message="$(string.string227)"/>
+        <opcode value="48" name="op_AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty" message="$(string.string233)"/>
+        <opcode value="49" name="op_AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout" message="$(string.string232)"/>
+        <opcode value="50" name="op_AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream" message="$(string.string219)"/>
+        <opcode value="51" name="op_AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce" message="$(string.string220)"/>
+        <opcode value="52" name="op_AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream" message="$(string.string221)"/>
+        <opcode value="53" name="op_AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate" message="$(string.string222)"/>
+        <opcode value="54" name="op_AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated" message="$(string.string230)"/>
+        <opcode value="55" name="op_AudStreamSink_RecreateAudioStream_EngineStreamPending" message="$(string.string240)"/>
+        <opcode value="56" name="op_AudStreamSink_RecreateAudioStream_ReleaseStream" message="$(string.string241)"/>
+        <opcode value="57" name="op_AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady" message="$(string.string239)"/>
+        <opcode value="58" name="op_AudStreamSink_InvalidateInternalStream_QueueCallback" message="$(string.string229)"/>
+        <opcode value="59" name="op_Notification_OnDefaultDeviceChanged_QueueEventToEngineStream" message="$(string.string247)"/>
+        <opcode value="60" name="op_Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent" message="$(string.string251)"/>
+        <opcode value="61" name="op_Notification_OnDeviceAdded_Enter" message="$(string.string248)"/>
+        <opcode value="62" name="op_Notification_OnDeviceRemoved_QueueDeviceRemovedEvent" message="$(string.string249)"/>
+        <opcode value="63" name="op_AudioMediaSink_TestStreamInvalidation" message="$(string.string211)"/>
+        <opcode value="64" name="op_AudStreamSink_RenderContainer_FreeSample" message="$(string.string242)"/>
+        <opcode value="65" name="op_AudEngineStream_FillRenderBuffer_FirstReleaseBuffer" message="$(string.string198)"/>
+        <opcode value="66" name="op_Notification_OnDeviceStateChanged_Enter" message="$(string.string250)"/>
+        <opcode value="67" name="op_AudioMediaSink_GetCorrelatedTime" message="$(string.string210)"/>
+        <opcode value="68" name="op_AudStreamSink_WaveFormat" message="$(string.string246)"/>
+        <opcode value="69" name="op_AudEngineStream_CMFPump_Schedule_RetryDoWork" message="$(string.string194)"/>
+        <opcode value="70" name="op_AudStreamSink_DelayEOSMarker" message="$(string.string218)"/>
+        <opcode value="71" name="op_AudCaptureStream_QueueAudioSessionChangedEvent" message="$(string.string182)"/>
+        <opcode value="72" name="op_AudCaptureStream_UpdateStreamingCharacteristics" message="$(string.string189)"/>
+        <opcode value="73" name="op_AudioCaptureSessionNotify_OnSessionDisconnected" message="$(string.string209)"/>
+        <opcode value="74" name="op_AudCaptureStream_ReadCaptureBuffer_GetBuffer" message="$(string.string185)"/>
+        <opcode value="75" name="op_AudCaptureStream_SetMasterVolume" message="$(string.string186)"/>
+        <opcode value="76" name="op_AudCaptureStream_SetMute" message="$(string.string188)"/>
+        <opcode value="77" name="op_AudCaptureStream_ReadCaptureBuffer" message="$(string.string183)"/>
+        <opcode value="78" name="op_AudCaptureStream_CreateCaptureStream_WAVEFORMAT" message="$(string.string176)"/>
+        <opcode value="79" name="op_AudCaptureStream_GetMediaType_WAVEFORMAT" message="$(string.string179)"/>
+        <opcode value="80" name="op_AudCaptureStream_GetMediaType" message="$(string.string178)"/>
+        <opcode value="81" name="op_AudCaptureStream_GetCurrentMediaType" message="$(string.string177)"/>
+        <opcode value="82" name="op_AudCaptureStream_GetSample" message="$(string.string180)"/>
+        <opcode value="83" name="op_AudCaptureStream_AddSample" message="$(string.string175)"/>
+        <opcode value="84" name="op_AudCaptureStream_SetMediaType_WAVEFORMAT" message="$(string.string187)"/>
+        <opcode value="85" name="op_AudCaptureStream_GetService" message="$(string.string181)"/>
+        <opcode value="86" name="op_AudCaptureStream_ReadCaptureBuffer_CurrentPadding" message="$(string.string184)"/>
+        <opcode value="87" name="op_AudStreamSink_Dejitterer_Reset" message="$(string.string217)"/>
+        <opcode value="88" name="op_AudStreamSink_Dejitterer_ClockSmooth" message="$(string.string216)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IsMultithread" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_u32StreamingPeriodMS" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_u32RenderBufferSizeInFrames" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_ui64ClockTicksPerSecond" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="m_u32AudioClientType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsEventDriven" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FillSilenceWhenStarving" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FillCompressedSilenceWhenStarving" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DropLateData" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SystemTime" inType="win:Int64" outType="xs:long"  />
+          <data name="mfsState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pullPlayPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="pullRawPlayPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="pullRawWritePosition" inType="win:Int64" outType="xs:long"  />
+          <data name="pullDevicePosition" inType="win:Int64" outType="xs:long"  />
+          <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="u32FramesToRender" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_bEOSReceived" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ullEOSPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="m_bIsEventDriven" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsOffloadedStream" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsOffloadedCompressedStream" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bFirstFill" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="u32CurrentPadding" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="u32FramesToRender" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="u32TimeLeft" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="BytesInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwBytesStillWanted" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args29_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bEOS" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:Int32" outType="xs:int"  />
+          <data name="fInserted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args32_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fFlushed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args33_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bEngineStarted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bReset" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bEngineStarted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bIsEventDriven" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fFillBuffer" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bIsEventDriven" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DisconnectReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bReacquire" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ui32EndpointRole" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="eCategory" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bIsLowLatency" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bBufferDurationSpecified" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hnsBufferDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="bOnlyAudio" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bDisableOffload" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bNonSeekableStream" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args58_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hnsSampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsSampleDuration" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args61_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hnsSampleTime" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsSampleDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="bPrerollSample" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bDelayedSample" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args62_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="scenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fSignalPrerolled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="m_cSamplesPrerolled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_hnsPrerollDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="m_u32CurrentPrerolledBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args63_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hnsSampleDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="m_hnsShortSampleTolerance" inType="win:Int64" outType="xs:long"  />
+          <data name="m_cMaxPendingRequestSample" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args65_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MarkerType" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args66_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ControlPoint" inType="win:Int32" outType="xs:int"  />
+          <data name="Type" inType="win:Int32" outType="xs:int"  />
+          <data name="Value" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bFlushPreroll" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args69_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="fDiscontinuity" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args79_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsUninitialized" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bInvalidatingStream" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="mfaOriginalState" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args82_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="phnsTimeNow" inType="win:Int64" outType="xs:long"  />
+          <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args84_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="phnsTimeNow" inType="win:Int64" outType="xs:long"  />
+          <data name="m_mftMaxTimePriorToStreamSwitch" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args85_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="phnsTimeNow" inType="win:Int64" outType="xs:long"  />
+          <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"  />
+          <data name="m_bInvalidatingStream" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args87_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hnsSystemTime" inType="win:Int64" outType="xs:long"  />
+          <data name="llClockStartOffset" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args91_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StartOffset" inType="win:Int64" outType="xs:long"  />
+          <data name="mftStartOffset" inType="win:Int64" outType="xs:long"  />
+          <data name="bResetGapAndStallHandling" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args92_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="StartOffset" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args99_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hnsSystemTime" inType="win:Int64" outType="xs:long"  />
+          <data name="IsRateZero" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwFlags" inType="win:Int32" outType="xs:int"  />
+          <data name="bUseResampler" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bClockRateMatchEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bUseLightWeightConverters" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="m_bIsOffloadStream" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="pullBytePosition" inType="win:Int64" outType="xs:long"  />
+          <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"  />
+          <data name="m_bIsCompressedStream" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args107_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwSamples" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args120_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="mfRenderTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args121_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="pfDiscontinuity" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pullRenderBytePosition" inType="win:Int64" outType="xs:long"  />
+          <data name="pdwBytesToStall" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args126_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bConvertToMFPos" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args127_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:Int32" outType="xs:int"  />
+          <data name="pullPlayPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="pullWritePosition" inType="win:Int64" outType="xs:long"  />
+          <data name="pullDevicePlayPosition" inType="win:Int64" outType="xs:long"  />
+          <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args128_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="mftTrimAmount" inType="win:Int64" outType="xs:long"  />
+          <data name="mftCutoff" inType="win:Int64" outType="xs:long"  />
+          <data name="bTrimFromFront" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args130_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bEnable" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args131_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="cPendingRequestSample" inType="win:Int32" outType="xs:int"  />
+          <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args135_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"  />
+          <data name="NumContainers" inType="win:Int32" outType="xs:int"  />
+          <data name="BytesInUse" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args136_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MaxPendingRequestSample" inType="win:Int32" outType="xs:int"  />
+          <data name="NumContainers" inType="win:Int32" outType="xs:int"  />
+          <data name="DurationInUse" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsMinAllocation" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args143_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeOutinMm" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args147_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bNeedFormatNegotiation" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args148_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="mfaOriginalStreamState" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hnsStreamInvalidationEventTime" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsLastCorrelatedTime" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsTimeElapsed" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsLastTime" inType="win:Int64" outType="xs:long"  />
+          <data name="hnsNewLastTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bDeviceChange" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hnsNewStreamStartTime" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bStopped" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args160_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="eventType" inType="win:Int32" outType="xs:int"  />
+          <data name="bReacquireDevice" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args169_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwNewState" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args177_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MFTimeOfLastRenderSample" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args178_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="u32FramesToRender" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args179_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ClockTime" inType="win:Int64" outType="xs:long"  />
+          <data name="CorrelatedTime" inType="win:Int64" outType="xs:long"  />
+          <data name="IsStreamInvalidating" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args181_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_pCurrentMediaType" inType="win:Int64" outType="xs:long"  />
+          <data name="IsStreamInvalidating" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hrAEFormatQuery" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hFormatResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args182_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wFormatTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nChannels" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="nSamplesPerSec" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nAvgBytesPerSec" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="nBlockAlign" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="wBitsPerSample" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="cbSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args184_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="clientType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hFormatResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args190_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bufferDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args197_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Key" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Delay" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ClockTime0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="SmoothedQPC0_us" inType="win:Int64" outType="xs:long"  />
+          <data name="QPCDelta_us" inType="win:Int64" outType="xs:long"  />
+          <data name="WindowCount" inType="win:Int32" outType="xs:int"  />
+          <data name="WindowWidth_us" inType="win:Int64" outType="xs:long"  />
+          <data name="Accepted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args500_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="u32FramesRead" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_u64LastSampleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="u64Duration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="dwFlagsForSample" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args501_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_pParent" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="eventType" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args502_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_bAudioProcessingRaw" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="m_bIsEventDriven" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="m_bIsLowLatency" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="m_hnsBufferDuration" inType="win:Int64" outType="xs:long"  />
+          <data name="m_uiAudioCategory" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args503_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_spAudioSessionControl" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_spAudioSessionEvents" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args505_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="wstrEndpointId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="role" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args508_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="uFailedLineNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args510_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AudioClientProperties_bIsOffload" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AudioClientProperties_eCategory" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AudioClientProperties_Options" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args511_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_spAudioClientForStreaming" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args512_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_u32BytesPerFrame" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_u32FramesPerSecond" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args513_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bFirstRead" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args517_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="m_bIsEventDriven" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args518_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args519_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bReset" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args527_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="DisconnectReason" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args528_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="u32FramesRead" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="u32ActualFramesInCurrentPacket" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args529_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fLevel" inType="win:Float" outType="xs:float"  />
+        </template>
+        <template tid="Args530_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="bMute" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args531_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pParentObj" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="dwWorkQueueId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="lWorkQueuePriority" inType="win:Int32" outType="xs:int"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args535_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_u32BufferFrameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_u32BytesPerFrame" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_u32FramesPerSecond" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args541_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_ReadySampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args543_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pMediaType" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_spCurrentMediaType" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args544_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="m_spCurrentMediaType" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args546_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="guidService" inType="win:GUID" outType="xs:GUID"  />
+          <data name="riid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="pvObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args547_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="u32CurrentPadding" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ulSamples" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args600_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="State" inType="win:Int32" outType="xs:int"  />
+          <data name="ClockOffset" inType="win:Int64" outType="xs:long"  />
+          <data name="QPC" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args650_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SrcObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SamplesReceived" inType="win:Int32" outType="xs:int"  />
+          <data name="LateSamples" inType="win:Int64" outType="xs:long"  />
+          <data name="TotalLateTime_ms" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleLatency_hns" inType="win:Int64" outType="xs:long"  />
+          <data name="SampleTime_hns" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args651_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Node" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OutputIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args700_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Stream" inType="win:Int32" outType="xs:int"  />
+          <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args701_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Stream" inType="win:Int32" outType="xs:int"  />
+          <data name="ES_Stream" inType="win:Int32" outType="xs:int"  />
+          <data name="TimeStamp" inType="win:Int64" outType="xs:long"  />
+          <data name="PackSize" inType="win:Int32" outType="xs:int"  />
+          <data name="LastPCR" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args702_0">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PCR" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args60_1">
+          <data name="object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="mfRenderTime" inType="win:Int64" outType="xs:long"  />
+          <data name="mfTimeNow" inType="win:Int64" outType="xs:long"  />
+          <data name="mfRenderTimeAhead" inType="win:Int64" outType="xs:long"  />
+          <data name="fDiscontinuity" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="mfAudioState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsRateZero" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AudCaptureStream_AddSample" />
+       <string id="string1" value="AudCaptureStream_BindToMicrophone_Task" />
+       <string id="string2" value="AudCaptureStream_Constructor_Task" />
+       <string id="string3" value="AudCaptureStream_CreateAudioClient2_Task" />
+       <string id="string4" value="AudCaptureStream_CreateCaptureStream_Task" />
+       <string id="string5" value="AudCaptureStream_CreateCaptureStream_WAVEFORMAT" />
+       <string id="string6" value="AudCaptureStream_DestroyCaptureStream_Task" />
+       <string id="string7" value="AudCaptureStream_Destructor_Task" />
+       <string id="string8" value="AudCaptureStream_FlushSamples_Task" />
+       <string id="string9" value="AudCaptureStream_GetCurrentMediaType" />
+       <string id="string10" value="AudCaptureStream_GetMediaType" />
+       <string id="string11" value="AudCaptureStream_GetMediaType_WAVEFORMAT" />
+       <string id="string12" value="AudCaptureStream_GetSample" />
+       <string id="string13" value="AudCaptureStream_GetService" />
+       <string id="string14" value="AudCaptureStream_Info_Task" />
+       <string id="string15" value="AudCaptureStream_Initialize_Task" />
+       <string id="string16" value="AudCaptureStream_Pump_DoWork_Task" />
+       <string id="string17" value="AudCaptureStream_Pump_Start_Task" />
+       <string id="string18" value="AudCaptureStream_Pump_Stop_Task" />
+       <string id="string19" value="AudCaptureStream_QueueAudioSessionChangedEvent" />
+       <string id="string20" value="AudCaptureStream_ReadCaptureBuffer" />
+       <string id="string21" value="AudCaptureStream_ReadCaptureBuffer_CurrentPadding" />
+       <string id="string22" value="AudCaptureStream_ReadCaptureBuffer_GetBuffer" />
+       <string id="string23" value="AudCaptureStream_ReadCaptureBuffer_Task" />
+       <string id="string24" value="AudCaptureStream_SetCurrentMediaType_Task" />
+       <string id="string25" value="AudCaptureStream_SetMasterVolume" />
+       <string id="string26" value="AudCaptureStream_SetMediaType_WAVEFORMAT" />
+       <string id="string27" value="AudCaptureStream_SetMute" />
+       <string id="string28" value="AudCaptureStream_Shutdown_Task" />
+       <string id="string29" value="AudCaptureStream_StartStream_Task" />
+       <string id="string30" value="AudCaptureStream_StopStream_Task" />
+       <string id="string31" value="AudCaptureStream_UpdateStreamingCharacteristics" />
+       <string id="string32" value="AudEngineStream_AudEngineStream Event" />
+       <string id="string33" value="AudEngineStream_BeginEOS" />
+       <string id="string34" value="AudEngineStream_BeginStreamSwitch_Task" />
+       <string id="string35" value="AudEngineStream_CheckForEOS_PumpStopped" />
+       <string id="string36" value="AudEngineStream_CheckForEOS_Task" />
+       <string id="string37" value="AudEngineStream_CMFPump_DoWork_States" />
+       <string id="string38" value="AudEngineStream_CMFPump_DoWork_Task" />
+       <string id="string39" value="AudEngineStream_CMFPump_Schedule_RetryDoWork" />
+       <string id="string40" value="AudEngineStream_CMFPump_Start_Task" />
+       <string id="string41" value="AudEngineStream_CMFPump_Stop_Task" />
+       <string id="string42" value="AudEngineStream_DelAudEngineStream Event" />
+       <string id="string43" value="AudEngineStream_DelayStart_Task" />
+       <string id="string44" value="AudEngineStream_FillRenderBuffer_BufferInfo" />
+       <string id="string45" value="AudEngineStream_FillRenderBuffer_FillSilence_Glitch" />
+       <string id="string46" value="AudEngineStream_FillRenderBuffer_FirstReleaseBuffer" />
+       <string id="string47" value="AudEngineStream_FillRenderBuffer_LastBufferFrameCount" />
+       <string id="string48" value="AudEngineStream_FillRenderBuffer_NotEnoughData" />
+       <string id="string49" value="AudEngineStream_FillRenderBuffer_Task" />
+       <string id="string50" value="AudEngineStream_Flush_Task" />
+       <string id="string51" value="AudEngineStream_FreeRenderContainer" />
+       <string id="string52" value="AudEngineStream_GetPositionInternal_Task" />
+       <string id="string53" value="AudEngineStream_HandleEOSBuffer_Info" />
+       <string id="string54" value="AudEngineStream_HandleEOSBuffer_Task" />
+       <string id="string55" value="AudEngineStream_HandleStarvation_ForceSilence" />
+       <string id="string56" value="AudEngineStream_HandleStarvation_ReadForStreamSwitch" />
+       <string id="string57" value="AudEngineStream_HandleStarvation_Starved_Glitch" />
+       <string id="string58" value="AudEngineStream_HandleStarvation_Task" />
+       <string id="string59" value="AudEngineStream_InsertMarker_Task" />
+       <string id="string60" value="AudEngineStream_OnSessionDisconnected" />
+       <string id="string61" value="AudEngineStream_ReleaseStream Event" />
+       <string id="string62" value="AudEngineStream_RetryDoWork_Task" />
+       <string id="string63" value="AudEngineStream_ScheduleEOSTimer_Task" />
+       <string id="string64" value="AudEngineStream_SetState_Task" />
+       <string id="string65" value="AudEngineStream_StartLocalGraph_Task" />
+       <string id="string66" value="AudEngineStream_StopLocalGraph_InvokeStreamSwitching" />
+       <string id="string67" value="AudEngineStream_StopLocalGraph_Task" />
+       <string id="string68" value="AudioCaptureSessionNotify_OnSessionDisconnected" />
+       <string id="string69" value="AudioMediaSink_GetCorrelatedTime" />
+       <string id="string70" value="AudioMediaSink_TestStreamInvalidation" />
+       <string id="string71" value="AudStreamSink_AudStreamSink" />
+       <string id="string72" value="AudStreamSink_CheckAllocationLimits_LowerMaxRequest" />
+       <string id="string73" value="AudStreamSink_CheckAllocationLimits_NeedMoreData" />
+       <string id="string74" value="AudStreamSink_CheckAllocationLimits_Offload" />
+       <string id="string75" value="AudStreamSink_CheckMediaType_Task" />
+       <string id="string76" value="AudStreamSink_ComputeRenderPosition_Task" />
+       <string id="string77" value="AudStreamSink_CreateAudioStreamInternal_Task" />
+       <string id="string78" value="AudStreamSink_Dejitterer_ClockSmooth" />
+       <string id="string79" value="AudStreamSink_Dejitterer_Reset" />
+       <string id="string80" value="AudStreamSink_Dejitterer_Task" />
+       <string id="string81" value="AudStreamSink_DelAudStreamSink_Task" />
+       <string id="string82" value="AudStreamSink_DelayEOSMarker" />
+       <string id="string83" value="AudStreamSink_DetermineAudioClientBufferDuration_Task" />
+       <string id="string84" value="AudStreamSink_DispatchMarker_Task" />
+       <string id="string85" value="AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream" />
+       <string id="string86" value="AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce" />
+       <string id="string87" value="AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream" />
+       <string id="string88" value="AudStreamSink_DoInvalidateAudEngineStream_Task" />
+       <string id="string89" value="AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate" />
+       <string id="string90" value="AudStreamSink_DoLateBinding_Task" />
+       <string id="string91" value="AudStreamSink_DoneWithReceivedSample_Task" />
+       <string id="string92" value="AudStreamSink_EnableSampleRequests" />
+       <string id="string93" value="AudStreamSink_EOSMarkerFired" />
+       <string id="string94" value="AudStreamSink_FillState_Task" />
+       <string id="string95" value="AudStreamSink_FinishOnClockPause_Task" />
+       <string id="string96" value="AudStreamSink_FinishOnClockSetRate_Task" />
+       <string id="string97" value="AudStreamSink_FinishOnClockStart_Task" />
+       <string id="string98" value="AudStreamSink_FinishOnClockStop_Task" />
+       <string id="string99" value="AudStreamSink_Flush_Task" />
+       <string id="string100" value="AudStreamSink_FlushMarkers_Enter" />
+       <string id="string101" value="AudStreamSink_GetDevicePosition_Task" />
+       <string id="string102" value="AudStreamSink_GetPositionWrapper_Task" />
+       <string id="string103" value="AudStreamSink_GetPresentationTime_Task" />
+       <string id="string104" value="AudStreamSink_GetTime_BadStreamTime" />
+       <string id="string105" value="AudStreamSink_GetTime_Task" />
+       <string id="string106" value="AudStreamSink_HandleDeviceRemoved_AlreadyInProgress" />
+       <string id="string107" value="AudStreamSink_HandleDeviceRemoved_Task" />
+       <string id="string108" value="AudStreamSink_HandleScrubSample_Task" />
+       <string id="string109" value="AudStreamSink_InitializeMediaTypeHandlerList_Task" />
+       <string id="string110" value="AudStreamSink_InternalFlush_Task" />
+       <string id="string111" value="AudStreamSink_InternalGetTime_Info" />
+       <string id="string112" value="AudStreamSink_InternalGetTime_Task" />
+       <string id="string113" value="AudStreamSink_InternalOnClockStop_Task" />
+       <string id="string114" value="AudStreamSink_InvalidateInternalStream_QueueCallback" />
+       <string id="string115" value="AudStreamSink_InvalidateInternalStream_Task" />
+       <string id="string116" value="AudStreamSink_InvalidatingStream_Task" />
+       <string id="string117" value="AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated" />
+       <string id="string118" value="AudStreamSink_InvokePipelineFormatChange_Task" />
+       <string id="string119" value="AudStreamSink_IsFormatSupported_Task" />
+       <string id="string120" value="AudStreamSink_IsFormatSupportedInternal_Task" />
+       <string id="string121" value="AudStreamSink_OnFreeRenderContainer_QueueNotEmpty" />
+       <string id="string122" value="AudStreamSink_OnFreeRenderContainer_Task" />
+       <string id="string123" value="AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout" />
+       <string id="string124" value="AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty" />
+       <string id="string125" value="AudStreamSink_OnHandleDeviceRemovedWorker_Task" />
+       <string id="string126" value="AudStreamSink_OnInvokeStreamSwitch_Task" />
+       <string id="string127" value="AudStreamSink_OnSoundLevelChanged_Task" />
+       <string id="string128" value="AudStreamSink_PlaceMarker_Info" />
+       <string id="string129" value="AudStreamSink_PlaceMarker_Task" />
+       <string id="string130" value="AudStreamSink_PostOnClockSetRate_Task" />
+       <string id="string131" value="AudStreamSink_PostOnClockStart_Task" />
+       <string id="string132" value="AudStreamSink_ProcessSample_Info" />
+       <string id="string133" value="AudStreamSink_ProcessSample_NeedMoreData" />
+       <string id="string134" value="AudStreamSink_ProcessSample_PrerollDone" />
+       <string id="string135" value="AudStreamSink_ProcessSample_SampleInfo" />
+       <string id="string136" value="AudStreamSink_ProcessSample_Task" />
+       <string id="string137" value="AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady" />
+       <string id="string138" value="AudStreamSink_QueueAudioSessionChangedEvent_Task" />
+       <string id="string139" value="AudStreamSink_RecreateAudioStream_EngineStreamPending" />
+       <string id="string140" value="AudStreamSink_RecreateAudioStream_ReleaseStream" />
+       <string id="string141" value="AudStreamSink_RecreateAudioStream_Task" />
+       <string id="string142" value="AudStreamSink_RemoveFromSink_Task" />
+       <string id="string143" value="AudStreamSink_RenderContainer_FreeSample" />
+       <string id="string144" value="AudStreamSink_RenderSample_Task" />
+       <string id="string145" value="AudStreamSink_RequestMoreSamples_Task" />
+       <string id="string146" value="AudStreamSink_SetMediaType_States" />
+       <string id="string147" value="AudStreamSink_SetMediaType_Task" />
+       <string id="string148" value="AudStreamSink_SetWorkQueue" />
+       <string id="string149" value="AudStreamSink_ShouldSampleBeDropped" />
+       <string id="string150" value="AudStreamSink_StartPrerolling_Task" />
+       <string id="string151" value="AudStreamSink_SubmitData_Task" />
+       <string id="string152" value="AudStreamSink_SubmitSilence_Task" />
+       <string id="string153" value="AudStreamSink_Timer_Task" />
+       <string id="string154" value="AudStreamSink_TrimBuffer_Task" />
+       <string id="string155" value="AudStreamSink_UpdateStartTime_Task" />
+       <string id="string156" value="AudStreamSink_WaveFormat" />
+       <string id="string157" value="MediaFoundationPerformanceCore" />
+       <string id="string158" value="MFAudio_Render_EngineStream_Task" />
+       <string id="string159" value="MFAudio_Render_GetTime_Task" />
+       <string id="string160" value="MFAudio_Render_MediaSink_Task" />
+       <string id="string161" value="MFAudio_Render_StreamInvalidation_Task" />
+       <string id="string162" value="MFAudio_Render_StreamSink_Task" />
+       <string id="string163" value="Microsoft-Windows-MediaFoundation-Performance-Core" />
+       <string id="string164" value="MPEG2Mux_MuxSample_Task" />
+       <string id="string165" value="MPEG2Mux_ProcessInput_Task" />
+       <string id="string166" value="MPEG2Mux_UpdatePCR_Task" />
+       <string id="string167" value="Notification_OnDefaultDeviceChanged_QueueEventToEngineStream" />
+       <string id="string168" value="Notification_OnDefaultDeviceChanged_Task" />
+       <string id="string169" value="Notification_OnDeviceAdded_Enter" />
+       <string id="string170" value="Notification_OnDeviceRemoved_QueueDeviceRemovedEvent" />
+       <string id="string171" value="Notification_OnDeviceRemoved_Task" />
+       <string id="string172" value="Notification_OnDeviceStateChanged_Enter" />
+       <string id="string173" value="Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent" />
+       <string id="string174" value="Notification_OnDeviceStateChanged_Task" />
+       <string id="string175" value="op_AudCaptureStream_AddSample" />
+       <string id="string176" value="op_AudCaptureStream_CreateCaptureStream_WAVEFORMAT" />
+       <string id="string177" value="op_AudCaptureStream_GetCurrentMediaType" />
+       <string id="string178" value="op_AudCaptureStream_GetMediaType" />
+       <string id="string179" value="op_AudCaptureStream_GetMediaType_WAVEFORMAT" />
+       <string id="string180" value="op_AudCaptureStream_GetSample" />
+       <string id="string181" value="op_AudCaptureStream_GetService" />
+       <string id="string182" value="op_AudCaptureStream_QueueAudioSessionChangedEvent" />
+       <string id="string183" value="op_AudCaptureStream_ReadCaptureBuffer" />
+       <string id="string184" value="op_AudCaptureStream_ReadCaptureBuffer_CurrentPadding" />
+       <string id="string185" value="op_AudCaptureStream_ReadCaptureBuffer_GetBuffer" />
+       <string id="string186" value="op_AudCaptureStream_SetMasterVolume" />
+       <string id="string187" value="op_AudCaptureStream_SetMediaType_WAVEFORMAT" />
+       <string id="string188" value="op_AudCaptureStream_SetMute" />
+       <string id="string189" value="op_AudCaptureStream_UpdateStreamingCharacteristics" />
+       <string id="string190" value="op_AudEngineStream_AudEngineStream" />
+       <string id="string191" value="op_AudEngineStream_BeginEOS" />
+       <string id="string192" value="op_AudEngineStream_CheckForEOS_PumpStopped" />
+       <string id="string193" value="op_AudEngineStream_CMFPump_DoWork_States" />
+       <string id="string194" value="op_AudEngineStream_CMFPump_Schedule_RetryDoWork" />
+       <string id="string195" value="op_AudEngineStream_DelAudEngineStream" />
+       <string id="string196" value="op_AudEngineStream_FillRenderBuffer_BufferInfo" />
+       <string id="string197" value="op_AudEngineStream_FillRenderBuffer_FillSilence_Glitch" />
+       <string id="string198" value="op_AudEngineStream_FillRenderBuffer_FirstReleaseBuffer" />
+       <string id="string199" value="op_AudEngineStream_FillRenderBuffer_LastBufferFrameCount" />
+       <string id="string200" value="op_AudEngineStream_FillRenderBuffer_NotEnoughData" />
+       <string id="string201" value="op_AudEngineStream_FreeRenderContainer" />
+       <string id="string202" value="op_AudEngineStream_HandleEOSBuffer_Info" />
+       <string id="string203" value="op_AudEngineStream_HandleStarvation_ForceSilence" />
+       <string id="string204" value="op_AudEngineStream_HandleStarvation_ReadForStreamSwitch" />
+       <string id="string205" value="op_AudEngineStream_HandleStarvation_Starved_Glitch" />
+       <string id="string206" value="op_AudEngineStream_OnSessionDisconnected" />
+       <string id="string207" value="op_AudEngineStream_ReleaseStream" />
+       <string id="string208" value="op_AudEngineStream_StopLocalGraph_InvokeStreamSwitching" />
+       <string id="string209" value="op_AudioCaptureSessionNotify_OnSessionDisconnected" />
+       <string id="string210" value="op_AudioMediaSink_GetCorrelatedTime" />
+       <string id="string211" value="op_AudioMediaSink_TestStreamInvalidation" />
+       <string id="string212" value="op_AudStreamSink_AudStreamSink" />
+       <string id="string213" value="op_AudStreamSink_CheckAllocationLimits_LowerMaxRequest" />
+       <string id="string214" value="op_AudStreamSink_CheckAllocationLimits_NeedMoreData" />
+       <string id="string215" value="op_AudStreamSink_CheckAllocationLimits_Offload" />
+       <string id="string216" value="op_AudStreamSink_Dejitterer_ClockSmooth" />
+       <string id="string217" value="op_AudStreamSink_Dejitterer_Reset" />
+       <string id="string218" value="op_AudStreamSink_DelayEOSMarker" />
+       <string id="string219" value="op_AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream" />
+       <string id="string220" value="op_AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce" />
+       <string id="string221" value="op_AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream" />
+       <string id="string222" value="op_AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate" />
+       <string id="string223" value="op_AudStreamSink_EnableSampleRequests" />
+       <string id="string224" value="op_AudStreamSink_EOSMarkerFired" />
+       <string id="string225" value="op_AudStreamSink_FlushMarkers_Enter" />
+       <string id="string226" value="op_AudStreamSink_GetTime_BadStreamTime" />
+       <string id="string227" value="op_AudStreamSink_HandleDeviceRemoved_AlreadyInProgress" />
+       <string id="string228" value="op_AudStreamSink_InternalGetTime_Info" />
+       <string id="string229" value="op_AudStreamSink_InvalidateInternalStream_QueueCallback" />
+       <string id="string230" value="op_AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated" />
+       <string id="string231" value="op_AudStreamSink_OnFreeRenderContainer_QueueNotEmpty" />
+       <string id="string232" value="op_AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout" />
+       <string id="string233" value="op_AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty" />
+       <string id="string234" value="op_AudStreamSink_PlaceMarker_Info" />
+       <string id="string235" value="op_AudStreamSink_ProcessSample_Info" />
+       <string id="string236" value="op_AudStreamSink_ProcessSample_NeedMoreData" />
+       <string id="string237" value="op_AudStreamSink_ProcessSample_PrerollDone" />
+       <string id="string238" value="op_AudStreamSink_ProcessSample_SampleInfo" />
+       <string id="string239" value="op_AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady" />
+       <string id="string240" value="op_AudStreamSink_RecreateAudioStream_EngineStreamPending" />
+       <string id="string241" value="op_AudStreamSink_RecreateAudioStream_ReleaseStream" />
+       <string id="string242" value="op_AudStreamSink_RenderContainer_FreeSample" />
+       <string id="string243" value="op_AudStreamSink_SetMediaType_States" />
+       <string id="string244" value="op_AudStreamSink_SetWorkQueue" />
+       <string id="string245" value="op_AudStreamSink_ShouldSampleBeDropped" />
+       <string id="string246" value="op_AudStreamSink_WaveFormat" />
+       <string id="string247" value="op_Notification_OnDefaultDeviceChanged_QueueEventToEngineStream" />
+       <string id="string248" value="op_Notification_OnDeviceAdded_Enter" />
+       <string id="string249" value="op_Notification_OnDeviceRemoved_QueueDeviceRemovedEvent" />
+       <string id="string250" value="op_Notification_OnDeviceStateChanged_Enter" />
+       <string id="string251" value="op_Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent" />
+       <string id="string252" value="PresClock_SetState_Task" />
+       <string id="string253" value="QM_AdviseClientsOnBranch" />
+       <string id="string254" value="QM_SampleLag_Task" />
+       <string id="string255" value="win:Start" />
+       <string id="string256" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

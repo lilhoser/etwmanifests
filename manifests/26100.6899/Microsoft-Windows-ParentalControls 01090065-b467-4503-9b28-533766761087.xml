@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ParentalControls" name="Microsoft-Windows-ParentalControls" guid="{01090065-b467-4503-9b28-533766761087}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="SettingChange" opcode="Modify" keywords="WPC" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="GameStart" opcode="Launch" keywords="WPC ThirdParty" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="UrlVisit" opcode="Web" keywords="WPC" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="EmailReceived" opcode="Launch" keywords="WPC ThirdParty" template="Args4_0"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="EmailSent" opcode="Launch" keywords="WPC ThirdParty"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="MediaPlayback" opcode="Launch" keywords="WPC ThirdParty" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="IMInvitation" opcode="Launch" keywords="WPC ThirdParty" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="IMJoin" opcode="Launch" keywords="WPC ThirdParty" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="IMLeave" opcode="Launch" keywords="WPC ThirdParty" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="FileDownload" opcode="Web" keywords="WPC ThirdParty" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="IMFeature" opcode="Launch" keywords="WPC ThirdParty" template="Args11_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="Custom" opcode="System" keywords="WPC ThirdParty" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="EmailContact" opcode="Launch" keywords="WPC ThirdParty" template="Args14_0"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="IMContact" opcode="Launch" keywords="WPC ThirdParty" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="AppBlocked" opcode="Launch" keywords="WPC" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="AppOverride" opcode="Launch" keywords="WPC" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="WebOverride" opcode="Launch" keywords="WPC" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="WebsiteVisit" opcode="Web" keywords="WPC" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="Application" opcode="Launch" keywords="WPC" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="ComputerUsage" opcode="System" keywords="WPC" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-ParentalControls/Operational" task="ContentUsage" opcode="System" keywords="WPC" template="Args22_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ParentalControls/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="WPC" mask="0x10" message="$(string.string33)" />
+        <keyword name="ThirdParty" mask="0x20" message="$(string.string27)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="SettingChange" message="$(string.string1)">
+          <opcodes>
+           <opcode value="21" name="Modify" message="$(string.string23)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="GameStart" message="$(string.string2)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="UrlVisit" message="$(string.string3)">
+          <opcodes>
+           <opcode value="24" name="Web" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="EmailReceived" message="$(string.string4)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="EmailSent" message="$(string.string5)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="MediaPlayback" message="$(string.string6)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="IMInvitation" message="$(string.string7)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="IMJoin" message="$(string.string8)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="IMLeave" message="$(string.string9)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="10" name="FileDownload" message="$(string.string10)">
+          <opcodes>
+           <opcode value="24" name="Web" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="IMFeature" message="$(string.string11)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="Custom" message="$(string.string13)">
+          <opcodes>
+           <opcode value="23" name="System" message="$(string.string26)"/>
+          </opcodes>
+        </task>
+        <task value="14" name="EmailContact" message="$(string.string14)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="15" name="IMContact" message="$(string.string15)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="16" name="AppBlocked" message="$(string.string16)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="17" name="AppOverride" message="$(string.string17)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="18" name="WebOverride" message="$(string.string18)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="WebsiteVisit" message="$(string.string19)">
+          <opcodes>
+           <opcode value="24" name="Web" message="$(string.string30)"/>
+          </opcodes>
+        </task>
+        <task value="20" name="Application" message="$(string.string20)">
+          <opcodes>
+           <opcode value="22" name="Launch" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="21" name="ComputerUsage" message="$(string.string21)">
+          <opcodes>
+           <opcode value="23" name="System" message="$(string.string26)"/>
+          </opcodes>
+        </task>
+        <task value="22" name="ContentUsage" message="$(string.string22)">
+          <opcodes>
+           <opcode value="23" name="System" message="$(string.string26)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="20" name="locate" message="$(string.string18)"/>
+        <opcode value="21" name="modify" message="$(string.string22)"/>
+        <opcode value="22" name="apprun" message="$(string.string3)"/>
+        <opcode value="23" name="system" message="$(string.string25)"/>
+        <opcode value="24" name="web" message="$(string.string29)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Class" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Setting" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AccountOwner" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewValue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Optional" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="AppID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Rating" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RatingsSystem" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DescriptorCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Descriptor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RatingSystemID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="CategoryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Category" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Sender" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Subject" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Recipient" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AttachmentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AttachmentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReceivedTime" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+          <data name="EmailAccount" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Title" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PML" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Album" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExplicitContent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AccountName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RequestingIP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Sender" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Recipient" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AccountName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="JoiningIP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="JoiningUser" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemberCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Member" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Sender" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AccountName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LeavingIP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LeavingUser" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemberCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Member" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AccountName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConversationID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RecipientCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Recipient" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Sender" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SenderIP" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Data" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="Publisher" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Event" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Blocked" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewAddress" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EmailAccount" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="Application" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AccountName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+          <data name="UserID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RuleID" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="UserID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="UserID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="URL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="Url" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Decision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Categories" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BlockedCategories" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SerializedApplication" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Title" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ContentType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Referrer" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Telemetry" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="SerializedApplication" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreationTime" inType="win:FILETIME" outType="xs:datetime"  />
+          <data name="TimeUsed" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TimeUsed" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="ContentProviderId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ContentProviderTitle" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Id" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Title" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Ratings" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Decision" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AppBlocked" />
+       <string id="string1" value="Application" />
+       <string id="string2" value="AppOverride" />
+       <string id="string3" value="apprun" />
+       <string id="string4" value="ComputerUsage" />
+       <string id="string5" value="ContentUsage" />
+       <string id="string6" value="Custom" />
+       <string id="string7" value="EmailContact" />
+       <string id="string8" value="EmailReceived" />
+       <string id="string9" value="EmailSent" />
+       <string id="string10" value="FileDownload" />
+       <string id="string11" value="GameStart" />
+       <string id="string12" value="IMContact" />
+       <string id="string13" value="IMFeature" />
+       <string id="string14" value="IMInvitation" />
+       <string id="string15" value="IMJoin" />
+       <string id="string16" value="IMLeave" />
+       <string id="string17" value="Launch" />
+       <string id="string18" value="locate" />
+       <string id="string19" value="MediaPlayback" />
+       <string id="string20" value="Microsoft-Windows-ParentalControls" />
+       <string id="string21" value="Microsoft-Windows-ParentalControls/Operational" />
+       <string id="string22" value="modify" />
+       <string id="string23" value="Modify" />
+       <string id="string24" value="SettingChange" />
+       <string id="string25" value="system" />
+       <string id="string26" value="System" />
+       <string id="string27" value="ThirdParty" />
+       <string id="string28" value="UrlVisit" />
+       <string id="string29" value="web" />
+       <string id="string30" value="Web" />
+       <string id="string31" value="WebOverride" />
+       <string id="string32" value="WebsiteVisit" />
+       <string id="string33" value="WPC" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-OOBE-FirstLogonAnim" name="Microsoft-Windows-OOBE-FirstLogonAnim" guid="{2d4c0c5e-6704-493a-a44b-f5add4fc9283}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5004" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="StartResult" opcode="win:Info" keywords="FirstLogonAnim"/>
+        <event value="5005" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="EndAnimationRequest" opcode="win:Info" keywords="FirstLogonAnim" template="Args5005_0"/>
+        <event value="5041" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="Animation" opcode="win:Start" keywords="FirstLogonAnim" template="Args5041_0"/>
+        <event value="5042" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="Animation" opcode="win:Stop" keywords="FirstLogonAnim"/>
+        <event value="5043" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="Navigation" opcode="win:Start" keywords="FirstLogonAnim"/>
+        <event value="5044" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="Navigation" opcode="win:Stop" keywords="FirstLogonAnim"/>
+        <event value="5045" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="WebPlatformCreate" opcode="win:Start" keywords="FirstLogonAnim"/>
+        <event value="5046" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="WebPlatformCreate" opcode="win:Stop" keywords="FirstLogonAnim"/>
+        <event value="5047" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="IntroAnimationRequest" opcode="win:Info" keywords="FirstLogonAnim" template="Args5047_0"/>
+        <event value="5048" version="0" level="win:Informational"  channel="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" task="ShowAnimationRequest" opcode="win:Info" keywords="FirstLogonAnim" template="Args5048_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="FirstLogonAnim" mask="0x1" message="$(string.string2)" />
+      </keywords>
+      <tasks>
+        <task value="6004" name="StartResult" message="$(string.string6004)">
+        </task>
+        <task value="6005" name="EndAnimationRequest" message="$(string.string6005)">
+        </task>
+        <task value="6041" name="Animation" message="$(string.string6041)">
+        </task>
+        <task value="6042" name="Navigation" message="$(string.string6042)">
+        </task>
+        <task value="6043" name="WebPlatformCreate" message="$(string.string6043)">
+        </task>
+        <task value="6044" name="IntroAnimationRequest" message="$(string.string6044)">
+        </task>
+        <task value="6045" name="ShowAnimationRequest" message="$(string.string6045)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args5005_0">
+          <data name="fZDP" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args5041_0">
+          <data name="fOOBE" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fExistingUser" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fZDP" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fExplorer" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args5047_0">
+          <data name="fExistingUser" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fPostZDP" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args5048_0">
+          <data name="fExistingUserOrPostZDP" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fZDP" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fTouchDevice" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fMouseDevice" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Animation" />
+       <string id="string1" value="EndAnimationRequest" />
+       <string id="string2" value="FirstLogonAnim" />
+       <string id="string3" value="IntroAnimationRequest" />
+       <string id="string4" value="Microsoft-Windows-OOBE-FirstLogonAnim" />
+       <string id="string5" value="Microsoft-Windows-OOBE-FirstLogonAnim/Diagnostic" />
+       <string id="string6" value="Navigation" />
+       <string id="string7" value="ShowAnimationRequest" />
+       <string id="string8" value="StartResult" />
+       <string id="string9" value="WebPlatformCreate" />
+       <string id="string10" value="win:Info" />
+       <string id="string11" value="win:Start" />
+       <string id="string12" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

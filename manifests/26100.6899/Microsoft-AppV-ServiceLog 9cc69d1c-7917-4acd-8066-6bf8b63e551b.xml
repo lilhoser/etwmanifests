@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-AppV-ServiceLog" name="Microsoft-AppV-ServiceLog" guid="{9cc69d1c-7917-4acd-8066-6bf8b63e551b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  channel="Microsoft-AppV-Client/Debug" keywords="DebugTrace" template="Args1_0"/>
+        <event value="2" version="0" level="win:Verbose"  channel="Microsoft-AppV-Client/Debug" task="DBG-AppVClient" opcode="Service" keywords="DebugTrace" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="Microsoft-AppV-Client/Debug" task="DBG-AppVClient" opcode="Service" keywords="DebugTrace" template="Args3_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-AppV-Client/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="DebugTrace" mask="0x1" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="DBG-AppVClient" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="Service" message="$(string.string4)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="WString1" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Function" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DBG-AppVClient" />
+       <string id="string1" value="DebugTrace" />
+       <string id="string2" value="Microsoft-AppV-Client/Debug" />
+       <string id="string3" value="Microsoft-AppV-ServiceLog" />
+       <string id="string4" value="Service" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

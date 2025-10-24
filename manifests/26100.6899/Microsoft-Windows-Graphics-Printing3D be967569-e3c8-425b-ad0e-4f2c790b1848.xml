@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Graphics-Printing3D" name="Microsoft-Windows-Graphics-Printing3D" guid="{be967569-e3c8-425b-ad0e-4f2c790b1848}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  task="PrintDXGIPreviewTarget_DrawPage" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  task="PrintDXGIPreviewTarget_DrawPage" opcode="win:Stop" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  task="PrintTask_EnsureDocumentSource" opcode="win:Start"/>
+        <event value="4" version="0" level="win:Informational"  task="PrintTask_EnsureDocumentSource" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Informational"  task="PrintTask_BindPrinter" opcode="win:Start" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  task="PrintTask_BindPrinter" opcode="win:Stop" template="Args6_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="PrintDXGIPreviewTarget_DrawPage" message="$(string.string1)">
+        </task>
+        <task value="2" name="PrintTask_EnsureDocumentSource" message="$(string.string2)">
+        </task>
+        <task value="3" name="PrintTask_BindPrinter" message="$(string.string3)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="HResult" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="HResult" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Graphics-Printing3D" />
+       <string id="string1" value="PrintDXGIPreviewTarget_DrawPage" />
+       <string id="string2" value="PrintTask_BindPrinter" />
+       <string id="string3" value="PrintTask_EnsureDocumentSource" />
+       <string id="string4" value="win:Start" />
+       <string id="string5" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

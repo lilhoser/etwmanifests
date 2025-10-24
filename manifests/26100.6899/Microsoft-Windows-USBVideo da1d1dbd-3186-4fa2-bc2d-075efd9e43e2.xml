@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-USBVideo" name="Microsoft-Windows-USBVideo" guid="{da1d1dbd-3186-4fa2-bc2d-075efd9e43e2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Start" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Stop"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Start"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Stop"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_StartUSBVideoDevice" opcode="win:Start"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_StartUSBVideoDevice" opcode="win:Stop"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_StopUSBVideoDevice" opcode="win:Start"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_StopUSBVideoDevice" opcode="win:Stop"/>
+        <event value="208" version="0" level="win:Verbose"  channel="Microsoft-Windows-USBVideo/Analytic" task="USBVideo_FillUserBuffer" opcode="win:Start" template="Args208_0"/>
+        <event value="209" version="0" level="win:Verbose"  channel="Microsoft-Windows-USBVideo/Analytic" task="USBVideo_FillUserBuffer" opcode="win:Stop" template="Args209_0"/>
+        <event value="210" version="0" level="win:Warning"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_UserBufferStarvation" opcode="win:Info"/>
+        <event value="211" version="0" level="win:Warning"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_USBPayloadError" opcode="win:Info"/>
+        <event value="212" version="0" level="win:Warning"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_USBBufferOverrun" opcode="win:Info"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Start" template="Args213_0"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Stop"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Start" template="Args215_0"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Stop"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Suspend" template="Args217_0"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Resume" template="Args218_0"/>
+        <event value="219" version="0" level="win:Warning"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Info"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Info"/>
+        <event value="221" version="0" level="win:Warning"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Info"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_RestoreDefaults" opcode="win:Start"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_RestoreDefaults" opcode="win:Stop"/>
+        <event value="224" version="0" level="win:Verbose"  channel="Microsoft-Windows-USBVideo/Analytic" task="USBVideo_FillSecureUserBuffer" opcode="win:Start" template="Args224_0"/>
+        <event value="225" version="0" level="win:Verbose"  channel="Microsoft-Windows-USBVideo/Analytic" task="USBVideo_FillSecureUserBuffer" opcode="win:Stop" template="Args225_0"/>
+        <event value="226" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Info"/>
+        <event value="227" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Configuration" opcode="win:Info" template="Args227_0"/>
+        <event value="228" version="0" level="win:Error"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Configuration" opcode="win:Info"/>
+        <event value="229" version="0" level="win:Error"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_InsufficientBandwidth" opcode="win:Info"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-USBVideo/Operational" task="USBVideo_Power" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-USBVideo/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-USBVideo/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="101" name="USBVideo_Power" message="$(string.string101)">
+        </task>
+        <task value="103" name="USBVideo_StartUSBVideoDevice" message="$(string.string103)">
+        </task>
+        <task value="104" name="USBVideo_StopUSBVideoDevice" message="$(string.string104)">
+        </task>
+        <task value="105" name="USBVideo_FillUserBuffer" message="$(string.string105)">
+        </task>
+        <task value="106" name="USBVideo_UserBufferStarvation" message="$(string.string106)">
+        </task>
+        <task value="107" name="USBVideo_USBPayloadError" message="$(string.string107)">
+        </task>
+        <task value="108" name="USBVideo_USBBufferOverrun" message="$(string.string108)">
+        </task>
+        <task value="109" name="USBVideo_RestoreDefaults" message="$(string.string109)">
+        </task>
+        <task value="110" name="USBVideo_FillSecureUserBuffer" message="$(string.string110)">
+        </task>
+        <task value="111" name="USBVideo_Configuration" message="$(string.string111)">
+        </task>
+        <task value="112" name="USBVideo_InsufficientBandwidth" message="$(string.string112)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args200_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args208_0">
+          <data name="pBuf" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args209_0">
+          <data name="pBuf" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ulBytesCopied" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args213_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FilterInstanceCount" inType="win:Int32" outType="xs:int"  />
+          <data name="ActiveStreamCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectedStandbyState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args215_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SystemState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DevicePowerStage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args218_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Irp" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ntStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args224_0">
+          <data name="Id" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args225_0">
+          <data name="Id" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ulBytesCopied" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args227_0">
+          <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProductId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-USBVideo" />
+       <string id="string1" value="Microsoft-Windows-USBVideo/Analytic" />
+       <string id="string2" value="Microsoft-Windows-USBVideo/Operational" />
+       <string id="string3" value="USBVideo_Configuration" />
+       <string id="string4" value="USBVideo_FillSecureUserBuffer" />
+       <string id="string5" value="USBVideo_FillUserBuffer" />
+       <string id="string6" value="USBVideo_InsufficientBandwidth" />
+       <string id="string7" value="USBVideo_Power" />
+       <string id="string8" value="USBVideo_RestoreDefaults" />
+       <string id="string9" value="USBVideo_StartUSBVideoDevice" />
+       <string id="string10" value="USBVideo_StopUSBVideoDevice" />
+       <string id="string11" value="USBVideo_USBBufferOverrun" />
+       <string id="string12" value="USBVideo_USBPayloadError" />
+       <string id="string13" value="USBVideo_UserBufferStarvation" />
+       <string id="string14" value="win:Info" />
+       <string id="string15" value="win:Resume" />
+       <string id="string16" value="win:Start" />
+       <string id="string17" value="win:Stop" />
+       <string id="string18" value="win:Suspend" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

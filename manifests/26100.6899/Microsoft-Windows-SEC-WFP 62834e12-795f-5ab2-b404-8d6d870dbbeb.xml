@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SEC-WFP" name="Microsoft-Windows-SEC-WFP" guid="{62834e12-795f-5ab2-b404-8d6d870dbbeb}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4" version="0" level="win:Informational"  opcode="win:Info" keywords="Event_WfpWfpGuardBlock" template="Args4_0"/>
+        <event value="1" version="1" level="win:Informational"  opcode="win:Info" keywords="Event_WfpCallout" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  opcode="win:Info" keywords="Event_WfpCalloutExclusion"/>
+        <event value="3" version="1" level="win:Informational"  opcode="win:Info" keywords="Event_WfpCalloutAudit"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Event_WfpCallout" mask="0x1" message="$(string.string0)" />
+        <keyword name="Event_WfpCalloutExclusion" mask="0x2" message="$(string.string2)" />
+        <keyword name="Event_WfpCalloutAudit" mask="0x4" message="$(string.string1)" />
+        <keyword name="Event_WfpWfpGuardBlock" mask="0x8" message="$(string.string3)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args4_0">
+          <data name="ModuleTag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LayerId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FieldId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MatchType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsBlocked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1_1">
+          <data name="ModuleTag" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessCreationTime" inType="win:Int64" outType="xs:long"  />
+          <data name="IsBlocked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsExistingConnection" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LayerId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Event_WfpCallout" />
+       <string id="string1" value="Event_WfpCalloutAudit" />
+       <string id="string2" value="Event_WfpCalloutExclusion" />
+       <string id="string3" value="Event_WfpWfpGuardBlock" />
+       <string id="string4" value="Microsoft-Windows-SEC-WFP" />
+       <string id="string5" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

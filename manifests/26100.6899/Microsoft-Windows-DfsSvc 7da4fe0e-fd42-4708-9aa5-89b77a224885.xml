@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DfsSvc" name="Microsoft-Windows-DfsSvc" guid="{7da4fe0e-fd42-4708-9aa5-89b77a224885}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="14318" version="0" level="win:Verbose"  template="Args14318_0"/>
+        <event value="14500" version="0" level="win:Verbose" />
+        <event value="14501" version="0" level="win:Verbose" />
+        <event value="14503" version="0" level="win:Verbose"  template="Args14503_0"/>
+        <event value="14504" version="0" level="win:Verbose"  template="Args14504_0"/>
+        <event value="14505" version="0" level="win:Verbose"  template="Args14505_0"/>
+        <event value="14508" version="0" level="win:Verbose" />
+        <event value="14509" version="0" level="win:Verbose" />
+        <event value="14510" version="0" level="win:Verbose" />
+        <event value="14511" version="0" level="win:Verbose" />
+        <event value="14512" version="0" level="win:Verbose" />
+        <event value="14513" version="0" level="win:Verbose" />
+        <event value="14514" version="0" level="win:Verbose" />
+        <event value="14515" version="0" level="win:Verbose" />
+        <event value="14516" version="0" level="win:Verbose" />
+        <event value="14517" version="0" level="win:Verbose" />
+        <event value="14518" version="0" level="win:Verbose" />
+        <event value="14519" version="0" level="win:Verbose" />
+        <event value="14520" version="0" level="win:Verbose" />
+        <event value="14521" version="0" level="win:Verbose" />
+        <event value="14522" version="0" level="win:Verbose" />
+        <event value="14523" version="0" level="win:Verbose" />
+        <event value="14524" version="0" level="win:Verbose" />
+        <event value="14526" version="0" level="win:Verbose"  template="Args14526_0"/>
+        <event value="14529" version="0" level="win:Verbose" />
+        <event value="14530" version="0" level="win:Verbose"  template="Args14530_0"/>
+        <event value="14531" version="0" level="win:Verbose" />
+        <event value="14532" version="0" level="win:Verbose" />
+        <event value="14533" version="0" level="win:Verbose" />
+        <event value="14534" version="0" level="win:Verbose" />
+        <event value="14535" version="0" level="win:Verbose" />
+        <event value="14536" version="0" level="win:Verbose" />
+        <event value="14537" version="0" level="win:Verbose" />
+        <event value="14538" version="0" level="win:Verbose"  template="Args14538_0"/>
+        <event value="14539" version="0" level="win:Verbose" />
+        <event value="14540" version="0" level="win:Verbose"  template="Args14540_0"/>
+        <event value="14541" version="0" level="win:Verbose"  template="Args14541_0"/>
+        <event value="14542" version="0" level="win:Verbose"  template="Args14542_0"/>
+        <event value="14543" version="0" level="win:Verbose"  template="Args14543_0"/>
+        <event value="14544" version="0" level="win:Verbose"  template="Args14544_0"/>
+        <event value="14545" version="0" level="win:Verbose" />
+        <event value="14546" version="0" level="win:Verbose" />
+        <event value="14547" version="0" level="win:Verbose"  template="Args14547_0"/>
+        <event value="14548" version="0" level="win:Verbose" />
+        <event value="14549" version="0" level="win:Verbose" />
+        <event value="14550" version="0" level="win:Verbose" />
+        <event value="14551" version="0" level="win:Verbose" />
+        <event value="14552" version="0" level="win:Verbose" />
+        <event value="14553" version="0" level="win:Verbose"  template="Args14553_0"/>
+        <event value="14554" version="0" level="win:Verbose" />
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="64" name=""/>
+        <opcode value="192" name=""/>
+        <opcode value="128" name=""/>
+      </opcodes>
+      <templates>
+        <template tid="Args14318_0">
+          <data name="unused" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14503_0">
+          <data name="childDirectory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="parentDirectory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14504_0">
+          <data name="share" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="path" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14505_0">
+          <data name="share" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="directory" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14526_0">
+          <data name="dc" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14530_0">
+          <data name="share" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14538_0">
+          <data name="share" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="oldPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="newPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14540_0">
+          <data name="path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="share" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14541_0">
+          <data name="DFSLink" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14542_0">
+          <data name="DFSLink" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DFSRoot" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+        <template tid="Args14543_0">
+          <data name="DFSLinkDN" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14544_0">
+          <data name="DFSNamespace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DFSLink1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DFSLink2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14547_0">
+          <data name="DFSNamespace" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DFSFolderPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DFSLinkDN1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DFSLinkDN2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14553_0">
+          <data name="SMBShare" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="" />
+       <string id="string1" value="Microsoft-Windows-DfsSvc" />
+       <string id="string2" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Bluetooth-MTPEnum" name="Microsoft-Windows-Bluetooth-MTPEnum" guid="{04268430-d489-424d-b914-0cff741d6684}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtDriver" opcode="win:Info" template="Args100_0"/>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtDriver" opcode="win:Info"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtDriver" opcode="win:Info"/>
+        <event value="103" version="0" level="win:Error"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtDriver" opcode="win:Info"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtLink" opcode="win:Info" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtLink" opcode="win:Info"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtLink" opcode="win:Info" template="Args202_0"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtLink" opcode="win:Info"/>
+        <event value="204" version="0" level="win:Error"  channel="Microsoft-Windows-Bluetooth-MTPEnum/Operational" task="MtpBtLink" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Bluetooth-MTPEnum/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="MtpBtDriver" message="$(string.string1)">
+        </task>
+        <task value="2" name="MtpBtLink" message="$(string.string2)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Bluetooth-MTPEnum" />
+       <string id="string1" value="Microsoft-Windows-Bluetooth-MTPEnum/Operational" />
+       <string id="string2" value="MtpBtDriver" />
+       <string id="string3" value="MtpBtLink" />
+       <string id="string4" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

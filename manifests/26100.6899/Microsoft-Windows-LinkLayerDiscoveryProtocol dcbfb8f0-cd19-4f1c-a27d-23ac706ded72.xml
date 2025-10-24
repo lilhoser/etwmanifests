@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-LinkLayerDiscoveryProtocol" name="Microsoft-Windows-LinkLayerDiscoveryProtocol" guid="{dcbfb8f0-cd19-4f1c-a27d-23ac706ded72}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="10000" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational" keywords="ut:Global"/>
+        <event value="10001" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational" keywords="ut:Global"/>
+        <event value="10010" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational" template="Args10010_0"/>
+        <event value="10011" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational"/>
+        <event value="10020" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic"/>
+        <event value="10021" version="0" level="win:Warning"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" template="Args10021_0"/>
+        <event value="10030" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" keywords="ut:Configuration" template="Args10030_0"/>
+        <event value="10040" version="0" level="win:Verbose"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" keywords="ut:SendPath" template="Args10040_0"/>
+        <event value="10041" version="0" level="win:Verbose"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" keywords="ut:ReceivePath" template="Args10041_0"/>
+        <event value="10042" version="0" level="win:Warning"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" keywords="ut:ReceivePath" template="Args10042_0"/>
+        <event value="10043" version="0" level="win:Verbose"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" keywords="ut:ReceivePath"/>
+        <event value="10050" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational" template="Args10050_0"/>
+        <event value="10051" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic"/>
+        <event value="10052" version="0" level="win:Warning"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational"/>
+        <event value="10053" version="0" level="win:Informational"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational"/>
+        <event value="10060" version="0" level="win:Warning"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational"/>
+        <event value="10061" version="0" level="win:Warning"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational"/>
+        <event value="10062" version="0" level="win:Warning"  channel="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" template="Args10062_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="ut:SendPath" mask="0x100000000" message="$(string.string14)" />
+        <keyword name="ut:ReceivePath" mask="0x200000000" message="$(string.string13)" />
+        <keyword name="ut:L3ConnectPath" mask="0x400000000" message="$(string.string10)" />
+        <keyword name="ut:L2ConnectPath" mask="0x800000000" message="$(string.string9)" />
+        <keyword name="ut:ClosePath" mask="0x1000000000" message="$(string.string5)" />
+        <keyword name="ut:Authentication" mask="0x2000000000" message="$(string.string4)" />
+        <keyword name="ut:Configuration" mask="0x4000000000" message="$(string.string6)" />
+        <keyword name="ut:Global" mask="0x8000000000" message="$(string.string8)" />
+        <keyword name="ut:Dropped" mask="0x10000000000" message="$(string.string7)" />
+        <keyword name="ut:PiiPresent" mask="0x20000000000" message="$(string.string12)" />
+        <keyword name="ut:Packet" mask="0x40000000000" message="$(string.string11)" />
+        <keyword name="ut:Address" mask="0x80000000000" message="$(string.string3)" />
+        <keyword name="ut:StdTemplateHint" mask="0x100000000000" message="$(string.string15)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args10010_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10021_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10030_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdminParameter" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10040_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketPayloadLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketPayload" inType="win:Binary" outType="xs:hexBinary" length="PacketPayloadLength" />
+        </template>
+        <template tid="Args10041_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketPayloadLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketPayload" inType="win:Binary" outType="xs:hexBinary" length="PacketPayloadLength" />
+        </template>
+        <template tid="Args10042_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketDiscardReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10050_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MsapId" inType="win:Binary" outType="xs:hexBinary" length="MsapIdLength" />
+        </template>
+        <template tid="Args10062_0">
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExistingMsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExistingMsapId" inType="win:Binary" outType="xs:hexBinary" length="ExistingMsapIdLength" />
+          <data name="ReceivedMsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReceivedMsapId" inType="win:Binary" outType="xs:hexBinary" length="ReceivedMsapIdLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-LinkLayerDiscoveryProtocol" />
+       <string id="string1" value="Microsoft-Windows-LinkLayerDiscoveryProtocol/Diagnostic" />
+       <string id="string2" value="Microsoft-Windows-LinkLayerDiscoveryProtocol/Operational" />
+       <string id="string3" value="ut:Address" />
+       <string id="string4" value="ut:Authentication" />
+       <string id="string5" value="ut:ClosePath" />
+       <string id="string6" value="ut:Configuration" />
+       <string id="string7" value="ut:Dropped" />
+       <string id="string8" value="ut:Global" />
+       <string id="string9" value="ut:L2ConnectPath" />
+       <string id="string10" value="ut:L3ConnectPath" />
+       <string id="string11" value="ut:Packet" />
+       <string id="string12" value="ut:PiiPresent" />
+       <string id="string13" value="ut:ReceivePath" />
+       <string id="string14" value="ut:SendPath" />
+       <string id="string15" value="ut:StdTemplateHint" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

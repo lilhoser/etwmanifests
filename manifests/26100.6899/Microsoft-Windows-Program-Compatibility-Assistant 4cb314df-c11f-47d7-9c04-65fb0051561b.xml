@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Program-Compatibility-Assistant" name="Microsoft-Windows-Program-Compatibility-Assistant" guid="{4cb314df-c11f-47d7-9c04-65fb0051561b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" template="Args1_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" template="Args15_0"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" template="Args17_0"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" template="Args30_0"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" template="Args31_0"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" template="Args32_0"/>
+        <event value="101" version="0" level="win:Informational"  task="PCA_ServiceStartup" opcode="win:Start"/>
+        <event value="102" version="0" level="win:Informational"  task="PCA_ServiceStartup" opcode="win:Stop"/>
+        <event value="103" version="0" level="win:Informational"  task="PCA_MonitorProcess" opcode="win:Start"/>
+        <event value="104" version="0" level="win:Informational"  task="PCA_MonitorProcess" opcode="win:Stop"/>
+        <event value="105" version="0" level="win:Informational"  task="PCA_ServiceInitialize" opcode="win:Start"/>
+        <event value="106" version="0" level="win:Informational"  task="PCA_ServiceInitialize" opcode="win:Stop"/>
+        <event value="107" version="0" level="win:Informational"  task="PCA_ServiceShutdown" opcode="win:Start"/>
+        <event value="108" version="0" level="win:Informational"  task="PCA_ServiceShutdown" opcode="win:Stop"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="203" version="0" level="win:Error"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="204" version="0" level="win:Error"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="205" version="0" level="win:Error"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant"/>
+        <event value="1100" version="0" level="win:Informational"  channel="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic" keywords="WDI"/>
+        <event value="1200" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" keywords="WDI" template="Args1200_0"/>
+        <event value="1234" version="0" level="win:Informational"  channel="Microsoft-Windows-Program-Compatibility-Assistant/CompatAfterUpgrade" keywords="ms:Telemetry" template="Args1234_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic" type="Debug"/>
+        <channel value="19" name="Microsoft-Windows-Program-Compatibility-Assistant/CompatAfterUpgrade" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="WDI" mask="0x100" message="$(string.string13)" />
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string7)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string8)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string6)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string5)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="PCA_ServiceStartup" message="$(string.string1)">
+        </task>
+        <task value="2" name="PCA_MonitorProcess" message="$(string.string2)">
+        </task>
+        <task value="3" name="PCA_ServiceInitialize" message="$(string.string3)">
+        </task>
+        <task value="4" name="PCA_ServiceShutdown" message="$(string.string4)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DllName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="DisplayNameSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DisplayName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FullImagePathSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FullImagePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15_0">
+          <data name="TokenDataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TokenData" inType="win:Binary" outType="xs:hexBinary" length="TokenDataSize" />
+        </template>
+        <template tid="Args16_0">
+          <data name="ExePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResolverMap" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DialogType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="ExePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResolverName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ApplicationVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ScenarioId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserAction" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CompatibilityLayer" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ApplicationVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ScenarioId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserAction" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CompatibilityLayer" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeprecatedComponent" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args32_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PublisherName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverVersion" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1200_0">
+          <data name="TriggerID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExtraDataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExtraData" inType="win:Binary" outType="xs:hexBinary" length="ExtraDataSize" />
+        </template>
+        <template tid="Args1234_0">
+          <data name="ApplicationID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Uptime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant" />
+       <string id="string1" value="Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic" />
+       <string id="string2" value="Microsoft-Windows-Program-Compatibility-Assistant" />
+       <string id="string3" value="Microsoft-Windows-Program-Compatibility-Assistant/Analytic" />
+       <string id="string4" value="Microsoft-Windows-Program-Compatibility-Assistant/CompatAfterUpgrade" />
+       <string id="string5" value="ms:CriticalData" />
+       <string id="string6" value="ms:Measures" />
+       <string id="string7" value="ms:ReservedKeyword44" />
+       <string id="string8" value="ms:Telemetry" />
+       <string id="string9" value="PCA_MonitorProcess" />
+       <string id="string10" value="PCA_ServiceInitialize" />
+       <string id="string11" value="PCA_ServiceShutdown" />
+       <string id="string12" value="PCA_ServiceStartup" />
+       <string id="string13" value="WDI" />
+       <string id="string14" value="win:Start" />
+       <string id="string15" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

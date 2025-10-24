@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-IEFRAME" name="Microsoft-IEFRAME" guid="{5c8bb950-959e-4309-8908-67961a1205d5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  task="Frame_URLEntered" opcode="win:Info" keywords="primarynav"/>
+        <event value="2" version="0" level="win:Verbose"  task="Window_Minimized" opcode="win:Info" keywords="primarynav"/>
+        <event value="3" version="0" level="win:Verbose"  task="Window_Maximized" opcode="win:Info" keywords="primarynav"/>
+        <event value="4" version="0" level="win:Verbose"  task="BrowserThreadProc_StartFrame" opcode="win:Info" keywords="primarynav"/>
+        <event value="5" version="0" level="win:Verbose"  task="BrowserThreadProc_Return" opcode="win:Info" keywords="primarynav"/>
+        <event value="6" version="0" level="win:Verbose"  task="BackNaviagation_Requested" opcode="win:Info" keywords="primarynav"/>
+        <event value="7" version="0" level="win:Verbose"  task="BrowserThreadProc_Next" opcode="win:Info" keywords="primarynav"/>
+        <event value="8" version="0" level="win:Verbose"  task="BrowserThreadProc_Prior" opcode="win:Info" keywords="primarynav"/>
+        <event value="9" version="0" level="win:Verbose"  task="LeftButtonAction" opcode="win:Info" keywords="primarynav" template="Args9_0"/>
+        <event value="10" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_Navigate" opcode="win:Start" keywords="primarynav pageloadbreakdown" template="Args10_0"/>
+        <event value="11" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_Navigate" opcode="win:Stop" keywords="primarynav pageloadbreakdown"/>
+        <event value="12" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_DocumentComplete" opcode="win:Info" keywords="primarynav"/>
+        <event value="13" version="0" level="win:Verbose"  task="Browseui_FeedViewer_PreviewStream" opcode="win:Start" keywords="primarynav"/>
+        <event value="14" version="0" level="win:Verbose"  task="Browseui_FeedViewer_PreviewStream" opcode="win:Stop" keywords="primarynav"/>
+        <event value="15" version="0" level="win:Verbose"  task="Shdocvw_Feed_Search" opcode="win:Start" keywords="primarynav"/>
+        <event value="16" version="0" level="win:Verbose"  task="Shdocvw_Feed_Search" opcode="win:Stop" keywords="primarynav"/>
+        <event value="17" version="0" level="win:Verbose"  task="Browseui_Tabs_AddTabButton" opcode="win:Info" keywords="primarynav"/>
+        <event value="18" version="0" level="win:Verbose"  task="Browseui_Tabs_AddTabAPI" opcode="win:Info" keywords="primarynav"/>
+        <event value="19" version="0" level="win:Verbose"  task="Browseui_Tabs_TabReadyForNavigate" opcode="win:Info" keywords="primarynav" template="Args19_0"/>
+        <event value="20" version="0" level="win:Verbose"  task="Browseui_Tabs_CloseTab" opcode="win:Start" keywords="primarynav"/>
+        <event value="21" version="0" level="win:Verbose"  task="Browseui_Tabs_CloseTab" opcode="win:Stop" keywords="primarynav"/>
+        <event value="22" version="0" level="win:Verbose"  task="Browseui_Tabs_SwitchTabs" opcode="win:Start" keywords="primarynav"/>
+        <event value="23" version="0" level="win:Verbose"  task="Browseui_Tabs_SwitchTabs" opcode="win:Stop" keywords="primarynav"/>
+        <event value="24" version="0" level="win:Verbose"  task="Browseui_Tabs_CloseOtherTabs" opcode="win:Start" keywords="primarynav"/>
+        <event value="25" version="0" level="win:Verbose"  task="Browseui_Tabs_CloseOtherTabs" opcode="win:Stop" keywords="primarynav"/>
+        <event value="26" version="0" level="win:Verbose"  task="Browseui_CBrowserFrame_Close" opcode="win:Start" keywords="primarynav"/>
+        <event value="27" version="0" level="win:Verbose"  task="Browseui_CBrowserFrame_Close" opcode="win:Stop" keywords="primarynav"/>
+        <event value="30" version="0" level="win:Verbose"  task="Shdocvw_PanningTool_ScrollElementBy" opcode="win:Start" keywords="primarynav"/>
+        <event value="31" version="0" level="win:Verbose"  task="Shdocvw_PanningTool_ScrollElementBy" opcode="win:Stop" keywords="primarynav"/>
+        <event value="32" version="0" level="win:Verbose"  task="Shdocvw_PanningTool_GetPanningProperties" opcode="win:Start" keywords="primarynav"/>
+        <event value="33" version="0" level="win:Verbose"  task="Shdocvw_PanningTool_GetPanningProperties" opcode="win:Stop" keywords="primarynav"/>
+        <event value="34" version="0" level="win:Verbose"  task="Imaging_CreateWebPagePreview" opcode="win:Start" keywords="primarynav"/>
+        <event value="35" version="0" level="win:Verbose"  task="Imaging_CreateWebPagePreview" opcode="win:Stop" keywords="primarynav"/>
+        <event value="36" version="0" level="win:Verbose"  task="Imaging_SendIconicThumbnail" opcode="win:Start" keywords="primarynav"/>
+        <event value="37" version="0" level="win:Verbose"  task="Imaging_SendIconicThumbnail" opcode="win:Stop" keywords="primarynav"/>
+        <event value="38" version="0" level="win:Verbose"  task="Imaging_SendIconicLivePreviewBitmap" opcode="win:Start" keywords="primarynav"/>
+        <event value="39" version="0" level="win:Verbose"  task="Imaging_SendIconicLivePreviewBitmap" opcode="win:Stop" keywords="primarynav"/>
+        <event value="40" version="0" level="win:Verbose"  task="HistoryBrokerStartup" opcode="win:Start" keywords="primarynav"/>
+        <event value="41" version="0" level="win:Verbose"  task="HistoryBrokerStartup" opcode="win:Stop" keywords="primarynav"/>
+        <event value="42" version="0" level="win:Verbose"  task="HistoryBrokerShutdown" opcode="win:Start" keywords="primarynav"/>
+        <event value="43" version="0" level="win:Verbose"  task="HistoryBrokerShutdown" opcode="win:Stop" keywords="primarynav"/>
+        <event value="44" version="0" level="win:Verbose"  task="AddToHistory" opcode="win:Start" keywords="primarynav"/>
+        <event value="45" version="0" level="win:Verbose"  task="AddToHistory" opcode="win:Stop" keywords="primarynav"/>
+        <event value="46" version="0" level="win:Verbose"  task="QueryHistory" opcode="win:Start" keywords="primarynav"/>
+        <event value="47" version="0" level="win:Verbose"  task="QueryHistory" opcode="win:Stop" keywords="primarynav"/>
+        <event value="48" version="0" level="win:Verbose"  task="EnumHistoryRecords" opcode="win:Start" keywords="primarynav"/>
+        <event value="49" version="0" level="win:Verbose"  task="EnumHistoryRecords" opcode="win:Stop" keywords="primarynav"/>
+        <event value="50" version="0" level="win:Verbose"  task="LegacyHistoryAdd" opcode="win:Start" keywords="primarynav"/>
+        <event value="51" version="0" level="win:Verbose"  task="LegacyHistoryAdd" opcode="win:Stop" keywords="primarynav"/>
+        <event value="52" version="0" level="win:Verbose"  task="LegacyHistoryQuery" opcode="win:Start" keywords="primarynav"/>
+        <event value="53" version="0" level="win:Verbose"  task="LegacyHistoryQuery" opcode="win:Stop" keywords="primarynav"/>
+        <event value="54" version="0" level="win:Verbose"  task="LegacyHistoryEnum" opcode="win:Start" keywords="primarynav"/>
+        <event value="55" version="0" level="win:Verbose"  task="LegacyHistoryEnum" opcode="win:Stop" keywords="primarynav"/>
+        <event value="56" version="0" level="win:Verbose"  task="CreateThumbnail" opcode="win:Start" keywords="primarynav"/>
+        <event value="57" version="0" level="win:Verbose"  task="CreateThumbnail" opcode="win:Stop" keywords="primarynav"/>
+        <event value="58" version="0" level="win:Verbose"  task="ScaleThumbnail" opcode="win:Start" keywords="primarynav"/>
+        <event value="59" version="0" level="win:Verbose"  task="ScaleThumbnail" opcode="win:Stop" keywords="primarynav"/>
+        <event value="60" version="0" level="win:Verbose"  task="CompressThumbnail" opcode="win:Start" keywords="primarynav"/>
+        <event value="61" version="0" level="win:Verbose"  task="CompressThumbnail" opcode="win:Stop" keywords="primarynav"/>
+        <event value="62" version="0" level="win:Verbose"  task="GenerateThumbnail" opcode="win:Start" keywords="primarynav"/>
+        <event value="63" version="0" level="win:Verbose"  task="GenerateThumbnail" opcode="win:Stop" keywords="primarynav"/>
+        <event value="64" version="0" level="win:Verbose"  task="CtrlLeftButtonAction" opcode="win:Info" keywords="primarynav"/>
+        <event value="65" version="0" level="win:Verbose"  task="ExtensionCreate" opcode="win:Start" keywords="primarynav" template="Args65_0"/>
+        <event value="66" version="0" level="win:Verbose"  task="ExtensionCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="67" version="0" level="win:Verbose"  task="ExtensionSetSite" opcode="win:Start" keywords="primarynav"/>
+        <event value="68" version="0" level="win:Verbose"  task="ExtensionSetSite" opcode="win:Stop" keywords="primarynav"/>
+        <event value="69" version="0" level="win:Verbose"  task="ExtensionShowDW" opcode="win:Start" keywords="primarynav" template="Args69_0"/>
+        <event value="70" version="0" level="win:Verbose"  task="ExtensionShowDW" opcode="win:Stop" keywords="primarynav"/>
+        <event value="71" version="0" level="win:Verbose"  task="ExtensionCloseDW" opcode="win:Start" keywords="primarynav"/>
+        <event value="72" version="0" level="win:Verbose"  task="ExtensionCloseDW" opcode="win:Stop" keywords="primarynav"/>
+        <event value="73" version="0" level="win:Verbose"  task="ExtensionSetSiteNull" opcode="win:Start" keywords="primarynav"/>
+        <event value="74" version="0" level="win:Verbose"  task="ExtensionSetSiteNull" opcode="win:Stop" keywords="primarynav"/>
+        <event value="75" version="0" level="win:Verbose"  task="ExtensionRelease" opcode="win:Start" keywords="primarynav"/>
+        <event value="76" version="0" level="win:Verbose"  task="ExtensionRelease" opcode="win:Stop" keywords="primarynav"/>
+        <event value="77" version="0" level="win:Verbose"  task="WinMain" opcode="win:Info" keywords="primarynav"/>
+        <event value="78" version="0" level="win:Verbose"  task="LCIE_ForeignProcessMessageQueueDequeueAll" opcode="win:Info" keywords="primarynav" template="Args78_0"/>
+        <event value="79" version="0" level="win:Verbose"  task="LCIE_ForeignProcessMessageQueueEnqueue" opcode="win:Info" keywords="primarynav"/>
+        <event value="80" version="0" level="win:Verbose"  task="OnlineHistoryAdd" opcode="win:Start" keywords="primarynav"/>
+        <event value="81" version="0" level="win:Verbose"  task="OnlineHistoryAdd" opcode="win:Stop" keywords="primarynav"/>
+        <event value="82" version="0" level="win:Verbose"  task="OnlineHistoryCollectData" opcode="win:Start" keywords="primarynav"/>
+        <event value="83" version="0" level="win:Verbose"  task="OnlineHistoryCollectData" opcode="win:Stop" keywords="primarynav"/>
+        <event value="84" version="0" level="win:Verbose"  task="OnlineHistoryDelete" opcode="win:Start" keywords="primarynav"/>
+        <event value="85" version="0" level="win:Verbose"  task="OnlineHistoryDelete" opcode="win:Stop" keywords="primarynav"/>
+        <event value="86" version="0" level="win:Verbose"  task="OnlineHistoryClear" opcode="win:Start" keywords="primarynav"/>
+        <event value="87" version="0" level="win:Verbose"  task="OnlineHistoryClear" opcode="win:Stop" keywords="primarynav"/>
+        <event value="88" version="0" level="win:Verbose"  task="Browseui_CBrowserFrame_CreateInstance" opcode="win:Start" keywords="primarynav"/>
+        <event value="89" version="0" level="win:Verbose"  task="Browseui_CBrowserFrame_CreateInstance" opcode="win:Stop" keywords="primarynav"/>
+        <event value="90" version="0" level="win:Verbose"  task="Frame_OnCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="91" version="0" level="win:Verbose"  task="Frame_OnCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="92" version="0" level="win:Verbose"  task="Frame_CommandBarCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="93" version="0" level="win:Verbose"  task="Frame_CommandBarCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="94" version="0" level="win:Verbose"  task="Frame_CommandBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="95" version="0" level="win:Verbose"  task="Frame_CommandBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="100" version="0" level="win:Verbose"  task="Frame_LinksBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="101" version="0" level="win:Verbose"  task="Frame_LinksBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="102" version="0" level="win:Verbose"  task="Frame_NavBarCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="103" version="0" level="win:Verbose"  task="Frame_NavBarCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="104" version="0" level="win:Verbose"  task="Frame_TravelBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="105" version="0" level="win:Verbose"  task="Frame_TravelBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="106" version="0" level="win:Verbose"  task="Frame_AddressBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="107" version="0" level="win:Verbose"  task="Frame_AddressBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="108" version="0" level="win:Verbose"  task="Frame_SearchBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="109" version="0" level="win:Verbose"  task="Frame_SearchBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="110" version="0" level="win:Verbose"  task="Frame_LoadFrameState" opcode="win:Start" keywords="primarynav"/>
+        <event value="111" version="0" level="win:Verbose"  task="Frame_LoadFrameState" opcode="win:Stop" keywords="primarynav"/>
+        <event value="112" version="0" level="win:Verbose"  task="Frame_Show" opcode="win:Info" keywords="primarynav"/>
+        <event value="113" version="0" level="win:Verbose"  task="Browseui_Tabs_WaitMessage" opcode="win:Start" keywords="primarynav"/>
+        <event value="114" version="0" level="win:Verbose"  task="Browseui_Tabs_WaitMessage" opcode="win:Stop" keywords="primarynav"/>
+        <event value="115" version="0" level="win:Verbose"  task="DataModel_Query" opcode="win:Start" keywords="primarynav" template="Args115_0"/>
+        <event value="116" version="0" level="win:Verbose"  task="DataModel_Query" opcode="win:Stop" keywords="primarynav"/>
+        <event value="117" version="0" level="win:Verbose"  task="DataModel_Provider_Query" opcode="win:Start" keywords="primarynav"/>
+        <event value="118" version="0" level="win:Verbose"  task="DataModel_Provider_Query" opcode="win:Stop" keywords="primarynav"/>
+        <event value="119" version="0" level="win:Verbose"  task="DataModel_Provider_WorkerThread" opcode="win:Start" keywords="primarynav"/>
+        <event value="120" version="0" level="win:Verbose"  task="DataModel_Provider_WorkerThread" opcode="win:Stop" keywords="primarynav"/>
+        <event value="121" version="0" level="win:Verbose"  task="DataModel_Provider_CreateDataList" opcode="win:Start" keywords="primarynav"/>
+        <event value="122" version="0" level="win:Verbose"  task="DataModel_Provider_CreateDataList" opcode="win:Stop" keywords="primarynav"/>
+        <event value="127" version="0" level="win:Verbose"  task="UnifiedListView_Populate" opcode="win:Start" keywords="unifiedlistview" template="Args127_0"/>
+        <event value="128" version="0" level="win:Verbose"  task="UnifiedListView_Populate" opcode="win:Stop" keywords="unifiedlistview"/>
+        <event value="130" version="0" level="win:Verbose"  task="UnifiedListView_GroupPopulated" opcode="win:Info" keywords="unifiedlistview"/>
+        <event value="131" version="0" level="win:Verbose"  task="UnifiedListView_DefaultAction" opcode="win:Info" keywords="unifiedlistview"/>
+        <event value="132" version="0" level="win:Verbose"  task="UnifiedListView_SwitchMode" opcode="win:Info" keywords="unifiedlistview"/>
+        <event value="133" version="0" level="win:Verbose"  task="WS_ExecuteQuery" opcode="win:Start" keywords="primarynav"/>
+        <event value="134" version="0" level="win:Verbose"  task="WS_ExecuteQuery" opcode="win:Stop" keywords="primarynav"/>
+        <event value="135" version="0" level="win:Verbose"  task="Tab_ShellBrowserOnCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="136" version="0" level="win:Verbose"  task="Tab_ShellBrowserOnCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="137" version="0" level="win:Verbose"  task="Tab_InitializeBrowserState" opcode="win:Start" keywords="primarynav"/>
+        <event value="138" version="0" level="win:Verbose"  task="Tab_InitializeBrowserState" opcode="win:Stop" keywords="primarynav"/>
+        <event value="139" version="0" level="win:Verbose"  task="Tab_NavigateToPidl" opcode="win:Info" keywords="primarynav"/>
+        <event value="140" version="0" level="win:Verbose"  task="Menuband_PopulateShellFolderToolbar" opcode="win:Start" keywords="primarynav"/>
+        <event value="141" version="0" level="win:Verbose"  task="Menuband_PopulateShellFolderToolbar" opcode="win:Stop" keywords="primarynav"/>
+        <event value="142" version="0" level="win:Verbose"  task="CreateHTMLPreview" opcode="win:Start" keywords="primarynav"/>
+        <event value="143" version="0" level="win:Verbose"  task="CreateHTMLPreview" opcode="win:Stop" keywords="primarynav"/>
+        <event value="144" version="0" level="win:Verbose"  task="CreateHTMLPreview_ShowWindow" opcode="win:Info" keywords="primarynav"/>
+        <event value="145" version="0" level="win:Verbose"  task="FavoritesBar_PopulateFeedsMenu" opcode="win:Start" keywords="primarynav"/>
+        <event value="146" version="0" level="win:Verbose"  task="FavoritesBar_PopulateFeedsMenu" opcode="win:Stop" keywords="primarynav"/>
+        <event value="147" version="0" level="win:Verbose"  task="FavoritesBar_PopulateLinksMonitor" opcode="win:Start" keywords="primarynav" template="Args147_0"/>
+        <event value="148" version="0" level="win:Verbose"  task="FavoritesBar_PopulateLinksMonitor" opcode="win:Stop" keywords="primarynav"/>
+        <event value="149" version="0" level="win:Verbose"  task="FavoritesBar_WriteLinksCache" opcode="win:Start" keywords="primarynav" template="Args149_0"/>
+        <event value="150" version="0" level="win:Verbose"  task="FavoritesBar_WriteLinksCache" opcode="win:Stop" keywords="primarynav"/>
+        <event value="151" version="0" level="win:Verbose"  task="Find_ActivateBar" opcode="win:Start" keywords="primarynav"/>
+        <event value="152" version="0" level="win:Verbose"  task="Find_ActivateBar" opcode="win:Stop" keywords="primarynav"/>
+        <event value="153" version="0" level="win:Verbose"  task="Find_FindHits" opcode="win:Start" keywords="primarynav"/>
+        <event value="154" version="0" level="win:Verbose"  task="Find_FindHits" opcode="win:Stop" keywords="primarynav"/>
+        <event value="155" version="0" level="win:Verbose"  task="Find_HighlightHits" opcode="win:Start" keywords="primarynav"/>
+        <event value="156" version="0" level="win:Verbose"  task="Find_HighlightHits" opcode="win:Stop" keywords="primarynav"/>
+        <event value="157" version="0" level="win:Verbose"  task="Find_HighlightHitsStatus" opcode="win:Info" keywords="primarynav"/>
+        <event value="158" version="0" level="win:Verbose"  task="Find_ChangeSelectedHit" opcode="win:Start" keywords="primarynav"/>
+        <event value="159" version="0" level="win:Verbose"  task="Find_ChangeSelectedHit" opcode="win:Stop" keywords="primarynav"/>
+        <event value="160" version="0" level="win:Verbose"  task="Find_DeactivateBar" opcode="win:Start" keywords="primarynav"/>
+        <event value="161" version="0" level="win:Verbose"  task="Find_DeactivateBar" opcode="win:Stop" keywords="primarynav"/>
+        <event value="162" version="0" level="win:Verbose"  task="Search_SuggestionsDownload" opcode="win:Info" keywords="primarynav"/>
+        <event value="163" version="0" level="win:Verbose"  task="Search_SuggestionsProcessing" opcode="win:Start" keywords="primarynav"/>
+        <event value="164" version="0" level="win:Verbose"  task="Search_SuggestionsProcessing" opcode="win:Stop" keywords="primarynav"/>
+        <event value="165" version="0" level="win:Verbose"  task="Search_ImageProcessing" opcode="win:Start" keywords="primarynav"/>
+        <event value="166" version="0" level="win:Verbose"  task="Search_ImageProcessing" opcode="win:Stop" keywords="primarynav"/>
+        <event value="167" version="0" level="win:Verbose"  task="Browseui_Tabs_DropOnFavorites" opcode="win:Info" keywords="primarynav"/>
+        <event value="168" version="0" level="win:Verbose"  task="Browseui_Favs_ItemsChanged" opcode="win:Info" keywords="primarynav"/>
+        <event value="169" version="0" level="win:Verbose"  task="Addressbar_InlineAutocomplete" opcode="win:Start" keywords="primarynav"/>
+        <event value="170" version="0" level="win:Verbose"  task="Addressbar_InlineAutocomplete" opcode="win:Stop" keywords="primarynav"/>
+        <event value="171" version="0" level="win:Verbose"  task="NewTabPage_Show" opcode="win:Start" keywords="primarynav"/>
+        <event value="172" version="0" level="win:Verbose"  task="NewTabPage_Show" opcode="win:Stop" keywords="primarynav"/>
+        <event value="173" version="0" level="win:Verbose"  task="IE_API_Timer" opcode="win:Start" keywords="primarynav" template="Args173_0"/>
+        <event value="174" version="0" level="win:Verbose"  task="IE_API_Timer" opcode="win:Stop" keywords="primarynav"/>
+        <event value="175" version="0" level="win:Verbose"  task="Window_Resized" opcode="win:Info" keywords="primarynav"/>
+        <event value="176" version="0" level="win:Verbose"  task="Window_Restored" opcode="win:Info" keywords="primarynav"/>
+        <event value="177" version="0" level="win:Verbose"  task="DLM_DownloadWindow_Show" opcode="win:Start" keywords="primarynav"/>
+        <event value="178" version="0" level="win:Verbose"  task="DLM_DownloadWindow_Show" opcode="win:Stop" keywords="primarynav"/>
+        <event value="179" version="0" level="win:Verbose"  task="DLM_DownloadWindow_Hide" opcode="win:Start" keywords="primarynav"/>
+        <event value="180" version="0" level="win:Verbose"  task="DLM_DownloadWindow_Hide" opcode="win:Stop" keywords="primarynav"/>
+        <event value="181" version="0" level="win:Verbose"  task="FirstRunDialog_Show" opcode="win:Info" keywords="primarynav"/>
+        <event value="182" version="0" level="win:Verbose"  task="Browseui_CBrowserFrame_OnClose" opcode="win:Info" keywords="primarynav"/>
+        <event value="183" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_BeforeNavigate" opcode="win:Start" keywords="primarynav"/>
+        <event value="184" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_BeforeNavigate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="185" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_DocumentComplete" opcode="win:Start" keywords="primarynav"/>
+        <event value="186" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_DocumentComplete" opcode="win:Stop" keywords="primarynav"/>
+        <event value="187" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_DownloadBegin" opcode="win:Start" keywords="primarynav"/>
+        <event value="188" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_DownloadBegin" opcode="win:Stop" keywords="primarynav"/>
+        <event value="189" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_DownloadComplete" opcode="win:Start" keywords="primarynav"/>
+        <event value="190" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_DownloadComplete" opcode="win:Stop" keywords="primarynav"/>
+        <event value="191" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NavigateComplete" opcode="win:Start" keywords="primarynav"/>
+        <event value="192" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NavigateComplete" opcode="win:Stop" keywords="primarynav"/>
+        <event value="193" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NavigateError" opcode="win:Start" keywords="primarynav"/>
+        <event value="194" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NavigateError" opcode="win:Stop" keywords="primarynav"/>
+        <event value="195" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NewWindow" opcode="win:Start" keywords="primarynav"/>
+        <event value="196" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NewWindow" opcode="win:Stop" keywords="primarynav"/>
+        <event value="197" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_Quit" opcode="win:Start" keywords="primarynav"/>
+        <event value="198" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_Quit" opcode="win:Stop" keywords="primarynav"/>
+        <event value="199" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_WindowStateChanged" opcode="win:Start" keywords="primarynav"/>
+        <event value="200" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_WindowStateChanged" opcode="win:Stop" keywords="primarynav"/>
+        <event value="201" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NewWindow2" opcode="win:Start" keywords="primarynav"/>
+        <event value="202" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NewWindow2" opcode="win:Stop" keywords="primarynav"/>
+        <event value="203" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NewWindow3" opcode="win:Start" keywords="primarynav"/>
+        <event value="204" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_NewWindow3" opcode="win:Stop" keywords="primarynav"/>
+        <event value="205" version="0" level="win:Verbose"  task="DLM_Security_Malware" opcode="win:Start" keywords="primarynav"/>
+        <event value="206" version="0" level="win:Verbose"  task="DLM_Security_Malware" opcode="win:Stop" keywords="primarynav"/>
+        <event value="207" version="0" level="win:Verbose"  task="DLM_Security_AntiVirus" opcode="win:Start" keywords="primarynav"/>
+        <event value="208" version="0" level="win:Verbose"  task="DLM_Security_AntiVirus" opcode="win:Stop" keywords="primarynav"/>
+        <event value="209" version="0" level="win:Verbose"  task="DLM_Security_WVT" opcode="win:Start" keywords="primarynav"/>
+        <event value="210" version="0" level="win:Verbose"  task="DLM_Security_WVT" opcode="win:Stop" keywords="primarynav"/>
+        <event value="211" version="0" level="win:Verbose"  task="DLM_Security_Hash" opcode="win:Start" keywords="primarynav"/>
+        <event value="212" version="0" level="win:Verbose"  task="DLM_Security_Hash" opcode="win:Stop" keywords="primarynav"/>
+        <event value="213" version="0" level="win:Verbose"  task="DLM_Security_AppRep" opcode="win:Start" keywords="primarynav"/>
+        <event value="214" version="0" level="win:Verbose"  task="DLM_Security_AppRep" opcode="win:Stop" keywords="primarynav"/>
+        <event value="215" version="0" level="win:Verbose"  task="DLM_DownloadBar_Show" opcode="win:Start" keywords="primarynav"/>
+        <event value="216" version="0" level="win:Verbose"  task="DLM_DownloadBar_Show" opcode="win:Stop" keywords="primarynav"/>
+        <event value="217" version="0" level="win:Verbose"  task="DLM_DownloadBar_Close" opcode="win:Start" keywords="primarynav" template="Args217_0"/>
+        <event value="218" version="0" level="win:Verbose"  task="DLM_DownloadBar_Close" opcode="win:Stop" keywords="primarynav"/>
+        <event value="219" version="0" level="win:Verbose"  task="Frame_MinIETabBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="220" version="0" level="win:Verbose"  task="Frame_MinIETabBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="221" version="0" level="win:Verbose"  task="Frame_ControlBandCreate" opcode="win:Start" keywords="primarynav"/>
+        <event value="222" version="0" level="win:Verbose"  task="Frame_ControlBandCreate" opcode="win:Stop" keywords="primarynav"/>
+        <event value="223" version="0" level="win:Verbose"  task="Frame_TabBandMove" opcode="win:Start" keywords="primarynav"/>
+        <event value="224" version="0" level="win:Verbose"  task="Frame_TabBandMove" opcode="win:Stop" keywords="primarynav"/>
+        <event value="225" version="0" level="win:Verbose"  task="IdleTask_Execution_Time" opcode="win:Info" keywords="primarynav" template="Args225_0"/>
+        <event value="226" version="0" level="win:Verbose"  task="DLM_Resume_Time" opcode="win:Start" keywords="primarynav"/>
+        <event value="227" version="0" level="win:Verbose"  task="DLM_Resume_Time" opcode="win:Stop" keywords="primarynav"/>
+        <event value="229" version="0" level="win:Verbose"  task="Find_FindFirstHit" opcode="win:Start" keywords="primarynav"/>
+        <event value="230" version="0" level="win:Verbose"  task="Find_FindFirstHit" opcode="win:Stop" keywords="primarynav"/>
+        <event value="231" version="0" level="win:Verbose"  task="Find_MatchAndHighlightHits" opcode="win:Start" keywords="primarynav"/>
+        <event value="232" version="0" level="win:Verbose"  task="Find_MatchAndHighlightHits" opcode="win:Stop" keywords="primarynav"/>
+        <event value="233" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_BeforeScriptExecute" opcode="win:Start" keywords="primarynav"/>
+        <event value="234" version="0" level="win:Verbose"  task="Shdocvw_BaseBrowser_FireEvent_BeforeScriptExecute" opcode="win:Stop" keywords="primarynav"/>
+        <event value="302" version="0" level="win:Verbose"  task="Browseui_ActivationRegistrar_CreateComponent" opcode="win:Start" keywords="primarynav"/>
+        <event value="303" version="0" level="win:Verbose"  task="Browseui_ActivationRegistrar_CreateComponent" opcode="win:Stop" keywords="primarynav"/>
+        <event value="304" version="0" level="win:Verbose"  task="Browseui_ActivationRegistrar_OnCleanup" opcode="win:Start" keywords="primarynav"/>
+        <event value="305" version="0" level="win:Verbose"  task="Browseui_ActivationRegistrar_OnCleanup" opcode="win:Stop" keywords="primarynav"/>
+        <event value="311" version="0" level="win:Verbose"  task="IMTravelLogMVC_StateChange" opcode="win:Info" keywords="immersive" template="Args311_0"/>
+        <event value="312" version="0" level="win:Verbose"  task="IMTravelLogMVC_Info" opcode="win:Info" keywords="immersive" template="Args312_0"/>
+        <event value="313" version="0" level="win:Verbose"  task="IMTravelLogMVC_TravelURL" opcode="win:Info" keywords="immersive"/>
+        <event value="316" version="0" level="win:Verbose"  task="NotificationManager_NotificationBarReady" opcode="win:Info" keywords="notification"/>
+        <event value="317" version="0" level="win:Verbose"  task="NotificationManager_SendResponse" opcode="win:Info" keywords="notification" template="Args317_0"/>
+        <event value="318" version="0" level="win:Verbose"  task="NotificationManager_NotificationBarButtonClick" opcode="win:Info" keywords="notification"/>
+        <event value="320" version="0" level="win:Verbose"  task="NotificationBar_Show" opcode="win:Start" keywords="notification"/>
+        <event value="321" version="0" level="win:Verbose"  task="NotificationBar_Show" opcode="win:Stop" keywords="notification"/>
+        <event value="322" version="0" level="win:Verbose"  task="NotificationBar_Hide" opcode="win:Start" keywords="notification"/>
+        <event value="323" version="0" level="win:Verbose"  task="NotificationBar_Hide" opcode="win:Stop" keywords="notification"/>
+        <event value="324" version="0" level="win:Verbose"  task="NotificationBar_Update" opcode="win:Start" keywords="notification"/>
+        <event value="325" version="0" level="win:Verbose"  task="NotificationBar_Update" opcode="win:Stop" keywords="notification"/>
+        <event value="326" version="0" level="win:Verbose"  task="NotificationBar_OverrideShow" opcode="win:Info" keywords="notification"/>
+        <event value="327" version="0" level="win:Verbose"  task="NotificationBar_Flash" opcode="win:Info" keywords="notification"/>
+        <event value="328" version="0" level="win:Verbose"  task="NotificationBar_Animate" opcode="win:Start" keywords="notification" template="Args328_0"/>
+        <event value="329" version="0" level="win:Verbose"  task="NotificationBar_Animate" opcode="win:Stop" keywords="notification"/>
+        <event value="336" version="0" level="win:Verbose"  task="Tab_Recover_Complete" opcode="win:Info" keywords="primarynav"/>
+        <event value="339" version="0" level="win:Verbose"  task="Frame_AddFirstTab" opcode="win:Info" keywords="primarynav"/>
+        <event value="343" version="0" level="win:Verbose"  task="FindBar_TermChange" opcode="win:Info" keywords="primarynav"/>
+        <event value="344" version="0" level="win:Verbose"  task="IMTravelLogMVC_ScreenShotInfo" opcode="win:Info" keywords="immersive"/>
+        <event value="345" version="0" level="win:Verbose"  task="IMTravelLogMVC_ScreenShotInfo" opcode="win:Info" keywords="immersive"/>
+        <event value="350" version="0" level="win:Verbose"  task="UnifiedListView_MultipleCharacterQuery" opcode="win:Info" keywords="unifiedlistview"/>
+        <event value="351" version="0" level="win:Verbose"  task="IMTravelLogMVC_WaitForPageTimeout" opcode="win:Info" keywords="immersive"/>
+        <event value="352" version="0" level="win:Verbose"  task="IMTravelLogMVC_NavigationReceived" opcode="win:Info" keywords="immersive"/>
+        <event value="354" version="0" level="win:Verbose"  task="Browseui_Tabs_OnNavigateComplete2" opcode="win:Info" keywords="primarynav"/>
+        <event value="360" version="0" level="win:Verbose"  task="RehydrateTab" opcode="win:Start" keywords="tabhydration"/>
+        <event value="361" version="0" level="win:Verbose"  task="RehydrateTab" opcode="win:Stop" keywords="tabhydration"/>
+        <event value="362" version="0" level="win:Verbose"  task="GetHalfTabData" opcode="win:Start" keywords="tabhydration"/>
+        <event value="363" version="0" level="win:Verbose"  task="GetHalfTabData" opcode="win:Stop" keywords="tabhydration"/>
+        <event value="386" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="InputPanelShow" opcode="win:Start" keywords="immersive"/>
+        <event value="387" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="InputPanelShow" opcode="win:Stop" keywords="immersive"/>
+        <event value="388" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="InputPanelHide" opcode="win:Start" keywords="immersive"/>
+        <event value="389" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="InputPanelHide" opcode="win:Stop" keywords="immersive"/>
+        <event value="391" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="InputPanelResize" opcode="win:Start" keywords="immersive"/>
+        <event value="392" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="InputPanelResize" opcode="win:Stop" keywords="immersive"/>
+        <event value="395" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="BrowserFrame_AddTab_WaitForActivationKind" opcode="win:Start"/>
+        <event value="396" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="BrowserFrame_AddTab_WaitForActivationKind" opcode="win:Stop"/>
+        <event value="397" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Tab_ShellBrowser_OnBeforeUnload" opcode="win:Info" keywords="primarynav"/>
+        <event value="398" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Tab_ShellBrowser_OnUnload" opcode="win:Info" keywords="primarynav"/>
+        <event value="403" version="0" level="win:Verbose"  task="Browseui_HangUI" opcode="win:Start" keywords="hang"/>
+        <event value="404" version="0" level="win:Verbose"  task="Browseui_HangUI" opcode="win:Stop" keywords="hang"/>
+        <event value="405" version="0" level="win:Verbose"  task="Browseui_HangUI_CreateCoverWindow" opcode="win:Info" keywords="hang" template="Args405_0"/>
+        <event value="406" version="0" level="win:Verbose"  task="Browseui_HangUI_SetVisible" opcode="win:Info" keywords="hang" template="Args406_0"/>
+        <event value="407" version="0" level="win:Verbose"  task="Browseui_HangUI_DisparentAndDetachBrowserTab" opcode="win:Start" keywords="hang" template="Args407_0"/>
+        <event value="408" version="0" level="win:Verbose"  task="Browseui_HangUI_DisparentAndDetachBrowserTab" opcode="win:Stop" keywords="hang"/>
+        <event value="409" version="0" level="win:Verbose"  task="Browseui_HangUI_ShowNotificationBar" opcode="win:Start" keywords="hang" template="Args409_0"/>
+        <event value="410" version="0" level="win:Verbose"  task="Browseui_HangUI_ShowNotificationBar" opcode="win:Stop" keywords="hang"/>
+        <event value="411" version="0" level="win:Verbose"  task="Browseui_HangUI_ScriptRecoveryTimeout" opcode="win:Info" keywords="hang"/>
+        <event value="412" version="0" level="win:Verbose"  task="Browseui_HangUI_AttachThreadInputHelper" opcode="win:Start" keywords="hang" template="Args412_0"/>
+        <event value="413" version="0" level="win:Verbose"  task="Browseui_HangUI_AttachThreadInputHelper" opcode="win:Stop" keywords="hang"/>
+        <event value="414" version="0" level="win:Verbose"  task="Browseui_Tabs_MakeBlockingCallToTab" opcode="win:Info" keywords="hang"/>
+        <event value="415" version="0" level="win:Verbose"  task="Browseui_Tabs_MarkTabAsHung" opcode="win:Start" keywords="hang"/>
+        <event value="416" version="0" level="win:Verbose"  task="Browseui_Tabs_MarkTabAsHung" opcode="win:Stop" keywords="hang"/>
+        <event value="417" version="0" level="win:Verbose"  task="Browseui_Tabs_MarkTabAsNotHung" opcode="win:Info" keywords="hang" template="Args417_0"/>
+        <event value="418" version="0" level="win:Verbose"  task="Browseui_Tabs_ShowHungTabBar" opcode="win:Start" keywords="hang" template="Args418_0"/>
+        <event value="419" version="0" level="win:Verbose"  task="Browseui_Tabs_ShowHungTabBar" opcode="win:Stop" keywords="hang"/>
+        <event value="420" version="0" level="win:Verbose"  task="Browseui_Tabs_BrowserTabRespondsNow_TabHung" opcode="win:Info" keywords="hang" template="Args420_0"/>
+        <event value="421" version="0" level="win:Verbose"  task="AutoSuggest_DropDown_Show" opcode="win:Start" keywords="primarynav"/>
+        <event value="422" version="0" level="win:Verbose"  task="AutoSuggest_DropDown_Show" opcode="win:Stop" keywords="primarynav"/>
+        <event value="423" version="0" level="win:Verbose"  task="AutoSuggest_DropDown_Hide" opcode="win:Start" keywords="primarynav"/>
+        <event value="424" version="0" level="win:Verbose"  task="AutoSuggest_DropDown_Hide" opcode="win:Stop" keywords="primarynav"/>
+        <event value="425" version="0" level="win:Verbose"  task="ImageStore_Activity_SingleImage" opcode="win:Info" keywords="imagestore" template="Args425_0"/>
+        <event value="426" version="0" level="win:Verbose"  task="ImageStore_Activity_ImageTotal" opcode="win:Info" keywords="imagestore" template="Args426_0"/>
+        <event value="427" version="0" level="win:Verbose"  task="Browseui_TabSuspension_Suspend" opcode="win:Info" keywords="tabhydration" template="Args427_0"/>
+        <event value="428" version="0" level="win:Verbose"  task="Browseui_TabSuspension_Unuspend" opcode="win:Info" keywords="tabhydration"/>
+        <event value="429" version="0" level="win:Verbose"  task="Iso_Dependencies_AddDependency" opcode="win:Info" keywords="tabhydration" template="Args429_0"/>
+        <event value="430" version="0" level="win:Verbose"  task="Iso_Dependencies_RemoveDependency" opcode="win:Info" keywords="tabhydration"/>
+        <event value="431" version="0" level="win:Verbose"  task="DataModel_QueryEntry" opcode="win:Info" keywords="primarynav"/>
+        <event value="432" version="0" level="win:Verbose"  task="Bing_Suggestions_ServiceRequest" opcode="win:Info" keywords="bingsuggestions"/>
+        <event value="433" version="0" level="win:Verbose"  task="Bing_Suggestions_ServiceResponse" opcode="win:Info" keywords="bingsuggestions"/>
+        <event value="434" version="0" level="win:Verbose"  task="Bing_Suggestions_CancelRequest" opcode="win:Info" keywords="bingsuggestions"/>
+        <event value="435" version="0" level="win:Verbose"  task="Bing_Suggestions_ParseXmlResponse" opcode="win:Start" keywords="bingsuggestions"/>
+        <event value="436" version="0" level="win:Verbose"  task="Bing_Suggestions_ParseXmlResponse" opcode="win:Stop" keywords="bingsuggestions"/>
+        <event value="456" version="0" level="win:Verbose"  task="TabRoaming_Update" opcode="win:Info" keywords="roaming" template="Args456_0"/>
+        <event value="457" version="0" level="win:Verbose"  task="TabRoaming_Delete" opcode="win:Info" keywords="roaming"/>
+        <event value="459" version="0" level="win:Verbose"  task="TabRoaming_PLMSuspendWithOutstandingTimer" opcode="win:Info" keywords="roaming"/>
+        <event value="460" version="0" level="win:Verbose"  task="TabRoaming_TabMarkedDirty" opcode="win:Info" keywords="roaming"/>
+        <event value="461" version="0" level="win:Verbose"  task="TabRoaming_SessionTimerFired" opcode="win:Info" keywords="roaming"/>
+        <event value="462" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_TypedUrls" opcode="win:Start" keywords="roaming" template="Args462_0"/>
+        <event value="463" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_TypedUrls" opcode="win:Stop" keywords="roaming"/>
+        <event value="464" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_WinInet" opcode="win:Start" keywords="roaming"/>
+        <event value="465" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_WinInet" opcode="win:Stop" keywords="roaming"/>
+        <event value="466" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_ExcludedUrls" opcode="win:Start" keywords="roaming"/>
+        <event value="467" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_ExcludedUrls" opcode="win:Stop" keywords="roaming"/>
+        <event value="468" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_FlipAhead" opcode="win:Start" keywords="roaming"/>
+        <event value="469" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_FlipAhead" opcode="win:Stop" keywords="roaming"/>
+        <event value="470" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_TrackingProtection" opcode="win:Start" keywords="roaming"/>
+        <event value="471" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_TrackingProtection" opcode="win:Stop" keywords="roaming"/>
+        <event value="472" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_TrackingProtectionLists" opcode="win:Start" keywords="roaming"/>
+        <event value="473" version="0" level="win:Verbose"  task="BrowserRoamedSettingChange_TrackingProtectionLists" opcode="win:Stop" keywords="roaming"/>
+        <event value="478" version="0" level="win:Verbose"  task="CAsyncStorage_WorkPending" opcode="win:Start" keywords="verbose"/>
+        <event value="479" version="0" level="win:Verbose"  task="CAsyncStorage_WorkPending" opcode="win:Stop" keywords="verbose"/>
+        <event value="485" version="0" level="win:Verbose"  task="Tab_BFCache_Resume" opcode="win:Info" keywords="BFCache"/>
+        <event value="500" version="0" level="win:Informational"  task="EmptyTab_Reuse" opcode="win:Start" keywords="primarynav"/>
+        <event value="501" version="0" level="win:Informational"  task="EmptyTab_Reuse" opcode="win:Stop" keywords="primarynav"/>
+        <event value="502" version="0" level="win:Informational"  task="EmptyTab_Conversion_Begin" opcode="win:Info" keywords="primarynav"/>
+        <event value="503" version="0" level="win:Informational"  task="EmptyTab_Conversion_Cancel" opcode="win:Info" keywords="primarynav"/>
+        <event value="504" version="0" level="win:Informational"  task="EmptyTab_Conversion_FinalNavigation_Begin" opcode="win:Info" keywords="primarynav"/>
+        <event value="505" version="0" level="win:Informational"  task="EmptyTab_Conversion_FinalNavigation_Failed" opcode="win:Info" keywords="primarynav"/>
+        <event value="506" version="0" level="win:Informational"  task="EmptyTab_Conversion_CleanupRecoveryData_Begin" opcode="win:Info" keywords="primarynav"/>
+        <event value="507" version="0" level="win:Informational"  task="EmptyTab_Conversion_CleanupRecoveryData_Failed" opcode="win:Info" keywords="primarynav"/>
+        <event value="508" version="0" level="win:Informational"  task="EmptyTab_Conversion_CleanUpBrowserTab_Begin" opcode="win:Info" keywords="primarynav"/>
+        <event value="509" version="0" level="win:Informational"  task="EmptyTab_Conversion_CleanUpBrowserTab_Failed" opcode="win:Info" keywords="primarynav"/>
+        <event value="510" version="0" level="win:Informational"  task="EmptyTab_Conversion_Succeeded" opcode="win:Info" keywords="primarynav"/>
+        <event value="511" version="0" level="win:Informational"  task="EmptyTab_Reuse_ReuseTabThread_Failed" opcode="win:Info" keywords="primarynav"/>
+        <event value="512" version="0" level="win:Informational"  task="EmptyTab_Reuse_ReinitializeBrowserTab_Begin" opcode="win:Info" keywords="primarynav"/>
+        <event value="513" version="0" level="win:Informational"  task="EmptyTab_Reuse_ReinitializeBrowserTab_Failed" opcode="win:Info" keywords="primarynav"/>
+        <event value="514" version="0" level="win:Informational"  task="EmptyTab_Timer_Start" opcode="win:Info" keywords="primarynav"/>
+        <event value="515" version="0" level="win:Informational"  task="EmptyTab_Timer_Cancel" opcode="win:Info" keywords="primarynav"/>
+        <event value="516" version="0" level="win:Informational"  task="EmptyTab_Timer_Timeout" opcode="win:Info" keywords="primarynav"/>
+        <event value="517" version="0" level="win:Informational"  task="EmptyTab_Closing" opcode="win:Info" keywords="primarynav"/>
+        <event value="518" version="0" level="win:Informational"  task="EmptyTab_CreateNewTab" opcode="win:Info" keywords="primarynav"/>
+        <event value="521" version="0" level="win:Verbose"  task="NewTabPageData_Build" opcode="win:Start" keywords="primarynav"/>
+        <event value="522" version="0" level="win:Verbose"  task="NewTabPageData_Build" opcode="win:Stop" keywords="primarynav"/>
+        <event value="523" version="0" level="win:Verbose"  task="NewTabPageData_Refresh" opcode="win:Start" keywords="primarynav"/>
+        <event value="524" version="0" level="win:Verbose"  task="NewTabPageData_Refresh" opcode="win:Stop" keywords="primarynav"/>
+        <event value="525" version="0" level="win:Verbose"  task="NewTabPageData_RoamedEntry" opcode="win:Info" keywords="primarynav"/>
+        <event value="526" version="0" level="win:Verbose"  task="IntelliForms_Evaluate_AutoStuff" opcode="win:Start" keywords="primarynav"/>
+        <event value="527" version="0" level="win:Verbose"  task="IntelliForms_Evaluate_AutoStuff" opcode="win:Stop" keywords="primarynav"/>
+        <event value="528" version="0" level="win:Verbose"  task="IntelliForms_Do_AutoStuff" opcode="win:Start" keywords="primarynav"/>
+        <event value="529" version="0" level="win:Verbose"  task="IntelliForms_Do_AutoStuff" opcode="win:Stop" keywords="primarynav"/>
+        <event value="532" version="0" level="win:Verbose"  task="DownloadWindow_Item_Added" opcode="win:Info" keywords="DownloadWindow"/>
+        <event value="533" version="0" level="win:Verbose"  task="DownloadWindow_Items_Removed" opcode="win:Info" keywords="DownloadWindow" template="Args533_0"/>
+        <event value="534" version="0" level="win:Informational"  task="Browseui_Prerender_Closing_Prerendered_Page" opcode="win:Info" keywords="mshtml" template="Args534_0"/>
+        <event value="535" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="DominantImageClassifier" opcode="win:Info" keywords="DIC immersive" template="Args535_0"/>
+        <event value="536" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_OldTab_ReadyToClose" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="537" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_OldTab_WantsToCancelSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="538" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_OldTab_CancelingSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="539" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_OldTab_CannotCancelSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="540" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_IsReadyToSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="541" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_IsNotReadyToSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="542" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_GetReadyToSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="543" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_NowReadyToSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="544" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_SetAsHiddenTab" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="545" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_ShowingScreenshotBeforeSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="546" version="0" level="win:Verbose"  task="TravelLogScreenshotNav_NewTab_ShowingAllScreenshotsOnSwitch" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="547" version="0" level="win:Verbose"  task="Tab_BFCache_Suspend" opcode="win:Info" keywords="BFCache"/>
+        <event value="550" version="0" level="win:Verbose"  task="LCIEDownloader_CreateIsoComponent" opcode="win:Info" keywords="LCIEDownloader" template="Args550_0"/>
+        <event value="551" version="0" level="win:Verbose"  task="LCIEDownloader_CreateIsoComponent" opcode="win:Info" keywords="LCIEDownloader"/>
+        <event value="552" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="PinnedSites_OfferedImage" opcode="win:Info" template="Args552_0"/>
+        <event value="553" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="PinnedSites_OfferedImagesComplete" opcode="win:Info"/>
+        <event value="554" version="0" level="win:Verbose"  task="TabRoaming_DeleteInvalidOrExpiredTabFile" opcode="win:Info" keywords="roaming"/>
+        <event value="555" version="0" level="win:Verbose"  task="TabRoaming_KeepTabInDirtyList" opcode="win:Info" keywords="roaming"/>
+        <event value="556" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_PrepareVisibleAsync" opcode="win:Start" template="Args556_0"/>
+        <event value="557" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_PrepareVisibleAsync" opcode="win:Stop"/>
+        <event value="558" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_OnPrepareVisibleComplete" opcode="win:Start" template="Args558_0"/>
+        <event value="559" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_OnPrepareVisibleComplete" opcode="win:Stop"/>
+        <event value="560" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_SelectTabTimerCreated" opcode="win:Info"/>
+        <event value="561" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_SelectTabTimerTriggered" opcode="win:Info"/>
+        <event value="562" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_SelectTabTimerCancelled" opcode="win:Info"/>
+        <event value="563" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_TabWindow_SetVisible" opcode="win:Start" template="Args563_0"/>
+        <event value="564" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_TabWindow_SetVisible" opcode="win:Stop"/>
+        <event value="565" version="0" level="win:Verbose"  task="IdleManager_AddIdleTask" opcode="win:Info" template="Args565_0"/>
+        <event value="566" version="0" level="win:Verbose"  task="IdleManager_AddRunningTask" opcode="win:Info"/>
+        <event value="567" version="0" level="win:Verbose"  task="IdleManager_RemoveTask" opcode="win:Info"/>
+        <event value="568" version="0" level="win:Verbose"  task="IdleManager_RunNextIdleTask" opcode="win:Info"/>
+        <event value="569" version="0" level="win:Verbose"  task="IdleManager_RunExpiredIdleTask" opcode="win:Info"/>
+        <event value="570" version="0" level="win:Verbose"  task="IdleManager_RemoveExpiredRunningTask" opcode="win:Info"/>
+        <event value="571" version="0" level="win:Verbose"  task="IdleManager_TaskCount" opcode="win:Info" template="Args571_0"/>
+        <event value="576" version="0" level="win:Verbose"  task="NotificationBar_OverrideHide" opcode="win:Info" keywords="notification"/>
+        <event value="577" version="0" level="win:Verbose"  task="Terminate_Browser_Tab_Process" opcode="win:Start" keywords="hang" template="Args577_0"/>
+        <event value="578" version="0" level="win:Verbose"  task="Terminate_Browser_Tab_Process" opcode="win:Stop" keywords="hang"/>
+        <event value="579" version="0" level="win:Verbose"  task="IE_Wer_Report_Hang" opcode="win:Start" keywords="hang" template="Args579_0"/>
+        <event value="580" version="0" level="win:Verbose"  task="IE_Wer_Report_Hang" opcode="win:Stop" keywords="hang"/>
+        <event value="581" version="0" level="win:Verbose"  task="Tab_Terminate_Process" opcode="win:Info" keywords="hang"/>
+        <event value="582" version="0" level="win:Verbose"  task="Browseui_Tabs_Activity_Show" opcode="win:Info" keywords="primarynav" template="Args582_0"/>
+        <event value="583" version="0" level="win:Verbose"  task="Browseui_Tabs_Activity_Hide" opcode="win:Info" keywords="primarynav"/>
+        <event value="584" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_PrepareResizeAsync" opcode="win:Start"/>
+        <event value="585" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_PrepareResizeAsync" opcode="win:Stop"/>
+        <event value="586" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Immersive_Travellog_NavigationStart_TimeOut" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="587" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Immersive_Travellog_NavigationComplete_TimeOut" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="588" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Immersive_Travellog_ScrollComplete_TimeOut" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="589" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Immersive_Travellog_ScrollComplete_Fired" opcode="win:Info" keywords="TravelLogScreenshotNav" template="Args589_0"/>
+        <event value="590" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Immersive_Travellog_PageAvailable_Fired" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="591" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Immersive_Travellog_BeforeUnload_Fired" opcode="win:Info" keywords="TravelLogScreenshotNav"/>
+        <event value="592" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_BringBrowserTabAlternateOwnerForward" opcode="win:Start" template="Args592_0"/>
+        <event value="593" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_BringBrowserTabAlternateOwnerForward" opcode="win:Stop"/>
+        <event value="594" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_BringBrowserTabAlternateOwnerForward_Hung" opcode="win:Info"/>
+        <event value="597" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_DestroyDetachedBrowserTabUI" opcode="win:Start"/>
+        <event value="598" version="0" level="win:Verbose"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_DestroyDetachedBrowserTabUI" opcode="win:Stop"/>
+        <event value="599" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_HungTabHeartBeat_Timer_Invisible" opcode="win:Info"/>
+        <event value="600" version="0" level="win:Verbose"  task="TabRoaming_FindRoamedMachines" opcode="win:Start" keywords="roaming"/>
+        <event value="601" version="0" level="win:Verbose"  task="TabRoaming_FindRoamedMachines" opcode="win:Stop" keywords="roaming"/>
+        <event value="602" version="0" level="win:Verbose"  task="TabRoaming_LoadRoamedMachine" opcode="win:Start" keywords="roaming" template="Args602_0"/>
+        <event value="603" version="0" level="win:Verbose"  task="TabRoaming_LoadRoamedMachine" opcode="win:Stop" keywords="roaming"/>
+        <event value="604" version="0" level="win:Verbose"  task="TabRoaming_FindRoamedTabs" opcode="win:Start" keywords="roaming"/>
+        <event value="605" version="0" level="win:Verbose"  task="TabRoaming_FindRoamedTabs" opcode="win:Stop" keywords="roaming"/>
+        <event value="606" version="0" level="win:Verbose"  task="TabRoaming_LoadRoamedTab" opcode="win:Start" keywords="roaming"/>
+        <event value="607" version="0" level="win:Verbose"  task="TabRoaming_LoadRoamedTab" opcode="win:Stop" keywords="roaming"/>
+        <event value="608" version="0" level="win:Verbose"  task="TabRoaming_WriteProcessInfo" opcode="win:Start" keywords="roaming"/>
+        <event value="609" version="0" level="win:Verbose"  task="TabRoaming_WriteProcessInfo" opcode="win:Stop" keywords="roaming"/>
+        <event value="610" version="0" level="win:Verbose"  task="TabRoaming_ReadProcessInfo" opcode="win:Start" keywords="roaming"/>
+        <event value="611" version="0" level="win:Verbose"  task="TabRoaming_ReadProcessInfo" opcode="win:Stop" keywords="roaming"/>
+        <event value="612" version="0" level="win:Verbose"  task="Recovery_WriteInitialStore" opcode="win:Start" keywords="verbose"/>
+        <event value="613" version="0" level="win:Verbose"  task="Recovery_WriteInitialStore" opcode="win:Stop" keywords="verbose"/>
+        <event value="614" version="0" level="win:Verbose"  task="Recovery_ReadRecoveryStore" opcode="win:Start" keywords="verbose"/>
+        <event value="615" version="0" level="win:Verbose"  task="Recovery_ReadRecoveryStore" opcode="win:Stop" keywords="verbose"/>
+        <event value="616" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_RedirectUrlWithBindInfo" opcode="win:Info" keywords="primarynav"/>
+        <event value="617" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_RedirectUrlWithBindInfo" opcode="win:Info" keywords="primarynav"/>
+        <event value="618" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateImmediateTab" opcode="win:Info" keywords="primarynav"/>
+        <event value="619" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateImmediateTab" opcode="win:Info" keywords="primarynav"/>
+        <event value="620" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateDeferredNewTab" opcode="win:Info" keywords="primarynav"/>
+        <event value="621" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateDeferredNewTab" opcode="win:Info" keywords="primarynav"/>
+        <event value="622" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_GetIWB2" opcode="win:Info" keywords="primarynav"/>
+        <event value="623" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_GetIWB2" opcode="win:Info" keywords="primarynav"/>
+        <event value="624" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateTabManager" opcode="win:Info" keywords="primarynav"/>
+        <event value="625" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateTabManager" opcode="win:Info" keywords="primarynav"/>
+        <event value="626" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_GetWebOCWindow" opcode="win:Info" keywords="primarynav"/>
+        <event value="627" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_GetWebOCWindow" opcode="win:Info" keywords="primarynav"/>
+        <event value="628" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateInWebBrowser" opcode="win:Info" keywords="primarynav"/>
+        <event value="629" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateInWebBrowser" opcode="win:Info" keywords="primarynav"/>
+        <event value="630" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateThreadProc" opcode="win:Info" keywords="primarynav"/>
+        <event value="631" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateThreadProc" opcode="win:Info" keywords="primarynav"/>
+        <event value="632" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_VirtualTab_PreNewFrameTabCreate" opcode="win:Info" keywords="primarynav"/>
+        <event value="633" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_VirtualTab_PreNewFrameTabCreate" opcode="win:Info" keywords="primarynav"/>
+        <event value="634" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_VirtualTab_PostNewFrameTabCreate" opcode="win:Info" keywords="primarynav"/>
+        <event value="635" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Browseui_VirtualTab_PostNewFrameTabCreate" opcode="win:Info" keywords="primarynav"/>
+        <event value="636" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call" opcode="win:Info" keywords="primarynav"/>
+        <event value="637" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call" opcode="win:Info" keywords="primarynav"/>
+        <event value="638" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call" opcode="win:Info" keywords="primarynav"/>
+        <event value="639" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call" opcode="win:Info" keywords="primarynav"/>
+        <event value="640" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call" opcode="win:Info" keywords="primarynav"/>
+        <event value="641" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call" opcode="win:Info" keywords="primarynav"/>
+        <event value="642" version="0" level="win:Informational"  task="BrowseUI_CStorage" opcode="win:Info" keywords="mshtml" template="Args642_0"/>
+        <event value="643" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="CFaviconHolder_UpdateReal" opcode="win:Info" keywords="favicon"/>
+        <event value="644" version="0" level="win:Informational"  task="History_Journal_Write_Command" opcode="win:Info" keywords="HistoryJournal" template="Args644_0"/>
+        <event value="645" version="0" level="win:Verbose"  task="Browseui_TabSuspension_Check_Suspendable" opcode="win:Info" keywords="tabhydration" template="Args645_0"/>
+        <event value="647" version="0" level="win:Verbose"  task="Courier_FunctionalTest" opcode="win:Info" keywords="verbose"/>
+        <event value="648" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX" template="Args648_0"/>
+        <event value="649" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX"/>
+        <event value="650" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX"/>
+        <event value="651" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX" template="Args651_0"/>
+        <event value="652" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX" template="Args652_0"/>
+        <event value="653" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX"/>
+        <event value="654" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX"/>
+        <event value="655" version="0" level="win:Informational"  task="Browseui_TabBand_Activity" opcode="win:Info" keywords="HUX"/>
+        <event value="656" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Device_Info_Util" opcode="win:Start" keywords="primarynav"/>
+        <event value="657" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="Device_Info_Util" opcode="win:Stop" keywords="primarynav"/>
+        <event value="658" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="HistoryJournal" opcode="win:Start" keywords="primarynav"/>
+        <event value="659" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="HistoryJournal" opcode="win:Stop" keywords="primarynav"/>
+        <event value="660" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="NewTabPage_SearchBox_Show" opcode="win:Start" keywords="primarynav"/>
+        <event value="661" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="NewTabPage_SearchBox_Show" opcode="win:Stop" keywords="primarynav"/>
+        <event value="662" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="NewTabPage_SearchBox_Hide" opcode="win:Start" keywords="primarynav"/>
+        <event value="663" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="NewTabPage_SearchBox_Hide" opcode="win:Stop" keywords="primarynav"/>
+        <event value="664" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="NewTabPage_SearchLogo_Show" opcode="win:Start" keywords="primarynav"/>
+        <event value="665" version="0" level="win:Informational"  channel="Microsoft-IEFRAME/Diagnostic" task="NewTabPage_SearchLogo_Show" opcode="win:Stop" keywords="primarynav"/>
+        <event value="666" version="0" level="win:Informational"  task="WebStorage_Platform" opcode="win:Info" keywords="mshtml"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-IEFRAME/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="DIC" mask="0x1" message="$(string.string88)" />
+        <keyword name="TravelLogScreenshotNav" mask="0x2" message="$(string.string307)" />
+        <keyword name="LCIEDownloader" mask="0x4" message="$(string.string206)" />
+        <keyword name="favicon" mask="0x8" message="$(string.string129)" />
+        <keyword name="HistoryJournal" mask="0x10" message="$(string.string164)" />
+        <keyword name="HUX" mask="0x20" message="$(string.string165)" />
+        <keyword name="primarynav" mask="0x100" message="$(string.string241)" />
+        <keyword name="subsystem" mask="0x200" message="$(string.string282)" />
+        <keyword name="extended" mask="0x400" message="$(string.string122)" />
+        <keyword name="verbose" mask="0x800" message="$(string.string325)" />
+        <keyword name="mshtml" mask="0x1000" message="$(string.string215)" />
+        <keyword name="wininet" mask="0x2000" message="$(string.string334)" />
+        <keyword name="shell" mask="0x4000" message="$(string.string281)" />
+        <keyword name="jscript" mask="0x8000" message="$(string.string203)" />
+        <keyword name="ap" mask="0x10000" message="$(string.string2)" />
+        <keyword name="rss" mask="0x20000" message="$(string.string247)" />
+        <keyword name="controlpanel" mask="0x40000" message="$(string.string75)" />
+        <keyword name="notification" mask="0x80000" message="$(string.string223)" />
+        <keyword name="pageloadbreakdown" mask="0x100000" message="$(string.string238)" />
+        <keyword name="unifiedlistview" mask="0x200000" message="$(string.string319)" />
+        <keyword name="immersive" mask="0x400000" message="$(string.string183)" />
+        <keyword name="tabhydration" mask="0x800000" message="$(string.string292)" />
+        <keyword name="hang" mask="0x1000000" message="$(string.string160)" />
+        <keyword name="imagestore" mask="0x2000000" message="$(string.string176)" />
+        <keyword name="bingsuggestions" mask="0x4000000" message="$(string.string11)" />
+        <keyword name="sharecharm" mask="0x10000000" message="$(string.string252)" />
+        <keyword name="roaming" mask="0x20000000" message="$(string.string246)" />
+        <keyword name="BFCache" mask="0x40000000" message="$(string.string6)" />
+        <keyword name="DownloadWindow" mask="0x80000000" message="$(string.string100)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Frame_URLEntered" message="$(string.string1)">
+        </task>
+        <task value="2" name="Window_Minimized" message="$(string.string2)">
+        </task>
+        <task value="3" name="Window_Maximized" message="$(string.string3)">
+        </task>
+        <task value="4" name="BrowserThreadProc_StartFrame" message="$(string.string4)">
+        </task>
+        <task value="5" name="BrowserThreadProc_Return" message="$(string.string5)">
+        </task>
+        <task value="6" name="BackNaviagation_Requested" message="$(string.string6)">
+        </task>
+        <task value="7" name="BrowserThreadProc_Next" message="$(string.string7)">
+        </task>
+        <task value="8" name="BrowserThreadProc_Prior" message="$(string.string8)">
+        </task>
+        <task value="9" name="LeftButtonAction" message="$(string.string9)">
+        </task>
+        <task value="10" name="Shdocvw_BaseBrowser_Navigate" message="$(string.string10)">
+        </task>
+        <task value="11" name="Shdocvw_BaseBrowser_DocumentComplete" message="$(string.string11)">
+        </task>
+        <task value="12" name="Browseui_FeedViewer_PreviewStream" message="$(string.string12)">
+        </task>
+        <task value="13" name="Shdocvw_Feed_Search" message="$(string.string13)">
+        </task>
+        <task value="14" name="Browseui_Tabs_AddTabButton" message="$(string.string14)">
+        </task>
+        <task value="15" name="Browseui_Tabs_AddTabAPI" message="$(string.string15)">
+        </task>
+        <task value="16" name="Browseui_Tabs_TabReadyForNavigate" message="$(string.string16)">
+        </task>
+        <task value="17" name="Browseui_Tabs_CloseTab" message="$(string.string17)">
+        </task>
+        <task value="18" name="Browseui_Tabs_SwitchTabs" message="$(string.string18)">
+        </task>
+        <task value="19" name="Browseui_Tabs_CloseOtherTabs" message="$(string.string19)">
+        </task>
+        <task value="20" name="Browseui_CBrowserFrame_Close" message="$(string.string20)">
+        </task>
+        <task value="22" name="Shdocvw_PanningTool_ScrollElementBy" message="$(string.string22)">
+        </task>
+        <task value="23" name="Shdocvw_PanningTool_GetPanningProperties" message="$(string.string23)">
+        </task>
+        <task value="24" name="Imaging_CreateWebPagePreview" message="$(string.string24)">
+        </task>
+        <task value="25" name="Imaging_SendIconicThumbnail" message="$(string.string25)">
+        </task>
+        <task value="26" name="Imaging_SendIconicLivePreviewBitmap" message="$(string.string26)">
+        </task>
+        <task value="27" name="HistoryBrokerStartup" message="$(string.string27)">
+        </task>
+        <task value="28" name="HistoryBrokerShutdown" message="$(string.string28)">
+        </task>
+        <task value="29" name="AddToHistory" message="$(string.string29)">
+        </task>
+        <task value="30" name="QueryHistory" message="$(string.string30)">
+        </task>
+        <task value="31" name="EnumHistoryRecords" message="$(string.string31)">
+        </task>
+        <task value="32" name="LegacyHistoryAdd" message="$(string.string32)">
+        </task>
+        <task value="33" name="LegacyHistoryQuery" message="$(string.string33)">
+        </task>
+        <task value="34" name="LegacyHistoryEnum" message="$(string.string34)">
+        </task>
+        <task value="35" name="CreateThumbnail" message="$(string.string35)">
+        </task>
+        <task value="36" name="ScaleThumbnail" message="$(string.string36)">
+        </task>
+        <task value="37" name="CompressThumbnail" message="$(string.string37)">
+        </task>
+        <task value="38" name="GenerateThumbnail" message="$(string.string38)">
+        </task>
+        <task value="39" name="CtrlLeftButtonAction" message="$(string.string39)">
+        </task>
+        <task value="40" name="ExtensionCreate" message="$(string.string40)">
+        </task>
+        <task value="41" name="ExtensionSetSite" message="$(string.string41)">
+        </task>
+        <task value="42" name="ExtensionShowDW" message="$(string.string42)">
+        </task>
+        <task value="43" name="ExtensionCloseDW" message="$(string.string43)">
+        </task>
+        <task value="44" name="ExtensionSetSiteNull" message="$(string.string44)">
+        </task>
+        <task value="45" name="ExtensionRelease" message="$(string.string45)">
+        </task>
+        <task value="46" name="WinMain" message="$(string.string46)">
+        </task>
+        <task value="47" name="LCIE_ForeignProcessMessageQueueDequeueAll" message="$(string.string47)">
+        </task>
+        <task value="48" name="LCIE_ForeignProcessMessageQueueEnqueue" message="$(string.string48)">
+        </task>
+        <task value="49" name="OnlineHistoryAdd" message="$(string.string49)">
+        </task>
+        <task value="50" name="OnlineHistoryCollectData" message="$(string.string50)">
+        </task>
+        <task value="51" name="OnlineHistoryDelete" message="$(string.string51)">
+        </task>
+        <task value="52" name="OnlineHistoryClear" message="$(string.string52)">
+        </task>
+        <task value="53" name="Browseui_CBrowserFrame_CreateInstance" message="$(string.string53)">
+        </task>
+        <task value="54" name="Frame_OnCreate" message="$(string.string54)">
+        </task>
+        <task value="55" name="Frame_CommandBarCreate" message="$(string.string55)">
+        </task>
+        <task value="56" name="Frame_CommandBandCreate" message="$(string.string56)">
+        </task>
+        <task value="59" name="Frame_LinksBandCreate" message="$(string.string59)">
+        </task>
+        <task value="60" name="Frame_NavBarCreate" message="$(string.string60)">
+        </task>
+        <task value="61" name="Frame_TravelBandCreate" message="$(string.string61)">
+        </task>
+        <task value="62" name="Frame_AddressBandCreate" message="$(string.string62)">
+        </task>
+        <task value="63" name="Frame_SearchBandCreate" message="$(string.string63)">
+        </task>
+        <task value="64" name="Frame_LoadFrameState" message="$(string.string64)">
+        </task>
+        <task value="65" name="Frame_Show" message="$(string.string65)">
+        </task>
+        <task value="66" name="Browseui_Tabs_WaitMessage" message="$(string.string66)">
+        </task>
+        <task value="67" name="DataModel_Query" message="$(string.string67)">
+        </task>
+        <task value="68" name="DataModel_Provider_Query" message="$(string.string68)">
+        </task>
+        <task value="69" name="DataModel_Provider_WorkerThread" message="$(string.string69)">
+        </task>
+        <task value="70" name="DataModel_Provider_CreateDataList" message="$(string.string70)">
+        </task>
+        <task value="73" name="UnifiedListView_Populate" message="$(string.string73)">
+        </task>
+        <task value="74" name="UnifiedListView_GroupPopulated" message="$(string.string74)">
+        </task>
+        <task value="75" name="UnifiedListView_DefaultAction" message="$(string.string75)">
+        </task>
+        <task value="76" name="UnifiedListView_SwitchMode" message="$(string.string76)">
+        </task>
+        <task value="77" name="WS_ExecuteQuery" message="$(string.string77)">
+        </task>
+        <task value="78" name="Tab_ShellBrowserOnCreate" message="$(string.string78)">
+        </task>
+        <task value="79" name="Tab_InitializeBrowserState" message="$(string.string79)">
+        </task>
+        <task value="80" name="Tab_NavigateToPidl" message="$(string.string80)">
+        </task>
+        <task value="81" name="Menuband_PopulateShellFolderToolbar" message="$(string.string81)">
+        </task>
+        <task value="82" name="CreateHTMLPreview" message="$(string.string82)">
+        </task>
+        <task value="83" name="CreateHTMLPreview_ShowWindow" message="$(string.string83)">
+        </task>
+        <task value="84" name="FavoritesBar_PopulateFeedsMenu" message="$(string.string84)">
+        </task>
+        <task value="85" name="FavoritesBar_PopulateLinksMonitor" message="$(string.string85)">
+        </task>
+        <task value="86" name="FavoritesBar_WriteLinksCache" message="$(string.string86)">
+        </task>
+        <task value="87" name="Find_ActivateBar" message="$(string.string87)">
+        </task>
+        <task value="88" name="Find_FindHits" message="$(string.string88)">
+        </task>
+        <task value="89" name="Find_HighlightHits" message="$(string.string89)">
+        </task>
+        <task value="90" name="Find_HighlightHitsStatus" message="$(string.string90)">
+        </task>
+        <task value="91" name="Find_ChangeSelectedHit" message="$(string.string91)">
+        </task>
+        <task value="92" name="Find_DeactivateBar" message="$(string.string92)">
+        </task>
+        <task value="93" name="Search_SuggestionsDownload" message="$(string.string93)">
+        </task>
+        <task value="94" name="Search_SuggestionsProcessing" message="$(string.string94)">
+        </task>
+        <task value="95" name="Search_ImageProcessing" message="$(string.string95)">
+        </task>
+        <task value="99" name="Browseui_Tabs_DropOnFavorites" message="$(string.string99)">
+        </task>
+        <task value="103" name="Browseui_Favs_ItemsChanged" message="$(string.string103)">
+        </task>
+        <task value="104" name="Addressbar_InlineAutocomplete" message="$(string.string104)">
+        </task>
+        <task value="171" name="NewTabPage_Show" message="$(string.string171)">
+        </task>
+        <task value="173" name="IE_API_Timer" message="$(string.string173)">
+        </task>
+        <task value="175" name="Window_Resized" message="$(string.string175)">
+        </task>
+        <task value="176" name="Window_Restored" message="$(string.string176)">
+        </task>
+        <task value="177" name="DLM_DownloadWindow_Show" message="$(string.string177)">
+        </task>
+        <task value="179" name="DLM_DownloadWindow_Hide" message="$(string.string179)">
+        </task>
+        <task value="181" name="FirstRunDialog_Show" message="$(string.string181)">
+        </task>
+        <task value="182" name="Browseui_CBrowserFrame_OnClose" message="$(string.string182)">
+        </task>
+        <task value="183" name="Shdocvw_BaseBrowser_FireEvent_BeforeNavigate" message="$(string.string183)">
+        </task>
+        <task value="185" name="Shdocvw_BaseBrowser_FireEvent_DocumentComplete" message="$(string.string185)">
+        </task>
+        <task value="187" name="Shdocvw_BaseBrowser_FireEvent_DownloadBegin" message="$(string.string187)">
+        </task>
+        <task value="189" name="Shdocvw_BaseBrowser_FireEvent_DownloadComplete" message="$(string.string189)">
+        </task>
+        <task value="191" name="Shdocvw_BaseBrowser_FireEvent_NavigateComplete" message="$(string.string191)">
+        </task>
+        <task value="193" name="Shdocvw_BaseBrowser_FireEvent_NavigateError" message="$(string.string193)">
+        </task>
+        <task value="195" name="Shdocvw_BaseBrowser_FireEvent_NewWindow" message="$(string.string195)">
+        </task>
+        <task value="197" name="Shdocvw_BaseBrowser_FireEvent_Quit" message="$(string.string197)">
+        </task>
+        <task value="199" name="Shdocvw_BaseBrowser_FireEvent_WindowStateChanged" message="$(string.string199)">
+        </task>
+        <task value="201" name="Shdocvw_BaseBrowser_FireEvent_NewWindow2" message="$(string.string201)">
+        </task>
+        <task value="203" name="Shdocvw_BaseBrowser_FireEvent_NewWindow3" message="$(string.string203)">
+        </task>
+        <task value="205" name="DLM_Security_Malware" message="$(string.string205)">
+        </task>
+        <task value="207" name="DLM_Security_AntiVirus" message="$(string.string207)">
+        </task>
+        <task value="209" name="DLM_Security_WVT" message="$(string.string209)">
+        </task>
+        <task value="211" name="DLM_Security_Hash" message="$(string.string211)">
+        </task>
+        <task value="213" name="DLM_Security_AppRep" message="$(string.string213)">
+        </task>
+        <task value="215" name="DLM_DownloadBar_Show" message="$(string.string215)">
+        </task>
+        <task value="217" name="DLM_DownloadBar_Close" message="$(string.string217)">
+        </task>
+        <task value="219" name="Frame_MinIETabBandCreate" message="$(string.string219)">
+        </task>
+        <task value="221" name="Frame_ControlBandCreate" message="$(string.string221)">
+        </task>
+        <task value="223" name="Frame_TabBandMove" message="$(string.string223)">
+        </task>
+        <task value="225" name="IdleTask_Execution_Time" message="$(string.string225)">
+        </task>
+        <task value="227" name="DLM_Resume_Time" message="$(string.string227)">
+        </task>
+        <task value="229" name="Find_FindFirstHit" message="$(string.string229)">
+        </task>
+        <task value="231" name="Find_MatchAndHighlightHits" message="$(string.string231)">
+        </task>
+        <task value="233" name="Shdocvw_BaseBrowser_FireEvent_BeforeScriptExecute" message="$(string.string233)">
+        </task>
+        <task value="302" name="Browseui_ActivationRegistrar_CreateComponent" message="$(string.string302)">
+        </task>
+        <task value="304" name="Browseui_ActivationRegistrar_OnCleanup" message="$(string.string304)">
+        </task>
+        <task value="311" name="IMTravelLogMVC_StateChange" message="$(string.string311)">
+        </task>
+        <task value="312" name="IMTravelLogMVC_Info" message="$(string.string312)">
+        </task>
+        <task value="313" name="IMTravelLogMVC_TravelURL" message="$(string.string313)">
+        </task>
+        <task value="320" name="NotificationManager_NotificationBarReady" message="$(string.string320)">
+        </task>
+        <task value="321" name="NotificationManager_SendResponse" message="$(string.string321)">
+        </task>
+        <task value="322" name="NotificationManager_NotificationBarButtonClick" message="$(string.string322)">
+        </task>
+        <task value="328" name="NotificationBar_Show" message="$(string.string328)">
+        </task>
+        <task value="329" name="NotificationBar_Hide" message="$(string.string329)">
+        </task>
+        <task value="330" name="NotificationBar_Update" message="$(string.string330)">
+        </task>
+        <task value="331" name="NotificationBar_OverrideShow" message="$(string.string331)">
+        </task>
+        <task value="332" name="NotificationBar_Flash" message="$(string.string332)">
+        </task>
+        <task value="333" name="NotificationBar_Animate" message="$(string.string333)">
+        </task>
+        <task value="336" name="Tab_Recover_Complete" message="$(string.string336)">
+        </task>
+        <task value="339" name="Frame_AddFirstTab" message="$(string.string339)">
+        </task>
+        <task value="343" name="FindBar_TermChange" message="$(string.string343)">
+        </task>
+        <task value="344" name="IMTravelLogMVC_ScreenShotInfo" message="$(string.string344)">
+        </task>
+        <task value="350" name="UnifiedListView_MultipleCharacterQuery" message="$(string.string350)">
+        </task>
+        <task value="351" name="IMTravelLogMVC_WaitForPageTimeout" message="$(string.string351)">
+        </task>
+        <task value="352" name="IMTravelLogMVC_NavigationReceived" message="$(string.string352)">
+        </task>
+        <task value="354" name="Browseui_Tabs_OnNavigateComplete2" message="$(string.string354)">
+        </task>
+        <task value="378" name="CReadingModeContentProvider" message="$(string.string378)">
+        </task>
+        <task value="383" name="InputPanelShow" message="$(string.string383)">
+        </task>
+        <task value="384" name="InputPanelHide" message="$(string.string384)">
+        </task>
+        <task value="385" name="InputPanelResize" message="$(string.string385)">
+        </task>
+        <task value="401" name="RehydrateTab" message="$(string.string401)">
+        </task>
+        <task value="402" name="GetHalfTabData" message="$(string.string402)">
+        </task>
+        <task value="404" name="BrowserFrame_AddTab_WaitForActivationKind" message="$(string.string404)">
+        </task>
+        <task value="405" name="Tab_ShellBrowser_OnBeforeUnload" message="$(string.string405)">
+        </task>
+        <task value="406" name="Tab_ShellBrowser_OnUnload" message="$(string.string406)">
+        </task>
+        <task value="409" name="Browseui_HangUI" message="$(string.string409)">
+        </task>
+        <task value="410" name="Browseui_HangUI_CreateCoverWindow" message="$(string.string410)">
+        </task>
+        <task value="411" name="Browseui_HangUI_SetVisible" message="$(string.string411)">
+        </task>
+        <task value="412" name="Browseui_HangUI_DisparentAndDetachBrowserTab" message="$(string.string412)">
+        </task>
+        <task value="413" name="Browseui_HangUI_ShowNotificationBar" message="$(string.string413)">
+        </task>
+        <task value="414" name="Browseui_HangUI_ScriptRecoveryTimeout" message="$(string.string414)">
+        </task>
+        <task value="415" name="Browseui_HangUI_AttachThreadInputHelper" message="$(string.string415)">
+        </task>
+        <task value="416" name="Browseui_Tabs_MakeBlockingCallToTab" message="$(string.string416)">
+        </task>
+        <task value="417" name="Browseui_Tabs_MarkTabAsHung" message="$(string.string417)">
+        </task>
+        <task value="418" name="Browseui_Tabs_MarkTabAsNotHung" message="$(string.string418)">
+        </task>
+        <task value="419" name="Browseui_Tabs_ShowHungTabBar" message="$(string.string419)">
+        </task>
+        <task value="420" name="Browseui_Tabs_BrowserTabRespondsNow_TabHung" message="$(string.string420)">
+        </task>
+        <task value="421" name="AutoSuggest_DropDown_Show" message="$(string.string421)">
+        </task>
+        <task value="422" name="AutoSuggest_DropDown_Hide" message="$(string.string422)">
+        </task>
+        <task value="423" name="ImageStore_Activity_SingleImage" message="$(string.string423)">
+        </task>
+        <task value="424" name="ImageStore_Activity_ImageTotal" message="$(string.string424)">
+        </task>
+        <task value="425" name="Browseui_TabSuspension_Suspend" message="$(string.string425)">
+        </task>
+        <task value="426" name="Browseui_TabSuspension_Unuspend" message="$(string.string426)">
+        </task>
+        <task value="427" name="Iso_Dependencies_AddDependency" message="$(string.string427)">
+        </task>
+        <task value="428" name="Iso_Dependencies_RemoveDependency" message="$(string.string428)">
+        </task>
+        <task value="429" name="DataModel_QueryEntry" message="$(string.string429)">
+        </task>
+        <task value="430" name="Bing_Suggestions_ServiceRequest" message="$(string.string430)">
+        </task>
+        <task value="431" name="Bing_Suggestions_ServiceResponse" message="$(string.string431)">
+        </task>
+        <task value="432" name="Bing_Suggestions_CancelRequest" message="$(string.string432)">
+        </task>
+        <task value="433" name="Bing_Suggestions_ParseXmlResponse" message="$(string.string433)">
+        </task>
+        <task value="444" name="TabRoaming_Update" message="$(string.string444)">
+        </task>
+        <task value="445" name="TabRoaming_Delete" message="$(string.string445)">
+        </task>
+        <task value="447" name="TabRoaming_PLMSuspendWithOutstandingTimer" message="$(string.string447)">
+        </task>
+        <task value="448" name="TabRoaming_TabMarkedDirty" message="$(string.string448)">
+        </task>
+        <task value="449" name="TabRoaming_SessionTimerFired" message="$(string.string449)">
+        </task>
+        <task value="450" name="BrowserRoamedSettingChange_TypedUrls" message="$(string.string450)">
+        </task>
+        <task value="451" name="BrowserRoamedSettingChange_WinInet" message="$(string.string451)">
+        </task>
+        <task value="452" name="BrowserRoamedSettingChange_ExcludedUrls" message="$(string.string452)">
+        </task>
+        <task value="453" name="BrowserRoamedSettingChange_FlipAhead" message="$(string.string453)">
+        </task>
+        <task value="454" name="BrowserRoamedSettingChange_TrackingProtection" message="$(string.string454)">
+        </task>
+        <task value="455" name="BrowserRoamedSettingChange_TrackingProtectionLists" message="$(string.string455)">
+        </task>
+        <task value="458" name="CAsyncStorage_WorkPending" message="$(string.string458)">
+        </task>
+        <task value="464" name="Tab_BFCache_Resume" message="$(string.string464)">
+        </task>
+        <task value="470" name="EmptyTab_Reuse" message="$(string.string470)">
+        </task>
+        <task value="471" name="EmptyTab_Conversion_Begin" message="$(string.string471)">
+        </task>
+        <task value="472" name="EmptyTab_Conversion_Cancel" message="$(string.string472)">
+        </task>
+        <task value="473" name="EmptyTab_Conversion_FinalNavigation_Begin" message="$(string.string473)">
+        </task>
+        <task value="474" name="EmptyTab_Conversion_FinalNavigation_Failed" message="$(string.string474)">
+        </task>
+        <task value="475" name="EmptyTab_Conversion_CleanupRecoveryData_Begin" message="$(string.string475)">
+        </task>
+        <task value="476" name="EmptyTab_Conversion_CleanupRecoveryData_Failed" message="$(string.string476)">
+        </task>
+        <task value="477" name="EmptyTab_Conversion_CleanUpBrowserTab_Begin" message="$(string.string477)">
+        </task>
+        <task value="478" name="EmptyTab_Conversion_CleanUpBrowserTab_Failed" message="$(string.string478)">
+        </task>
+        <task value="479" name="EmptyTab_Conversion_Succeeded" message="$(string.string479)">
+        </task>
+        <task value="480" name="EmptyTab_Reuse_ReuseTabThread_Failed" message="$(string.string480)">
+        </task>
+        <task value="481" name="EmptyTab_Reuse_ReinitializeBrowserTab_Begin" message="$(string.string481)">
+        </task>
+        <task value="482" name="EmptyTab_Reuse_ReinitializeBrowserTab_Failed" message="$(string.string482)">
+        </task>
+        <task value="483" name="EmptyTab_Timer_Start" message="$(string.string483)">
+        </task>
+        <task value="484" name="EmptyTab_Timer_Cancel" message="$(string.string484)">
+        </task>
+        <task value="485" name="EmptyTab_Timer_Timeout" message="$(string.string485)">
+        </task>
+        <task value="486" name="EmptyTab_Closing" message="$(string.string486)">
+        </task>
+        <task value="487" name="EmptyTab_CreateNewTab" message="$(string.string487)">
+        </task>
+        <task value="490" name="NewTabPageData_Build" message="$(string.string490)">
+        </task>
+        <task value="491" name="NewTabPageData_Refresh" message="$(string.string491)">
+        </task>
+        <task value="492" name="NewTabPageData_RoamedEntry" message="$(string.string492)">
+        </task>
+        <task value="493" name="IntelliForms_Evaluate_AutoStuff" message="$(string.string493)">
+        </task>
+        <task value="494" name="IntelliForms_Do_AutoStuff" message="$(string.string494)">
+        </task>
+        <task value="495" name="IMDownloadWindow_ActionBar_Animation" message="$(string.string495)">
+        </task>
+        <task value="496" name="DownloadWindow_Item_Added" message="$(string.string496)">
+        </task>
+        <task value="497" name="DownloadWindow_Items_Removed" message="$(string.string497)">
+        </task>
+        <task value="498" name="Browseui_Prerender_Closing_Prerendered_Page" message="$(string.string498)">
+        </task>
+        <task value="499" name="DominantImageClassifier" message="$(string.string499)">
+        </task>
+        <task value="500" name="TravelLogScreenshotNav_OldTab_ReadyToClose" message="$(string.string500)">
+        </task>
+        <task value="501" name="TravelLogScreenshotNav_OldTab_WantsToCancelSwitch" message="$(string.string501)">
+        </task>
+        <task value="502" name="TravelLogScreenshotNav_OldTab_CancelingSwitch" message="$(string.string502)">
+        </task>
+        <task value="503" name="TravelLogScreenshotNav_OldTab_CannotCancelSwitch" message="$(string.string503)">
+        </task>
+        <task value="504" name="TravelLogScreenshotNav_NewTab_IsReadyToSwitch" message="$(string.string504)">
+        </task>
+        <task value="505" name="TravelLogScreenshotNav_NewTab_IsNotReadyToSwitch" message="$(string.string505)">
+        </task>
+        <task value="506" name="TravelLogScreenshotNav_NewTab_GetReadyToSwitch" message="$(string.string506)">
+        </task>
+        <task value="507" name="TravelLogScreenshotNav_NewTab_NowReadyToSwitch" message="$(string.string507)">
+        </task>
+        <task value="508" name="TravelLogScreenshotNav_NewTab_SetAsHiddenTab" message="$(string.string508)">
+        </task>
+        <task value="509" name="TravelLogScreenshotNav_NewTab_ShowingScreenshotBeforeSwitch" message="$(string.string509)">
+        </task>
+        <task value="510" name="TravelLogScreenshotNav_NewTab_ShowingAllScreenshotsOnSwitch" message="$(string.string510)">
+        </task>
+        <task value="511" name="Tab_BFCache_Suspend" message="$(string.string511)">
+        </task>
+        <task value="514" name="LCIEDownloader_CreateIsoComponent" message="$(string.string514)">
+        </task>
+        <task value="515" name="PinnedSites_OfferedImage" message="$(string.string515)">
+        </task>
+        <task value="516" name="PinnedSites_OfferedImagesComplete" message="$(string.string516)">
+        </task>
+        <task value="517" name="TabRoaming_DeleteInvalidOrExpiredTabFile" message="$(string.string517)">
+        </task>
+        <task value="518" name="TabRoaming_KeepTabInDirtyList" message="$(string.string518)">
+        </task>
+        <task value="519" name="Browseui_PrepareVisibleAsync" message="$(string.string519)">
+        </task>
+        <task value="520" name="Browseui_OnPrepareVisibleComplete" message="$(string.string520)">
+        </task>
+        <task value="521" name="Browseui_SelectTabTimerCreated" message="$(string.string521)">
+        </task>
+        <task value="522" name="Browseui_SelectTabTimerTriggered" message="$(string.string522)">
+        </task>
+        <task value="523" name="Browseui_SelectTabTimerCancelled" message="$(string.string523)">
+        </task>
+        <task value="524" name="Browseui_TabWindow_SetVisible" message="$(string.string524)">
+        </task>
+        <task value="525" name="IdleManager_AddIdleTask" message="$(string.string525)">
+        </task>
+        <task value="526" name="IdleManager_AddRunningTask" message="$(string.string526)">
+        </task>
+        <task value="527" name="IdleManager_RemoveTask" message="$(string.string527)">
+        </task>
+        <task value="528" name="IdleManager_RunNextIdleTask" message="$(string.string528)">
+        </task>
+        <task value="529" name="IdleManager_RunExpiredIdleTask" message="$(string.string529)">
+        </task>
+        <task value="530" name="IdleManager_RemoveExpiredRunningTask" message="$(string.string530)">
+        </task>
+        <task value="531" name="IdleManager_TaskCount" message="$(string.string531)">
+        </task>
+        <task value="534" name="NotificationBar_OverrideHide" message="$(string.string534)">
+        </task>
+        <task value="535" name="Terminate_Browser_Tab_Process" message="$(string.string535)">
+        </task>
+        <task value="536" name="IE_Wer_Report_Hang" message="$(string.string536)">
+        </task>
+        <task value="537" name="Tab_Terminate_Process" message="$(string.string537)">
+        </task>
+        <task value="538" name="Browseui_Tabs_Activity_Show" message="$(string.string538)">
+        </task>
+        <task value="539" name="Browseui_Tabs_Activity_Hide" message="$(string.string539)">
+        </task>
+        <task value="540" name="Browseui_PrepareResizeAsync" message="$(string.string540)">
+        </task>
+        <task value="541" name="Immersive_Travellog_NavigationStart_TimeOut" message="$(string.string541)">
+        </task>
+        <task value="542" name="Immersive_Travellog_NavigationComplete_TimeOut" message="$(string.string542)">
+        </task>
+        <task value="543" name="Immersive_Travellog_ScrollComplete_TimeOut" message="$(string.string543)">
+        </task>
+        <task value="544" name="Immersive_Travellog_ScrollComplete_Fired" message="$(string.string544)">
+        </task>
+        <task value="545" name="Immersive_Travellog_PageAvailable_Fired" message="$(string.string545)">
+        </task>
+        <task value="546" name="Immersive_Travellog_BeforeUnload_Fired" message="$(string.string546)">
+        </task>
+        <task value="547" name="Browseui_BringBrowserTabAlternateOwnerForward" message="$(string.string547)">
+        </task>
+        <task value="548" name="Browseui_BringBrowserTabAlternateOwnerForward_Hung" message="$(string.string548)">
+        </task>
+        <task value="551" name="Browseui_DestroyDetachedBrowserTabUI" message="$(string.string551)">
+        </task>
+        <task value="552" name="Browseui_HungTabHeartBeat_Timer_Invisible" message="$(string.string552)">
+        </task>
+        <task value="553" name="TabRoaming_FindRoamedMachines" message="$(string.string553)">
+        </task>
+        <task value="554" name="TabRoaming_LoadRoamedMachine" message="$(string.string554)">
+        </task>
+        <task value="555" name="Shdocvw_VirtualTab_RedirectUrlWithBindInfo" message="$(string.string555)">
+        </task>
+        <task value="556" name="Shdocvw_VirtualTab_NavigateImmediateTab" message="$(string.string556)">
+        </task>
+        <task value="557" name="Shdocvw_VirtualTab_NavigateDeferredNewTab" message="$(string.string557)">
+        </task>
+        <task value="558" name="Shdocvw_VirtualTab_GetIWB2" message="$(string.string558)">
+        </task>
+        <task value="559" name="Shdocvw_VirtualTab_NavigateTabManager" message="$(string.string559)">
+        </task>
+        <task value="560" name="Shdocvw_VirtualTab_GetWebOCWindow" message="$(string.string560)">
+        </task>
+        <task value="561" name="Shdocvw_VirtualTab_NavigateInWebBrowser" message="$(string.string561)">
+        </task>
+        <task value="562" name="Shdocvw_VirtualTab_NavigateThreadProc" message="$(string.string562)">
+        </task>
+        <task value="563" name="Browseui_VirtualTab_PreNewFrameTabCreate" message="$(string.string563)">
+        </task>
+        <task value="564" name="Browseui_VirtualTab_PostNewFrameTabCreate" message="$(string.string564)">
+        </task>
+        <task value="565" name="Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call" message="$(string.string565)">
+        </task>
+        <task value="566" name="Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call" message="$(string.string566)">
+        </task>
+        <task value="567" name="Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call" message="$(string.string567)">
+        </task>
+        <task value="568" name="BrowseUI_CStorage" message="$(string.string568)">
+        </task>
+        <task value="569" name="CFaviconHolder_UpdateReal" message="$(string.string569)">
+        </task>
+        <task value="570" name="History_Journal_Write_Command" message="$(string.string570)">
+        </task>
+        <task value="571" name="Browseui_TabSuspension_Check_Suspendable" message="$(string.string571)">
+        </task>
+        <task value="573" name="TabRoaming_FindRoamedTabs" message="$(string.string573)">
+        </task>
+        <task value="574" name="TabRoaming_LoadRoamedTab" message="$(string.string574)">
+        </task>
+        <task value="575" name="TabRoaming_WriteProcessInfo" message="$(string.string575)">
+        </task>
+        <task value="576" name="TabRoaming_ReadProcessInfo" message="$(string.string576)">
+        </task>
+        <task value="577" name="Recovery_WriteInitialStore" message="$(string.string577)">
+        </task>
+        <task value="578" name="Recovery_ReadRecoveryStore" message="$(string.string578)">
+        </task>
+        <task value="579" name="Courier_FunctionalTest" message="$(string.string579)">
+        </task>
+        <task value="580" name="Browseui_TabBand_Activity" message="$(string.string580)">
+        </task>
+        <task value="581" name="Device_Info_Util" message="$(string.string581)">
+        </task>
+        <task value="582" name="HistoryJournal" message="$(string.string582)">
+        </task>
+        <task value="583" name="NewTabPage_SearchBox_Show" message="$(string.string583)">
+        </task>
+        <task value="584" name="NewTabPage_SearchBox_Hide" message="$(string.string584)">
+        </task>
+        <task value="585" name="NewTabPage_SearchLogo_Show" message="$(string.string585)">
+        </task>
+        <task value="586" name="WebStorage_Platform" message="$(string.string586)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args9_0">
+          <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TabState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="HWND" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args65_0">
+          <data name="CLSID" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args69_0">
+          <data name="CLSID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Show" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args78_0">
+          <data name="ProcessId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="MessageCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args115_0">
+          <data name="CLSID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="QueryID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args127_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args147_0">
+          <data name="PopulateOptions" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args149_0">
+          <data name="LinkCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args173_0">
+          <data name="ContextName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="OnCloseButton" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args225_0">
+          <data name="TimeElapsed" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args311_0">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateString" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args312_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args317_0">
+          <data name="LayerValue" inType="win:Int32" outType="xs:int"  />
+          <data name="CommandID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args328_0">
+          <data name="AnimationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args405_0">
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args406_0">
+          <data name="Show" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args407_0">
+          <data name="Disconnect" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args409_0">
+          <data name="UserInitiated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args412_0">
+          <data name="Attach" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AttachTID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AttachToTID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args417_0">
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SelfRecovered" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerformWhenBrowserResponds" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args418_0">
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BarText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ButtonText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args420_0">
+          <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="TabID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SyncTimeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SetHung" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="UserAction" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args425_0">
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageUniqueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageDimX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageDimY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageCleaningScheme" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageLastUpdatedTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ImageLastRetrievedTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args426_0">
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageKey" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TotalNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args427_0">
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Suspending" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ResumeReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args429_0">
+          <data name="Target" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetPID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Dependent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DependentPID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args456_0">
+          <data name="TabId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args462_0">
+          <data name="HWND" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args533_0">
+          <data name="Uint32Val" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args534_0">
+          <data name="PrerenderURL" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args535_0">
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DominantImageUrl1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DominantImageUrl2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DominantImageUrl3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DominantImageUrl4" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args550_0">
+          <data name="ComponentType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args552_0">
+          <data name="ImageUrl" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DIType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DIConfidence" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TileSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args556_0">
+          <data name="NotifyFrame" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Result" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args558_0">
+          <data name="TabID" inType="win:Int32" outType="xs:int"  />
+          <data name="SelectTabAsyncTabID" inType="win:Int32" outType="xs:int"  />
+          <data name="SelectTabAsyncFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args563_0">
+          <data name="TabID" inType="win:Int32" outType="xs:int"  />
+          <data name="NewVisibleState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CurrentVisibleState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsTabSwitch" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsHung" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args565_0">
+          <data name="ISO_HANDLE" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IDLEMANAGER_TASKTYPE" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxWaitingTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxBlockingTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IDLETASK_PRIORITY" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args571_0">
+          <data name="WaitingTaskCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RunningTaskCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args577_0">
+          <data name="TabID" inType="win:Int32" outType="xs:int"  />
+          <data name="AllowRecovery" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="UseWER" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="HangUIShowing" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Result" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args579_0">
+          <data name="TabID" inType="win:Int32" outType="xs:int"  />
+          <data name="ProcessID" inType="win:Int32" outType="xs:int"  />
+          <data name="HWND" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HungWindowText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Result" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args582_0">
+          <data name="TabID" inType="win:Int32" outType="xs:int"  />
+          <data name="TabVisibleIndex" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args589_0">
+          <data name="Bind Context" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args592_0">
+          <data name="TabID" inType="win:Int32" outType="xs:int"  />
+          <data name="IsActive" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hwndAlternateOwner" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fDestroyingHangUI" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hwndNext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hwndPrev" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args602_0">
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args642_0">
+          <data name="SharedMemoryHandle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailureReason" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args644_0">
+          <data name="Command Type" inType="win:Int32" outType="xs:int"  />
+          <data name="Event Type" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args645_0">
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FoundSuspendable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args648_0">
+          <data name="tabID" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args651_0">
+          <data name="tabID" inType="win:Int32" outType="xs:int"  />
+          <data name="Title" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args652_0">
+          <data name="HiddenTabCookie" inType="win:Int32" outType="xs:int"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Addressbar_InlineAutocomplete" />
+       <string id="string1" value="AddToHistory" />
+       <string id="string2" value="ap" />
+       <string id="string3" value="AutoSuggest_DropDown_Hide" />
+       <string id="string4" value="AutoSuggest_DropDown_Show" />
+       <string id="string5" value="BackNaviagation_Requested" />
+       <string id="string6" value="BFCache" />
+       <string id="string7" value="Bing_Suggestions_CancelRequest" />
+       <string id="string8" value="Bing_Suggestions_ParseXmlResponse" />
+       <string id="string9" value="Bing_Suggestions_ServiceRequest" />
+       <string id="string10" value="Bing_Suggestions_ServiceResponse" />
+       <string id="string11" value="bingsuggestions" />
+       <string id="string12" value="BrowserFrame_AddTab_WaitForActivationKind" />
+       <string id="string13" value="BrowserRoamedSettingChange_ExcludedUrls" />
+       <string id="string14" value="BrowserRoamedSettingChange_FlipAhead" />
+       <string id="string15" value="BrowserRoamedSettingChange_TrackingProtection" />
+       <string id="string16" value="BrowserRoamedSettingChange_TrackingProtectionLists" />
+       <string id="string17" value="BrowserRoamedSettingChange_TypedUrls" />
+       <string id="string18" value="BrowserRoamedSettingChange_WinInet" />
+       <string id="string19" value="BrowserThreadProc_Next" />
+       <string id="string20" value="BrowserThreadProc_Prior" />
+       <string id="string21" value="BrowserThreadProc_Return" />
+       <string id="string22" value="BrowserThreadProc_StartFrame" />
+       <string id="string23" value="Browseui_ActivationRegistrar_CreateComponent" />
+       <string id="string24" value="Browseui_ActivationRegistrar_OnCleanup" />
+       <string id="string25" value="Browseui_BringBrowserTabAlternateOwnerForward" />
+       <string id="string26" value="Browseui_BringBrowserTabAlternateOwnerForward_Hung" />
+       <string id="string27" value="Browseui_CBrowserFrame_Close" />
+       <string id="string28" value="Browseui_CBrowserFrame_CreateInstance" />
+       <string id="string29" value="Browseui_CBrowserFrame_OnClose" />
+       <string id="string30" value="BrowseUI_CStorage" />
+       <string id="string31" value="Browseui_DestroyDetachedBrowserTabUI" />
+       <string id="string32" value="Browseui_Favs_ItemsChanged" />
+       <string id="string33" value="Browseui_FeedViewer_PreviewStream" />
+       <string id="string34" value="Browseui_HangUI" />
+       <string id="string35" value="Browseui_HangUI_AttachThreadInputHelper" />
+       <string id="string36" value="Browseui_HangUI_CreateCoverWindow" />
+       <string id="string37" value="Browseui_HangUI_DisparentAndDetachBrowserTab" />
+       <string id="string38" value="Browseui_HangUI_ScriptRecoveryTimeout" />
+       <string id="string39" value="Browseui_HangUI_SetVisible" />
+       <string id="string40" value="Browseui_HangUI_ShowNotificationBar" />
+       <string id="string41" value="Browseui_HungTabHeartBeat_Timer_Invisible" />
+       <string id="string42" value="Browseui_OnPrepareVisibleComplete" />
+       <string id="string43" value="Browseui_PrepareResizeAsync" />
+       <string id="string44" value="Browseui_PrepareVisibleAsync" />
+       <string id="string45" value="Browseui_Prerender_Closing_Prerendered_Page" />
+       <string id="string46" value="Browseui_SelectTabTimerCancelled" />
+       <string id="string47" value="Browseui_SelectTabTimerCreated" />
+       <string id="string48" value="Browseui_SelectTabTimerTriggered" />
+       <string id="string49" value="Browseui_TabBand_Activity" />
+       <string id="string50" value="Browseui_Tabs_Activity_Hide" />
+       <string id="string51" value="Browseui_Tabs_Activity_Show" />
+       <string id="string52" value="Browseui_Tabs_AddTabAPI" />
+       <string id="string53" value="Browseui_Tabs_AddTabButton" />
+       <string id="string54" value="Browseui_Tabs_BrowserTabRespondsNow_TabHung" />
+       <string id="string55" value="Browseui_Tabs_CloseOtherTabs" />
+       <string id="string56" value="Browseui_Tabs_CloseTab" />
+       <string id="string57" value="Browseui_Tabs_DropOnFavorites" />
+       <string id="string58" value="Browseui_Tabs_MakeBlockingCallToTab" />
+       <string id="string59" value="Browseui_Tabs_MarkTabAsHung" />
+       <string id="string60" value="Browseui_Tabs_MarkTabAsNotHung" />
+       <string id="string61" value="Browseui_Tabs_OnNavigateComplete2" />
+       <string id="string62" value="Browseui_Tabs_ShowHungTabBar" />
+       <string id="string63" value="Browseui_Tabs_SwitchTabs" />
+       <string id="string64" value="Browseui_Tabs_TabReadyForNavigate" />
+       <string id="string65" value="Browseui_Tabs_WaitMessage" />
+       <string id="string66" value="Browseui_TabSuspension_Check_Suspendable" />
+       <string id="string67" value="Browseui_TabSuspension_Suspend" />
+       <string id="string68" value="Browseui_TabSuspension_Unuspend" />
+       <string id="string69" value="Browseui_TabWindow_SetVisible" />
+       <string id="string70" value="Browseui_VirtualTab_PostNewFrameTabCreate" />
+       <string id="string71" value="Browseui_VirtualTab_PreNewFrameTabCreate" />
+       <string id="string72" value="CAsyncStorage_WorkPending" />
+       <string id="string73" value="CFaviconHolder_UpdateReal" />
+       <string id="string74" value="CompressThumbnail" />
+       <string id="string75" value="controlpanel" />
+       <string id="string76" value="Courier_FunctionalTest" />
+       <string id="string77" value="CReadingModeContentProvider" />
+       <string id="string78" value="CreateHTMLPreview" />
+       <string id="string79" value="CreateHTMLPreview_ShowWindow" />
+       <string id="string80" value="CreateThumbnail" />
+       <string id="string81" value="CtrlLeftButtonAction" />
+       <string id="string82" value="DataModel_Provider_CreateDataList" />
+       <string id="string83" value="DataModel_Provider_Query" />
+       <string id="string84" value="DataModel_Provider_WorkerThread" />
+       <string id="string85" value="DataModel_Query" />
+       <string id="string86" value="DataModel_QueryEntry" />
+       <string id="string87" value="Device_Info_Util" />
+       <string id="string88" value="DIC" />
+       <string id="string89" value="DLM_DownloadBar_Close" />
+       <string id="string90" value="DLM_DownloadBar_Show" />
+       <string id="string91" value="DLM_DownloadWindow_Hide" />
+       <string id="string92" value="DLM_DownloadWindow_Show" />
+       <string id="string93" value="DLM_Resume_Time" />
+       <string id="string94" value="DLM_Security_AntiVirus" />
+       <string id="string95" value="DLM_Security_AppRep" />
+       <string id="string96" value="DLM_Security_Hash" />
+       <string id="string97" value="DLM_Security_Malware" />
+       <string id="string98" value="DLM_Security_WVT" />
+       <string id="string99" value="DominantImageClassifier" />
+       <string id="string100" value="DownloadWindow" />
+       <string id="string101" value="DownloadWindow_Item_Added" />
+       <string id="string102" value="DownloadWindow_Items_Removed" />
+       <string id="string103" value="EmptyTab_Closing" />
+       <string id="string104" value="EmptyTab_Conversion_Begin" />
+       <string id="string105" value="EmptyTab_Conversion_Cancel" />
+       <string id="string106" value="EmptyTab_Conversion_CleanUpBrowserTab_Begin" />
+       <string id="string107" value="EmptyTab_Conversion_CleanUpBrowserTab_Failed" />
+       <string id="string108" value="EmptyTab_Conversion_CleanupRecoveryData_Begin" />
+       <string id="string109" value="EmptyTab_Conversion_CleanupRecoveryData_Failed" />
+       <string id="string110" value="EmptyTab_Conversion_FinalNavigation_Begin" />
+       <string id="string111" value="EmptyTab_Conversion_FinalNavigation_Failed" />
+       <string id="string112" value="EmptyTab_Conversion_Succeeded" />
+       <string id="string113" value="EmptyTab_CreateNewTab" />
+       <string id="string114" value="EmptyTab_Reuse" />
+       <string id="string115" value="EmptyTab_Reuse_ReinitializeBrowserTab_Begin" />
+       <string id="string116" value="EmptyTab_Reuse_ReinitializeBrowserTab_Failed" />
+       <string id="string117" value="EmptyTab_Reuse_ReuseTabThread_Failed" />
+       <string id="string118" value="EmptyTab_Timer_Cancel" />
+       <string id="string119" value="EmptyTab_Timer_Start" />
+       <string id="string120" value="EmptyTab_Timer_Timeout" />
+       <string id="string121" value="EnumHistoryRecords" />
+       <string id="string122" value="extended" />
+       <string id="string123" value="ExtensionCloseDW" />
+       <string id="string124" value="ExtensionCreate" />
+       <string id="string125" value="ExtensionRelease" />
+       <string id="string126" value="ExtensionSetSite" />
+       <string id="string127" value="ExtensionSetSiteNull" />
+       <string id="string128" value="ExtensionShowDW" />
+       <string id="string129" value="favicon" />
+       <string id="string130" value="FavoritesBar_PopulateFeedsMenu" />
+       <string id="string131" value="FavoritesBar_PopulateLinksMonitor" />
+       <string id="string132" value="FavoritesBar_WriteLinksCache" />
+       <string id="string133" value="Find_ActivateBar" />
+       <string id="string134" value="Find_ChangeSelectedHit" />
+       <string id="string135" value="Find_DeactivateBar" />
+       <string id="string136" value="Find_FindFirstHit" />
+       <string id="string137" value="Find_FindHits" />
+       <string id="string138" value="Find_HighlightHits" />
+       <string id="string139" value="Find_HighlightHitsStatus" />
+       <string id="string140" value="Find_MatchAndHighlightHits" />
+       <string id="string141" value="FindBar_TermChange" />
+       <string id="string142" value="FirstRunDialog_Show" />
+       <string id="string143" value="Frame_AddFirstTab" />
+       <string id="string144" value="Frame_AddressBandCreate" />
+       <string id="string145" value="Frame_CommandBandCreate" />
+       <string id="string146" value="Frame_CommandBarCreate" />
+       <string id="string147" value="Frame_ControlBandCreate" />
+       <string id="string148" value="Frame_LinksBandCreate" />
+       <string id="string149" value="Frame_LoadFrameState" />
+       <string id="string150" value="Frame_MinIETabBandCreate" />
+       <string id="string151" value="Frame_NavBarCreate" />
+       <string id="string152" value="Frame_OnCreate" />
+       <string id="string153" value="Frame_SearchBandCreate" />
+       <string id="string154" value="Frame_Show" />
+       <string id="string155" value="Frame_TabBandMove" />
+       <string id="string156" value="Frame_TravelBandCreate" />
+       <string id="string157" value="Frame_URLEntered" />
+       <string id="string158" value="GenerateThumbnail" />
+       <string id="string159" value="GetHalfTabData" />
+       <string id="string160" value="hang" />
+       <string id="string161" value="History_Journal_Write_Command" />
+       <string id="string162" value="HistoryBrokerShutdown" />
+       <string id="string163" value="HistoryBrokerStartup" />
+       <string id="string164" value="HistoryJournal" />
+       <string id="string165" value="HUX" />
+       <string id="string166" value="IdleManager_AddIdleTask" />
+       <string id="string167" value="IdleManager_AddRunningTask" />
+       <string id="string168" value="IdleManager_RemoveExpiredRunningTask" />
+       <string id="string169" value="IdleManager_RemoveTask" />
+       <string id="string170" value="IdleManager_RunExpiredIdleTask" />
+       <string id="string171" value="IdleManager_RunNextIdleTask" />
+       <string id="string172" value="IdleManager_TaskCount" />
+       <string id="string173" value="IdleTask_Execution_Time" />
+       <string id="string174" value="IE_API_Timer" />
+       <string id="string175" value="IE_Wer_Report_Hang" />
+       <string id="string176" value="imagestore" />
+       <string id="string177" value="ImageStore_Activity_ImageTotal" />
+       <string id="string178" value="ImageStore_Activity_SingleImage" />
+       <string id="string179" value="Imaging_CreateWebPagePreview" />
+       <string id="string180" value="Imaging_SendIconicLivePreviewBitmap" />
+       <string id="string181" value="Imaging_SendIconicThumbnail" />
+       <string id="string182" value="IMDownloadWindow_ActionBar_Animation" />
+       <string id="string183" value="immersive" />
+       <string id="string184" value="Immersive_Travellog_BeforeUnload_Fired" />
+       <string id="string185" value="Immersive_Travellog_NavigationComplete_TimeOut" />
+       <string id="string186" value="Immersive_Travellog_NavigationStart_TimeOut" />
+       <string id="string187" value="Immersive_Travellog_PageAvailable_Fired" />
+       <string id="string188" value="Immersive_Travellog_ScrollComplete_Fired" />
+       <string id="string189" value="Immersive_Travellog_ScrollComplete_TimeOut" />
+       <string id="string190" value="IMTravelLogMVC_Info" />
+       <string id="string191" value="IMTravelLogMVC_NavigationReceived" />
+       <string id="string192" value="IMTravelLogMVC_ScreenShotInfo" />
+       <string id="string193" value="IMTravelLogMVC_StateChange" />
+       <string id="string194" value="IMTravelLogMVC_TravelURL" />
+       <string id="string195" value="IMTravelLogMVC_WaitForPageTimeout" />
+       <string id="string196" value="InputPanelHide" />
+       <string id="string197" value="InputPanelResize" />
+       <string id="string198" value="InputPanelShow" />
+       <string id="string199" value="IntelliForms_Do_AutoStuff" />
+       <string id="string200" value="IntelliForms_Evaluate_AutoStuff" />
+       <string id="string201" value="Iso_Dependencies_AddDependency" />
+       <string id="string202" value="Iso_Dependencies_RemoveDependency" />
+       <string id="string203" value="jscript" />
+       <string id="string204" value="LCIE_ForeignProcessMessageQueueDequeueAll" />
+       <string id="string205" value="LCIE_ForeignProcessMessageQueueEnqueue" />
+       <string id="string206" value="LCIEDownloader" />
+       <string id="string207" value="LCIEDownloader_CreateIsoComponent" />
+       <string id="string208" value="LeftButtonAction" />
+       <string id="string209" value="LegacyHistoryAdd" />
+       <string id="string210" value="LegacyHistoryEnum" />
+       <string id="string211" value="LegacyHistoryQuery" />
+       <string id="string212" value="Menuband_PopulateShellFolderToolbar" />
+       <string id="string213" value="Microsoft-IEFRAME" />
+       <string id="string214" value="Microsoft-IEFRAME/Diagnostic" />
+       <string id="string215" value="mshtml" />
+       <string id="string216" value="NewTabPage_SearchBox_Hide" />
+       <string id="string217" value="NewTabPage_SearchBox_Show" />
+       <string id="string218" value="NewTabPage_SearchLogo_Show" />
+       <string id="string219" value="NewTabPage_Show" />
+       <string id="string220" value="NewTabPageData_Build" />
+       <string id="string221" value="NewTabPageData_Refresh" />
+       <string id="string222" value="NewTabPageData_RoamedEntry" />
+       <string id="string223" value="notification" />
+       <string id="string224" value="NotificationBar_Animate" />
+       <string id="string225" value="NotificationBar_Flash" />
+       <string id="string226" value="NotificationBar_Hide" />
+       <string id="string227" value="NotificationBar_OverrideHide" />
+       <string id="string228" value="NotificationBar_OverrideShow" />
+       <string id="string229" value="NotificationBar_Show" />
+       <string id="string230" value="NotificationBar_Update" />
+       <string id="string231" value="NotificationManager_NotificationBarButtonClick" />
+       <string id="string232" value="NotificationManager_NotificationBarReady" />
+       <string id="string233" value="NotificationManager_SendResponse" />
+       <string id="string234" value="OnlineHistoryAdd" />
+       <string id="string235" value="OnlineHistoryClear" />
+       <string id="string236" value="OnlineHistoryCollectData" />
+       <string id="string237" value="OnlineHistoryDelete" />
+       <string id="string238" value="pageloadbreakdown" />
+       <string id="string239" value="PinnedSites_OfferedImage" />
+       <string id="string240" value="PinnedSites_OfferedImagesComplete" />
+       <string id="string241" value="primarynav" />
+       <string id="string242" value="QueryHistory" />
+       <string id="string243" value="Recovery_ReadRecoveryStore" />
+       <string id="string244" value="Recovery_WriteInitialStore" />
+       <string id="string245" value="RehydrateTab" />
+       <string id="string246" value="roaming" />
+       <string id="string247" value="rss" />
+       <string id="string248" value="ScaleThumbnail" />
+       <string id="string249" value="Search_ImageProcessing" />
+       <string id="string250" value="Search_SuggestionsDownload" />
+       <string id="string251" value="Search_SuggestionsProcessing" />
+       <string id="string252" value="sharecharm" />
+       <string id="string253" value="Shdocvw_BaseBrowser_DocumentComplete" />
+       <string id="string254" value="Shdocvw_BaseBrowser_FireEvent_BeforeNavigate" />
+       <string id="string255" value="Shdocvw_BaseBrowser_FireEvent_BeforeScriptExecute" />
+       <string id="string256" value="Shdocvw_BaseBrowser_FireEvent_DocumentComplete" />
+       <string id="string257" value="Shdocvw_BaseBrowser_FireEvent_DownloadBegin" />
+       <string id="string258" value="Shdocvw_BaseBrowser_FireEvent_DownloadComplete" />
+       <string id="string259" value="Shdocvw_BaseBrowser_FireEvent_NavigateComplete" />
+       <string id="string260" value="Shdocvw_BaseBrowser_FireEvent_NavigateError" />
+       <string id="string261" value="Shdocvw_BaseBrowser_FireEvent_NewWindow" />
+       <string id="string262" value="Shdocvw_BaseBrowser_FireEvent_NewWindow2" />
+       <string id="string263" value="Shdocvw_BaseBrowser_FireEvent_NewWindow3" />
+       <string id="string264" value="Shdocvw_BaseBrowser_FireEvent_Quit" />
+       <string id="string265" value="Shdocvw_BaseBrowser_FireEvent_WindowStateChanged" />
+       <string id="string266" value="Shdocvw_BaseBrowser_Navigate" />
+       <string id="string267" value="Shdocvw_Feed_Search" />
+       <string id="string268" value="Shdocvw_PanningTool_GetPanningProperties" />
+       <string id="string269" value="Shdocvw_PanningTool_ScrollElementBy" />
+       <string id="string270" value="Shdocvw_VirtualTab_GetIWB2" />
+       <string id="string271" value="Shdocvw_VirtualTab_GetWebOCWindow" />
+       <string id="string272" value="Shdocvw_VirtualTab_NavigateDeferredNewTab" />
+       <string id="string273" value="Shdocvw_VirtualTab_NavigateImmediateTab" />
+       <string id="string274" value="Shdocvw_VirtualTab_NavigateInWebBrowser" />
+       <string id="string275" value="Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call" />
+       <string id="string276" value="Shdocvw_VirtualTab_NavigateTabManager" />
+       <string id="string277" value="Shdocvw_VirtualTab_NavigateThreadProc" />
+       <string id="string278" value="Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call" />
+       <string id="string279" value="Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call" />
+       <string id="string280" value="Shdocvw_VirtualTab_RedirectUrlWithBindInfo" />
+       <string id="string281" value="shell" />
+       <string id="string282" value="subsystem" />
+       <string id="string283" value="Tab_BFCache_Resume" />
+       <string id="string284" value="Tab_BFCache_Suspend" />
+       <string id="string285" value="Tab_InitializeBrowserState" />
+       <string id="string286" value="Tab_NavigateToPidl" />
+       <string id="string287" value="Tab_Recover_Complete" />
+       <string id="string288" value="Tab_ShellBrowser_OnBeforeUnload" />
+       <string id="string289" value="Tab_ShellBrowser_OnUnload" />
+       <string id="string290" value="Tab_ShellBrowserOnCreate" />
+       <string id="string291" value="Tab_Terminate_Process" />
+       <string id="string292" value="tabhydration" />
+       <string id="string293" value="TabRoaming_Delete" />
+       <string id="string294" value="TabRoaming_DeleteInvalidOrExpiredTabFile" />
+       <string id="string295" value="TabRoaming_FindRoamedMachines" />
+       <string id="string296" value="TabRoaming_FindRoamedTabs" />
+       <string id="string297" value="TabRoaming_KeepTabInDirtyList" />
+       <string id="string298" value="TabRoaming_LoadRoamedMachine" />
+       <string id="string299" value="TabRoaming_LoadRoamedTab" />
+       <string id="string300" value="TabRoaming_PLMSuspendWithOutstandingTimer" />
+       <string id="string301" value="TabRoaming_ReadProcessInfo" />
+       <string id="string302" value="TabRoaming_SessionTimerFired" />
+       <string id="string303" value="TabRoaming_TabMarkedDirty" />
+       <string id="string304" value="TabRoaming_Update" />
+       <string id="string305" value="TabRoaming_WriteProcessInfo" />
+       <string id="string306" value="Terminate_Browser_Tab_Process" />
+       <string id="string307" value="TravelLogScreenshotNav" />
+       <string id="string308" value="TravelLogScreenshotNav_NewTab_GetReadyToSwitch" />
+       <string id="string309" value="TravelLogScreenshotNav_NewTab_IsNotReadyToSwitch" />
+       <string id="string310" value="TravelLogScreenshotNav_NewTab_IsReadyToSwitch" />
+       <string id="string311" value="TravelLogScreenshotNav_NewTab_NowReadyToSwitch" />
+       <string id="string312" value="TravelLogScreenshotNav_NewTab_SetAsHiddenTab" />
+       <string id="string313" value="TravelLogScreenshotNav_NewTab_ShowingAllScreenshotsOnSwitch" />
+       <string id="string314" value="TravelLogScreenshotNav_NewTab_ShowingScreenshotBeforeSwitch" />
+       <string id="string315" value="TravelLogScreenshotNav_OldTab_CancelingSwitch" />
+       <string id="string316" value="TravelLogScreenshotNav_OldTab_CannotCancelSwitch" />
+       <string id="string317" value="TravelLogScreenshotNav_OldTab_ReadyToClose" />
+       <string id="string318" value="TravelLogScreenshotNav_OldTab_WantsToCancelSwitch" />
+       <string id="string319" value="unifiedlistview" />
+       <string id="string320" value="UnifiedListView_DefaultAction" />
+       <string id="string321" value="UnifiedListView_GroupPopulated" />
+       <string id="string322" value="UnifiedListView_MultipleCharacterQuery" />
+       <string id="string323" value="UnifiedListView_Populate" />
+       <string id="string324" value="UnifiedListView_SwitchMode" />
+       <string id="string325" value="verbose" />
+       <string id="string326" value="WebStorage_Platform" />
+       <string id="string327" value="win:Info" />
+       <string id="string328" value="win:Start" />
+       <string id="string329" value="win:Stop" />
+       <string id="string330" value="Window_Maximized" />
+       <string id="string331" value="Window_Minimized" />
+       <string id="string332" value="Window_Resized" />
+       <string id="string333" value="Window_Restored" />
+       <string id="string334" value="wininet" />
+       <string id="string335" value="WinMain" />
+       <string id="string336" value="WS_ExecuteQuery" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

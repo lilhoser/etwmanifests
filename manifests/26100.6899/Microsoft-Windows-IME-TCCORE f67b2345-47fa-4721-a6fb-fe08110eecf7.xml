@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IME-TCCORE" name="Microsoft-Windows-IME-TCCORE" guid="{f67b2345-47fa-4721-a6fb-fe08110eecf7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_CandOpen" opcode="win:Start"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_CandOpen" opcode="win:Stop"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_PromptCandOpen" opcode="win:Start"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_PromptCandOpen" opcode="win:Stop"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_Conversion" opcode="win:Start"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_Conversion" opcode="win:Stop"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_Typing" opcode="win:Start"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_Typing" opcode="win:Stop"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_LM_Decoding" opcode="Decode1Start"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_LM_Decoding" opcode="Decode1End"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_LM_Decoding" opcode="LexSearchStart"/>
+        <event value="54" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_LM_Decoding" opcode="LexSearchEnd"/>
+        <event value="55" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_LM_Decoding" opcode="SearchStart"/>
+        <event value="56" version="0" level="win:Informational"  channel="Microsoft-Windows-IME-TCCORE/Analytic" task="IME_LM_Decoding" opcode="SearchEnd"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-IME-TCCORE/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="100" name="IME_CandOpen" message="$(string.string100)">
+        </task>
+        <task value="101" name="IME_PromptCandOpen" message="$(string.string101)">
+        </task>
+        <task value="102" name="IME_Conversion" message="$(string.string102)">
+        </task>
+        <task value="103" name="IME_LM_Decoding" message="$(string.string103)">
+          <opcodes>
+           <opcode value="11" name="Decode1Start" message="$(string.string1)"/>
+           <opcode value="12" name="Decode1End" message="$(string.string0)"/>
+           <opcode value="13" name="LexSearchStart" message="$(string.string8)"/>
+           <opcode value="14" name="LexSearchEnd" message="$(string.string7)"/>
+           <opcode value="15" name="SearchStart" message="$(string.string12)"/>
+           <opcode value="16" name="SearchEnd" message="$(string.string11)"/>
+          </opcodes>
+        </task>
+        <task value="104" name="IME_Typing" message="$(string.string104)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="Decode1Start" message="$(string.string1)"/>
+        <opcode value="12" name="Decode1End" message="$(string.string0)"/>
+        <opcode value="13" name="LexSearchStart" message="$(string.string8)"/>
+        <opcode value="14" name="LexSearchEnd" message="$(string.string7)"/>
+        <opcode value="15" name="SearchStart" message="$(string.string12)"/>
+        <opcode value="16" name="SearchEnd" message="$(string.string11)"/>
+      </opcodes>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Decode1End" />
+       <string id="string1" value="Decode1Start" />
+       <string id="string2" value="IME_CandOpen" />
+       <string id="string3" value="IME_Conversion" />
+       <string id="string4" value="IME_LM_Decoding" />
+       <string id="string5" value="IME_PromptCandOpen" />
+       <string id="string6" value="IME_Typing" />
+       <string id="string7" value="LexSearchEnd" />
+       <string id="string8" value="LexSearchStart" />
+       <string id="string9" value="Microsoft-Windows-IME-TCCORE" />
+       <string id="string10" value="Microsoft-Windows-IME-TCCORE/Analytic" />
+       <string id="string11" value="SearchEnd" />
+       <string id="string12" value="SearchStart" />
+       <string id="string13" value="win:Start" />
+       <string id="string14" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

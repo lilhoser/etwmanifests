@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Acpi" name="Microsoft-Windows-Kernel-Acpi" guid="{c514638f-7723-485b-bcfc-96565d735d4a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ResourceTranslation" keywords="acpi:Diagnostic" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="GpeEventHandling" keywords="acpi:Diagnostic" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="TemperatureNotification" keywords="acpi:Thermal" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="TripPointNotification" keywords="acpi:Thermal"/>
+        <event value="5" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ActiveCoolingDevicePower" keywords="acpi:Thermal" template="Args5_0"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ActiveCoolingDevicePower" keywords="acpi:Thermal" template="Args6_0"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="AmlMethodTrace" keywords="acpi:Diagnostic ms:Telemetry" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="DeviceActiveCooling" keywords="acpi:Thermal" template="Args8_0"/>
+        <event value="9" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="DevicePassiveCooling" keywords="acpi:Thermal" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="DeviceCoolingRundown" keywords="acpi:Thermal" template="Args10_0"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="TemperatureChange" keywords="acpi:Thermal" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ThermalZoneRundown" keywords="acpi:Thermal" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="FanRundown" keywords="acpi:Thermal" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="FanPowerStateChange" keywords="acpi:Thermal"/>
+        <event value="15" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="FanStatusChange" keywords="acpi:Thermal"/>
+        <event value="16" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ActiveCoolingConstraint" keywords="acpi:Thermal" template="Args16_0"/>
+        <event value="17" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ActiveCoolingConstraintRundown" keywords="acpi:Thermal"/>
+        <event value="18" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PassiveCoolingConstraint" keywords="acpi:Thermal" template="Args18_0"/>
+        <event value="19" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PassiveCoolingConstraintRundown" keywords="acpi:Thermal"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="DeviceReset" keywords="acpi:Diagnostic ms:Telemetry" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="AcpiOverride" keywords="acpi:Diagnostic ms:Telemetry" template="Args21_0"/>
+        <event value="22" version="0" level="win:Error"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="AMLIError" keywords="acpi:Diagnostic" template="Args22_0"/>
+        <event value="23" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="FrequentAmlMethod" keywords="acpi:Diagnostic" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ButtonNotification" keywords="acpi:Diagnostic" template="Args24_0"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ButtonIrpCompletion" keywords="acpi:Diagnostic" template="Args25_0"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccSubspaceRundown" keywords="acpi:PCC" template="Args26_0"/>
+        <event value="27" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccEjectSubspace" keywords="acpi:PCC" template="Args27_0"/>
+        <event value="28" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccAcquireSubspace" keywords="acpi:PCC" template="Args28_0"/>
+        <event value="29" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccReleaseSubspace" keywords="acpi:PCC"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccExecuteCommand" keywords="acpi:PCC" template="Args30_0"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccCommandComplete" keywords="acpi:PCC" template="Args31_0"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccCommandTimeout" keywords="acpi:PCC" template="Args32_0"/>
+        <event value="33" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="PccPlatformInterrupt" keywords="acpi:PCC"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="S4DsmEvaluationFailed" keywords="acpi:Diagnostic"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="MsStateNotification" keywords="acpi:Diagnostic acpi:Thermal" template="Args35_0"/>
+        <event value="12" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ThermalZoneRundown" keywords="acpi:Thermal" template="Args12_1"/>
+        <event value="13" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="FanRundown" keywords="acpi:Thermal" template="Args13_1"/>
+        <event value="15" version="1" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="FanStatusChange" keywords="acpi:Thermal"/>
+        <event value="12" version="2" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ThermalZoneRundown" keywords="acpi:Thermal" template="Args12_2"/>
+        <event value="12" version="3" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ThermalZoneRundown" keywords="acpi:Thermal" template="Args12_3"/>
+        <event value="12" version="4" level="win:Informational"  channel="Microsoft-Windows-Kernel-Acpi/Diagnostic" task="ThermalZoneRundown" keywords="acpi:Thermal" template="Args12_4"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-Acpi/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="acpi:Diagnostic" mask="0x1" message="$(string.string0)" />
+        <keyword name="acpi:Thermal" mask="0x2" message="$(string.string2)" />
+        <keyword name="acpi:PCC" mask="0x4" message="$(string.string1)" />
+        <keyword name="ms:ReservedKeyword40" mask="0x100000000000" message="$(string.string24)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string25)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string23)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string22)" />
+      </keywords>
+      <tasks>
+        <task value="100" name="ResourceTranslation" message="$(string.string100)">
+        </task>
+        <task value="101" name="GpeEventHandling" message="$(string.string101)">
+        </task>
+        <task value="102" name="TemperatureNotification" message="$(string.string102)">
+        </task>
+        <task value="103" name="TripPointNotification" message="$(string.string103)">
+        </task>
+        <task value="104" name="ActiveCoolingDevicePower" message="$(string.string104)">
+        </task>
+        <task value="105" name="AmlMethodTrace" message="$(string.string105)">
+        </task>
+        <task value="106" name="DeviceActiveCooling" message="$(string.string106)">
+        </task>
+        <task value="107" name="DevicePassiveCooling" message="$(string.string107)">
+        </task>
+        <task value="108" name="DeviceCoolingRundown" message="$(string.string108)">
+        </task>
+        <task value="109" name="TemperatureChange" message="$(string.string109)">
+        </task>
+        <task value="110" name="ThermalZoneRundown" message="$(string.string110)">
+        </task>
+        <task value="111" name="FanRundown" message="$(string.string111)">
+        </task>
+        <task value="112" name="FanPowerStateChange" message="$(string.string112)">
+        </task>
+        <task value="113" name="FanStatusChange" message="$(string.string113)">
+        </task>
+        <task value="114" name="ActiveCoolingConstraint" message="$(string.string114)">
+        </task>
+        <task value="115" name="ActiveCoolingConstraintRundown" message="$(string.string115)">
+        </task>
+        <task value="116" name="PassiveCoolingConstraint" message="$(string.string116)">
+        </task>
+        <task value="117" name="PassiveCoolingConstraintRundown" message="$(string.string117)">
+        </task>
+        <task value="118" name="DeviceReset" message="$(string.string118)">
+        </task>
+        <task value="119" name="AcpiOverride" message="$(string.string119)">
+        </task>
+        <task value="120" name="AMLIError" message="$(string.string120)">
+        </task>
+        <task value="121" name="FrequentAmlMethod" message="$(string.string121)">
+        </task>
+        <task value="122" name="ButtonNotification" message="$(string.string122)">
+        </task>
+        <task value="123" name="ButtonIrpCompletion" message="$(string.string123)">
+        </task>
+        <task value="124" name="PccSubspaceRundown" message="$(string.string124)">
+        </task>
+        <task value="125" name="PccEjectSubspace" message="$(string.string125)">
+        </task>
+        <task value="126" name="PccAcquireSubspace" message="$(string.string126)">
+        </task>
+        <task value="127" name="PccReleaseSubspace" message="$(string.string127)">
+        </task>
+        <task value="128" name="PccExecuteCommand" message="$(string.string128)">
+        </task>
+        <task value="129" name="PccCommandComplete" message="$(string.string129)">
+        </task>
+        <task value="130" name="PccCommandTimeout" message="$(string.string130)">
+        </task>
+        <task value="131" name="PccPlatformInterrupt" message="$(string.string131)">
+        </task>
+        <task value="132" name="S4DsmEvaluationFailed" message="$(string.string132)">
+        </task>
+        <task value="133" name="MsStateNotification" message="$(string.string133)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="ResourceFlag" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="GeneralFlag" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TypeSpecificFlag" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Granularity" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AddressMin" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AddressMax" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AddressTranslation" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AddressLength" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="GpeRegister" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="UnexpectedEventMap" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength" />
+          <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength" />
+          <data name="ActiveCoolingLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveCoolingDeviceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FanDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FanDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="FanDeviceInstanceLength" />
+          <data name="PowerStateLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PowerState" inType="win:UnicodeString" outType="xs:string" length="PowerStateLength" />
+        </template>
+        <template tid="Args6_0">
+          <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength" />
+          <data name="ActiveCoolingLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveCoolingDeviceIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FanDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FanDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="FanDeviceInstanceLength" />
+          <data name="PowerState" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="AmlMethodNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AmlMethodName" inType="win:UnicodeString" outType="xs:string" length="AmlMethodNameLength" />
+          <data name="AmlMethodState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AmlElapsedTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="DeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceInstance" inType="win:UnicodeString" outType="xs:string" length="DeviceInstanceLength" />
+          <data name="PowerState" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="DeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceInstance" inType="win:UnicodeString" outType="xs:string" length="DeviceInstanceLength" />
+          <data name="Throttle" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="DeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceInstance" inType="win:UnicodeString" outType="xs:string" length="DeviceInstanceLength" />
+          <data name="PowerState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Throttle" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength" />
+          <data name="Temperature" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="ThermalZoneBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneBiosName" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneBiosNameLength" />
+          <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TSP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_NTT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSLCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TZDCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL0Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL1Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL2Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL3Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL4Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL5Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL6Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL7Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL8Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL9Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="FanBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FanBiosName" inType="win:UnicodeString" outType="xs:string" length="FanBiosNameLength" />
+          <data name="FstSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PowerState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Control" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength" />
+          <data name="DeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceInstance" inType="win:UnicodeString" outType="xs:string" length="DeviceInstanceLength" />
+          <data name="PowerState" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength" />
+          <data name="DeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceInstance" inType="win:UnicodeString" outType="xs:string" length="DeviceInstanceLength" />
+          <data name="ThrottleLimit" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="DeviceBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceBiosName" inType="win:UnicodeString" outType="xs:string" length="DeviceBiosNameLength" />
+          <data name="DeviceResetType" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="AcpiOverrideType" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="Scope" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Object" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="AmlMethodNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AmlMethodName" inType="win:UnicodeString" outType="xs:string" length="AmlMethodNameLength" />
+          <data name="Frequency" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args24_0">
+          <data name="ButtonDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ButtonDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ButtonDeviceInstanceLength" />
+          <data name="Capabilities" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="EventMask" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="ButtonDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ButtonDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ButtonDeviceInstanceLength" />
+          <data name="EventMask" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Irp" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="Type34SupportEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SubspaceId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="State" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="InterruptSupported" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="InterruptFlags" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="GSIV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AdvertisedNominalLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPeriodicAccessRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinRequestTurnaroundTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InitFailure" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EjectFailure" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WDTimeoutCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WDTimerAttributes" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="SharedRegionPhysicalAddress" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SharedRegionLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RegisterCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args27_0">
+          <data name="SubspaceId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Result" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="EjectFailure" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InitFailure" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args28_0">
+          <data name="SubspaceId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PrevState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NewState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SyncAcquire" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="SubspaceId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Command" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PrevState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NewState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DelayTimeInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Result" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args31_0">
+          <data name="SubspaceId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Command" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CommandInProgress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrevState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NewState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Error" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Result" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args32_0">
+          <data name="SubspaceId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AccumulatedFailureCount" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="Promoted" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NextState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_1">
+          <data name="ThermalZoneBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneBiosName" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneBiosNameLength" />
+          <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TSP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_NTT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSLCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TZDCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL0Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL1Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL2Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL3Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL4Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL5Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL6Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL7Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL8Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL9Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumThrottle" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_1">
+          <data name="FanBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FanBiosName" inType="win:UnicodeString" outType="xs:string" length="FanBiosNameLength" />
+          <data name="FstSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PowerState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Control" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_2">
+          <data name="ThermalZoneBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneBiosName" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneBiosNameLength" />
+          <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TSP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_NTT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSLCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TZDCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL0Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL1Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL2Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL3Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL4Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL5Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL6Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL7Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL8Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL9Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumThrottle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CR3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TFP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OverThrottleThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_3">
+          <data name="ThermalZoneBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneBiosName" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneBiosNameLength" />
+          <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TSP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_NTT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSLCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TZDCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL0Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL1Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL2Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL3Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL4Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL5Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL6Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL7Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL8Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL9Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumThrottle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CR3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TFP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OverThrottleThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string" length="DescriptionLength" />
+        </template>
+        <template tid="Args12_4">
+          <data name="ThermalZoneBiosNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ThermalZoneBiosName" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneBiosNameLength" />
+          <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TSP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_NTT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_PSLCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TZDCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL0Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL1Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL2Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL3Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL4Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL5Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL6Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL7Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL8Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_AL9Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumThrottle" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_CR3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="_TFP" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OverThrottleThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DescriptionLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string" length="DescriptionLength" />
+          <data name="_TZP" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="acpi:Diagnostic" />
+       <string id="string1" value="acpi:PCC" />
+       <string id="string2" value="acpi:Thermal" />
+       <string id="string3" value="AcpiOverride" />
+       <string id="string4" value="ActiveCoolingConstraint" />
+       <string id="string5" value="ActiveCoolingConstraintRundown" />
+       <string id="string6" value="ActiveCoolingDevicePower" />
+       <string id="string7" value="AMLIError" />
+       <string id="string8" value="AmlMethodTrace" />
+       <string id="string9" value="ButtonIrpCompletion" />
+       <string id="string10" value="ButtonNotification" />
+       <string id="string11" value="DeviceActiveCooling" />
+       <string id="string12" value="DeviceCoolingRundown" />
+       <string id="string13" value="DevicePassiveCooling" />
+       <string id="string14" value="DeviceReset" />
+       <string id="string15" value="FanPowerStateChange" />
+       <string id="string16" value="FanRundown" />
+       <string id="string17" value="FanStatusChange" />
+       <string id="string18" value="FrequentAmlMethod" />
+       <string id="string19" value="GpeEventHandling" />
+       <string id="string20" value="Microsoft-Windows-Kernel-Acpi" />
+       <string id="string21" value="Microsoft-Windows-Kernel-Acpi/Diagnostic" />
+       <string id="string22" value="ms:CriticalData" />
+       <string id="string23" value="ms:Measures" />
+       <string id="string24" value="ms:ReservedKeyword40" />
+       <string id="string25" value="ms:Telemetry" />
+       <string id="string26" value="MsStateNotification" />
+       <string id="string27" value="PassiveCoolingConstraint" />
+       <string id="string28" value="PassiveCoolingConstraintRundown" />
+       <string id="string29" value="PccAcquireSubspace" />
+       <string id="string30" value="PccCommandComplete" />
+       <string id="string31" value="PccCommandTimeout" />
+       <string id="string32" value="PccEjectSubspace" />
+       <string id="string33" value="PccExecuteCommand" />
+       <string id="string34" value="PccPlatformInterrupt" />
+       <string id="string35" value="PccReleaseSubspace" />
+       <string id="string36" value="PccSubspaceRundown" />
+       <string id="string37" value="ResourceTranslation" />
+       <string id="string38" value="S4DsmEvaluationFailed" />
+       <string id="string39" value="TemperatureChange" />
+       <string id="string40" value="TemperatureNotification" />
+       <string id="string41" value="ThermalZoneRundown" />
+       <string id="string42" value="TripPointNotification" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

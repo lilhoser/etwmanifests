@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MPS-DRV" name="Microsoft-Windows-MPS-DRV" guid="{50bd1bfd-936b-4db3-86be-e25b96c25898}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-DRV/Diagnostic" task="StartDriver" opcode="win:Start" keywords="Driver"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-DRV/Diagnostic" task="StartDriver" opcode="win:Stop" keywords="Driver"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-DRV/Diagnostic" task="StopDriver" opcode="win:Start" keywords="Driver"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-DRV/Diagnostic" task="StopDriver" opcode="win:Stop" keywords="Driver"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-MPS-DRV/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Driver" mask="0x20000" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="StartDriver" message="$(string.string1)">
+        </task>
+        <task value="3" name="StopDriver" message="$(string.string3)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Driver" />
+       <string id="string1" value="Microsoft-Windows-MPS-DRV" />
+       <string id="string2" value="Microsoft-Windows-MPS-DRV/Diagnostic" />
+       <string id="string3" value="StartDriver" />
+       <string id="string4" value="StopDriver" />
+       <string id="string5" value="win:Start" />
+       <string id="string6" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

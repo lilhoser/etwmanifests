@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Direct3D11" name="Microsoft-Windows-Direct3D11" guid="{db6f6ddb-ac77-4e88-8253-819df9bbf140}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Name" opcode="win:Info" keywords="Names" template="Args1_0"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Name" opcode="win:DC_Start" keywords="Names" template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Device" opcode="win:Start" keywords="Devices" template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Device" opcode="win:Stop" keywords="Devices"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Device" opcode="win:DC_Start" keywords="Devices"/>
+        <event value="6" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Buffer" opcode="win:Start" keywords="Resources" template="Args6_0"/>
+        <event value="7" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Buffer" opcode="win:Stop" keywords="Resources"/>
+        <event value="8" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Buffer" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="9" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture1D" opcode="win:Start" keywords="Resources"/>
+        <event value="10" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture1D" opcode="win:Stop" keywords="Resources"/>
+        <event value="11" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture1D" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="12" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture2D" opcode="win:Start" keywords="Resources"/>
+        <event value="13" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture2D" opcode="win:Stop" keywords="Resources"/>
+        <event value="14" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture2D" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="15" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture3D" opcode="win:Start" keywords="Resources"/>
+        <event value="16" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture3D" opcode="win:Stop" keywords="Resources"/>
+        <event value="17" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture3D" opcode="win:DC_Start" keywords="Resources"/>
+        <event value="18" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Texture2D" opcode="win:Info" keywords="Resources" template="Args18_0"/>
+        <event value="19" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Device" opcode="win:Info" keywords="Devices" template="Args19_0"/>
+        <event value="20" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="D3D11CoreCreateDevice" opcode="win:Start" keywords="Devices"/>
+        <event value="21" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="D3D11CoreCreateDevice" opcode="win:Stop" keywords="Devices"/>
+        <event value="22" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="KMDDeviceCreate" opcode="win:Start" keywords="Devices"/>
+        <event value="23" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="KMDDeviceCreate" opcode="win:Stop" keywords="Devices"/>
+        <event value="24" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="UMDDeviceCreate" opcode="win:Start" keywords="Devices"/>
+        <event value="25" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="UMDDeviceCreate" opcode="win:Stop" keywords="Devices"/>
+        <event value="26" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="D3DSupplemental" opcode="win:Info" template="Args26_0"/>
+        <event value="27" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="QueryInterface" opcode="win:Info" template="Args27_0"/>
+        <event value="28" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="AddRef" opcode="win:Info" template="Args28_0"/>
+        <event value="29" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="Release" opcode="win:Info"/>
+        <event value="30" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="Destruction" opcode="win:Info"/>
+        <event value="31" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="UMD10CreateDevice" opcode="win:Start" keywords="Devices"/>
+        <event value="32" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="UMD10CreateDevice" opcode="win:Stop" keywords="Devices"/>
+        <event value="33" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="UMDOpenAdapter" opcode="win:Start" keywords="Devices"/>
+        <event value="34" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/PerfTiming" task="UMDOpenAdapter" opcode="win:Stop" keywords="Devices"/>
+        <event value="35" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Context" opcode="win:Start" keywords="Contexts" template="Args35_0"/>
+        <event value="36" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Context" opcode="win:Stop" keywords="Contexts"/>
+        <event value="37" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Context" opcode="win:DC_Start" keywords="Contexts"/>
+        <event value="38" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="Marker" opcode="win:Info" keywords="Markers" template="Args38_0"/>
+        <event value="39" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="RuntimeMarker" opcode="win:Info" template="Args39_0"/>
+        <event value="40" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="RuntimeDroppedCall" opcode="win:Info" template="Args40_0"/>
+        <event value="41" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="RuntimeMarker" opcode="win:Info" template="Args41_0"/>
+        <event value="42" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="CommandList" opcode="win:Start" keywords="CommandLists" template="Args42_0"/>
+        <event value="43" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="CommandList" opcode="win:Stop" keywords="CommandLists"/>
+        <event value="44" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="CommandList" opcode="win:DC_Start" keywords="CommandLists"/>
+        <event value="45" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="CustomDriverMarker" opcode="win:Info" keywords="DriverCustomMarkers" template="Args45_0"/>
+        <event value="46" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="CustomDriverMarker" opcode="win:Info" keywords="DriverCustomMarkers" template="Args46_0"/>
+        <event value="1714" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="IDXGIDevice2_OfferResources" opcode="win:Start" template="Args1714_0"/>
+        <event value="1715" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="IDXGIDevice2_OfferResources" opcode="win:Stop"/>
+        <event value="1716" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="IDXGIDevice2_ReclaimResources" opcode="win:Start" template="Args1716_0"/>
+        <event value="1717" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="IDXGIDevice2_ReclaimResources" opcode="win:Stop" template="Args1717_0"/>
+        <event value="1720" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_CreateVideoProcessor" opcode="win:Start" template="Args1720_0"/>
+        <event value="1721" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_CreateVideoProcessor" opcode="win:Stop" template="Args1721_0"/>
+        <event value="1722" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_CreateVideoDecoder" opcode="win:Start" template="Args1722_0"/>
+        <event value="1723" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_CreateVideoDecoder" opcode="win:Stop" template="Args1723_0"/>
+        <event value="1728" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoProcessor_Release" opcode="win:Start"/>
+        <event value="1729" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoProcessor_Release" opcode="win:Stop"/>
+        <event value="1734" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDecoder_Release" opcode="win:Start"/>
+        <event value="1735" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDecoder_Release" opcode="win:Stop"/>
+        <event value="1778" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_VideoProcessorBlt" opcode="win:Start" template="Args1778_0"/>
+        <event value="1779" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_VideoProcessorBlt" opcode="win:Stop"/>
+        <event value="1780" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_GetDecoderBuffer" opcode="win:Start" template="Args1780_0"/>
+        <event value="1781" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_GetDecoderBuffer" opcode="win:Stop" template="Args1781_0"/>
+        <event value="1784" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_DecoderBeginFrame" opcode="win:Start" template="Args1784_0"/>
+        <event value="1785" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_DecoderBeginFrame" opcode="win:Stop"/>
+        <event value="1786" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_DecoderEndFrame" opcode="win:Start"/>
+        <event value="1787" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_DecoderEndFrame" opcode="win:Stop"/>
+        <event value="1788" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_SubmitDecoderBuffers" opcode="win:Start" template="Args1788_0"/>
+        <event value="1789" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_SubmitDecoderBuffers" opcode="win:Stop"/>
+        <event value="1804" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="IDXGIDevice3_Trim" opcode="win:Start" keywords="Devices" template="Args1804_0"/>
+        <event value="1805" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Analytic" task="IDXGIDevice3_Trim" opcode="win:Stop" keywords="Devices"/>
+        <event value="1806" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_CreateCryptoSession" opcode="win:Start" template="Args1806_0"/>
+        <event value="1807" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_CreateCryptoSession" opcode="win:Stop" template="Args1807_0"/>
+        <event value="1808" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_NegotiateCryptoSessionKeyExchange" opcode="win:Start" template="Args1808_0"/>
+        <event value="1809" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_NegotiateCryptoSessionKeyExchange" opcode="win:Stop"/>
+        <event value="1810" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_VideoProcessorGetBehaviorHints" opcode="win:Start" template="Args1810_0"/>
+        <event value="1811" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_VideoProcessorGetBehaviorHints" opcode="win:Stop" template="Args1811_0"/>
+        <event value="1812" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="CryptoSessionTeardownCount" opcode="win:Info" template="Args1812_0"/>
+        <event value="1813" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="RecoverTeardown" opcode="win:Info" template="Args1813_0"/>
+        <event value="1814" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_VideoProcessorBltParameters" opcode="win:Info" template="Args1814_0"/>
+        <event value="1815" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_DestroyCryptoSession" opcode="win:Start"/>
+        <event value="1816" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_DestroyCryptoSession" opcode="win:Stop"/>
+        <event value="1817" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_GetDataForNewHardwareKey" opcode="win:Info" template="Args1817_0"/>
+        <event value="1818" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_SubmitDecoderBuffers1" opcode="win:Start"/>
+        <event value="1819" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoContext_SubmitDecoderBuffers1" opcode="win:Stop"/>
+        <event value="1820" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="JournalEntry" opcode="win:Info" keywords="Devices JournalEntries" template="Args1820_0"/>
+        <event value="1821" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="IDXGIResource_CreateSharedHandle" opcode="win:Info" keywords="Resources" template="Args1821_0"/>
+        <event value="1822" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT" opcode="win:Start"/>
+        <event value="1823" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT" opcode="win:Stop"/>
+        <event value="1824" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11TrackedWorkload_Processed" opcode="win:Info" template="Args1824_0"/>
+        <event value="1825" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="ID3D11TrackedWorkload_Completed" opcode="win:Info" template="Args1825_0"/>
+        <event value="1826" version="0" level="Log Always"  channel="Microsoft-Windows-Direct3D11/Logging" task="CheckPresentDurationSupport" opcode="win:Info" keywords="Devices" template="Args1826_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Direct3D11/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Direct3D11/Logging" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Direct3D11/PerfTiming" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Names" mask="0x1" message="$(string.string48)" />
+        <keyword name="Devices" mask="0x2" message="$(string.string13)" />
+        <keyword name="Resources" mask="0x4" message="$(string.string53)" />
+        <keyword name="Timing" mask="0x8" message="$(string.string59)" />
+        <keyword name="Contexts" mask="0x10" message="$(string.string6)" />
+        <keyword name="CommandLists" mask="0x20" message="$(string.string4)" />
+        <keyword name="Markers" mask="0x100" message="$(string.string42)" />
+        <keyword name="RenderOperationMarkers" mask="0x200" message="$(string.string52)" />
+        <keyword name="DriverCustomMarkers" mask="0x400" message="$(string.string14)" />
+        <keyword name="JournalEntries" mask="0x800" message="$(string.string38)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Name" message="$(string.string1)">
+        </task>
+        <task value="2" name="Device" message="$(string.string2)">
+        </task>
+        <task value="4" name="Buffer" message="$(string.string4)">
+        </task>
+        <task value="5" name="Texture1D" message="$(string.string5)">
+        </task>
+        <task value="6" name="Texture2D" message="$(string.string6)">
+        </task>
+        <task value="7" name="Texture3D" message="$(string.string7)">
+        </task>
+        <task value="8" name="D3D11CoreCreateDevice" message="$(string.string8)">
+        </task>
+        <task value="9" name="KMDDeviceCreate" message="$(string.string9)">
+        </task>
+        <task value="10" name="UMDDeviceCreate" message="$(string.string10)">
+        </task>
+        <task value="11" name="D3DSupplemental" message="$(string.string11)">
+        </task>
+        <task value="12" name="QueryInterface" message="$(string.string12)">
+        </task>
+        <task value="13" name="AddRef" message="$(string.string13)">
+        </task>
+        <task value="14" name="Release" message="$(string.string14)">
+        </task>
+        <task value="15" name="Destruction" message="$(string.string15)">
+        </task>
+        <task value="16" name="UMD10CreateDevice" message="$(string.string16)">
+        </task>
+        <task value="17" name="UMDOpenAdapter" message="$(string.string17)">
+        </task>
+        <task value="18" name="Context" message="$(string.string18)">
+        </task>
+        <task value="19" name="CommandList" message="$(string.string19)">
+        </task>
+        <task value="20" name="Marker" message="$(string.string20)">
+        </task>
+        <task value="21" name="RuntimeMarker" message="$(string.string21)">
+        </task>
+        <task value="22" name="RuntimeDroppedCall" message="$(string.string22)">
+        </task>
+        <task value="23" name="CustomDriverMarker" message="$(string.string23)">
+        </task>
+        <task value="907" name="IDXGIDevice2_OfferResources" message="$(string.string907)">
+        </task>
+        <task value="908" name="IDXGIDevice2_ReclaimResources" message="$(string.string908)">
+        </task>
+        <task value="910" name="ID3D11VideoDevice_CreateVideoProcessor" message="$(string.string910)">
+        </task>
+        <task value="911" name="ID3D11VideoDevice_CreateVideoDecoder" message="$(string.string911)">
+        </task>
+        <task value="914" name="ID3D11VideoProcessor_Release" message="$(string.string914)">
+        </task>
+        <task value="917" name="ID3D11VideoDecoder_Release" message="$(string.string917)">
+        </task>
+        <task value="939" name="ID3D11VideoContext_VideoProcessorBlt" message="$(string.string939)">
+        </task>
+        <task value="940" name="ID3D11VideoContext_GetDecoderBuffer" message="$(string.string940)">
+        </task>
+        <task value="942" name="ID3D11VideoContext_DecoderBeginFrame" message="$(string.string942)">
+        </task>
+        <task value="943" name="ID3D11VideoContext_DecoderEndFrame" message="$(string.string943)">
+        </task>
+        <task value="944" name="ID3D11VideoContext_SubmitDecoderBuffers" message="$(string.string944)">
+        </task>
+        <task value="945" name="ID3D11VideoContext_SubmitDecoderBuffers1" message="$(string.string945)">
+        </task>
+        <task value="952" name="IDXGIDevice3_Trim" message="$(string.string952)">
+        </task>
+        <task value="953" name="ID3D11VideoDevice_CreateCryptoSession" message="$(string.string953)">
+        </task>
+        <task value="954" name="ID3D11VideoContext_NegotiateCryptoSessionKeyExchange" message="$(string.string954)">
+        </task>
+        <task value="955" name="ID3D11VideoContext_VideoProcessorGetBehaviorHints" message="$(string.string955)">
+        </task>
+        <task value="956" name="CryptoSessionTeardownCount" message="$(string.string956)">
+        </task>
+        <task value="957" name="RecoverTeardown" message="$(string.string957)">
+        </task>
+        <task value="958" name="ID3D11VideoContext_VideoProcessorBltParameters" message="$(string.string958)">
+        </task>
+        <task value="959" name="ID3D11VideoDevice_DestroyCryptoSession" message="$(string.string959)">
+        </task>
+        <task value="960" name="ID3D11VideoContext_GetDataForNewHardwareKey" message="$(string.string960)">
+        </task>
+        <task value="961" name="JournalEntry" message="$(string.string961)">
+        </task>
+        <task value="962" name="IDXGIResource_CreateSharedHandle" message="$(string.string962)">
+        </task>
+        <task value="963" name="ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT" message="$(string.string963)">
+        </task>
+        <task value="964" name="ID3D11TrackedWorkload_Processed" message="$(string.string964)">
+        </task>
+        <task value="965" name="ID3D11TrackedWorkload_Completed" message="$(string.string965)">
+        </task>
+        <task value="966" name="CheckPresentDurationSupport" message="$(string.string966)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchOldDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldDebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchOldDebugObjectName" />
+          <data name="CchNewDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewDebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchNewDebugObjectName" />
+        </template>
+        <template tid="Args2_0">
+          <data name="pObject" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CchDebugObjectName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DebugObjectName" inType="win:AnsiString" outType="xs:string" length="CchDebugObjectName" />
+        </template>
+        <template tid="Args3_0">
+          <data name="pID3D11Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pIDXGIDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pIDXGIAdapter" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CreationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FeatureLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FeatureSupport" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hKMAdapter" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMAdapter" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMAdapterVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="hKMDevice" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMDeviceVersion" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="UMDeviceFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="pID3D11Resource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pIDXGISurface" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D11Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Dimension" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Depth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MipLevels" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ArraySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleQuality" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BindFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CPUAccessFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MiscFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StructureByteStride" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hKMResource" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UMResourceMiscFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="Resources" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="SemaphoreHandle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdjustValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferSize" />
+        </template>
+        <template tid="Args27_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="riid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppvObject" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args28_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args35_0">
+          <data name="pID3D11Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D11DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ContextType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContextFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args38_0">
+          <data name="pID3D11DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="APISequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Data" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="CPUFrequency" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FirstAPISequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pID3D11DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CPUTimeHigh" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadIDs" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args40_0">
+          <data name="pID3D11DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args41_0">
+          <data name="pIDXGIDevice" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hContext" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BroadcastContexts" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MarkerLogType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RenderCBSequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FirstAPISequenceNumberHigh" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CompletedAPISequenceNumberLow0Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CompletedAPISequenceNumberLow1Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BegunAPISequenceNumberLow0Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BegunAPISequenceNumberLow1Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args42_0">
+          <data name="pID3D11DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pID3D11CommandList" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args45_0">
+          <data name="InsertionAPISequenceNumber" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="pID3D11DeviceContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hContext" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Index" inType="win:Int32" outType="xs:int"  />
+          <data name="StringIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="MarkerDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args46_0">
+          <data name="pID3D11Device" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="StringIndex" inType="win:Int32" outType="xs:int"  />
+          <data name="Description" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1714_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumResources" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Priority" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1716_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumResources" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumDiscardedResources" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1717_0">
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pDiscarded" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1720_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pEnum" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RateConversionIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppVideoProcessor" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1721_0">
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppVideoProcessor" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1722_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pVideoDesc->TID_D3D11_VIDEO_DECODER_DESC" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="pConfig->TID_D3D11_VIDEO_DECODER_CONFIG" inType="win:UInt32" outType="win:HexInt16"  />
+          <data name="ppDecoder" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1723_0">
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppDecoder" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1778_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pVideoProcessor" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pView" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OutputFrame" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StreamCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1780_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pDecoder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pBufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppBuffer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1781_0">
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pBufferSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppBuffer" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1784_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pDecoder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="View" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ContentKeySize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pContentKey" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1788_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pDecoder" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NumBuffers" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1804_0">
+          <data name="pDXGIDevice" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1806_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CryptoType" inType="win:GUID" outType="xs:GUID"  />
+          <data name="KeyExhangeType" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ppCryptoSession" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1807_0">
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ppCryptoSession" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1808_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pCryptoSession" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1810_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pVideoProcessor" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OutputWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OutputFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StreamCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1811_0">
+          <data name="BehaviorHints" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="m_Ret" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1812_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pCryptoSession" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TeardownCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1813_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TeardownCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Recover" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1814_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SourceWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SourceColorspace" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestFormat" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestColorspace" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1817_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TeardownCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1820_0">
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Code" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Message" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args1821_0">
+          <data name="hKMResource" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hUMSharedResource" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1824_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="beginIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="endIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="gpuDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1825_0">
+          <data name="pThis" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Timestamp" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args1826_0">
+          <data name="DesiredPresentDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClosestSmallerDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClosestLargerDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AddRef" />
+       <string id="string1" value="Buffer" />
+       <string id="string2" value="CheckPresentDurationSupport" />
+       <string id="string3" value="CommandList" />
+       <string id="string4" value="CommandLists" />
+       <string id="string5" value="Context" />
+       <string id="string6" value="Contexts" />
+       <string id="string7" value="CryptoSessionTeardownCount" />
+       <string id="string8" value="CustomDriverMarker" />
+       <string id="string9" value="D3D11CoreCreateDevice" />
+       <string id="string10" value="D3DSupplemental" />
+       <string id="string11" value="Destruction" />
+       <string id="string12" value="Device" />
+       <string id="string13" value="Devices" />
+       <string id="string14" value="DriverCustomMarkers" />
+       <string id="string15" value="ID3D11TrackedWorkload_Completed" />
+       <string id="string16" value="ID3D11TrackedWorkload_Processed" />
+       <string id="string17" value="ID3D11VideoContext_DecoderBeginFrame" />
+       <string id="string18" value="ID3D11VideoContext_DecoderEndFrame" />
+       <string id="string19" value="ID3D11VideoContext_GetDataForNewHardwareKey" />
+       <string id="string20" value="ID3D11VideoContext_GetDecoderBuffer" />
+       <string id="string21" value="ID3D11VideoContext_NegotiateCryptoSessionKeyExchange" />
+       <string id="string22" value="ID3D11VideoContext_SubmitDecoderBuffers" />
+       <string id="string23" value="ID3D11VideoContext_SubmitDecoderBuffers1" />
+       <string id="string24" value="ID3D11VideoContext_VideoProcessorBlt" />
+       <string id="string25" value="ID3D11VideoContext_VideoProcessorBltParameters" />
+       <string id="string26" value="ID3D11VideoContext_VideoProcessorGetBehaviorHints" />
+       <string id="string27" value="ID3D11VideoDecoder_Release" />
+       <string id="string28" value="ID3D11VideoDevice_CreateCryptoSession" />
+       <string id="string29" value="ID3D11VideoDevice_CreateVideoDecoder" />
+       <string id="string30" value="ID3D11VideoDevice_CreateVideoProcessor" />
+       <string id="string31" value="ID3D11VideoDevice_DestroyCryptoSession" />
+       <string id="string32" value="ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT" />
+       <string id="string33" value="ID3D11VideoProcessor_Release" />
+       <string id="string34" value="IDXGIDevice2_OfferResources" />
+       <string id="string35" value="IDXGIDevice2_ReclaimResources" />
+       <string id="string36" value="IDXGIDevice3_Trim" />
+       <string id="string37" value="IDXGIResource_CreateSharedHandle" />
+       <string id="string38" value="JournalEntries" />
+       <string id="string39" value="JournalEntry" />
+       <string id="string40" value="KMDDeviceCreate" />
+       <string id="string41" value="Marker" />
+       <string id="string42" value="Markers" />
+       <string id="string43" value="Microsoft-Windows-Direct3D11" />
+       <string id="string44" value="Microsoft-Windows-Direct3D11/Analytic" />
+       <string id="string45" value="Microsoft-Windows-Direct3D11/Logging" />
+       <string id="string46" value="Microsoft-Windows-Direct3D11/PerfTiming" />
+       <string id="string47" value="Name" />
+       <string id="string48" value="Names" />
+       <string id="string49" value="QueryInterface" />
+       <string id="string50" value="RecoverTeardown" />
+       <string id="string51" value="Release" />
+       <string id="string52" value="RenderOperationMarkers" />
+       <string id="string53" value="Resources" />
+       <string id="string54" value="RuntimeDroppedCall" />
+       <string id="string55" value="RuntimeMarker" />
+       <string id="string56" value="Texture1D" />
+       <string id="string57" value="Texture2D" />
+       <string id="string58" value="Texture3D" />
+       <string id="string59" value="Timing" />
+       <string id="string60" value="UMD10CreateDevice" />
+       <string id="string61" value="UMDDeviceCreate" />
+       <string id="string62" value="UMDOpenAdapter" />
+       <string id="string63" value="win:DC_Start" />
+       <string id="string64" value="win:Info" />
+       <string id="string65" value="win:Start" />
+       <string id="string66" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

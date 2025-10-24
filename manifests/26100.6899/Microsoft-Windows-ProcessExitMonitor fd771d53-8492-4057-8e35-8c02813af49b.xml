@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ProcessExitMonitor" name="Microsoft-Windows-ProcessExitMonitor" guid="{fd771d53-8492-4057-8e35-8c02813af49b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="3000" version="0" level="win:Verbose"  template="Args3000_0"/>
+        <event value="3001" version="0" level="win:Verbose"  template="Args3001_0"/>
+        <event value="3000" version="1" level="win:Informational"  channel="Application"/>
+        <event value="3001" version="1" level="win:Informational"  channel="Application"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="64" name=""/>
+      </opcodes>
+      <templates>
+        <template tid="Args3000_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExitingProcessId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args3001_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExitingProcessId" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InitiatingProcessId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="" />
+       <string id="string1" value="Application" />
+       <string id="string2" value="Microsoft-Windows-ProcessExitMonitor" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

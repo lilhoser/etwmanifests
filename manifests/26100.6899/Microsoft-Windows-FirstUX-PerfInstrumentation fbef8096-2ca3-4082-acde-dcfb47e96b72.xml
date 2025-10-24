@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-FirstUX-PerfInstrumentation" name="Microsoft-Windows-FirstUX-PerfInstrumentation" guid="{fbef8096-2ca3-4082-acde-dcfb47e96b72}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="FirstUXPerf-Analytic" task="FirstUX" opcode="win:Start"/>
+        <event value="1" version="0" level="win:Informational"  channel="FirstUXPerf-Analytic" task="FirstUX" opcode="win:Stop"/>
+        <event value="2" version="0" level="win:Informational"  channel="FirstUXPerf-Analytic" task="FirstUX" opcode="win:Start"/>
+        <event value="3" version="0" level="win:Informational"  channel="FirstUXPerf-Analytic" task="FirstUX" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="FirstUXPerf-Analytic" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="FirstUX" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="FirstUX" />
+       <string id="string1" value="FirstUXPerf-Analytic" />
+       <string id="string2" value="Microsoft-Windows-FirstUX-PerfInstrumentation" />
+       <string id="string3" value="win:Start" />
+       <string id="string4" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

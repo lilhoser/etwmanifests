@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Diagnosis-PCW" name="Microsoft-Windows-Diagnosis-PCW" guid="{aabf8b86-7936-4fa2-acb0-63127f879dbf}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args1_0"/>
+        <event value="2" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args3_0"/>
+        <event value="4" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Analytic" keywords="callouts" template="Args4_0"/>
+        <event value="5" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Analytic" keywords="callouts" template="Args5_0"/>
+        <event value="6" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Debug" keywords="notifications" template="Args6_0"/>
+        <event value="7" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Debug" keywords="notifications" template="Args7_0"/>
+        <event value="8" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Debug" keywords="notifications" template="Args8_0"/>
+        <event value="9" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Debug" keywords="notifications"/>
+        <event value="13" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Analytic" keywords="queries" template="Args13_0"/>
+        <event value="16" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args16_0"/>
+        <event value="17" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors"/>
+        <event value="18" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors"/>
+        <event value="19" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors"/>
+        <event value="20" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args20_0"/>
+        <event value="21" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args21_0"/>
+        <event value="22" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors" template="Args22_0"/>
+        <event value="23" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Operational" keywords="errors"/>
+        <event value="24" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Analytic" keywords="errors" template="Args24_0"/>
+        <event value="25" version="0" level="win:Verbose"  channel="Microsoft-Windows-Diagnosis-PCW/Debug" keywords="errors"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Diagnosis-PCW/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Diagnosis-PCW/Analytic" type="Analytic"/>
+        <channel value="18" name="Microsoft-Windows-Diagnosis-PCW/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="errors" mask="0x800" message="$(string.string1)" />
+        <keyword name="callouts" mask="0x1000" message="$(string.string0)" />
+        <keyword name="notifications" mask="0x2000" message="$(string.string6)" />
+        <keyword name="queries" mask="0x4000" message="$(string.string7)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="CounterSetGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="CounterSetGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="CallbackReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MachineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MachineNameSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="Status" inType="win:UInt32" outType="win:Win32Error"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RequestCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8_0">
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args16_0">
+          <data name="Error" inType="win:UInt32" outType="win:Win32Error"  />
+          <data name="CounterSetGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CounterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Phase" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="CounterSetNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CounterSetName" inType="win:UnicodeString" outType="xs:string" length="CounterSetNameLength" />
+        </template>
+        <template tid="Args22_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="CounterSetNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CounterSetName" inType="win:UnicodeString" outType="xs:string" length="CounterSetNameLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+        </template>
+        <template tid="Args24_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FunctionIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="callouts" />
+       <string id="string1" value="errors" />
+       <string id="string2" value="Microsoft-Windows-Diagnosis-PCW" />
+       <string id="string3" value="Microsoft-Windows-Diagnosis-PCW/Analytic" />
+       <string id="string4" value="Microsoft-Windows-Diagnosis-PCW/Debug" />
+       <string id="string5" value="Microsoft-Windows-Diagnosis-PCW/Operational" />
+       <string id="string6" value="notifications" />
+       <string id="string7" value="queries" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

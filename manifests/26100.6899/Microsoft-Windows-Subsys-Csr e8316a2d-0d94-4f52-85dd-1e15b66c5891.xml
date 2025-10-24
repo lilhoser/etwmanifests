@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Subsys-Csr" name="Microsoft-Windows-Subsys-Csr" guid="{e8316a2d-0d94-4f52-85dd-1e15b66c5891}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Subsys-Csr/Operational" task="csr:ShutdownProcesses" opcode="win:Start" keywords="csr:Diagnostics"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Subsys-Csr/Operational" task="csr:ShutdownProcesses" opcode="win:Stop" keywords="csr:Diagnostics"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Subsys-Csr/Operational" task="csr:ShutdownProcess" opcode="win:Start" keywords="csr:Diagnostics" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Subsys-Csr/Operational" task="csr:ShutdownProcess" opcode="win:Stop" keywords="csr:Diagnostics" template="Args4_0"/>
+        <event value="4" version="1" level="win:Informational"  channel="Microsoft-Windows-Subsys-Csr/Operational" task="csr:ShutdownProcess" opcode="win:Stop" keywords="csr:Diagnostics" template="Args4_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Subsys-Csr/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="csr:Diagnostics" mask="0x10000" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="csr:ShutdownProcesses" message="$(string.string1)">
+        </task>
+        <task value="3" name="csr:ShutdownProcess" message="$(string.string3)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args3_0">
+          <data name="ProcessId" inType="win:UInt32" outType="win:PID"  />
+          <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_1">
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="csr:Diagnostics" />
+       <string id="string1" value="csr:ShutdownProcess" />
+       <string id="string2" value="csr:ShutdownProcesses" />
+       <string id="string3" value="Microsoft-Windows-Subsys-Csr" />
+       <string id="string4" value="Microsoft-Windows-Subsys-Csr/Operational" />
+       <string id="string5" value="win:Start" />
+       <string id="string6" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

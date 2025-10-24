@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WinHttp-Diagnostics" name="Microsoft-Windows-WinHttp-Diagnostics" guid="{64de121b-5f08-5853-ab48-7758f2ea2dd3}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="Microsoft-Windows-WebIO-DiagInfo" opcode="win:Info" keywords="HttpDiagInfoKeyword" template="Args0_0"/>
+        <event value="0" version="1" level="win:Informational"  channel="Microsoft-Windows-WebIO-DiagInfo" opcode="win:Info" keywords="HttpDiagInfoKeyword" template="Args0_1"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WebIO-DiagInfo" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="HttpDiagInfoKeyword" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EventGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="HttpProtVersion" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Transport" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Host" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Path" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HttpMethod" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FaultReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FaultCode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParseBuffer" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args0_1">
+          <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="EventGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="HttpProtVersion" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Transport" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Host" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Path" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HttpMethod" inType="win:AnsiString" outType="xs:string"  />
+          <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FaultReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FaultCode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParseBuffer" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="HttpDiagInfoKeyword" />
+       <string id="string1" value="Microsoft-Windows-WebIO-DiagInfo" />
+       <string id="string2" value="Microsoft-Windows-WinHttp-Diagnostics" />
+       <string id="string3" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

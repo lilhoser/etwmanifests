@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MPEG2_DLNA-Encoder" name="Microsoft-Windows-MPEG2_DLNA-Encoder" guid="{86efff39-2bdd-4efd-bd0b-853d71b2a9dc}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Informational"  channel="muxencode" task="MuxTask" opcode="win:Start" template="Args0_0"/>
+        <event value="1" version="0" level="win:Informational"  channel="muxencode" task="MuxTask" opcode="win:Stop" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  channel="muxencode" task="MuxTask" opcode="win:Info" template="Args2_0"/>
+        <event value="3" version="0" level="win:Verbose"  channel="muxencode" task="MuxTask" opcode="win:Info" template="Args3_0"/>
+        <event value="4" version="0" level="win:Verbose"  channel="muxencode" task="MuxTask" opcode="win:Info" template="Args4_0"/>
+        <event value="5" version="0" level="win:Verbose"  channel="muxencode" task="MuxTask" opcode="win:Info" template="Args5_0"/>
+        <event value="6" version="0" level="win:Verbose"  channel="muxencode" task="MuxTask" opcode="win:Info"/>
+        <event value="7" version="0" level="win:Informational"  channel="muxencode" task="AudioEncodeSessionConfig" template="Args7_0"/>
+        <event value="8" version="0" level="win:Informational"  channel="muxencode" task="AudioEncodeSession" opcode="win:Start"/>
+        <event value="9" version="0" level="win:Informational"  channel="muxencode" task="AudioEncodeSession" opcode="win:Stop"/>
+        <event value="10" version="0" level="win:Verbose"  channel="muxencode" task="AudioEncodeTask" opcode="win:Start"/>
+        <event value="11" version="0" level="win:Verbose"  channel="muxencode" task="AudioEncodeTask" opcode="win:Stop"/>
+        <event value="12" version="0" level="win:Informational"  channel="muxencode" task="VideoEncodeSessionConfig" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  channel="muxencode" task="VideoEncodeSession" opcode="win:Start"/>
+        <event value="14" version="0" level="win:Informational"  channel="muxencode" task="VideoEncodeSession" opcode="win:Stop"/>
+        <event value="15" version="0" level="win:Verbose"  channel="muxencode" task="VideoEncodeTask" opcode="win:Start"/>
+        <event value="16" version="0" level="win:Verbose"  channel="muxencode" task="VideoEncodeTask" opcode="win:Stop"/>
+        <event value="17" version="0" level="win:Informational"  channel="muxencode" task="MuxSessionConfig" template="Args17_0"/>
+        <event value="18" version="0" level="win:Informational"  channel="muxencode" task="MuxSession" opcode="win:Start"/>
+        <event value="19" version="0" level="win:Informational"  channel="muxencode" task="MuxSession" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="muxencode" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="42" name="MuxTask" message="$(string.string42)">
+        </task>
+        <task value="43" name="AudioEncodeSessionConfig" message="$(string.string43)">
+        </task>
+        <task value="44" name="AudioEncodeSession" message="$(string.string44)">
+        </task>
+        <task value="45" name="AudioEncodeTask" message="$(string.string45)">
+        </task>
+        <task value="46" name="VideoEncodeSessionConfig" message="$(string.string46)">
+        </task>
+        <task value="47" name="VideoEncodeSession" message="$(string.string47)">
+        </task>
+        <task value="48" name="VideoEncodeTask" message="$(string.string48)">
+        </task>
+        <task value="49" name="MuxSessionConfig" message="$(string.string49)">
+        </task>
+        <task value="50" name="MuxSession" message="$(string.string50)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="Region" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="VideoX" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VideoY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AudioChannels" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VideoBitRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AudioBitRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SeekOffsetMs" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args1_0">
+          <data name="TotalBytesEncoded" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VideoFramesReceived" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VideoFramesEncoded" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AudioBytesReceived" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AudioFramesEncoded" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="hr" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="Timestamp" inType="win:Int64" outType="xs:long"  />
+          <data name="ID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="InputID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputTimestamp" inType="win:Int64" outType="xs:long"  />
+          <data name="TargetTimestamp" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args5_0">
+          <data name="Timestamp" inType="win:Int64" outType="xs:long"  />
+          <data name="Bytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="MaxBitRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SampleRate" inType="win:Int32" outType="xs:int"  />
+          <data name="InputFormat" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:Int32" outType="xs:int"  />
+          <data name="Progressive" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MaxBitRate" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args17_0">
+          <data name="MuxFormat" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AudioEncodeSession" />
+       <string id="string1" value="AudioEncodeSessionConfig" />
+       <string id="string2" value="AudioEncodeTask" />
+       <string id="string3" value="Microsoft-Windows-MPEG2_DLNA-Encoder" />
+       <string id="string4" value="muxencode" />
+       <string id="string5" value="MuxSession" />
+       <string id="string6" value="MuxSessionConfig" />
+       <string id="string7" value="MuxTask" />
+       <string id="string8" value="VideoEncodeSession" />
+       <string id="string9" value="VideoEncodeSessionConfig" />
+       <string id="string10" value="VideoEncodeTask" />
+       <string id="string11" value="win:Info" />
+       <string id="string12" value="win:Start" />
+       <string id="string13" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

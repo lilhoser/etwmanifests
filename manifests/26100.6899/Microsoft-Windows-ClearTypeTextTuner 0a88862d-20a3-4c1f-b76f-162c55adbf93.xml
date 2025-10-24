@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ClearTypeTextTuner" name="Microsoft-Windows-ClearTypeTextTuner" guid="{0a88862d-20a3-4c1f-b76f-162c55adbf93}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-ClearTypeTextTuner/Diagnostic" task="ClearTypeTextTuner_LaunchApp" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-ClearTypeTextTuner/Diagnostic" task="ClearTypeTextTuner_LaunchApp" opcode="win:Stop" keywords="PerfInstrumentation"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-ClearTypeTextTuner/Diagnostic" task="ClearTypeTextTuner_ApplyChanges" opcode="win:Start" keywords="PerfInstrumentation"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-ClearTypeTextTuner/Diagnostic" task="ClearTypeTextTuner_ApplyChanges" opcode="win:Stop" keywords="PerfInstrumentation"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-ClearTypeTextTuner/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="PerfInstrumentation" mask="0x10000" message="$(string.string5)" />
+        <keyword name="PerfDiagnostics" mask="0x20000" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="ClearTypeTextTuner_LaunchApp" message="$(string.string1)">
+        </task>
+        <task value="3" name="ClearTypeTextTuner_ApplyChanges" message="$(string.string3)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ClearTypeTextTuner_ApplyChanges" />
+       <string id="string1" value="ClearTypeTextTuner_LaunchApp" />
+       <string id="string2" value="Microsoft-Windows-ClearTypeTextTuner" />
+       <string id="string3" value="Microsoft-Windows-ClearTypeTextTuner/Diagnostic" />
+       <string id="string4" value="PerfDiagnostics" />
+       <string id="string5" value="PerfInstrumentation" />
+       <string id="string6" value="win:Start" />
+       <string id="string7" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

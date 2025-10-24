@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TaskScheduler" name="Microsoft-Windows-TaskScheduler" guid="{de7b24ea-73c8-4a09-985d-5bdadcfa9017}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:JobExecute" opcode="win:Start" keywords="ForcedIdleProcessing" template="Args100_0"/>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskStartFail" opcode="Launch Failure" keywords="ForcedIdleProcessing" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskCompleted" opcode="win:Stop" keywords="ForcedIdleProcessing"/>
+        <event value="103" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskFailure" opcode="Run Failure" keywords="ForcedIdleProcessing" template="Args103_0"/>
+        <event value="104" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:LogonFailure" template="Args104_0"/>
+        <event value="105" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ImpersonationFailure" template="Args105_0"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:JobRegistered" opcode="win:Info"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TimeTrigger" opcode="win:Info"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:EventTrigger" opcode="win:Info"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ImmediateTrigger" opcode="win:Info"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:Run" opcode="win:Info"/>
+        <event value="111" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskTerminated" opcode="Termination" keywords="ForcedIdleProcessing"/>
+        <event value="112" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NoStartWithoutNetwork" opcode="win:Info"/>
+        <event value="113" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:RegisteredWithoutSomeTriggers" opcode="win:Info"/>
+        <event value="114" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:MissedTaskLaunched" opcode="win:Info"/>
+        <event value="115" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TransactionRollbackFailure" opcode="win:Info"/>
+        <event value="116" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskRegisteredWithoutCreds" opcode="win:Info"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:IdleTrigger" opcode="win:Info"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:BootTrigger" opcode="win:Info"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:LogonTrigger" opcode="win:Info" template="Args119_0"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ConsoleConnectTrigger" opcode="win:Info"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ConsoleDisconnectTrigger" opcode="win:Info"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:RemoteConnectTrigger" opcode="win:Info"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:RemoteDisconnectTrigger" opcode="win:Info"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionLockTrigger" opcode="win:Info"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionUnlockTrigger" opcode="win:Info"/>
+        <event value="126" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:FailedTaskRestart" opcode="win:Info"/>
+        <event value="127" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:RejectedTaskRestart" opcode="win:Info"/>
+        <event value="128" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:IgnoredTaskRestart" opcode="win:Info"/>
+        <event value="129" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CreatedTaskProcess" opcode="win:Info" template="Args129_0"/>
+        <event value="130" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskNotRunServiceBusy" opcode="win:Info"/>
+        <event value="131" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskNotStartedTaskQuotaExceeded" opcode="win:Info" template="Args131_0"/>
+        <event value="132" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskQuotaApproaching" opcode="win:Info"/>
+        <event value="133" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskNotStartedEngineQuotaExceeded" opcode="win:Info" template="Args133_0"/>
+        <event value="134" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:EngineQuotaApproaching" opcode="win:Info"/>
+        <event value="135" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NoStartWithoutIdle" opcode="win:Info"/>
+        <event value="140" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskUpdated" opcode="win:Info"/>
+        <event value="141" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskDeleted" opcode="win:Info"/>
+        <event value="142" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskDisabled" opcode="win:Info"/>
+        <event value="145" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ComputerWakeupToStartTask" opcode="win:Info"/>
+        <event value="146" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskLoadFailed" opcode="win:Info"/>
+        <event value="147" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskImageRecoveredAfterMigration" opcode="win:Info"/>
+        <event value="148" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskImageRecoverFailedAfterMigration" opcode="win:Info" template="Args148_0"/>
+        <event value="149" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskUbpmCompatibilityIssueDetected" opcode="win:Info"/>
+        <event value="150" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskEventSubscriptionFailed" opcode="win:Info"/>
+        <event value="151" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskInstantiateFailed" opcode="win:Info" template="Args151_0"/>
+        <event value="152" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskUbpmCompatibilityIssueResolved" opcode="win:Info"/>
+        <event value="153" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:MissedTaskRejected" opcode="win:Info"/>
+        <event value="155" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:JobCompletionPending" opcode="win:Info" keywords="ForcedIdleProcessing" template="Args155_0"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:Action" opcode="win:Start" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ActionCompleted" opcode="win:Stop"/>
+        <event value="202" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ActionFailed" opcode="Run Failure" template="Args202_0"/>
+        <event value="203" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ActionFailedToStart" opcode="Launch Failure"/>
+        <event value="204" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:EventRenderFailed" opcode="win:Info"/>
+        <event value="205" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:EventAggregateFailed" opcode="win:Info"/>
+        <event value="300" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:Session" opcode="win:Start" template="Args300_0"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskEngineExit" opcode="win:Stop"/>
+        <event value="303" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskEngineError" opcode="Failure" template="Args303_0"/>
+        <event value="304" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionSentJob" opcode="win:Info" template="Args304_0"/>
+        <event value="305" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionSentJobFailed" opcode="Failure" template="Args305_0"/>
+        <event value="306" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionProcessMessage" opcode="Failure"/>
+        <event value="307" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionManagerConnectFailed" opcode="Failure"/>
+        <event value="308" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionManagerConnect" opcode="win:Info"/>
+        <event value="309" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionJobsOrphaned" opcode="win:Info" template="Args309_0"/>
+        <event value="310" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionProcessStart" opcode="win:Info" template="Args310_0"/>
+        <event value="311" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionProcessStartFailed" opcode="Launch Failure" template="Args311_0"/>
+        <event value="312" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionWin32ObjCreated" opcode="win:Info"/>
+        <event value="313" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionChannelReady" opcode="win:Info"/>
+        <event value="314" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionProcessIdle" opcode="win:Info"/>
+        <event value="315" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionProcessConnect" opcode="Failure"/>
+        <event value="316" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionMessageSend" opcode="Failure"/>
+        <event value="317" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionMain" opcode="win:Start"/>
+        <event value="318" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionMainShutdown" opcode="win:Stop"/>
+        <event value="319" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionJob" opcode="win:Start"/>
+        <event value="320" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:SessionJobReceivedStop" opcode="win:Stop"/>
+        <event value="322" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NewInstanceIgnored" opcode="win:Info"/>
+        <event value="323" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:RunningInstanceStopped" opcode="win:Info" template="Args323_0"/>
+        <event value="324" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NewInstanceQueued" opcode="win:Info" template="Args324_0"/>
+        <event value="325" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TaskInstanceQueued" opcode="win:Info"/>
+        <event value="326" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NoStartOnBatteries" opcode="win:Info"/>
+        <event value="327" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:StoppingOnBatteries" opcode="win:Info"/>
+        <event value="328" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:StoppingOffIdle" opcode="win:Info"/>
+        <event value="329" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:StoppingOnTimeout" opcode="win:Info"/>
+        <event value="330" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:StoppingOnRequest" opcode="win:Info" template="Args330_0"/>
+        <event value="331" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:TimeoutWontWork" opcode="win:Info"/>
+        <event value="332" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NoStartUserNotLogged" opcode="win:Info"/>
+        <event value="333" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NoStartOnRailSession" opcode="win:Info"/>
+        <event value="334" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:NoStartOnWorkerSession" opcode="win:Info"/>
+        <event value="400" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ServiceMain" opcode="win:Start"/>
+        <event value="401" version="0" level="win:Critical"  channel="System" task="task:ServiceStartFailed" opcode="Launch Failure"/>
+        <event value="402" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ServiceStop" opcode="win:Stop"/>
+        <event value="403" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ServiceError" opcode="Failure"/>
+        <event value="404" version="0" level="win:Warning"  channel="System" task="task:ServiceRPCInitError"/>
+        <event value="405" version="0" level="win:Critical"  channel="System" task="task:ServiceCOMInitError"/>
+        <event value="406" version="0" level="win:Critical"  channel="System" task="task:ServiceCredStoreInitFailed"/>
+        <event value="407" version="0" level="win:Critical"  channel="System" task="task:ServiceLSAInitFailed"/>
+        <event value="408" version="0" level="win:Error"  channel="System" task="task:ServiceIdleInitFailed"/>
+        <event value="409" version="0" level="win:Critical"  channel="System" task="task:ServiceTimeChangeInitFailed"/>
+        <event value="410" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ServiceSetWakeupTimerFailed"/>
+        <event value="411" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ServiceTimeChangeSignaled"/>
+        <event value="412" version="0" level="win:Error"  channel="System" task="task:ServiceError"/>
+        <event value="413" version="0" level="win:Error"  channel="System" task="task:ServiceError"/>
+        <event value="414" version="0" level="win:Warning"  channel="System" task="task:TaskMisconfigured" template="Args414_0"/>
+        <event value="500" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskRegister" opcode="win:Info" keywords="ForcedIdleProcessing" template="Args500_0"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskUnregister" opcode="win:Info" keywords="ForcedIdleProcessing"/>
+        <event value="502" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskExecute" opcode="win:Start" keywords="ForcedIdleProcessing"/>
+        <event value="503" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskExecute" opcode="win:Stop" keywords="ForcedIdleProcessing"/>
+        <event value="504" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskNotify" opcode="win:Start" keywords="ForcedIdleProcessing"/>
+        <event value="505" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskNotify" opcode="win:Stop" keywords="ForcedIdleProcessing"/>
+        <event value="506" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskExplicitProcessing" opcode="win:Start" keywords="ForcedIdleProcessing"/>
+        <event value="507" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskExplicitProcessing" opcode="win:Stop" keywords="ForcedIdleProcessing"/>
+        <event value="508" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskExplicitProcessingActive" opcode="win:Info" keywords="ForcedIdleProcessing"/>
+        <event value="509" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleTaskPowerNotificationReceived" opcode="win:Info" keywords="ForcedIdleProcessing" template="Args509_0"/>
+        <event value="510" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:ItSpEvt_PerfTrack_IdleEntryStats" opcode="win:Info" keywords="ForcedIdleProcessing" template="Args510_0"/>
+        <event value="511" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:ItSpEvt_PerfTrack_IdleExitStats" opcode="win:Info" keywords="ForcedIdleProcessing" template="Args511_0"/>
+        <event value="512" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Diagnostic" task="task:IdleCheckPoint" opcode="win:Info" keywords="ForcedIdleProcessing" template="Args512_0"/>
+        <event value="700" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatStart"/>
+        <event value="701" version="0" level="win:Error"  channel="System" task="task:CompatStartFailed"/>
+        <event value="702" version="0" level="win:Error"  channel="System" task="task:CompatStartRPCFailed"/>
+        <event value="703" version="0" level="win:Error"  channel="System" task="task:CompatStartNetschedFailed"/>
+        <event value="704" version="0" level="win:Error"  channel="System" task="task:CompatStartLSAFailed"/>
+        <event value="705" version="0" level="win:Error"  channel="System" task="task:CompatDirectoryMonitoringFailed"/>
+        <event value="706" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatTaskStatusUpdateFailed" template="Args706_0"/>
+        <event value="707" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatTaskDeleteFailed"/>
+        <event value="708" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatTaskSetSDFailed" template="Args708_0"/>
+        <event value="709" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatTaskUpdateFailed"/>
+        <event value="710" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeFailed"/>
+        <event value="711" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeFailed" template="Args711_0"/>
+        <event value="712" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeFailed"/>
+        <event value="713" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeFailed"/>
+        <event value="714" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeFailed"/>
+        <event value="715" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeFailed"/>
+        <event value="716" version="0" level="win:Error"  channel="System" task="task:CompatUpgradeFailed"/>
+        <event value="717" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:CompatUpgradeUndetermined"/>
+        <event value="718" version="0" level="win:Error"  channel="System" task="task:Beta2CredStoreUpgradeFailed"/>
+        <event value="719" version="0" level="win:Informational"  channel="System" task="task:OpChannelDisabled"/>
+        <event value="800" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceStateChanged" template="Args800_0"/>
+        <event value="801" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceLaunchError" template="Args801_0"/>
+        <event value="802" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceReconfigurationError"/>
+        <event value="803" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceSchedulerTaskError" template="Args803_0"/>
+        <event value="804" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceCycleDependencyError"/>
+        <event value="805" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceTaskBehindDeadline"/>
+        <event value="806" version="0" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceTaskError" template="Args806_0"/>
+        <event value="807" version="0" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceComplete" template="Args807_0"/>
+        <event value="808" version="0" level="win:Warning"  channel="Microsoft-Windows-TaskScheduler/Maintenance" task="task:MaintenanceTaskWakeupRequested"/>
+        <event value="809" version="0" level="win:Error"  channel="System" task="task:MaintenanceKeysMalformed" template="Args809_0"/>
+        <event value="998" version="0" level="win:Verbose"  channel="Microsoft-Windows-TaskScheduler/Debug" task="task:MethodFailure" opcode="Failure" template="Args998_0"/>
+        <event value="999" version="0" level="win:Verbose"  channel="Microsoft-Windows-TaskScheduler/Debug" task="task:Debug" opcode="win:Info" template="Args999_0"/>
+        <event value="200" version="1" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:Action" opcode="win:Start" template="Args200_1"/>
+        <event value="201" version="1" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ActionCompleted" opcode="win:Stop"/>
+        <event value="202" version="1" level="win:Error"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ActionFailed" opcode="Run Failure" template="Args202_1"/>
+        <event value="201" version="2" level="win:Informational"  channel="Microsoft-Windows-TaskScheduler/Operational" task="task:ActionCompleted" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-TaskScheduler/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-TaskScheduler/Debug" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-TaskScheduler/Diagnostic" type="Debug"/>
+        <channel value="19" name="Microsoft-Windows-TaskScheduler/Maintenance" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="ForcedIdleProcessing" mask="0x1" message="$(string.string4)" />
+      </keywords>
+      <tasks>
+        <task value="100" name="task:JobExecute" message="$(string.string100)">
+        </task>
+        <task value="101" name="task:TaskStartFail" message="$(string.string101)">
+          <opcodes>
+           <opcode value="101" name="Launch Failure" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="102" name="task:TaskCompleted" message="$(string.string102)">
+        </task>
+        <task value="103" name="task:TaskFailure" message="$(string.string103)">
+          <opcodes>
+           <opcode value="102" name="Run Failure" message="$(string.string11)"/>
+          </opcodes>
+        </task>
+        <task value="104" name="task:LogonFailure" message="$(string.string104)">
+        </task>
+        <task value="105" name="task:ImpersonationFailure" message="$(string.string105)">
+        </task>
+        <task value="106" name="task:JobRegistered" message="$(string.string106)">
+        </task>
+        <task value="107" name="task:TimeTrigger" message="$(string.string107)">
+        </task>
+        <task value="108" name="task:EventTrigger" message="$(string.string108)">
+        </task>
+        <task value="109" name="task:ImmediateTrigger" message="$(string.string109)">
+        </task>
+        <task value="110" name="task:Run" message="$(string.string110)">
+        </task>
+        <task value="111" name="task:TaskTerminated" message="$(string.string111)">
+          <opcodes>
+           <opcode value="103" name="Termination" message="$(string.string151)"/>
+          </opcodes>
+        </task>
+        <task value="112" name="task:NoStartWithoutNetwork" message="$(string.string112)">
+        </task>
+        <task value="113" name="task:RegisteredWithoutSomeTriggers" message="$(string.string113)">
+        </task>
+        <task value="114" name="task:MissedTaskLaunched" message="$(string.string114)">
+        </task>
+        <task value="115" name="task:TransactionRollbackFailure" message="$(string.string115)">
+        </task>
+        <task value="116" name="task:TaskRegisteredWithoutCreds" message="$(string.string116)">
+        </task>
+        <task value="117" name="task:IdleTrigger" message="$(string.string117)">
+        </task>
+        <task value="118" name="task:BootTrigger" message="$(string.string118)">
+        </task>
+        <task value="119" name="task:LogonTrigger" message="$(string.string119)">
+        </task>
+        <task value="120" name="task:ConsoleConnectTrigger" message="$(string.string120)">
+        </task>
+        <task value="121" name="task:ConsoleDisconnectTrigger" message="$(string.string121)">
+        </task>
+        <task value="122" name="task:RemoteConnectTrigger" message="$(string.string122)">
+        </task>
+        <task value="123" name="task:RemoteDisconnectTrigger" message="$(string.string123)">
+        </task>
+        <task value="124" name="task:SessionLockTrigger" message="$(string.string124)">
+        </task>
+        <task value="125" name="task:SessionUnlockTrigger" message="$(string.string125)">
+        </task>
+        <task value="126" name="task:FailedTaskRestart" message="$(string.string126)">
+        </task>
+        <task value="127" name="task:RejectedTaskRestart" message="$(string.string127)">
+        </task>
+        <task value="128" name="task:IgnoredTaskRestart" message="$(string.string128)">
+        </task>
+        <task value="129" name="task:CreatedTaskProcess" message="$(string.string129)">
+        </task>
+        <task value="130" name="task:TaskNotRunServiceBusy" message="$(string.string130)">
+        </task>
+        <task value="131" name="task:TaskNotStartedTaskQuotaExceeded" message="$(string.string131)">
+        </task>
+        <task value="132" name="task:TaskQuotaApproaching" message="$(string.string132)">
+        </task>
+        <task value="133" name="task:TaskNotStartedEngineQuotaExceeded" message="$(string.string133)">
+        </task>
+        <task value="134" name="task:EngineQuotaApproaching" message="$(string.string134)">
+        </task>
+        <task value="135" name="task:NoStartWithoutIdle" message="$(string.string135)">
+        </task>
+        <task value="136" name="task:JobCompletionPending" message="$(string.string136)">
+        </task>
+        <task value="140" name="task:TaskUpdated" message="$(string.string140)">
+        </task>
+        <task value="141" name="task:TaskDeleted" message="$(string.string141)">
+        </task>
+        <task value="142" name="task:TaskDisabled" message="$(string.string142)">
+        </task>
+        <task value="145" name="task:ComputerWakeupToStartTask" message="$(string.string145)">
+        </task>
+        <task value="146" name="task:TaskLoadFailed" message="$(string.string146)">
+        </task>
+        <task value="147" name="task:TaskImageRecoveredAfterMigration" message="$(string.string147)">
+        </task>
+        <task value="148" name="task:TaskImageRecoverFailedAfterMigration" message="$(string.string148)">
+        </task>
+        <task value="149" name="task:TaskUbpmCompatibilityIssueDetected" message="$(string.string149)">
+        </task>
+        <task value="150" name="task:TaskEventSubscriptionFailed" message="$(string.string150)">
+        </task>
+        <task value="151" name="task:TaskInstantiateFailed" message="$(string.string151)">
+        </task>
+        <task value="152" name="task:TaskUbpmCompatibilityIssueResolved" message="$(string.string152)">
+        </task>
+        <task value="153" name="task:MissedTaskRejected" message="$(string.string153)">
+        </task>
+        <task value="200" name="task:Action" message="$(string.string200)">
+        </task>
+        <task value="201" name="task:ActionCompleted" message="$(string.string201)">
+        </task>
+        <task value="202" name="task:ActionFailed" message="$(string.string202)">
+          <opcodes>
+           <opcode value="102" name="Run Failure" message="$(string.string11)"/>
+          </opcodes>
+        </task>
+        <task value="203" name="task:ActionFailedToStart" message="$(string.string203)">
+          <opcodes>
+           <opcode value="101" name="Launch Failure" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="204" name="task:EventRenderFailed" message="$(string.string204)">
+        </task>
+        <task value="205" name="task:EventAggregateFailed" message="$(string.string205)">
+        </task>
+        <task value="300" name="task:Session" message="$(string.string300)">
+        </task>
+        <task value="301" name="task:TaskEngineExit" message="$(string.string301)">
+        </task>
+        <task value="303" name="task:TaskEngineError" message="$(string.string303)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="304" name="task:SessionSentJob" message="$(string.string304)">
+        </task>
+        <task value="305" name="task:SessionSentJobFailed" message="$(string.string305)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="306" name="task:SessionProcessMessage" message="$(string.string306)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="307" name="task:SessionManagerConnectFailed" message="$(string.string307)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="308" name="task:SessionManagerConnect" message="$(string.string308)">
+        </task>
+        <task value="309" name="task:SessionJobsOrphaned" message="$(string.string309)">
+        </task>
+        <task value="310" name="task:SessionProcessStart" message="$(string.string310)">
+        </task>
+        <task value="311" name="task:SessionProcessStartFailed" message="$(string.string311)">
+          <opcodes>
+           <opcode value="101" name="Launch Failure" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="312" name="task:SessionWin32ObjCreated" message="$(string.string312)">
+        </task>
+        <task value="313" name="task:SessionChannelReady" message="$(string.string313)">
+        </task>
+        <task value="314" name="task:SessionProcessIdle" message="$(string.string314)">
+        </task>
+        <task value="315" name="task:SessionProcessConnect" message="$(string.string315)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="316" name="task:SessionMessageSend" message="$(string.string316)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="317" name="task:SessionMain" message="$(string.string317)">
+        </task>
+        <task value="318" name="task:SessionMainShutdown" message="$(string.string318)">
+        </task>
+        <task value="319" name="task:SessionJob" message="$(string.string319)">
+        </task>
+        <task value="320" name="task:SessionJobReceivedStop" message="$(string.string320)">
+        </task>
+        <task value="322" name="task:NewInstanceIgnored" message="$(string.string322)">
+        </task>
+        <task value="323" name="task:RunningInstanceStopped" message="$(string.string323)">
+        </task>
+        <task value="324" name="task:NewInstanceQueued" message="$(string.string324)">
+        </task>
+        <task value="325" name="task:TaskInstanceQueued" message="$(string.string325)">
+        </task>
+        <task value="326" name="task:NoStartOnBatteries" message="$(string.string326)">
+        </task>
+        <task value="327" name="task:StoppingOnBatteries" message="$(string.string327)">
+        </task>
+        <task value="328" name="task:StoppingOffIdle" message="$(string.string328)">
+        </task>
+        <task value="329" name="task:StoppingOnTimeout" message="$(string.string329)">
+        </task>
+        <task value="330" name="task:StoppingOnRequest" message="$(string.string330)">
+        </task>
+        <task value="331" name="task:TimeoutWontWork" message="$(string.string331)">
+        </task>
+        <task value="332" name="task:NoStartUserNotLogged" message="$(string.string332)">
+        </task>
+        <task value="333" name="task:NoStartOnRailSession" message="$(string.string333)">
+        </task>
+        <task value="334" name="task:NoStartOnWorkerSession" message="$(string.string334)">
+        </task>
+        <task value="400" name="task:ServiceMain" message="$(string.string400)">
+        </task>
+        <task value="401" name="task:ServiceStartFailed" message="$(string.string401)">
+          <opcodes>
+           <opcode value="101" name="Launch Failure" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="402" name="task:ServiceStop" message="$(string.string402)">
+        </task>
+        <task value="403" name="task:ServiceError" message="$(string.string403)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="404" name="task:ServiceRPCInitError" message="$(string.string404)">
+        </task>
+        <task value="405" name="task:ServiceCOMInitError" message="$(string.string405)">
+        </task>
+        <task value="406" name="task:ServiceCredStoreInitFailed" message="$(string.string406)">
+        </task>
+        <task value="407" name="task:ServiceLSAInitFailed" message="$(string.string407)">
+        </task>
+        <task value="408" name="task:ServiceIdleInitFailed" message="$(string.string408)">
+        </task>
+        <task value="409" name="task:ServiceTimeChangeInitFailed" message="$(string.string409)">
+        </task>
+        <task value="410" name="task:ServiceSetWakeupTimerFailed" message="$(string.string410)">
+        </task>
+        <task value="411" name="task:ServiceTimeChangeSignaled" message="$(string.string411)">
+        </task>
+        <task value="414" name="task:TaskMisconfigured" message="$(string.string414)">
+        </task>
+        <task value="500" name="task:IdleTaskRegister" message="$(string.string500)">
+        </task>
+        <task value="501" name="task:IdleTaskUnregister" message="$(string.string501)">
+        </task>
+        <task value="502" name="task:IdleTaskExecute" message="$(string.string502)">
+        </task>
+        <task value="504" name="task:IdleTaskNotify" message="$(string.string504)">
+        </task>
+        <task value="506" name="task:IdleTaskExplicitProcessing" message="$(string.string506)">
+        </task>
+        <task value="508" name="task:IdleTaskExplicitProcessingActive" message="$(string.string508)">
+        </task>
+        <task value="509" name="task:IdleTaskPowerNotificationReceived" message="$(string.string509)">
+        </task>
+        <task value="510" name="task:ItSpEvt_PerfTrack_IdleEntryStats" message="$(string.string510)">
+        </task>
+        <task value="511" name="task:ItSpEvt_PerfTrack_IdleExitStats" message="$(string.string511)">
+        </task>
+        <task value="512" name="task:IdleCheckPoint" message="$(string.string512)">
+        </task>
+        <task value="700" name="task:CompatStart" message="$(string.string700)">
+        </task>
+        <task value="701" name="task:CompatStartFailed" message="$(string.string701)">
+        </task>
+        <task value="702" name="task:CompatStartRPCFailed" message="$(string.string702)">
+        </task>
+        <task value="703" name="task:CompatStartNetschedFailed" message="$(string.string703)">
+        </task>
+        <task value="704" name="task:CompatStartLSAFailed" message="$(string.string704)">
+        </task>
+        <task value="705" name="task:CompatDirectoryMonitoringFailed" message="$(string.string705)">
+        </task>
+        <task value="706" name="task:CompatTaskStatusUpdateFailed" message="$(string.string706)">
+        </task>
+        <task value="707" name="task:CompatTaskDeleteFailed" message="$(string.string707)">
+        </task>
+        <task value="708" name="task:CompatTaskSetSDFailed" message="$(string.string708)">
+        </task>
+        <task value="709" name="task:CompatTaskUpdateFailed" message="$(string.string709)">
+        </task>
+        <task value="710" name="task:CompatUpgradeFailed" message="$(string.string710)">
+        </task>
+        <task value="711" name="task:CompatUpgradeUndetermined" message="$(string.string711)">
+        </task>
+        <task value="712" name="task:Beta2CredStoreUpgradeFailed" message="$(string.string712)">
+        </task>
+        <task value="719" name="task:OpChannelDisabled" message="$(string.string719)">
+        </task>
+        <task value="800" name="task:MaintenanceStateChanged" message="$(string.string800)">
+        </task>
+        <task value="801" name="task:MaintenanceLaunchError" message="$(string.string801)">
+        </task>
+        <task value="802" name="task:MaintenanceReconfigurationError" message="$(string.string802)">
+        </task>
+        <task value="803" name="task:MaintenanceSchedulerTaskError" message="$(string.string803)">
+        </task>
+        <task value="804" name="task:MaintenanceCycleDependencyError" message="$(string.string804)">
+        </task>
+        <task value="805" name="task:MaintenanceTaskBehindDeadline" message="$(string.string805)">
+        </task>
+        <task value="806" name="task:MaintenanceTaskError" message="$(string.string806)">
+        </task>
+        <task value="807" name="task:MaintenanceComplete" message="$(string.string807)">
+        </task>
+        <task value="808" name="task:MaintenanceTaskWakeupRequested" message="$(string.string808)">
+        </task>
+        <task value="809" name="task:MaintenanceKeysMalformed" message="$(string.string809)">
+        </task>
+        <task value="998" name="task:MethodFailure" message="$(string.string998)">
+          <opcodes>
+           <opcode value="104" name="Failure" message="$(string.string3)"/>
+          </opcodes>
+        </task>
+        <task value="999" name="task:Debug" message="$(string.string999)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="101" name="StartFailed" message="$(string.string12)"/>
+        <opcode value="102" name="ExecutionFailed" message="$(string.string0)"/>
+        <opcode value="103" name="ExecutionTerminated" message="$(string.string1)"/>
+        <opcode value="104" name="Failed" message="$(string.string2)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args100_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserContext" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserContext" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UserContext" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="Context" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstanceId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args129_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Priority" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args131_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CurrentQuota" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args133_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args148_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args151_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LogPoint" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args155_0">
+          <data name="TaskPath" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ActionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args300_0">
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args303_0">
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args304_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args305_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args309_0">
+          <data name="TaskCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args310_0">
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Command" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args311_0">
+          <data name="TaskEngineName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Command" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args323_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StoppedTaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="NewTaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args324_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="QueuedTaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RunningTaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args330_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="UserContext" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args414_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Parameter" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args500_0">
+          <data name="IdleTaskId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args509_0">
+          <data name="NotificationType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args510_0">
+          <data name="NoIdleReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DATA1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DATA2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args511_0">
+          <data name="TimeSinceUserNotPresent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DATA" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args512_0">
+          <data name="DetectionResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args706_0">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args708_0">
+          <data name="SecurityDescriptor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args711_0">
+          <data name="Account" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args800_0">
+          <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastRunDateTime" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args801_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args803_0">
+          <data name="Task" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args806_0">
+          <data name="Task" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfoCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args807_0">
+          <data name="LauncherId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args809_0">
+          <data name="Failure Reason" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args998_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="File" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args999_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args200_1">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ActionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="EnginePID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args202_1">
+          <data name="TaskName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="TaskInstanceId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ActionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnginePID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="ExecutionFailed" />
+       <string id="string1" value="ExecutionTerminated" />
+       <string id="string2" value="Failed" />
+       <string id="string3" value="Failure" />
+       <string id="string4" value="ForcedIdleProcessing" />
+       <string id="string5" value="Launch Failure" />
+       <string id="string6" value="Microsoft-Windows-TaskScheduler" />
+       <string id="string7" value="Microsoft-Windows-TaskScheduler/Debug" />
+       <string id="string8" value="Microsoft-Windows-TaskScheduler/Diagnostic" />
+       <string id="string9" value="Microsoft-Windows-TaskScheduler/Maintenance" />
+       <string id="string10" value="Microsoft-Windows-TaskScheduler/Operational" />
+       <string id="string11" value="Run Failure" />
+       <string id="string12" value="StartFailed" />
+       <string id="string13" value="System" />
+       <string id="string14" value="task:Action" />
+       <string id="string15" value="task:ActionCompleted" />
+       <string id="string16" value="task:ActionFailed" />
+       <string id="string17" value="task:ActionFailedToStart" />
+       <string id="string18" value="task:Beta2CredStoreUpgradeFailed" />
+       <string id="string19" value="task:BootTrigger" />
+       <string id="string20" value="task:CompatDirectoryMonitoringFailed" />
+       <string id="string21" value="task:CompatStart" />
+       <string id="string22" value="task:CompatStartFailed" />
+       <string id="string23" value="task:CompatStartLSAFailed" />
+       <string id="string24" value="task:CompatStartNetschedFailed" />
+       <string id="string25" value="task:CompatStartRPCFailed" />
+       <string id="string26" value="task:CompatTaskDeleteFailed" />
+       <string id="string27" value="task:CompatTaskSetSDFailed" />
+       <string id="string28" value="task:CompatTaskStatusUpdateFailed" />
+       <string id="string29" value="task:CompatTaskUpdateFailed" />
+       <string id="string30" value="task:CompatUpgradeFailed" />
+       <string id="string31" value="task:CompatUpgradeUndetermined" />
+       <string id="string32" value="task:ComputerWakeupToStartTask" />
+       <string id="string33" value="task:ConsoleConnectTrigger" />
+       <string id="string34" value="task:ConsoleDisconnectTrigger" />
+       <string id="string35" value="task:CreatedTaskProcess" />
+       <string id="string36" value="task:Debug" />
+       <string id="string37" value="task:EngineQuotaApproaching" />
+       <string id="string38" value="task:EventAggregateFailed" />
+       <string id="string39" value="task:EventRenderFailed" />
+       <string id="string40" value="task:EventTrigger" />
+       <string id="string41" value="task:FailedTaskRestart" />
+       <string id="string42" value="task:IdleCheckPoint" />
+       <string id="string43" value="task:IdleTaskExecute" />
+       <string id="string44" value="task:IdleTaskExplicitProcessing" />
+       <string id="string45" value="task:IdleTaskExplicitProcessingActive" />
+       <string id="string46" value="task:IdleTaskNotify" />
+       <string id="string47" value="task:IdleTaskPowerNotificationReceived" />
+       <string id="string48" value="task:IdleTaskRegister" />
+       <string id="string49" value="task:IdleTaskUnregister" />
+       <string id="string50" value="task:IdleTrigger" />
+       <string id="string51" value="task:IgnoredTaskRestart" />
+       <string id="string52" value="task:ImmediateTrigger" />
+       <string id="string53" value="task:ImpersonationFailure" />
+       <string id="string54" value="task:ItSpEvt_PerfTrack_IdleEntryStats" />
+       <string id="string55" value="task:ItSpEvt_PerfTrack_IdleExitStats" />
+       <string id="string56" value="task:JobCompletionPending" />
+       <string id="string57" value="task:JobExecute" />
+       <string id="string58" value="task:JobRegistered" />
+       <string id="string59" value="task:LogonFailure" />
+       <string id="string60" value="task:LogonTrigger" />
+       <string id="string61" value="task:MaintenanceComplete" />
+       <string id="string62" value="task:MaintenanceCycleDependencyError" />
+       <string id="string63" value="task:MaintenanceKeysMalformed" />
+       <string id="string64" value="task:MaintenanceLaunchError" />
+       <string id="string65" value="task:MaintenanceReconfigurationError" />
+       <string id="string66" value="task:MaintenanceSchedulerTaskError" />
+       <string id="string67" value="task:MaintenanceStateChanged" />
+       <string id="string68" value="task:MaintenanceTaskBehindDeadline" />
+       <string id="string69" value="task:MaintenanceTaskError" />
+       <string id="string70" value="task:MaintenanceTaskWakeupRequested" />
+       <string id="string71" value="task:MethodFailure" />
+       <string id="string72" value="task:MissedTaskLaunched" />
+       <string id="string73" value="task:MissedTaskRejected" />
+       <string id="string74" value="task:NewInstanceIgnored" />
+       <string id="string75" value="task:NewInstanceQueued" />
+       <string id="string76" value="task:NoStartOnBatteries" />
+       <string id="string77" value="task:NoStartOnRailSession" />
+       <string id="string78" value="task:NoStartOnWorkerSession" />
+       <string id="string79" value="task:NoStartUserNotLogged" />
+       <string id="string80" value="task:NoStartWithoutIdle" />
+       <string id="string81" value="task:NoStartWithoutNetwork" />
+       <string id="string82" value="task:OpChannelDisabled" />
+       <string id="string83" value="task:RegisteredWithoutSomeTriggers" />
+       <string id="string84" value="task:RejectedTaskRestart" />
+       <string id="string85" value="task:RemoteConnectTrigger" />
+       <string id="string86" value="task:RemoteDisconnectTrigger" />
+       <string id="string87" value="task:Run" />
+       <string id="string88" value="task:RunningInstanceStopped" />
+       <string id="string89" value="task:ServiceCOMInitError" />
+       <string id="string90" value="task:ServiceCredStoreInitFailed" />
+       <string id="string91" value="task:ServiceError" />
+       <string id="string92" value="task:ServiceIdleInitFailed" />
+       <string id="string93" value="task:ServiceLSAInitFailed" />
+       <string id="string94" value="task:ServiceMain" />
+       <string id="string95" value="task:ServiceRPCInitError" />
+       <string id="string96" value="task:ServiceSetWakeupTimerFailed" />
+       <string id="string97" value="task:ServiceStartFailed" />
+       <string id="string98" value="task:ServiceStop" />
+       <string id="string99" value="task:ServiceTimeChangeInitFailed" />
+       <string id="string100" value="task:ServiceTimeChangeSignaled" />
+       <string id="string101" value="task:Session" />
+       <string id="string102" value="task:SessionChannelReady" />
+       <string id="string103" value="task:SessionJob" />
+       <string id="string104" value="task:SessionJobReceivedStop" />
+       <string id="string105" value="task:SessionJobsOrphaned" />
+       <string id="string106" value="task:SessionLockTrigger" />
+       <string id="string107" value="task:SessionMain" />
+       <string id="string108" value="task:SessionMainShutdown" />
+       <string id="string109" value="task:SessionManagerConnect" />
+       <string id="string110" value="task:SessionManagerConnectFailed" />
+       <string id="string111" value="task:SessionMessageSend" />
+       <string id="string112" value="task:SessionProcessConnect" />
+       <string id="string113" value="task:SessionProcessIdle" />
+       <string id="string114" value="task:SessionProcessMessage" />
+       <string id="string115" value="task:SessionProcessStart" />
+       <string id="string116" value="task:SessionProcessStartFailed" />
+       <string id="string117" value="task:SessionSentJob" />
+       <string id="string118" value="task:SessionSentJobFailed" />
+       <string id="string119" value="task:SessionUnlockTrigger" />
+       <string id="string120" value="task:SessionWin32ObjCreated" />
+       <string id="string121" value="task:StoppingOffIdle" />
+       <string id="string122" value="task:StoppingOnBatteries" />
+       <string id="string123" value="task:StoppingOnRequest" />
+       <string id="string124" value="task:StoppingOnTimeout" />
+       <string id="string125" value="task:TaskCompleted" />
+       <string id="string126" value="task:TaskDeleted" />
+       <string id="string127" value="task:TaskDisabled" />
+       <string id="string128" value="task:TaskEngineError" />
+       <string id="string129" value="task:TaskEngineExit" />
+       <string id="string130" value="task:TaskEventSubscriptionFailed" />
+       <string id="string131" value="task:TaskFailure" />
+       <string id="string132" value="task:TaskImageRecoveredAfterMigration" />
+       <string id="string133" value="task:TaskImageRecoverFailedAfterMigration" />
+       <string id="string134" value="task:TaskInstanceQueued" />
+       <string id="string135" value="task:TaskInstantiateFailed" />
+       <string id="string136" value="task:TaskLoadFailed" />
+       <string id="string137" value="task:TaskMisconfigured" />
+       <string id="string138" value="task:TaskNotRunServiceBusy" />
+       <string id="string139" value="task:TaskNotStartedEngineQuotaExceeded" />
+       <string id="string140" value="task:TaskNotStartedTaskQuotaExceeded" />
+       <string id="string141" value="task:TaskQuotaApproaching" />
+       <string id="string142" value="task:TaskRegisteredWithoutCreds" />
+       <string id="string143" value="task:TaskStartFail" />
+       <string id="string144" value="task:TaskTerminated" />
+       <string id="string145" value="task:TaskUbpmCompatibilityIssueDetected" />
+       <string id="string146" value="task:TaskUbpmCompatibilityIssueResolved" />
+       <string id="string147" value="task:TaskUpdated" />
+       <string id="string148" value="task:TimeoutWontWork" />
+       <string id="string149" value="task:TimeTrigger" />
+       <string id="string150" value="task:TransactionRollbackFailure" />
+       <string id="string151" value="Termination" />
+       <string id="string152" value="win:Info" />
+       <string id="string153" value="win:Start" />
+       <string id="string154" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

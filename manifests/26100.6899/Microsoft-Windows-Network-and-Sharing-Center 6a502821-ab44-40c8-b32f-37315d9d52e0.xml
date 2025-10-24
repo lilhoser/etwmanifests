@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Network-and-Sharing-Center" name="Microsoft-Windows-Network-and-Sharing-Center" guid="{6a502821-ab44-40c8-b32f-37315d9d52e0}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="6000" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="Info_PageRefresh" opcode="win:Info"/>
+        <event value="6001" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="Initialization_Core" opcode="win:Start"/>
+        <event value="6002" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="Initialization_Core" opcode="win:Stop"/>
+        <event value="6003" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="Initialization_Page" opcode="win:Start"/>
+        <event value="6004" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="Initialization_Page" opcode="win:Stop"/>
+        <event value="6007" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="InvokeUI_SetUpNewNetwork" opcode="win:Start"/>
+        <event value="6008" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="InvokeUI_FixNetworkProblem" opcode="win:Start"/>
+        <event value="6009" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="InvokeUI_ManageWirelessNetworks" opcode="win:Start"/>
+        <event value="6010" version="0" level="win:Informational"  channel="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" task="InvokeUI_ChangeAdapterSettings" opcode="win:Start"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="6000" name="Info_PageRefresh" message="$(string.string6000)">
+        </task>
+        <task value="6001" name="Initialization_Core" message="$(string.string6001)">
+        </task>
+        <task value="6002" name="Initialization_Page" message="$(string.string6002)">
+        </task>
+        <task value="6005" name="InvokeUI_SetUpNewNetwork" message="$(string.string6005)">
+        </task>
+        <task value="6006" name="InvokeUI_FixNetworkProblem" message="$(string.string6006)">
+        </task>
+        <task value="6007" name="InvokeUI_ManageWirelessNetworks" message="$(string.string6007)">
+        </task>
+        <task value="6008" name="InvokeUI_ChangeAdapterSettings" message="$(string.string6008)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Info_PageRefresh" />
+       <string id="string1" value="Initialization_Core" />
+       <string id="string2" value="Initialization_Page" />
+       <string id="string3" value="InvokeUI_ChangeAdapterSettings" />
+       <string id="string4" value="InvokeUI_FixNetworkProblem" />
+       <string id="string5" value="InvokeUI_ManageWirelessNetworks" />
+       <string id="string6" value="InvokeUI_SetUpNewNetwork" />
+       <string id="string7" value="Microsoft-Windows-Network-and-Sharing-Center" />
+       <string id="string8" value="Microsoft-Windows-Network-and-Sharing-Center/Diagnostic" />
+       <string id="string9" value="win:Info" />
+       <string id="string10" value="win:Start" />
+       <string id="string11" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

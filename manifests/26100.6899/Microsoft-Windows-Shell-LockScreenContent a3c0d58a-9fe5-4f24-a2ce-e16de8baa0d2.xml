@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Shell-LockScreenContent" name="Microsoft-Windows-Shell-LockScreenContent" guid="{a3c0d58a-9fe5-4f24-a2ce-e16de8baa0d2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Setup" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Setup" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_Initialize" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_Initialize" opcode="win:Stop" keywords="LockScreenContent" template="Args11_0"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_GetImage" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="13" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_GetImage" opcode="win:Stop" keywords="LockScreenContent" template="Args13_0"/>
+        <event value="20" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Manager_Initialize" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="21" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Manager_Initialize" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="22" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Manager_PrepareForTransition" opcode="win:Start" keywords="LockScreenContent" template="Args22_0"/>
+        <event value="23" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Manager_PrepareForTransition" opcode="win:Stop" keywords="LockScreenContent" template="Args23_0"/>
+        <event value="24" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Manager_StartSlideShow" opcode="win:Info" keywords="LockScreenContent"/>
+        <event value="25" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Manager_StopSlideShow" opcode="win:Info" keywords="LockScreenContent"/>
+        <event value="26" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Slideshow_SlideshowManager_Destroyed" opcode="win:Info" keywords="LockScreenContent"/>
+        <event value="30" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_DoLayout" opcode="win:Start" keywords="LockScreenContent" template="Args30_0"/>
+        <event value="31" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_DoLayout" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="32" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_TimerTick" opcode="win:Info" keywords="LockScreenContent"/>
+        <event value="34" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_SlideTransition" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="35" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_SlideTransition" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="36" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_RandomLayoutGenerated" opcode="win:Info" keywords="LockScreenContent"/>
+        <event value="37" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_ScheduleAnimation_Transition" opcode="win:Start" keywords="LockScreenContent" template="Args37_0"/>
+        <event value="38" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_ScheduleAnimation_Transition" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="39" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_ScheduleAnimation_Ambient" opcode="win:Start" keywords="LockScreenContent" template="Args39_0"/>
+        <event value="40" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_ScheduleAnimation_Ambient" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="42" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_SlideshowSlideCache_Initialize" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="43" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_SlideshowSlideCache_Initialize" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="44" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_SlideshowSlideCache_Setup" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="45" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_SlideshowSlideCache_Setup" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="46" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_DisableConstraints" opcode="win:Info" keywords="LockScreenContent" template="Args46_0"/>
+        <event value="47" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_IngestImageItem" opcode="win:Info" keywords="LockScreenContent" template="Args47_0"/>
+        <event value="48" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_Refresh" opcode="win:Info" keywords="LockScreenContent" template="Args48_0"/>
+        <event value="49" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_InitializeBuckets_RecalculatingBuckets" opcode="win:Info" keywords="LockScreenContent" template="Args49_0"/>
+        <event value="50" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_ThumbnailFetch" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="51" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_ThumbnailFetch" opcode="win:Stop" keywords="LockScreenContent" template="Args51_0"/>
+        <event value="52" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_Initialize" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="53" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_Initialize" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="54" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_CreateIItemCollection" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="55" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_CreateIItemCollection" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="56" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Slide_Initialize" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="57" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Slide_Initialize" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="58" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_GenerateAvailableItems" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="59" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_GenerateAvailableItems" opcode="win:Stop" keywords="LockScreenContent" template="Args59_0"/>
+        <event value="60" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Cache_AddSlideToMonitorCache" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="61" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Cache_AddSlideToMonitorCache" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="62" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_InitializeBuckets" opcode="win:Start" keywords="LockScreenContent"/>
+        <event value="63" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Repository_InitializeBuckets" opcode="win:Stop" keywords="LockScreenContent"/>
+        <event value="64" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" task="LockScreenContent_Bucket_ImageVerification" opcode="win:Info" keywords="LockScreenContent" template="Args64_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="LockScreenContent" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="LockScreenContent_Setup" message="$(string.string1)">
+        </task>
+        <task value="10" name="LockScreenContent_Repository_Initialize" message="$(string.string10)">
+        </task>
+        <task value="12" name="LockScreenContent_Repository_GetImage" message="$(string.string12)">
+        </task>
+        <task value="20" name="LockScreenContent_Manager_Initialize" message="$(string.string20)">
+        </task>
+        <task value="22" name="LockScreenContent_Manager_PrepareForTransition" message="$(string.string22)">
+        </task>
+        <task value="24" name="LockScreenContent_Manager_StartSlideShow" message="$(string.string24)">
+        </task>
+        <task value="26" name="LockScreenContent_Manager_StopSlideShow" message="$(string.string26)">
+        </task>
+        <task value="27" name="LockScreenContent_Slideshow_SlideshowManager_Destroyed" message="$(string.string27)">
+        </task>
+        <task value="30" name="LockScreenContent_DoLayout" message="$(string.string30)">
+        </task>
+        <task value="32" name="LockScreenContent_TimerTick" message="$(string.string32)">
+        </task>
+        <task value="34" name="LockScreenContent_SlideTransition" message="$(string.string34)">
+        </task>
+        <task value="36" name="LockScreenContent_RandomLayoutGenerated" message="$(string.string36)">
+        </task>
+        <task value="37" name="LockScreenContent_ScheduleAnimation_Transition" message="$(string.string37)">
+        </task>
+        <task value="38" name="LockScreenContent_ScheduleAnimation_Ambient" message="$(string.string38)">
+        </task>
+        <task value="42" name="LockScreenContent_SlideshowSlideCache_Initialize" message="$(string.string42)">
+        </task>
+        <task value="44" name="LockScreenContent_SlideshowSlideCache_Setup" message="$(string.string44)">
+        </task>
+        <task value="46" name="LockScreenContent_Repository_DisableConstraints" message="$(string.string46)">
+        </task>
+        <task value="47" name="LockScreenContent_Bucket_IngestImageItem" message="$(string.string47)">
+        </task>
+        <task value="48" name="LockScreenContent_Bucket_Refresh" message="$(string.string48)">
+        </task>
+        <task value="49" name="LockScreenContent_Repository_InitializeBuckets_RecalculatingBuckets" message="$(string.string49)">
+        </task>
+        <task value="50" name="LockScreenContent_ThumbnailFetch" message="$(string.string50)">
+        </task>
+        <task value="52" name="LockScreenContent_Bucket_Initialize" message="$(string.string52)">
+        </task>
+        <task value="54" name="LockScreenContent_Bucket_CreateIItemCollection" message="$(string.string54)">
+        </task>
+        <task value="56" name="LockScreenContent_Slide_Initialize" message="$(string.string56)">
+        </task>
+        <task value="58" name="LockScreenContent_Bucket_GenerateAvailableItems" message="$(string.string58)">
+        </task>
+        <task value="60" name="LockScreenContent_Cache_AddSlideToMonitorCache" message="$(string.string60)">
+        </task>
+        <task value="62" name="LockScreenContent_Repository_InitializeBuckets" message="$(string.string62)">
+        </task>
+        <task value="64" name="LockScreenContent_Bucket_ImageVerification" message="$(string.string64)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args11_0">
+          <data name="ImageCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="ImagePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args22_0">
+          <data name="OnPrimaryMonitor" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Initialized" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="OnPrimaryMonitor" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Layout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30_0">
+          <data name="OnPrimaryMonitor" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LayoutChosen" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="EnterLayout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExitLayout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cookie" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="AmbientLayout" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cookie" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args46_0">
+          <data name="DualMonitorSourcing" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args47_0">
+          <data name="ImagePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PossibleLayoutRegions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Bucket" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImageHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MonitorWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MonitorHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args48_0">
+          <data name="FullRefresh" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args49_0">
+          <data name="WasInitialized" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args51_0">
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="BucketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ValidatedItems" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64_0">
+          <data name="MeetsLayoutConstraints" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MeetsTimeConstraints" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MeetsSlideReuseConstraints" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="LockScreenContent" />
+       <string id="string1" value="LockScreenContent_Bucket_CreateIItemCollection" />
+       <string id="string2" value="LockScreenContent_Bucket_GenerateAvailableItems" />
+       <string id="string3" value="LockScreenContent_Bucket_ImageVerification" />
+       <string id="string4" value="LockScreenContent_Bucket_IngestImageItem" />
+       <string id="string5" value="LockScreenContent_Bucket_Initialize" />
+       <string id="string6" value="LockScreenContent_Bucket_Refresh" />
+       <string id="string7" value="LockScreenContent_Cache_AddSlideToMonitorCache" />
+       <string id="string8" value="LockScreenContent_DoLayout" />
+       <string id="string9" value="LockScreenContent_Manager_Initialize" />
+       <string id="string10" value="LockScreenContent_Manager_PrepareForTransition" />
+       <string id="string11" value="LockScreenContent_Manager_StartSlideShow" />
+       <string id="string12" value="LockScreenContent_Manager_StopSlideShow" />
+       <string id="string13" value="LockScreenContent_RandomLayoutGenerated" />
+       <string id="string14" value="LockScreenContent_Repository_DisableConstraints" />
+       <string id="string15" value="LockScreenContent_Repository_GetImage" />
+       <string id="string16" value="LockScreenContent_Repository_Initialize" />
+       <string id="string17" value="LockScreenContent_Repository_InitializeBuckets" />
+       <string id="string18" value="LockScreenContent_Repository_InitializeBuckets_RecalculatingBuckets" />
+       <string id="string19" value="LockScreenContent_ScheduleAnimation_Ambient" />
+       <string id="string20" value="LockScreenContent_ScheduleAnimation_Transition" />
+       <string id="string21" value="LockScreenContent_Setup" />
+       <string id="string22" value="LockScreenContent_Slide_Initialize" />
+       <string id="string23" value="LockScreenContent_Slideshow_SlideshowManager_Destroyed" />
+       <string id="string24" value="LockScreenContent_SlideshowSlideCache_Initialize" />
+       <string id="string25" value="LockScreenContent_SlideshowSlideCache_Setup" />
+       <string id="string26" value="LockScreenContent_SlideTransition" />
+       <string id="string27" value="LockScreenContent_ThumbnailFetch" />
+       <string id="string28" value="LockScreenContent_TimerTick" />
+       <string id="string29" value="Microsoft-Windows-Shell-LockScreenContent" />
+       <string id="string30" value="Microsoft-Windows-Shell-LockScreenContent/Diagnostic" />
+       <string id="string31" value="win:Info" />
+       <string id="string32" value="win:Start" />
+       <string id="string33" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-SMBClient" name="Microsoft-Windows-SMBClient" guid="{988c59c5-0a1c-45b6-a555-0c62276e327d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="CreateSrvCallError" opcode="win:Info" keywords="ut:Diagnostic" template="Args101_0"/>
+        <event value="201" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="SessionSetupError" opcode="win:Info" keywords="ut:Diagnostic"/>
+        <event value="301" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="TreeConnectError" opcode="win:Info" keywords="ut:Diagnostic"/>
+        <event value="401" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="CreateVNetRootError" opcode="win:Info" keywords="ut:Diagnostic"/>
+        <event value="501" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="CreateFileError" opcode="win:Info" keywords="ut:Diagnostic"/>
+        <event value="2000" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Diagnostic" task="PacketFragment" opcode="win:Info" keywords="ut:Packet" template="Args2000_0"/>
+        <event value="20001" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="CreateFile" opcode="win:Info" keywords="ut:Diagnostic" template="Args20001_0"/>
+        <event value="30103" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbSuspendExchange" opcode="win:Info" keywords="Smb_Perf" template="Args30103_0"/>
+        <event value="30104" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbResumeExchange" opcode="win:Info" keywords="Smb_Perf" template="Args30104_0"/>
+        <event value="30105" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbSuspendBufferCtxt" opcode="win:Info" keywords="Smb_Perf_IO_Optional" template="Args30105_0"/>
+        <event value="30106" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbResumeBufferCtxt" opcode="win:Info" keywords="Smb_Perf_IO_Optional"/>
+        <event value="30108" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbMidWindowBlocked" opcode="win:Info" keywords="Smb_Info Smb_Perf_IO_Optional" template="Args30108_0"/>
+        <event value="30109" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbRechunkRequest" opcode="win:Info" keywords="Smb_Info Smb_Perf_IO_Optional"/>
+        <event value="30110" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbInitializeMidWindow" opcode="win:Info" keywords="Smb_Perf_IO_Optional" template="Args30110_0"/>
+        <event value="30111" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbMidWindowState" opcode="win:Info" keywords="Smb_Perf_IO_Optional" template="Args30111_0"/>
+        <event value="30112" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbTeardownMidWindow" opcode="win:Info" keywords="Smb_Perf_IO_Optional"/>
+        <event value="30113" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbDataReady" opcode="win:Info" keywords="Smb_Perf" template="Args30113_0"/>
+        <event value="30114" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbSendCompletion" opcode="win:Info" keywords="Smb_Perf"/>
+        <event value="30203" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetConnect" opcode="win:Info" keywords="Networking_Perf" template="Args30203_0"/>
+        <event value="30204" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetConnectCompletion" opcode="win:Info" keywords="Networking_Perf" template="Args30204_0"/>
+        <event value="30205" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetSend" opcode="win:Info" keywords="Networking_Perf" template="Args30205_0"/>
+        <event value="30206" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetSendCompletion" opcode="win:Info" keywords="Networking_Perf" template="Args30206_0"/>
+        <event value="30207" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetReceive" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30208" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetReceiveCompletion" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30209" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="CompressionRequested" opcode="win:Info" keywords="Networking_Perf" template="Args30209_0"/>
+        <event value="30210" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="DecompressionFailure" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30211" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="CompressionFailure" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30401" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbSessionExpired" opcode="win:Info" keywords="Smb_Info" template="Args30401_0"/>
+        <event value="30402" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb3PartSPNReauth" opcode="win:Info" keywords="Smb_Info"/>
+        <event value="30403" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbReconnect" opcode="win:Info" keywords="Smb_Info" template="Args30403_0"/>
+        <event value="30404" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbDeferOpen" opcode="win:Info" keywords="Smb_Info"/>
+        <event value="30405" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbUndeferOpen" opcode="win:Info" keywords="Smb_Info"/>
+        <event value="30406" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbSend" opcode="win:Info" keywords="Smb_Info" template="Args30406_0"/>
+        <event value="30407" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbReceive" opcode="win:Info" keywords="Smb_Info" template="Args30407_0"/>
+        <event value="30408" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbReceiveInterim" opcode="win:Info" keywords="Smb_Info"/>
+        <event value="30409" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbReceiveAsync" opcode="win:Info" keywords="Smb_Info"/>
+        <event value="30410" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbRegistryKey" opcode="win:Info" keywords="Smb_Info" template="Args30410_0"/>
+        <event value="30501" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbUpdateInfoCache" opcode="win:Info" keywords="InfoCache_Info" template="Args30501_0"/>
+        <event value="30502" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbFetchInfoCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30503" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbInvalidateInfoCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30504" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbUpdateFNFCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30505" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbFetchFNFCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30506" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbInvalidateFNFCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30507" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbPopulateDirCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30508" version="0" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="SmbFetchDirCache" opcode="win:Info" keywords="InfoCache_Info"/>
+        <event value="30600" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="SessionStateTransition" keywords="Smb_TFO" template="Args30600_0"/>
+        <event value="30601" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="VNetRootStateTransition" keywords="Smb_TFO"/>
+        <event value="30603" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="OpenHandleStateTransition" keywords="Smb_TFO" template="Args30603_0"/>
+        <event value="30604" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="NoSMB1ObservedInLastPeriod" opcode="win:Info" keywords="Smb_Info" template="Args30604_0"/>
+        <event value="30613" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Operational" task="HandleOpenFailure" keywords="Smb_TFO"/>
+        <event value="30701" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="ServerNetworkInterfaceInvalid" keywords="Smb_MultiChannel"/>
+        <event value="30702" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="WskConnectFailure" keywords="Smb_MultiChannel" template="Args30702_0"/>
+        <event value="30703" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="RdmaConnectFailure" keywords="Smb_MultiChannel"/>
+        <event value="30704" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="WskConnectSuccess" keywords="Smb_MultiChannel"/>
+        <event value="30705" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" task="RdmaConnectSuccess" keywords="Smb_MultiChannel"/>
+        <event value="30800" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="WskGetAddressInfoFailure" keywords="Smb_Connectivity" template="Args30800_0"/>
+        <event value="30801" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SetSocketSecurityFailure" keywords="Smb_Connectivity"/>
+        <event value="30802" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="IPSecFailure" keywords="Smb_Connectivity"/>
+        <event value="30803" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="NetworkConnectFailure" keywords="Smb_Connectivity" template="Args30803_0"/>
+        <event value="30804" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="DisconnectIndication" keywords="Smb_Connectivity"/>
+        <event value="30809" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ExpiredExchange" keywords="Smb_Connectivity" template="Args30809_0"/>
+        <event value="30810" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="TcpIpTransportArrival" keywords="Smb_Connectivity" template="Args30810_0"/>
+        <event value="30811" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="TcpIpTransportRemoval" keywords="Smb_Connectivity"/>
+        <event value="30812" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="TdiTransportArrival" keywords="Smb_Connectivity"/>
+        <event value="30813" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="TdiTransportRemoval" keywords="Smb_Connectivity"/>
+        <event value="30814" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="WitnessRegistration" keywords="Smb_Connectivity" template="Args30814_0"/>
+        <event value="30815" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="WitnessDeregistration" keywords="Smb_Connectivity"/>
+        <event value="30816" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="NegotiateFailure" keywords="Smb_Connectivity"/>
+        <event value="30817" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="CloseFailure" keywords="Smb_Connectivity"/>
+        <event value="30818" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Connectivity" task="RdmaFallback" keywords="Smb_Connectivity"/>
+        <event value="30822" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="MultiChannelNetworkConnectFailure" keywords="Smb_Connectivity" template="Args30822_0"/>
+        <event value="30826" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="NegotiateResponseEncryptionCapabilitiesFailure" keywords="Smb_Connectivity" template="Args30826_0"/>
+        <event value="30827" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="CertificateMappingNotFound" keywords="Smb_Connectivity"/>
+        <event value="30828" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SessionEstablishedNoisy" keywords="Smb_Connectivity_Noisy" template="Args30828_0"/>
+        <event value="30829" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SessionSetupErrorNoisy" keywords="Smb_Connectivity_Noisy"/>
+        <event value="30830" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SmbConnectionInitiatedSelectedInfo" keywords="Smb_Connectivity_Noisy" template="Args30830_0"/>
+        <event value="30831" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="MutualAuthServerDeniedAccess" keywords="Smb_Connectivity" template="Args30831_0"/>
+        <event value="30832" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ConnectionEstablished" keywords="Smb_Connectivity" template="Args30832_0"/>
+        <event value="30833" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ShareInitialConnectionEstablished" keywords="Smb_Connectivity" template="Args30833_0"/>
+        <event value="30834" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ServerCertificateRevocationChecksFailed" keywords="Smb_Connectivity" template="Args30834_0"/>
+        <event value="30835" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ServerAuthenticationFailure" keywords="Smb_Connectivity"/>
+        <event value="30837" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="RequestedTransportDisabled" keywords="Smb_Connectivity"/>
+        <event value="30906" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Operational" task="RequestRetryFailure" keywords="Smb_TFO" template="Args30906_0"/>
+        <event value="30907" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/Operational" task="MultiChannelDisabled" keywords="Smb_MultiChannel"/>
+        <event value="30908" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/Operational" task="Smb2Disabled" keywords="Smb_Info"/>
+        <event value="30909" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="RdmaWithSigning" keywords="Smb_Info"/>
+        <event value="30910" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="RdmaWithEncryption" keywords="Smb_Info"/>
+        <event value="30911" version="0" level="win:Error"  channel="Microsoft-Windows-SMBClient/Operational" task="InvalidCipherSuiteOrder" keywords="Smb_Info" template="Args30911_0"/>
+        <event value="30912" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/Operational" task="RequireSecureNegotiateIsDeprecated" keywords="Smb_Info"/>
+        <event value="30913" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="IsolatedTransportServerEntryInfo" keywords="Smb_Info" template="Args30913_0"/>
+        <event value="30914" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbRdmaRundownActive" keywords="Smb_Info" template="Args30914_0"/>
+        <event value="30915" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbRdmaRundownComplete" keywords="Smb_Info" template="Args30915_0"/>
+        <event value="30916" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbRdmaReactivation" keywords="Smb_Info"/>
+        <event value="30917" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbRdmaReactivationComplete" keywords="Smb_Info"/>
+        <event value="30918" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbRdmaSMBDirectLoad" keywords="Smb_Info" template="Args30918_0"/>
+        <event value="30950" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbComponentCapabilities" keywords="Smb_Info" template="Args30950_0"/>
+        <event value="30951" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbInvalidPortSpecified" keywords="Smb_Info" template="Args30951_0"/>
+        <event value="30952" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbConnectionInitiatedNotSelectedInfo" keywords="Smb_Info" template="Args30952_0"/>
+        <event value="30953" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbDialectChange" keywords="Smb_Info" template="Args30953_0"/>
+        <event value="30954" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/HelperClassDiagnostic" task="SmbLsassCallDurationInfo" keywords="Smb_Info" template="Args30954_0"/>
+        <event value="30955" version="0" level="win:Warning"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbLsassCallDurationWarning" keywords="Smb_Info"/>
+        <event value="31000" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="AcquireCredHandleFailure" keywords="Smb_Authentication" template="Args31000_0"/>
+        <event value="31001" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="ISCFailure" keywords="Smb_Authentication"/>
+        <event value="31002" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="NetworkTokenFailure" keywords="Smb_Authentication"/>
+        <event value="31003" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Security" task="LMCompatibilityLevel" opcode="win:Info" keywords="Smb_Authentication"/>
+        <event value="31010" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="TreeConnectFailure" keywords="Smb_Authorization"/>
+        <event value="31012" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="NegotiateValidationFailure" keywords="Smb_Security" template="Args31012_0"/>
+        <event value="31013" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="SigningFailure" keywords="Smb_Security" template="Args31013_0"/>
+        <event value="31014" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="EncryptionFailure" keywords="Smb_Security"/>
+        <event value="31015" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="DecryptionFailure" keywords="Smb_Security"/>
+        <event value="31016" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Security" task="EnableSecuritySignatureNonDefault" keywords="Smb_Security"/>
+        <event value="31017" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="RejectedInsecureGuestAuth" keywords="Smb_Authentication"/>
+        <event value="31018" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Security" task="InsecureGuestAuthEnabled" opcode="win:Info" keywords="Smb_Authentication"/>
+        <event value="31019" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="MADowngradeDetected" keywords="Smb_Authentication" template="Args31019_0"/>
+        <event value="31020" version="0" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="SessionKeyTooShort" keywords="Smb_Authentication" template="Args31020_0"/>
+        <event value="31021" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Security" task="DirectDataPlacementSecurity" opcode="win:Info" keywords="Smb_Security" template="Args31021_0"/>
+        <event value="31022" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Security" task="AllowedInsecureGuestAuth" keywords="Smb_Authentication"/>
+        <event value="31023" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Security" task="NTLMBlocked" keywords="Smb_Authentication"/>
+        <event value="31997" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Audit" task="InsecureGuestLogon" keywords="Smb_Info"/>
+        <event value="31998" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Audit" task="ServerDoesNotSupportSigning" keywords="Smb_Info" template="Args31998_0"/>
+        <event value="31999" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Audit" task="ServerDoesNotSupportEncryption" keywords="Smb_Info" template="Args31999_0"/>
+        <event value="32000" version="0" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Audit" task="UnexpectedSMB1ResponseReceived" keywords="Smb_Info" template="Args32000_0"/>
+        <event value="32002" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Audit" task="SMB1ResponseReceived" keywords="Smb_Info" template="Args32002_0"/>
+        <event value="32003" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Audit" task="UninstallSMB1Client" keywords="Smb_Info"/>
+        <event value="32004" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextStart" opcode="win:Start" keywords="Smb_Perf_IO" template="Args32004_0"/>
+        <event value="32005" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeStart" opcode="win:Start" keywords="Smb_Perf_IO_Optional" template="Args32005_0"/>
+        <event value="32006" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextStart" opcode="win:Start" keywords="Smb_Perf_IO_Optional" template="Args32006_0"/>
+        <event value="32007" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfWorkTransition" opcode="win:Info" keywords="Smb_Perf_IO_Optional" template="Args32007_0"/>
+        <event value="32008" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextReadSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32008_0"/>
+        <event value="32009" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextWriteSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32009_0"/>
+        <event value="32010" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextCreateSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32010_0"/>
+        <event value="32011" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextCloseSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32011_0"/>
+        <event value="32012" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextQueryDirectorySummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32012_0"/>
+        <event value="32013" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextFsctlSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32013_0"/>
+        <event value="32028" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeReadSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32028_0"/>
+        <event value="32029" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeWriteSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32029_0"/>
+        <event value="32030" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeCreateSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32030_0"/>
+        <event value="32031" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeCloseSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32031_0"/>
+        <event value="32032" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeQueryDirectorySummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32032_0"/>
+        <event value="32033" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeFsctlSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32033_0"/>
+        <event value="32048" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextReadSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32048_0"/>
+        <event value="32049" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextWriteSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32049_0"/>
+        <event value="32050" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextCreateSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32050_0"/>
+        <event value="32051" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextCloseSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32051_0"/>
+        <event value="32052" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextQueryDirectorySummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32052_0"/>
+        <event value="32053" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextFsctlSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32053_0"/>
+        <event value="32068" version="0" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfFCBCaptureSummary" opcode="win:Info" keywords="Smb_Perf_Rundown" template="Args32068_0"/>
+        <event value="40000" version="0" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Diagnostic" task="Packet" opcode="win:Info" keywords="ut:Packet" template="Args40000_0"/>
+        <event value="30824" version="1" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ConnectionForceDisconnected" keywords="Smb_Connectivity"/>
+        <event value="30825" version="1" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ConnectionDisconnectStateCleared" keywords="Smb_Connectivity"/>
+        <event value="30834" version="1" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ServerCertificateRevocationChecksFailed" keywords="Smb_Connectivity" template="Args30834_1"/>
+        <event value="30835" version="1" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ServerAuthenticationFailure" keywords="Smb_Connectivity"/>
+        <event value="30918" version="1" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="SmbRdmaSMBDirectLoad" keywords="Smb_Info" template="Args30918_1"/>
+        <event value="30203" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetConnect" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30204" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetConnectCompletion" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30205" version="2" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetSend" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30206" version="2" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetSendCompletion" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30207" version="2" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetReceive" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30208" version="2" level="win:Verbose"  channel="Microsoft-Windows-SMBClient/Analytic" task="NetReceiveCompletion" opcode="win:Info" keywords="Networking_Perf"/>
+        <event value="30611" version="2" level="win:Error"  channel="Microsoft-Windows-SMBClient/Operational" task="PersistentHandleFailure" keywords="Smb_TFO"/>
+        <event value="30612" version="2" level="win:Error"  channel="Microsoft-Windows-SMBClient/Operational" task="ResilientHandleFailure" keywords="Smb_TFO"/>
+        <event value="30803" version="2" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="NetworkConnectFailure" keywords="Smb_Connectivity"/>
+        <event value="30804" version="2" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="DisconnectIndication" keywords="Smb_Connectivity" template="Args30804_2"/>
+        <event value="30805" version="2" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SessionFailure" keywords="Smb_Connectivity"/>
+        <event value="30806" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SessionEstablished" keywords="Smb_Connectivity"/>
+        <event value="30807" version="2" level="win:Warning"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ShareConnectionFailure" keywords="Smb_Connectivity"/>
+        <event value="30808" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ShareConnectionEstablished" keywords="Smb_Connectivity"/>
+        <event value="30819" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="WitnessMove" keywords="Smb_TFO"/>
+        <event value="30820" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="WitnessMoveSuccess" keywords="Smb_TFO"/>
+        <event value="30821" version="2" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="WitnessMoveFailure" keywords="Smb_TFO"/>
+        <event value="30822" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="MultiChannelNetworkConnectFailure" keywords="Smb_Connectivity" template="Args30822_2"/>
+        <event value="30823" version="2" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="HungConnectionFailure" keywords="Smb_Connectivity"/>
+        <event value="30830" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SmbConnectionInitiatedSelectedInfo" keywords="Smb_Connectivity_Noisy" template="Args30830_2"/>
+        <event value="30831" version="2" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="MutualAuthServerDeniedAccess" keywords="Smb_Connectivity"/>
+        <event value="30900" version="2" level="win:Warning"  channel="Microsoft-Windows-SMBClient/Operational" task="HandlePersistenceNotGranted" keywords="Smb_TFO"/>
+        <event value="30904" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Operational" task="ServerMultiChannelIncapable" keywords="Smb_MultiChannel"/>
+        <event value="30905" version="2" level="win:Error"  channel="Microsoft-Windows-SMBClient/Operational" task="ServerMultiChannelConstraint" keywords="Smb_MultiChannel"/>
+        <event value="31013" version="2" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="SigningFailure" keywords="Smb_Security" template="Args31013_2"/>
+        <event value="31014" version="2" level="win:Error"  channel="Microsoft-Windows-SmbClient/Security" task="EncryptionFailure" keywords="Smb_Security" template="Args31014_2"/>
+        <event value="32008" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextReadSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32008_2"/>
+        <event value="32009" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfRxContextWriteSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32009_2"/>
+        <event value="32028" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeReadSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32028_2"/>
+        <event value="32029" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfExchangeWriteSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32029_2"/>
+        <event value="32048" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextReadSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32048_2"/>
+        <event value="32049" version="2" level="win:Informational"  channel="Microsoft-Windows-SMBClient/Analytic" task="Smb2PerfBufferContextWriteSummary" opcode="win:Info" keywords="Smb_Perf_Summary" template="Args32049_2"/>
+        <event value="30803" version="3" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="NetworkConnectFailure" keywords="Smb_Connectivity"/>
+        <event value="30806" version="3" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="SessionEstablished" keywords="Smb_Connectivity"/>
+        <event value="30808" version="3" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ShareConnectionEstablished" keywords="Smb_Connectivity"/>
+        <event value="30803" version="4" level="win:Error"  channel="Microsoft-Windows-SmbClient/Connectivity" task="NetworkConnectFailure" keywords="Smb_Connectivity" template="Args30803_4"/>
+        <event value="30808" version="4" level="win:Informational"  channel="Microsoft-Windows-SmbClient/Connectivity" task="ShareConnectionEstablished" keywords="Smb_Connectivity"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-SMBClient/HelperClassDiagnostic" type="Debug"/>
+        <channel value="17" name="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-SMBClient/Operational" type="Operational"/>
+        <channel value="19" name="Microsoft-Windows-SMBClient/Analytic" type="Analytic"/>
+        <channel value="20" name="Microsoft-Windows-SmbClient/Diagnostic" type="Debug"/>
+        <channel value="21" name="Microsoft-Windows-SmbClient/Connectivity" type="Debug"/>
+        <channel value="22" name="Microsoft-Windows-SmbClient/Security" type="Debug"/>
+        <channel value="23" name="Microsoft-Windows-SmbClient/Audit" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Smb_Perf" mask="0x1" message="$(string.string104)" />
+        <keyword name="Networking_Perf" mask="0x2" message="$(string.string56)" />
+        <keyword name="Smb_Info" mask="0x4" message="$(string.string102)" />
+        <keyword name="InfoCache_Info" mask="0x8" message="$(string.string24)" />
+        <keyword name="Smb_TFO" mask="0x10" message="$(string.string110)" />
+        <keyword name="Smb_MultiChannel" mask="0x20" message="$(string.string103)" />
+        <keyword name="Smb_Connectivity" mask="0x40" message="$(string.string100)" />
+        <keyword name="Smb_Authentication" mask="0x80" message="$(string.string98)" />
+        <keyword name="Smb_Authorization" mask="0x100" message="$(string.string99)" />
+        <keyword name="Smb_Security" mask="0x200" message="$(string.string109)" />
+        <keyword name="Smb_Perf_IO" mask="0x400" message="$(string.string105)" />
+        <keyword name="Smb_Perf_Summary" mask="0x800" message="$(string.string108)" />
+        <keyword name="Smb_Perf_Rundown" mask="0x1000" message="$(string.string107)" />
+        <keyword name="Smb_Perf_IO_Optional" mask="0x2000" message="$(string.string106)" />
+        <keyword name="Smb_Connectivity_Noisy" mask="0x10000" message="$(string.string101)" />
+        <keyword name="PacketStart" mask="0x40000000" message="$(string.string64)" />
+        <keyword name="PacketEnd" mask="0x80000000" message="$(string.string62)" />
+        <keyword name="ut:SendPath" mask="0x100000000" message="$(string.string192)" />
+        <keyword name="ut:ReceivePath" mask="0x200000000" message="$(string.string191)" />
+        <keyword name="ut:Packet" mask="0x40000000000" message="$(string.string190)" />
+        <keyword name="ut:Diagnostic" mask="0x400000000000" message="$(string.string188)" />
+        <keyword name="PduFull" mask="0x800000000000" message="$(string.string65)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Smb2PerfRxContextStart" message="$(string.string1)">
+        </task>
+        <task value="2" name="Smb2PerfExchangeStart" message="$(string.string2)">
+        </task>
+        <task value="3" name="Smb2PerfBufferContextStart" message="$(string.string3)">
+        </task>
+        <task value="4" name="Smb2PerfRxContextStop" message="$(string.string4)">
+        </task>
+        <task value="5" name="Smb2PerfExchangeStop" message="$(string.string5)">
+        </task>
+        <task value="6" name="Smb2PerfBufferContextStop" message="$(string.string6)">
+        </task>
+        <task value="7" name="Smb2PerfWorkTransition" message="$(string.string7)">
+        </task>
+        <task value="8" name="Smb2PerfRxContextReadSummary" message="$(string.string8)">
+        </task>
+        <task value="9" name="Smb2PerfRxContextWriteSummary" message="$(string.string9)">
+        </task>
+        <task value="10" name="Smb2PerfRxContextCreateSummary" message="$(string.string10)">
+        </task>
+        <task value="11" name="Smb2PerfRxContextCloseSummary" message="$(string.string11)">
+        </task>
+        <task value="12" name="Smb2PerfRxContextQueryDirectorySummary" message="$(string.string12)">
+        </task>
+        <task value="13" name="Smb2PerfRxContextFsctlSummary" message="$(string.string13)">
+        </task>
+        <task value="14" name="Smb2PerfExchangeReadSummary" message="$(string.string14)">
+        </task>
+        <task value="15" name="Smb2PerfExchangeWriteSummary" message="$(string.string15)">
+        </task>
+        <task value="16" name="Smb2PerfExchangeCreateSummary" message="$(string.string16)">
+        </task>
+        <task value="17" name="Smb2PerfExchangeCloseSummary" message="$(string.string17)">
+        </task>
+        <task value="18" name="Smb2PerfExchangeQueryDirectorySummary" message="$(string.string18)">
+        </task>
+        <task value="19" name="Smb2PerfExchangeFsctlSummary" message="$(string.string19)">
+        </task>
+        <task value="20" name="Smb2PerfBufferContextReadSummary" message="$(string.string20)">
+        </task>
+        <task value="21" name="Smb2PerfBufferContextWriteSummary" message="$(string.string21)">
+        </task>
+        <task value="22" name="Smb2PerfBufferContextCreateSummary" message="$(string.string22)">
+        </task>
+        <task value="23" name="Smb2PerfBufferContextCloseSummary" message="$(string.string23)">
+        </task>
+        <task value="24" name="Smb2PerfBufferContextQueryDirectorySummary" message="$(string.string24)">
+        </task>
+        <task value="25" name="Smb2PerfBufferContextFsctlSummary" message="$(string.string25)">
+        </task>
+        <task value="26" name="Smb2PerfFCBCaptureSummary" message="$(string.string26)">
+        </task>
+        <task value="27" name="CreateSrvCallError" message="$(string.string27)">
+        </task>
+        <task value="28" name="SessionSetupError" message="$(string.string28)">
+        </task>
+        <task value="29" name="CreateVNetRootError" message="$(string.string29)">
+        </task>
+        <task value="30" name="CreateFileError" message="$(string.string30)">
+        </task>
+        <task value="31" name="CreateFile" message="$(string.string31)">
+        </task>
+        <task value="32" name="SmbSuspendExchange" message="$(string.string32)">
+        </task>
+        <task value="33" name="SmbResumeExchange" message="$(string.string33)">
+        </task>
+        <task value="34" name="SmbResumeBufferCtxt" message="$(string.string34)">
+        </task>
+        <task value="35" name="SmbMidWindowBlocked" message="$(string.string35)">
+        </task>
+        <task value="36" name="SmbRechunkRequest" message="$(string.string36)">
+        </task>
+        <task value="37" name="SmbInitializeMidWindow" message="$(string.string37)">
+        </task>
+        <task value="38" name="SmbMidWindowState" message="$(string.string38)">
+        </task>
+        <task value="39" name="SmbTeardownMidWindow" message="$(string.string39)">
+        </task>
+        <task value="40" name="SmbDataReady" message="$(string.string40)">
+        </task>
+        <task value="41" name="SmbSendCompletion" message="$(string.string41)">
+        </task>
+        <task value="42" name="NetConnect" message="$(string.string42)">
+        </task>
+        <task value="43" name="NetConnectCompletion" message="$(string.string43)">
+        </task>
+        <task value="44" name="NetSend" message="$(string.string44)">
+        </task>
+        <task value="45" name="NetSendCompletion" message="$(string.string45)">
+        </task>
+        <task value="46" name="NetReceive" message="$(string.string46)">
+        </task>
+        <task value="47" name="NetReceiveCompletion" message="$(string.string47)">
+        </task>
+        <task value="48" name="CompressionRequested" message="$(string.string48)">
+        </task>
+        <task value="49" name="DecompressionFailure" message="$(string.string49)">
+        </task>
+        <task value="50" name="CompressionFailure" message="$(string.string50)">
+        </task>
+        <task value="51" name="SmbSessionExpired" message="$(string.string51)">
+        </task>
+        <task value="52" name="Smb3PartSPNReauth" message="$(string.string52)">
+        </task>
+        <task value="53" name="SmbReconnect" message="$(string.string53)">
+        </task>
+        <task value="54" name="SmbDeferOpen" message="$(string.string54)">
+        </task>
+        <task value="55" name="SmbUndeferOpen" message="$(string.string55)">
+        </task>
+        <task value="56" name="SmbSend" message="$(string.string56)">
+        </task>
+        <task value="57" name="SmbReceive" message="$(string.string57)">
+        </task>
+        <task value="58" name="SmbReceiveInterim" message="$(string.string58)">
+        </task>
+        <task value="59" name="SmbReceiveAsync" message="$(string.string59)">
+        </task>
+        <task value="60" name="SmbRegistryKey" message="$(string.string60)">
+        </task>
+        <task value="61" name="SmbUpdateInfoCache" message="$(string.string61)">
+        </task>
+        <task value="62" name="SmbFetchInfoCache" message="$(string.string62)">
+        </task>
+        <task value="63" name="SmbInvalidateInfoCache" message="$(string.string63)">
+        </task>
+        <task value="64" name="SmbUpdateFNFCache" message="$(string.string64)">
+        </task>
+        <task value="65" name="SmbFetchFNFCache" message="$(string.string65)">
+        </task>
+        <task value="66" name="SmbInvalidateFNFCache" message="$(string.string66)">
+        </task>
+        <task value="67" name="SmbPopulateDirCache" message="$(string.string67)">
+        </task>
+        <task value="68" name="SmbFetchDirCache" message="$(string.string68)">
+        </task>
+        <task value="69" name="SessionStateTransition" message="$(string.string69)">
+        </task>
+        <task value="70" name="VNetRootStateTransition" message="$(string.string70)">
+        </task>
+        <task value="71" name="OpenHandleStateTransition" message="$(string.string71)">
+        </task>
+        <task value="72" name="NoSMB1ObservedInLastPeriod" message="$(string.string72)">
+        </task>
+        <task value="73" name="PersistentHandleFailure" message="$(string.string73)">
+        </task>
+        <task value="74" name="ResilientHandleFailure" message="$(string.string74)">
+        </task>
+        <task value="75" name="HandleOpenFailure" message="$(string.string75)">
+        </task>
+        <task value="76" name="ServerNetworkInterfaceInvalid" message="$(string.string76)">
+        </task>
+        <task value="77" name="WskConnectFailure" message="$(string.string77)">
+        </task>
+        <task value="78" name="RdmaConnectFailure" message="$(string.string78)">
+        </task>
+        <task value="79" name="WskConnectSuccess" message="$(string.string79)">
+        </task>
+        <task value="80" name="RdmaConnectSuccess" message="$(string.string80)">
+        </task>
+        <task value="81" name="WskGetAddressInfoFailure" message="$(string.string81)">
+        </task>
+        <task value="82" name="SetSocketSecurityFailure" message="$(string.string82)">
+        </task>
+        <task value="83" name="IPSecFailure" message="$(string.string83)">
+        </task>
+        <task value="84" name="NetworkConnectFailure" message="$(string.string84)">
+        </task>
+        <task value="85" name="DisconnectIndication" message="$(string.string85)">
+        </task>
+        <task value="86" name="SessionFailure" message="$(string.string86)">
+        </task>
+        <task value="87" name="SessionEstablished" message="$(string.string87)">
+        </task>
+        <task value="88" name="ShareConnectionFailure" message="$(string.string88)">
+        </task>
+        <task value="89" name="ShareConnectionEstablished" message="$(string.string89)">
+        </task>
+        <task value="90" name="ExpiredExchange" message="$(string.string90)">
+        </task>
+        <task value="91" name="TcpIpTransportArrival" message="$(string.string91)">
+        </task>
+        <task value="92" name="TcpIpTransportRemoval" message="$(string.string92)">
+        </task>
+        <task value="93" name="TdiTransportArrival" message="$(string.string93)">
+        </task>
+        <task value="94" name="TdiTransportRemoval" message="$(string.string94)">
+        </task>
+        <task value="95" name="WitnessRegistration" message="$(string.string95)">
+        </task>
+        <task value="96" name="WitnessDeregistration" message="$(string.string96)">
+        </task>
+        <task value="97" name="NegotiateFailure" message="$(string.string97)">
+        </task>
+        <task value="98" name="CloseFailure" message="$(string.string98)">
+        </task>
+        <task value="99" name="RdmaFallback" message="$(string.string99)">
+        </task>
+        <task value="100" name="WitnessMove" message="$(string.string100)">
+        </task>
+        <task value="101" name="WitnessMoveSuccess" message="$(string.string101)">
+        </task>
+        <task value="102" name="WitnessMoveFailure" message="$(string.string102)">
+        </task>
+        <task value="103" name="MultiChannelNetworkConnectFailure" message="$(string.string103)">
+        </task>
+        <task value="104" name="HungConnectionFailure" message="$(string.string104)">
+        </task>
+        <task value="105" name="ConnectionForceDisconnected" message="$(string.string105)">
+        </task>
+        <task value="106" name="ConnectionDisconnectStateCleared" message="$(string.string106)">
+        </task>
+        <task value="107" name="NegotiateResponseEncryptionCapabilitiesFailure" message="$(string.string107)">
+        </task>
+        <task value="108" name="CertificateMappingNotFound" message="$(string.string108)">
+        </task>
+        <task value="109" name="SessionEstablishedNoisy" message="$(string.string109)">
+        </task>
+        <task value="110" name="SessionSetupErrorNoisy" message="$(string.string110)">
+        </task>
+        <task value="111" name="SmbConnectionInitiatedSelectedInfo" message="$(string.string111)">
+        </task>
+        <task value="112" name="HandlePersistenceNotGranted" message="$(string.string112)">
+        </task>
+        <task value="113" name="ServerMultiChannelIncapable" message="$(string.string113)">
+        </task>
+        <task value="114" name="ServerMultiChannelConstraint" message="$(string.string114)">
+        </task>
+        <task value="115" name="RequestRetryFailure" message="$(string.string115)">
+        </task>
+        <task value="116" name="MultiChannelDisabled" message="$(string.string116)">
+        </task>
+        <task value="117" name="Smb2Disabled" message="$(string.string117)">
+        </task>
+        <task value="118" name="RdmaWithSigning" message="$(string.string118)">
+        </task>
+        <task value="119" name="RdmaWithEncryption" message="$(string.string119)">
+        </task>
+        <task value="120" name="InvalidCipherSuiteOrder" message="$(string.string120)">
+        </task>
+        <task value="121" name="RequireSecureNegotiateIsDeprecated" message="$(string.string121)">
+        </task>
+        <task value="122" name="IsolatedTransportServerEntryInfo" message="$(string.string122)">
+        </task>
+        <task value="123" name="SmbRdmaRundownActive" message="$(string.string123)">
+        </task>
+        <task value="124" name="SmbRdmaRundownComplete" message="$(string.string124)">
+        </task>
+        <task value="125" name="SmbRdmaReactivation" message="$(string.string125)">
+        </task>
+        <task value="126" name="SmbRdmaReactivationComplete" message="$(string.string126)">
+        </task>
+        <task value="127" name="SmbRdmaSMBDirectLoad" message="$(string.string127)">
+        </task>
+        <task value="128" name="SmbComponentCapabilities" message="$(string.string128)">
+        </task>
+        <task value="129" name="SmbInvalidPortSpecified" message="$(string.string129)">
+        </task>
+        <task value="130" name="SmbConnectionInitiatedNotSelectedInfo" message="$(string.string130)">
+        </task>
+        <task value="131" name="SmbDialectChange" message="$(string.string131)">
+        </task>
+        <task value="132" name="AcquireCredHandleFailure" message="$(string.string132)">
+        </task>
+        <task value="133" name="ISCFailure" message="$(string.string133)">
+        </task>
+        <task value="134" name="NetworkTokenFailure" message="$(string.string134)">
+        </task>
+        <task value="135" name="LMCompatibilityLevel" message="$(string.string135)">
+        </task>
+        <task value="136" name="TreeConnectFailure" message="$(string.string136)">
+        </task>
+        <task value="137" name="NegotiateValidationFailure" message="$(string.string137)">
+        </task>
+        <task value="138" name="SigningFailure" message="$(string.string138)">
+        </task>
+        <task value="139" name="EncryptionFailure" message="$(string.string139)">
+        </task>
+        <task value="140" name="DecryptionFailure" message="$(string.string140)">
+        </task>
+        <task value="141" name="EnableSecuritySignatureNonDefault" message="$(string.string141)">
+        </task>
+        <task value="142" name="RejectedInsecureGuestAuth" message="$(string.string142)">
+        </task>
+        <task value="143" name="InsecureGuestAuthEnabled" message="$(string.string143)">
+        </task>
+        <task value="144" name="MADowngradeDetected" message="$(string.string144)">
+        </task>
+        <task value="145" name="SessionKeyTooShort" message="$(string.string145)">
+        </task>
+        <task value="146" name="DirectDataPlacementSecurity" message="$(string.string146)">
+        </task>
+        <task value="147" name="UnexpectedSMB1ResponseReceived" message="$(string.string147)">
+        </task>
+        <task value="148" name="SMB1ResponseReceived" message="$(string.string148)">
+        </task>
+        <task value="149" name="UninstallSMB1Client" message="$(string.string149)">
+        </task>
+        <task value="150" name="PacketFragment" message="$(string.string150)">
+        </task>
+        <task value="151" name="Packet" message="$(string.string151)">
+        </task>
+        <task value="152" name="TreeConnectError" message="$(string.string152)">
+        </task>
+        <task value="153" name="SmbSuspendBufferCtxt" message="$(string.string153)">
+        </task>
+        <task value="154" name="SmbLsassCallDurationInfo" message="$(string.string154)">
+        </task>
+        <task value="155" name="SmbLsassCallDurationWarning" message="$(string.string155)">
+        </task>
+        <task value="156" name="AllowedInsecureGuestAuth" message="$(string.string156)">
+        </task>
+        <task value="157" name="ServerDoesNotSupportSigning" message="$(string.string157)">
+        </task>
+        <task value="158" name="ServerDoesNotSupportEncryption" message="$(string.string158)">
+        </task>
+        <task value="159" name="InsecureGuestLogon" message="$(string.string159)">
+        </task>
+        <task value="160" name="MutualAuthServerDeniedAccess" message="$(string.string160)">
+        </task>
+        <task value="161" name="ConnectionEstablished" message="$(string.string161)">
+        </task>
+        <task value="162" name="NTLMBlocked" message="$(string.string162)">
+        </task>
+        <task value="163" name="ShareInitialConnectionEstablished" message="$(string.string163)">
+        </task>
+        <task value="164" name="ServerCertificateRevocationChecksFailed" message="$(string.string164)">
+        </task>
+        <task value="165" name="ServerAuthenticationFailure" message="$(string.string165)">
+        </task>
+        <task value="167" name="RequestedTransportDisabled" message="$(string.string167)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="Server" message="$(string.string77)"/>
+        <opcode value="12" name="Cache" message="$(string.string2)"/>
+        <opcode value="13" name="ISC" message="$(string.string29)"/>
+        <opcode value="14" name="Signing" message="$(string.string96)"/>
+        <opcode value="180" name="ut:Start" message="$(string.string193)"/>
+        <opcode value="181" name="ut:End" message="$(string.string189)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args101_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2000_0">
+          <data name="ReassembledEventID" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentData" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize" />
+        </template>
+        <template tid="Args20001_0">
+          <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30103_0">
+          <data name="RxContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Exchange" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ListHead" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args30104_0">
+          <data name="RxContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Exchange" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ExchangeState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExchangeStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30105_0">
+          <data name="BufferCtxt" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Exchange" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MidCharge" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Window" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CurrentWindowLimit" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThrottlingWindowLimit" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentWindowSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30108_0">
+          <data name="Window" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="HungSession" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30110_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="MidWindow" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args30111_0">
+          <data name="MidWindow" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CurrentWindowSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentWindowLimit" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThrottlingWindowLimit" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldestPendingMid" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NextAvailableMid" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreditsGranted" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args30113_0">
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args30203_0">
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30204_0">
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30205_0">
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SendMdl" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SendLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30206_0">
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SendMdl" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SendLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30209_0">
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Socket" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Smb2Fobx" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30401_0">
+          <data name="SessionEntry" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+        </template>
+        <template tid="Args30403_0">
+          <data name="Fcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SrvOpen" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args30406_0">
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Command" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MidCharge" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CreditRequested" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SendLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args30407_0">
+          <data name="Command" inType="win:AnsiString" outType="xs:string"  />
+          <data name="MessageId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AsyncId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TreeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CreditGranted" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VcEndpoint" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args30410_0">
+          <data name="RegName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RegValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30501_0">
+          <data name="RxContext" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Fcb" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30600_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NewState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ObjectName" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+        </template>
+        <template tid="Args30603_0">
+          <data name="Object" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PersistentFID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="VolatileFID" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="CreateGUID" inType="win:GUID" outType="xs:GUID"  />
+          <data name="OldState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NewState" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ObjectNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ObjectName" inType="win:UnicodeString" outType="xs:string" length="ObjectNameLength" />
+          <data name="PreviousStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="PreviousReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30604_0">
+          <data name="Days" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30702_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args30800_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+        </template>
+        <template tid="Args30803_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30809_0">
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MessageId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TreeId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="RetryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ElapsedTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30810_0">
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="IfIndex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args30814_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ShareType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+        </template>
+        <template tid="Args30822_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30826_0">
+          <data name="ClientCipherSuiteOrderLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCipherSuiteOrder" inType="win:UnicodeString" outType="xs:string" length="ClientCipherSuiteOrderLength" />
+          <data name="ServerChosenEncryptionCipherLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerChosenEncryptionCipher" inType="win:UnicodeString" outType="xs:string" length="ServerChosenEncryptionCipherLength" />
+        </template>
+        <template tid="Args30828_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+        </template>
+        <template tid="Args30830_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+        <template tid="Args30831_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:AnsiString" outType="win:Binary" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+        <template tid="Args30832_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:AnsiString" outType="win:Binary" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="PortSelectionOrigin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+        <template tid="Args30833_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TreeId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SigningUsed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EncryptionUsed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="CompressionRequested" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NTLMBlocked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args30834_0">
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="PortSelectionOrigin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+        <template tid="Args30906_0">
+          <data name="IrpCode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RestartCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="ObjectNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ObjectName" inType="win:UnicodeString" outType="xs:string" length="ObjectNameLength" />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HistoryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30911_0">
+          <data name="CipherSuiteOrder" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args30913_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ShareNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string" length="ShareNameLength" />
+          <data name="AsymmetricFlag" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsolatedTransportFlag" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsIsolatedTransportServerEntry" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args30914_0">
+          <data name="ActiveRdmaResourceCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30915_0">
+          <data name="NoOp" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args30918_0">
+          <data name="IsSuccess" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LoadStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ServicePathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServicePath" inType="win:UnicodeString" outType="xs:string" length="ServicePathLength" />
+        </template>
+        <template tid="Args30950_0">
+          <data name="ComponentCapabilities" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="PatchNumber" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args30951_0">
+          <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="TransportNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="TransportName" inType="win:UnicodeString" outType="xs:string" length="TransportNameLength" />
+        </template>
+        <template tid="Args30952_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="PortSelectionOrigin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args30953_0">
+          <data name="SmbDialect" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldDialect" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="NewDialect" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args30954_0">
+          <data name="FunctionName" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CallDuration" inType="win:Int32" outType="xs:int"  />
+          <data name="ThresholdDuration" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args31000_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="SecurityStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LogonId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="PrincipalNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="PrincipalName" inType="win:UnicodeString" outType="xs:string" length="PrincipalNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+        </template>
+        <template tid="Args31012_0">
+          <data name="Dialect" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="SecurityMode" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="Capabilities" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Guid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Dialect2" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="SecurityMode2" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="Capabilities2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Guid2" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args31013_0">
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MessageId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TreeId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="MessageSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentOffset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentData" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize" />
+        </template>
+        <template tid="Args31019_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="SecurityStatus" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LogonId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="UserNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string" length="UserNameLength" />
+          <data name="OldAuthProtocolId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="NewAuthProtocolId" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="OldMutualAuthState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NewMutualAuthState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ClusteredServer" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args31020_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="SessionKeyLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequiredSessionKeyLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SessionId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AuthProtocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args31021_0">
+          <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args31998_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ClientRequireSigning" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args31999_0">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ClientRequireEncryption" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args32000_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Dialect" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+        </template>
+        <template tid="Args32002_0">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Dialect" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="SecurityMode" inType="win:UInt16" outType="win:HexInt16"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+        </template>
+        <template tid="Args32004_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength" />
+          <data name="MajorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args32005_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MajorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args32006_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="MajorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinorFunction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args32007_0">
+          <data name="BlockType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args32008_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32009_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32010_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCreateProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32011_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CloseProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCloseProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32012_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueryDirectoryProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountQueryDirectoryProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32013_0">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FsctlProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFsctlProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32028_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32029_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32030_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCreateStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32031_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CloseStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCloseStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32032_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueryDirectoryStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountQueryDirectoryStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32033_0">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FsctlStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFsctlStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32048_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32049_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32050_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCreateReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32051_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CloseReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCloseReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32052_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QueryDirectoryReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountQueryDirectoryReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32053_0">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FsctlReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFsctlReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32068_0">
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PrefixLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Prefix" inType="win:UnicodeString" outType="xs:string" length="PrefixLength" />
+          <data name="ServerShareLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerShare" inType="win:UnicodeString" outType="xs:string" length="ServerShareLength" />
+        </template>
+        <template tid="Args40000_0">
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PeerAddress" inType="win:Binary" outType="win:SocketAddress" length="PeerAddressLength" />
+          <data name="PacketSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="PacketSize" />
+        </template>
+        <template tid="Args30834_1">
+          <data name="HResult" inType="win:Int32" outType="win:HResult"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:AnsiString" outType="win:Binary" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+        <template tid="Args30918_1">
+          <data name="IsSuccess" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LoadStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ServicePathLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServicePath" inType="win:UnicodeString" outType="xs:string" length="ServicePathLength" />
+          <data name="DeviceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DeviceName" inType="win:UnicodeString" outType="xs:string" length="DeviceNameLength" />
+        </template>
+        <template tid="Args30804_2">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30822_2">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortSelectionOrigin" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30830_2">
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="PortSelectionOrigin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+        <template tid="Args31013_2">
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MessageId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TreeId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="MessageSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentOffset" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FragmentData" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize" />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+        </template>
+        <template tid="Args31014_2">
+          <data name="Smb2Command" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MessageId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SessionId" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TreeId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="RetryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ElapsedTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength" />
+          <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength" />
+        </template>
+        <template tid="Args32008_2">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FileObject" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AttemptTurboIORead" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAttemptTurboIORead" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AttemptTurboIOInit" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAttemptTurboIOInit" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TurboIORxCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountTurboIORxCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32009_2">
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FileObject" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="IRP" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Construction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountConstruction" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountDispatchProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCallMiniRdr_MRXSMB" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountLowIoCompletionRoutine" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCompleteIRP" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIOCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostIORetry" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AttemptTurboIOWrite" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAttemptTurboIOWrite" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AttemptTurboIOInit" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAttemptTurboIOInit" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TurboIORxCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountTurboIORxCompletion" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32028_2">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TurboIOStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountTurboIOStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TurboIOComplete" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountTurboIOComplete" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32029_2">
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="RxContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RestartCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountResolvingConnectionObjects" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandProcessing" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteBuildAndSendChunks" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountCommandFinalizationCallback" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Finalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalize" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountPostFinalizeWorker" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountFinalizeWorkerHitCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TurboIOStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountTurboIOStart" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TurboIOComplete" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountTurboIOComplete" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32048_2">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args32049_2">
+          <data name="BufferContext" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Exchange" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ByteCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="InstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TotalDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Initialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountInitialized" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ReadRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountReadRDMABufferRegistration" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountRDMAGetDescriptors" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssociateMID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Assembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountAssembly" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountBeginSmbSendAsyncPostWorkerCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountSmbdPrepareSend" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountServerTimeTakenToReply" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="WriteReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="HitCountWriteReceive" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args30803_4">
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="ServerNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="ServerName" inType="win:UnicodeString" outType="xs:string" length="ServerNameLength" />
+          <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength" />
+          <data name="InstanceNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="InstanceName" inType="win:UnicodeString" outType="xs:string" length="InstanceNameLength" />
+          <data name="ConnectionType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortSelectionOrigin" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionIdSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Binary" outType="xs:hexBinary" length="ConnectionIdSize" />
+          <data name="ClientCertSha1HashSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientCertSha1Hash" inType="win:Binary" outType="xs:hexBinary" length="ClientCertSha1HashSize" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AcquireCredHandleFailure" />
+       <string id="string1" value="AllowedInsecureGuestAuth" />
+       <string id="string2" value="Cache" />
+       <string id="string3" value="CertificateMappingNotFound" />
+       <string id="string4" value="CloseFailure" />
+       <string id="string5" value="CompressionFailure" />
+       <string id="string6" value="CompressionRequested" />
+       <string id="string7" value="ConnectionDisconnectStateCleared" />
+       <string id="string8" value="ConnectionEstablished" />
+       <string id="string9" value="ConnectionForceDisconnected" />
+       <string id="string10" value="CreateFile" />
+       <string id="string11" value="CreateFileError" />
+       <string id="string12" value="CreateSrvCallError" />
+       <string id="string13" value="CreateVNetRootError" />
+       <string id="string14" value="DecompressionFailure" />
+       <string id="string15" value="DecryptionFailure" />
+       <string id="string16" value="DirectDataPlacementSecurity" />
+       <string id="string17" value="DisconnectIndication" />
+       <string id="string18" value="EnableSecuritySignatureNonDefault" />
+       <string id="string19" value="EncryptionFailure" />
+       <string id="string20" value="ExpiredExchange" />
+       <string id="string21" value="HandleOpenFailure" />
+       <string id="string22" value="HandlePersistenceNotGranted" />
+       <string id="string23" value="HungConnectionFailure" />
+       <string id="string24" value="InfoCache_Info" />
+       <string id="string25" value="InsecureGuestAuthEnabled" />
+       <string id="string26" value="InsecureGuestLogon" />
+       <string id="string27" value="InvalidCipherSuiteOrder" />
+       <string id="string28" value="IPSecFailure" />
+       <string id="string29" value="ISC" />
+       <string id="string30" value="ISCFailure" />
+       <string id="string31" value="IsolatedTransportServerEntryInfo" />
+       <string id="string32" value="LMCompatibilityLevel" />
+       <string id="string33" value="MADowngradeDetected" />
+       <string id="string34" value="Microsoft-Windows-SMBClient" />
+       <string id="string35" value="Microsoft-Windows-SMBClient/Analytic" />
+       <string id="string36" value="Microsoft-Windows-SmbClient/Audit" />
+       <string id="string37" value="Microsoft-Windows-SmbClient/Connectivity" />
+       <string id="string38" value="Microsoft-Windows-SmbClient/Diagnostic" />
+       <string id="string39" value="Microsoft-Windows-SMBClient/HelperClassDiagnostic" />
+       <string id="string40" value="Microsoft-Windows-SMBClient/ObjectStateDiagnostic" />
+       <string id="string41" value="Microsoft-Windows-SMBClient/Operational" />
+       <string id="string42" value="Microsoft-Windows-SmbClient/Security" />
+       <string id="string43" value="MultiChannelDisabled" />
+       <string id="string44" value="MultiChannelNetworkConnectFailure" />
+       <string id="string45" value="MutualAuthServerDeniedAccess" />
+       <string id="string46" value="NegotiateFailure" />
+       <string id="string47" value="NegotiateResponseEncryptionCapabilitiesFailure" />
+       <string id="string48" value="NegotiateValidationFailure" />
+       <string id="string49" value="NetConnect" />
+       <string id="string50" value="NetConnectCompletion" />
+       <string id="string51" value="NetReceive" />
+       <string id="string52" value="NetReceiveCompletion" />
+       <string id="string53" value="NetSend" />
+       <string id="string54" value="NetSendCompletion" />
+       <string id="string55" value="NetworkConnectFailure" />
+       <string id="string56" value="Networking_Perf" />
+       <string id="string57" value="NetworkTokenFailure" />
+       <string id="string58" value="NoSMB1ObservedInLastPeriod" />
+       <string id="string59" value="NTLMBlocked" />
+       <string id="string60" value="OpenHandleStateTransition" />
+       <string id="string61" value="Packet" />
+       <string id="string62" value="PacketEnd" />
+       <string id="string63" value="PacketFragment" />
+       <string id="string64" value="PacketStart" />
+       <string id="string65" value="PduFull" />
+       <string id="string66" value="PersistentHandleFailure" />
+       <string id="string67" value="RdmaConnectFailure" />
+       <string id="string68" value="RdmaConnectSuccess" />
+       <string id="string69" value="RdmaFallback" />
+       <string id="string70" value="RdmaWithEncryption" />
+       <string id="string71" value="RdmaWithSigning" />
+       <string id="string72" value="RejectedInsecureGuestAuth" />
+       <string id="string73" value="RequestedTransportDisabled" />
+       <string id="string74" value="RequestRetryFailure" />
+       <string id="string75" value="RequireSecureNegotiateIsDeprecated" />
+       <string id="string76" value="ResilientHandleFailure" />
+       <string id="string77" value="Server" />
+       <string id="string78" value="ServerAuthenticationFailure" />
+       <string id="string79" value="ServerCertificateRevocationChecksFailed" />
+       <string id="string80" value="ServerDoesNotSupportEncryption" />
+       <string id="string81" value="ServerDoesNotSupportSigning" />
+       <string id="string82" value="ServerMultiChannelConstraint" />
+       <string id="string83" value="ServerMultiChannelIncapable" />
+       <string id="string84" value="ServerNetworkInterfaceInvalid" />
+       <string id="string85" value="SessionEstablished" />
+       <string id="string86" value="SessionEstablishedNoisy" />
+       <string id="string87" value="SessionFailure" />
+       <string id="string88" value="SessionKeyTooShort" />
+       <string id="string89" value="SessionSetupError" />
+       <string id="string90" value="SessionSetupErrorNoisy" />
+       <string id="string91" value="SessionStateTransition" />
+       <string id="string92" value="SetSocketSecurityFailure" />
+       <string id="string93" value="ShareConnectionEstablished" />
+       <string id="string94" value="ShareConnectionFailure" />
+       <string id="string95" value="ShareInitialConnectionEstablished" />
+       <string id="string96" value="Signing" />
+       <string id="string97" value="SigningFailure" />
+       <string id="string98" value="Smb_Authentication" />
+       <string id="string99" value="Smb_Authorization" />
+       <string id="string100" value="Smb_Connectivity" />
+       <string id="string101" value="Smb_Connectivity_Noisy" />
+       <string id="string102" value="Smb_Info" />
+       <string id="string103" value="Smb_MultiChannel" />
+       <string id="string104" value="Smb_Perf" />
+       <string id="string105" value="Smb_Perf_IO" />
+       <string id="string106" value="Smb_Perf_IO_Optional" />
+       <string id="string107" value="Smb_Perf_Rundown" />
+       <string id="string108" value="Smb_Perf_Summary" />
+       <string id="string109" value="Smb_Security" />
+       <string id="string110" value="Smb_TFO" />
+       <string id="string111" value="SMB1ResponseReceived" />
+       <string id="string112" value="Smb2Disabled" />
+       <string id="string113" value="Smb2PerfBufferContextCloseSummary" />
+       <string id="string114" value="Smb2PerfBufferContextCreateSummary" />
+       <string id="string115" value="Smb2PerfBufferContextFsctlSummary" />
+       <string id="string116" value="Smb2PerfBufferContextQueryDirectorySummary" />
+       <string id="string117" value="Smb2PerfBufferContextReadSummary" />
+       <string id="string118" value="Smb2PerfBufferContextStart" />
+       <string id="string119" value="Smb2PerfBufferContextStop" />
+       <string id="string120" value="Smb2PerfBufferContextWriteSummary" />
+       <string id="string121" value="Smb2PerfExchangeCloseSummary" />
+       <string id="string122" value="Smb2PerfExchangeCreateSummary" />
+       <string id="string123" value="Smb2PerfExchangeFsctlSummary" />
+       <string id="string124" value="Smb2PerfExchangeQueryDirectorySummary" />
+       <string id="string125" value="Smb2PerfExchangeReadSummary" />
+       <string id="string126" value="Smb2PerfExchangeStart" />
+       <string id="string127" value="Smb2PerfExchangeStop" />
+       <string id="string128" value="Smb2PerfExchangeWriteSummary" />
+       <string id="string129" value="Smb2PerfFCBCaptureSummary" />
+       <string id="string130" value="Smb2PerfRxContextCloseSummary" />
+       <string id="string131" value="Smb2PerfRxContextCreateSummary" />
+       <string id="string132" value="Smb2PerfRxContextFsctlSummary" />
+       <string id="string133" value="Smb2PerfRxContextQueryDirectorySummary" />
+       <string id="string134" value="Smb2PerfRxContextReadSummary" />
+       <string id="string135" value="Smb2PerfRxContextStart" />
+       <string id="string136" value="Smb2PerfRxContextStop" />
+       <string id="string137" value="Smb2PerfRxContextWriteSummary" />
+       <string id="string138" value="Smb2PerfWorkTransition" />
+       <string id="string139" value="Smb3PartSPNReauth" />
+       <string id="string140" value="SmbComponentCapabilities" />
+       <string id="string141" value="SmbConnectionInitiatedNotSelectedInfo" />
+       <string id="string142" value="SmbConnectionInitiatedSelectedInfo" />
+       <string id="string143" value="SmbDataReady" />
+       <string id="string144" value="SmbDeferOpen" />
+       <string id="string145" value="SmbDialectChange" />
+       <string id="string146" value="SmbFetchDirCache" />
+       <string id="string147" value="SmbFetchFNFCache" />
+       <string id="string148" value="SmbFetchInfoCache" />
+       <string id="string149" value="SmbInitializeMidWindow" />
+       <string id="string150" value="SmbInvalidateFNFCache" />
+       <string id="string151" value="SmbInvalidateInfoCache" />
+       <string id="string152" value="SmbInvalidPortSpecified" />
+       <string id="string153" value="SmbLsassCallDurationInfo" />
+       <string id="string154" value="SmbLsassCallDurationWarning" />
+       <string id="string155" value="SmbMidWindowBlocked" />
+       <string id="string156" value="SmbMidWindowState" />
+       <string id="string157" value="SmbPopulateDirCache" />
+       <string id="string158" value="SmbRdmaReactivation" />
+       <string id="string159" value="SmbRdmaReactivationComplete" />
+       <string id="string160" value="SmbRdmaRundownActive" />
+       <string id="string161" value="SmbRdmaRundownComplete" />
+       <string id="string162" value="SmbRdmaSMBDirectLoad" />
+       <string id="string163" value="SmbReceive" />
+       <string id="string164" value="SmbReceiveAsync" />
+       <string id="string165" value="SmbReceiveInterim" />
+       <string id="string166" value="SmbRechunkRequest" />
+       <string id="string167" value="SmbReconnect" />
+       <string id="string168" value="SmbRegistryKey" />
+       <string id="string169" value="SmbResumeBufferCtxt" />
+       <string id="string170" value="SmbResumeExchange" />
+       <string id="string171" value="SmbSend" />
+       <string id="string172" value="SmbSendCompletion" />
+       <string id="string173" value="SmbSessionExpired" />
+       <string id="string174" value="SmbSuspendBufferCtxt" />
+       <string id="string175" value="SmbSuspendExchange" />
+       <string id="string176" value="SmbTeardownMidWindow" />
+       <string id="string177" value="SmbUndeferOpen" />
+       <string id="string178" value="SmbUpdateFNFCache" />
+       <string id="string179" value="SmbUpdateInfoCache" />
+       <string id="string180" value="TcpIpTransportArrival" />
+       <string id="string181" value="TcpIpTransportRemoval" />
+       <string id="string182" value="TdiTransportArrival" />
+       <string id="string183" value="TdiTransportRemoval" />
+       <string id="string184" value="TreeConnectError" />
+       <string id="string185" value="TreeConnectFailure" />
+       <string id="string186" value="UnexpectedSMB1ResponseReceived" />
+       <string id="string187" value="UninstallSMB1Client" />
+       <string id="string188" value="ut:Diagnostic" />
+       <string id="string189" value="ut:End" />
+       <string id="string190" value="ut:Packet" />
+       <string id="string191" value="ut:ReceivePath" />
+       <string id="string192" value="ut:SendPath" />
+       <string id="string193" value="ut:Start" />
+       <string id="string194" value="VNetRootStateTransition" />
+       <string id="string195" value="win:Info" />
+       <string id="string196" value="win:Start" />
+       <string id="string197" value="WitnessDeregistration" />
+       <string id="string198" value="WitnessMove" />
+       <string id="string199" value="WitnessMoveFailure" />
+       <string id="string200" value="WitnessMoveSuccess" />
+       <string id="string201" value="WitnessRegistration" />
+       <string id="string202" value="WskConnectFailure" />
+       <string id="string203" value="WskConnectSuccess" />
+       <string id="string204" value="WskGetAddressInfoFailure" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,2505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Processor-Power" name="Microsoft-Windows-Kernel-Processor-Power" guid="{0f67e49f-fe51-4e9f-b490-6f2948cc6027}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="System" task="IdleStatesError" opcode="win:Info" template="Args1_0"/>
+        <event value="2" version="0" level="win:Error"  channel="System" task="PerfStatesError" opcode="win:Info"/>
+        <event value="3" version="0" level="win:Error"  channel="System" task="ThrottleStatesError" opcode="win:Info"/>
+        <event value="4" version="0" level="win:Informational"  channel="System" task="Summary" opcode="win:Info" template="Args4_0"/>
+        <event value="5" version="0" level="win:Error"  channel="System" task="IdleStatesErrata" opcode="win:Info"/>
+        <event value="6" version="0" level="win:Error"  channel="System" task="PerfStatesErrata" opcode="win:Info"/>
+        <event value="7" version="0" level="win:Warning"  channel="System" task="LongCapInfo" opcode="win:Info" template="Args7_0"/>
+        <event value="8" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Processor-Power/Diagnostic" task="QuickCapInfo" opcode="win:Info"/>
+        <event value="9" version="0" level="win:Informational"  task="DomainPerfStateChange" opcode="win:Info" keywords="Perf" template="Args9_0"/>
+        <event value="10" version="0" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf" template="Args10_0"/>
+        <event value="11" version="0" level="win:Verbose"  task="PerfCheck" opcode="win:Start" keywords="Diag" template="Args11_0"/>
+        <event value="12" version="0" level="win:Verbose"  task="RecordedUtility" opcode="win:Info" keywords="Diag" template="Args12_0"/>
+        <event value="13" version="0" level="win:Informational"  task="ExpectedUtility" opcode="win:Info" keywords="Diag" template="Args13_0"/>
+        <event value="14" version="0" level="win:Informational"  task="ParkCore" opcode="win:Info" keywords="Perf Diag"/>
+        <event value="15" version="0" level="win:Informational"  task="UnparkCore" opcode="win:Info" keywords="Perf Diag"/>
+        <event value="16" version="0" level="win:Verbose"  task="PerfCheck" opcode="win:Stop" keywords="Diag"/>
+        <event value="18" version="0" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf"/>
+        <event value="19" version="0" level="win:Informational"  task="IdleAccountingRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args19_0"/>
+        <event value="20" version="0" level="win:Informational"  task="ProcessorFirmwareRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args20_0"/>
+        <event value="21" version="0" level="win:Informational"  task="CStateDomainFirmwareRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args21_0"/>
+        <event value="22" version="0" level="win:Informational"  task="PTStateDomainFirmwareRundown" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="23" version="0" level="win:Informational"  task="Summary" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args23_0"/>
+        <event value="24" version="0" level="win:Error"  task="IdleStatesErrata" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="25" version="0" level="win:Error"  task="PerfStatesErrata" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="26" version="0" level="win:Informational"  channel="System" task="Summary" opcode="win:Info"/>
+        <event value="27" version="0" level="win:Error"  channel="System" task="ThrottleStatesErrata" opcode="win:Info"/>
+        <event value="28" version="0" level="win:Error"  task="ThrottleStatesErrata" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="29" version="0" level="win:Informational"  channel="System" task="PccSummary" opcode="win:Info" template="Args29_0"/>
+        <event value="30" version="0" level="win:Informational"  task="PccSummary" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="31" version="0" level="win:Error"  channel="System" task="PccErrata" opcode="win:Info"/>
+        <event value="32" version="0" level="win:Error"  task="PccErrata" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="33" version="0" level="win:Error"  channel="System" task="PccError" opcode="win:Info"/>
+        <event value="34" version="0" level="win:Error"  channel="System" task="IdleStatesError" opcode="win:Info"/>
+        <event value="35" version="0" level="win:Error"  channel="System" task="PerfStatesError" opcode="win:Info"/>
+        <event value="36" version="0" level="win:Error"  channel="System" task="ThrottleStatesError" opcode="win:Info"/>
+        <event value="37" version="0" level="win:Warning"  channel="System" task="LongCapInfo" opcode="win:Info" template="Args37_0"/>
+        <event value="38" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Processor-Power/Diagnostic" task="QuickCapInfo" opcode="win:Info"/>
+        <event value="39" version="0" level="win:Informational"  task="NotifyPStates" opcode="win:Info" keywords="Diag" template="Args39_0"/>
+        <event value="40" version="0" level="win:Informational"  task="NotifyCStates" opcode="win:Info" keywords="Diag"/>
+        <event value="41" version="0" level="win:Informational"  task="NotifyTStates" opcode="win:Info" keywords="Diag"/>
+        <event value="42" version="0" level="win:Informational"  task="PerfStatesRundown" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="43" version="0" level="win:Informational"  task="BiosPStatesRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args43_0"/>
+        <event value="44" version="0" level="win:Informational"  task="BiosCStatesRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args44_0"/>
+        <event value="45" version="0" level="win:Informational"  task="BiosTStatesRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args45_0"/>
+        <event value="46" version="0" level="win:Informational"  task="PccCapChange" opcode="win:Info" keywords="Diag"/>
+        <event value="47" version="0" level="win:Informational"  task="BiosCapChange" opcode="win:Info" keywords="Diag"/>
+        <event value="48" version="0" level="win:Informational"  task="ThermalCapChange" opcode="win:Info" keywords="Diag"/>
+        <event value="49" version="0" level="win:Verbose"  task="PerfCheck" opcode="Makeup" keywords="Diag"/>
+        <event value="50" version="0" level="win:Informational"  task="LogicalProcessorIdlingCorePark" opcode="win:Info" keywords="Diag Lpi" template="Args50_0"/>
+        <event value="51" version="0" level="win:Informational"  task="LogicalProcessorIdlingRundown" opcode="win:Info" keywords="Diag Lpi"/>
+        <event value="52" version="0" level="win:Informational"  task="LatencySensitivityHint" opcode="win:Info" keywords="Diag" template="Args52_0"/>
+        <event value="53" version="0" level="win:Verbose"  task="ParkNodeRecordedStats" opcode="win:Info" keywords="Diag" template="Args53_0"/>
+        <event value="54" version="0" level="win:Error"  channel="System" task="CpcError" opcode="win:Info"/>
+        <event value="55" version="0" level="win:Informational"  channel="System" task="Summary2" opcode="win:Info" template="Args55_0"/>
+        <event value="56" version="0" level="win:Informational"  task="Summary2" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="57" version="0" level="win:Informational"  task="PepGetIdleStates" opcode="win:Info" keywords="Diag" template="Args57_0"/>
+        <event value="58" version="0" level="win:Informational"  task="PepGetIdleStates" opcode="win:Info" keywords="Diag"/>
+        <event value="59" version="0" level="win:Informational"  task="PepQueryCapabilities" opcode="win:Info" keywords="Diag" template="Args59_0"/>
+        <event value="60" version="0" level="win:Informational"  task="PepQueryCapabilities" opcode="win:Info" keywords="Diag"/>
+        <event value="61" version="0" level="win:Informational"  task="PepPerfConstraintChange" opcode="win:Info" keywords="Diag" template="Args61_0"/>
+        <event value="62" version="0" level="win:Informational"  task="PepPerfCapabilities" opcode="win:Info" keywords="Diag" template="Args62_0"/>
+        <event value="63" version="0" level="win:Informational"  task="PepPerfCapabilities" opcode="win:Info" keywords="Diag"/>
+        <event value="64" version="0" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag" template="Args64_0"/>
+        <event value="65" version="0" level="win:Informational"  task="ParkNodeRundown" opcode="win:Info" keywords="Diag" template="Args65_0"/>
+        <event value="66" version="0" level="win:Informational"  task="ParkNodeCapChange" opcode="win:Info" keywords="Diag"/>
+        <event value="67" version="0" level="win:Informational"  task="ProcessorIdleRundown" opcode="win:Info" keywords="Diag" template="Args67_0"/>
+        <event value="68" version="0" level="win:Informational"  task="ProcessorIdRundown" opcode="win:Info" keywords="Diag" template="Args68_0"/>
+        <event value="69" version="0" level="win:Informational"  task="PepGetPlatformIdleStates" opcode="win:Info" keywords="Diag" template="Args69_0"/>
+        <event value="70" version="0" level="win:Informational"  task="PepGetPlatformIdleStates" opcode="win:Info" keywords="Diag SleepStudy"/>
+        <event value="71" version="0" level="win:Verbose"  task="PerfCheck" opcode="FailedStart" keywords="Diag" template="Args71_0"/>
+        <event value="72" version="0" level="win:Informational"  task="PlatformIdleAccountingRundown" opcode="win:Info" keywords="Diag" template="Args72_0"/>
+        <event value="73" version="0" level="win:Informational"  task="PlatformParkingPreference" opcode="win:Info" keywords="Diag" template="Args73_0"/>
+        <event value="74" version="0" level="win:Informational"  task="LowPowerScenarioChange" opcode="win:Info" keywords="Perf Diag" template="Args74_0"/>
+        <event value="75" version="0" level="win:Informational"  task="LowPowerScenarioRundown" opcode="win:Info" keywords="Perf Diag" template="Args75_0"/>
+        <event value="76" version="0" level="win:Informational"  task="LowPowerScenarioInformationRundown" opcode="win:Info" keywords="Perf Diag" template="Args76_0"/>
+        <event value="77" version="0" level="win:Informational"  task="PepGetIdleStatesV2" opcode="win:Info" keywords="Diag"/>
+        <event value="78" version="0" level="win:Informational"  task="PepGetIdleStatesV2Rundown" opcode="win:Info" keywords="Diag"/>
+        <event value="79" version="0" level="win:Informational"  task="PepGetPlatformIdleState" opcode="win:Info" keywords="Diag" template="Args79_0"/>
+        <event value="80" version="0" level="win:Informational"  task="PepGetPlatformIdleStateRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="81" version="0" level="win:Informational"  task="DripsAccountingSnapshot" opcode="win:Info" keywords="SleepStudy" template="Args81_0"/>
+        <event value="82" version="0" level="win:Informational"  task="PlatformAccountingBucketIntervalsRundown" opcode="win:Info" keywords="SleepStudy" template="Args82_0"/>
+        <event value="83" version="0" level="win:Informational"  task="PlatformIdleVetoIncrement" opcode="win:Info" keywords="Diag" template="Args83_0"/>
+        <event value="84" version="0" level="win:Informational"  task="PlatformIdleVetoDecrement" opcode="win:Info" keywords="Diag"/>
+        <event value="85" version="0" level="win:Informational"  task="ProcessorIdleVetoIncrement" opcode="win:Info" keywords="Diag" template="Args85_0"/>
+        <event value="86" version="0" level="win:Informational"  task="ProcessorIdleVetoDecrement" opcode="win:Info" keywords="Diag"/>
+        <event value="87" version="0" level="win:Informational"  task="PlatformIdleVetoRundown" opcode="win:Info" keywords="Diag" template="Args87_0"/>
+        <event value="88" version="0" level="win:Informational"  task="ProcessorIdleVetoRundown" opcode="win:Info" keywords="Diag" template="Args88_0"/>
+        <event value="89" version="0" level="win:Informational"  task="StaticPolicyRundown" opcode="win:Info" keywords="Diag" template="Args89_0"/>
+        <event value="90" version="0" level="win:Informational"  task="PerfSelectProcessorState" opcode="win:Info" keywords="Algorithm" template="Args90_0"/>
+        <event value="91" version="0" level="win:Informational"  task="VetoNameRundown" opcode="win:Info" keywords="Diag" template="Args91_0"/>
+        <event value="92" version="0" level="win:Informational"  task="PepGetCoordinatedIdleStates" opcode="win:Info" keywords="Diag"/>
+        <event value="93" version="0" level="win:Informational"  task="PepGetCoordinatedIdleStatesRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="94" version="0" level="win:Informational"  task="PepGetCoordinatedDependency" opcode="win:Info" keywords="Diag" template="Args94_0"/>
+        <event value="95" version="0" level="win:Informational"  task="PepGetCoordinatedDependencyRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="96" version="0" level="win:Informational"  task="MediaBufferingNotify" opcode="win:Info" keywords="Algorithm" template="Args96_0"/>
+        <event value="97" version="0" level="win:Informational"  task="ComputeEnergy" opcode="win:Info" keywords="EnergyEstimation" template="Args97_0"/>
+        <event value="98" version="0" level="win:Informational"  task="CoordinatedIdleRundown" opcode="win:Info" keywords="Diag SleepStudy"/>
+        <event value="99" version="0" level="win:Verbose"  task="HeteroResponse" opcode="win:Info" keywords="Algorithm" template="Args99_0"/>
+        <event value="100" version="0" level="win:Verbose"  task="PerfCheck" opcode="win:Start" keywords="Diag" template="Args100_0"/>
+        <event value="101" version="0" level="win:Verbose"  task="HeteroDistributeUtility" opcode="win:Info" keywords="Algorithm" template="Args101_0"/>
+        <event value="102" version="0" level="win:Informational"  task="ProfileRegistered" opcode="win:Info" keywords="Algorithm Profiles" template="Args102_0"/>
+        <event value="103" version="0" level="win:Informational"  task="ProfileRundown" opcode="win:Info" keywords="PowerDiagnostics Algorithm Profiles"/>
+        <event value="104" version="0" level="win:Informational"  task="ProfileChange" opcode="win:Info" keywords="Algorithm Profiles" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  task="ProfileSettingChange" opcode="win:Info" keywords="Algorithm Profiles" template="Args105_0"/>
+        <event value="106" version="0" level="win:Informational"  task="ProfileSettingRundown" opcode="win:Info" keywords="PowerDiagnostics Algorithm Profiles"/>
+        <event value="107" version="0" level="win:Informational"  task="ProfileStatusRundown" opcode="win:Info" keywords="PowerDiagnostics Algorithm Profiles"/>
+        <event value="108" version="0" level="win:Informational"  task="ProfileEnabled" opcode="win:Info" keywords="Algorithm Profiles"/>
+        <event value="109" version="0" level="win:Informational"  task="ProfileDisabled" opcode="win:Info" keywords="Algorithm Profiles"/>
+        <event value="110" version="0" level="win:Informational"  task="IdleDurationExpiration" opcode="win:Info" keywords="Diag"/>
+        <event value="111" version="0" level="win:Informational"  task="DeliveredPerfChange" opcode="win:Info" keywords="PerfDiag" template="Args111_0"/>
+        <event value="112" version="0" level="win:Verbose"  task="ParkSelection" opcode="win:Info" keywords="Algorithm" template="Args112_0"/>
+        <event value="113" version="0" level="win:Verbose"  task="ProcessorEnergyCounter" opcode="win:Info" keywords="EnergyEstimation" template="Args113_0"/>
+        <event value="114" version="0" level="win:Verbose"  task="PackageEnergyCounter" opcode="win:Info" keywords="EnergyEstimation"/>
+        <event value="115" version="0" level="win:Verbose"  task="ProcessorPreVetoAccountingRundown" opcode="win:Info" keywords="Diag" template="Args115_0"/>
+        <event value="116" version="0" level="win:Verbose"  task="PlatformPreVetoAccountingRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="117" version="0" level="win:Informational"  task="NotifyCpcHighest" opcode="win:Info" keywords="Diag"/>
+        <event value="118" version="0" level="win:Informational"  task="ProcessorClassUpdate" opcode="win:Info" keywords="Diag" template="Args118_0"/>
+        <event value="119" version="0" level="win:Informational"  task="HeterogeneousPoliciesChanged" opcode="win:Info" keywords="Diag" template="Args119_0"/>
+        <event value="120" version="0" level="win:Informational"  task="HeterogeneousPoliciesRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="121" version="0" level="win:Informational"  task="AutonomousModeChange" opcode="win:Info" keywords="Diag" template="Args121_0"/>
+        <event value="122" version="0" level="win:Informational"  task="ProcessorLpiStatesRundown" opcode="win:Info" keywords="Diag" template="Args122_0"/>
+        <event value="123" version="0" level="win:Informational"  task="ProcessorContainerLpiStatesRundown" opcode="win:Info" keywords="Diag" template="Args123_0"/>
+        <event value="124" version="0" level="win:Informational"  task="VirtualHeterogeneityRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args124_0"/>
+        <event value="125" version="0" level="win:Informational"  task="VirtualHeterogeneitySupportChanged" opcode="win:Info" keywords="Diag PerfDiag"/>
+        <event value="126" version="0" level="win:Informational"  task="QosSupportRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args126_0"/>
+        <event value="127" version="0" level="win:Informational"  task="QosSupportChanged" opcode="win:Info" keywords="Diag PerfDiag"/>
+        <event value="128" version="0" level="win:Informational"  task="PepPerfDomainInfo" opcode="win:Info" keywords="Diag" template="Args128_0"/>
+        <event value="129" version="0" level="win:Informational"  task="PepPerfDomainInfoRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="130" version="0" level="win:Informational"  task="WpsDynamicUpdate" opcode="win:Info" keywords="Diag"/>
+        <event value="131" version="0" level="win:Verbose"  task="ParkNodeClassRecordedStats" opcode="win:Info" keywords="Diag" template="Args131_0"/>
+        <event value="132" version="0" level="win:Verbose"  task="ParkNodeParkHintChange" opcode="win:Info" keywords="Diag" template="Args132_0"/>
+        <event value="133" version="0" level="win:Informational"  task="HiddenProcessorPerfRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args133_0"/>
+        <event value="134" version="0" level="win:Informational"  task="HiddenProcessorBiosCapChange" opcode="win:Info" keywords="Diag" template="Args134_0"/>
+        <event value="135" version="0" level="win:Informational"  task="HiddenProcessorThermalCapChange" opcode="win:Info" keywords="Diag"/>
+        <event value="136" version="0" level="win:Error"  channel="System" task="PerfStatesDegraded" opcode="win:Info"/>
+        <event value="137" version="0" level="win:Verbose"  task="SoftParkSelection" opcode="win:Info" keywords="Algorithm" template="Args137_0"/>
+        <event value="138" version="0" level="win:Informational"  task="SoftParkStateChange" opcode="win:Info" keywords="Perf Diag" template="Args138_0"/>
+        <event value="139" version="0" level="win:Verbose"  task="RecordedUtilityHv" opcode="win:Info" keywords="Diag" template="Args139_0"/>
+        <event value="140" version="0" level="win:Informational"  task="PerfSelectProcessorStateHv" opcode="win:Info" keywords="Algorithm" template="Args140_0"/>
+        <event value="141" version="0" level="win:Informational"  task="DeliveredPerfChangeHv" opcode="win:Info" keywords="PerfDiag" template="Args141_0"/>
+        <event value="142" version="0" level="win:Informational"  task="ExpectedUtilityHv" opcode="win:Info" keywords="Diag" template="Args142_0"/>
+        <event value="143" version="0" level="win:Informational"  task="AutonomousModeChangeHv" opcode="win:Info" keywords="Diag" template="Args143_0"/>
+        <event value="144" version="0" level="win:Informational"  task="ProcessorPerfStateChangeHv" opcode="win:Info" keywords="Perf" template="Args144_0"/>
+        <event value="145" version="0" level="win:Informational"  task="BiosCapChangeHv" opcode="win:Info" keywords="Diag" template="Args145_0"/>
+        <event value="146" version="0" level="win:Informational"  task="ThermalCapChangeHv" opcode="win:Info" keywords="Diag"/>
+        <event value="147" version="0" level="win:Informational"  task="ProcessorPerformanceRundownHv" opcode="win:Info" keywords="Diag PerfDiag" template="Args147_0"/>
+        <event value="148" version="0" level="win:Informational"  task="DeliveredPerfChange" opcode="win:Info" keywords="PerfDiag" template="Args148_0"/>
+        <event value="149" version="0" level="win:Informational"  task="PerfDomainRundown" opcode="win:Info" keywords="Perf Diag PerfDiag" template="Args149_0"/>
+        <event value="150" version="0" level="win:Informational"  task="Summary2Hv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args150_0"/>
+        <event value="151" version="0" level="win:Informational"  task="Summary2Hv" opcode="win:Info" keywords="Diag PowerDiagnostics"/>
+        <event value="152" version="0" level="win:Informational"  task="SummaryHv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args152_0"/>
+        <event value="153" version="0" level="win:Warning"  task="QuickCapInfoHv" opcode="win:Info" keywords="Diag" template="Args153_0"/>
+        <event value="154" version="0" level="win:Warning"  task="LongCapInfoHv" opcode="win:Info" keywords="Diag"/>
+        <event value="155" version="0" level="win:Informational"  task="ProcessorFirmwareRundownHv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args155_0"/>
+        <event value="156" version="0" level="win:Informational"  task="PerfStatesRundownHv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args156_0"/>
+        <event value="157" version="0" level="win:Informational"  task="BiosPStatesRundownHv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args157_0"/>
+        <event value="158" version="0" level="win:Informational"  task="BiosCStatesRundownHv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args158_0"/>
+        <event value="159" version="0" level="win:Informational"  task="BiosTStatesRundownHv" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args159_0"/>
+        <event value="160" version="0" level="win:Error"  task="IdleStatesErrorHv" opcode="win:Info"/>
+        <event value="161" version="0" level="win:Error"  task="PerfStatesErrorHv" opcode="win:Info"/>
+        <event value="162" version="0" level="win:Error"  task="ThrottleStatesErrorHv" opcode="win:Info"/>
+        <event value="163" version="0" level="win:Error"  task="PccErrorHv" opcode="win:Info"/>
+        <event value="164" version="0" level="win:Error"  task="CpcErrorHv" opcode="win:Info"/>
+        <event value="165" version="0" level="win:Informational"  task="NotifyPStatesHv" opcode="win:Info" keywords="Diag"/>
+        <event value="166" version="0" level="win:Informational"  task="NotifyCStatesHv" opcode="win:Info" keywords="Diag"/>
+        <event value="167" version="0" level="win:Informational"  task="NotifyTStatesHv" opcode="win:Info" keywords="Diag"/>
+        <event value="168" version="0" level="win:Informational"  task="NotifyCpcHighestHv" opcode="win:Info" keywords="Diag"/>
+        <event value="169" version="0" level="win:Informational"  task="PccCapChangeHv" opcode="win:Info" keywords="Diag"/>
+        <event value="170" version="0" level="win:Informational"  task="ProcessorLpiStatesRundownHv" opcode="win:Info" keywords="Diag" template="Args170_0"/>
+        <event value="171" version="0" level="win:Informational"  task="HardwareDebugRegisterRundown" opcode="win:Info" keywords="HardwareDebug" template="Args171_0"/>
+        <event value="172" version="0" level="win:Informational"  task="HardwareDebugParameterRundown" opcode="win:Info" keywords="HardwareDebug" template="Args172_0"/>
+        <event value="173" version="0" level="win:Informational"  task="HardwareDebugRegisterValueChange" opcode="win:Info" keywords="HardwareDebug"/>
+        <event value="174" version="0" level="win:Informational"  task="HardwareDebugRegisterAdd" opcode="win:Info" keywords="HardwareDebug"/>
+        <event value="175" version="0" level="win:Informational"  task="HardwareDebugRegisterRemove" opcode="win:Info" keywords="HardwareDebug"/>
+        <event value="176" version="0" level="win:Informational"  task="HardwareDebugParameterAdd" opcode="win:Info" keywords="HardwareDebug"/>
+        <event value="177" version="0" level="win:Informational"  task="HardwareDebugParameterRemove" opcode="win:Info" keywords="HardwareDebug"/>
+        <event value="178" version="0" level="win:Informational"  task="QosClassPolicy" opcode="win:Info" keywords="Diag" template="Args178_0"/>
+        <event value="179" version="0" level="win:Informational"  task="QosClassPolicyRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="180" version="0" level="win:Informational"  task="WpsDynamicTableRundown" opcode="win:Info" keywords="Diag" template="Args180_0"/>
+        <event value="181" version="0" level="win:Informational"  task="WpsDynamicTableChanged" opcode="win:Info" keywords="Diag"/>
+        <event value="182" version="0" level="win:Informational"  task="WpsOrderValueTableRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="183" version="0" level="win:Informational"  task="WpsOrderValueTableChanged" opcode="win:Info" keywords="Diag"/>
+        <event value="184" version="0" level="win:Informational"  task="HeteroFavoredCoreRotationChanged" opcode="win:Info" keywords="Diag" template="Args184_0"/>
+        <event value="185" version="0" level="win:Informational"  task="HeteroWpsActiveWorkloadClass" opcode="win:Info" keywords="Diag" template="Args185_0"/>
+        <event value="186" version="0" level="win:Informational"  task="HeteroParkingSelectionCount" opcode="win:Info" keywords="Diag" template="Args186_0"/>
+        <event value="187" version="0" level="win:Informational"  task="MultiCoreClassHeteroSets" opcode="win:Info" keywords="Diag" template="Args187_0"/>
+        <event value="188" version="0" level="win:Informational"  task="DualCoreClassHeteroSets" opcode="win:Info" keywords="Diag" template="Args188_0"/>
+        <event value="189" version="0" level="win:Informational"  task="SoftParkingRankListChanged" opcode="win:Info" keywords="Diag" template="Args189_0"/>
+        <event value="190" version="0" level="win:Informational"  task="MultiClassHeteroResponse" opcode="win:Info" keywords="Algorithm" template="Args190_0"/>
+        <event value="191" version="0" level="win:Informational"  task="MultiClassHeteroResponseUpdate" opcode="win:Info" keywords="Diag" template="Args191_0"/>
+        <event value="192" version="0" level="win:Informational"  task="ParkingCountSelection" opcode="win:Info" keywords="Diag" template="Args192_0"/>
+        <event value="193" version="0" level="win:Informational"  task="MultiCoreHeteroSetRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="194" version="0" level="win:Informational"  task="MultiCoreHeteroSetUpdate" opcode="win:Info" keywords="Diag"/>
+        <event value="195" version="0" level="win:Informational"  task="WpsDynamicUpdateReason" opcode="win:Info" keywords="Diag"/>
+        <event value="196" version="0" level="win:Informational"  task="WpsDynamicUpdateReasonRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="197" version="0" level="win:Informational"  task="WpsDynamicUpdateReasonBitIndexMapRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="198" version="0" level="win:Verbose"  task="ProcessorEnergyEsuRundown" opcode="win:Info" keywords="EnergyEstimation" template="Args198_0"/>
+        <event value="199" version="0" level="win:Verbose"  task="EnergyEstimationFrequencyRundown" opcode="win:Info" keywords="EnergyEstimation" template="Args199_0"/>
+        <event value="200" version="0" level="win:Verbose"  task="ProcessorLatencyRequirementChange" opcode="win:Info" keywords="Diag" template="Args200_0"/>
+        <event value="201" version="0" level="win:Verbose"  task="ProcessorLatencyReevaluationWake" opcode="win:Info" keywords="Diag"/>
+        <event value="202" version="0" level="win:Informational"  task="QosClassPerfSelection" opcode="win:Info" keywords="Diag"/>
+        <event value="203" version="0" level="win:Informational"  task="QosClassPerfSelectionRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="204" version="0" level="win:Informational"  task="ForceParkStateChange" opcode="win:Info" keywords="Perf Diag" template="Args204_0"/>
+        <event value="205" version="0" level="win:Informational"  task="WpsContainmentGroupInfo" opcode="win:Info" keywords="Diag" template="Args205_0"/>
+        <event value="206" version="0" level="win:Informational"  task="WpsContainmentGroupInfoRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="207" version="0" level="win:Informational"  task="WpsContainmentPolicyChange" opcode="win:Info" keywords="Diag" template="Args207_0"/>
+        <event value="208" version="0" level="win:Informational"  task="WpsContainmentPolicyChangeRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="209" version="0" level="win:Informational"  task="WpsContainmentUnparkCount" opcode="win:Info" keywords="Diag" template="Args209_0"/>
+        <event value="210" version="0" level="win:Informational"  task="WpsContainmentHwUpdate" opcode="win:Info" keywords="Diag" template="Args210_0"/>
+        <event value="211" version="0" level="win:Informational"  task="QosClassPolicy" opcode="win:Info" keywords="Diag" template="Args211_0"/>
+        <event value="212" version="0" level="win:Informational"  task="QosClassPolicyRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="213" version="0" level="win:Informational"  task="ProcessorIdHvRundown" opcode="win:Info" keywords="Perf Diag PerfDiag" template="Args213_0"/>
+        <event value="214" version="0" level="win:Informational"  task="RestrictionRundown" opcode="win:Info" keywords="Diag" template="Args214_0"/>
+        <event value="215" version="0" level="win:Informational"  task="RestrictionUpdate" opcode="win:Info" keywords="Diag"/>
+        <event value="216" version="0" level="win:Informational"  task="WpsContainmentHwUpdate" opcode="win:Info" keywords="Diag"/>
+        <event value="217" version="0" level="win:Verbose"  task="CoreParkingSelection" opcode="win:Info" keywords="Algorithm" template="Args217_0"/>
+        <event value="223" version="0" level="win:Informational"  task="SoftParkLatencyUpdate" opcode="win:Info" keywords="Diag" template="Args223_0"/>
+        <event value="224" version="0" level="win:Informational"  task="HighPerfSoftParkLatencyRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="9" version="1" level="win:Informational"  task="DomainPerfStateChange" opcode="win:Info" keywords="Perf" template="Args9_1"/>
+        <event value="10" version="1" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf" template="Args10_1"/>
+        <event value="11" version="1" level="win:Verbose"  task="PerfCheck" opcode="win:Start" keywords="Diag" template="Args11_1"/>
+        <event value="12" version="1" level="win:Verbose"  task="RecordedUtility" opcode="win:Info" keywords="Diag" template="Args12_1"/>
+        <event value="14" version="1" level="win:Informational"  task="ParkCore" opcode="win:Info" keywords="Perf Diag"/>
+        <event value="18" version="1" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf"/>
+        <event value="19" version="1" level="win:Informational"  task="IdleAccountingRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args19_1"/>
+        <event value="26" version="1" level="win:Informational"  channel="System" task="Summary" opcode="win:Info"/>
+        <event value="34" version="1" level="win:Error"  channel="System" task="IdleStatesError" opcode="win:Info"/>
+        <event value="35" version="1" level="win:Error"  channel="System" task="PerfStatesError" opcode="win:Info"/>
+        <event value="36" version="1" level="win:Error"  channel="System" task="ThrottleStatesError" opcode="win:Info"/>
+        <event value="37" version="1" level="win:Warning"  channel="System" task="LongCapInfo" opcode="win:Info"/>
+        <event value="53" version="1" level="win:Verbose"  task="ParkNodeRecordedStats" opcode="win:Info" keywords="Diag" template="Args53_1"/>
+        <event value="55" version="1" level="win:Informational"  channel="System" task="Summary2" opcode="win:Info"/>
+        <event value="59" version="1" level="win:Informational"  task="PepQueryCapabilities" opcode="win:Info" keywords="Diag" template="Args59_1"/>
+        <event value="60" version="1" level="win:Informational"  task="PepQueryCapabilities" opcode="win:Info" keywords="Diag"/>
+        <event value="62" version="1" level="win:Informational"  task="PepPerfCapabilities" opcode="win:Info" keywords="Diag" template="Args62_1"/>
+        <event value="63" version="1" level="win:Informational"  task="PepPerfCapabilities" opcode="win:Info" keywords="Diag"/>
+        <event value="64" version="1" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_1"/>
+        <event value="65" version="1" level="win:Informational"  task="ParkNodeRundown" opcode="win:Info" keywords="Diag" template="Args65_1"/>
+        <event value="66" version="1" level="win:Informational"  task="ParkNodeCapChange" opcode="win:Info" keywords="Diag"/>
+        <event value="67" version="1" level="win:Informational"  task="ProcessorIdleRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="68" version="1" level="win:Informational"  task="ProcessorIdRundown" opcode="win:Info" keywords="Perf Diag PerfDiag" template="Args68_1"/>
+        <event value="72" version="1" level="win:Informational"  task="PlatformIdleAccountingRundown" opcode="win:Info" keywords="Diag" template="Args72_1"/>
+        <event value="81" version="1" level="win:Informational"  task="DripsAccountingSnapshot" opcode="win:Info" keywords="SleepStudy" template="Args81_1"/>
+        <event value="89" version="1" level="win:Informational"  task="StaticPolicyRundown" opcode="win:Info" keywords="Diag" template="Args89_1"/>
+        <event value="111" version="1" level="win:Informational"  task="DeliveredPerfChange" opcode="win:Info" keywords="PerfDiag"/>
+        <event value="118" version="1" level="win:Informational"  task="ProcessorClassUpdate" opcode="win:Info" keywords="Diag" template="Args118_1"/>
+        <event value="119" version="1" level="win:Informational"  task="HeterogeneousPoliciesChanged" opcode="win:Info" keywords="Diag" template="Args119_1"/>
+        <event value="120" version="1" level="win:Informational"  task="HeterogeneousPoliciesRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="128" version="1" level="win:Informational"  task="PepPerfDomainInfo" opcode="win:Info" keywords="Diag" template="Args128_1"/>
+        <event value="129" version="1" level="win:Informational"  task="PepPerfDomainInfoRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="131" version="1" level="win:Verbose"  task="ParkNodeClassRecordedStats" opcode="win:Info" keywords="Diag" template="Args131_1"/>
+        <event value="137" version="1" level="win:Verbose"  task="SoftParkSelection" opcode="win:Info" keywords="Algorithm" template="Args137_1"/>
+        <event value="139" version="1" level="win:Verbose"  task="RecordedUtilityHv" opcode="win:Info" keywords="Diag" template="Args139_1"/>
+        <event value="144" version="1" level="win:Informational"  task="ProcessorPerfStateChangeHv" opcode="win:Info" keywords="Perf" template="Args144_1"/>
+        <event value="147" version="1" level="win:Informational"  task="ProcessorPerformanceRundownHv" opcode="win:Info" keywords="Diag PerfDiag" template="Args147_1"/>
+        <event value="149" version="1" level="win:Informational"  task="PerfDomainRundown" opcode="win:Info" keywords="Perf Diag PerfDiag" template="Args149_1"/>
+        <event value="185" version="1" level="win:Informational"  task="HeteroWpsActiveWorkloadClass" opcode="win:Info" keywords="Diag" template="Args185_1"/>
+        <event value="186" version="1" level="win:Informational"  task="HeteroParkingSelectionCount" opcode="win:Info" keywords="Diag" template="Args186_1"/>
+        <event value="193" version="1" level="win:Informational"  task="MultiCoreHeteroSetRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="194" version="1" level="win:Informational"  task="MultiCoreHeteroSetUpdate" opcode="win:Info" keywords="Diag"/>
+        <event value="202" version="1" level="win:Informational"  task="QosClassPerfSelection" opcode="win:Info" keywords="Diag"/>
+        <event value="203" version="1" level="win:Informational"  task="QosClassPerfSelectionRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="207" version="1" level="win:Informational"  task="WpsContainmentPolicyChange" opcode="win:Info" keywords="Diag" template="Args207_1"/>
+        <event value="208" version="1" level="win:Informational"  task="WpsContainmentPolicyChangeRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="211" version="1" level="win:Informational"  task="QosClassPolicy" opcode="win:Info" keywords="Diag" template="Args211_1"/>
+        <event value="212" version="1" level="win:Informational"  task="QosClassPolicyRundown" opcode="win:Info" keywords="Diag"/>
+        <event value="9" version="2" level="win:Informational"  task="DomainPerfStateChange" opcode="win:Info" keywords="Perf" template="Args9_2"/>
+        <event value="10" version="2" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf" template="Args10_2"/>
+        <event value="12" version="2" level="win:Verbose"  task="RecordedUtility" opcode="win:Info" keywords="Diag" template="Args12_2"/>
+        <event value="18" version="2" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf"/>
+        <event value="19" version="2" level="win:Informational"  task="IdleAccountingRundown" opcode="win:Info" keywords="Diag PowerDiagnostics" template="Args19_2"/>
+        <event value="53" version="2" level="win:Verbose"  task="ParkNodeRecordedStats" opcode="win:Info" keywords="Diag"/>
+        <event value="62" version="2" level="win:Informational"  task="PepPerfCapabilities" opcode="win:Info" keywords="Diag" template="Args62_2"/>
+        <event value="63" version="2" level="win:Informational"  task="PepPerfCapabilities" opcode="win:Info" keywords="Diag"/>
+        <event value="64" version="2" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_2"/>
+        <event value="65" version="2" level="win:Informational"  task="ParkNodeRundown" opcode="win:Info" keywords="Diag" template="Args65_2"/>
+        <event value="67" version="2" level="win:Informational"  task="ProcessorIdleRundown" opcode="win:Info" keywords="Diag" template="Args67_2"/>
+        <event value="68" version="2" level="win:Informational"  task="ProcessorIdRundown" opcode="win:Info" keywords="Perf Diag PerfDiag" template="Args68_2"/>
+        <event value="72" version="2" level="win:Informational"  task="PlatformIdleAccountingRundown" opcode="win:Info" keywords="Diag" template="Args72_2"/>
+        <event value="89" version="2" level="win:Informational"  task="StaticPolicyRundown" opcode="win:Info" keywords="Diag" template="Args89_2"/>
+        <event value="111" version="2" level="win:Informational"  task="DeliveredPerfChange" opcode="win:Info" keywords="PerfDiag" template="Args111_2"/>
+        <event value="137" version="2" level="win:Verbose"  task="SoftParkSelection" opcode="win:Info" keywords="Algorithm" template="Args137_2"/>
+        <event value="139" version="2" level="win:Verbose"  task="RecordedUtilityHv" opcode="win:Info" keywords="Diag" template="Args139_2"/>
+        <event value="9" version="3" level="win:Informational"  task="DomainPerfStateChange" opcode="win:Info" keywords="Perf" template="Args9_3"/>
+        <event value="10" version="3" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf" template="Args10_3"/>
+        <event value="12" version="3" level="win:Verbose"  task="RecordedUtility" opcode="win:Info" keywords="Diag" template="Args12_3"/>
+        <event value="64" version="3" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_3"/>
+        <event value="65" version="3" level="win:Informational"  task="ParkNodeRundown" opcode="win:Info" keywords="Diag" template="Args65_3"/>
+        <event value="89" version="3" level="win:Informational"  task="StaticPolicyRundown" opcode="win:Info" keywords="Diag" template="Args89_3"/>
+        <event value="10" version="4" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf" template="Args10_4"/>
+        <event value="12" version="4" level="win:Verbose"  task="RecordedUtility" opcode="win:Info" keywords="Diag" template="Args12_4"/>
+        <event value="64" version="4" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_4"/>
+        <event value="89" version="4" level="win:Informational"  task="StaticPolicyRundown" opcode="win:Info" keywords="Diag" template="Args89_4"/>
+        <event value="10" version="5" level="win:Informational"  task="ProcessorPerfStateChange" opcode="win:Info" keywords="Perf" template="Args10_5"/>
+        <event value="64" version="5" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_5"/>
+        <event value="64" version="6" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_6"/>
+        <event value="64" version="7" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_7"/>
+        <event value="64" version="8" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_8"/>
+        <event value="64" version="9" level="win:Informational"  task="ProcessorPerformanceRundown" opcode="win:Info" keywords="Diag PerfDiag" template="Args64_9"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-Kernel-Processor-Power/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Perf" mask="0x1" message="$(string.string109)" />
+        <keyword name="Diag" mask="0x2" message="$(string.string19)" />
+        <keyword name="PowerDiagnostics" mask="0x4" message="$(string.string128)" />
+        <keyword name="Lpi" mask="0x8" message="$(string.string61)" />
+        <keyword name="SleepStudy" mask="0x10" message="$(string.string172)" />
+        <keyword name="Algorithm" mask="0x20" message="$(string.string0)" />
+        <keyword name="Profiles" mask="0x40" message="$(string.string155)" />
+        <keyword name="PerfDiag" mask="0x80" message="$(string.string111)" />
+        <keyword name="EnergyEstimation" mask="0x100" message="$(string.string23)" />
+        <keyword name="HardwareDebug" mask="0x200" message="$(string.string29)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="IdleStatesError" message="$(string.string1)">
+        </task>
+        <task value="2" name="PerfStatesError" message="$(string.string2)">
+        </task>
+        <task value="3" name="ThrottleStatesError" message="$(string.string3)">
+        </task>
+        <task value="4" name="Summary" message="$(string.string4)">
+        </task>
+        <task value="5" name="IdleStatesErrata" message="$(string.string5)">
+        </task>
+        <task value="6" name="PerfStatesErrata" message="$(string.string6)">
+        </task>
+        <task value="7" name="LongCapInfo" message="$(string.string7)">
+        </task>
+        <task value="8" name="QuickCapInfo" message="$(string.string8)">
+        </task>
+        <task value="9" name="DomainPerfStateChange" message="$(string.string9)">
+        </task>
+        <task value="10" name="ProcessorPerfStateChange" message="$(string.string10)">
+        </task>
+        <task value="11" name="PerfCheck" message="$(string.string11)">
+          <opcodes>
+           <opcode value="33" name="Makeup" message="$(string.string62)"/>
+           <opcode value="34" name="FailedStart" message="$(string.string27)"/>
+          </opcodes>
+        </task>
+        <task value="12" name="RecordedUtility" message="$(string.string12)">
+        </task>
+        <task value="13" name="ExpectedUtility" message="$(string.string13)">
+        </task>
+        <task value="14" name="ParkCore" message="$(string.string14)">
+        </task>
+        <task value="15" name="UnparkCore" message="$(string.string15)">
+        </task>
+        <task value="17" name="IdleAccountingRundown" message="$(string.string17)">
+        </task>
+        <task value="18" name="ProcessorFirmwareRundown" message="$(string.string18)">
+        </task>
+        <task value="19" name="CStateDomainFirmwareRundown" message="$(string.string19)">
+        </task>
+        <task value="20" name="PTStateDomainFirmwareRundown" message="$(string.string20)">
+        </task>
+        <task value="21" name="ThrottleStatesErrata" message="$(string.string21)">
+        </task>
+        <task value="22" name="PccSummary" message="$(string.string22)">
+        </task>
+        <task value="23" name="PccErrata" message="$(string.string23)">
+        </task>
+        <task value="24" name="PccError" message="$(string.string24)">
+        </task>
+        <task value="25" name="NotifyPStates" message="$(string.string25)">
+        </task>
+        <task value="26" name="NotifyCStates" message="$(string.string26)">
+        </task>
+        <task value="27" name="NotifyTStates" message="$(string.string27)">
+        </task>
+        <task value="28" name="PerfStatesRundown" message="$(string.string28)">
+        </task>
+        <task value="29" name="BiosPStatesRundown" message="$(string.string29)">
+        </task>
+        <task value="30" name="BiosCStatesRundown" message="$(string.string30)">
+        </task>
+        <task value="31" name="BiosTStatesRundown" message="$(string.string31)">
+        </task>
+        <task value="32" name="PccCapChange" message="$(string.string32)">
+        </task>
+        <task value="33" name="BiosCapChange" message="$(string.string33)">
+        </task>
+        <task value="34" name="ThermalCapChange" message="$(string.string34)">
+        </task>
+        <task value="35" name="LogicalProcessorIdlingCorePark" message="$(string.string35)">
+        </task>
+        <task value="36" name="LogicalProcessorIdlingRundown" message="$(string.string36)">
+        </task>
+        <task value="37" name="LatencySensitivityHint" message="$(string.string37)">
+        </task>
+        <task value="38" name="ParkNodeRecordedStats" message="$(string.string38)">
+        </task>
+        <task value="39" name="CpcError" message="$(string.string39)">
+        </task>
+        <task value="40" name="PepGetIdleStates" message="$(string.string40)">
+        </task>
+        <task value="41" name="PepQueryCapabilities" message="$(string.string41)">
+        </task>
+        <task value="42" name="PepPerfConstraintChange" message="$(string.string42)">
+        </task>
+        <task value="43" name="PepPerfCapabilities" message="$(string.string43)">
+        </task>
+        <task value="44" name="ProcessorPerformanceRundown" message="$(string.string44)">
+        </task>
+        <task value="45" name="ParkNodeRundown" message="$(string.string45)">
+        </task>
+        <task value="46" name="ParkNodeCapChange" message="$(string.string46)">
+        </task>
+        <task value="47" name="Summary2" message="$(string.string47)">
+        </task>
+        <task value="48" name="ProcessorIdleRundown" message="$(string.string48)">
+        </task>
+        <task value="49" name="ProcessorIdRundown" message="$(string.string49)">
+        </task>
+        <task value="50" name="PepGetPlatformIdleStates" message="$(string.string50)">
+        </task>
+        <task value="51" name="PlatformIdleAccountingRundown" message="$(string.string51)">
+        </task>
+        <task value="52" name="PlatformParkingPreference" message="$(string.string52)">
+        </task>
+        <task value="53" name="LowPowerScenarioChange" message="$(string.string53)">
+        </task>
+        <task value="54" name="LowPowerScenarioRundown" message="$(string.string54)">
+        </task>
+        <task value="55" name="LowPowerScenarioInformationRundown" message="$(string.string55)">
+        </task>
+        <task value="56" name="PepGetIdleStatesV2" message="$(string.string56)">
+        </task>
+        <task value="57" name="PepGetIdleStatesV2Rundown" message="$(string.string57)">
+        </task>
+        <task value="58" name="PepGetPlatformIdleState" message="$(string.string58)">
+        </task>
+        <task value="59" name="PepGetPlatformIdleStateRundown" message="$(string.string59)">
+        </task>
+        <task value="60" name="DripsAccountingSnapshot" message="$(string.string60)">
+        </task>
+        <task value="61" name="PlatformAccountingBucketIntervalsRundown" message="$(string.string61)">
+        </task>
+        <task value="62" name="PlatformIdleVetoIncrement" message="$(string.string62)">
+        </task>
+        <task value="63" name="PlatformIdleVetoDecrement" message="$(string.string63)">
+        </task>
+        <task value="64" name="ProcessorIdleVetoIncrement" message="$(string.string64)">
+        </task>
+        <task value="65" name="ProcessorIdleVetoDecrement" message="$(string.string65)">
+        </task>
+        <task value="66" name="PlatformIdleVetoRundown" message="$(string.string66)">
+        </task>
+        <task value="67" name="ProcessorIdleVetoRundown" message="$(string.string67)">
+        </task>
+        <task value="68" name="StaticPolicyRundown" message="$(string.string68)">
+        </task>
+        <task value="69" name="PerfSelectProcessorState" message="$(string.string69)">
+        </task>
+        <task value="70" name="VetoNameRundown" message="$(string.string70)">
+        </task>
+        <task value="71" name="PepGetCoordinatedIdleStates" message="$(string.string71)">
+        </task>
+        <task value="72" name="PepGetCoordinatedIdleStatesRundown" message="$(string.string72)">
+        </task>
+        <task value="73" name="PepGetCoordinatedDependency" message="$(string.string73)">
+        </task>
+        <task value="74" name="PepGetCoordinatedDependencyRundown" message="$(string.string74)">
+        </task>
+        <task value="75" name="MediaBufferingNotify" message="$(string.string75)">
+        </task>
+        <task value="76" name="ComputeEnergy" message="$(string.string76)">
+        </task>
+        <task value="77" name="CoordinatedIdleRundown" message="$(string.string77)">
+        </task>
+        <task value="78" name="HeteroResponse" message="$(string.string78)">
+        </task>
+        <task value="79" name="HeteroDistributeUtility" message="$(string.string79)">
+        </task>
+        <task value="80" name="ProfileRegistered" message="$(string.string80)">
+        </task>
+        <task value="81" name="ProfileRundown" message="$(string.string81)">
+        </task>
+        <task value="82" name="ProfileChange" message="$(string.string82)">
+        </task>
+        <task value="83" name="ProfileSettingChange" message="$(string.string83)">
+        </task>
+        <task value="84" name="ProfileSettingRundown" message="$(string.string84)">
+        </task>
+        <task value="85" name="ProfileStatusRundown" message="$(string.string85)">
+        </task>
+        <task value="86" name="ProfileEnabled" message="$(string.string86)">
+        </task>
+        <task value="87" name="ProfileDisabled" message="$(string.string87)">
+        </task>
+        <task value="88" name="IdleDurationExpiration" message="$(string.string88)">
+        </task>
+        <task value="89" name="DeliveredPerfChange" message="$(string.string89)">
+        </task>
+        <task value="90" name="ParkSelection" message="$(string.string90)">
+        </task>
+        <task value="91" name="ProcessorEnergyCounter" message="$(string.string91)">
+        </task>
+        <task value="92" name="PackageEnergyCounter" message="$(string.string92)">
+        </task>
+        <task value="93" name="ProcessorPreVetoAccountingRundown" message="$(string.string93)">
+        </task>
+        <task value="94" name="PlatformPreVetoAccountingRundown" message="$(string.string94)">
+        </task>
+        <task value="95" name="NotifyCpcHighest" message="$(string.string95)">
+        </task>
+        <task value="96" name="ProcessorClassUpdate" message="$(string.string96)">
+        </task>
+        <task value="97" name="HeterogeneousPoliciesChanged" message="$(string.string97)">
+        </task>
+        <task value="98" name="HeterogeneousPoliciesRundown" message="$(string.string98)">
+        </task>
+        <task value="99" name="AutonomousModeChange" message="$(string.string99)">
+        </task>
+        <task value="100" name="ProcessorLpiStatesRundown" message="$(string.string100)">
+        </task>
+        <task value="101" name="ProcessorContainerLpiStatesRundown" message="$(string.string101)">
+        </task>
+        <task value="102" name="VirtualHeterogeneityRundown" message="$(string.string102)">
+        </task>
+        <task value="103" name="VirtualHeterogeneitySupportChanged" message="$(string.string103)">
+        </task>
+        <task value="104" name="QosSupportRundown" message="$(string.string104)">
+        </task>
+        <task value="105" name="QosSupportChanged" message="$(string.string105)">
+        </task>
+        <task value="106" name="PepPerfDomainInfo" message="$(string.string106)">
+        </task>
+        <task value="107" name="PepPerfDomainInfoRundown" message="$(string.string107)">
+        </task>
+        <task value="108" name="WpsDynamicUpdate" message="$(string.string108)">
+        </task>
+        <task value="109" name="ParkNodeClassRecordedStats" message="$(string.string109)">
+        </task>
+        <task value="110" name="ParkNodeParkHintChange" message="$(string.string110)">
+        </task>
+        <task value="111" name="HiddenProcessorPerfRundown" message="$(string.string111)">
+        </task>
+        <task value="112" name="HiddenProcessorBiosCapChange" message="$(string.string112)">
+        </task>
+        <task value="113" name="HiddenProcessorThermalCapChange" message="$(string.string113)">
+        </task>
+        <task value="114" name="PerfStatesDegraded" message="$(string.string114)">
+        </task>
+        <task value="115" name="SoftParkSelection" message="$(string.string115)">
+        </task>
+        <task value="116" name="SoftParkStateChange" message="$(string.string116)">
+        </task>
+        <task value="117" name="RecordedUtilityHv" message="$(string.string117)">
+        </task>
+        <task value="118" name="PerfSelectProcessorStateHv" message="$(string.string118)">
+        </task>
+        <task value="119" name="DeliveredPerfChangeHv" message="$(string.string119)">
+        </task>
+        <task value="120" name="ExpectedUtilityHv" message="$(string.string120)">
+        </task>
+        <task value="121" name="AutonomousModeChangeHv" message="$(string.string121)">
+        </task>
+        <task value="122" name="ProcessorPerfStateChangeHv" message="$(string.string122)">
+        </task>
+        <task value="123" name="BiosCapChangeHv" message="$(string.string123)">
+        </task>
+        <task value="124" name="ThermalCapChangeHv" message="$(string.string124)">
+        </task>
+        <task value="125" name="ProcessorPerformanceRundownHv" message="$(string.string125)">
+        </task>
+        <task value="126" name="PerfDomainRundown" message="$(string.string126)">
+        </task>
+        <task value="127" name="Summary2Hv" message="$(string.string127)">
+        </task>
+        <task value="128" name="SummaryHv" message="$(string.string128)">
+        </task>
+        <task value="129" name="QuickCapInfoHv" message="$(string.string129)">
+        </task>
+        <task value="130" name="LongCapInfoHv" message="$(string.string130)">
+        </task>
+        <task value="131" name="ProcessorFirmwareRundownHv" message="$(string.string131)">
+        </task>
+        <task value="132" name="PerfStatesRundownHv" message="$(string.string132)">
+        </task>
+        <task value="133" name="BiosPStatesRundownHv" message="$(string.string133)">
+        </task>
+        <task value="134" name="BiosCStatesRundownHv" message="$(string.string134)">
+        </task>
+        <task value="135" name="BiosTStatesRundownHv" message="$(string.string135)">
+        </task>
+        <task value="136" name="IdleStatesErrorHv" message="$(string.string136)">
+        </task>
+        <task value="137" name="PerfStatesErrorHv" message="$(string.string137)">
+        </task>
+        <task value="138" name="ThrottleStatesErrorHv" message="$(string.string138)">
+        </task>
+        <task value="139" name="PccErrorHv" message="$(string.string139)">
+        </task>
+        <task value="140" name="CpcErrorHv" message="$(string.string140)">
+        </task>
+        <task value="141" name="NotifyPStatesHv" message="$(string.string141)">
+        </task>
+        <task value="142" name="NotifyCStatesHv" message="$(string.string142)">
+        </task>
+        <task value="143" name="NotifyTStatesHv" message="$(string.string143)">
+        </task>
+        <task value="144" name="NotifyCpcHighestHv" message="$(string.string144)">
+        </task>
+        <task value="145" name="PccCapChangeHv" message="$(string.string145)">
+        </task>
+        <task value="146" name="ProcessorLpiStatesRundownHv" message="$(string.string146)">
+        </task>
+        <task value="147" name="HardwareDebugRegisterRundown" message="$(string.string147)">
+        </task>
+        <task value="148" name="HardwareDebugParameterRundown" message="$(string.string148)">
+        </task>
+        <task value="149" name="HardwareDebugRegisterValueChange" message="$(string.string149)">
+        </task>
+        <task value="150" name="HardwareDebugRegisterAdd" message="$(string.string150)">
+        </task>
+        <task value="151" name="HardwareDebugRegisterRemove" message="$(string.string151)">
+        </task>
+        <task value="152" name="HardwareDebugParameterAdd" message="$(string.string152)">
+        </task>
+        <task value="153" name="HardwareDebugParameterRemove" message="$(string.string153)">
+        </task>
+        <task value="154" name="QosClassPolicy" message="$(string.string154)">
+        </task>
+        <task value="155" name="QosClassPolicyRundown" message="$(string.string155)">
+        </task>
+        <task value="156" name="WpsDynamicTableRundown" message="$(string.string156)">
+        </task>
+        <task value="157" name="WpsDynamicTableChanged" message="$(string.string157)">
+        </task>
+        <task value="158" name="WpsOrderValueTableRundown" message="$(string.string158)">
+        </task>
+        <task value="159" name="WpsOrderValueTableChanged" message="$(string.string159)">
+        </task>
+        <task value="160" name="HeteroFavoredCoreRotationChanged" message="$(string.string160)">
+        </task>
+        <task value="161" name="HeteroWpsActiveWorkloadClass" message="$(string.string161)">
+        </task>
+        <task value="162" name="HeteroParkingSelectionCount" message="$(string.string162)">
+        </task>
+        <task value="163" name="MultiCoreClassHeteroSets" message="$(string.string163)">
+        </task>
+        <task value="164" name="DualCoreClassHeteroSets" message="$(string.string164)">
+        </task>
+        <task value="165" name="SoftParkingRankListChanged" message="$(string.string165)">
+        </task>
+        <task value="166" name="MultiClassHeteroResponse" message="$(string.string166)">
+        </task>
+        <task value="167" name="MultiClassHeteroResponseUpdate" message="$(string.string167)">
+        </task>
+        <task value="168" name="ParkingCountSelection" message="$(string.string168)">
+        </task>
+        <task value="169" name="MultiCoreHeteroSetRundown" message="$(string.string169)">
+        </task>
+        <task value="170" name="MultiCoreHeteroSetUpdate" message="$(string.string170)">
+        </task>
+        <task value="171" name="WpsDynamicUpdateReason" message="$(string.string171)">
+        </task>
+        <task value="172" name="WpsDynamicUpdateReasonRundown" message="$(string.string172)">
+        </task>
+        <task value="173" name="WpsDynamicUpdateReasonBitIndexMapRundown" message="$(string.string173)">
+        </task>
+        <task value="174" name="ProcessorEnergyEsuRundown" message="$(string.string174)">
+        </task>
+        <task value="175" name="EnergyEstimationFrequencyRundown" message="$(string.string175)">
+        </task>
+        <task value="176" name="ProcessorLatencyRequirementChange" message="$(string.string176)">
+        </task>
+        <task value="177" name="ProcessorLatencyReevaluationWake" message="$(string.string177)">
+        </task>
+        <task value="178" name="QosClassPerfSelection" message="$(string.string178)">
+        </task>
+        <task value="179" name="QosClassPerfSelectionRundown" message="$(string.string179)">
+        </task>
+        <task value="180" name="ForceParkStateChange" message="$(string.string180)">
+        </task>
+        <task value="181" name="WpsContainmentGroupInfo" message="$(string.string181)">
+        </task>
+        <task value="182" name="WpsContainmentGroupInfoRundown" message="$(string.string182)">
+        </task>
+        <task value="183" name="WpsContainmentPolicyChange" message="$(string.string183)">
+        </task>
+        <task value="184" name="WpsContainmentPolicyChangeRundown" message="$(string.string184)">
+        </task>
+        <task value="185" name="WpsContainmentUnparkCount" message="$(string.string185)">
+        </task>
+        <task value="186" name="WpsContainmentHwUpdate" message="$(string.string186)">
+        </task>
+        <task value="187" name="ProcessorIdHvRundown" message="$(string.string187)">
+        </task>
+        <task value="188" name="RestrictionRundown" message="$(string.string188)">
+        </task>
+        <task value="189" name="RestrictionUpdate" message="$(string.string189)">
+        </task>
+        <task value="190" name="WpsContainmentHwRundown" message="$(string.string190)">
+        </task>
+        <task value="191" name="CoreParkingSelection" message="$(string.string191)">
+        </task>
+        <task value="196" name="SoftParkLatencyUpdate" message="$(string.string196)">
+        </task>
+        <task value="197" name="HighPerfSoftParkLatencyRundown" message="$(string.string197)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="33" name="Makeup" message="$(string.string62)"/>
+        <opcode value="34" name="FailedStart" message="$(string.string27)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Processor" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="Processor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThrottleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7_0">
+          <data name="Processor" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CapDurationInSeconds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PpcChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpcChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args10_0">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BusyTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExcessBusyTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTransitions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Pad" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args20_0">
+          <data name="FeaturesPresent" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FeaturesAccessed" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FeaturesValidated" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args21_0">
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MemberCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MembersEnumerated" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args23_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThrottleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args29_0">
+          <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinPerfPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MinThrottlePercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CapDurationInSeconds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PpcChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpcChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PccChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args39_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Cap" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args43_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PBlockAddress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PBlockLength" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProcessorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Ppc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PctControl" inType="win:Float" outType="xs:short"  />
+          <data name="PctStatus" inType="win:Pointer" outType="xs:short"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args44_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FadtC2Latency" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FadtC3Latency" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CStateVersionInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args45_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FadtDutyWidth" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FadtDutyOffset" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Tpc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TStateVersionInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PtcControl" inType="win:UInt64" outType="xs:short"  />
+          <data name="PtcStatus" inType="win:GUID" outType="xs:short"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="Cap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsApplied" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="HintType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args53_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ConcurrentCores" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="HistogramSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args55_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleImplementation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaximumPerformancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumPerformancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumThrottlePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerformanceImplementation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args57_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MaximumCoordinatedProcessors" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args59_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FeedbackCounterCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerformanceStatesSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ParkingSupported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args61_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="GuaranteedPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LimitReasons" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args62_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FeedbackCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighestPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LowestNonlinearPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LowestPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainMembers" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args65_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parked" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LpiCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args67_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AcpiId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterruptControllerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args69_0">
+          <data name="PlatformIdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args71_0">
+          <data name="AdjustedCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args72_0">
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTransitions" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Reserved" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args73_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="OSPreferencePark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OSPreferenceUnpark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PlatformPreferencePark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PlatformPreferenceUnpark" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args74_0">
+          <data name="PreviousActiveScenarioId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewActiveScenarioId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args75_0">
+          <data name="CurrentActiveScenarioId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args76_0">
+          <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PlatformIdleStateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args79_0">
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InitiatingProcessor" inType="win:Int32" outType="xs:datetime"  />
+          <data name="OneInitiator" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Latency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BreakEvenDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DependencyCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args81_0">
+          <data name="ScenarioInstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DripsBucketsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTimes" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args82_0">
+          <data name="IntervalLimitsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IntervalLimits" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args83_0">
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args85_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args87_0">
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args88_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args89_0">
+          <data name="PerfBoostAtGuaranteed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfIdealAggressiveIncreasePolicyThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfSingleStepSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfCalculateActualUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfArtificialDomain" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LowLatencyScalingPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkWithCoreGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MultiparkGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args90_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ResolvedUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Target" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResolvedTarget" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args91_0">
+          <data name="VetoReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args94_0">
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DependencyIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessorDependency" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TargetProcessor" inType="win:UInt16" outType="xs:datetime"  />
+          <data name="OptionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args96_0">
+          <data name="Engaged" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args97_0">
+          <data name="EfficiencyClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnergyInMicroJoules" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args99_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProcCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ActiveTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CheckCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Decision" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdealClass1Count" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ActualClass1Count" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AdjustedCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="PipelineId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args101_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Class0FloorPerf" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Class1MinimumPerf" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Id" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Priority" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Guid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ActiveCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MaxActiveDurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="MinActiveDurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="TotalActiveDurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args104_0">
+          <data name="PreviousProfileId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NextProfileId" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="ProfileId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Name" inType="win:AnsiString" outType="xs:string"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Guid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ValueSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="ValueSize" />
+        </template>
+        <template tid="Args111_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args112_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OverUtilizedSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsolatedCores" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IdealUnparked" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ParkReason" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args113_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CounterId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="CounterValue" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args115_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StateIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VetoCodeCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args118_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args119_0">
+          <data name="HeterogeneousPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeterogeneousSystemType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultDynamicPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyImportant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyImportantShort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyImportantPriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyExpectedRuntime" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args121_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args122_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LevelId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args123_0">
+          <data name="NamespacePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LevelId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args124_0">
+          <data name="VirtualHeterogeneitySupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="VirtualHeterogeneityOn" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DisableReasons" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args126_0">
+          <data name="SchedulerDirectedPerfStatesSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PpmQosEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PpmQosDisableReasons" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args128_0">
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CoordinationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdleProcessorsDiscounted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SchedulerDirectedTransitionsSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WorstCaseTransitionLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WorstCaseTransitionOverhead" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args131_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DistributeCores" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="HistogramSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args132_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParkHint" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args133_0">
+          <data name="DomainMasterGroup" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainMasterNumber" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProcessorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args134_0">
+          <data name="DomainMasterGroup" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="DomainMasterNumber" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProcessorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cap" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args137_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewSoftPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UnparkCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkFloor" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ForceParkSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ForceUnparkSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OverUtilizedSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsolatedCores" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IdealUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ParkReason" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args138_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SoftParked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args139_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BufferingPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StallTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args140_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResolvedUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Target" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResolvedTarget" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args141_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeliveredFrequencyMhz" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args142_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BusyTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExcessBusyTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args143_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args144_0">
+          <data name="State" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Initiated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args145_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cap" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args147_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args148_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeliveredFrequencyMhz" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args149_0">
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LpIndexCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args150_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleImplementation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaximumPerformancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumPerformancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinimumThrottlePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerformanceImplementation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args152_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThrottleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args153_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CapDurationInSeconds" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PpcChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TpcChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PccChanges" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args155_0">
+          <data name="FeaturesPresent" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FeaturesAccessed" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FeaturesValidated" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args156_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args157_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PBlockAddress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PBlockLength" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProcessorId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ApicId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Ppc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PctControl" inType="win:UInt64" outType="xs:short"  />
+          <data name="PctStatus" inType="win:GUID" outType="xs:short"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args158_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FadtC2Latency" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FadtC3Latency" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="CStateVersionInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args159_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FadtDutyWidth" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FadtDutyOffset" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Tpc" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TStateVersionInUse" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PtcControl" inType="win:Int64" outType="xs:short"  />
+          <data name="PtcStatus" inType="win:Binary" outType="xs:short"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args170_0">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LevelId" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args171_0">
+          <data name="RegisterId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Address" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Scope" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+        </template>
+        <template tid="Args172_0">
+          <data name="RegisterId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParameterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BitWidth" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BitOffset" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Type" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Name" inType="win:UnicodeString" outType="xs:string" length="NameLength" />
+        </template>
+        <template tid="Args178_0">
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClassCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args180_0">
+          <data name="ThreadClassification" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NumberOfLogicalCores" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NumberOfWorkLoadClasses" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TableCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args184_0">
+          <data name="TotalFavouredUnparkedCores" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentPickedFavouredCoreIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args185_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PerformanceClassIndex" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencyClassIndex" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="WorkloadCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args186_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TotalCoresUnparkedCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PerformanceCoresUnparkedCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencyCoresUnparkedCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args187_0">
+          <data name="NodeIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WorkLoadClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadQoS" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RunningType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DynamicHeteroCpuPolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LowerThreshold" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UpperThreshold" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdealMask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PreferredMask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AvailableMask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RestrictionMask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TriggerType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args188_0">
+          <data name="NodeIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupNumber" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="WorkLoadClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeteroCpuPolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdealMask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PreferredMask" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AvailableMask" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args189_0">
+          <data name="RankListEntries" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args190_0">
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ProcCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalImportantUtility" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="OldIdealUnpark" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Decision" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentClassUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentClassPlusUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeltaTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args191_0">
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProcCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetUnparkedAccumulation" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AccumulatedDuration" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args192_0">
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RawTargetUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdealUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UpdatedTargetUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="MaxUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SelectionFlag" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IncreasePolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DecreasePolicy" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IncreaseTimePolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DecreaseTimePolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkCheckCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args198_0">
+          <data name="EnergyStatusUnit" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EsuToMilliJoulesMethod" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args199_0">
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BucketCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LatencyLimitIn100ns" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args204_0">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ForceParked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args205_0">
+          <data name="ContainmentGroupCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args207_0">
+          <data name="ContainmentEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeteroPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsPerfMaxOverrideEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsLatencyBoostActive" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsMinPolicyDisabledContainment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeteroContainmentPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args209_0">
+          <data name="ContainmentCheckCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ContainmentCrossOverRequired" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousSelectedContainmentGroup" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentDesiredContainmentGroup" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="CurrentSelectedContainmentGroup" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BeforePerfUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BeforeEfficientUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RawTargetUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AfterPerfUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AfterEfficientUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SelectionFlag" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ContainmentEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsTimeWindowIsInProgress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsIncreaseTimeWindowActive" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsDecreaseTimeWindowActive" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args210_0">
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ContainmentGroupType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args211_0">
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosDisableReasons" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="EquivalencyMasks" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MaxPolicyPercent" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MaxEquivalentFrequencyPercent" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MinPolicyPercent" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AutonomousActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnergyPerfPreference" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProvideGuidance" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AllowThrottling" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfBoostMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LatencyHintPerf" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TrackDesiredCrossClass" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LatencyHintEpp" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args213_0">
+          <data name="AcpiId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterruptControllerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HvLpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args214_0">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="State" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StateChanged" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="RankingCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args217_0">
+          <data name="Group" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnparkCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UnparkCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CumulativeUnparkedCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfUnparkedCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkReason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Candidates" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ParkedCores" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ChosenCores" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ComplexCandidates" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ModuleCandidates" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PackageCandidates" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="CoreCandidates" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OverUtilizedCores" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args223_0">
+          <data name="HighPerfOverride" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SoftParkLatencyUs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_1">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_1">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args11_1">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="AdjustedCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartPhase" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_1">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args19_1">
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTransitions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdleTime" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args53_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ConcurrentCores" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="HistogramSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DistributeCores" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args59_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FeedbackCounterCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IdleStateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerformanceStatesSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ParkingSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DiscretePerformanceStateCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args62_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FeedbackCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighestPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LowestNonlinearPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LowestPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainMembers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfStateCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args64_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args65_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parked" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LpiCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ThermalCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args68_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AcpiId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterruptControllerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args72_1">
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTransitions" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Reserved" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SelectionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args81_1">
+          <data name="ScenarioInstanceId" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DripsBucketsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTimes" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="ScenarioInstanceIdV2" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args89_1">
+          <data name="PerfBoostAtGuaranteed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfIdealAggressiveIncreasePolicyThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfSingleStepSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfCalculateActualUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfArtificialDomain" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LowLatencyScalingPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkWithCoreGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MultiparkGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosManagesIdleProcessors" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosHysteresis" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args118_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencySchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args119_1">
+          <data name="HeterogeneousPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeterogeneousSystemType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DefaultDynamicPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyMask" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyImportant" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyImportantShort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyImportantPriority" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DynamicCpuPolicyExpectedRuntime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WPSCapabilities" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args128_1">
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CoordinationType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdleProcessorsDiscounted" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SchedulerDirectedTransitionsSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="WorstCaseTransitionLatency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WorstCaseTransitionOverhead" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AffinitizePerfSet" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args131_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DistributeCores" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="HistogramSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConcurrentCores" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="NthCoreUtilization" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args137_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewSoftPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UnparkCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkFloor" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ForceParkSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ForceUnparkSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OverUtilizedSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsolatedCores" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IdealUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ParkReason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PerformanceCoresUnparkedCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args139_1">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BufferingPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StallTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ImportantPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args144_1">
+          <data name="State" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Initiated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourcePriority" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ResourcePriorityPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args147_1">
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppSupported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args149_1">
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="LpIndexCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args185_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PerformanceClassIndex" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencyClassIndex" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="WorkloadCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args186_1">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TotalCoresUnparkedCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="PerformanceCoresUnparkedCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EfficiencyCoresUnparkedCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ContainmentEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args207_1">
+          <data name="ContainmentEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeteroPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsPerfMaxOverrideEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsLatencyBoostActive" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsMinPolicyDisabledContainment" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HeteroContainmentPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsGlobalParkHintsPresent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args211_1">
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosDisableReasons" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="EquivalencyMasks" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="MaxPolicyPercent" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MaxEquivalentFrequencyPercent" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="MinPolicyPercent" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AutonomousActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EnergyPerfPreference" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ProvideGuidance" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AllowThrottling" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfBoostMode" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="LatencyHintPerf" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TrackDesiredCrossClass" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LatencyHintEpp" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ResourcePriority" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args9_2">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_2">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_2">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BufferingPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StallTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args19_2">
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTransitions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AbortCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdleTime" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="SelectionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args62_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="FeedbackCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HighestPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LowestNonlinearPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LowestPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DomainMembers" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfStateCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EppSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AutonomousCapability" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args64_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args65_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parked" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LpiCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ThermalCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ParkHint" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args67_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LatencyLimitIn100ns" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args68_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="AcpiId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterruptControllerId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HvLpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args72_2">
+          <data name="StateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResetCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalTransitions" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="StartTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Reserved" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SelectionCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DripsWakeSkipCount" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args89_2">
+          <data name="PerfBoostAtGuaranteed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfIdealAggressiveIncreasePolicyThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfSingleStepSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfCalculateActualUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfArtificialDomain" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LowLatencyScalingPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkWithCoreGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MultiparkGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosManagesIdleProcessors" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosHysteresis" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CoreParkingRotationSeedTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args111_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DeliveredFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args137_2">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Processors" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OldPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NewSoftPark" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="UnparkCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkFloor" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ForceParkSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ForceUnparkSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="OverUtilizedSet" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsolatedCores" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IdealUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="UnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ParkReason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="PerformanceCoresUnparkedCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Class" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetUnparkCount" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args139_2">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LpIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BufferingPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StallTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ImportantPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdealPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args9_3">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args10_3">
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Initiated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="VirtualLittle" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args12_3">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BufferingPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StallTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ImportantPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args64_3">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VirtualLittle" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args65_3">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Affinity" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Parked" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LpiCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ThermalCap" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ParkHint" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="SoftParked" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args89_3">
+          <data name="PerfBoostAtGuaranteed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfIdealAggressiveIncreasePolicyThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfSingleStepSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfCalculateActualUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfArtificialDomain" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LowLatencyScalingPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkWithCoreGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MultiparkGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosManagesIdleProcessors" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosHysteresis" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CoreParkingRotationSeedTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectiveParkingGranularity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IsUnparkCoresPolicyEnabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args10_4">
+          <data name="State" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Initiated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args12_4">
+          <data name="PpmCheckTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="BusyTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Utility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="AffinitizedUtility" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="FrequencySensitivity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="BufferingPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="StallTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ImportantPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IdealPercent" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args64_4">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args89_4">
+          <data name="PerfBoostAtGuaranteed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PerfIdealAggressiveIncreasePolicyThreshold" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfSingleStepSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfCalculateActualUtilization" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PerfArtificialDomain" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="LowLatencyScalingPercentage" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParkWithCoreGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MultiparkGranularity" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosManagesIdleProcessors" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosHysteresis" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CoreParkingRotationSeedTimeInMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EffectiveParkingGranularity" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="IsUnparkCoresPolicyEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MultiCoreScheduling" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MultiCoreParking" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10_5">
+          <data name="State" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Speed" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Performance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Initiated" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResourcePriority" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ResourcePriorityPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64_5">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencySchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args64_6">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencySchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64_7">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencySchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SoftParked" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args64_8">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencySchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SoftParked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeliveredFrequencyMhz" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64_9">
+          <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Number" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Parked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="BiosCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThermalCap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DesiredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NominalFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MinPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MaxPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TolerancePercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeliveredPerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencyClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Autonomous" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="EppPercent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivityWindow" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QosClass" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RelativePerformance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EfficiencySchedulingClass" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="TargetFrequency" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SoftParked" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeliveredFrequencyMhz" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EppSupported" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Algorithm" />
+       <string id="string1" value="AutonomousModeChange" />
+       <string id="string2" value="AutonomousModeChangeHv" />
+       <string id="string3" value="BiosCapChange" />
+       <string id="string4" value="BiosCapChangeHv" />
+       <string id="string5" value="BiosCStatesRundown" />
+       <string id="string6" value="BiosCStatesRundownHv" />
+       <string id="string7" value="BiosPStatesRundown" />
+       <string id="string8" value="BiosPStatesRundownHv" />
+       <string id="string9" value="BiosTStatesRundown" />
+       <string id="string10" value="BiosTStatesRundownHv" />
+       <string id="string11" value="ComputeEnergy" />
+       <string id="string12" value="CoordinatedIdleRundown" />
+       <string id="string13" value="CoreParkingSelection" />
+       <string id="string14" value="CpcError" />
+       <string id="string15" value="CpcErrorHv" />
+       <string id="string16" value="CStateDomainFirmwareRundown" />
+       <string id="string17" value="DeliveredPerfChange" />
+       <string id="string18" value="DeliveredPerfChangeHv" />
+       <string id="string19" value="Diag" />
+       <string id="string20" value="DomainPerfStateChange" />
+       <string id="string21" value="DripsAccountingSnapshot" />
+       <string id="string22" value="DualCoreClassHeteroSets" />
+       <string id="string23" value="EnergyEstimation" />
+       <string id="string24" value="EnergyEstimationFrequencyRundown" />
+       <string id="string25" value="ExpectedUtility" />
+       <string id="string26" value="ExpectedUtilityHv" />
+       <string id="string27" value="FailedStart" />
+       <string id="string28" value="ForceParkStateChange" />
+       <string id="string29" value="HardwareDebug" />
+       <string id="string30" value="HardwareDebugParameterAdd" />
+       <string id="string31" value="HardwareDebugParameterRemove" />
+       <string id="string32" value="HardwareDebugParameterRundown" />
+       <string id="string33" value="HardwareDebugRegisterAdd" />
+       <string id="string34" value="HardwareDebugRegisterRemove" />
+       <string id="string35" value="HardwareDebugRegisterRundown" />
+       <string id="string36" value="HardwareDebugRegisterValueChange" />
+       <string id="string37" value="HeteroDistributeUtility" />
+       <string id="string38" value="HeteroFavoredCoreRotationChanged" />
+       <string id="string39" value="HeterogeneousPoliciesChanged" />
+       <string id="string40" value="HeterogeneousPoliciesRundown" />
+       <string id="string41" value="HeteroParkingSelectionCount" />
+       <string id="string42" value="HeteroResponse" />
+       <string id="string43" value="HeteroWpsActiveWorkloadClass" />
+       <string id="string44" value="HiddenProcessorBiosCapChange" />
+       <string id="string45" value="HiddenProcessorPerfRundown" />
+       <string id="string46" value="HiddenProcessorThermalCapChange" />
+       <string id="string47" value="HighPerfSoftParkLatencyRundown" />
+       <string id="string48" value="IdleAccountingRundown" />
+       <string id="string49" value="IdleDurationExpiration" />
+       <string id="string50" value="IdleStatesErrata" />
+       <string id="string51" value="IdleStatesError" />
+       <string id="string52" value="IdleStatesErrorHv" />
+       <string id="string53" value="LatencySensitivityHint" />
+       <string id="string54" value="LogicalProcessorIdlingCorePark" />
+       <string id="string55" value="LogicalProcessorIdlingRundown" />
+       <string id="string56" value="LongCapInfo" />
+       <string id="string57" value="LongCapInfoHv" />
+       <string id="string58" value="LowPowerScenarioChange" />
+       <string id="string59" value="LowPowerScenarioInformationRundown" />
+       <string id="string60" value="LowPowerScenarioRundown" />
+       <string id="string61" value="Lpi" />
+       <string id="string62" value="Makeup" />
+       <string id="string63" value="MediaBufferingNotify" />
+       <string id="string64" value="Microsoft-Windows-Kernel-Processor-Power" />
+       <string id="string65" value="Microsoft-Windows-Kernel-Processor-Power/Diagnostic" />
+       <string id="string66" value="MultiClassHeteroResponse" />
+       <string id="string67" value="MultiClassHeteroResponseUpdate" />
+       <string id="string68" value="MultiCoreClassHeteroSets" />
+       <string id="string69" value="MultiCoreHeteroSetRundown" />
+       <string id="string70" value="MultiCoreHeteroSetUpdate" />
+       <string id="string71" value="NotifyCpcHighest" />
+       <string id="string72" value="NotifyCpcHighestHv" />
+       <string id="string73" value="NotifyCStates" />
+       <string id="string74" value="NotifyCStatesHv" />
+       <string id="string75" value="NotifyPStates" />
+       <string id="string76" value="NotifyPStatesHv" />
+       <string id="string77" value="NotifyTStates" />
+       <string id="string78" value="NotifyTStatesHv" />
+       <string id="string79" value="PackageEnergyCounter" />
+       <string id="string80" value="ParkCore" />
+       <string id="string81" value="ParkingCountSelection" />
+       <string id="string82" value="ParkNodeCapChange" />
+       <string id="string83" value="ParkNodeClassRecordedStats" />
+       <string id="string84" value="ParkNodeParkHintChange" />
+       <string id="string85" value="ParkNodeRecordedStats" />
+       <string id="string86" value="ParkNodeRundown" />
+       <string id="string87" value="ParkSelection" />
+       <string id="string88" value="PccCapChange" />
+       <string id="string89" value="PccCapChangeHv" />
+       <string id="string90" value="PccErrata" />
+       <string id="string91" value="PccError" />
+       <string id="string92" value="PccErrorHv" />
+       <string id="string93" value="PccSummary" />
+       <string id="string94" value="PepGetCoordinatedDependency" />
+       <string id="string95" value="PepGetCoordinatedDependencyRundown" />
+       <string id="string96" value="PepGetCoordinatedIdleStates" />
+       <string id="string97" value="PepGetCoordinatedIdleStatesRundown" />
+       <string id="string98" value="PepGetIdleStates" />
+       <string id="string99" value="PepGetIdleStatesV2" />
+       <string id="string100" value="PepGetIdleStatesV2Rundown" />
+       <string id="string101" value="PepGetPlatformIdleState" />
+       <string id="string102" value="PepGetPlatformIdleStateRundown" />
+       <string id="string103" value="PepGetPlatformIdleStates" />
+       <string id="string104" value="PepPerfCapabilities" />
+       <string id="string105" value="PepPerfConstraintChange" />
+       <string id="string106" value="PepPerfDomainInfo" />
+       <string id="string107" value="PepPerfDomainInfoRundown" />
+       <string id="string108" value="PepQueryCapabilities" />
+       <string id="string109" value="Perf" />
+       <string id="string110" value="PerfCheck" />
+       <string id="string111" value="PerfDiag" />
+       <string id="string112" value="PerfDomainRundown" />
+       <string id="string113" value="PerfSelectProcessorState" />
+       <string id="string114" value="PerfSelectProcessorStateHv" />
+       <string id="string115" value="PerfStatesDegraded" />
+       <string id="string116" value="PerfStatesErrata" />
+       <string id="string117" value="PerfStatesError" />
+       <string id="string118" value="PerfStatesErrorHv" />
+       <string id="string119" value="PerfStatesRundown" />
+       <string id="string120" value="PerfStatesRundownHv" />
+       <string id="string121" value="PlatformAccountingBucketIntervalsRundown" />
+       <string id="string122" value="PlatformIdleAccountingRundown" />
+       <string id="string123" value="PlatformIdleVetoDecrement" />
+       <string id="string124" value="PlatformIdleVetoIncrement" />
+       <string id="string125" value="PlatformIdleVetoRundown" />
+       <string id="string126" value="PlatformParkingPreference" />
+       <string id="string127" value="PlatformPreVetoAccountingRundown" />
+       <string id="string128" value="PowerDiagnostics" />
+       <string id="string129" value="ProcessorClassUpdate" />
+       <string id="string130" value="ProcessorContainerLpiStatesRundown" />
+       <string id="string131" value="ProcessorEnergyCounter" />
+       <string id="string132" value="ProcessorEnergyEsuRundown" />
+       <string id="string133" value="ProcessorFirmwareRundown" />
+       <string id="string134" value="ProcessorFirmwareRundownHv" />
+       <string id="string135" value="ProcessorIdHvRundown" />
+       <string id="string136" value="ProcessorIdleRundown" />
+       <string id="string137" value="ProcessorIdleVetoDecrement" />
+       <string id="string138" value="ProcessorIdleVetoIncrement" />
+       <string id="string139" value="ProcessorIdleVetoRundown" />
+       <string id="string140" value="ProcessorIdRundown" />
+       <string id="string141" value="ProcessorLatencyReevaluationWake" />
+       <string id="string142" value="ProcessorLatencyRequirementChange" />
+       <string id="string143" value="ProcessorLpiStatesRundown" />
+       <string id="string144" value="ProcessorLpiStatesRundownHv" />
+       <string id="string145" value="ProcessorPerformanceRundown" />
+       <string id="string146" value="ProcessorPerformanceRundownHv" />
+       <string id="string147" value="ProcessorPerfStateChange" />
+       <string id="string148" value="ProcessorPerfStateChangeHv" />
+       <string id="string149" value="ProcessorPreVetoAccountingRundown" />
+       <string id="string150" value="ProfileChange" />
+       <string id="string151" value="ProfileDisabled" />
+       <string id="string152" value="ProfileEnabled" />
+       <string id="string153" value="ProfileRegistered" />
+       <string id="string154" value="ProfileRundown" />
+       <string id="string155" value="Profiles" />
+       <string id="string156" value="ProfileSettingChange" />
+       <string id="string157" value="ProfileSettingRundown" />
+       <string id="string158" value="ProfileStatusRundown" />
+       <string id="string159" value="PTStateDomainFirmwareRundown" />
+       <string id="string160" value="QosClassPerfSelection" />
+       <string id="string161" value="QosClassPerfSelectionRundown" />
+       <string id="string162" value="QosClassPolicy" />
+       <string id="string163" value="QosClassPolicyRundown" />
+       <string id="string164" value="QosSupportChanged" />
+       <string id="string165" value="QosSupportRundown" />
+       <string id="string166" value="QuickCapInfo" />
+       <string id="string167" value="QuickCapInfoHv" />
+       <string id="string168" value="RecordedUtility" />
+       <string id="string169" value="RecordedUtilityHv" />
+       <string id="string170" value="RestrictionRundown" />
+       <string id="string171" value="RestrictionUpdate" />
+       <string id="string172" value="SleepStudy" />
+       <string id="string173" value="SoftParkingRankListChanged" />
+       <string id="string174" value="SoftParkLatencyUpdate" />
+       <string id="string175" value="SoftParkSelection" />
+       <string id="string176" value="SoftParkStateChange" />
+       <string id="string177" value="StaticPolicyRundown" />
+       <string id="string178" value="Summary" />
+       <string id="string179" value="Summary2" />
+       <string id="string180" value="Summary2Hv" />
+       <string id="string181" value="SummaryHv" />
+       <string id="string182" value="System" />
+       <string id="string183" value="ThermalCapChange" />
+       <string id="string184" value="ThermalCapChangeHv" />
+       <string id="string185" value="ThrottleStatesErrata" />
+       <string id="string186" value="ThrottleStatesError" />
+       <string id="string187" value="ThrottleStatesErrorHv" />
+       <string id="string188" value="UnparkCore" />
+       <string id="string189" value="VetoNameRundown" />
+       <string id="string190" value="VirtualHeterogeneityRundown" />
+       <string id="string191" value="VirtualHeterogeneitySupportChanged" />
+       <string id="string192" value="win:Info" />
+       <string id="string193" value="win:Start" />
+       <string id="string194" value="win:Stop" />
+       <string id="string195" value="WpsContainmentGroupInfo" />
+       <string id="string196" value="WpsContainmentGroupInfoRundown" />
+       <string id="string197" value="WpsContainmentHwRundown" />
+       <string id="string198" value="WpsContainmentHwUpdate" />
+       <string id="string199" value="WpsContainmentPolicyChange" />
+       <string id="string200" value="WpsContainmentPolicyChangeRundown" />
+       <string id="string201" value="WpsContainmentUnparkCount" />
+       <string id="string202" value="WpsDynamicTableChanged" />
+       <string id="string203" value="WpsDynamicTableRundown" />
+       <string id="string204" value="WpsDynamicUpdate" />
+       <string id="string205" value="WpsDynamicUpdateReason" />
+       <string id="string206" value="WpsDynamicUpdateReasonBitIndexMapRundown" />
+       <string id="string207" value="WpsDynamicUpdateReasonRundown" />
+       <string id="string208" value="WpsOrderValueTableChanged" />
+       <string id="string209" value="WpsOrderValueTableRundown" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

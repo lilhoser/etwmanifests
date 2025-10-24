@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Containers-BindFlt" name="Microsoft-Windows-Containers-BindFlt" guid="{fc4e8f51-7a04-4bab-8b91-6321416f72ab}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-Containers-BindFlt/Operational" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Containers-BindFlt/Operational"/>
+        <event value="3" version="0" level="win:Error"  channel="Microsoft-Windows-Containers-BindFlt/Operational" template="Args3_0"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-Windows-Containers-BindFlt/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Containers-BindFlt/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Containers-BindFlt/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="NTStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="NTStatus" inType="win:HexInt32" outType="win:NTSTATUS"  />
+          <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Containers-BindFlt" />
+       <string id="string1" value="Microsoft-Windows-Containers-BindFlt/Debug" />
+       <string id="string2" value="Microsoft-Windows-Containers-BindFlt/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

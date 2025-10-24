@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-StorageManagement-WSP-FS" name="Microsoft-Windows-StorageManagement-WSP-FS" guid="{435f8e4b-8cc4-430e-9796-28cae4976576}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="8448" version="0" level="win:Critical"  channel="Microsoft-Windows-StorageManagement/Debug" task="Task.FS" template="Args8448_0"/>
+        <event value="8449" version="0" level="win:Error"  channel="Microsoft-Windows-StorageManagement/Debug" task="Task.FS"/>
+        <event value="8450" version="0" level="win:Warning"  channel="Microsoft-Windows-StorageManagement/Debug" task="Task.FS"/>
+        <event value="8451" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageManagement/Debug" task="Task.FS"/>
+        <event value="8452" version="0" level="win:Verbose"  channel="Microsoft-Windows-StorageManagement/Debug" task="Task.FS"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-StorageManagement/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="Task.FS" message="$(string.string1)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args8448_0">
+          <data name="Parameter1" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-StorageManagement-WSP-FS" />
+       <string id="string1" value="Microsoft-Windows-StorageManagement/Debug" />
+       <string id="string2" value="Task.FS" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

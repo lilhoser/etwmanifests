@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IdleTriggerProvider" name="Microsoft-Windows-IdleTriggerProvider" guid="{9e03f75a-bcbe-428a-8f3c-d46f2a444935}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  opcode="Opcode_IdleTriggerEvent" keywords="Keyword_IdleTriggerEvent" template="Args1_0"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Keyword_IdleTriggerEvent" mask="0x1" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="108" name="Opcode_IdleTriggerEvent" message="$(string.string2)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="IdleStatusGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Keyword_IdleTriggerEvent" />
+       <string id="string1" value="Microsoft-Windows-IdleTriggerProvider" />
+       <string id="string2" value="Opcode_IdleTriggerEvent" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

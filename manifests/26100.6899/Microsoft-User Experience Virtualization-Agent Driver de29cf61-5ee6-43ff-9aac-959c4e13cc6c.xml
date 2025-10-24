@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-User Experience Virtualization-Agent Driver" name="Microsoft-User Experience Virtualization-Agent Driver" guid="{de29cf61-5ee6-43ff-9aac-959c4e13cc6c}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="Log Always"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug" template="Args0_0"/>
+        <event value="1" version="0" level="win:Critical"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="2" version="0" level="win:Error"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="3" version="0" level="win:Warning"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="4" version="0" level="win:Informational"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="5" version="0" level="win:Verbose"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug" template="Args102_0"/>
+        <event value="103" version="0" level="win:Error"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug" template="Args103_0"/>
+        <event value="104" version="0" level="win:Error"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="105" version="0" level="win:Error"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug" template="Args105_0"/>
+        <event value="106" version="0" level="win:Error"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="107" version="0" level="win:Error"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="108" version="0" level="win:Warning"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-User Experience Virtualization-Agent Driver/Debug" template="Args109_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-User Experience Virtualization-Agent Driver/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-User Experience Virtualization-Agent Driver/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="DefaultTask" message="$(string.string1)">
+          <opcodes>
+           <opcode value="10" name="DefaultOpcode" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="P1AnsiString" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="P1String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="P2Ulong" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args103_0">
+          <data name="P1String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="P2ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args109_0">
+          <data name="P1Length" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="P2UnicodeBuffer" inType="win:UnicodeString" outType="xs:string" length="P1Length" />
+          <data name="P3ProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="DefaultOpcode" />
+       <string id="string1" value="DefaultTask" />
+       <string id="string2" value="Microsoft-User Experience Virtualization-Agent Driver" />
+       <string id="string3" value="Microsoft-User Experience Virtualization-Agent Driver/Debug" />
+       <string id="string4" value="Microsoft-User Experience Virtualization-Agent Driver/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

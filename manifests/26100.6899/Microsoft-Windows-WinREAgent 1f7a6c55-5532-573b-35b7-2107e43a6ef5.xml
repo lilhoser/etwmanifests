@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WinREAgent" name="Microsoft-Windows-WinREAgent" guid="{1f7a6c55-5532-573b-35b7-2107e43a6ef5}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4500" version="0" level="win:Informational"  channel="System"/>
+        <event value="4501" version="0" level="win:Informational"  channel="System" template="Args4501_0"/>
+        <event value="4502" version="0" level="win:Critical"  channel="System" template="Args4502_0"/>
+        <event value="4503" version="0" level="win:Critical"  channel="System"/>
+        <event value="4504" version="0" level="win:Informational"  channel="System"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args4501_0">
+          <data name="Version" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args4502_0">
+          <data name="ErrorPhase" inType="win:Int32" outType="xs:int"  />
+          <data name="Errorcode" inType="win:Int32" outType="win:HResult"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WinREAgent" />
+       <string id="string1" value="System" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

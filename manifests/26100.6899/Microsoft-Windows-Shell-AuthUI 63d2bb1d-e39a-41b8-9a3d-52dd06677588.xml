@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Shell-AuthUI" name="Microsoft-Windows-Shell-AuthUI" guid="{63d2bb1d-e39a-41b8-9a3d-52dd06677588}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="5001" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational" template="Args5001_0"/>
+        <event value="5002" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5003" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5004" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5005" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5006" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5007" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational" template="Args5007_0"/>
+        <event value="5008" version="0" level="win:Warning"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5009" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5010" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5011" version="0" level="win:Error"  channel="Microsoft-Windows-Authentication User Interface/Operational"/>
+        <event value="5012" version="0" level="win:Warning"  channel="Microsoft-Windows-Authentication User Interface/Operational" template="Args5012_0"/>
+        <event value="5013" version="0" level="win:Warning"  channel="Microsoft-Windows-Authentication User Interface/Operational" template="Args5013_0"/>
+        <event value="15001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_UserList_TileEnumeration" opcode="win:Start"/>
+        <event value="15002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_UserList_TileEnumeration" opcode="win:Stop"/>
+        <event value="15003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetMachineName" opcode="win:Start"/>
+        <event value="15004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetMachineName" opcode="win:Stop"/>
+        <event value="15005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetMachineDomainName" opcode="win:Start"/>
+        <event value="15006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetMachineDomainName" opcode="win:Stop"/>
+        <event value="15007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetBuiltInAdministrator" opcode="win:Start"/>
+        <event value="15008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetBuiltInAdministrator" opcode="win:Stop"/>
+        <event value="15009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetInSessionUser" opcode="win:Start"/>
+        <event value="15010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetInSessionUser" opcode="win:Stop"/>
+        <event value="15011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetFriendlyName" opcode="win:Start"/>
+        <event value="15012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetFriendlyName" opcode="win:Stop"/>
+        <event value="15013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_Tile_FireSubmitEvent" opcode="win:Info"/>
+        <event value="15014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CreateCredentialProviders" opcode="win:Start"/>
+        <event value="15015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CreateCredentialProviders" opcode="win:Stop"/>
+        <event value="15016" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_AddCredProvider" opcode="win:Info" template="Args15016_0"/>
+        <event value="15017" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CreateCredProviderThread" opcode="win:Start"/>
+        <event value="15018" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CreateCredProviderThread" opcode="win:Stop"/>
+        <event value="15019" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CredProviderThreadProc" opcode="win:Start"/>
+        <event value="15020" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CredProviderThreadProc" opcode="win:Stop"/>
+        <event value="15021" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CredProviderThreadDestroy" opcode="win:Start"/>
+        <event value="15022" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CredProviderThreadDestroy" opcode="win:Stop"/>
+        <event value="15023" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_SetUsageScenario" opcode="win:Info" template="Args15023_0"/>
+        <event value="15024" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_SetSerialization" opcode="win:Info" template="Args15024_0"/>
+        <event value="15025" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetCredentialAt" opcode="win:Info"/>
+        <event value="15026" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetCredentialCount" opcode="win:Info" template="Args15026_0"/>
+        <event value="15027" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetFieldDescriptorCount" opcode="win:Info"/>
+        <event value="15028" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_Credential_GetUserSid" opcode="win:Info" template="Args15028_0"/>
+        <event value="15029" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_SetSelected" opcode="win:Info"/>
+        <event value="15030" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_SetDeSelected" opcode="win:Info"/>
+        <event value="15031" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_GetSerialization" opcode="win:Info"/>
+        <event value="15032" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_ReportResult" opcode="win:Info" template="Args15032_0"/>
+        <event value="15033" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_RegisterEnumeration" opcode="win:Start"/>
+        <event value="15034" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_RegisterEnumeration" opcode="win:Stop"/>
+        <event value="15035" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_CreateEnumerationSyncReply" opcode="win:Info"/>
+        <event value="15036" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="Common_StartCredProvsForUsageScenario" opcode="win:Info"/>
+        <event value="25001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-LogonUI/Diagnostic" task="Logon_ServerCallback_Abort" opcode="win:Start"/>
+        <event value="25002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-LogonUI/Diagnostic" task="Logon_ServerCallback_Abort" opcode="win:Stop"/>
+        <event value="25003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayLocked" opcode="win:Start"/>
+        <event value="25004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayLocked" opcode="win:Stop"/>
+        <event value="25005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayMessage" opcode="win:Start"/>
+        <event value="25006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayMessage" opcode="win:Stop"/>
+        <event value="25007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayRequestCredentialsError" opcode="win:Start"/>
+        <event value="25008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayRequestCredentialsError" opcode="win:Stop"/>
+        <event value="25009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplaySecurityOptions" opcode="win:Start"/>
+        <event value="25010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplaySecurityOptions" opcode="win:Stop"/>
+        <event value="25011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayStatus" opcode="win:Start"/>
+        <event value="25012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayStatus" opcode="win:Stop"/>
+        <event value="25013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayWelcome" opcode="win:Start"/>
+        <event value="25014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_DisplayWelcome" opcode="win:Stop"/>
+        <event value="25015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_ReportResult" opcode="win:Start"/>
+        <event value="25016" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_ReportResult" opcode="win:Stop"/>
+        <event value="25017" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_RequestCredentials" opcode="win:Start"/>
+        <event value="25018" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_RequestCredentials" opcode="win:Stop"/>
+        <event value="25019" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_Shutdown" opcode="win:Start"/>
+        <event value="25020" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_Shutdown" opcode="win:Stop"/>
+        <event value="25021" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_PromptForCredentials" opcode="win:Start"/>
+        <event value="25022" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerCallback_PromptForCredentials" opcode="win:Stop"/>
+        <event value="25023" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnSwitchUser" opcode="win:Start"/>
+        <event value="25024" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnSwitchUser" opcode="win:Stop"/>
+        <event value="25025" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnOtherTiles" opcode="win:Start"/>
+        <event value="25026" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnOtherTiles" opcode="win:Stop"/>
+        <event value="25027" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnGetEnumeratedTilesReply" opcode="win:Start"/>
+        <event value="25028" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnGetEnumeratedTilesReply" opcode="win:Stop"/>
+        <event value="25029" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnEnumerationSyncReply" opcode="win:Start"/>
+        <event value="25030" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnEnumerationSyncReply" opcode="win:Stop"/>
+        <event value="25031" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnSelectCredentialReply" opcode="win:Start"/>
+        <event value="25032" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnSelectCredentialReply" opcode="win:Stop"/>
+        <event value="25033" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_SetBackgroundGraphics" opcode="win:Start"/>
+        <event value="25034" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_SetBackgroundGraphics" opcode="win:Stop"/>
+        <event value="25035" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeFrame" opcode="win:Start"/>
+        <event value="25036" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeFrame" opcode="win:Stop"/>
+        <event value="25037" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_CreateStyleParser" opcode="win:Start"/>
+        <event value="25038" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_CreateStyleParser" opcode="win:Stop"/>
+        <event value="25039" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_CreateFrameElement" opcode="win:Start"/>
+        <event value="25040" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_CreateFrameElement" opcode="win:Stop"/>
+        <event value="25041" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeUserLists" opcode="win:Start"/>
+        <event value="25042" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeUserLists" opcode="win:Stop"/>
+        <event value="25043" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_BrandingLoadImage" opcode="win:Start"/>
+        <event value="25044" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_BrandingLoadImage" opcode="win:Stop"/>
+        <event value="25047" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeSoftKeyboard" opcode="win:Start"/>
+        <event value="25048" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeSoftKeyboard" opcode="win:Stop"/>
+        <event value="25049" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_WTSRegisterSessionNotification" opcode="win:Start"/>
+        <event value="25050" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_WTSRegisterSessionNotification" opcode="win:Stop"/>
+        <event value="25051" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AutoLogon_IsSingleUserNoPassword" opcode="win:Start"/>
+        <event value="25052" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AutoLogon_IsSingleUserNoPassword" opcode="win:Stop"/>
+        <event value="25053" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AutoLogon_IsLocalNoPasswordUser" opcode="win:Start"/>
+        <event value="25054" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AutoLogon_IsSingleUserNoPassword" opcode="win:Stop"/>
+        <event value="25055" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerStartup" opcode="win:Start"/>
+        <event value="25056" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_ServerStartup" opcode="win:Stop"/>
+        <event value="25057" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LaunchToReadyForInput" opcode="win:Start"/>
+        <event value="25058" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LaunchToReadyForInput" opcode="win:Stop" template="Args25058_0"/>
+        <event value="25059" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_CredentialsToExit" opcode="win:Start"/>
+        <event value="25060" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_CredentialsToExit" opcode="win:Stop"/>
+        <event value="25061" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_RequestCredentialsToReadyForCredentials" opcode="win:Start"/>
+        <event value="25062" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_RequestCredentialsToReadyForCredentials" opcode="win:Stop" template="Args25062_0"/>
+        <event value="25063" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LaunchToAnimationComplete" opcode="win:Start"/>
+        <event value="25064" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LaunchToAnimationComplete" opcode="win:Stop"/>
+        <event value="25065" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LogonUI_PerfTrack_UserSwitching" opcode="win:Stop"/>
+        <event value="25066" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_RequestCredentialsToCancelAfterEnumerate" opcode="win:Stop"/>
+        <event value="25068" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LaunchToCancelAfterResume" opcode="win:Stop"/>
+        <event value="25072" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LogonUI_SubmitCredentialToExit" opcode="win:Start" keywords="ms:Telemetry"/>
+        <event value="25073" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LogonUI_SubmitCredentialToExit" opcode="win:Stop" template="Args25073_0"/>
+        <event value="25074" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnGetSerializationReply" opcode="win:Info"/>
+        <event value="25075" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_OnProviderCredentialsChanged" opcode="win:Info"/>
+        <event value="25076" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_DisplayStatusMessage" opcode="win:Info"/>
+        <event value="25077" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_LogonDialogCallback" opcode="win:Info"/>
+        <event value="25078" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_DisplayLogonDialog" opcode="win:Info"/>
+        <event value="25079" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_Background_GetBackgroundForUser" opcode="win:Info"/>
+        <event value="25080" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_Background_ShowUserBackground" opcode="win:Info"/>
+        <event value="25082" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_LoadBackgroundImage" opcode="win:Start"/>
+        <event value="25083" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_LoadBackgroundImage" opcode="win:Stop"/>
+        <event value="25084" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AutoLogon_QueryAutoLogon_Info" opcode="win:Info" template="Args25084_0"/>
+        <event value="25085" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AutoLogon_IgnoreAutoLogonMode_Info" opcode="win:Info"/>
+        <event value="25087" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_Initialize" opcode="win:Start"/>
+        <event value="25088" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_Initialize" opcode="win:Stop"/>
+        <event value="25089" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_Shown" opcode="win:Info"/>
+        <event value="25090" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_AddApplication" opcode="win:Start"/>
+        <event value="25091" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_AddApplication" opcode="win:Stop"/>
+        <event value="25093" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_RemoveApplication" opcode="win:Start"/>
+        <event value="25094" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BSDR_RemoveApplication" opcode="win:Stop"/>
+        <event value="25095" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LogonUI_SubmitCredentialToExit" opcode="win:Stop"/>
+        <event value="25096" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LogonUI_PerfTrack_Lock" opcode="win:Stop"/>
+        <event value="25097" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LanguageProfile_SwitchInputMethods" opcode="win:Start"/>
+        <event value="25098" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LanguageProfile_SwitchInputMethods" opcode="win:Stop"/>
+        <event value="25099" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_CancelFirstRunTasks" opcode="win:Start"/>
+        <event value="25100" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_CancelFirstRunTasks" opcode="win:Stop" template="Args25100_0"/>
+        <event value="25101" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_CancelFirstRunTasks" opcode="win:Info"/>
+        <event value="25102" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_TriggerFirstRunTasks" opcode="win:Start"/>
+        <event value="25103" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_TriggerFirstRunTasks" opcode="win:Stop"/>
+        <event value="25104" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_WaitForFirstRunTasks" opcode="win:Start"/>
+        <event value="25105" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_WaitForFirstRunTasks" opcode="win:Stop"/>
+        <event value="25106" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BackButtonNotificationFlyout" opcode="win:Start"/>
+        <event value="25107" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_BackButtonNotificationFlyout" opcode="win:Stop"/>
+        <event value="25108" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Unlock" opcode="win:Start"/>
+        <event value="25109" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Unlock" opcode="win:Stop"/>
+        <event value="25110" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Lock" opcode="win:Start"/>
+        <event value="25111" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Lock" opcode="win:Stop"/>
+        <event value="25112" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Lock" opcode="win:Info"/>
+        <event value="25113" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ControlCreation" opcode="win:Start" template="Args25113_0"/>
+        <event value="25114" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ControlCreation" opcode="win:Stop" template="Args25114_0"/>
+        <event value="25115" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ViewfinderInitialization" opcode="win:Start"/>
+        <event value="25116" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ViewfinderInitialization" opcode="win:Stop"/>
+        <event value="25117" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ActiveDuration" opcode="win:Start"/>
+        <event value="25118" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ActiveDuration" opcode="win:Stop"/>
+        <event value="25119" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ShutdownDuration" opcode="win:Start"/>
+        <event value="25120" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_AccessPage_Camera_ShutdownDuration" opcode="win:Stop"/>
+        <event value="35001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Prompt_Called" opcode="win:Info"/>
+        <event value="35002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_Created" opcode="win:Start"/>
+        <event value="35003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_Created" opcode="win:Stop"/>
+        <event value="35004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_UserList_TileEnumeration" opcode="win:Info"/>
+        <event value="35005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_Destroyed" opcode="win:Info"/>
+        <event value="35006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_DUIInitialize" opcode="win:Start"/>
+        <event value="35007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_DUIInitialize" opcode="win:Stop"/>
+        <event value="35008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_LoadStyleSheet" opcode="win:Start"/>
+        <event value="35009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_Dialog_LoadStyleSheet" opcode="win:Stop"/>
+        <event value="35010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_ModernDialog_Created" opcode="win:Start"/>
+        <event value="35011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_ModernDialog_Created" opcode="win:Stop"/>
+        <event value="35012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_ModernDialog_DUIInitialize" opcode="win:Start"/>
+        <event value="35013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_ModernDialog_DUIInitialize" opcode="win:Stop"/>
+        <event value="35014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_ModernDialog_LoadStyleSheet" opcode="win:Start"/>
+        <event value="35015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_ModernDialog_LoadStyleSheet" opcode="win:Stop"/>
+        <event value="35016" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" task="CredUI_EnumerationSync" opcode="win:Stop"/>
+        <event value="45001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownChoices_UserHasShutdownRights" opcode="win:Start"/>
+        <event value="45002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownChoices_UserHasShutdownRights" opcode="win:Stop"/>
+        <event value="45003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_CreateAndShow" opcode="win:Start"/>
+        <event value="45004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_CreateAndShow" opcode="win:Stop"/>
+        <event value="45005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_PromptForReason" opcode="win:Start"/>
+        <event value="45006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_PromptForReason" opcode="win:Stop"/>
+        <event value="45007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_PromptForConfirmation" opcode="win:Start"/>
+        <event value="45008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_PromptForConfirmation" opcode="win:Stop"/>
+        <event value="45009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_InitiatePowerTransition" opcode="win:Start"/>
+        <event value="45010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_ShutdownFlyout_InitiatePowerTransition" opcode="win:Stop"/>
+        <event value="45011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_Initialize" opcode="win:Start"/>
+        <event value="45012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_Initialize" opcode="win:Stop"/>
+        <event value="45013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_ShowModal" opcode="win:Start"/>
+        <event value="45014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_ShowModal" opcode="win:Stop"/>
+        <event value="45015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_SelfRevealAnimation" opcode="win:Start"/>
+        <event value="45016" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_SelfRevealAnimation" opcode="win:Stop"/>
+        <event value="45017" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_Dismiss" opcode="win:Start"/>
+        <event value="45018" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_Dismiss" opcode="win:Stop"/>
+        <event value="45019" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" task="Shutdown_SlideToShutDownScreen_Timeout" opcode="win:Info"/>
+        <event value="55001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateLogonUsers" opcode="win:Start"/>
+        <event value="55002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateLogonUsers" opcode="win:Stop"/>
+        <event value="55003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateLastLoggedOnUser" opcode="win:Start"/>
+        <event value="55004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateLastLoggedOnUser" opcode="win:Stop"/>
+        <event value="55005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateAutoLogonUser" opcode="win:Start"/>
+        <event value="55006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateAutoLogonUser" opcode="win:Stop"/>
+        <event value="55007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateInSessionUser" opcode="win:Start"/>
+        <event value="55008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateInSessionUser" opcode="win:Stop"/>
+        <event value="55009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateLocalAdmins" opcode="win:Start"/>
+        <event value="55010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_EnumerateLocalAdmins" opcode="win:Stop"/>
+        <event value="55011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_Init_CredentialProviderUserArray" opcode="win:Start"/>
+        <event value="55012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_Init_CredentialProviderUserArray" opcode="win:Stop"/>
+        <event value="55013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_CloneUserArray" opcode="win:Info"/>
+        <event value="55014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_SetProviderFilter" opcode="win:Info"/>
+        <event value="55015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" task="CredentialProviderUser_GetAccountOptions" opcode="win:Info"/>
+        <event value="61001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_LaunchEnrollmentUX" opcode="win:Info"/>
+        <event value="61002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXTeachingShown" opcode="win:Info"/>
+        <event value="61003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXImageConfirmationShown" opcode="win:Info"/>
+        <event value="61004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXRelearnShown" opcode="win:Info"/>
+        <event value="61005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXGestureEntryShown" opcode="win:Info"/>
+        <event value="61006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXGestureConfirmationShown" opcode="win:Info"/>
+        <event value="61007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXEnrollmentConfirmationShown" opcode="win:Info"/>
+        <event value="61008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentUXErrorShown" opcode="win:Info"/>
+        <event value="61009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_RenderFeedback" opcode="win:Start"/>
+        <event value="61010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_RenderFeedback" opcode="win:Stop"/>
+        <event value="61011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_FeedbackVisible" opcode="win:Start"/>
+        <event value="61012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_FeedbackVisible" opcode="win:Stop"/>
+        <event value="61013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SubmitEnrollmentToSystem" opcode="win:Start"/>
+        <event value="61014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SubmitEnrollmentToSystem" opcode="win:Stop"/>
+        <event value="61015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SanitizeImage" opcode="win:Start"/>
+        <event value="61016" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SanitizeImage" opcode="win:Stop"/>
+        <event value="61017" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerCreate" opcode="win:Info"/>
+        <event value="61018" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerGetEnrollmentStatus" opcode="win:Start"/>
+        <event value="61019" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerGetEnrollmentStatus" opcode="win:Stop"/>
+        <event value="61020" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerGetEnrollmentGestures" opcode="win:Start"/>
+        <event value="61021" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerGetEnrollmentGestures" opcode="win:Stop"/>
+        <event value="61022" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerSetEnrollment" opcode="win:Start"/>
+        <event value="61023" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerSetEnrollment" opcode="win:Stop"/>
+        <event value="61024" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerClearEnrollment" opcode="win:Start"/>
+        <event value="61025" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentHandlerClearEnrollment" opcode="win:Stop"/>
+        <event value="61026" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CredentialCreate" opcode="win:Info"/>
+        <event value="61027" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CredentialSelected" opcode="win:Info"/>
+        <event value="61028" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CredentialDeselected" opcode="win:Info"/>
+        <event value="61029" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CredentialSetSubmitData" opcode="win:Info"/>
+        <event value="61030" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CredentialGetSerialization" opcode="win:Start"/>
+        <event value="61031" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CredentialGetSerialization" opcode="win:Stop"/>
+        <event value="61032" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SyncedImageLoading" opcode="win:Start"/>
+        <event value="61033" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SyncedImageLoading" opcode="win:Stop"/>
+        <event value="61034" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentImageSavingForRoaming" opcode="win:Start"/>
+        <event value="61035" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_EnrollmentImageSavingForRoaming" opcode="win:Stop"/>
+        <event value="61036" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_SyncedImageSelected" opcode="win:Info"/>
+        <event value="61037" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="PicturePassword_CheckRoamingImageAvailable" opcode="win:Info"/>
+        <event value="64001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_AcceptCall" opcode="win:Start"/>
+        <event value="64002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_AcceptCall" opcode="win:Stop" template="Args64002_0"/>
+        <event value="64003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_QueueCall" opcode="win:Start"/>
+        <event value="64004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_QueueCall" opcode="win:Stop"/>
+        <event value="64005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_StartCall" opcode="win:Start" template="Args64005_0"/>
+        <event value="64006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_StartCall" opcode="win:Stop"/>
+        <event value="64007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_EndCall" opcode="win:Start"/>
+        <event value="64008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_EndCall" opcode="win:Stop"/>
+        <event value="64009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_EvictCall" opcode="win:Start"/>
+        <event value="64010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCall_EvictCall" opcode="win:Stop"/>
+        <event value="64501" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_StartCall" opcode="win:Start"/>
+        <event value="64502" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_StartCall" opcode="win:Stop"/>
+        <event value="64503" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_EndCall" opcode="win:Start"/>
+        <event value="64504" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_EndCall" opcode="win:Stop"/>
+        <event value="64505" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_OnUnlocking" opcode="win:Start"/>
+        <event value="64506" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_OnUnlocking" opcode="win:Stop"/>
+        <event value="64507" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_EventSignaled" opcode="win:Info"/>
+        <event value="64508" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_HostExited" opcode="win:Info"/>
+        <event value="64509" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_AccessibleNameChanged" opcode="win:Info" template="Args64509_0"/>
+        <event value="64510" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" task="LockScreenCallBroker_AppExited" opcode="win:Info"/>
+        <event value="65001" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_DoPearlSync" opcode="win:Start"/>
+        <event value="65002" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_DoPearlSync" opcode="win:Stop"/>
+        <event value="65003" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_Init" opcode="win:Start"/>
+        <event value="65004" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_Init" opcode="win:Stop"/>
+        <event value="65005" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_TimerProc" opcode="win:Start"/>
+        <event value="65006" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_TimerProc" opcode="win:Stop"/>
+        <event value="65007" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_LoadImg" opcode="win:Start"/>
+        <event value="65008" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_LoadImg" opcode="win:Stop"/>
+        <event value="65009" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_AnimationCompleteProc" opcode="win:Start"/>
+        <event value="65010" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_AnimationCompleteProc" opcode="win:Stop"/>
+        <event value="65011" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_AnimCallbackObjLifetime" opcode="win:Start"/>
+        <event value="65012" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_AnimCallbackObjLifetime" opcode="win:Stop"/>
+        <event value="65013" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_PlaySoundThread" opcode="win:Start"/>
+        <event value="65014" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_PlaySoundThread" opcode="win:Stop"/>
+        <event value="65015" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_InitAudioThread" opcode="win:Start"/>
+        <event value="65016" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_InitAudioThread" opcode="win:Stop"/>
+        <event value="65017" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_AttachToMMCSS" opcode="win:Start"/>
+        <event value="65018" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" task="Booting_Animation_AttachToMMCSS" opcode="win:Stop"/>
+        <event value="65019" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeInputIndicator" opcode="win:Start"/>
+        <event value="65020" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="Logon_LogonFrame_InitializeInputIndicator" opcode="win:Stop"/>
+        <event value="65030" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LockscreenNotifications_NotificationUpdated" opcode="win:Start" template="Args65030_0"/>
+        <event value="65031" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LockscreenNotifications_NotificationUpdated" opcode="win:Stop"/>
+        <event value="65032" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LockscreenNotifications_NotificationArrived" opcode="win:Start"/>
+        <event value="65033" version="0" level="win:Informational"  channel="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" task="LockscreenNotifications_NotificationArrived" opcode="win:Stop"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Authentication User Interface/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" type="Debug"/>
+        <channel value="18" name="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" type="Debug"/>
+        <channel value="19" name="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" type="Debug"/>
+        <channel value="20" name="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" type="Debug"/>
+        <channel value="21" name="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" type="Debug"/>
+        <channel value="22" name="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" type="Debug"/>
+        <channel value="23" name="Microsoft-Windows-Shell-AuthUI-LogonUI/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="ms:ReservedKeyword44" mask="0x100000000000" message="$(string.string140)" />
+        <keyword name="ms:Telemetry" mask="0x200000000000" message="$(string.string141)" />
+        <keyword name="ms:Measures" mask="0x400000000000" message="$(string.string139)" />
+        <keyword name="ms:CriticalData" mask="0x800000000000" message="$(string.string138)" />
+      </keywords>
+      <tasks>
+        <task value="15001" name="Common_UserList_TileEnumeration" message="$(string.string15001)">
+        </task>
+        <task value="15002" name="Common_GetMachineName" message="$(string.string15002)">
+        </task>
+        <task value="15003" name="Common_GetMachineDomainName" message="$(string.string15003)">
+        </task>
+        <task value="15004" name="Common_GetBuiltInAdministrator" message="$(string.string15004)">
+        </task>
+        <task value="15005" name="Common_GetInSessionUser" message="$(string.string15005)">
+        </task>
+        <task value="15006" name="Common_GetFriendlyName" message="$(string.string15006)">
+        </task>
+        <task value="15007" name="Common_Tile_FireSubmitEvent" message="$(string.string15007)">
+        </task>
+        <task value="15008" name="Common_CreateCredentialProviders" message="$(string.string15008)">
+        </task>
+        <task value="15009" name="Common_AddCredProvider" message="$(string.string15009)">
+        </task>
+        <task value="15010" name="Common_CreateCredProviderThread" message="$(string.string15010)">
+        </task>
+        <task value="15011" name="Common_CredProviderThreadProc" message="$(string.string15011)">
+        </task>
+        <task value="15012" name="Common_CredProviderThreadDestroy" message="$(string.string15012)">
+        </task>
+        <task value="15013" name="Common_SetUsageScenario" message="$(string.string15013)">
+        </task>
+        <task value="15014" name="Common_SetSerialization" message="$(string.string15014)">
+        </task>
+        <task value="15015" name="Common_GetCredentialAt" message="$(string.string15015)">
+        </task>
+        <task value="15016" name="Common_GetCredentialCount" message="$(string.string15016)">
+        </task>
+        <task value="15017" name="Common_GetFieldDescriptorCount" message="$(string.string15017)">
+        </task>
+        <task value="15018" name="Common_Credential_GetUserSid" message="$(string.string15018)">
+        </task>
+        <task value="15019" name="Common_SetSelected" message="$(string.string15019)">
+        </task>
+        <task value="15020" name="Common_SetDeSelected" message="$(string.string15020)">
+        </task>
+        <task value="15021" name="Common_GetSerialization" message="$(string.string15021)">
+        </task>
+        <task value="15022" name="Common_ReportResult" message="$(string.string15022)">
+        </task>
+        <task value="15023" name="Common_RegisterEnumeration" message="$(string.string15023)">
+        </task>
+        <task value="15024" name="Common_CreateEnumerationSyncReply" message="$(string.string15024)">
+        </task>
+        <task value="15025" name="Common_StartCredProvsForUsageScenario" message="$(string.string15025)">
+        </task>
+        <task value="25001" name="Logon_ServerCallback_Abort" message="$(string.string25001)">
+        </task>
+        <task value="25002" name="Logon_ServerCallback_DisplayLocked" message="$(string.string25002)">
+        </task>
+        <task value="25003" name="Logon_ServerCallback_DisplayMessage" message="$(string.string25003)">
+        </task>
+        <task value="25004" name="Logon_ServerCallback_DisplayRequestCredentialsError" message="$(string.string25004)">
+        </task>
+        <task value="25005" name="Logon_ServerCallback_DisplaySecurityOptions" message="$(string.string25005)">
+        </task>
+        <task value="25006" name="Logon_ServerCallback_DisplayStatus" message="$(string.string25006)">
+        </task>
+        <task value="25007" name="Logon_ServerCallback_DisplayWelcome" message="$(string.string25007)">
+        </task>
+        <task value="25008" name="Logon_ServerCallback_ReportResult" message="$(string.string25008)">
+        </task>
+        <task value="25009" name="Logon_ServerCallback_RequestCredentials" message="$(string.string25009)">
+        </task>
+        <task value="25010" name="Logon_ServerCallback_Shutdown" message="$(string.string25010)">
+        </task>
+        <task value="25011" name="Logon_ServerCallback_PromptForCredentials" message="$(string.string25011)">
+        </task>
+        <task value="25012" name="Logon_LogonFrame_OnSwitchUser" message="$(string.string25012)">
+        </task>
+        <task value="25013" name="Logon_LogonFrame_OnOtherTiles" message="$(string.string25013)">
+        </task>
+        <task value="25014" name="Logon_LogonFrame_OnGetEnumeratedTilesReply" message="$(string.string25014)">
+        </task>
+        <task value="25015" name="Logon_LogonFrame_OnEnumerationSyncReply" message="$(string.string25015)">
+        </task>
+        <task value="25016" name="Logon_LogonFrame_OnSelectCredentialReply" message="$(string.string25016)">
+        </task>
+        <task value="25017" name="Logon_LogonFrame_SetBackgroundGraphics" message="$(string.string25017)">
+        </task>
+        <task value="25018" name="Logon_LogonFrame_InitializeFrame" message="$(string.string25018)">
+        </task>
+        <task value="25019" name="Logon_LogonFrame_CreateStyleParser" message="$(string.string25019)">
+        </task>
+        <task value="25020" name="Logon_LogonFrame_CreateFrameElement" message="$(string.string25020)">
+        </task>
+        <task value="25021" name="Logon_LogonFrame_InitializeUserLists" message="$(string.string25021)">
+        </task>
+        <task value="25022" name="Logon_LogonFrame_BrandingLoadImage" message="$(string.string25022)">
+        </task>
+        <task value="25024" name="Logon_LogonFrame_InitializeSoftKeyboard" message="$(string.string25024)">
+        </task>
+        <task value="25025" name="Logon_LogonFrame_WTSRegisterSessionNotification" message="$(string.string25025)">
+        </task>
+        <task value="25026" name="Logon_AutoLogon_IsSingleUserNoPassword" message="$(string.string25026)">
+        </task>
+        <task value="25027" name="Logon_AutoLogon_IsLocalNoPasswordUser" message="$(string.string25027)">
+        </task>
+        <task value="25028" name="Logon_ServerStartup" message="$(string.string25028)">
+        </task>
+        <task value="25029" name="Logon_LaunchToReadyForInput" message="$(string.string25029)">
+        </task>
+        <task value="25030" name="Logon_CredentialsToExit" message="$(string.string25030)">
+        </task>
+        <task value="25031" name="Logon_RequestCredentialsToReadyForCredentials" message="$(string.string25031)">
+        </task>
+        <task value="25032" name="Logon_LaunchToAnimationComplete" message="$(string.string25032)">
+        </task>
+        <task value="25033" name="Logon_RequestCredentialsToCancelAfterEnumerate" message="$(string.string25033)">
+        </task>
+        <task value="25034" name="Logon_LaunchToCancelAfterResume" message="$(string.string25034)">
+        </task>
+        <task value="25038" name="LogonUI_SubmitCredentialToExit" message="$(string.string25038)">
+        </task>
+        <task value="25039" name="LogonUI_PerfTrack_UserSwitching" message="$(string.string25039)">
+        </task>
+        <task value="25040" name="Logon_LogonFrame_OnGetSerializationReply" message="$(string.string25040)">
+        </task>
+        <task value="25041" name="Logon_LogonFrame_OnProviderCredentialsChanged" message="$(string.string25041)">
+        </task>
+        <task value="25042" name="Logon_LogonFrame_DisplayStatusMessage" message="$(string.string25042)">
+        </task>
+        <task value="25043" name="Logon_LogonFrame_LogonDialogCallback" message="$(string.string25043)">
+        </task>
+        <task value="25044" name="Logon_LogonFrame_DisplayLogonDialog" message="$(string.string25044)">
+        </task>
+        <task value="25045" name="Logon_Background_GetBackgroundForUser" message="$(string.string25045)">
+        </task>
+        <task value="25046" name="Logon_Background_ShowUserBackground" message="$(string.string25046)">
+        </task>
+        <task value="25082" name="Logon_AccessPage_LoadBackgroundImage" message="$(string.string25082)">
+        </task>
+        <task value="25083" name="Logon_AutoLogon_QueryAutoLogon_Info" message="$(string.string25083)">
+        </task>
+        <task value="25084" name="Logon_AutoLogon_IgnoreAutoLogonMode_Info" message="$(string.string25084)">
+        </task>
+        <task value="25086" name="Logon_BSDR_Initialize" message="$(string.string25086)">
+        </task>
+        <task value="25089" name="Logon_BSDR_Shown" message="$(string.string25089)">
+        </task>
+        <task value="25090" name="Logon_BSDR_AddApplication" message="$(string.string25090)">
+        </task>
+        <task value="25092" name="Logon_BSDR_RemoveApplication" message="$(string.string25092)">
+        </task>
+        <task value="25093" name="LogonUI_PerfTrack_Lock" message="$(string.string25093)">
+        </task>
+        <task value="25094" name="Logon_LanguageProfile_SwitchInputMethods" message="$(string.string25094)">
+        </task>
+        <task value="25095" name="Logon_AccessPage_CancelFirstRunTasks" message="$(string.string25095)">
+        </task>
+        <task value="25096" name="Logon_AccessPage_TriggerFirstRunTasks" message="$(string.string25096)">
+        </task>
+        <task value="25097" name="Logon_AccessPage_WaitForFirstRunTasks" message="$(string.string25097)">
+        </task>
+        <task value="25098" name="Logon_BackButtonNotificationFlyout" message="$(string.string25098)">
+        </task>
+        <task value="25108" name="Logon_AccessPage_Unlock" message="$(string.string25108)">
+        </task>
+        <task value="25110" name="Logon_AccessPage_Lock" message="$(string.string25110)">
+        </task>
+        <task value="25111" name="Logon_AccessPage_Camera_ControlCreation" message="$(string.string25111)">
+        </task>
+        <task value="25112" name="Logon_AccessPage_Camera_ViewfinderInitialization" message="$(string.string25112)">
+        </task>
+        <task value="25113" name="Logon_AccessPage_Camera_ActiveDuration" message="$(string.string25113)">
+        </task>
+        <task value="25114" name="Logon_AccessPage_Camera_ShutdownDuration" message="$(string.string25114)">
+        </task>
+        <task value="35001" name="CredUI_Prompt_Called" message="$(string.string35001)">
+        </task>
+        <task value="35002" name="CredUI_Dialog_Created" message="$(string.string35002)">
+        </task>
+        <task value="35003" name="CredUI_UserList_TileEnumeration" message="$(string.string35003)">
+        </task>
+        <task value="35004" name="CredUI_Dialog_Destroyed" message="$(string.string35004)">
+        </task>
+        <task value="35005" name="CredUI_Dialog_DUIInitialize" message="$(string.string35005)">
+        </task>
+        <task value="35006" name="CredUI_Dialog_LoadStyleSheet" message="$(string.string35006)">
+        </task>
+        <task value="35007" name="CredUI_ModernDialog_Created" message="$(string.string35007)">
+        </task>
+        <task value="35008" name="CredUI_ModernDialog_DUIInitialize" message="$(string.string35008)">
+        </task>
+        <task value="35009" name="CredUI_ModernDialog_LoadStyleSheet" message="$(string.string35009)">
+        </task>
+        <task value="35010" name="CredUI_EnumerationSync" message="$(string.string35010)">
+        </task>
+        <task value="45001" name="Shutdown_ShutdownChoices_UserHasShutdownRights" message="$(string.string45001)">
+        </task>
+        <task value="45003" name="Shutdown_ShutdownFlyout_CreateAndShow" message="$(string.string45003)">
+        </task>
+        <task value="45005" name="Shutdown_ShutdownFlyout_PromptForReason" message="$(string.string45005)">
+        </task>
+        <task value="45007" name="Shutdown_ShutdownFlyout_PromptForConfirmation" message="$(string.string45007)">
+        </task>
+        <task value="45009" name="Shutdown_ShutdownFlyout_InitiatePowerTransition" message="$(string.string45009)">
+        </task>
+        <task value="45011" name="Shutdown_SlideToShutDownScreen_Initialize" message="$(string.string45011)">
+        </task>
+        <task value="45013" name="Shutdown_SlideToShutDownScreen_ShowModal" message="$(string.string45013)">
+        </task>
+        <task value="45015" name="Shutdown_SlideToShutDownScreen_SelfRevealAnimation" message="$(string.string45015)">
+        </task>
+        <task value="45017" name="Shutdown_SlideToShutDownScreen_Dismiss" message="$(string.string45017)">
+        </task>
+        <task value="45019" name="Shutdown_SlideToShutDownScreen_Timeout" message="$(string.string45019)">
+        </task>
+        <task value="55001" name="CredentialProviderUser_EnumerateLogonUsers" message="$(string.string55001)">
+        </task>
+        <task value="55002" name="CredentialProviderUser_EnumerateLastLoggedOnUser" message="$(string.string55002)">
+        </task>
+        <task value="55003" name="CredentialProviderUser_EnumerateAutoLogonUser" message="$(string.string55003)">
+        </task>
+        <task value="55004" name="CredentialProviderUser_EnumerateInSessionUser" message="$(string.string55004)">
+        </task>
+        <task value="55006" name="CredentialProviderUser_EnumerateLocalAdmins" message="$(string.string55006)">
+        </task>
+        <task value="55007" name="CredentialProviderUser_Init_CredentialProviderUserArray" message="$(string.string55007)">
+        </task>
+        <task value="55008" name="CredentialProviderUser_CloneUserArray" message="$(string.string55008)">
+        </task>
+        <task value="55009" name="CredentialProviderUser_SetProviderFilter" message="$(string.string55009)">
+        </task>
+        <task value="55010" name="CredentialProviderUser_GetAccountOptions" message="$(string.string55010)">
+        </task>
+        <task value="61001" name="PicturePassword_LaunchEnrollmentUX" message="$(string.string61001)">
+        </task>
+        <task value="61002" name="PicturePassword_EnrollmentUXTeachingShown" message="$(string.string61002)">
+        </task>
+        <task value="61003" name="PicturePassword_EnrollmentUXImageConfirmationShown" message="$(string.string61003)">
+        </task>
+        <task value="61004" name="PicturePassword_EnrollmentUXRelearnShown" message="$(string.string61004)">
+        </task>
+        <task value="61005" name="PicturePassword_EnrollmentUXGestureEntryShown" message="$(string.string61005)">
+        </task>
+        <task value="61006" name="PicturePassword_EnrollmentUXGestureConfirmationShown" message="$(string.string61006)">
+        </task>
+        <task value="61007" name="PicturePassword_EnrollmentUXEnrollmentConfirmationShown" message="$(string.string61007)">
+        </task>
+        <task value="61008" name="PicturePassword_EnrollmentUXErrorShown" message="$(string.string61008)">
+        </task>
+        <task value="61009" name="PicturePassword_RenderFeedback" message="$(string.string61009)">
+        </task>
+        <task value="61010" name="PicturePassword_FeedbackVisible" message="$(string.string61010)">
+        </task>
+        <task value="61011" name="PicturePassword_SubmitEnrollmentToSystem" message="$(string.string61011)">
+        </task>
+        <task value="61012" name="PicturePassword_SanitizeImage" message="$(string.string61012)">
+        </task>
+        <task value="61013" name="PicturePassword_EnrollmentHandlerCreate" message="$(string.string61013)">
+        </task>
+        <task value="61014" name="PicturePassword_EnrollmentHandlerGetEnrollmentStatus" message="$(string.string61014)">
+        </task>
+        <task value="61015" name="PicturePassword_EnrollmentHandlerGetEnrollmentGestures" message="$(string.string61015)">
+        </task>
+        <task value="61016" name="PicturePassword_EnrollmentHandlerSetEnrollment" message="$(string.string61016)">
+        </task>
+        <task value="61017" name="PicturePassword_EnrollmentHandlerClearEnrollment" message="$(string.string61017)">
+        </task>
+        <task value="61018" name="PicturePassword_CredentialCreate" message="$(string.string61018)">
+        </task>
+        <task value="61019" name="PicturePassword_CredentialSelected" message="$(string.string61019)">
+        </task>
+        <task value="61020" name="PicturePassword_CredentialDeselected" message="$(string.string61020)">
+        </task>
+        <task value="61021" name="PicturePassword_CredentialSetSubmitData" message="$(string.string61021)">
+        </task>
+        <task value="61022" name="PicturePassword_CredentialGetSerialization" message="$(string.string61022)">
+        </task>
+        <task value="61023" name="PicturePassword_SyncedImageLoading" message="$(string.string61023)">
+        </task>
+        <task value="61024" name="PicturePassword_EnrollmentImageSavingForRoaming" message="$(string.string61024)">
+        </task>
+        <task value="61025" name="PicturePassword_SyncedImageSelected" message="$(string.string61025)">
+        </task>
+        <task value="61026" name="PicturePassword_CheckRoamingImageAvailable" message="$(string.string61026)">
+        </task>
+        <task value="64001" name="LockScreenCall_AcceptCall" message="$(string.string64001)">
+        </task>
+        <task value="64003" name="LockScreenCall_QueueCall" message="$(string.string64003)">
+        </task>
+        <task value="64005" name="LockScreenCall_StartCall" message="$(string.string64005)">
+        </task>
+        <task value="64007" name="LockScreenCall_EndCall" message="$(string.string64007)">
+        </task>
+        <task value="64009" name="LockScreenCall_EvictCall" message="$(string.string64009)">
+        </task>
+        <task value="64501" name="LockScreenCallBroker_StartCall" message="$(string.string64501)">
+        </task>
+        <task value="64503" name="LockScreenCallBroker_EndCall" message="$(string.string64503)">
+        </task>
+        <task value="64505" name="LockScreenCallBroker_OnUnlocking" message="$(string.string64505)">
+        </task>
+        <task value="64507" name="LockScreenCallBroker_EventSignaled" message="$(string.string64507)">
+        </task>
+        <task value="64508" name="LockScreenCallBroker_HostExited" message="$(string.string64508)">
+        </task>
+        <task value="64509" name="LockScreenCallBroker_AccessibleNameChanged" message="$(string.string64509)">
+        </task>
+        <task value="64510" name="LockScreenCallBroker_AppExited" message="$(string.string64510)">
+        </task>
+        <task value="65001" name="Booting_Animation_DoPearlSync" message="$(string.string65001)">
+        </task>
+        <task value="65002" name="Booting_Animation_Init" message="$(string.string65002)">
+        </task>
+        <task value="65003" name="Booting_Animation_TimerProc" message="$(string.string65003)">
+        </task>
+        <task value="65004" name="Booting_Animation_LoadImg" message="$(string.string65004)">
+        </task>
+        <task value="65005" name="Booting_Animation_AnimationCompleteProc" message="$(string.string65005)">
+        </task>
+        <task value="65006" name="Booting_Animation_PlaySoundThread" message="$(string.string65006)">
+        </task>
+        <task value="65007" name="Booting_Animation_AnimCallbackObjLifetime" message="$(string.string65007)">
+        </task>
+        <task value="65008" name="Booting_Animation_InitAudioThread" message="$(string.string65008)">
+        </task>
+        <task value="65009" name="Booting_Animation_AttachToMMCSS" message="$(string.string65009)">
+        </task>
+        <task value="65010" name="Logon_LogonFrame_InitializeInputIndicator" message="$(string.string65010)">
+        </task>
+        <task value="65030" name="LockscreenNotifications_NotificationUpdated" message="$(string.string65030)">
+        </task>
+        <task value="65031" name="LockscreenNotifications_NotificationArrived" message="$(string.string65031)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args5001_0">
+          <data name="Error" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5007_0">
+          <data name="Error" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DWORD1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5012_0">
+          <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args5013_0">
+          <data name="AutoLogonSettingRemovalReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15016_0">
+          <data name="message1" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15023_0">
+          <data name="message1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DWORD1" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args15024_0">
+          <data name="message1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="message2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15026_0">
+          <data name="message1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DWORD1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Boolean1" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args15028_0">
+          <data name="DWORD1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="message1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="message2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args15032_0">
+          <data name="DWORD1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25058_0">
+          <data name="ReadyForInputScenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25062_0">
+          <data name="CredProvUsageScenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25073_0">
+          <data name="UserType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CredProvCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsLogonScenario" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsFirstLogon" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25084_0">
+          <data name="DWORD1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DWORD5" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25100_0">
+          <data name="OutstandingTasks" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TasksCancelled" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25113_0">
+          <data name="InvokeObject" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args25114_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64002_0">
+          <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args64005_0">
+          <data name="guid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="message1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="message2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args64509_0">
+          <data name="guid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="message" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args65030_0">
+          <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Booting_Animation_AnimationCompleteProc" />
+       <string id="string1" value="Booting_Animation_AnimCallbackObjLifetime" />
+       <string id="string2" value="Booting_Animation_AttachToMMCSS" />
+       <string id="string3" value="Booting_Animation_DoPearlSync" />
+       <string id="string4" value="Booting_Animation_Init" />
+       <string id="string5" value="Booting_Animation_InitAudioThread" />
+       <string id="string6" value="Booting_Animation_LoadImg" />
+       <string id="string7" value="Booting_Animation_PlaySoundThread" />
+       <string id="string8" value="Booting_Animation_TimerProc" />
+       <string id="string9" value="Common_AddCredProvider" />
+       <string id="string10" value="Common_CreateCredentialProviders" />
+       <string id="string11" value="Common_CreateCredProviderThread" />
+       <string id="string12" value="Common_CreateEnumerationSyncReply" />
+       <string id="string13" value="Common_Credential_GetUserSid" />
+       <string id="string14" value="Common_CredProviderThreadDestroy" />
+       <string id="string15" value="Common_CredProviderThreadProc" />
+       <string id="string16" value="Common_GetBuiltInAdministrator" />
+       <string id="string17" value="Common_GetCredentialAt" />
+       <string id="string18" value="Common_GetCredentialCount" />
+       <string id="string19" value="Common_GetFieldDescriptorCount" />
+       <string id="string20" value="Common_GetFriendlyName" />
+       <string id="string21" value="Common_GetInSessionUser" />
+       <string id="string22" value="Common_GetMachineDomainName" />
+       <string id="string23" value="Common_GetMachineName" />
+       <string id="string24" value="Common_GetSerialization" />
+       <string id="string25" value="Common_RegisterEnumeration" />
+       <string id="string26" value="Common_ReportResult" />
+       <string id="string27" value="Common_SetDeSelected" />
+       <string id="string28" value="Common_SetSelected" />
+       <string id="string29" value="Common_SetSerialization" />
+       <string id="string30" value="Common_SetUsageScenario" />
+       <string id="string31" value="Common_StartCredProvsForUsageScenario" />
+       <string id="string32" value="Common_Tile_FireSubmitEvent" />
+       <string id="string33" value="Common_UserList_TileEnumeration" />
+       <string id="string34" value="CredentialProviderUser_CloneUserArray" />
+       <string id="string35" value="CredentialProviderUser_EnumerateAutoLogonUser" />
+       <string id="string36" value="CredentialProviderUser_EnumerateInSessionUser" />
+       <string id="string37" value="CredentialProviderUser_EnumerateLastLoggedOnUser" />
+       <string id="string38" value="CredentialProviderUser_EnumerateLocalAdmins" />
+       <string id="string39" value="CredentialProviderUser_EnumerateLogonUsers" />
+       <string id="string40" value="CredentialProviderUser_GetAccountOptions" />
+       <string id="string41" value="CredentialProviderUser_Init_CredentialProviderUserArray" />
+       <string id="string42" value="CredentialProviderUser_SetProviderFilter" />
+       <string id="string43" value="CredUI_Dialog_Created" />
+       <string id="string44" value="CredUI_Dialog_Destroyed" />
+       <string id="string45" value="CredUI_Dialog_DUIInitialize" />
+       <string id="string46" value="CredUI_Dialog_LoadStyleSheet" />
+       <string id="string47" value="CredUI_EnumerationSync" />
+       <string id="string48" value="CredUI_ModernDialog_Created" />
+       <string id="string49" value="CredUI_ModernDialog_DUIInitialize" />
+       <string id="string50" value="CredUI_ModernDialog_LoadStyleSheet" />
+       <string id="string51" value="CredUI_Prompt_Called" />
+       <string id="string52" value="CredUI_UserList_TileEnumeration" />
+       <string id="string53" value="LockScreenCall_AcceptCall" />
+       <string id="string54" value="LockScreenCall_EndCall" />
+       <string id="string55" value="LockScreenCall_EvictCall" />
+       <string id="string56" value="LockScreenCall_QueueCall" />
+       <string id="string57" value="LockScreenCall_StartCall" />
+       <string id="string58" value="LockScreenCallBroker_AccessibleNameChanged" />
+       <string id="string59" value="LockScreenCallBroker_AppExited" />
+       <string id="string60" value="LockScreenCallBroker_EndCall" />
+       <string id="string61" value="LockScreenCallBroker_EventSignaled" />
+       <string id="string62" value="LockScreenCallBroker_HostExited" />
+       <string id="string63" value="LockScreenCallBroker_OnUnlocking" />
+       <string id="string64" value="LockScreenCallBroker_StartCall" />
+       <string id="string65" value="LockscreenNotifications_NotificationArrived" />
+       <string id="string66" value="LockscreenNotifications_NotificationUpdated" />
+       <string id="string67" value="Logon_AccessPage_Camera_ActiveDuration" />
+       <string id="string68" value="Logon_AccessPage_Camera_ControlCreation" />
+       <string id="string69" value="Logon_AccessPage_Camera_ShutdownDuration" />
+       <string id="string70" value="Logon_AccessPage_Camera_ViewfinderInitialization" />
+       <string id="string71" value="Logon_AccessPage_CancelFirstRunTasks" />
+       <string id="string72" value="Logon_AccessPage_LoadBackgroundImage" />
+       <string id="string73" value="Logon_AccessPage_Lock" />
+       <string id="string74" value="Logon_AccessPage_TriggerFirstRunTasks" />
+       <string id="string75" value="Logon_AccessPage_Unlock" />
+       <string id="string76" value="Logon_AccessPage_WaitForFirstRunTasks" />
+       <string id="string77" value="Logon_AutoLogon_IgnoreAutoLogonMode_Info" />
+       <string id="string78" value="Logon_AutoLogon_IsLocalNoPasswordUser" />
+       <string id="string79" value="Logon_AutoLogon_IsSingleUserNoPassword" />
+       <string id="string80" value="Logon_AutoLogon_QueryAutoLogon_Info" />
+       <string id="string81" value="Logon_BackButtonNotificationFlyout" />
+       <string id="string82" value="Logon_Background_GetBackgroundForUser" />
+       <string id="string83" value="Logon_Background_ShowUserBackground" />
+       <string id="string84" value="Logon_BSDR_AddApplication" />
+       <string id="string85" value="Logon_BSDR_Initialize" />
+       <string id="string86" value="Logon_BSDR_RemoveApplication" />
+       <string id="string87" value="Logon_BSDR_Shown" />
+       <string id="string88" value="Logon_CredentialsToExit" />
+       <string id="string89" value="Logon_LanguageProfile_SwitchInputMethods" />
+       <string id="string90" value="Logon_LaunchToAnimationComplete" />
+       <string id="string91" value="Logon_LaunchToCancelAfterResume" />
+       <string id="string92" value="Logon_LaunchToReadyForInput" />
+       <string id="string93" value="Logon_LogonFrame_BrandingLoadImage" />
+       <string id="string94" value="Logon_LogonFrame_CreateFrameElement" />
+       <string id="string95" value="Logon_LogonFrame_CreateStyleParser" />
+       <string id="string96" value="Logon_LogonFrame_DisplayLogonDialog" />
+       <string id="string97" value="Logon_LogonFrame_DisplayStatusMessage" />
+       <string id="string98" value="Logon_LogonFrame_InitializeFrame" />
+       <string id="string99" value="Logon_LogonFrame_InitializeInputIndicator" />
+       <string id="string100" value="Logon_LogonFrame_InitializeSoftKeyboard" />
+       <string id="string101" value="Logon_LogonFrame_InitializeUserLists" />
+       <string id="string102" value="Logon_LogonFrame_LogonDialogCallback" />
+       <string id="string103" value="Logon_LogonFrame_OnEnumerationSyncReply" />
+       <string id="string104" value="Logon_LogonFrame_OnGetEnumeratedTilesReply" />
+       <string id="string105" value="Logon_LogonFrame_OnGetSerializationReply" />
+       <string id="string106" value="Logon_LogonFrame_OnOtherTiles" />
+       <string id="string107" value="Logon_LogonFrame_OnProviderCredentialsChanged" />
+       <string id="string108" value="Logon_LogonFrame_OnSelectCredentialReply" />
+       <string id="string109" value="Logon_LogonFrame_OnSwitchUser" />
+       <string id="string110" value="Logon_LogonFrame_SetBackgroundGraphics" />
+       <string id="string111" value="Logon_LogonFrame_WTSRegisterSessionNotification" />
+       <string id="string112" value="Logon_RequestCredentialsToCancelAfterEnumerate" />
+       <string id="string113" value="Logon_RequestCredentialsToReadyForCredentials" />
+       <string id="string114" value="Logon_ServerCallback_Abort" />
+       <string id="string115" value="Logon_ServerCallback_DisplayLocked" />
+       <string id="string116" value="Logon_ServerCallback_DisplayMessage" />
+       <string id="string117" value="Logon_ServerCallback_DisplayRequestCredentialsError" />
+       <string id="string118" value="Logon_ServerCallback_DisplaySecurityOptions" />
+       <string id="string119" value="Logon_ServerCallback_DisplayStatus" />
+       <string id="string120" value="Logon_ServerCallback_DisplayWelcome" />
+       <string id="string121" value="Logon_ServerCallback_PromptForCredentials" />
+       <string id="string122" value="Logon_ServerCallback_ReportResult" />
+       <string id="string123" value="Logon_ServerCallback_RequestCredentials" />
+       <string id="string124" value="Logon_ServerCallback_Shutdown" />
+       <string id="string125" value="Logon_ServerStartup" />
+       <string id="string126" value="LogonUI_PerfTrack_Lock" />
+       <string id="string127" value="LogonUI_PerfTrack_UserSwitching" />
+       <string id="string128" value="LogonUI_SubmitCredentialToExit" />
+       <string id="string129" value="Microsoft-Windows-Authentication User Interface/Operational" />
+       <string id="string130" value="Microsoft-Windows-Shell-AuthUI" />
+       <string id="string131" value="Microsoft-Windows-Shell-AuthUI-BootAnim/Diagnostic" />
+       <string id="string132" value="Microsoft-Windows-Shell-AuthUI-Common/Diagnostic" />
+       <string id="string133" value="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser/Diagnostic" />
+       <string id="string134" value="Microsoft-Windows-Shell-AuthUI-CredUI/Diagnostic" />
+       <string id="string135" value="Microsoft-Windows-Shell-AuthUI-Logon/Diagnostic" />
+       <string id="string136" value="Microsoft-Windows-Shell-AuthUI-LogonUI/Diagnostic" />
+       <string id="string137" value="Microsoft-Windows-Shell-AuthUI-Shutdown/Diagnostic" />
+       <string id="string138" value="ms:CriticalData" />
+       <string id="string139" value="ms:Measures" />
+       <string id="string140" value="ms:ReservedKeyword44" />
+       <string id="string141" value="ms:Telemetry" />
+       <string id="string142" value="PicturePassword_CheckRoamingImageAvailable" />
+       <string id="string143" value="PicturePassword_CredentialCreate" />
+       <string id="string144" value="PicturePassword_CredentialDeselected" />
+       <string id="string145" value="PicturePassword_CredentialGetSerialization" />
+       <string id="string146" value="PicturePassword_CredentialSelected" />
+       <string id="string147" value="PicturePassword_CredentialSetSubmitData" />
+       <string id="string148" value="PicturePassword_EnrollmentHandlerClearEnrollment" />
+       <string id="string149" value="PicturePassword_EnrollmentHandlerCreate" />
+       <string id="string150" value="PicturePassword_EnrollmentHandlerGetEnrollmentGestures" />
+       <string id="string151" value="PicturePassword_EnrollmentHandlerGetEnrollmentStatus" />
+       <string id="string152" value="PicturePassword_EnrollmentHandlerSetEnrollment" />
+       <string id="string153" value="PicturePassword_EnrollmentImageSavingForRoaming" />
+       <string id="string154" value="PicturePassword_EnrollmentUXEnrollmentConfirmationShown" />
+       <string id="string155" value="PicturePassword_EnrollmentUXErrorShown" />
+       <string id="string156" value="PicturePassword_EnrollmentUXGestureConfirmationShown" />
+       <string id="string157" value="PicturePassword_EnrollmentUXGestureEntryShown" />
+       <string id="string158" value="PicturePassword_EnrollmentUXImageConfirmationShown" />
+       <string id="string159" value="PicturePassword_EnrollmentUXRelearnShown" />
+       <string id="string160" value="PicturePassword_EnrollmentUXTeachingShown" />
+       <string id="string161" value="PicturePassword_FeedbackVisible" />
+       <string id="string162" value="PicturePassword_LaunchEnrollmentUX" />
+       <string id="string163" value="PicturePassword_RenderFeedback" />
+       <string id="string164" value="PicturePassword_SanitizeImage" />
+       <string id="string165" value="PicturePassword_SubmitEnrollmentToSystem" />
+       <string id="string166" value="PicturePassword_SyncedImageLoading" />
+       <string id="string167" value="PicturePassword_SyncedImageSelected" />
+       <string id="string168" value="Shutdown_ShutdownChoices_UserHasShutdownRights" />
+       <string id="string169" value="Shutdown_ShutdownFlyout_CreateAndShow" />
+       <string id="string170" value="Shutdown_ShutdownFlyout_InitiatePowerTransition" />
+       <string id="string171" value="Shutdown_ShutdownFlyout_PromptForConfirmation" />
+       <string id="string172" value="Shutdown_ShutdownFlyout_PromptForReason" />
+       <string id="string173" value="Shutdown_SlideToShutDownScreen_Dismiss" />
+       <string id="string174" value="Shutdown_SlideToShutDownScreen_Initialize" />
+       <string id="string175" value="Shutdown_SlideToShutDownScreen_SelfRevealAnimation" />
+       <string id="string176" value="Shutdown_SlideToShutDownScreen_ShowModal" />
+       <string id="string177" value="Shutdown_SlideToShutDownScreen_Timeout" />
+       <string id="string178" value="win:Info" />
+       <string id="string179" value="win:Start" />
+       <string id="string180" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

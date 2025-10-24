@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TunnelDriver" name="Microsoft-Windows-TunnelDriver" guid="{4edbe902-9ed3-4cf0-93e8-b8b5fa920299}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1003_0"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1006" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1007" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1007_0"/>
+        <event value="1008" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1009" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1010" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1011" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1012" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1013" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1014" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1014_0"/>
+        <event value="1015" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1015_0"/>
+        <event value="1016" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1017" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1017_0"/>
+        <event value="1018" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1018_0"/>
+        <event value="1019" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver"/>
+        <event value="1020" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1020_0"/>
+        <event value="1021" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1021_0"/>
+        <event value="1022" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1022_0"/>
+        <event value="1023" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1023_0"/>
+        <event value="1024" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1024_0"/>
+        <event value="1025" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1025_0"/>
+        <event value="1026" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1026_0"/>
+        <event value="1027" version="0" level="win:Informational"  channel="Microsoft-Windows-TunnelDriver" template="Args1027_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-TunnelDriver" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1000_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1001_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TunnelReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1003_0">
+          <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Forwarding" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WeakHostReceive" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1007_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1014_0">
+          <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Media Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1015_0">
+          <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReadError" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1017_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Interface Operation" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1018_0">
+          <data name="Teredo Flow Tuple" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1020_0">
+          <data name="IpAddrV6Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Local Ipv6 Address" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length" />
+          <data name="Remote IPv6 Address" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length" />
+        </template>
+        <template tid="Args1021_0">
+          <data name="Source IPv4 Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Destination IPv4 Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Source Port" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="Destination Port" inType="win:UInt16" outType="xs:unsignedShort"  />
+        </template>
+        <template tid="Args1022_0">
+          <data name="NT Status" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1023_0">
+          <data name="IpAddrV6Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Local IPv4 Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Remote IPv4 Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Local IPv6" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length" />
+          <data name="Remote IPv6" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length" />
+          <data name="NT Status" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args1024_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Tunnel Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IPv4 Address" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="Yes or No" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1025_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Offloaded Nbl Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Returned Nbl Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1026_0">
+          <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Dropped Nbl Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1027_0">
+          <data name="Process ID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Filter ID" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Flow Handle" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-TunnelDriver" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

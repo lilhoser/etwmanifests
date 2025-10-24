@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Services" name="Microsoft-Windows-Services" guid="{0063715b-eeda-4007-9429-ad526f62696e}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="Autostart" opcode="win:Start" keywords="Performance"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="Autostart" opcode="win:Stop" keywords="Performance"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="StartingGroup" opcode="win:Start" keywords="Performance" template="Args103_0"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="StartingGroup" opcode="win:Stop" keywords="Performance"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="ServiceStatusChange" opcode="StatusChange" keywords="Performance" template="Args105_0"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="PerfCriticalAutostart" opcode="win:Start" keywords="Performance"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="PerfCriticalAutostart" opcode="win:Stop" keywords="Performance"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="WaitForLsa" opcode="win:Start" keywords="Performance"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="WaitForLsa" opcode="win:Stop" keywords="Performance"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="SendControl" keywords="Control" template="Args200_0"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="ServiceConfigChange" keywords="ConfigChange" template="Args201_0"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="ServiceConfigChange" keywords="ConfigChange" template="Args202_0"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="ServiceConfigChange" keywords="ConfigChange"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="ServiceStart" keywords="ServiceStart" template="Args204_0"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-Services/Diagnostic" task="ServiceStart" keywords="ServiceStart" template="Args205_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Services/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Performance" mask="0x10000" message="$(string.string6)" />
+        <keyword name="Control" mask="0x100000" message="$(string.string2)" />
+        <keyword name="ConfigChange" mask="0x200000" message="$(string.string1)" />
+        <keyword name="ServiceStart" mask="0x400000" message="$(string.string9)" />
+      </keywords>
+      <tasks>
+        <task value="101" name="Autostart" message="$(string.string101)">
+        </task>
+        <task value="103" name="StartingGroup" message="$(string.string103)">
+        </task>
+        <task value="105" name="ServiceStatusChange" message="$(string.string105)">
+          <opcodes>
+           <opcode value="101" name="StatusChange" message="$(string.string12)"/>
+          </opcodes>
+        </task>
+        <task value="107" name="PerfCriticalAutostart" message="$(string.string107)">
+        </task>
+        <task value="108" name="WaitForLsa" message="$(string.string108)">
+        </task>
+        <task value="200" name="SendControl" message="$(string.string200)">
+        </task>
+        <task value="201" name="ServiceConfigChange" message="$(string.string201)">
+        </task>
+        <task value="202" name="ServiceStart" message="$(string.string202)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="101" name="StatusChange" message="$(string.string12)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args103_0">
+          <data name="GroupName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="ExecutionPhase" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StartType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ImageName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args200_0">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DisplayName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ControlCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParentProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args201_0">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewStartType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParentProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args202_0">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewValueName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParentProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args204_0">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ServiceHostName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClientProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParentProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args205_0">
+          <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LoadOrderGroup" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SvchostGroup" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsCritical" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsUserService" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsOwnProcess" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ClientProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ParentProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Autostart" />
+       <string id="string1" value="ConfigChange" />
+       <string id="string2" value="Control" />
+       <string id="string3" value="Microsoft-Windows-Services" />
+       <string id="string4" value="Microsoft-Windows-Services/Diagnostic" />
+       <string id="string5" value="PerfCriticalAutostart" />
+       <string id="string6" value="Performance" />
+       <string id="string7" value="SendControl" />
+       <string id="string8" value="ServiceConfigChange" />
+       <string id="string9" value="ServiceStart" />
+       <string id="string10" value="ServiceStatusChange" />
+       <string id="string11" value="StartingGroup" />
+       <string id="string12" value="StatusChange" />
+       <string id="string13" value="WaitForLsa" />
+       <string id="string14" value="win:Start" />
+       <string id="string15" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

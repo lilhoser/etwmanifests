@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-RTWorkQueue-Threading" name="Microsoft-Windows-RTWorkQueue-Threading" guid="{e18d0fc9-9515-4232-98e4-89e456d8551b}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4435" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Execute" opcode="win:Start" template="Args4435_0"/>
+        <event value="4436" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Execute" opcode="win:Stop"/>
+        <event value="4437" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Queue" opcode="win:Start" template="Args4437_0"/>
+        <event value="4438" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Queue" opcode="win:Stop"/>
+        <event value="4439" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="WorkQueue_Thread" opcode="win:Start" template="Args4439_0"/>
+        <event value="4440" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="WorkQueue_Thread" opcode="win:Stop"/>
+        <event value="4454" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="MMCSS_Registration" opcode="win:Start" template="Args4454_0"/>
+        <event value="4455" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="MMCSS_Registration" opcode="win:Stop"/>
+        <event value="4474" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Execute_Callback" opcode="win:Start" template="Args4474_0"/>
+        <event value="4475" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Execute_Callback" opcode="win:Stop"/>
+        <event value="4476" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_MMCSS" opcode="win:Start" template="Args4476_0"/>
+        <event value="4477" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_MMCSS" opcode="win:Stop"/>
+        <event value="4484" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_DeadlineYield" opcode="win:Start" template="Args4484_0"/>
+        <event value="4485" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_DeadlineYield" opcode="win:Stop"/>
+        <event value="4487" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_LongRunning" opcode="win:Start" template="Args4487_0"/>
+        <event value="4488" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_LongRunning" opcode="win:Stop"/>
+        <event value="4490" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_ExecuteTimer" opcode="win:Info" template="Args4490_0"/>
+        <event value="4491" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="SubscribePPMChangeWNF" opcode="win:Info" template="Args4491_0"/>
+        <event value="4492" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="PPMChangeWnfCallback" opcode="win:Info" template="Args4492_0"/>
+        <event value="4493" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="UpdateSelectWorkQueuesCpuGroupMask" opcode="win:Start" template="Args4493_0"/>
+        <event value="4494" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="UpdateSelectWorkQueuesCpuGroupMask" opcode="win:Stop" template="Args4494_0"/>
+        <event value="4495" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="SubscribeCpuGroupMaskChangeWNF" opcode="win:Info"/>
+        <event value="4496" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="UpdateWorkqueueCpuGroupMask" opcode="win:Info" template="Args4496_0"/>
+        <event value="4497" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="CpuGroupMaskChangeWnfCallback" opcode="win:Info" template="Args4497_0"/>
+        <event value="4498" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="SetThreadCpuGroupMask" opcode="win:Info" template="Args4498_0"/>
+        <event value="4499" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Notification" opcode="win:Start" template="Args4499_0"/>
+        <event value="4500" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Notification" opcode="win:Stop"/>
+        <event value="4501" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Debounce" opcode="win:Start" template="Args4501_0"/>
+        <event value="4502" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Debounce" opcode="win:Stop"/>
+        <event value="4503" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Buffering" opcode="win:Start"/>
+        <event value="4504" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Buffering" opcode="win:Stop"/>
+        <event value="4505" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="Platform_AllocIndex" opcode="win:Start" template="Args4505_0"/>
+        <event value="4506" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="Platform_AllocIndex" opcode="win:Stop"/>
+        <event value="4507" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="Platform_Init" opcode="win:Start"/>
+        <event value="4508" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="Platform_Init" opcode="win:Stop"/>
+        <event value="4509" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="Platform_Shutdown" opcode="win:Start" keywords="Telemetry"/>
+        <event value="4510" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="Platform_Shutdown" opcode="win:Stop" keywords="Telemetry"/>
+        <event value="4511" version="0" level="win:Warning"  channel="RTWorkQueueTheading" task="Platform_Shutdown" opcode="win:Info" keywords="DiagTrack"/>
+        <event value="4512" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="Platform_Shutdown_WorkQueue" opcode="win:Start" template="Args4512_0"/>
+        <event value="4513" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="Platform_Shutdown_WorkQueue" opcode="win:Stop"/>
+        <event value="4514" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_RunLimit" opcode="win:Start"/>
+        <event value="4515" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_RunLimit" opcode="win:Stop"/>
+        <event value="4516" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_RunLimit" opcode="win:Info" keywords="Telemetry"/>
+        <event value="4517" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="TaskGroup" opcode="win:Start" template="Args4517_0"/>
+        <event value="4518" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="TaskGroup" opcode="win:Stop"/>
+        <event value="4519" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="TaskGroup" opcode="win:Info" keywords="Telemetry" template="Args4519_0"/>
+        <event value="4520" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="TaskGroup" opcode="win:Info" keywords="Telemetry" template="Args4520_0"/>
+        <event value="4521" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="TaskGroup" opcode="win:Info" keywords="Telemetry" template="Args4521_0"/>
+        <event value="4522" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="Platform_Init" opcode="win:Info"/>
+        <event value="4523" version="0" level="win:Informational"  channel="RTWorkQueueTheading" task="Platform_Shutdown" opcode="win:Stop"/>
+        <event value="4524" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_GetMMCSSFailure" opcode="win:Info" template="Args4524_0"/>
+        <event value="4525" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_MMCSS" opcode="win:Info" template="Args4525_0"/>
+        <event value="4526" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_DeadlineYield" opcode="win:Start" template="Args4526_0"/>
+        <event value="4527" version="0" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_DeadlineYield" opcode="win:Stop"/>
+        <event value="4472" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Queue_Create" opcode="win:Start" template="Args4472_1"/>
+        <event value="4473" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_Queue_Create" opcode="win:Stop"/>
+        <event value="4478" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_UpdateDeadlines" opcode="win:Start" template="Args4478_1"/>
+        <event value="4479" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_UpdateDeadlines" opcode="win:Stop"/>
+        <event value="4480" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_AddDeadline" opcode="win:Start" template="Args4480_1"/>
+        <event value="4481" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_AddDeadline" opcode="win:Stop"/>
+        <event value="4482" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_AddImmediateDeadline" opcode="win:Start"/>
+        <event value="4483" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_AddImmediateDeadline" opcode="win:Stop"/>
+        <event value="4489" version="1" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_StartTimer" opcode="win:Info" template="Args4489_1"/>
+        <event value="4486" version="2" level="win:Verbose"  channel="RTWorkQueueTheading" task="WorkQueue_DeadlineQueue" opcode="win:Info" template="Args4486_2"/>
+      </events>
+      <channels>
+        <channel value="16" name="RTWorkQueueTheading" type="unknown"/>
+      </channels>
+      <keywords>
+        <keyword name="Telemetry" mask="0x100" message="$(string.string14)" />
+        <keyword name="DiagTrack" mask="0x200" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="583" name="WorkQueue_Execute" message="$(string.string583)">
+        </task>
+        <task value="584" name="WorkQueue_Queue" message="$(string.string584)">
+        </task>
+        <task value="588" name="WorkQueue_Thread" message="$(string.string588)">
+        </task>
+        <task value="595" name="MMCSS_Registration" message="$(string.string595)">
+        </task>
+        <task value="602" name="WorkQueue_Queue_Create" message="$(string.string602)">
+        </task>
+        <task value="603" name="WorkQueue_Execute_Callback" message="$(string.string603)">
+        </task>
+        <task value="604" name="WorkQueue_MMCSS" message="$(string.string604)">
+        </task>
+        <task value="605" name="WorkQueue_UpdateDeadlines" message="$(string.string605)">
+        </task>
+        <task value="606" name="WorkQueue_AddDeadline" message="$(string.string606)">
+        </task>
+        <task value="607" name="WorkQueue_AddImmediateDeadline" message="$(string.string607)">
+        </task>
+        <task value="608" name="WorkQueue_DeadlineYield" message="$(string.string608)">
+        </task>
+        <task value="609" name="WorkQueue_DeadlineQueue" message="$(string.string609)">
+        </task>
+        <task value="610" name="WorkQueue_LongRunning" message="$(string.string610)">
+        </task>
+        <task value="611" name="WorkQueue_StartTimer" message="$(string.string611)">
+        </task>
+        <task value="612" name="WorkQueue_ExecuteTimer" message="$(string.string612)">
+        </task>
+        <task value="614" name="UpdateSelectWorkQueuesCpuGroupMask" message="$(string.string614)">
+        </task>
+        <task value="615" name="SubscribeCpuGroupMaskChangeWNF" message="$(string.string615)">
+        </task>
+        <task value="616" name="UpdateWorkqueueCpuGroupMask" message="$(string.string616)">
+        </task>
+        <task value="617" name="CpuGroupMaskChangeWnfCallback" message="$(string.string617)">
+        </task>
+        <task value="618" name="SetThreadCpuGroupMask" message="$(string.string618)">
+        </task>
+        <task value="619" name="WorkQueue_Debounce" message="$(string.string619)">
+        </task>
+        <task value="620" name="WorkQueue_Buffering" message="$(string.string620)">
+        </task>
+        <task value="621" name="WorkQueue_Notification" message="$(string.string621)">
+        </task>
+        <task value="622" name="Platform_AllocIndex" message="$(string.string622)">
+        </task>
+        <task value="623" name="Platform_Init" message="$(string.string623)">
+        </task>
+        <task value="624" name="Platform_Shutdown" message="$(string.string624)">
+        </task>
+        <task value="625" name="Platform_Shutdown_WorkQueue" message="$(string.string625)">
+        </task>
+        <task value="626" name="WorkQueue_RunLimit" message="$(string.string626)">
+        </task>
+        <task value="627" name="TaskGroup" message="$(string.string627)">
+        </task>
+        <task value="628" name="WorkQueue_GetMMCSSFailure" message="$(string.string628)">
+        </task>
+        <task value="629" name="PPMChangeWnfCallback" message="$(string.string629)">
+        </task>
+        <task value="630" name="SubscribePPMChangeWNF" message="$(string.string630)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args4435_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LongRunning" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4437_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="QueueDepth" inType="win:Int32" outType="xs:int"  />
+          <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4439_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WordQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4454_0">
+          <data name="Queue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Class" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Priority" inType="win:Int32" outType="xs:int"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4474_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BaseWorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AsyncResultVTable" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="LongRunning" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4476_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Class" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Priority" inType="win:Int32" outType="xs:int"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4484_0">
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Yield" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4487_0">
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskGroupID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4490_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimerPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="IsPeriodic" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args4491_0">
+          <data name="queryStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="subscribeStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="changeStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4492_0">
+          <data name="ChangeStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurChangeStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PPMMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QOSSupported" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4493_0">
+          <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4494_0">
+          <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4496_0">
+          <data name="dwWorkQueue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Class" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args4497_0">
+          <data name="ChangeStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurChangeStamp" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4498_0">
+          <data name="pWorkQueue" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Class" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Priority" inType="win:Int32" outType="xs:int"  />
+          <data name="ThreadId" inType="win:Int32" outType="xs:int"  />
+          <data name="CurProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CurProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NewProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NewProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Status" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4499_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4501_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4505_0">
+          <data name="Platform" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:Int32" outType="xs:int"  />
+          <data name="Index" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4512_0">
+          <data name="Platform" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueue" inType="win:Int32" outType="xs:int"  />
+          <data name="Index" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4517_0">
+          <data name="TaskGroup" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args4519_0">
+          <data name="TaskGroup" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4520_0">
+          <data name="ObjectCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4521_0">
+          <data name="TaskGroup" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4524_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="rtStatePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hr" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args4525_0">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RegCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4526_0">
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Yield" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="llDelay" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args4472_1">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:Int32" outType="xs:int"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QoSSupported" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4478_1">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PreviousDeadline" inType="win:Int64" outType="xs:long"  />
+          <data name="NextDeadline" inType="win:Int64" outType="xs:long"  />
+          <data name="lDelay_ms" inType="win:Int32" outType="xs:int"  />
+          <data name="lPreDelay_ms" inType="win:Int32" outType="xs:int"  />
+          <data name="NextDeadline_RelToNow_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4480_1">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ItemID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GlobalDeadline" inType="win:Int64" outType="xs:long"  />
+          <data name="DeltaAhead_usec" inType="win:Int64" outType="xs:long"  />
+        </template>
+        <template tid="Args4489_1">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimerPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Timeout" inType="win:Int64" outType="xs:long"  />
+          <data name="IsPeriodic" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Tolerance_ms" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4486_2">
+          <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TotalCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ImmediateCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NextDeadline" inType="win:Int64" outType="xs:long"  />
+          <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ItemID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NextDeadline_RelToNow_us" inType="win:Int64" outType="xs:long"  />
+          <data name="NextDeadline_AddTimeRelNow_us" inType="win:Int64" outType="xs:long"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CpuGroupMaskChangeWnfCallback" />
+       <string id="string1" value="DiagTrack" />
+       <string id="string2" value="Microsoft-Windows-RTWorkQueue-Threading" />
+       <string id="string3" value="MMCSS_Registration" />
+       <string id="string4" value="Platform_AllocIndex" />
+       <string id="string5" value="Platform_Init" />
+       <string id="string6" value="Platform_Shutdown" />
+       <string id="string7" value="Platform_Shutdown_WorkQueue" />
+       <string id="string8" value="PPMChangeWnfCallback" />
+       <string id="string9" value="RTWorkQueueTheading" />
+       <string id="string10" value="SetThreadCpuGroupMask" />
+       <string id="string11" value="SubscribeCpuGroupMaskChangeWNF" />
+       <string id="string12" value="SubscribePPMChangeWNF" />
+       <string id="string13" value="TaskGroup" />
+       <string id="string14" value="Telemetry" />
+       <string id="string15" value="UpdateSelectWorkQueuesCpuGroupMask" />
+       <string id="string16" value="UpdateWorkqueueCpuGroupMask" />
+       <string id="string17" value="win:Info" />
+       <string id="string18" value="win:Start" />
+       <string id="string19" value="win:Stop" />
+       <string id="string20" value="WorkQueue_AddDeadline" />
+       <string id="string21" value="WorkQueue_AddImmediateDeadline" />
+       <string id="string22" value="WorkQueue_Buffering" />
+       <string id="string23" value="WorkQueue_DeadlineQueue" />
+       <string id="string24" value="WorkQueue_DeadlineYield" />
+       <string id="string25" value="WorkQueue_Debounce" />
+       <string id="string26" value="WorkQueue_Execute" />
+       <string id="string27" value="WorkQueue_Execute_Callback" />
+       <string id="string28" value="WorkQueue_ExecuteTimer" />
+       <string id="string29" value="WorkQueue_GetMMCSSFailure" />
+       <string id="string30" value="WorkQueue_LongRunning" />
+       <string id="string31" value="WorkQueue_MMCSS" />
+       <string id="string32" value="WorkQueue_Notification" />
+       <string id="string33" value="WorkQueue_Queue" />
+       <string id="string34" value="WorkQueue_Queue_Create" />
+       <string id="string35" value="WorkQueue_RunLimit" />
+       <string id="string36" value="WorkQueue_StartTimer" />
+       <string id="string37" value="WorkQueue_Thread" />
+       <string id="string38" value="WorkQueue_UpdateDeadlines" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

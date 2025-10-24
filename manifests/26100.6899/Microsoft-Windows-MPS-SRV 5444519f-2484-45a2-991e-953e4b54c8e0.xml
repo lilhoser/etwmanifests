@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-MPS-SRV" name="Microsoft-Windows-MPS-SRV" guid="{5444519f-2484-45a2-991e-953e4b54c8e0}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="StartService" opcode="win:Start" keywords="Service"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="StartService" opcode="win:Stop" keywords="Service"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="StopService" opcode="win:Start" keywords="Service"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="StopService" opcode="win:Stop" keywords="Service"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Audit_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Audit_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Audit_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Audit_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="113" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AuthApps_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="114" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AuthApps_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="115" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AuthApps_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="116" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AuthApps_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="117" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Notify_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="118" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Notify_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="119" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Notify_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="120" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Notify_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="121" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynPorts_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="122" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynPorts_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="123" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynPorts_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="124" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynPorts_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="125" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ChangeSource_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="126" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ChangeSource_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="127" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ChangeSource_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="128" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ChangeSource_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="129" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Writer_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="130" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Writer_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="131" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Writer_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="132" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Writer_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="133" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Logger_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="134" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Logger_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="135" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Logger_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="136" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Logger_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="137" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA1stPhase_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="138" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA1stPhase_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="139" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA1stPhase_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="140" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA1stPhase_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="141" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ProfileMgr_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="142" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ProfileMgr_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="143" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ProfileMgr_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="144" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ProfileMgr_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="145" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Upcall2ndPhase_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="146" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Upcall2ndPhase_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="147" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Upcall2ndPhase_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="148" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Upcall2ndPhase_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="149" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="RpcAPIs_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="150" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="RpcAPIs_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="151" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="RpcAPIs_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="152" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="RpcAPIs_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="153" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ResrcIndicationAPIs_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="154" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ResrcIndicationAPIs_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="155" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ResrcIndicationAPIs_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="156" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ResrcIndicationAPIs_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="157" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="GPMon_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="158" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="GPMon_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="159" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="GPMon_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="160" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="GPMon_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="161" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA2ndPhase_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="162" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA2ndPhase_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="163" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA2ndPhase_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="164" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA2ndPhase_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="165" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ServiceSignalReady" opcode="win:Start" keywords="Service"/>
+        <event value="166" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="ServiceSignalReady" opcode="win:Stop" keywords="Service"/>
+        <event value="167" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Empty_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="168" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Empty_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="169" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Products_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="170" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Products_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="171" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Products_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="172" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Products_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="173" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HttpProxy_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="174" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HttpProxy_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="175" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HttpProxy_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="176" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HttpProxy_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="177" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AdhSitesSubnets_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="178" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AdhSitesSubnets_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="179" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AdhSitesSubnets_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="180" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="AdhSitesSubnets_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="181" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Moneis_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="182" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Moneis_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="183" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Moneis_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="184" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="Moneis_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="185" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MoneisRegistrationApiPhase2_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="186" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MoneisRegistrationApiPhase2_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="187" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MoneisRegistrationApiPhase2_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="188" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MoneisRegistrationApiPhase2_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="189" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA0thPhase_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="190" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA0thPhase_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="191" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA0thPhase_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="192" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynDataNLA0thPhase_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="193" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="CallbacksFromBfe_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="194" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="CallbacksFromBfe_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="195" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="CallbacksFromBfe_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="196" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="CallbacksFromBfe_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="200" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_RestoreDefaults" opcode="win:Start" keywords="Service"/>
+        <event value="201" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_RestoreDefaults" opcode="win:Stop" keywords="Service"/>
+        <event value="202" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumFirewallRules" opcode="win:Start" keywords="Service"/>
+        <event value="203" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumFirewallRules" opcode="win:Stop" keywords="Service"/>
+        <event value="204" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteFirewallRule" opcode="win:Start" keywords="Service"/>
+        <event value="205" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteFirewallRule" opcode="win:Stop" keywords="Service"/>
+        <event value="206" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllFirewallRules" opcode="win:Start" keywords="Service"/>
+        <event value="207" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllFirewallRules" opcode="win:Stop" keywords="Service"/>
+        <event value="208" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddFirewallRule" opcode="win:Start" keywords="Service"/>
+        <event value="209" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddFirewallRule" opcode="win:Stop" keywords="Service"/>
+        <event value="210" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetFirewallRule" opcode="win:Start" keywords="Service"/>
+        <event value="211" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetFirewallRule" opcode="win:Stop" keywords="Service"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetConfig" opcode="win:Start" keywords="Service"/>
+        <event value="213" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetConfig" opcode="win:Stop" keywords="Service"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetConfig" opcode="win:Start" keywords="Service"/>
+        <event value="215" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetConfig" opcode="win:Stop" keywords="Service"/>
+        <event value="216" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetGlobalConfig" opcode="win:Start" keywords="Service"/>
+        <event value="217" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetGlobalConfig" opcode="win:Stop" keywords="Service"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetGlobalConfig" opcode="win:Start" keywords="Service"/>
+        <event value="219" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetGlobalConfig" opcode="win:Stop" keywords="Service"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_OpenPolicyStore" opcode="win:Start" keywords="Service"/>
+        <event value="221" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_OpenPolicyStore" opcode="win:Stop" keywords="Service"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_ClosePolicyStore" opcode="win:Start" keywords="Service"/>
+        <event value="223" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_ClosePolicyStore" opcode="win:Stop" keywords="Service"/>
+        <event value="224" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddConnectionSecurityRule" opcode="win:Start" keywords="Service"/>
+        <event value="225" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddConnectionSecurityRule" opcode="win:Stop" keywords="Service"/>
+        <event value="226" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetConnectionSecurityRule" opcode="win:Start" keywords="Service"/>
+        <event value="227" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetConnectionSecurityRule" opcode="win:Stop" keywords="Service"/>
+        <event value="228" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteConnectionSecurityRule" opcode="win:Start" keywords="Service"/>
+        <event value="229" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteConnectionSecurityRule" opcode="win:Stop" keywords="Service"/>
+        <event value="230" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllConnectionSecurityRules" opcode="win:Start" keywords="Service"/>
+        <event value="231" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllConnectionSecurityRules" opcode="win:Stop" keywords="Service"/>
+        <event value="232" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumConnectionSecurityRules" opcode="win:Start" keywords="Service"/>
+        <event value="233" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumConnectionSecurityRules" opcode="win:Stop" keywords="Service"/>
+        <event value="234" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddAuthenticationSet" opcode="win:Start" keywords="Service"/>
+        <event value="235" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddAuthenticationSet" opcode="win:Stop" keywords="Service"/>
+        <event value="236" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAuthenticationSet" opcode="win:Start" keywords="Service"/>
+        <event value="237" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAuthenticationSet" opcode="win:Stop" keywords="Service"/>
+        <event value="238" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetAuthenticationSet" opcode="win:Start" keywords="Service"/>
+        <event value="239" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetAuthenticationSet" opcode="win:Stop" keywords="Service"/>
+        <event value="240" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllAuthenticationSets" opcode="win:Start" keywords="Service"/>
+        <event value="241" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllAuthenticationSets" opcode="win:Stop" keywords="Service"/>
+        <event value="242" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumAuthenticationSets" opcode="win:Start" keywords="Service"/>
+        <event value="243" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumAuthenticationSets" opcode="win:Stop" keywords="Service"/>
+        <event value="244" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddCryptoSet" opcode="win:Start" keywords="Service"/>
+        <event value="245" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddCryptoSet" opcode="win:Stop" keywords="Service"/>
+        <event value="246" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetCryptoSet" opcode="win:Start" keywords="Service"/>
+        <event value="247" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetCryptoSet" opcode="win:Stop" keywords="Service"/>
+        <event value="248" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteCryptoSet" opcode="win:Start" keywords="Service"/>
+        <event value="249" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteCryptoSet" opcode="win:Stop" keywords="Service"/>
+        <event value="250" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllCryptoSets" opcode="win:Start" keywords="Service"/>
+        <event value="251" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllCryptoSets" opcode="win:Stop" keywords="Service"/>
+        <event value="252" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumCryptoSets" opcode="win:Start" keywords="Service"/>
+        <event value="253" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumCryptoSets" opcode="win:Stop" keywords="Service"/>
+        <event value="254" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumPhase1SAs" opcode="win:Start" keywords="Service"/>
+        <event value="255" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumPhase1SAs" opcode="win:Stop" keywords="Service"/>
+        <event value="256" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeletePhase1SAs" opcode="win:Start" keywords="Service"/>
+        <event value="257" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeletePhase1SAs" opcode="win:Stop" keywords="Service"/>
+        <event value="258" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumPhase2SAs" opcode="win:Start" keywords="Service"/>
+        <event value="259" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumPhase2SAs" opcode="win:Stop" keywords="Service"/>
+        <event value="260" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeletePhase2SAs" opcode="win:Start" keywords="Service"/>
+        <event value="261" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeletePhase2SAs" opcode="win:Stop" keywords="Service"/>
+        <event value="262" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_NotifyUnsupportedAttempt" opcode="win:Start" keywords="Service"/>
+        <event value="263" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_NotifyUnsupportedAttempt" opcode="win:Stop" keywords="Service"/>
+        <event value="264" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_RegisterProduct" opcode="win:Start" keywords="Service"/>
+        <event value="265" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_RegisterProduct" opcode="win:Stop" keywords="Service"/>
+        <event value="266" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_UnregisterProduct" opcode="win:Start" keywords="Service"/>
+        <event value="267" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_UnregisterProduct" opcode="win:Stop" keywords="Service"/>
+        <event value="268" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumProducts" opcode="win:Start" keywords="Service"/>
+        <event value="269" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumProducts" opcode="win:Stop" keywords="Service"/>
+        <event value="270" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddMainModeRule" opcode="win:Start" keywords="Service"/>
+        <event value="271" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddMainModeRule" opcode="win:Stop" keywords="Service"/>
+        <event value="272" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetMainModeRule" opcode="win:Start" keywords="Service"/>
+        <event value="273" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetMainModeRule" opcode="win:Stop" keywords="Service"/>
+        <event value="274" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteMainModeRule" opcode="win:Start" keywords="Service"/>
+        <event value="275" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteMainModeRule" opcode="win:Stop" keywords="Service"/>
+        <event value="276" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllMainModeRules" opcode="win:Start" keywords="Service"/>
+        <event value="277" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteAllMainModeRules" opcode="win:Stop" keywords="Service"/>
+        <event value="278" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumMainModeRules" opcode="win:Start" keywords="Service"/>
+        <event value="279" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumMainModeRules" opcode="win:Stop" keywords="Service"/>
+        <event value="280" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryFirewallRules" opcode="win:Start" keywords="Service"/>
+        <event value="281" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryFirewallRules" opcode="win:Stop" keywords="Service"/>
+        <event value="282" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryConnectionSecurityRules" opcode="win:Start" keywords="Service"/>
+        <event value="283" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryConnectionSecurityRules" opcode="win:Stop" keywords="Service"/>
+        <event value="284" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryMainModeRules" opcode="win:Start" keywords="Service"/>
+        <event value="285" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryMainModeRules" opcode="win:Stop" keywords="Service"/>
+        <event value="286" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryAuthenticationSets" opcode="win:Start" keywords="Service"/>
+        <event value="287" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryAuthenticationSets" opcode="win:Stop" keywords="Service"/>
+        <event value="288" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryCryptoSets" opcode="win:Start" keywords="Service"/>
+        <event value="289" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_QueryCryptoSets" opcode="win:Stop" keywords="Service"/>
+        <event value="290" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynamicKeywordMgr_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="291" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynamicKeywordMgr_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="292" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynamicKeywordMgr_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="293" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="DynamicKeywordMgr_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="294" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="TenantRestrictions_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="295" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="TenantRestrictions_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="296" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="TenantRestrictions_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="297" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="TenantRestrictions_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_EngineOpen" opcode="win:Start" keywords="Service"/>
+        <event value="302" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_EngineOpen" opcode="win:Stop" keywords="Service"/>
+        <event value="303" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_EngineClose" opcode="win:Start" keywords="Service"/>
+        <event value="304" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_EngineClose" opcode="win:Stop" keywords="Service"/>
+        <event value="305" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_TransactionBegin" opcode="win:Start" keywords="Service"/>
+        <event value="306" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_TransactionBegin" opcode="win:Stop" keywords="Service"/>
+        <event value="307" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_TransactionAbort" opcode="win:Start" keywords="Service"/>
+        <event value="308" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_TransactionAbort" opcode="win:Stop" keywords="Service"/>
+        <event value="309" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_TransactionCommit" opcode="win:Start" keywords="Service"/>
+        <event value="310" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_TransactionCommit" opcode="win:Stop" keywords="Service"/>
+        <event value="311" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_ProviderAdd" opcode="win:Start" keywords="Service"/>
+        <event value="312" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_ProviderAdd" opcode="win:Stop" keywords="Service"/>
+        <event value="313" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_SublayerAdd" opcode="win:Start" keywords="Service"/>
+        <event value="314" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_SublayerAdd" opcode="win:Stop" keywords="Service"/>
+        <event value="315" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_FilterAdd" opcode="win:Start" keywords="Service"/>
+        <event value="316" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_FilterAdd" opcode="win:Stop" keywords="Service"/>
+        <event value="317" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_FilterDeleteByKey" opcode="win:Start" keywords="Service"/>
+        <event value="318" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_FilterDeleteByKey" opcode="win:Stop" keywords="Service"/>
+        <event value="319" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_FilterDeleteById" opcode="win:Start" keywords="Service"/>
+        <event value="320" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_BFE_FilterDeleteById" opcode="win:Stop" keywords="Service"/>
+        <event value="400" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="GPPolicyUpdate" opcode="win:Start" keywords="Service"/>
+        <event value="401" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="GPPolicyUpdate" opcode="win:Stop" keywords="Service"/>
+        <event value="501" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="PlumberPolicyBegin" opcode="win:Start" keywords="Service"/>
+        <event value="502" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="PlumberPolicyCommit" opcode="win:Stop" keywords="Service"/>
+        <event value="503" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="PlumberPolicyAbort" opcode="win:Stop" keywords="Service"/>
+        <event value="504" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddDynamicKeywordAddress" opcode="win:Stop" keywords="Service"/>
+        <event value="505" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddDynamicKeywordAddress" opcode="win:Stop" keywords="Service"/>
+        <event value="506" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteDynamicKeywordAddress" opcode="win:Stop" keywords="Service"/>
+        <event value="507" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteDynamicKeywordAddress" opcode="win:Stop" keywords="Service"/>
+        <event value="508" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumDynamicKeywordAddresses" opcode="win:Stop" keywords="Service"/>
+        <event value="509" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumDynamicKeywordAddresses" opcode="win:Stop" keywords="Service"/>
+        <event value="510" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_CLNT_API_FreeDynamicKeywordAddresses" opcode="win:Stop" keywords="Service"/>
+        <event value="511" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_CLNT_API_FreeDynamicKeywordAddresses" opcode="win:Stop" keywords="Service"/>
+        <event value="512" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_UpdateDynamicKeywordAddress" opcode="win:Stop" keywords="Service"/>
+        <event value="513" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_UpdateDynamicKeywordAddress" opcode="win:Stop" keywords="Service"/>
+        <event value="514" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetRulePlumbStatusFromRuleID" opcode="win:Stop" keywords="Service"/>
+        <event value="515" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetRulePlumbStatusFromRuleID" opcode="win:Stop" keywords="Service"/>
+        <event value="516" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgr_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="517" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgr_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="518" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgr_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="519" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgr_Shutdown" opcode="win:Stop" keywords="Service"/>
+        <event value="520" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_CreateHyperVPort0" opcode="win:Start" keywords="Service"/>
+        <event value="521" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_CreateHyperVPort0" opcode="win:Stop" keywords="Service"/>
+        <event value="522" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVPort0" opcode="win:Start" keywords="Service"/>
+        <event value="523" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVPort0" opcode="win:Stop" keywords="Service"/>
+        <event value="524" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteHyperVPort0" opcode="win:Start" keywords="Service"/>
+        <event value="525" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteHyperVPort0" opcode="win:Stop" keywords="Service"/>
+        <event value="526" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVPorts0" opcode="win:Start" keywords="Service"/>
+        <event value="527" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVPorts0" opcode="win:Stop" keywords="Service"/>
+        <event value="528" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetHyperVVMConfig0" opcode="win:Start" keywords="Service"/>
+        <event value="529" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetHyperVVMConfig0" opcode="win:Stop" keywords="Service"/>
+        <event value="530" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVVMConfig0" opcode="win:Start" keywords="Service"/>
+        <event value="531" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVVMConfig0" opcode="win:Stop" keywords="Service"/>
+        <event value="532" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddHyperVRule0" opcode="win:Start" keywords="Service"/>
+        <event value="533" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddHyperVRule0" opcode="win:Stop" keywords="Service"/>
+        <event value="534" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVRule0" opcode="win:Start" keywords="Service"/>
+        <event value="535" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVRule0" opcode="win:Stop" keywords="Service"/>
+        <event value="536" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteHyperVRule0" opcode="win:Start" keywords="Service"/>
+        <event value="537" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_DeleteHyperVRule0" opcode="win:Stop" keywords="Service"/>
+        <event value="538" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVRules0" opcode="win:Start" keywords="Service"/>
+        <event value="539" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVRules0" opcode="win:Stop" keywords="Service"/>
+        <event value="540" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_RegisterHyperVVMCreator0" opcode="win:Start" keywords="Service"/>
+        <event value="541" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_RegisterHyperVVMCreator0" opcode="win:Stop" keywords="Service"/>
+        <event value="542" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_UnregisterHyperVVMCreator0" opcode="win:Start" keywords="Service"/>
+        <event value="543" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_UnregisterHyperVVMCreator0" opcode="win:Stop" keywords="Service"/>
+        <event value="544" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVVMCreators0" opcode="win:Start" keywords="Service"/>
+        <event value="545" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVVMCreators0" opcode="win:Stop" keywords="Service"/>
+        <event value="546" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetHyperVProfileConfig0" opcode="win:Start" keywords="Service"/>
+        <event value="547" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_GetHyperVProfileConfig0" opcode="win:Stop" keywords="Service"/>
+        <event value="548" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVProfileConfig0" opcode="win:Start" keywords="Service"/>
+        <event value="549" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVProfileConfig0" opcode="win:Stop" keywords="Service"/>
+        <event value="550" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_CreateHyperVPort1" opcode="win:Start" keywords="Service"/>
+        <event value="551" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_CreateHyperVPort1" opcode="win:Stop" keywords="Service"/>
+        <event value="552" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVPort1" opcode="win:Start" keywords="Service"/>
+        <event value="553" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVPort1" opcode="win:Stop" keywords="Service"/>
+        <event value="554" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVPorts1" opcode="win:Start" keywords="Service"/>
+        <event value="555" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVPorts1" opcode="win:Stop" keywords="Service"/>
+        <event value="556" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddHyperVRule1" opcode="win:Start" keywords="Service"/>
+        <event value="557" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_AddHyperVRule1" opcode="win:Stop" keywords="Service"/>
+        <event value="558" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVRule1" opcode="win:Start" keywords="Service"/>
+        <event value="559" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_SetHyperVRule1" opcode="win:Stop" keywords="Service"/>
+        <event value="560" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVRules1" opcode="win:Start" keywords="Service"/>
+        <event value="561" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="MPS_SVC_API_EnumHyperVRules1" opcode="win:Stop" keywords="Service"/>
+        <event value="562" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgrPhase0_Initialize" opcode="win:Start" keywords="Service"/>
+        <event value="563" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgrPhase0_Initialize" opcode="win:Stop" keywords="Service"/>
+        <event value="564" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgrPhase0_Shutdown" opcode="win:Start" keywords="Service"/>
+        <event value="565" version="0" level="win:Informational"  channel="Microsoft-Windows-MPS-SRV/Diagnostic" task="HyperVMgrPhase0_Shutdown" opcode="win:Stop" keywords="Service"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-MPS-SRV/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="Service" mask="0x10000" message="$(string.string133)" />
+      </keywords>
+      <tasks>
+        <task value="2" name="MPS_SVC_API_DeleteConnectionSecurityRule" message="$(string.string2)">
+        </task>
+        <task value="10" name="ResrcIndicationAPIs_Shutdown" message="$(string.string10)">
+        </task>
+        <task value="101" name="StartService" message="$(string.string101)">
+        </task>
+        <task value="103" name="StopService" message="$(string.string103)">
+        </task>
+        <task value="105" name="Audit_Initialize" message="$(string.string105)">
+        </task>
+        <task value="107" name="Audit_Shutdown" message="$(string.string107)">
+        </task>
+        <task value="113" name="AuthApps_Initialize" message="$(string.string113)">
+        </task>
+        <task value="115" name="AuthApps_Shutdown" message="$(string.string115)">
+        </task>
+        <task value="117" name="Notify_Initialize" message="$(string.string117)">
+        </task>
+        <task value="119" name="Notify_Shutdown" message="$(string.string119)">
+        </task>
+        <task value="121" name="DynPorts_Initialize" message="$(string.string121)">
+        </task>
+        <task value="123" name="DynPorts_Shutdown" message="$(string.string123)">
+        </task>
+        <task value="125" name="ChangeSource_Initialize" message="$(string.string125)">
+        </task>
+        <task value="127" name="ChangeSource_Shutdown" message="$(string.string127)">
+        </task>
+        <task value="129" name="Writer_Initialize" message="$(string.string129)">
+        </task>
+        <task value="131" name="Writer_Shutdown" message="$(string.string131)">
+        </task>
+        <task value="133" name="Logger_Initialize" message="$(string.string133)">
+        </task>
+        <task value="135" name="Logger_Shutdown" message="$(string.string135)">
+        </task>
+        <task value="137" name="DynDataNLA1stPhase_Initialize" message="$(string.string137)">
+        </task>
+        <task value="139" name="DynDataNLA1stPhase_Shutdown" message="$(string.string139)">
+        </task>
+        <task value="141" name="ProfileMgr_Initialize" message="$(string.string141)">
+        </task>
+        <task value="143" name="ProfileMgr_Shutdown" message="$(string.string143)">
+        </task>
+        <task value="145" name="Upcall2ndPhase_Initialize" message="$(string.string145)">
+        </task>
+        <task value="147" name="Upcall2ndPhase_Shutdown" message="$(string.string147)">
+        </task>
+        <task value="149" name="RpcAPIs_Initialize" message="$(string.string149)">
+        </task>
+        <task value="151" name="RpcAPIs_Shutdown" message="$(string.string151)">
+        </task>
+        <task value="153" name="ResrcIndicationAPIs_Initialize" message="$(string.string153)">
+        </task>
+        <task value="155" name="GPMon_Initialize" message="$(string.string155)">
+        </task>
+        <task value="157" name="GPMon_Shutdown" message="$(string.string157)">
+        </task>
+        <task value="159" name="DynDataNLA2ndPhase_Initialize" message="$(string.string159)">
+        </task>
+        <task value="161" name="DynDataNLA2ndPhase_Shutdown" message="$(string.string161)">
+        </task>
+        <task value="163" name="ServiceSignalReady" message="$(string.string163)">
+        </task>
+        <task value="165" name="Empty_Shutdown" message="$(string.string165)">
+        </task>
+        <task value="167" name="Products_Initialize" message="$(string.string167)">
+        </task>
+        <task value="169" name="Products_Shutdown" message="$(string.string169)">
+        </task>
+        <task value="171" name="HttpProxy_Initialize" message="$(string.string171)">
+        </task>
+        <task value="173" name="HttpProxy_Shutdown" message="$(string.string173)">
+        </task>
+        <task value="175" name="AdhSitesSubnets_Initialize" message="$(string.string175)">
+        </task>
+        <task value="177" name="AdhSitesSubnets_Shutdown" message="$(string.string177)">
+        </task>
+        <task value="179" name="Moneis_Initialize" message="$(string.string179)">
+        </task>
+        <task value="181" name="Moneis_Shutdown" message="$(string.string181)">
+        </task>
+        <task value="183" name="MoneisRegistrationApiPhase2_Initialize" message="$(string.string183)">
+        </task>
+        <task value="185" name="MoneisRegistrationApiPhase2_Shutdown" message="$(string.string185)">
+        </task>
+        <task value="187" name="DynDataNLA0thPhase_Initialize" message="$(string.string187)">
+        </task>
+        <task value="189" name="DynDataNLA0thPhase_Shutdown" message="$(string.string189)">
+        </task>
+        <task value="191" name="DynamicKeywordMgr_Initialize" message="$(string.string191)">
+        </task>
+        <task value="193" name="DynamicKeywordMgr_Shutdown" message="$(string.string193)">
+        </task>
+        <task value="195" name="TenantRestrictions_Initialize" message="$(string.string195)">
+        </task>
+        <task value="197" name="TenantRestrictions_Shutdown" message="$(string.string197)">
+        </task>
+        <task value="201" name="MPS_SVC_API_RestoreDefaults" message="$(string.string201)">
+        </task>
+        <task value="203" name="MPS_SVC_API_EnumFirewallRules" message="$(string.string203)">
+        </task>
+        <task value="205" name="MPS_SVC_API_DeleteFirewallRule" message="$(string.string205)">
+        </task>
+        <task value="207" name="MPS_SVC_API_DeleteAllFirewallRules" message="$(string.string207)">
+        </task>
+        <task value="209" name="MPS_SVC_API_AddFirewallRule" message="$(string.string209)">
+        </task>
+        <task value="211" name="MPS_SVC_API_SetFirewallRule" message="$(string.string211)">
+        </task>
+        <task value="213" name="MPS_SVC_API_GetConfig" message="$(string.string213)">
+        </task>
+        <task value="215" name="MPS_SVC_API_SetConfig" message="$(string.string215)">
+        </task>
+        <task value="217" name="MPS_SVC_API_GetGlobalConfig" message="$(string.string217)">
+        </task>
+        <task value="219" name="MPS_SVC_API_SetGlobalConfig" message="$(string.string219)">
+        </task>
+        <task value="221" name="MPS_SVC_API_OpenPolicyStore" message="$(string.string221)">
+        </task>
+        <task value="223" name="MPS_SVC_API_ClosePolicyStore" message="$(string.string223)">
+        </task>
+        <task value="225" name="MPS_SVC_API_AddConnectionSecurityRule" message="$(string.string225)">
+        </task>
+        <task value="227" name="MPS_SVC_API_SetConnectionSecurityRule" message="$(string.string227)">
+        </task>
+        <task value="229" name="MPS_SVC_API_DeleteAllConnectionSecurityRules" message="$(string.string229)">
+        </task>
+        <task value="231" name="MPS_SVC_API_EnumConnectionSecurityRules" message="$(string.string231)">
+        </task>
+        <task value="233" name="MPS_SVC_API_AddAuthenticationSet" message="$(string.string233)">
+        </task>
+        <task value="235" name="MPS_SVC_API_DeleteAuthenticationSet" message="$(string.string235)">
+        </task>
+        <task value="237" name="MPS_SVC_API_SetAuthenticationSet" message="$(string.string237)">
+        </task>
+        <task value="239" name="MPS_SVC_API_DeleteAllAuthenticationSets" message="$(string.string239)">
+        </task>
+        <task value="241" name="MPS_SVC_API_EnumAuthenticationSets" message="$(string.string241)">
+        </task>
+        <task value="243" name="MPS_SVC_API_AddCryptoSet" message="$(string.string243)">
+        </task>
+        <task value="245" name="MPS_SVC_API_SetCryptoSet" message="$(string.string245)">
+        </task>
+        <task value="247" name="MPS_SVC_API_DeleteCryptoSet" message="$(string.string247)">
+        </task>
+        <task value="249" name="MPS_SVC_API_DeleteAllCryptoSets" message="$(string.string249)">
+        </task>
+        <task value="251" name="MPS_SVC_API_EnumCryptoSets" message="$(string.string251)">
+        </task>
+        <task value="253" name="MPS_SVC_API_EnumPhase1SAs" message="$(string.string253)">
+        </task>
+        <task value="255" name="MPS_SVC_API_DeletePhase1SAs" message="$(string.string255)">
+        </task>
+        <task value="257" name="MPS_SVC_API_EnumPhase2SAs" message="$(string.string257)">
+        </task>
+        <task value="259" name="MPS_SVC_API_DeletePhase2SAs" message="$(string.string259)">
+        </task>
+        <task value="261" name="MPS_SVC_API_NotifyUnsupportedAttempt" message="$(string.string261)">
+        </task>
+        <task value="263" name="MPS_SVC_API_RegisterProduct" message="$(string.string263)">
+        </task>
+        <task value="265" name="MPS_SVC_API_UnregisterProduct" message="$(string.string265)">
+        </task>
+        <task value="267" name="MPS_SVC_API_EnumProducts" message="$(string.string267)">
+        </task>
+        <task value="269" name="MPS_SVC_API_AddMainModeRule" message="$(string.string269)">
+        </task>
+        <task value="271" name="MPS_SVC_API_SetMainModeRule" message="$(string.string271)">
+        </task>
+        <task value="273" name="MPS_SVC_API_DeleteMainModeRule" message="$(string.string273)">
+        </task>
+        <task value="275" name="MPS_SVC_API_DeleteAllMainModeRules" message="$(string.string275)">
+        </task>
+        <task value="277" name="MPS_SVC_API_EnumMainModeRules" message="$(string.string277)">
+        </task>
+        <task value="279" name="MPS_SVC_API_QueryFirewallRules" message="$(string.string279)">
+        </task>
+        <task value="281" name="MPS_SVC_API_QueryConnectionSecurityRules" message="$(string.string281)">
+        </task>
+        <task value="283" name="MPS_SVC_API_QueryMainModeRules" message="$(string.string283)">
+        </task>
+        <task value="285" name="MPS_SVC_API_QueryAuthenticationSets" message="$(string.string285)">
+        </task>
+        <task value="287" name="MPS_SVC_API_QueryCryptoSets" message="$(string.string287)">
+        </task>
+        <task value="301" name="MPS_SVC_BFE_EngineOpen" message="$(string.string301)">
+        </task>
+        <task value="303" name="MPS_SVC_BFE_EngineClose" message="$(string.string303)">
+        </task>
+        <task value="305" name="MPS_SVC_BFE_TransactionBegin" message="$(string.string305)">
+        </task>
+        <task value="307" name="MPS_SVC_BFE_TransactionAbort" message="$(string.string307)">
+        </task>
+        <task value="309" name="MPS_SVC_BFE_TransactionCommit" message="$(string.string309)">
+        </task>
+        <task value="311" name="MPS_SVC_BFE_ProviderAdd" message="$(string.string311)">
+        </task>
+        <task value="313" name="MPS_SVC_BFE_SublayerAdd" message="$(string.string313)">
+        </task>
+        <task value="315" name="MPS_SVC_BFE_FilterAdd" message="$(string.string315)">
+        </task>
+        <task value="317" name="MPS_SVC_BFE_FilterDeleteByKey" message="$(string.string317)">
+        </task>
+        <task value="319" name="MPS_SVC_BFE_FilterDeleteById" message="$(string.string319)">
+        </task>
+        <task value="400" name="GPPolicyUpdate" message="$(string.string400)">
+        </task>
+        <task value="501" name="PlumberPolicyBegin" message="$(string.string501)">
+        </task>
+        <task value="502" name="PlumberPolicyCommit" message="$(string.string502)">
+        </task>
+        <task value="503" name="PlumberPolicyAbort" message="$(string.string503)">
+        </task>
+        <task value="504" name="CallbacksFromBfe_Initialize" message="$(string.string504)">
+        </task>
+        <task value="505" name="CallbacksFromBfe_Shutdown" message="$(string.string505)">
+        </task>
+        <task value="506" name="MPS_SVC_API_AddDynamicKeywordAddress" message="$(string.string506)">
+        </task>
+        <task value="507" name="MPS_SVC_API_DeleteDynamicKeywordAddress" message="$(string.string507)">
+        </task>
+        <task value="508" name="MPS_SVC_API_EnumDynamicKeywordAddresses" message="$(string.string508)">
+        </task>
+        <task value="509" name="MPS_CLNT_API_FreeDynamicKeywordAddresses" message="$(string.string509)">
+        </task>
+        <task value="510" name="MPS_SVC_API_UpdateDynamicKeywordAddress" message="$(string.string510)">
+        </task>
+        <task value="511" name="MPS_SVC_API_GetRulePlumbStatusFromRuleID" message="$(string.string511)">
+        </task>
+        <task value="512" name="HyperVMgr_Initialize" message="$(string.string512)">
+        </task>
+        <task value="513" name="HyperVMgr_Shutdown" message="$(string.string513)">
+        </task>
+        <task value="514" name="MPS_SVC_API_CreateHyperVPort0" message="$(string.string514)">
+        </task>
+        <task value="515" name="MPS_SVC_API_SetHyperVPort0" message="$(string.string515)">
+        </task>
+        <task value="516" name="MPS_SVC_API_DeleteHyperVPort0" message="$(string.string516)">
+        </task>
+        <task value="517" name="MPS_SVC_API_EnumHyperVPorts0" message="$(string.string517)">
+        </task>
+        <task value="518" name="MPS_SVC_API_GetHyperVVMConfig0" message="$(string.string518)">
+        </task>
+        <task value="519" name="MPS_SVC_API_SetHyperVVMConfig0" message="$(string.string519)">
+        </task>
+        <task value="520" name="MPS_SVC_API_AddHyperVRule0" message="$(string.string520)">
+        </task>
+        <task value="521" name="MPS_SVC_API_SetHyperVRule0" message="$(string.string521)">
+        </task>
+        <task value="522" name="MPS_SVC_API_DeleteHyperVRule0" message="$(string.string522)">
+        </task>
+        <task value="523" name="MPS_SVC_API_EnumHyperVRules0" message="$(string.string523)">
+        </task>
+        <task value="524" name="MPS_SVC_API_RegisterHyperVVMCreator0" message="$(string.string524)">
+        </task>
+        <task value="525" name="MPS_SVC_API_UnregisterHyperVVMCreator0" message="$(string.string525)">
+        </task>
+        <task value="526" name="MPS_SVC_API_EnumHyperVVMCreators0" message="$(string.string526)">
+        </task>
+        <task value="527" name="MPS_SVC_API_GetHyperVProfileConfig0" message="$(string.string527)">
+        </task>
+        <task value="528" name="MPS_SVC_API_SetHyperVProfileConfig0" message="$(string.string528)">
+        </task>
+        <task value="529" name="MPS_SVC_API_CreateHyperVPort1" message="$(string.string529)">
+        </task>
+        <task value="530" name="MPS_SVC_API_SetHyperVPort1" message="$(string.string530)">
+        </task>
+        <task value="531" name="MPS_SVC_API_EnumHyperVPorts1" message="$(string.string531)">
+        </task>
+        <task value="532" name="MPS_SVC_API_AddHyperVRule1" message="$(string.string532)">
+        </task>
+        <task value="533" name="MPS_SVC_API_SetHyperVRule1" message="$(string.string533)">
+        </task>
+        <task value="534" name="MPS_SVC_API_EnumHyperVRules1" message="$(string.string534)">
+        </task>
+        <task value="535" name="HyperVMgrPhase0_Initialize" message="$(string.string535)">
+        </task>
+        <task value="536" name="HyperVMgrPhase0_Shutdown" message="$(string.string536)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AdhSitesSubnets_Initialize" />
+       <string id="string1" value="AdhSitesSubnets_Shutdown" />
+       <string id="string2" value="Audit_Initialize" />
+       <string id="string3" value="Audit_Shutdown" />
+       <string id="string4" value="AuthApps_Initialize" />
+       <string id="string5" value="AuthApps_Shutdown" />
+       <string id="string6" value="CallbacksFromBfe_Initialize" />
+       <string id="string7" value="CallbacksFromBfe_Shutdown" />
+       <string id="string8" value="ChangeSource_Initialize" />
+       <string id="string9" value="ChangeSource_Shutdown" />
+       <string id="string10" value="DynamicKeywordMgr_Initialize" />
+       <string id="string11" value="DynamicKeywordMgr_Shutdown" />
+       <string id="string12" value="DynDataNLA0thPhase_Initialize" />
+       <string id="string13" value="DynDataNLA0thPhase_Shutdown" />
+       <string id="string14" value="DynDataNLA1stPhase_Initialize" />
+       <string id="string15" value="DynDataNLA1stPhase_Shutdown" />
+       <string id="string16" value="DynDataNLA2ndPhase_Initialize" />
+       <string id="string17" value="DynDataNLA2ndPhase_Shutdown" />
+       <string id="string18" value="DynPorts_Initialize" />
+       <string id="string19" value="DynPorts_Shutdown" />
+       <string id="string20" value="Empty_Shutdown" />
+       <string id="string21" value="GPMon_Initialize" />
+       <string id="string22" value="GPMon_Shutdown" />
+       <string id="string23" value="GPPolicyUpdate" />
+       <string id="string24" value="HttpProxy_Initialize" />
+       <string id="string25" value="HttpProxy_Shutdown" />
+       <string id="string26" value="HyperVMgr_Initialize" />
+       <string id="string27" value="HyperVMgr_Shutdown" />
+       <string id="string28" value="HyperVMgrPhase0_Initialize" />
+       <string id="string29" value="HyperVMgrPhase0_Shutdown" />
+       <string id="string30" value="Logger_Initialize" />
+       <string id="string31" value="Logger_Shutdown" />
+       <string id="string32" value="Microsoft-Windows-MPS-SRV" />
+       <string id="string33" value="Microsoft-Windows-MPS-SRV/Diagnostic" />
+       <string id="string34" value="Moneis_Initialize" />
+       <string id="string35" value="Moneis_Shutdown" />
+       <string id="string36" value="MoneisRegistrationApiPhase2_Initialize" />
+       <string id="string37" value="MoneisRegistrationApiPhase2_Shutdown" />
+       <string id="string38" value="MPS_CLNT_API_FreeDynamicKeywordAddresses" />
+       <string id="string39" value="MPS_SVC_API_AddAuthenticationSet" />
+       <string id="string40" value="MPS_SVC_API_AddConnectionSecurityRule" />
+       <string id="string41" value="MPS_SVC_API_AddCryptoSet" />
+       <string id="string42" value="MPS_SVC_API_AddDynamicKeywordAddress" />
+       <string id="string43" value="MPS_SVC_API_AddFirewallRule" />
+       <string id="string44" value="MPS_SVC_API_AddHyperVRule0" />
+       <string id="string45" value="MPS_SVC_API_AddHyperVRule1" />
+       <string id="string46" value="MPS_SVC_API_AddMainModeRule" />
+       <string id="string47" value="MPS_SVC_API_ClosePolicyStore" />
+       <string id="string48" value="MPS_SVC_API_CreateHyperVPort0" />
+       <string id="string49" value="MPS_SVC_API_CreateHyperVPort1" />
+       <string id="string50" value="MPS_SVC_API_DeleteAllAuthenticationSets" />
+       <string id="string51" value="MPS_SVC_API_DeleteAllConnectionSecurityRules" />
+       <string id="string52" value="MPS_SVC_API_DeleteAllCryptoSets" />
+       <string id="string53" value="MPS_SVC_API_DeleteAllFirewallRules" />
+       <string id="string54" value="MPS_SVC_API_DeleteAllMainModeRules" />
+       <string id="string55" value="MPS_SVC_API_DeleteAuthenticationSet" />
+       <string id="string56" value="MPS_SVC_API_DeleteConnectionSecurityRule" />
+       <string id="string57" value="MPS_SVC_API_DeleteCryptoSet" />
+       <string id="string58" value="MPS_SVC_API_DeleteDynamicKeywordAddress" />
+       <string id="string59" value="MPS_SVC_API_DeleteFirewallRule" />
+       <string id="string60" value="MPS_SVC_API_DeleteHyperVPort0" />
+       <string id="string61" value="MPS_SVC_API_DeleteHyperVRule0" />
+       <string id="string62" value="MPS_SVC_API_DeleteMainModeRule" />
+       <string id="string63" value="MPS_SVC_API_DeletePhase1SAs" />
+       <string id="string64" value="MPS_SVC_API_DeletePhase2SAs" />
+       <string id="string65" value="MPS_SVC_API_EnumAuthenticationSets" />
+       <string id="string66" value="MPS_SVC_API_EnumConnectionSecurityRules" />
+       <string id="string67" value="MPS_SVC_API_EnumCryptoSets" />
+       <string id="string68" value="MPS_SVC_API_EnumDynamicKeywordAddresses" />
+       <string id="string69" value="MPS_SVC_API_EnumFirewallRules" />
+       <string id="string70" value="MPS_SVC_API_EnumHyperVPorts0" />
+       <string id="string71" value="MPS_SVC_API_EnumHyperVPorts1" />
+       <string id="string72" value="MPS_SVC_API_EnumHyperVRules0" />
+       <string id="string73" value="MPS_SVC_API_EnumHyperVRules1" />
+       <string id="string74" value="MPS_SVC_API_EnumHyperVVMCreators0" />
+       <string id="string75" value="MPS_SVC_API_EnumMainModeRules" />
+       <string id="string76" value="MPS_SVC_API_EnumPhase1SAs" />
+       <string id="string77" value="MPS_SVC_API_EnumPhase2SAs" />
+       <string id="string78" value="MPS_SVC_API_EnumProducts" />
+       <string id="string79" value="MPS_SVC_API_GetConfig" />
+       <string id="string80" value="MPS_SVC_API_GetGlobalConfig" />
+       <string id="string81" value="MPS_SVC_API_GetHyperVProfileConfig0" />
+       <string id="string82" value="MPS_SVC_API_GetHyperVVMConfig0" />
+       <string id="string83" value="MPS_SVC_API_GetRulePlumbStatusFromRuleID" />
+       <string id="string84" value="MPS_SVC_API_NotifyUnsupportedAttempt" />
+       <string id="string85" value="MPS_SVC_API_OpenPolicyStore" />
+       <string id="string86" value="MPS_SVC_API_QueryAuthenticationSets" />
+       <string id="string87" value="MPS_SVC_API_QueryConnectionSecurityRules" />
+       <string id="string88" value="MPS_SVC_API_QueryCryptoSets" />
+       <string id="string89" value="MPS_SVC_API_QueryFirewallRules" />
+       <string id="string90" value="MPS_SVC_API_QueryMainModeRules" />
+       <string id="string91" value="MPS_SVC_API_RegisterHyperVVMCreator0" />
+       <string id="string92" value="MPS_SVC_API_RegisterProduct" />
+       <string id="string93" value="MPS_SVC_API_RestoreDefaults" />
+       <string id="string94" value="MPS_SVC_API_SetAuthenticationSet" />
+       <string id="string95" value="MPS_SVC_API_SetConfig" />
+       <string id="string96" value="MPS_SVC_API_SetConnectionSecurityRule" />
+       <string id="string97" value="MPS_SVC_API_SetCryptoSet" />
+       <string id="string98" value="MPS_SVC_API_SetFirewallRule" />
+       <string id="string99" value="MPS_SVC_API_SetGlobalConfig" />
+       <string id="string100" value="MPS_SVC_API_SetHyperVPort0" />
+       <string id="string101" value="MPS_SVC_API_SetHyperVPort1" />
+       <string id="string102" value="MPS_SVC_API_SetHyperVProfileConfig0" />
+       <string id="string103" value="MPS_SVC_API_SetHyperVRule0" />
+       <string id="string104" value="MPS_SVC_API_SetHyperVRule1" />
+       <string id="string105" value="MPS_SVC_API_SetHyperVVMConfig0" />
+       <string id="string106" value="MPS_SVC_API_SetMainModeRule" />
+       <string id="string107" value="MPS_SVC_API_UnregisterHyperVVMCreator0" />
+       <string id="string108" value="MPS_SVC_API_UnregisterProduct" />
+       <string id="string109" value="MPS_SVC_API_UpdateDynamicKeywordAddress" />
+       <string id="string110" value="MPS_SVC_BFE_EngineClose" />
+       <string id="string111" value="MPS_SVC_BFE_EngineOpen" />
+       <string id="string112" value="MPS_SVC_BFE_FilterAdd" />
+       <string id="string113" value="MPS_SVC_BFE_FilterDeleteById" />
+       <string id="string114" value="MPS_SVC_BFE_FilterDeleteByKey" />
+       <string id="string115" value="MPS_SVC_BFE_ProviderAdd" />
+       <string id="string116" value="MPS_SVC_BFE_SublayerAdd" />
+       <string id="string117" value="MPS_SVC_BFE_TransactionAbort" />
+       <string id="string118" value="MPS_SVC_BFE_TransactionBegin" />
+       <string id="string119" value="MPS_SVC_BFE_TransactionCommit" />
+       <string id="string120" value="Notify_Initialize" />
+       <string id="string121" value="Notify_Shutdown" />
+       <string id="string122" value="PlumberPolicyAbort" />
+       <string id="string123" value="PlumberPolicyBegin" />
+       <string id="string124" value="PlumberPolicyCommit" />
+       <string id="string125" value="Products_Initialize" />
+       <string id="string126" value="Products_Shutdown" />
+       <string id="string127" value="ProfileMgr_Initialize" />
+       <string id="string128" value="ProfileMgr_Shutdown" />
+       <string id="string129" value="ResrcIndicationAPIs_Initialize" />
+       <string id="string130" value="ResrcIndicationAPIs_Shutdown" />
+       <string id="string131" value="RpcAPIs_Initialize" />
+       <string id="string132" value="RpcAPIs_Shutdown" />
+       <string id="string133" value="Service" />
+       <string id="string134" value="ServiceSignalReady" />
+       <string id="string135" value="StartService" />
+       <string id="string136" value="StopService" />
+       <string id="string137" value="TenantRestrictions_Initialize" />
+       <string id="string138" value="TenantRestrictions_Shutdown" />
+       <string id="string139" value="Upcall2ndPhase_Initialize" />
+       <string id="string140" value="Upcall2ndPhase_Shutdown" />
+       <string id="string141" value="win:Start" />
+       <string id="string142" value="win:Stop" />
+       <string id="string143" value="Writer_Initialize" />
+       <string id="string144" value="Writer_Shutdown" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

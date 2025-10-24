@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-HealthCenterCPL" name="Microsoft-Windows-HealthCenterCPL" guid="{959f1fac-7ca8-4ed1-89dc-cdfa7e093cb0}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanelLaunch" opcode="win:Start"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanelLaunch" opcode="win:Stop"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_Data" opcode="win:Start"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_Data" opcode="win:Stop"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_Fix" opcode="win:Start" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_Fix" opcode="win:Stop"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_Check_Change" opcode="win:Start"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_Check_Change" opcode="win:Stop"/>
+        <event value="108" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_TaskLink_LaunchUAC" opcode="win:Start"/>
+        <event value="109" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="Perftrack_HealthCenter_OpenUsingIconFlyout" opcode="win:Stop"/>
+        <event value="110" version="0" level="win:Informational"  channel="Microsoft-Windows-HealthCenterCPL/Performance" task="WHC_ControlPanel_TaskLink_LaunchSmartScreen" opcode="win:Start" keywords="HealthCenterCPL"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-HealthCenterCPL/Performance" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="HealthCenterCPL" mask="0x10000" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+        <task value="100" name="WHC_ControlPanelLaunch" message="$(string.string100)">
+        </task>
+        <task value="101" name="WHC_ControlPanel_Data" message="$(string.string101)">
+        </task>
+        <task value="102" name="WHC_ControlPanel_Fix" message="$(string.string102)">
+        </task>
+        <task value="103" name="WHC_ControlPanel_Check_Change" message="$(string.string103)">
+        </task>
+        <task value="104" name="WHC_ControlPanel_TaskLink_LaunchUAC" message="$(string.string104)">
+        </task>
+        <task value="105" name="Perftrack_HealthCenter_OpenUsingIconFlyout" message="$(string.string105)">
+        </task>
+        <task value="106" name="WHC_ControlPanel_TaskLink_LaunchSmartScreen" message="$(string.string106)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args104_0">
+          <data name="psz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="HealthCenterCPL" />
+       <string id="string1" value="Microsoft-Windows-HealthCenterCPL" />
+       <string id="string2" value="Microsoft-Windows-HealthCenterCPL/Performance" />
+       <string id="string3" value="Perftrack_HealthCenter_OpenUsingIconFlyout" />
+       <string id="string4" value="WHC_ControlPanel_Check_Change" />
+       <string id="string5" value="WHC_ControlPanel_Data" />
+       <string id="string6" value="WHC_ControlPanel_Fix" />
+       <string id="string7" value="WHC_ControlPanel_TaskLink_LaunchSmartScreen" />
+       <string id="string8" value="WHC_ControlPanel_TaskLink_LaunchUAC" />
+       <string id="string9" value="WHC_ControlPanelLaunch" />
+       <string id="string10" value="win:Start" />
+       <string id="string11" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-WindowsPhone-CoreUIComponents" name="Microsoft-WindowsPhone-CoreUIComponents" guid="{a0b7550f-4e9a-4f03-ad41-b8042d06a2f7}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1000" version="0" level="win:Verbose"  task="Init" opcode="win:Start" keywords="Performance" template="Args1000_0"/>
+        <event value="1001" version="0" level="win:Verbose"  task="Init" opcode="win:Stop" keywords="Performance"/>
+        <event value="1050" version="0" level="win:Error"  keywords="Error"/>
+        <event value="1200" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager" template="Args1200_0"/>
+        <event value="1201" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager" template="Args1201_0"/>
+        <event value="1202" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager"/>
+        <event value="1203" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager" template="Args1203_0"/>
+        <event value="1204" version="0" level="win:Warning"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager"/>
+        <event value="1205" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager"/>
+        <event value="1206" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager"/>
+        <event value="1207" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error" template="Args1207_0"/>
+        <event value="1208" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1209" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1210" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1211" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1212" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1213" version="0" level="win:Warning"  task="ForegroundTaskManagerActivationPrerequisitePhase" keywords="Error"/>
+        <event value="1214" version="0" level="win:Informational"  task="ForegroundTaskManagerActivationPrerequisitePhase" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager" template="Args1214_0"/>
+        <event value="1215" version="0" level="win:Informational"  task="ForegroundTaskManagerActivationPrerequisitePhase" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1215_0"/>
+        <event value="1216" version="0" level="win:Warning"  task="ForegroundTaskManagerResumePrerequisitePhase" keywords="Error"/>
+        <event value="1217" version="0" level="win:Informational"  task="ForegroundTaskManagerResumePrerequisitePhase" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1218" version="0" level="win:Informational"  task="ForegroundTaskManagerResumePrerequisitePhase" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1219" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1220" version="0" level="win:Verbose"  task="ForegroundTaskManagerLaunchTask" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1221" version="0" level="win:Verbose"  task="ForegroundTaskManagerLaunchTask" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1222" version="0" level="win:Informational"  task="ForegroundTaskManagerResolveTaskHandler" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1223" version="0" level="win:Verbose"  task="ForegroundTaskManagerResolveTaskHandler" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1224" version="0" level="win:Informational"  task="ForegroundTaskManagerGetActivationPolicy" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1225" version="0" level="win:Informational"  task="ForegroundTaskManagerGetActivationPolicy" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1225_0"/>
+        <event value="1230" version="0" level="win:Informational"  task="ForegroundTaskManagerResumeTask" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1231" version="0" level="win:Verbose"  task="ForegroundTaskManagerResumeTask" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1232" version="0" level="win:Informational"  task="ForegroundTaskManagerPauseTask" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1233" version="0" level="win:Verbose"  task="ForegroundTaskManagerPauseTask" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1234" version="0" level="win:Informational"  task="ForegroundTaskManagerCancelTask" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager" template="Args1234_0"/>
+        <event value="1235" version="0" level="win:Verbose"  task="ForegroundTaskManagerCancelTask" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1236" version="0" level="win:Informational"  task="ForegroundTaskManagerAbortTask" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1237" version="0" level="win:Verbose"  task="ForegroundTaskManagerAbortTask" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1240" version="0" level="win:Verbose"  task="ForegroundTaskManagerGetApplicationDisplayName" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1241" version="0" level="win:Verbose"  task="ForegroundTaskManagerGetApplicationDisplayName" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1241_0"/>
+        <event value="1242" version="0" level="win:Verbose"  task="ForegroundTaskManagerShutdown" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1243" version="0" level="win:Informational"  task="ForegroundTaskManagerShutdown" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1244" version="0" level="win:Informational"  task="ForegroundTaskManagerIsTaskBeingDebugged" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1245" version="0" level="win:Informational"  task="ForegroundTaskManagerIsTaskBeingDebugged" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1245_0"/>
+        <event value="1246" version="0" level="win:Verbose"  task="ForegroundTaskManagerIsValidTaskPid" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1247" version="0" level="win:Informational"  task="ForegroundTaskManagerIsValidTaskPid" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1247_0"/>
+        <event value="1248" version="0" level="win:Informational"  task="ForegroundTaskManagerUserLogoff" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager" template="Args1248_0"/>
+        <event value="1249" version="0" level="win:Informational"  task="ForegroundTaskManagerUserLogoff" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1250" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="ForegroundTaskManager" template="Args1250_0"/>
+        <event value="1251" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error" template="Args1251_0"/>
+        <event value="1252" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1253" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1254" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="ForegroundTaskManager"/>
+        <event value="1255" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1256" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1257" version="0" level="win:Verbose"  task="ForegroundTaskManagerGetApplicationDefaultFullScreenValue" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1258" version="0" level="win:Verbose"  task="ForegroundTaskManagerGetApplicationDefaultFullScreenValue" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1258_0"/>
+        <event value="1259" version="0" level="win:Informational"  task="ForegroundTaskManagerGetTaskDefaultTransition" opcode="win:Start" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1260" version="0" level="win:Informational"  task="ForegroundTaskManagerGetTaskDefaultTransition" opcode="win:Stop" keywords="NavigationPerformance ForegroundTaskManager" template="Args1260_0"/>
+        <event value="1261" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1262" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="ForegroundTaskManager" template="Args1262_0"/>
+        <event value="1263" version="0" level="win:Informational"  task="ForegroundTaskManager" keywords="ForegroundTaskManager"/>
+        <event value="1264" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Info" keywords="ForegroundTaskManager" template="Args1264_0"/>
+        <event value="1265" version="0" level="win:Verbose"  task="ForegroundTaskManagerLaunchTask" opcode="win:Info" keywords="NavigationPerformance ForegroundTaskManager"/>
+        <event value="1266" version="0" level="win:Warning"  task="ForegroundTaskManagerResumeTask" keywords="Error"/>
+        <event value="1267" version="0" level="win:Warning"  task="ForegroundTaskManagerAbortTask" keywords="Error"/>
+        <event value="1268" version="0" level="win:Warning"  task="ForegroundTaskManager" keywords="Error"/>
+        <event value="1269" version="0" level="win:Warning"  task="ForegroundTaskManager" opcode="win:Info" keywords="Error" template="Args1269_0"/>
+        <event value="1270" version="0" level="win:Verbose"  task="ForegroundTaskManager" opcode="win:Start" keywords="ForegroundTaskManager"/>
+        <event value="1271" version="0" level="win:Informational"  task="ForegroundTaskManager" opcode="win:Stop" keywords="ForegroundTaskManager"/>
+        <event value="1272" version="0" level="win:Verbose"  task="ForegroundTaskManagerRequestResourceSet" opcode="win:Start" keywords="ForegroundTaskManager"/>
+        <event value="1273" version="0" level="win:Verbose"  task="ForegroundTaskManagerRequestResourceSet" opcode="win:Stop" keywords="ForegroundTaskManager"/>
+        <event value="1281" version="0" level="win:Informational"  task="Server" opcode="win:Info" keywords="Server"/>
+        <event value="1282" version="0" level="win:Error"  task="Server" opcode="win:Info" keywords="Error Server SelfHostError"/>
+        <event value="1283" version="0" level="win:Informational"  task="Server" opcode="win:Info" keywords="Server"/>
+        <event value="1284" version="0" level="win:Error"  task="Server" opcode="win:Info" keywords="Error Server SelfHostError"/>
+        <event value="1301" version="0" level="win:Informational"  task="ServerSession" opcode="win:Info" keywords="ServerSession"/>
+        <event value="1302" version="0" level="win:Informational"  task="ServerSession" opcode="NSSReadyToShow" keywords="NavigationPerformance ServerSession"/>
+        <event value="1303" version="0" level="win:Informational"  task="ServerSession" opcode="NSSReadyToHide" keywords="NavigationPerformance ServerSession"/>
+        <event value="1304" version="0" level="win:Informational"  task="ServerSession" opcode="win:Info" keywords="ServerSession" template="Args1304_0"/>
+        <event value="1305" version="0" level="win:Informational"  task="ServerSession" opcode="win:Info" keywords="ServerSession"/>
+        <event value="1306" version="0" level="win:Informational"  task="ServerSession" opcode="NSSActiveChanged" keywords="NavigationPerformance ServerSession"/>
+        <event value="1307" version="0" level="win:Informational"  task="ServerSession" opcode="win:Info" keywords="ServerSession"/>
+        <event value="1310" version="0" level="win:Verbose"  task="ServerSessionCreate" opcode="win:Start" keywords="NavigationPerformance ServerSession"/>
+        <event value="1311" version="0" level="win:Informational"  task="ServerSessionCreate" opcode="win:Stop" keywords="NavigationPerformance ServerSession" template="Args1311_0"/>
+        <event value="1312" version="0" level="win:Verbose"  task="ServerSessionInitiateModernActivation" opcode="win:Start" keywords="NavigationPerformance ServerSession"/>
+        <event value="1313" version="0" level="win:Informational"  task="ServerSessionInitiateModernActivation" opcode="win:Stop" keywords="NavigationPerformance ServerSession" template="Args1313_0"/>
+        <event value="1314" version="0" level="win:Informational"  task="ServerSessionLaunchChildTask" opcode="win:Info" keywords="ServerSession" template="Args1314_0"/>
+        <event value="1315" version="0" level="win:Informational"  task="ServerSessionLaunchModernChildTask" opcode="win:Info" keywords="ServerSession" template="Args1315_0"/>
+        <event value="1316" version="0" level="win:Informational"  task="ServerSession" opcode="NSSCreateView" keywords="NavigationPerformance ServerSession" template="Args1316_0"/>
+        <event value="1400" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1401" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1402" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMLaunchSessionRequest" keywords="NavigationPerformance SessionManager"/>
+        <event value="1405" version="0" level="win:Warning"  task="SessionManager" opcode="win:Info" keywords="Error" template="Args1405_0"/>
+        <event value="1406" version="0" level="win:Warning"  task="SessionManager" opcode="win:Info" keywords="Error"/>
+        <event value="1415" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1416" version="0" level="win:Verbose"  task="SessionManager" opcode="NSSMConnectNavigationTask" keywords="NavigationPerformance SessionManager"/>
+        <event value="1417" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMLaunchSessionResult" keywords="NavigationPerformance SessionManager" template="Args1417_0"/>
+        <event value="1418" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1419" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1420" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1421" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager" template="Args1421_0"/>
+        <event value="1422" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="NavigationPerformance SessionManager" template="Args1422_0"/>
+        <event value="1424" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager" template="Args1424_0"/>
+        <event value="1425" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMEnterRestrictedMode" keywords="NavigationPerformance SessionManager"/>
+        <event value="1426" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMExitRestrictedMode" keywords="NavigationPerformance SessionManager"/>
+        <event value="1428" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMSystemKeyPressed" keywords="NavigationPerformance SessionManager" template="Args1428_0"/>
+        <event value="1429" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1430" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMInitiateShutdown" keywords="NavigationPerformance SessionManager"/>
+        <event value="1431" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1432" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMSetLockVisible" keywords="NavigationPerformance SessionManager" template="Args1432_0"/>
+        <event value="1433" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMSetMonitorOn" keywords="NavigationPerformance SessionManager"/>
+        <event value="1434" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMSetDisplayObscured" keywords="NavigationPerformance SessionManager"/>
+        <event value="1435" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMSetOverlayMaximized" keywords="NavigationPerformance SessionManager"/>
+        <event value="1436" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1437" version="0" level="win:Warning"  task="SessionManager" opcode="win:Info" keywords="Error"/>
+        <event value="1438" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1450" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMInitiateModernSessionActivationRequest" keywords="NavigationPerformance SessionManager" template="Args1450_0"/>
+        <event value="1451" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMInitiateModernSessionActivationResult" keywords="NavigationPerformance SessionManager"/>
+        <event value="1452" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1453" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager" template="Args1453_0"/>
+        <event value="1454" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1455" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMDeferSessionLaunch" keywords="SessionManager"/>
+        <event value="1456" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMDeferChildLaunch" keywords="SessionManager"/>
+        <event value="1457" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMDeferModernSessionLaunch" keywords="SessionManager"/>
+        <event value="1458" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMDeferModernChildLaunch" keywords="SessionManager"/>
+        <event value="1459" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMDoDeferredLaunch" keywords="SessionManager" template="Args1459_0"/>
+        <event value="1460" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMOnDeferredLaunchTimerExpired" keywords="SessionManager"/>
+        <event value="1461" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1462" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1463" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1464" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1465" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager" template="Args1465_0"/>
+        <event value="1466" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMUpdateLoadingScreenProperties" keywords="SessionManager"/>
+        <event value="1467" version="0" level="win:Informational"  task="SessionManager" opcode="NSSMCreateView" keywords="SessionManager"/>
+        <event value="1468" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1469" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1470" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1471" version="0" level="win:Warning"  task="SessionManager" opcode="win:Info" keywords="Error"/>
+        <event value="1472" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1473" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1474" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1475" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1476" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1477" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager" template="Args1477_0"/>
+        <event value="1478" version="0" level="win:Informational"  task="SessionManager" opcode="win:Info" keywords="SessionManager"/>
+        <event value="1501" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1502" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1504" version="0" level="win:Informational"  task="ServerTask" opcode="NSTReadyToNavigate" keywords="NavigationPerformance ServerTask"/>
+        <event value="1505" version="0" level="win:Informational"  task="ServerTaskShow" opcode="win:Stop" keywords="NavigationPerformance ServerTask" template="Args1505_0"/>
+        <event value="1506" version="0" level="win:Informational"  task="ServerTaskHide" opcode="win:Stop" keywords="NavigationPerformance ServerTask"/>
+        <event value="1507" version="0" level="win:Informational"  task="ServerTaskNavigateTo" opcode="win:Stop" keywords="NavigationPerformance ServerTask"/>
+        <event value="1508" version="0" level="win:Informational"  task="ServerTaskNavigateAway" opcode="win:Stop" keywords="NavigationPerformance ServerTask"/>
+        <event value="1509" version="0" level="win:Informational"  task="ServerTask" opcode="NSTRequestClose" keywords="NavigationPerformance ServerTask" template="Args1509_0"/>
+        <event value="1510" version="0" level="win:Informational"  task="ServerTask" opcode="NSTLaunchChildTask" keywords="NavigationPerformance ServerTask"/>
+        <event value="1511" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1512" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1512_0"/>
+        <event value="1514" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1515" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="Error"/>
+        <event value="1516" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1517" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1518" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1519" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1520" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1521" version="0" level="win:Informational"  task="ServerTask" opcode="NSTProcessActivationData" keywords="NavigationPerformance ServerTask" template="Args1521_0"/>
+        <event value="1522" version="0" level="win:Informational"  task="ServerTask" opcode="NSTProcessActivationData" keywords="ServerTask" template="Args1522_0"/>
+        <event value="1523" version="0" level="win:Informational"  task="ServerTaskNavigateTo" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1524" version="0" level="win:Informational"  task="ServerTaskNavigateAway" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1525" version="0" level="win:Informational"  task="ServerTaskShow" opcode="win:Start" keywords="NavigationPerformance ServerTask" template="Args1525_0"/>
+        <event value="1526" version="0" level="win:Informational"  task="ServerTaskHide" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1527" version="0" level="win:Informational"  task="ServerTaskNavigateTo" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1528" version="0" level="win:Informational"  task="ServerTaskShowVisibleTask" opcode="win:Info" keywords="NavigationPerformance ServerTask"/>
+        <event value="1530" version="0" level="win:Verbose"  task="ServerTaskProcessNextStep" opcode="win:Stop" keywords="NavigationPerformance ServerTask" template="Args1530_0"/>
+        <event value="1531" version="0" level="win:Verbose"  task="ServerTaskProcessNextStep" opcode="win:Stop" keywords="NavigationPerformance ServerTask"/>
+        <event value="1532" version="0" level="win:Informational"  task="ServerTask" opcode="NSTRequestNavigateBack" keywords="NavigationPerformance ServerTask" template="Args1532_0"/>
+        <event value="1533" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1534" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1536" version="0" level="win:Informational"  task="ServerTask" opcode="NSTNavigationTimeoutStopped" keywords="ServerTask NavigationPerformanceTriggers" template="Args1536_0"/>
+        <event value="1537" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask NavigationPerformanceTriggers" template="Args1537_0"/>
+        <event value="1538" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1540" version="0" level="win:Verbose"  task="ServerTaskCreate" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1541" version="0" level="win:Informational"  task="ServerTaskCreate" opcode="win:Stop" keywords="NavigationPerformance ServerTask"/>
+        <event value="1542" version="0" level="win:Verbose"  task="ServerTaskInitiateModernActivation" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1543" version="0" level="win:Informational"  task="ServerTaskInitiateModernActivation" opcode="win:Stop" keywords="NavigationPerformance ServerTask NavigationPerformanceTriggers"/>
+        <event value="1544" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="NavigationPerformance ServerTask" template="Args1544_0"/>
+        <event value="1545" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="NavigationPerformance ServerTask"/>
+        <event value="1546" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1547" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1548" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1549" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask SelfHostError"/>
+        <event value="1550" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1551" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1552" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1552_0"/>
+        <event value="1553" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1553_0"/>
+        <event value="1554" version="0" level="win:Informational"  task="ServerTask" opcode="NSTTaskStateIsActive" keywords="NavigationPerformance ServerTask"/>
+        <event value="1555" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1556" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1557" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1558" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1558_0"/>
+        <event value="1559" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1560" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1561" version="0" level="win:Informational"  task="ServerTask" opcode="NSTCreateView" keywords="NavigationPerformance ServerTask"/>
+        <event value="1562" version="0" level="win:Warning"  task="ServerTask" opcode="NSTSetRunning" keywords="NavigationPerformance ServerTask"/>
+        <event value="1563" version="0" level="win:Warning"  task="ServerTask" opcode="NSTSetIsExecManAware" keywords="NavigationPerformance ServerTask"/>
+        <event value="1564" version="0" level="win:Warning"  task="ServerTask" opcode="NSTSetCompleted" keywords="NavigationPerformance ServerTask"/>
+        <event value="1565" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1565_0"/>
+        <event value="1566" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1566_0"/>
+        <event value="1567" version="0" level="win:Informational"  task="ServerTaskActivate" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1568" version="0" level="win:Informational"  task="ServerTaskActivate" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1569" version="0" level="win:Informational"  task="ServerTaskDeactivate" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1570" version="0" level="win:Informational"  task="ServerTaskDeactivate" opcode="win:Start" keywords="NavigationPerformance ServerTask"/>
+        <event value="1571" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1572" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1573" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1574" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1575" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1576" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1576_0"/>
+        <event value="1577" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1578" version="0" level="win:Informational"  task="ServerTask" opcode="NSTNavigationTimeoutStoppedTargetStateChange" keywords="ServerTask NavigationPerformanceTriggers"/>
+        <event value="1579" version="0" level="win:Warning"  task="ServerTask" opcode="win:Info" keywords="ServerTask NavigationPerformanceTriggers"/>
+        <event value="1580" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1580_0"/>
+        <event value="1581" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1582" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1583" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1584" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1585" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1586" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1587" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1588" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1589" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask" template="Args1589_0"/>
+        <event value="1590" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1591" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1592" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1593" version="0" level="win:Informational"  task="ServerTask" opcode="win:Info" keywords="ServerTask"/>
+        <event value="1601" version="0" level="win:Informational"  task="ServerWindow" opcode="win:Info" keywords="ServerWindow"/>
+        <event value="1602" version="0" level="win:Informational"  task="ServerWindow" opcode="win:Info" keywords="ServerWindow"/>
+        <event value="1610" version="0" level="win:Verbose"  task="NavigationServerWindowConstruct" opcode="win:Start" keywords="NavigationPerformance ServerWindow"/>
+        <event value="1611" version="0" level="win:Verbose"  task="NavigationServerWindowConstruct" opcode="win:Stop" keywords="NavigationPerformance ServerWindow"/>
+        <event value="1612" version="0" level="win:Error"  task="ServerWindow" opcode="win:Info" keywords="ServerWindow"/>
+        <event value="1700" version="0" level="win:Informational"  task="WindowManager" opcode="win:Info" keywords="WindowManager"/>
+        <event value="1701" version="0" level="win:Informational"  task="WindowManager" opcode="win:Info" keywords="WindowManager"/>
+        <event value="1702" version="0" level="win:Informational"  task="WindowManager" opcode="win:Info" keywords="WindowManager"/>
+        <event value="1703" version="0" level="win:Informational"  task="WindowManager" opcode="win:Info" keywords="WindowManager"/>
+        <event value="1800" version="0" level="win:Informational"  task="RotationManager" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1801" version="0" level="win:Informational"  task="RotationManager" opcode="RMSetTaskSupportedOrientations" keywords="NavigationPerformance RotationManager"/>
+        <event value="1802" version="0" level="win:Informational"  task="RotationManager" opcode="RMSetCurrentOrientation" keywords="NavigationPerformance RotationManager" template="Args1802_0"/>
+        <event value="1803" version="0" level="win:Informational"  task="RotationManager" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1804" version="0" level="win:Informational"  task="RotationManager" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1805" version="0" level="win:Informational"  task="RotationManager" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1806" version="0" level="win:Informational"  task="RotationManager" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1807" version="0" level="win:Error"  task="RotationManager" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1811" version="0" level="win:Verbose"  task="RotationManagerStartOrientationService" opcode="win:Start" keywords="Performance RotationManager"/>
+        <event value="1812" version="0" level="win:Informational"  task="RotationManagerStartOrientationService" opcode="win:Stop" keywords="Performance RotationManager"/>
+        <event value="1813" version="0" level="win:Verbose"  task="RotationManagerStopOrientationService" opcode="win:Start" keywords="Performance RotationManager"/>
+        <event value="1814" version="0" level="win:Informational"  task="RotationManagerStopOrientationService" opcode="win:Stop" keywords="Performance RotationManager"/>
+        <event value="1815" version="0" level="win:Informational"  task="RotationManagerInitializeOrientationService" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1816" version="0" level="win:Informational"  task="RotationManagerUninitializeOrientationService" opcode="win:Info" keywords="RotationManager"/>
+        <event value="1817" version="0" level="win:Informational"  task="RotationManagerComputeDesiredOrientation" opcode="win:Info" keywords="RotationManager" template="Args1817_0"/>
+        <event value="1900" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1901" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1902" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1903" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1904" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1905" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1906" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1907" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController" template="Args1907_0"/>
+        <event value="1908" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1909" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController" template="Args1909_0"/>
+        <event value="1910" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1911" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1912" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1913" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1914" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1915" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1916" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1917" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1918" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1919" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1920" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1921" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="1922" version="0" level="win:Informational"  task="PageNavigationController" opcode="win:Info" keywords="PageNavigationController"/>
+        <event value="2000" version="0" level="win:Informational"  task="PageManagerContainer" opcode="win:Info" keywords="PageManagerContainer"/>
+        <event value="2001" version="0" level="win:Informational"  task="PageManagerContainer" opcode="win:Info" keywords="PageManagerContainer"/>
+        <event value="2100" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2101" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2102" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2103" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager" template="Args2103_0"/>
+        <event value="2104" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2105" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2106" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2107" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2108" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2109" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2110" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager" template="Args2110_0"/>
+        <event value="2111" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager" template="Args2111_0"/>
+        <event value="2112" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2113" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2114" version="0" level="win:Error"  task="PageManager" opcode="win:Info" keywords="Error"/>
+        <event value="2115" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2116" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager" template="Args2116_0"/>
+        <event value="2117" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2118" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2119" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2120" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2121" version="0" level="win:Verbose"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2122" version="0" level="win:Informational"  task="PageManager" opcode="PMProcessActivationData" keywords="NavigationPerformance PageManager"/>
+        <event value="2123" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2130" version="0" level="win:Informational"  task="PageManager" opcode="PMOrientationChanged" keywords="NavigationPerformance PageManager"/>
+        <event value="2131" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="NavigationPerformance PageManager"/>
+        <event value="2132" version="0" level="win:Informational"  task="PageManager" opcode="win:Info" keywords="PageManager"/>
+        <event value="2133" version="0" level="win:Informational"  task="PageManager" opcode="PMSessionDisplayNameChanged" keywords="NavigationPerformance PageManager"/>
+        <event value="2200" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2201" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2202" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page" template="Args2202_0"/>
+        <event value="2203" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2204" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2205" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2206" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2207" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2208" version="0" level="win:Verbose"  task="Page" opcode="win:Info" keywords="Page" template="Args2208_0"/>
+        <event value="2209" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page" template="Args2209_0"/>
+        <event value="2210" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2211" version="0" level="win:Warning"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2212" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2213" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2214" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2215" version="0" level="win:Informational"  task="Page" opcode="win:Info" keywords="Page"/>
+        <event value="2301" version="0" level="win:Informational"  task="ExecutionManagerClient" opcode="win:Info" keywords="ExecutionManagerClient"/>
+        <event value="2302" version="0" level="win:Informational"  task="ExecutionManagerClientRequestEventCallback" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient" template="Args2302_0"/>
+        <event value="2303" version="0" level="win:Informational"  task="ExecutionManagerClient" opcode="win:Info" keywords="ExecutionManagerClient"/>
+        <event value="2304" version="0" level="win:Error"  task="ExecutionManagerClient" opcode="win:Info" keywords="Error" template="Args2304_0"/>
+        <event value="2305" version="0" level="win:Verbose"  task="ExecutionManagerClientRequestEventCallback" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2312" version="0" level="win:Verbose"  task="ExecutionManagerClientConstruct" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2313" version="0" level="win:Verbose"  task="ExecutionManagerClientConstruct" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2314" version="0" level="win:Verbose"  task="ExecutionManagerClientInit" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2315" version="0" level="win:Verbose"  task="ExecutionManagerClientInit" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2318" version="0" level="win:Informational"  task="ExecutionManagerClientPauseComplete" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2319" version="0" level="win:Verbose"  task="ExecutionManagerClientPauseComplete" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2320" version="0" level="win:Informational"  task="ExecutionManagerClientReportTaskRunning" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2321" version="0" level="win:Verbose"  task="ExecutionManagerClientReportTaskRunning" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2322" version="0" level="win:Informational"  task="ExecutionManagerClientCompleteTask" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2323" version="0" level="win:Verbose"  task="ExecutionManagerClientCompleteTask" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2324" version="0" level="win:Verbose"  task="ExecutionManagerClientGetTaskURI" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2325" version="0" level="win:Verbose"  task="ExecutionManagerClientGetTaskURI" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2326" version="0" level="win:Verbose"  task="ExecutionManagerClientGetTaskName" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2327" version="0" level="win:Verbose"  task="ExecutionManagerClientGetTaskName" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2328" version="0" level="win:Verbose"  task="ExecutionManagerClientGetDestinationPageName" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2329" version="0" level="win:Verbose"  task="ExecutionManagerClientGetDestinationPageName" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2330" version="0" level="win:Verbose"  task="ExecutionManagerClientIsChildTask" opcode="win:Start" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2331" version="0" level="win:Verbose"  task="ExecutionManagerClientIsChildTask" opcode="win:Stop" keywords="NavigationPerformance ExecutionManagerClient"/>
+        <event value="2401" version="0" level="win:Informational"  task="NavigationWindow" opcode="win:Info" keywords="NavigationWindow"/>
+        <event value="2402" version="0" level="win:Error"  task="NavigationWindow" opcode="win:Info" keywords="Error"/>
+        <event value="2404" version="0" level="win:Verbose"  task="NavigationWindow" opcode="win:Info" keywords="NavigationWindow" template="Args2404_0"/>
+        <event value="2412" version="0" level="win:Error"  task="NavigationWindow" opcode="win:Info" keywords="Error"/>
+        <event value="2420" version="0" level="win:Informational"  task="NavigationWindowInitialize" opcode="win:Start" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2421" version="0" level="win:Verbose"  task="NavigationWindowInitialize" opcode="win:Stop" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2422" version="0" level="win:Informational"  task="NavigationWindowConstruct" opcode="win:Start" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2423" version="0" level="win:Verbose"  task="NavigationWindowConstruct" opcode="win:Stop" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2424" version="0" level="win:Informational"  task="NavigationWindowPullProxy" opcode="win:Start" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2425" version="0" level="win:Verbose"  task="NavigationWindowPullProxy" opcode="win:Stop" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2426" version="0" level="win:Informational"  task="NavigationWindowRegister" opcode="win:Start" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2427" version="0" level="win:Verbose"  task="NavigationWindowRegister" opcode="win:Stop" keywords="NavigationPerformance NavigationWindow"/>
+        <event value="2501" version="0" level="win:Informational"  task="Task" opcode="win:Info" keywords="Task"/>
+        <event value="2502" version="0" level="win:Error"  task="Task" opcode="win:Info" keywords="Error"/>
+        <event value="2504" version="0" level="win:Verbose"  task="Task" opcode="NTConnectionComplete" keywords="NavigationPerformance Task"/>
+        <event value="2510" version="0" level="win:Informational"  task="NavigationTaskConstruct" opcode="win:Start" keywords="NavigationPerformance Task"/>
+        <event value="2511" version="0" level="win:Verbose"  task="NavigationTaskConstruct" opcode="win:Stop" keywords="NavigationPerformance Task"/>
+        <event value="2520" version="0" level="win:Verbose"  task="Task" opcode="NTReadyToNavigate" keywords="NavigationPerformance Task"/>
+        <event value="2521" version="0" level="win:Informational"  task="Task" opcode="NTNavigateTo" keywords="NavigationPerformance Task"/>
+        <event value="2522" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="NavigationPerformance Task"/>
+        <event value="2523" version="0" level="win:Informational"  task="Task" opcode="NTNavigateTo" keywords="Task"/>
+        <event value="2524" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="Task"/>
+        <event value="2525" version="0" level="win:Informational"  task="Task" opcode="NTNavigateTo" keywords="Task"/>
+        <event value="2526" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="Task"/>
+        <event value="2527" version="0" level="win:Informational"  task="Task" opcode="NTNavigateTo" keywords="Task"/>
+        <event value="2528" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="Task"/>
+        <event value="2531" version="0" level="win:Verbose"  task="Task" opcode="NTLaunchSession" keywords="NavigationPerformance Task"/>
+        <event value="2532" version="0" level="win:Verbose"  task="Task" opcode="NTLaunchSessionComplete" keywords="NavigationPerformance Task"/>
+        <event value="2533" version="0" level="win:Verbose"  task="Task" opcode="NTLaunchChildTask" keywords="NavigationPerformance Task"/>
+        <event value="2534" version="0" level="win:Verbose"  task="Task" opcode="NTLaunchChildTaskComplete" keywords="NavigationPerformance Task"/>
+        <event value="2535" version="0" level="win:Informational"  task="Task" opcode="NTSetSupportedOrientations" keywords="NavigationPerformance Task"/>
+        <event value="2536" version="0" level="win:Error"  task="Task" opcode="win:Info" keywords="Error"/>
+        <event value="2537" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="Task"/>
+        <event value="2538" version="0" level="win:Informational"  task="Task" opcode="win:Info" keywords="NavigationPerformance Task"/>
+        <event value="2539" version="0" level="win:Informational"  task="Task" opcode="win:Info" keywords="Task"/>
+        <event value="2540" version="0" level="win:Informational"  task="Task" opcode="NTNavigateTo" keywords="Task"/>
+        <event value="2541" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="Task"/>
+        <event value="2542" version="0" level="win:Informational"  task="Task" opcode="NTNavigateTo" keywords="Task"/>
+        <event value="2543" version="0" level="win:Informational"  task="Task" opcode="NTNavigateToComplete" keywords="Task"/>
+        <event value="2544" version="0" level="win:Informational"  task="Task" opcode="win:Info" keywords="Task"/>
+        <event value="2800" version="0" level="win:Informational"  task="TimeoutInfo" opcode="win:Info" keywords="TimeoutInfo" template="Args2800_0"/>
+        <event value="2801" version="0" level="win:Informational"  task="TimeoutInfo" opcode="win:Info" keywords="TimeoutInfo"/>
+        <event value="2802" version="0" level="win:Informational"  task="TimeoutInfo" opcode="win:Info" keywords="TimeoutInfo"/>
+        <event value="2803" version="0" level="win:Informational"  task="TimeoutInfo" opcode="win:Info" keywords="TimeoutInfo"/>
+        <event value="2804" version="0" level="win:Informational"  task="TimeoutInfo" opcode="win:Info" keywords="TimeoutInfo" template="Args2804_0"/>
+        <event value="2900" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService" template="Args2900_0"/>
+        <event value="2901" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2902" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2903" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2904" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2905" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2906" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2907" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="2908" version="0" level="win:Informational"  task="CoreUIService" opcode="win:Info" keywords="CoreUIService"/>
+        <event value="5000" version="0" level="win:Verbose"  task="ProxyMaterializePushedProxy" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5001" version="0" level="win:Verbose"  task="ProxyMaterializePushedProxy" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="5004" version="0" level="win:Verbose"  task="ProxyPushNewProxy" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5005" version="0" level="win:Verbose"  task="ProxyPushNewProxy" opcode="win:Stop" keywords="MessagingPerformance Proxy" template="Args5005_0"/>
+        <event value="5006" version="0" level="win:Verbose"  task="ProxyConnectExistingProxy" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5007" version="0" level="win:Verbose"  task="ProxyConnectExistingProxy" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="5008" version="0" level="win:Verbose"  task="ProxyInitializeConnection" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5009" version="0" level="win:Verbose"  task="ProxyInitializeConnection" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="5010" version="0" level="win:Verbose"  task="ProxyPullProxy" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5011" version="0" level="win:Verbose"  task="ProxyPullProxy" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="5012" version="0" level="win:Error"  task="ProxyPushNewProxy" opcode="win:Info" keywords="MessagingPerformance Proxy"/>
+        <event value="5050" version="0" level="win:Verbose"  task="ProxyMessageMethod" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5051" version="0" level="win:Verbose"  task="ProxyMessageMethod" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="5052" version="0" level="win:Verbose"  task="ProxyMessageEvent" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5053" version="0" level="win:Verbose"  task="ProxyMessageEvent" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="5054" version="0" level="win:Verbose"  task="ProxyPropertyUpdate" opcode="win:Start" keywords="MessagingPerformance Proxy"/>
+        <event value="5055" version="0" level="win:Verbose"  task="ProxyPropertyUpdate" opcode="win:Stop" keywords="MessagingPerformance Proxy"/>
+        <event value="6000" version="0" level="win:Informational"  task="BrokerSessionManagerInitiateModernActivation" opcode="win:Start" keywords="BrokerSessionManager" template="Args6000_0"/>
+        <event value="6001" version="0" level="win:Informational"  task="BrokerSessionManagerInitiateModernActivation" opcode="win:Stop" keywords="BrokerSessionManager"/>
+        <event value="6002" version="0" level="win:Informational"  task="BrokerSessionManagerGetPendingTaskInstanceId" opcode="win:Info" keywords="BrokerSessionManager"/>
+        <event value="6003" version="0" level="win:Informational"  task="BrokerSessionManagerDoPendingInitiateModernActivation" opcode="win:Info" keywords="BrokerSessionManager"/>
+        <event value="6004" version="0" level="win:Informational"  task="BrokerSessionManagerNotifyInitiateModernActivationCompleted" opcode="win:Info" keywords="BrokerSessionManager"/>
+        <event value="6005" version="0" level="win:Informational"  task="BrokerSessionManagerDoPendingInitiateModernActivationSessionLaunch" opcode="win:Info" keywords="BrokerSessionManager"/>
+        <event value="7000" version="0" level="win:Informational"  task="NavigationClientRuntimeClassInitialize" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7001" version="0" level="win:Informational"  task="NavigationClientRuntimeClassInitialize" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7002" version="0" level="win:Informational"  task="NavigationClientInitialize" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7003" version="0" level="win:Informational"  task="NavigationClientInitialize" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7004" version="0" level="win:Informational"  task="NavigationClientCreateNavigationWindow" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7005" version="0" level="win:Informational"  task="NavigationClientRegistrationComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7006" version="0" level="win:Informational"  task="NavigationClientCreateNavigationTask" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7007" version="0" level="win:Informational"  task="NavigationClientConnectionComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7008" version="0" level="win:Informational"  task="NavigationClientOnActivateWindow" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7009" version="0" level="win:Informational"  task="NavigationClientOnActivateWindow" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7010" version="0" level="win:Informational"  task="NavigationClientOnActivateWindow" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7011" version="0" level="win:Informational"  task="NavigationClientNavigateTo" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7012" version="0" level="win:Informational"  task="NavigationClientWindowVisibilityChanged" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7013" version="0" level="win:Informational"  task="NavigationClientShow" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7014" version="0" level="win:Informational"  task="NavigationClientIsReadyToActivateWindow" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7015" version="0" level="win:Informational"  task="NavigationClientIsReadyToActivate" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7016" version="0" level="win:Informational"  task="NavigationClientIsReadyToNavigateAway" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7017" version="0" level="win:Informational"  task="NavigationClientOnActivated" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7018" version="0" level="win:Informational"  task="NavigationClientOnActivated" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7019" version="0" level="win:Informational"  task="NavigationClientOnDeactivated" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7020" version="0" level="win:Informational"  task="NavigationClientOnDeactivated" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7021" version="0" level="win:Informational"  task="NavigationClientOnShowAnimationComplete" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7022" version="0" level="win:Informational"  task="NavigationClientOnShellHookMessage" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7023" version="0" level="win:Informational"  task="NavigationClientOnShellHookMessage" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7024" version="0" level="win:Informational"  task="NavigationClientConnectToShell" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7025" version="0" level="win:Informational"  task="NavigationClientConnectToShell" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7026" version="0" level="win:Informational"  task="NavigationClientDisconnectFromShell" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7027" version="0" level="win:Informational"  task="NavigationClientDisconnectFromShell" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7028" version="0" level="win:Informational"  task="NavigationClientConnectToDisplayProperties" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7029" version="0" level="win:Informational"  task="NavigationClientConnectToDisplayProperties" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7030" version="0" level="win:Informational"  task="NavigationClientDisconnectFromDisplayProperties" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7031" version="0" level="win:Informational"  task="NavigationClientDisconnectFromDisplayProperties" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7032" version="0" level="win:Informational"  task="NavigationClientRunMessageSession" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7033" version="0" level="win:Informational"  task="NavigationClientRunMessageSession" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7034" version="0" level="win:Informational"  task="NavigationClientExitMessageSession" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7035" version="0" level="win:Informational"  task="NavigationClientExitMessageSession" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7036" version="0" level="win:Informational"  task="NavigationClientHide" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7037" version="0" level="win:Informational"  task="NavigationClientNavigateAway" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7038" version="0" level="win:Informational"  task="NavigationClientClose" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7039" version="0" level="win:Informational"  task="NavigationClientSystemKeyPressed" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7040" version="0" level="win:Informational"  task="NavigationClientUninitialize" opcode="win:Start" keywords="NavigationClient"/>
+        <event value="7041" version="0" level="win:Informational"  task="NavigationClientUninitialize" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7042" version="0" level="win:Informational"  task="NavigationClientStateChange" opcode="win:Info" keywords="NavigationClient" template="Args7042_0"/>
+        <event value="7044" version="0" level="win:Informational"  task="NavigationClientWMViewStateChanged" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7045" version="0" level="win:Informational"  task="NavigationClientOnVisibilityChanged" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7046" version="0" level="win:Informational"  task="NavigationClientOnObscurityChange" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7047" version="0" level="win:Informational"  task="NavigationClientUpdateWindowActivationState" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7048" version="0" level="win:Informational"  task="NavigationClientOnSipVisibilityChange" opcode="win:Info" keywords="NavigationClient" template="Args7048_0"/>
+        <event value="7049" version="0" level="win:Informational"  task="NavigationClientActivate" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7050" version="0" level="win:Informational"  task="NavigationClientDeactivate" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7051" version="0" level="win:Informational"  task="NavigationClientPostConsolidated" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7052" version="0" level="win:Informational"  task="NavigationClientPresentationLoadingRaised" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7053" version="0" level="win:Informational"  task="NavigationClientPresentationLoadingComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7054" version="0" level="win:Informational"  task="NavigationClientPresentationUnloadingRaised" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7055" version="0" level="win:Informational"  task="NavigationClientPresentationUnloadingComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7056" version="0" level="win:Informational"  task="NavigationClientNavigateAwayCompleteFailed" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7057" version="0" level="win:Informational"  task="NavigationClientCloseRequested" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7058" version="0" level="win:Informational"  task="NavigationClientCloseRequestHandled" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7059" version="0" level="win:Informational"  task="NavigationClientSetCanHandleCloseRequest" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7060" version="0" level="win:Informational"  task="NavigationClientTryShowAsStandaloneViewOperationComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7061" version="0" level="win:Informational"  task="NavigationClientShowAsStandaloneViewOperationComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7062" version="0" level="win:Informational"  task="NavigationClientSwitchViewOperationComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7063" version="0" level="win:Informational"  task="NavigationClientShowAsStandaloneViewOperationComplete" opcode="win:Info" keywords="NavigationClient" template="Args7063_0"/>
+        <event value="7064" version="0" level="win:Informational"  task="NavigationClientOnOcclusionChanged" opcode="win:Start" keywords="NavigationClient" template="Args7064_0"/>
+        <event value="7065" version="0" level="win:Informational"  task="NavigationClientOnOcclusionChanged" opcode="win:Stop" keywords="NavigationClient"/>
+        <event value="7066" version="0" level="win:Informational"  task="NavigationClientRequestActivateView" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7067" version="0" level="win:Informational"  task="NavigationClientActivateViewComplete" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="7068" version="0" level="win:Informational"  task="NavigationClientSetPreferredScale" opcode="win:Info" keywords="NavigationClient"/>
+        <event value="8000" version="0" level="win:Informational"  task="SessionLayerSetVisibleSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8001" version="0" level="win:Informational"  task="SessionLayerSetCurrentSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8002" version="0" level="win:Informational"  task="SessionLayerSetVisibleTask" opcode="win:Info" keywords="SessionLayer" template="Args8002_0"/>
+        <event value="8003" version="0" level="win:Informational"  task="SessionLayerSetCurrentTask" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8004" version="0" level="win:Informational"  task="SessionLayerSetVisibleWindow" opcode="win:Info" keywords="SessionLayer" template="Args8004_0"/>
+        <event value="8005" version="0" level="win:Informational"  task="SessionLayerSetCurrentWindow" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8006" version="0" level="win:Informational"  task="SessionLayerSetActivationLevel" opcode="win:Info" keywords="SessionLayer" template="Args8006_0"/>
+        <event value="8007" version="0" level="win:Informational"  task="SessionLayerNotifyReadyToShow" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8008" version="0" level="win:Informational"  task="SessionLayerNotifyReadyToHide" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8009" version="0" level="win:Informational"  task="SessionLayerNavigateToTopSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8010" version="0" level="win:Informational"  task="SessionLayerNavigateToSessionInternal" opcode="win:Info" keywords="SessionLayer" template="Args8010_0"/>
+        <event value="8011" version="0" level="win:Informational"  task="SessionLayerEnterRestrictedMode" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8012" version="0" level="win:Informational"  task="SessionLayerExitRestrictedMode" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8013" version="0" level="win:Informational"  task="SessionLayerSetActiveSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8014" version="0" level="win:Informational"  task="SessionLayerSetActiveTask" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8016" version="0" level="win:Informational"  task="SessionLayerNotifyActiveChanged" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8017" version="0" level="win:Informational"  task="SessionLayerNavigateToTaskInternal" opcode="win:Info" keywords="SessionLayer" template="Args8017_0"/>
+        <event value="8018" version="0" level="win:Informational"  task="SessionLayerCloseReplaceActivationPolicyViewBeforeReLaunch" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8019" version="0" level="win:Informational"  task="SessionLayerUpdateCurrentSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8020" version="0" level="win:Informational"  task="SessionLayerUpdateCurrentTask" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8021" version="0" level="win:Informational"  task="SessionLayerUpdateVisibleSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8022" version="0" level="win:Informational"  task="SessionLayerUpdateVisibleTask" opcode="win:Info" keywords="SessionLayer" template="Args8022_0"/>
+        <event value="8023" version="0" level="win:Informational"  task="SessionLayerNavigateToView" opcode="win:Info" keywords="NavigationPerformanceTriggers SessionLayer" template="Args8023_0"/>
+        <event value="8024" version="0" level="win:Informational"  task="SessionLayerSetActiveWindow" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8100" version="0" level="win:Informational"  task="ForegroundSessionLayerSetVisibleTask" opcode="win:Info" keywords="ForegroundSessionLayer"/>
+        <event value="8101" version="0" level="win:Informational"  task="ForegroundSessionLayerHideVisibleTask" opcode="win:Info" keywords="ForegroundSessionLayer" template="Args8101_0"/>
+        <event value="8102" version="0" level="win:Informational"  task="ForegroundSessionLayerShowVisibleTask" opcode="win:Info" keywords="ForegroundSessionLayer"/>
+        <event value="8103" version="0" level="win:Informational"  task="ForegroundSessionLayerIdleCurrentSession" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8104" version="0" level="win:Informational"  task="ForegroundSessionLayerUpdateVisibleTask" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8105" version="0" level="win:Informational"  task="SessionLayerQueueResumeModernApplication" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="8106" version="0" level="win:Informational"  task="SessionLayerDoDeferredResumeModernApplication" opcode="win:Info" keywords="SessionLayer"/>
+        <event value="9000" version="0" level="win:Informational"  task="ViewManager" opcode="Constructed" keywords="ViewManager"/>
+        <event value="9001" version="0" level="win:Informational"  task="ViewManager" opcode="Disposed" keywords="ViewManager"/>
+        <event value="9002" version="0" level="win:Informational"  task="ViewManager" opcode="NavigateToView" keywords="ViewManager" template="Args9002_0"/>
+        <event value="9003" version="0" level="win:Informational"  task="ViewManager" opcode="BeginPresentView" keywords="ViewManager"/>
+        <event value="9004" version="0" level="win:Informational"  task="ViewManager" opcode="BeginPresentView" keywords="ViewManager"/>
+        <event value="9005" version="0" level="win:Informational"  task="ViewManager" opcode="InitiateShutdown" keywords="ViewManager"/>
+        <event value="9006" version="0" level="win:Informational"  task="ViewManager" opcode="CancelShutdown" keywords="ViewManager"/>
+        <event value="9007" version="0" level="win:Informational"  task="ViewManager" opcode="ViewAdded" keywords="ViewManager"/>
+        <event value="9008" version="0" level="win:Informational"  task="ViewManager" opcode="ViewRemoved" keywords="ViewManager"/>
+        <event value="9009" version="0" level="win:Informational"  task="ViewManager" opcode="ActiveViewChanged" keywords="ViewManager"/>
+        <event value="9010" version="0" level="win:Informational"  task="ViewManager" opcode="ActiveWindowChanged" keywords="ViewManager"/>
+        <event value="9011" version="0" level="win:Informational"  task="ViewManager" opcode="VisibleViewAdded" keywords="ViewManager"/>
+        <event value="9012" version="0" level="win:Informational"  task="ViewManager" opcode="VisibleViewRemoved" keywords="ViewManager"/>
+        <event value="9013" version="0" level="win:Informational"  task="ViewManager" opcode="CurrentViewAdded" keywords="ViewManager"/>
+        <event value="9014" version="0" level="win:Informational"  task="ViewManager" opcode="CurrentViewRemoved" keywords="ViewManager"/>
+        <event value="9015" version="0" level="win:Informational"  task="ViewManager" opcode="RequestNavigateToView" keywords="ViewManager" template="Args9015_0"/>
+        <event value="9016" version="0" level="win:Informational"  task="ViewManager" opcode="RequestBeginPresentView" keywords="ViewManager"/>
+        <event value="9017" version="0" level="win:Informational"  task="ViewManager" opcode="RequestEndPresentView" keywords="ViewManager"/>
+        <event value="9018" version="0" level="win:Informational"  task="ViewManager" opcode="SystemKeyPressed" keywords="ViewManager"/>
+        <event value="9019" version="0" level="win:Informational"  task="ViewManager" opcode="SystemKeyPressedComplete" keywords="ViewManager" template="Args9019_0"/>
+        <event value="9020" version="0" level="win:Informational"  task="ViewManager" opcode="NavigateAwayFromView" keywords="ViewManager"/>
+        <event value="9021" version="0" level="win:Informational"  task="ViewManager" opcode="ChangeVisibleWindow" keywords="ViewManager"/>
+        <event value="9022" version="0" level="win:Informational"  task="ViewManager" opcode="ChangeActiveWindow" keywords="ViewManager"/>
+        <event value="9023" version="0" level="win:Informational"  task="ViewManager" opcode="CreateServerWindow" keywords="ViewManager"/>
+        <event value="9024" version="0" level="win:Informational"  task="ViewManager" opcode="CloseServerWindow" keywords="ViewManager"/>
+        <event value="9025" version="0" level="win:Informational"  task="ViewManager" opcode="AddWindowToView" keywords="ViewManager" template="Args9025_0"/>
+        <event value="9026" version="0" level="win:Informational"  task="ViewManager" opcode="RemoveWindowFromView" keywords="ViewManager"/>
+        <event value="9027" version="0" level="win:Informational"  task="ViewManager" opcode="ServerWindowCreated" keywords="ViewManager"/>
+        <event value="9028" version="0" level="win:Informational"  task="ViewManager" opcode="CreateView" keywords="ViewManager"/>
+        <event value="9029" version="0" level="win:Informational"  task="ViewManager" opcode="CreateServerTask" keywords="ViewManager" template="Args9029_0"/>
+        <event value="9030" version="0" level="win:Informational"  task="ViewManager" opcode="ResumeAndNavigateToView" keywords="ViewManager" template="Args9030_0"/>
+        <event value="9031" version="0" level="win:Informational"  task="ViewManager" opcode="ReplaceAndNavigateToView" keywords="ViewManager"/>
+        <event value="9032" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9033" version="0" level="win:Informational"  task="ViewManager" opcode="InitiateUserLogoff" keywords="ViewManager"/>
+        <event value="9034" version="0" level="win:Informational"  task="ViewManager" opcode="UserLogoffComplete" keywords="ViewManager"/>
+        <event value="9035" version="0" level="win:Informational"  task="ViewManager" opcode="ValidateViewLimit" keywords="ViewManager" template="Args9035_0"/>
+        <event value="9036" version="0" level="win:Informational"  task="ViewManager" opcode="ChangeProcessId" keywords="ViewManager"/>
+        <event value="9037" version="0" level="win:Warning"  task="ViewManager" opcode="win:Info" keywords="Error ViewManager"/>
+        <event value="9038" version="0" level="win:Warning"  task="ViewManager" opcode="win:Info" keywords="Error ViewManager"/>
+        <event value="9039" version="0" level="win:Warning"  task="ViewManager" opcode="win:Info" keywords="Error ViewManager"/>
+        <event value="9040" version="0" level="win:Warning"  task="ViewManager" opcode="win:Info" keywords="Error ViewManager"/>
+        <event value="9041" version="0" level="win:Informational"  task="ViewManager" opcode="NavigateToViewFailed" keywords="ViewManager" template="Args9041_0"/>
+        <event value="9042" version="0" level="win:Informational"  task="ViewManager" opcode="RequestShowStandardSystemOverlays" keywords="ViewManager"/>
+        <event value="9043" version="0" level="win:Informational"  task="ViewManager" opcode="CloseRequested" keywords="ViewManager"/>
+        <event value="9044" version="0" level="win:Informational"  task="ViewManager" opcode="CloseRequestedComplete" keywords="ViewManager"/>
+        <event value="9045" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9046" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9047" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9048" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9500" version="0" level="win:Informational"  task="ViewActivatorBrokerActivateModern" opcode="win:Start" keywords="ViewActivator" template="Args9500_0"/>
+        <event value="9501" version="0" level="win:Informational"  task="ViewActivatorBrokerActivateModern" opcode="win:Stop" keywords="ViewActivator" template="Args9501_0"/>
+        <event value="9502" version="0" level="win:Informational"  task="ViewActivatorBrokerActivateLegacy" opcode="win:Start" keywords="ViewActivator" template="Args9502_0"/>
+        <event value="9503" version="0" level="win:Informational"  task="ViewActivatorBrokerActivateLegacy" opcode="win:Stop" keywords="ViewActivator"/>
+        <event value="9504" version="0" level="win:Informational"  task="ViewActivatorShellActivateLegacy" opcode="win:Start" keywords="ViewActivator" template="Args9504_0"/>
+        <event value="9505" version="0" level="win:Informational"  task="ViewActivatorShellActivateLegacy" opcode="win:Stop" keywords="ViewActivator"/>
+        <event value="9506" version="0" level="win:Informational"  task="ViewActivatorNotifyBrokerActivateModernCompleted" opcode="win:Info" keywords="ViewActivator" template="Args9506_0"/>
+        <event value="9507" version="0" level="win:Informational"  task="ViewActivatorGetPendingTaskInstanceId" opcode="win:Info" keywords="ViewActivator"/>
+        <event value="9508" version="0" level="win:Informational"  task="ViewActivatorDoPendingInitiateModernActivation" opcode="win:Info" keywords="ViewActivator"/>
+        <event value="9509" version="0" level="win:Informational"  task="ViewActivatorShouldWaitForCloseCompletion" opcode="win:Info" keywords="ViewActivator"/>
+        <event value="9510" version="0" level="win:Informational"  task="ViewActivatorAddActivationDataToActivationMap" opcode="win:Info" keywords="ViewActivator"/>
+        <event value="9511" version="0" level="win:Informational"  task="ViewActivatorNotifyBrokerActivateModernFailed" opcode="win:Info" keywords="ViewActivator" template="Args9511_0"/>
+        <event value="9513" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9514" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9515" version="0" level="win:Informational"  task="ViewManager" opcode="win:Info" keywords="ViewManager"/>
+        <event value="9600" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9601" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9602" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9603" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9604" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9605" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9606" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9607" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9608" version="0" level="win:Informational"  task="BasicViewAdapter" opcode="win:Info" keywords="BasicViewAdapter"/>
+        <event value="9700" version="0" level="win:Informational"  task="ClientViewCreatorCreate" opcode="win:Info" keywords="ClientViewCreator" template="Args9700_0"/>
+        <event value="9701" version="0" level="win:Informational"  task="ClientViewCreatorNotifyCreateViewCompleted" opcode="win:Info" keywords="ClientViewCreator"/>
+        <event value="9702" version="0" level="win:Informational"  task="ClientViewCreatorCreateFailed" opcode="win:Info" keywords="ClientViewCreator" template="Args9702_0"/>
+        <event value="9703" version="0" level="win:Informational"  task="BaseNavigationClient" opcode="Initialize" keywords="NavigationClient"/>
+        <event value="9704" version="0" level="win:Informational"  task="CoreNavigationClient" opcode="WindowVisiblePropertyChanged" keywords="NavigationClient" template="Args9704_0"/>
+        <event value="9705" version="0" level="win:Informational"  task="BaseNavigationClient" opcode="Activate" keywords="NavigationClient"/>
+        <event value="9706" version="0" level="win:Informational"  task="BaseNavigationClient" opcode="Deactivate" keywords="NavigationClient"/>
+        <event value="9707" version="0" level="win:Informational"  task="BaseNavigationClient" opcode="Close" keywords="NavigationClient"/>
+        <event value="9708" version="0" level="win:Informational"  task="CoreNavigationClient" opcode="UIAConnect" keywords="NavigationClient"/>
+        <event value="9709" version="0" level="win:Informational"  task="CoreNavigationClient" opcode="BoundsPropertyChanged" keywords="NavigationClient"/>
+        <event value="20000" version="0" level="win:Error"  task="ThrownException" opcode="win:Info" keywords="MessagingPerformance Proxy SelfHostError"/>
+        <event value="1535" version="1" level="win:Informational"  task="ServerTask" opcode="NSTNavigationTimeoutStarted" keywords="ServerTask NavigationPerformanceTriggers" template="Args1535_1"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Error" mask="0x1" message="$(string.string37)" />
+        <keyword name="Performance" mask="0x2" message="$(string.string198)" />
+        <keyword name="NavigationPerformance" mask="0x4" message="$(string.string137)" />
+        <keyword name="ForegroundTaskManager" mask="0x8" message="$(string.string55)" />
+        <keyword name="Server" mask="0x10" message="$(string.string229)" />
+        <keyword name="ServerSession" mask="0x20" message="$(string.string230)" />
+        <keyword name="SessionManager" mask="0x40" message="$(string.string275)" />
+        <keyword name="ServerTask" mask="0x80" message="$(string.string235)" />
+        <keyword name="ServerWindow" mask="0x100" message="$(string.string246)" />
+        <keyword name="WindowManager" mask="0x200" message="$(string.string302)" />
+        <keyword name="RotationManager" mask="0x400" message="$(string.string221)" />
+        <keyword name="PageNavigationController" mask="0x800" message="$(string.string197)" />
+        <keyword name="PageManagerContainer" mask="0x1000" message="$(string.string196)" />
+        <keyword name="PageManager" mask="0x2000" message="$(string.string195)" />
+        <keyword name="Page" mask="0x4000" message="$(string.string194)" />
+        <keyword name="ExecutionManagerClient" mask="0x8000" message="$(string.string38)" />
+        <keyword name="NavigationWindow" mask="0x10000" message="$(string.string141)" />
+        <keyword name="Task" mask="0x20000" message="$(string.string278)" />
+        <keyword name="PMEnumerationManager" mask="0x40000" message="$(string.string199)" />
+        <keyword name="TimeoutInfo" mask="0x100000" message="$(string.string280)" />
+        <keyword name="CoreUIService" mask="0x200000" message="$(string.string28)" />
+        <keyword name="NavigationPerformanceTriggers" mask="0x400000" message="$(string.string138)" />
+        <keyword name="BrokerSessionManager" mask="0x800000" message="$(string.string8)" />
+        <keyword name="NavigationClient" mask="0x1000000" message="$(string.string82)" />
+        <keyword name="SessionLayer" mask="0x2000000" message="$(string.string248)" />
+        <keyword name="ForegroundSessionLayer" mask="0x4000000" message="$(string.string49)" />
+        <keyword name="ViewManager" mask="0x10000000" message="$(string.string295)" />
+        <keyword name="ViewActivator" mask="0x20000000" message="$(string.string284)" />
+        <keyword name="BasicViewAdapter" mask="0x40000000" message="$(string.string5)" />
+        <keyword name="ClientViewCreator" mask="0x80000000" message="$(string.string18)" />
+        <keyword name="MessagingPerformance" mask="0x100000000" message="$(string.string77)" />
+        <keyword name="Proxy" mask="0x2000000000" message="$(string.string203)" />
+        <keyword name="SelfHostInfo" mask="0x40000000000" message="$(string.string228)" />
+        <keyword name="SelfHostError" mask="0x80000000000" message="$(string.string227)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="Init" message="$(string.string1)">
+        </task>
+        <task value="2" name="ForegroundTaskManager" message="$(string.string2)">
+        </task>
+        <task value="3" name="Server" message="$(string.string3)">
+        </task>
+        <task value="4" name="ServerSession" message="$(string.string4)">
+          <opcodes>
+           <opcode value="20" name="NSSReadyToShow" message="$(string.string170)"/>
+           <opcode value="21" name="NSSReadyToHide" message="$(string.string169)"/>
+           <opcode value="22" name="NSSActiveChanged" message="$(string.string146)"/>
+           <opcode value="23" name="NSSCreateView" message="$(string.string147)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="SessionManager" message="$(string.string5)">
+          <opcodes>
+           <opcode value="11" name="NSSMLaunchSessionRequest" message="$(string.string160)"/>
+           <opcode value="13" name="NSSMLaunchSessionResult" message="$(string.string161)"/>
+           <opcode value="14" name="NSSMConnectNavigationTask" message="$(string.string148)"/>
+           <opcode value="15" name="NSSMSystemKeyPressed" message="$(string.string167)"/>
+           <opcode value="16" name="NSSMEnterRestrictedMode" message="$(string.string155)"/>
+           <opcode value="17" name="NSSMExitRestrictedMode" message="$(string.string156)"/>
+           <opcode value="18" name="NSSMSetLockVisible" message="$(string.string164)"/>
+           <opcode value="19" name="NSSMSetDisplayObscured" message="$(string.string163)"/>
+           <opcode value="20" name="NSSMSetMonitorOn" message="$(string.string165)"/>
+           <opcode value="21" name="NSSMInitiateShutdown" message="$(string.string159)"/>
+           <opcode value="22" name="NSSMSetOverlayMaximized" message="$(string.string166)"/>
+           <opcode value="25" name="NSSMInitiateModernSessionActivationRequest" message="$(string.string157)"/>
+           <opcode value="26" name="NSSMInitiateModernSessionActivationResult" message="$(string.string158)"/>
+           <opcode value="27" name="NSSMDeferSessionLaunch" message="$(string.string153)"/>
+           <opcode value="28" name="NSSMDeferChildLaunch" message="$(string.string150)"/>
+           <opcode value="29" name="NSSMDeferModernSessionLaunch" message="$(string.string152)"/>
+           <opcode value="30" name="NSSMDeferModernChildLaunch" message="$(string.string151)"/>
+           <opcode value="31" name="NSSMDoDeferredLaunch" message="$(string.string154)"/>
+           <opcode value="32" name="NSSMOnDeferredLaunchTimerExpired" message="$(string.string162)"/>
+           <opcode value="33" name="NSSMUpdateLoadingScreenProperties" message="$(string.string168)"/>
+           <opcode value="34" name="NSSMCreateView" message="$(string.string149)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="ServerTask" message="$(string.string6)">
+          <opcodes>
+           <opcode value="12" name="NSTShowComplete" message="$(string.string183)"/>
+           <opcode value="13" name="NSTLaunchChildTask" message="$(string.string172)"/>
+           <opcode value="14" name="NSTProcessActivationData" message="$(string.string176)"/>
+           <opcode value="15" name="NSTReadyToNavigate" message="$(string.string177)"/>
+           <opcode value="16" name="NSTRequestNavigateBack" message="$(string.string179)"/>
+           <opcode value="17" name="NSTRequestClose" message="$(string.string178)"/>
+           <opcode value="18" name="NSTNavigationTimeoutStarted" message="$(string.string173)"/>
+           <opcode value="19" name="NSTNavigationTimeoutStopped" message="$(string.string174)"/>
+           <opcode value="20" name="NSTTaskStateIsActive" message="$(string.string184)"/>
+           <opcode value="21" name="NSTCreateView" message="$(string.string171)"/>
+           <opcode value="22" name="NSTSetRunning" message="$(string.string182)"/>
+           <opcode value="23" name="NSTSetIsExecManAware" message="$(string.string181)"/>
+           <opcode value="24" name="NSTSetCompleted" message="$(string.string180)"/>
+           <opcode value="25" name="NSTNavigationTimeoutStoppedTargetStateChange" message="$(string.string175)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="ServerWindow" message="$(string.string7)">
+        </task>
+        <task value="8" name="WindowManager" message="$(string.string8)">
+        </task>
+        <task value="9" name="RotationManager" message="$(string.string9)">
+          <opcodes>
+           <opcode value="11" name="RMSetTaskSupportedOrientations" message="$(string.string220)"/>
+           <opcode value="12" name="RMSetCurrentOrientation" message="$(string.string219)"/>
+          </opcodes>
+        </task>
+        <task value="10" name="PageNavigationController" message="$(string.string10)">
+        </task>
+        <task value="11" name="PageManagerContainer" message="$(string.string11)">
+        </task>
+        <task value="12" name="PageManager" message="$(string.string12)">
+          <opcodes>
+           <opcode value="11" name="PMOrientationChanged" message="$(string.string200)"/>
+           <opcode value="12" name="PMProcessActivationData" message="$(string.string201)"/>
+           <opcode value="13" name="PMSessionDisplayNameChanged" message="$(string.string202)"/>
+          </opcodes>
+        </task>
+        <task value="13" name="Page" message="$(string.string13)">
+        </task>
+        <task value="14" name="ExecutionManagerClient" message="$(string.string14)">
+        </task>
+        <task value="15" name="NavigationWindow" message="$(string.string15)">
+        </task>
+        <task value="16" name="Task" message="$(string.string16)">
+          <opcodes>
+           <opcode value="12" name="NTConnectionComplete" message="$(string.string185)"/>
+           <opcode value="13" name="NTReadyToNavigate" message="$(string.string192)"/>
+           <opcode value="15" name="NTNavigateTo" message="$(string.string190)"/>
+           <opcode value="16" name="NTNavigateToComplete" message="$(string.string191)"/>
+           <opcode value="17" name="NTSetSupportedOrientations" message="$(string.string193)"/>
+           <opcode value="18" name="NTLaunchSession" message="$(string.string188)"/>
+           <opcode value="19" name="NTLaunchSessionComplete" message="$(string.string189)"/>
+           <opcode value="20" name="NTLaunchChildTask" message="$(string.string186)"/>
+           <opcode value="21" name="NTLaunchChildTaskComplete" message="$(string.string187)"/>
+          </opcodes>
+        </task>
+        <task value="18" name="TimeoutInfo" message="$(string.string18)">
+        </task>
+        <task value="19" name="CoreUIService" message="$(string.string19)">
+        </task>
+        <task value="151" name="ProxyMaterializePushedProxy" message="$(string.string151)">
+        </task>
+        <task value="153" name="ProxyPushNewProxy" message="$(string.string153)">
+        </task>
+        <task value="154" name="ProxyConnectExistingProxy" message="$(string.string154)">
+        </task>
+        <task value="155" name="ProxyInitializeConnection" message="$(string.string155)">
+        </task>
+        <task value="156" name="ProxyMessageMethod" message="$(string.string156)">
+        </task>
+        <task value="157" name="ProxyMessageEvent" message="$(string.string157)">
+        </task>
+        <task value="158" name="ProxyPropertyUpdate" message="$(string.string158)">
+        </task>
+        <task value="159" name="ProxyPullProxy" message="$(string.string159)">
+        </task>
+        <task value="201" name="ExecutionManagerClientConstruct" message="$(string.string201)">
+        </task>
+        <task value="202" name="ExecutionManagerClientInit" message="$(string.string202)">
+        </task>
+        <task value="203" name="ExecutionManagerClientRequestEventCallback" message="$(string.string203)">
+        </task>
+        <task value="204" name="ExecutionManagerClientPauseComplete" message="$(string.string204)">
+        </task>
+        <task value="205" name="ExecutionManagerClientReportTaskRunning" message="$(string.string205)">
+        </task>
+        <task value="206" name="ExecutionManagerClientCompleteTask" message="$(string.string206)">
+        </task>
+        <task value="207" name="ExecutionManagerClientGetTaskURI" message="$(string.string207)">
+        </task>
+        <task value="208" name="ExecutionManagerClientGetTaskName" message="$(string.string208)">
+        </task>
+        <task value="209" name="ExecutionManagerClientGetDestinationPageName" message="$(string.string209)">
+        </task>
+        <task value="210" name="ExecutionManagerClientIsChildTask" message="$(string.string210)">
+        </task>
+        <task value="211" name="ForegroundTaskManagerLaunchTask" message="$(string.string211)">
+        </task>
+        <task value="212" name="ForegroundTaskManagerResolveTaskHandler" message="$(string.string212)">
+        </task>
+        <task value="213" name="ForegroundTaskManagerGetActivationPolicy" message="$(string.string213)">
+        </task>
+        <task value="214" name="ForegroundTaskManagerResumeTask" message="$(string.string214)">
+        </task>
+        <task value="215" name="ForegroundTaskManagerPauseTask" message="$(string.string215)">
+        </task>
+        <task value="216" name="ForegroundTaskManagerCancelTask" message="$(string.string216)">
+        </task>
+        <task value="217" name="ForegroundTaskManagerAbortTask" message="$(string.string217)">
+        </task>
+        <task value="219" name="ForegroundTaskManagerGetApplicationDisplayName" message="$(string.string219)">
+        </task>
+        <task value="220" name="ForegroundTaskManagerShutdown" message="$(string.string220)">
+        </task>
+        <task value="221" name="ForegroundTaskManagerIsTaskBeingDebugged" message="$(string.string221)">
+        </task>
+        <task value="225" name="ForegroundTaskManagerActivationPrerequisitePhase" message="$(string.string225)">
+        </task>
+        <task value="226" name="ForegroundTaskManagerIsValidTaskPid" message="$(string.string226)">
+        </task>
+        <task value="227" name="ForegroundTaskManagerResumePrerequisitePhase" message="$(string.string227)">
+        </task>
+        <task value="228" name="ForegroundTaskManagerGetApplicationDefaultFullScreenValue" message="$(string.string228)">
+        </task>
+        <task value="229" name="ForegroundTaskManagerGetTaskDefaultTransition" message="$(string.string229)">
+        </task>
+        <task value="230" name="ForegroundTaskManagerUserLogoff" message="$(string.string230)">
+        </task>
+        <task value="231" name="ServerTaskCreate" message="$(string.string231)">
+        </task>
+        <task value="232" name="ServerTaskProcessNextStep" message="$(string.string232)">
+        </task>
+        <task value="233" name="ServerTaskNavigateTo" message="$(string.string233)">
+        </task>
+        <task value="234" name="ServerTaskNavigateAway" message="$(string.string234)">
+        </task>
+        <task value="235" name="ServerTaskHide" message="$(string.string235)">
+        </task>
+        <task value="236" name="ServerTaskShow" message="$(string.string236)">
+        </task>
+        <task value="237" name="ServerTaskInitiateModernActivation" message="$(string.string237)">
+        </task>
+        <task value="238" name="ServerTaskShowVisibleTask" message="$(string.string238)">
+        </task>
+        <task value="239" name="ServerTaskActivate" message="$(string.string239)">
+        </task>
+        <task value="240" name="ServerTaskDeactivate" message="$(string.string240)">
+        </task>
+        <task value="241" name="NavigationTaskConstruct" message="$(string.string241)">
+        </task>
+        <task value="251" name="NavigationServerWindowConstruct" message="$(string.string251)">
+        </task>
+        <task value="261" name="NavigationWindowInitialize" message="$(string.string261)">
+        </task>
+        <task value="262" name="NavigationWindowConstruct" message="$(string.string262)">
+        </task>
+        <task value="263" name="NavigationWindowPullProxy" message="$(string.string263)">
+        </task>
+        <task value="264" name="NavigationWindowRegister" message="$(string.string264)">
+        </task>
+        <task value="271" name="ServerSessionCreate" message="$(string.string271)">
+        </task>
+        <task value="272" name="ServerSessionInitiateModernActivation" message="$(string.string272)">
+        </task>
+        <task value="273" name="ServerSessionLaunchChildTask" message="$(string.string273)">
+        </task>
+        <task value="274" name="ServerSessionLaunchModernChildTask" message="$(string.string274)">
+        </task>
+        <task value="281" name="RotationManagerStartOrientationService" message="$(string.string281)">
+        </task>
+        <task value="282" name="RotationManagerStopOrientationService" message="$(string.string282)">
+        </task>
+        <task value="283" name="RotationManagerInitializeOrientationService" message="$(string.string283)">
+        </task>
+        <task value="284" name="RotationManagerUninitializeOrientationService" message="$(string.string284)">
+        </task>
+        <task value="291" name="RotationManagerComputeDesiredOrientation" message="$(string.string291)">
+        </task>
+        <task value="401" name="BrokerSessionManagerInitiateModernActivation" message="$(string.string401)">
+        </task>
+        <task value="402" name="BrokerSessionManagerGetPendingTaskInstanceId" message="$(string.string402)">
+        </task>
+        <task value="403" name="BrokerSessionManagerDoPendingInitiateModernActivation" message="$(string.string403)">
+        </task>
+        <task value="404" name="BrokerSessionManagerNotifyInitiateModernActivationCompleted" message="$(string.string404)">
+        </task>
+        <task value="405" name="BrokerSessionManagerDoPendingInitiateModernActivationSessionLaunch" message="$(string.string405)">
+        </task>
+        <task value="501" name="NavigationClientRuntimeClassInitialize" message="$(string.string501)">
+        </task>
+        <task value="502" name="NavigationClientInitialize" message="$(string.string502)">
+        </task>
+        <task value="503" name="NavigationClientCreateNavigationWindow" message="$(string.string503)">
+        </task>
+        <task value="504" name="NavigationClientRegistrationComplete" message="$(string.string504)">
+        </task>
+        <task value="505" name="NavigationClientCreateNavigationTask" message="$(string.string505)">
+        </task>
+        <task value="506" name="NavigationClientConnectionComplete" message="$(string.string506)">
+        </task>
+        <task value="507" name="NavigationClientOnActivateWindow" message="$(string.string507)">
+        </task>
+        <task value="508" name="NavigationClientNavigateTo" message="$(string.string508)">
+        </task>
+        <task value="509" name="NavigationClientWindowVisibilityChanged" message="$(string.string509)">
+        </task>
+        <task value="510" name="NavigationClientShow" message="$(string.string510)">
+        </task>
+        <task value="511" name="NavigationClientIsReadyToActivateWindow" message="$(string.string511)">
+        </task>
+        <task value="512" name="NavigationClientIsReadyToActivate" message="$(string.string512)">
+        </task>
+        <task value="513" name="NavigationClientIsReadyToNavigateAway" message="$(string.string513)">
+        </task>
+        <task value="514" name="NavigationClientOnActivated" message="$(string.string514)">
+        </task>
+        <task value="515" name="NavigationClientOnDeactivated" message="$(string.string515)">
+        </task>
+        <task value="516" name="NavigationClientOnShellHookMessage" message="$(string.string516)">
+        </task>
+        <task value="517" name="NavigationClientConnectToShell" message="$(string.string517)">
+        </task>
+        <task value="518" name="NavigationClientDisconnectFromShell" message="$(string.string518)">
+        </task>
+        <task value="519" name="NavigationClientConnectToDisplayProperties" message="$(string.string519)">
+        </task>
+        <task value="520" name="NavigationClientDisconnectFromDisplayProperties" message="$(string.string520)">
+        </task>
+        <task value="521" name="NavigationClientRunMessageSession" message="$(string.string521)">
+        </task>
+        <task value="522" name="NavigationClientExitMessageSession" message="$(string.string522)">
+        </task>
+        <task value="523" name="NavigationClientHide" message="$(string.string523)">
+        </task>
+        <task value="524" name="NavigationClientNavigateAway" message="$(string.string524)">
+        </task>
+        <task value="525" name="NavigationClientClose" message="$(string.string525)">
+        </task>
+        <task value="526" name="NavigationClientSystemKeyPressed" message="$(string.string526)">
+        </task>
+        <task value="527" name="NavigationClientUninitialize" message="$(string.string527)">
+        </task>
+        <task value="528" name="NavigationClientPropertyChanged" message="$(string.string528)">
+        </task>
+        <task value="529" name="NavigationClientStateChange" message="$(string.string529)">
+        </task>
+        <task value="530" name="NavigationClientOnShowAnimationComplete" message="$(string.string530)">
+        </task>
+        <task value="532" name="NavigationClientWMViewStateChanged" message="$(string.string532)">
+        </task>
+        <task value="533" name="NavigationClientOnVisibilityChanged" message="$(string.string533)">
+        </task>
+        <task value="534" name="NavigationClientOnObscurityChange" message="$(string.string534)">
+        </task>
+        <task value="535" name="NavigationClientUpdateWindowActivationState" message="$(string.string535)">
+        </task>
+        <task value="536" name="NavigationClientOnSipVisibilityChange" message="$(string.string536)">
+        </task>
+        <task value="537" name="NavigationClientActivate" message="$(string.string537)">
+        </task>
+        <task value="538" name="NavigationClientDeactivate" message="$(string.string538)">
+        </task>
+        <task value="539" name="NavigationClientPostConsolidated" message="$(string.string539)">
+        </task>
+        <task value="540" name="NavigationClientPresentationLoadingRaised" message="$(string.string540)">
+        </task>
+        <task value="541" name="NavigationClientPresentationLoadingComplete" message="$(string.string541)">
+        </task>
+        <task value="542" name="NavigationClientPresentationUnloadingRaised" message="$(string.string542)">
+        </task>
+        <task value="543" name="NavigationClientPresentationUnloadingComplete" message="$(string.string543)">
+        </task>
+        <task value="544" name="NavigationClientNavigateAwayCompleteFailed" message="$(string.string544)">
+        </task>
+        <task value="545" name="NavigationClientCloseRequested" message="$(string.string545)">
+        </task>
+        <task value="546" name="NavigationClientCloseRequestHandled" message="$(string.string546)">
+        </task>
+        <task value="547" name="NavigationClientSetCanHandleCloseRequest" message="$(string.string547)">
+        </task>
+        <task value="548" name="NavigationClientTryShowAsStandaloneViewOperationComplete" message="$(string.string548)">
+        </task>
+        <task value="549" name="NavigationClientShowAsStandaloneViewOperationComplete" message="$(string.string549)">
+        </task>
+        <task value="550" name="NavigationClientSwitchViewOperationComplete" message="$(string.string550)">
+        </task>
+        <task value="551" name="NavigationClientTryShowAsViewModeOperationComplete" message="$(string.string551)">
+        </task>
+        <task value="552" name="NavigationClientOnOcclusionChanged" message="$(string.string552)">
+        </task>
+        <task value="553" name="NavigationClientRequestActivateView" message="$(string.string553)">
+        </task>
+        <task value="554" name="NavigationClientActivateViewComplete" message="$(string.string554)">
+        </task>
+        <task value="555" name="NavigationClientSetPreferredScale" message="$(string.string555)">
+        </task>
+        <task value="601" name="SessionLayerSetVisibleSession" message="$(string.string601)">
+        </task>
+        <task value="602" name="SessionLayerSetCurrentSession" message="$(string.string602)">
+        </task>
+        <task value="603" name="SessionLayerSetVisibleTask" message="$(string.string603)">
+        </task>
+        <task value="604" name="SessionLayerSetCurrentTask" message="$(string.string604)">
+        </task>
+        <task value="605" name="SessionLayerSetVisibleWindow" message="$(string.string605)">
+        </task>
+        <task value="606" name="SessionLayerSetCurrentWindow" message="$(string.string606)">
+        </task>
+        <task value="607" name="SessionLayerSetActivationLevel" message="$(string.string607)">
+        </task>
+        <task value="608" name="SessionLayerNotifyReadyToShow" message="$(string.string608)">
+        </task>
+        <task value="609" name="SessionLayerNotifyReadyToHide" message="$(string.string609)">
+        </task>
+        <task value="610" name="SessionLayerNavigateToTopSession" message="$(string.string610)">
+        </task>
+        <task value="611" name="SessionLayerNavigateToSessionInternal" message="$(string.string611)">
+        </task>
+        <task value="612" name="SessionLayerEnterRestrictedMode" message="$(string.string612)">
+        </task>
+        <task value="613" name="SessionLayerExitRestrictedMode" message="$(string.string613)">
+        </task>
+        <task value="614" name="SessionLayerSetActiveSession" message="$(string.string614)">
+        </task>
+        <task value="615" name="SessionLayerSetActiveTask" message="$(string.string615)">
+        </task>
+        <task value="616" name="SessionLayerSetActiveWindow" message="$(string.string616)">
+        </task>
+        <task value="617" name="SessionLayerNotifyActiveChanged" message="$(string.string617)">
+        </task>
+        <task value="618" name="SessionLayerNavigateToTaskInternal" message="$(string.string618)">
+        </task>
+        <task value="619" name="SessionLayerCloseReplaceActivationPolicyViewBeforeReLaunch" message="$(string.string619)">
+        </task>
+        <task value="620" name="SessionLayerUpdateCurrentSession" message="$(string.string620)">
+        </task>
+        <task value="621" name="SessionLayerUpdateCurrentTask" message="$(string.string621)">
+        </task>
+        <task value="622" name="SessionLayerUpdateVisibleSession" message="$(string.string622)">
+        </task>
+        <task value="623" name="SessionLayerUpdateVisibleTask" message="$(string.string623)">
+        </task>
+        <task value="624" name="SessionLayerQueueResumeModernApplication" message="$(string.string624)">
+        </task>
+        <task value="625" name="SessionLayerDoDeferredResumeModernApplication" message="$(string.string625)">
+        </task>
+        <task value="626" name="SessionLayerNavigateToView" message="$(string.string626)">
+        </task>
+        <task value="680" name="ForegroundSessionLayerSetVisibleTask" message="$(string.string680)">
+        </task>
+        <task value="681" name="ForegroundSessionLayerHideVisibleTask" message="$(string.string681)">
+        </task>
+        <task value="682" name="ForegroundSessionLayerShowVisibleTask" message="$(string.string682)">
+        </task>
+        <task value="683" name="ForegroundSessionLayerIdleCurrentSession" message="$(string.string683)">
+        </task>
+        <task value="684" name="ForegroundSessionLayerUpdateVisibleTask" message="$(string.string684)">
+        </task>
+        <task value="700" name="ViewManager" message="$(string.string700)">
+          <opcodes>
+           <opcode value="11" name="NavigateToView" message="$(string.string80)"/>
+           <opcode value="12" name="BeginPresentView" message="$(string.string6)"/>
+           <opcode value="13" name="EndPresentView" message="$(string.string36)"/>
+           <opcode value="14" name="InitiateShutdown" message="$(string.string75)"/>
+           <opcode value="15" name="CancelShutdown" message="$(string.string14)"/>
+           <opcode value="16" name="Constructed" message="$(string.string26)"/>
+           <opcode value="17" name="Disposed" message="$(string.string35)"/>
+           <opcode value="18" name="ViewAdded" message="$(string.string294)"/>
+           <opcode value="19" name="ViewRemoved" message="$(string.string296)"/>
+           <opcode value="20" name="ActiveViewChanged" message="$(string.string1)"/>
+           <opcode value="21" name="ActiveWindowChanged" message="$(string.string2)"/>
+           <opcode value="22" name="VisibleViewAdded" message="$(string.string297)"/>
+           <opcode value="23" name="VisibleViewRemoved" message="$(string.string298)"/>
+           <opcode value="24" name="CurrentViewAdded" message="$(string.string32)"/>
+           <opcode value="25" name="CurrentViewRemoved" message="$(string.string33)"/>
+           <opcode value="26" name="RequestNavigateToView" message="$(string.string216)"/>
+           <opcode value="27" name="RequestBeginPresentView" message="$(string.string214)"/>
+           <opcode value="28" name="RequestEndPresentView" message="$(string.string215)"/>
+           <opcode value="29" name="SystemKeyPressed" message="$(string.string276)"/>
+           <opcode value="30" name="SystemKeyPressedComplete" message="$(string.string277)"/>
+           <opcode value="31" name="NavigateAwayFromView" message="$(string.string79)"/>
+           <opcode value="32" name="ChangeVisibleWindow" message="$(string.string17)"/>
+           <opcode value="33" name="ChangeActiveWindow" message="$(string.string15)"/>
+           <opcode value="34" name="CreateServerWindow" message="$(string.string30)"/>
+           <opcode value="35" name="CloseServerWindow" message="$(string.string25)"/>
+           <opcode value="36" name="AddWindowToView" message="$(string.string3)"/>
+           <opcode value="37" name="RemoveWindowFromView" message="$(string.string212)"/>
+           <opcode value="38" name="ServerWindowCreated" message="$(string.string247)"/>
+           <opcode value="39" name="CreateView" message="$(string.string31)"/>
+           <opcode value="40" name="CreateServerTask" message="$(string.string29)"/>
+           <opcode value="41" name="ResumeAndNavigateToView" message="$(string.string218)"/>
+           <opcode value="42" name="ReplaceAndNavigateToView" message="$(string.string213)"/>
+           <opcode value="43" name="InitiateUserLogoff" message="$(string.string76)"/>
+           <opcode value="44" name="UserLogoffComplete" message="$(string.string282)"/>
+           <opcode value="45" name="ValidateViewLimit" message="$(string.string283)"/>
+           <opcode value="46" name="ChangeProcessId" message="$(string.string16)"/>
+           <opcode value="47" name="NavigateToViewFailed" message="$(string.string81)"/>
+           <opcode value="48" name="RequestShowStandardSystemOverlays" message="$(string.string217)"/>
+           <opcode value="49" name="CloseRequested" message="$(string.string23)"/>
+           <opcode value="50" name="CloseRequestedComplete" message="$(string.string24)"/>
+          </opcodes>
+        </task>
+        <task value="701" name="ViewActivatorBrokerActivateModern" message="$(string.string701)">
+        </task>
+        <task value="702" name="ViewActivatorBrokerActivateLegacy" message="$(string.string702)">
+        </task>
+        <task value="703" name="ViewActivatorShellActivateLegacy" message="$(string.string703)">
+        </task>
+        <task value="704" name="ViewActivatorNotifyBrokerActivateModernCompleted" message="$(string.string704)">
+        </task>
+        <task value="705" name="ViewActivatorGetPendingTaskInstanceId" message="$(string.string705)">
+        </task>
+        <task value="706" name="ViewActivatorDoPendingInitiateModernActivation" message="$(string.string706)">
+        </task>
+        <task value="708" name="BasicViewAdapter" message="$(string.string708)">
+        </task>
+        <task value="709" name="ViewActivatorShouldWaitForCloseCompletion" message="$(string.string709)">
+        </task>
+        <task value="710" name="ViewActivatorAddActivationDataToActivationMap" message="$(string.string710)">
+        </task>
+        <task value="711" name="ViewActivatorNotifyBrokerActivateModernFailed" message="$(string.string711)">
+        </task>
+        <task value="801" name="ClientViewCreatorCreate" message="$(string.string801)">
+        </task>
+        <task value="802" name="ClientViewCreatorNotifyCreateViewCompleted" message="$(string.string802)">
+        </task>
+        <task value="803" name="ClientViewCreatorCreateFailed" message="$(string.string803)">
+        </task>
+        <task value="804" name="CoreNavigationClient" message="$(string.string804)">
+          <opcodes>
+           <opcode value="11" name="WindowVisiblePropertyChanged" message="$(string.string303)"/>
+           <opcode value="12" name="UIAConnect" message="$(string.string281)"/>
+           <opcode value="13" name="BoundsPropertyChanged" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="805" name="ForegroundTaskManagerRequestResourceSet" message="$(string.string805)">
+        </task>
+        <task value="806" name="BaseNavigationClient" message="$(string.string806)">
+          <opcodes>
+           <opcode value="11" name="Initialize" message="$(string.string74)"/>
+           <opcode value="12" name="Activate" message="$(string.string0)"/>
+           <opcode value="13" name="Deactivate" message="$(string.string34)"/>
+           <opcode value="14" name="Close" message="$(string.string22)"/>
+          </opcodes>
+        </task>
+        <task value="1024" name="ThrownException" message="$(string.string1024)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args1000_0">
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1200_0">
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1201_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="navigationError" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1203_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="navigationError" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1207_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1214_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1215_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1225_0">
+          <data name="ActivationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1234_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="TaskCancellationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1241_0">
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="navigationError" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1245_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1247_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1248_0">
+          <data name="unParam" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1250_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="taskDehydrationEligibility" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1251_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1258_0">
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="navigationError" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1260_0">
+          <data name="animtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1262_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="taskProperty" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1264_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskRunningOptions" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1269_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TaskInstanceState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hresult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args1304_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1311_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1313_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1314_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1315_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1316_0">
+          <data name="unParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1405_0">
+          <data name="SystemKey" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1417_0">
+          <data name="status" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1421_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool1" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1422_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SessionManagerType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1424_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1428_0">
+          <data name="SystemKey" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActivationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1432_0">
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1450_0">
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1453_0">
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Param" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1459_0">
+          <data name="LaunchType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1465_0">
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1477_0">
+          <data name="Importance" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PriorityCloseInitiated" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1505_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1509_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bool1" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="bool2" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1512_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemKey" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1521_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1522_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="reason1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="reason2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1525_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animflags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1530_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState3" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1532_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ActivationPolicy" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1536_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NavigationTimeoutEventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1537_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NavigationTimeoutEventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeoutModifierType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool3" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool4" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1544_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam3" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1552_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool3" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool4" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool5" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pwsz1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1553_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool1" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool3" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool4" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool5" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1558_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1565_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fBool1" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool3" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1566_0">
+          <data name="unParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam7" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="unParam8" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1576_0">
+          <data name="unParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:Int32" outType="xs:int"  />
+          <data name="unParam3" inType="win:Int32" outType="xs:int"  />
+          <data name="unParam4" inType="win:Int32" outType="xs:int"  />
+          <data name="unParam5" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1580_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="unParam3" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1589_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam2" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args1802_0">
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hex2" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1817_0">
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hex2" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hex3" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hex4" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="hex5" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args1907_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1909_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animflags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2103_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animflags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2110_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PMS" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PMS2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2111_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PMSS" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PMSS2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2116_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PMES" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PMES2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2202_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2208_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemKey" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="bool1" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2209_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NavigationTimeoutEventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2302_0">
+          <data name="ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="EMCRET" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2304_0">
+          <data name="ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args2404_0">
+          <data name="ptr" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args2800_0">
+          <data name="fBool1" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool3" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Param" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args2804_0">
+          <data name="Param" inType="win:Int32" outType="xs:int"  />
+          <data name="Param2" inType="win:Int32" outType="xs:int"  />
+          <data name="Param3" inType="win:Int32" outType="xs:int"  />
+          <data name="Param4" inType="win:Int32" outType="xs:int"  />
+          <data name="Param5" inType="win:Int32" outType="xs:int"  />
+          <data name="Param6" inType="win:Int32" outType="xs:int"  />
+          <data name="Param7" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args2900_0">
+          <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args5005_0">
+          <data name="hex" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args6000_0">
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args7042_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="newstate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="oldstate" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7048_0">
+          <data name="CurrentState" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NewSipVisibilityValue" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SipHeight" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="NavClientState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7063_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam4" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args7064_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Occlusion" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8002_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam5" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args8004_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam4" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam5" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam6" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam7" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8006_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="activationLevel1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="activationLevel2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8010_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8017_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8022_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args8023_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="currentState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="targetState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="direction" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="firstActivation" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args8101_0">
+          <data name="appLayer" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="dir" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animtype" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="animflags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9002_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ViewNavigationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AnimationDirection" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AnimationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args9015_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam4" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="unParam5" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args9019_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SystemKey" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args9025_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args9029_0">
+          <data name="pwsz1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ViewActivationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9030_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ViewNavigationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AnimationDirection" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AnimationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="fBool2" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args9035_0">
+          <data name="Param" inType="win:Int32" outType="xs:int"  />
+          <data name="Param2" inType="win:Int32" outType="xs:int"  />
+          <data name="navigationError" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9041_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ViewNavigationLevel" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hresult" inType="win:Int32" outType="win:HResult"  />
+        </template>
+        <template tid="Args9500_0">
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ViewActivationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="un64Param" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="un64Param2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="un64Param3" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="un64Param4" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args9501_0">
+          <data name="unParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="unParam3" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args9502_0">
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ViewActivationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9504_0">
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AnimationType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AnimationType2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9506_0">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args9511_0">
+          <data name="fBool" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="unParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args9700_0">
+          <data name="hex" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ViewActivationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz4" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args9702_0">
+          <data name="hex1" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="pwsz3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ViewActivationFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="pwsz8" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="hex2" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args9704_0">
+          <data name="unParam1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="unParam4" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args1535_1">
+          <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NavigationTimeoutEventType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TimeoutModifierType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Param" inType="win:Int32" outType="xs:int"  />
+          <data name="ServerTaskState1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ServerTaskState2" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsModernApplication" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ApplicationId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Activate" />
+       <string id="string1" value="ActiveViewChanged" />
+       <string id="string2" value="ActiveWindowChanged" />
+       <string id="string3" value="AddWindowToView" />
+       <string id="string4" value="BaseNavigationClient" />
+       <string id="string5" value="BasicViewAdapter" />
+       <string id="string6" value="BeginPresentView" />
+       <string id="string7" value="BoundsPropertyChanged" />
+       <string id="string8" value="BrokerSessionManager" />
+       <string id="string9" value="BrokerSessionManagerDoPendingInitiateModernActivation" />
+       <string id="string10" value="BrokerSessionManagerDoPendingInitiateModernActivationSessionLaunch" />
+       <string id="string11" value="BrokerSessionManagerGetPendingTaskInstanceId" />
+       <string id="string12" value="BrokerSessionManagerInitiateModernActivation" />
+       <string id="string13" value="BrokerSessionManagerNotifyInitiateModernActivationCompleted" />
+       <string id="string14" value="CancelShutdown" />
+       <string id="string15" value="ChangeActiveWindow" />
+       <string id="string16" value="ChangeProcessId" />
+       <string id="string17" value="ChangeVisibleWindow" />
+       <string id="string18" value="ClientViewCreator" />
+       <string id="string19" value="ClientViewCreatorCreate" />
+       <string id="string20" value="ClientViewCreatorCreateFailed" />
+       <string id="string21" value="ClientViewCreatorNotifyCreateViewCompleted" />
+       <string id="string22" value="Close" />
+       <string id="string23" value="CloseRequested" />
+       <string id="string24" value="CloseRequestedComplete" />
+       <string id="string25" value="CloseServerWindow" />
+       <string id="string26" value="Constructed" />
+       <string id="string27" value="CoreNavigationClient" />
+       <string id="string28" value="CoreUIService" />
+       <string id="string29" value="CreateServerTask" />
+       <string id="string30" value="CreateServerWindow" />
+       <string id="string31" value="CreateView" />
+       <string id="string32" value="CurrentViewAdded" />
+       <string id="string33" value="CurrentViewRemoved" />
+       <string id="string34" value="Deactivate" />
+       <string id="string35" value="Disposed" />
+       <string id="string36" value="EndPresentView" />
+       <string id="string37" value="Error" />
+       <string id="string38" value="ExecutionManagerClient" />
+       <string id="string39" value="ExecutionManagerClientCompleteTask" />
+       <string id="string40" value="ExecutionManagerClientConstruct" />
+       <string id="string41" value="ExecutionManagerClientGetDestinationPageName" />
+       <string id="string42" value="ExecutionManagerClientGetTaskName" />
+       <string id="string43" value="ExecutionManagerClientGetTaskURI" />
+       <string id="string44" value="ExecutionManagerClientInit" />
+       <string id="string45" value="ExecutionManagerClientIsChildTask" />
+       <string id="string46" value="ExecutionManagerClientPauseComplete" />
+       <string id="string47" value="ExecutionManagerClientReportTaskRunning" />
+       <string id="string48" value="ExecutionManagerClientRequestEventCallback" />
+       <string id="string49" value="ForegroundSessionLayer" />
+       <string id="string50" value="ForegroundSessionLayerHideVisibleTask" />
+       <string id="string51" value="ForegroundSessionLayerIdleCurrentSession" />
+       <string id="string52" value="ForegroundSessionLayerSetVisibleTask" />
+       <string id="string53" value="ForegroundSessionLayerShowVisibleTask" />
+       <string id="string54" value="ForegroundSessionLayerUpdateVisibleTask" />
+       <string id="string55" value="ForegroundTaskManager" />
+       <string id="string56" value="ForegroundTaskManagerAbortTask" />
+       <string id="string57" value="ForegroundTaskManagerActivationPrerequisitePhase" />
+       <string id="string58" value="ForegroundTaskManagerCancelTask" />
+       <string id="string59" value="ForegroundTaskManagerGetActivationPolicy" />
+       <string id="string60" value="ForegroundTaskManagerGetApplicationDefaultFullScreenValue" />
+       <string id="string61" value="ForegroundTaskManagerGetApplicationDisplayName" />
+       <string id="string62" value="ForegroundTaskManagerGetTaskDefaultTransition" />
+       <string id="string63" value="ForegroundTaskManagerIsTaskBeingDebugged" />
+       <string id="string64" value="ForegroundTaskManagerIsValidTaskPid" />
+       <string id="string65" value="ForegroundTaskManagerLaunchTask" />
+       <string id="string66" value="ForegroundTaskManagerPauseTask" />
+       <string id="string67" value="ForegroundTaskManagerRequestResourceSet" />
+       <string id="string68" value="ForegroundTaskManagerResolveTaskHandler" />
+       <string id="string69" value="ForegroundTaskManagerResumePrerequisitePhase" />
+       <string id="string70" value="ForegroundTaskManagerResumeTask" />
+       <string id="string71" value="ForegroundTaskManagerShutdown" />
+       <string id="string72" value="ForegroundTaskManagerUserLogoff" />
+       <string id="string73" value="Init" />
+       <string id="string74" value="Initialize" />
+       <string id="string75" value="InitiateShutdown" />
+       <string id="string76" value="InitiateUserLogoff" />
+       <string id="string77" value="MessagingPerformance" />
+       <string id="string78" value="Microsoft-WindowsPhone-CoreUIComponents" />
+       <string id="string79" value="NavigateAwayFromView" />
+       <string id="string80" value="NavigateToView" />
+       <string id="string81" value="NavigateToViewFailed" />
+       <string id="string82" value="NavigationClient" />
+       <string id="string83" value="NavigationClientActivate" />
+       <string id="string84" value="NavigationClientActivateViewComplete" />
+       <string id="string85" value="NavigationClientClose" />
+       <string id="string86" value="NavigationClientCloseRequested" />
+       <string id="string87" value="NavigationClientCloseRequestHandled" />
+       <string id="string88" value="NavigationClientConnectionComplete" />
+       <string id="string89" value="NavigationClientConnectToDisplayProperties" />
+       <string id="string90" value="NavigationClientConnectToShell" />
+       <string id="string91" value="NavigationClientCreateNavigationTask" />
+       <string id="string92" value="NavigationClientCreateNavigationWindow" />
+       <string id="string93" value="NavigationClientDeactivate" />
+       <string id="string94" value="NavigationClientDisconnectFromDisplayProperties" />
+       <string id="string95" value="NavigationClientDisconnectFromShell" />
+       <string id="string96" value="NavigationClientExitMessageSession" />
+       <string id="string97" value="NavigationClientHide" />
+       <string id="string98" value="NavigationClientInitialize" />
+       <string id="string99" value="NavigationClientIsReadyToActivate" />
+       <string id="string100" value="NavigationClientIsReadyToActivateWindow" />
+       <string id="string101" value="NavigationClientIsReadyToNavigateAway" />
+       <string id="string102" value="NavigationClientNavigateAway" />
+       <string id="string103" value="NavigationClientNavigateAwayCompleteFailed" />
+       <string id="string104" value="NavigationClientNavigateTo" />
+       <string id="string105" value="NavigationClientOnActivated" />
+       <string id="string106" value="NavigationClientOnActivateWindow" />
+       <string id="string107" value="NavigationClientOnDeactivated" />
+       <string id="string108" value="NavigationClientOnObscurityChange" />
+       <string id="string109" value="NavigationClientOnOcclusionChanged" />
+       <string id="string110" value="NavigationClientOnShellHookMessage" />
+       <string id="string111" value="NavigationClientOnShowAnimationComplete" />
+       <string id="string112" value="NavigationClientOnSipVisibilityChange" />
+       <string id="string113" value="NavigationClientOnVisibilityChanged" />
+       <string id="string114" value="NavigationClientPostConsolidated" />
+       <string id="string115" value="NavigationClientPresentationLoadingComplete" />
+       <string id="string116" value="NavigationClientPresentationLoadingRaised" />
+       <string id="string117" value="NavigationClientPresentationUnloadingComplete" />
+       <string id="string118" value="NavigationClientPresentationUnloadingRaised" />
+       <string id="string119" value="NavigationClientPropertyChanged" />
+       <string id="string120" value="NavigationClientRegistrationComplete" />
+       <string id="string121" value="NavigationClientRequestActivateView" />
+       <string id="string122" value="NavigationClientRunMessageSession" />
+       <string id="string123" value="NavigationClientRuntimeClassInitialize" />
+       <string id="string124" value="NavigationClientSetCanHandleCloseRequest" />
+       <string id="string125" value="NavigationClientSetPreferredScale" />
+       <string id="string126" value="NavigationClientShow" />
+       <string id="string127" value="NavigationClientShowAsStandaloneViewOperationComplete" />
+       <string id="string128" value="NavigationClientStateChange" />
+       <string id="string129" value="NavigationClientSwitchViewOperationComplete" />
+       <string id="string130" value="NavigationClientSystemKeyPressed" />
+       <string id="string131" value="NavigationClientTryShowAsStandaloneViewOperationComplete" />
+       <string id="string132" value="NavigationClientTryShowAsViewModeOperationComplete" />
+       <string id="string133" value="NavigationClientUninitialize" />
+       <string id="string134" value="NavigationClientUpdateWindowActivationState" />
+       <string id="string135" value="NavigationClientWindowVisibilityChanged" />
+       <string id="string136" value="NavigationClientWMViewStateChanged" />
+       <string id="string137" value="NavigationPerformance" />
+       <string id="string138" value="NavigationPerformanceTriggers" />
+       <string id="string139" value="NavigationServerWindowConstruct" />
+       <string id="string140" value="NavigationTaskConstruct" />
+       <string id="string141" value="NavigationWindow" />
+       <string id="string142" value="NavigationWindowConstruct" />
+       <string id="string143" value="NavigationWindowInitialize" />
+       <string id="string144" value="NavigationWindowPullProxy" />
+       <string id="string145" value="NavigationWindowRegister" />
+       <string id="string146" value="NSSActiveChanged" />
+       <string id="string147" value="NSSCreateView" />
+       <string id="string148" value="NSSMConnectNavigationTask" />
+       <string id="string149" value="NSSMCreateView" />
+       <string id="string150" value="NSSMDeferChildLaunch" />
+       <string id="string151" value="NSSMDeferModernChildLaunch" />
+       <string id="string152" value="NSSMDeferModernSessionLaunch" />
+       <string id="string153" value="NSSMDeferSessionLaunch" />
+       <string id="string154" value="NSSMDoDeferredLaunch" />
+       <string id="string155" value="NSSMEnterRestrictedMode" />
+       <string id="string156" value="NSSMExitRestrictedMode" />
+       <string id="string157" value="NSSMInitiateModernSessionActivationRequest" />
+       <string id="string158" value="NSSMInitiateModernSessionActivationResult" />
+       <string id="string159" value="NSSMInitiateShutdown" />
+       <string id="string160" value="NSSMLaunchSessionRequest" />
+       <string id="string161" value="NSSMLaunchSessionResult" />
+       <string id="string162" value="NSSMOnDeferredLaunchTimerExpired" />
+       <string id="string163" value="NSSMSetDisplayObscured" />
+       <string id="string164" value="NSSMSetLockVisible" />
+       <string id="string165" value="NSSMSetMonitorOn" />
+       <string id="string166" value="NSSMSetOverlayMaximized" />
+       <string id="string167" value="NSSMSystemKeyPressed" />
+       <string id="string168" value="NSSMUpdateLoadingScreenProperties" />
+       <string id="string169" value="NSSReadyToHide" />
+       <string id="string170" value="NSSReadyToShow" />
+       <string id="string171" value="NSTCreateView" />
+       <string id="string172" value="NSTLaunchChildTask" />
+       <string id="string173" value="NSTNavigationTimeoutStarted" />
+       <string id="string174" value="NSTNavigationTimeoutStopped" />
+       <string id="string175" value="NSTNavigationTimeoutStoppedTargetStateChange" />
+       <string id="string176" value="NSTProcessActivationData" />
+       <string id="string177" value="NSTReadyToNavigate" />
+       <string id="string178" value="NSTRequestClose" />
+       <string id="string179" value="NSTRequestNavigateBack" />
+       <string id="string180" value="NSTSetCompleted" />
+       <string id="string181" value="NSTSetIsExecManAware" />
+       <string id="string182" value="NSTSetRunning" />
+       <string id="string183" value="NSTShowComplete" />
+       <string id="string184" value="NSTTaskStateIsActive" />
+       <string id="string185" value="NTConnectionComplete" />
+       <string id="string186" value="NTLaunchChildTask" />
+       <string id="string187" value="NTLaunchChildTaskComplete" />
+       <string id="string188" value="NTLaunchSession" />
+       <string id="string189" value="NTLaunchSessionComplete" />
+       <string id="string190" value="NTNavigateTo" />
+       <string id="string191" value="NTNavigateToComplete" />
+       <string id="string192" value="NTReadyToNavigate" />
+       <string id="string193" value="NTSetSupportedOrientations" />
+       <string id="string194" value="Page" />
+       <string id="string195" value="PageManager" />
+       <string id="string196" value="PageManagerContainer" />
+       <string id="string197" value="PageNavigationController" />
+       <string id="string198" value="Performance" />
+       <string id="string199" value="PMEnumerationManager" />
+       <string id="string200" value="PMOrientationChanged" />
+       <string id="string201" value="PMProcessActivationData" />
+       <string id="string202" value="PMSessionDisplayNameChanged" />
+       <string id="string203" value="Proxy" />
+       <string id="string204" value="ProxyConnectExistingProxy" />
+       <string id="string205" value="ProxyInitializeConnection" />
+       <string id="string206" value="ProxyMaterializePushedProxy" />
+       <string id="string207" value="ProxyMessageEvent" />
+       <string id="string208" value="ProxyMessageMethod" />
+       <string id="string209" value="ProxyPropertyUpdate" />
+       <string id="string210" value="ProxyPullProxy" />
+       <string id="string211" value="ProxyPushNewProxy" />
+       <string id="string212" value="RemoveWindowFromView" />
+       <string id="string213" value="ReplaceAndNavigateToView" />
+       <string id="string214" value="RequestBeginPresentView" />
+       <string id="string215" value="RequestEndPresentView" />
+       <string id="string216" value="RequestNavigateToView" />
+       <string id="string217" value="RequestShowStandardSystemOverlays" />
+       <string id="string218" value="ResumeAndNavigateToView" />
+       <string id="string219" value="RMSetCurrentOrientation" />
+       <string id="string220" value="RMSetTaskSupportedOrientations" />
+       <string id="string221" value="RotationManager" />
+       <string id="string222" value="RotationManagerComputeDesiredOrientation" />
+       <string id="string223" value="RotationManagerInitializeOrientationService" />
+       <string id="string224" value="RotationManagerStartOrientationService" />
+       <string id="string225" value="RotationManagerStopOrientationService" />
+       <string id="string226" value="RotationManagerUninitializeOrientationService" />
+       <string id="string227" value="SelfHostError" />
+       <string id="string228" value="SelfHostInfo" />
+       <string id="string229" value="Server" />
+       <string id="string230" value="ServerSession" />
+       <string id="string231" value="ServerSessionCreate" />
+       <string id="string232" value="ServerSessionInitiateModernActivation" />
+       <string id="string233" value="ServerSessionLaunchChildTask" />
+       <string id="string234" value="ServerSessionLaunchModernChildTask" />
+       <string id="string235" value="ServerTask" />
+       <string id="string236" value="ServerTaskActivate" />
+       <string id="string237" value="ServerTaskCreate" />
+       <string id="string238" value="ServerTaskDeactivate" />
+       <string id="string239" value="ServerTaskHide" />
+       <string id="string240" value="ServerTaskInitiateModernActivation" />
+       <string id="string241" value="ServerTaskNavigateAway" />
+       <string id="string242" value="ServerTaskNavigateTo" />
+       <string id="string243" value="ServerTaskProcessNextStep" />
+       <string id="string244" value="ServerTaskShow" />
+       <string id="string245" value="ServerTaskShowVisibleTask" />
+       <string id="string246" value="ServerWindow" />
+       <string id="string247" value="ServerWindowCreated" />
+       <string id="string248" value="SessionLayer" />
+       <string id="string249" value="SessionLayerCloseReplaceActivationPolicyViewBeforeReLaunch" />
+       <string id="string250" value="SessionLayerDoDeferredResumeModernApplication" />
+       <string id="string251" value="SessionLayerEnterRestrictedMode" />
+       <string id="string252" value="SessionLayerExitRestrictedMode" />
+       <string id="string253" value="SessionLayerNavigateToSessionInternal" />
+       <string id="string254" value="SessionLayerNavigateToTaskInternal" />
+       <string id="string255" value="SessionLayerNavigateToTopSession" />
+       <string id="string256" value="SessionLayerNavigateToView" />
+       <string id="string257" value="SessionLayerNotifyActiveChanged" />
+       <string id="string258" value="SessionLayerNotifyReadyToHide" />
+       <string id="string259" value="SessionLayerNotifyReadyToShow" />
+       <string id="string260" value="SessionLayerQueueResumeModernApplication" />
+       <string id="string261" value="SessionLayerSetActivationLevel" />
+       <string id="string262" value="SessionLayerSetActiveSession" />
+       <string id="string263" value="SessionLayerSetActiveTask" />
+       <string id="string264" value="SessionLayerSetActiveWindow" />
+       <string id="string265" value="SessionLayerSetCurrentSession" />
+       <string id="string266" value="SessionLayerSetCurrentTask" />
+       <string id="string267" value="SessionLayerSetCurrentWindow" />
+       <string id="string268" value="SessionLayerSetVisibleSession" />
+       <string id="string269" value="SessionLayerSetVisibleTask" />
+       <string id="string270" value="SessionLayerSetVisibleWindow" />
+       <string id="string271" value="SessionLayerUpdateCurrentSession" />
+       <string id="string272" value="SessionLayerUpdateCurrentTask" />
+       <string id="string273" value="SessionLayerUpdateVisibleSession" />
+       <string id="string274" value="SessionLayerUpdateVisibleTask" />
+       <string id="string275" value="SessionManager" />
+       <string id="string276" value="SystemKeyPressed" />
+       <string id="string277" value="SystemKeyPressedComplete" />
+       <string id="string278" value="Task" />
+       <string id="string279" value="ThrownException" />
+       <string id="string280" value="TimeoutInfo" />
+       <string id="string281" value="UIAConnect" />
+       <string id="string282" value="UserLogoffComplete" />
+       <string id="string283" value="ValidateViewLimit" />
+       <string id="string284" value="ViewActivator" />
+       <string id="string285" value="ViewActivatorAddActivationDataToActivationMap" />
+       <string id="string286" value="ViewActivatorBrokerActivateLegacy" />
+       <string id="string287" value="ViewActivatorBrokerActivateModern" />
+       <string id="string288" value="ViewActivatorDoPendingInitiateModernActivation" />
+       <string id="string289" value="ViewActivatorGetPendingTaskInstanceId" />
+       <string id="string290" value="ViewActivatorNotifyBrokerActivateModernCompleted" />
+       <string id="string291" value="ViewActivatorNotifyBrokerActivateModernFailed" />
+       <string id="string292" value="ViewActivatorShellActivateLegacy" />
+       <string id="string293" value="ViewActivatorShouldWaitForCloseCompletion" />
+       <string id="string294" value="ViewAdded" />
+       <string id="string295" value="ViewManager" />
+       <string id="string296" value="ViewRemoved" />
+       <string id="string297" value="VisibleViewAdded" />
+       <string id="string298" value="VisibleViewRemoved" />
+       <string id="string299" value="win:Info" />
+       <string id="string300" value="win:Start" />
+       <string id="string301" value="win:Stop" />
+       <string id="string302" value="WindowManager" />
+       <string id="string303" value="WindowVisiblePropertyChanged" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

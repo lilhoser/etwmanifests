@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-User Experience Virtualization-Admin" name="Microsoft-User Experience Virtualization-Admin" guid="{61bc445e-7a8d-420e-ab36-9c7143881b98}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="0" version="0" level="win:Verbose"  channel="Microsoft-User Experience Virtualization-Admin/Debug" opcode="win:Start" template="Args0_0"/>
+        <event value="1" version="0" level="win:Verbose"  channel="Microsoft-User Experience Virtualization-Admin/Debug" opcode="win:Stop" template="Args1_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-User Experience Virtualization-Admin/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args0_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1_0">
+          <data name="String" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Ulong" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-User Experience Virtualization-Admin" />
+       <string id="string1" value="Microsoft-User Experience Virtualization-Admin/Debug" />
+       <string id="string2" value="win:None" />
+       <string id="string3" value="win:Start" />
+       <string id="string4" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

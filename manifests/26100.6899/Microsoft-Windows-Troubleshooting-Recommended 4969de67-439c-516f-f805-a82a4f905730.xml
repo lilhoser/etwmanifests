@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Troubleshooting-Recommended" name="Microsoft-Windows-Troubleshooting-Recommended" guid="{4969de67-439c-516f-f805-a82a4f905730}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Troubleshooting-Recommended/Admin" keywords="admin" template="Args1_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-Troubleshooting-Recommended/Operational" keywords="lifecycle"/>
+        <event value="102" version="0" level="win:Error"  channel="Microsoft-Windows-Troubleshooting-Recommended/Operational" keywords="lifecycle" template="Args102_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Troubleshooting-Recommended/Admin" type="Admin"/>
+        <channel value="17" name="Microsoft-Windows-Troubleshooting-Recommended/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="admin" mask="0x400000000" message="$(string.string0)" />
+        <keyword name="lifecycle" mask="0x800000000" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Title" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LearnMoreURL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args102_0">
+          <data name="Title" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="LearnMoreURL" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Type" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="admin" />
+       <string id="string1" value="lifecycle" />
+       <string id="string2" value="Microsoft-Windows-Troubleshooting-Recommended" />
+       <string id="string3" value="Microsoft-Windows-Troubleshooting-Recommended/Admin" />
+       <string id="string4" value="Microsoft-Windows-Troubleshooting-Recommended/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

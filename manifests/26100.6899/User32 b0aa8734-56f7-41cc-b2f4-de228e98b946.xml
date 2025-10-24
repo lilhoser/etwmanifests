@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="User32" name="User32" guid="{b0aa8734-56f7-41cc-b2f4-de228e98b946}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1073" version="0" level="win:Warning"  template="Args1073_0"/>
+        <event value="1074" version="0" level="win:Warning"  template="Args1074_0"/>
+        <event value="1075" version="0" level="win:Warning" />
+        <event value="1076" version="0" level="win:Warning" />
+        <event value="1077" version="0" level="win:Warning" />
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="128" name=""/>
+      </opcodes>
+      <templates>
+        <template tid="Args1073_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args1074_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param5" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param6" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param7" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="" />
+       <string id="string1" value="System" />
+       <string id="string2" value="User32" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

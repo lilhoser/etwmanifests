@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WLAN-AutoConfig" name="Microsoft-Windows-WLAN-AutoConfig" guid="{9580d7dd-0379-4658-9870-d5be7d52d6de}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4000" version="0" level="win:Informational"  channel="System" opcode="win:Start"/>
+        <event value="4001" version="0" level="win:Informational"  channel="System" opcode="win:Stop"/>
+        <event value="4002" version="0" level="win:Error"  channel="System" template="Args4002_0"/>
+        <event value="4003" version="0" level="win:Warning"  channel="System" template="Args4003_0"/>
+        <event value="8000" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ACM_CONNECTION" opcode="Start" keywords="WlanConnect LwtDiagnostic" template="Args8000_0"/>
+        <event value="8001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ACM_CONNECTION" opcode="Success" keywords="WlanConnect LwtDiagnostic" template="Args8001_0"/>
+        <event value="8002" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ACM_CONNECTION" opcode="Failure" keywords="WlanConnect LwtDiagnostic" template="Args8002_0"/>
+        <event value="8003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ACM_CONNECTION" opcode="Disconnect" keywords="WlanConnect LwtDiagnostic" template="Args8003_0"/>
+        <event value="8004" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="LwtDiagnostic" template="Args8004_0"/>
+        <event value="8005" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-SoftAPStart" opcode="win:Start" keywords="SOFTAP" template="Args8005_0"/>
+        <event value="8006" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-SoftAPStart" opcode="win:Stop" keywords="SOFTAP"/>
+        <event value="8007" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-SoftAPStart" opcode="win:Stop" keywords="SOFTAP" template="Args8007_0"/>
+        <event value="8008" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-SoftAPStop" opcode="win:Start" keywords="SOFTAP"/>
+        <event value="8009" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-SoftAPStop" opcode="win:Stop" keywords="SOFTAP"/>
+        <event value="8010" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-SoftAPStop" opcode="win:Stop" keywords="SOFTAP"/>
+        <event value="8011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ACM_CONNECTION" keywords="WlanConnect" template="Args8011_0"/>
+        <event value="8012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ACM_CONNECTION" keywords="WlanConnect"/>
+        <event value="10000" version="0" level="win:Error"  channel="System" template="Args10000_0"/>
+        <event value="10001" version="0" level="win:Informational"  channel="System"/>
+        <event value="10002" version="0" level="win:Warning"  channel="System"/>
+        <event value="10003" version="0" level="win:Error"  channel="System"/>
+        <event value="10004" version="0" level="win:Warning"  channel="System"/>
+        <event value="11000" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_ASSOCIATION" opcode="Start" keywords="WlanConnect LwtDiagnostic" template="Args11000_0"/>
+        <event value="11001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_ASSOCIATION" opcode="Success" keywords="WlanConnect LwtDiagnostic" template="Args11001_0"/>
+        <event value="11002" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_ASSOCIATION" opcode="Failure" keywords="WlanConnect LwtDiagnostic" template="Args11002_0"/>
+        <event value="11003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_SECURITY" opcode="Start" keywords="WlanConnect LwtDiagnostic" template="Args11003_0"/>
+        <event value="11004" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_SECURITY" opcode="Stop" keywords="WlanConnect LwtDiagnostic" template="Args11004_0"/>
+        <event value="11005" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_SECURITY" opcode="Success" keywords="WlanConnect LwtDiagnostic"/>
+        <event value="11006" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_SECURITY" opcode="Failure" keywords="WlanConnect LwtDiagnostic" template="Args11006_0"/>
+        <event value="11007" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="LwtDiagnostic" template="Args11007_0"/>
+        <event value="11008" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_IHV_SECURITY" opcode="Success" keywords="WlanConnect LwtDiagnostic"/>
+        <event value="11009" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_IHV_SECURITY" opcode="Failure" keywords="WlanConnect LwtDiagnostic" template="Args11009_0"/>
+        <event value="11010" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_MSM_SECURITY" opcode="Start" keywords="WlanConnect LwtDiagnostic"/>
+        <event value="12011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ONEX_SECURITY" opcode="Start" keywords="WlanConnect LwtDiagnostic" template="Args12011_0"/>
+        <event value="12012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ONEX_SECURITY" opcode="Success" keywords="WlanConnect LwtDiagnostic" template="Args12012_0"/>
+        <event value="12013" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ONEX_SECURITY" opcode="Failure" keywords="WlanConnect LwtDiagnostic" template="Args12013_0"/>
+        <event value="12014" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_ONEX_SECURITY" opcode="Restart" keywords="WlanConnect LwtDiagnostic" template="Args12014_0"/>
+        <event value="13001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="LwtDiagnostic" template="Args13001_0"/>
+        <event value="13002" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="LwtDiagnostic" template="Args13002_0"/>
+        <event value="13011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational"/>
+        <event value="13012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="LwtDiagnostic"/>
+        <event value="13013" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" template="Args13013_0"/>
+        <event value="13014" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="LwtDiagnostic"/>
+        <event value="13100" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_COST" opcode="win:Info" keywords="LwtDiagnostic" template="Args13100_0"/>
+        <event value="13101" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_COST" opcode="win:Info" keywords="LwtDiagnostic"/>
+        <event value="13102" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_COST" opcode="win:Info" keywords="LwtDiagnostic"/>
+        <event value="13103" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="WLAN_TASK_COST" opcode="win:Info" keywords="LwtDiagnostic"/>
+        <event value="14000" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext LwtDiagnostic" template="Args14000_0"/>
+        <event value="14001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext" template="Args14001_0"/>
+        <event value="14002" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration" template="Args14002_0"/>
+        <event value="14003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration" template="Args14003_0"/>
+        <event value="14004" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration"/>
+        <event value="14005" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext LwtDiagnostic ut:Configuration" template="Args14005_0"/>
+        <event value="14006" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14007" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14008" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext LwtDiagnostic ut:Configuration" template="Args14008_0"/>
+        <event value="14009" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext LwtDiagnostic ut:Configuration"/>
+        <event value="14010" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext LwtDiagnostic"/>
+        <event value="14011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext LwtDiagnostic ut:Configuration" template="Args14011_0"/>
+        <event value="14012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14013" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration" template="Args14013_0"/>
+        <event value="14014" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext" template="Args14014_0"/>
+        <event value="14015" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration" template="Args14015_0"/>
+        <event value="14016" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:L2ConnectPath" template="Args14016_0"/>
+        <event value="14017" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:L2ConnectPath"/>
+        <event value="14018" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:L2ConnectPath" template="Args14018_0"/>
+        <event value="14019" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:L2ConnectPath"/>
+        <event value="14020" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:L2ConnectPath"/>
+        <event value="14021" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:L2ConnectPath ut:ClosePath" template="Args14021_0"/>
+        <event value="14022" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:ClosePath"/>
+        <event value="14023" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:ClosePath"/>
+        <event value="14024" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:ClosePath"/>
+        <event value="14025" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext" template="Args14025_0"/>
+        <event value="14026" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext" template="Args14026_0"/>
+        <event value="14027" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext" template="Args14027_0"/>
+        <event value="14028" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration" template="Args14028_0"/>
+        <event value="14029" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14030" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14031" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfMgr" template="Args14031_0"/>
+        <event value="14032" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfMgr"/>
+        <event value="14033" version="0" level="win:Warning"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfMgr"/>
+        <event value="14034" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfMgr" template="Args14034_0"/>
+        <event value="14035" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfMgr"/>
+        <event value="14036" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfMgr" template="Args14036_0"/>
+        <event value="14037" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State ut:ClosePath" template="Args14037_0"/>
+        <event value="14038" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State ut:ClosePath"/>
+        <event value="14039" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14039_0"/>
+        <event value="14040" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14040_0"/>
+        <event value="14041" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14042" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14043" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14044" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14045" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State ut:L2ConnectPath" template="Args14045_0"/>
+        <event value="14046" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="Session" template="Args14046_0"/>
+        <event value="14047" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="Session"/>
+        <event value="14048" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="Session" template="Args14048_0"/>
+        <event value="14049" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="Session"/>
+        <event value="14050" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API"/>
+        <event value="14051" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API"/>
+        <event value="14052" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API"/>
+        <event value="14053" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API" template="Args14053_0"/>
+        <event value="14054" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration"/>
+        <event value="14055" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14056" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14057" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14058" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="WLAN_TASK_ACM_CONNECTION" opcode="ut:ActivityContext" keywords="State"/>
+        <event value="14059" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext ut:Configuration"/>
+        <event value="14060" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14060_0"/>
+        <event value="14061" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14061_0"/>
+        <event value="14062" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API" template="Args14062_0"/>
+        <event value="14063" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API" template="Args14063_0"/>
+        <event value="14064" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API"/>
+        <event value="14065" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="API" template="Args14065_0"/>
+        <event value="14066" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State"/>
+        <event value="14067" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14067_0"/>
+        <event value="14068" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14068_0"/>
+        <event value="14069" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14070" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="IntfContext"/>
+        <event value="14071" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14071_0"/>
+        <event value="14072" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14072_0"/>
+        <event value="14073" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14073_0"/>
+        <event value="14074" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14074_0"/>
+        <event value="14075" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14075_0"/>
+        <event value="14076" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="State" template="Args14076_0"/>
+        <event value="20000" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:L2ConnectPath" template="Args20000_0"/>
+        <event value="20001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:ClosePath"/>
+        <event value="20002" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM"/>
+        <event value="20003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication"/>
+        <event value="20004" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:L2ConnectPath" template="Args20004_0"/>
+        <event value="20005" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication" template="Args20005_0"/>
+        <event value="20006" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM" template="Args20006_0"/>
+        <event value="20007" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM" template="Args20007_0"/>
+        <event value="20008" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:L2ConnectPath"/>
+        <event value="20009" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication" template="Args20009_0"/>
+        <event value="20010" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication" template="Args20010_0"/>
+        <event value="20011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication"/>
+        <event value="20012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication"/>
+        <event value="20013" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication"/>
+        <event value="20014" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication" template="Args20014_0"/>
+        <event value="20015" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication" template="Args20015_0"/>
+        <event value="20016" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication" template="Args20016_0"/>
+        <event value="20017" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Authentication"/>
+        <event value="20018" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:L2ConnectPath" template="Args20018_0"/>
+        <event value="20019" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-MSAMAuthentication" opcode="win:Start" keywords="SOFTAP MSAM ut:Authentication" template="Args20019_0"/>
+        <event value="20020" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-MSAMAuthentication" opcode="win:Stop" keywords="SOFTAP MSAM ut:Authentication"/>
+        <event value="20021" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" task="Perftrack-MSAMAuthentication" opcode="win:Stop" keywords="SOFTAP MSAM ut:Authentication" template="Args20021_0"/>
+        <event value="20022" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Scan"/>
+        <event value="20023" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Scan" template="Args20023_0"/>
+        <event value="20024" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Scan" template="Args20024_0"/>
+        <event value="20025" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSM ut:Scan" template="Args20025_0"/>
+        <event value="21001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21001_0"/>
+        <event value="21002" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21002_0"/>
+        <event value="21003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21004" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21004_0"/>
+        <event value="21005" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21006" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21006_0"/>
+        <event value="21007" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21007_0"/>
+        <event value="21008" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21009" version="0" level="win:Warning"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21010" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21010_0"/>
+        <event value="21011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21013" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21013_0"/>
+        <event value="21014" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21015" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21016" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet" template="Args21016_0"/>
+        <event value="21017" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21018" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21019" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21020" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21021" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21021_0"/>
+        <event value="21022" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global" template="Args21022_0"/>
+        <event value="21023" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global" template="Args21023_0"/>
+        <event value="21024" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21024_0"/>
+        <event value="21025" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21025_0"/>
+        <event value="21026" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet" template="Args21026_0"/>
+        <event value="21027" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21027_0"/>
+        <event value="21028" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21028_0"/>
+        <event value="21029" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21030" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21031" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21032" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet" template="Args21032_0"/>
+        <event value="21033" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21033_0"/>
+        <event value="21034" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21034_0"/>
+        <event value="21035" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21036" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21037" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21037_0"/>
+        <event value="21038" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global"/>
+        <event value="21039" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global" template="Args21039_0"/>
+        <event value="21040" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21041" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global"/>
+        <event value="21042" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21043" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21044" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21045" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21046" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global" template="Args21046_0"/>
+        <event value="21047" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21048" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21049" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21050" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21051" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21052" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21053" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21054" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21055" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21055_0"/>
+        <event value="21056" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21057" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21058" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21059" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21060" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21061" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Packet"/>
+        <event value="21062" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication"/>
+        <event value="21063" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21063_0"/>
+        <event value="21064" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication" template="Args21064_0"/>
+        <event value="21065" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global"/>
+        <event value="21066" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" keywords="MSMSEC ut:Authentication ut:Global"/>
+        <event value="30000" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-RoamOnResume" opcode="win:Stop"/>
+        <event value="30001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30002" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-RoamOnResume" opcode="win:Stop"/>
+        <event value="30004" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30005" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-RoamOnResume" opcode="win:Stop"/>
+        <event value="30006" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30007" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30008" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30009" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30010" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30011" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30012" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30013" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30014" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30015" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30016" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30017" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30018" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30019" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-ReconnectOnResume" opcode="win:Stop"/>
+        <event value="30020" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" opcode="win:Start"/>
+        <event value="30021" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" opcode="win:Stop" template="Args30021_0"/>
+        <event value="30022" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" opcode="win:Stop"/>
+        <event value="30100" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-WfdDiscover" opcode="win:Start" template="Args30100_0"/>
+        <event value="30101" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-WfdDiscover" opcode="win:Stop"/>
+        <event value="30102" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-WfdPair" opcode="win:Start"/>
+        <event value="30103" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="Perftrack-WfdPair" opcode="win:Stop" template="Args30103_0"/>
+        <event value="30104" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="TaskWlanResumeReconnect" opcode="win:Stop"/>
+        <event value="30105" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" template="Args30105_0"/>
+        <event value="40001" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="WLAN_TASK_ACM_CONNECTION" keywords="LwtDiagnostic" template="Args40001_0"/>
+        <event value="40002" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="WLAN_TASK_ACM_CONNECTION" keywords="LwtDiagnostic" template="Args40002_0"/>
+        <event value="40003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" task="WLAN_TASK_ACM_CONNECTION" keywords="LwtDiagnostic" template="Args40003_0"/>
+        <event value="60001" version="0" level="win:Error"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational"/>
+        <event value="60002" version="0" level="win:Warning"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" template="Args60002_0"/>
+        <event value="60003" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" keywords="ut:StateTransition" template="Args60003_0"/>
+        <event value="60004" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" template="Args60004_0"/>
+        <event value="60101" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" template="Args60101_0"/>
+        <event value="60102" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" template="Args60102_0"/>
+        <event value="60103" version="0" level="win:Informational"  channel="Microsoft-Windows-WLAN-AutoConfig/Operational" template="Args60103_0"/>
+      </events>
+      <channels>
+        <channel value="8" name="System" type="unknown"/>
+        <channel value="16" name="Microsoft-Windows-WLAN-AutoConfig/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="IntfContext" mask="0x1" message="$(string.string3)" />
+        <keyword name="IntfMgr" mask="0x2" message="$(string.string4)" />
+        <keyword name="State" mask="0x4" message="$(string.string23)" />
+        <keyword name="Session" mask="0x8" message="$(string.string20)" />
+        <keyword name="API" mask="0x10" message="$(string.string0)" />
+        <keyword name="MSM" mask="0x20" message="$(string.string10)" />
+        <keyword name="MSMSEC" mask="0x40" message="$(string.string11)" />
+        <keyword name="SOFTAP" mask="0x80" message="$(string.string21)" />
+        <keyword name="MSAM" mask="0x100" message="$(string.string9)" />
+        <keyword name="WlanConnect" mask="0x200" message="$(string.string79)" />
+        <keyword name="LwtDiagnostic" mask="0x400" message="$(string.string5)" />
+        <keyword name="ut:SendPath" mask="0x100000000" message="$(string.string48)" />
+        <keyword name="ut:ReceivePath" mask="0x200000000" message="$(string.string46)" />
+        <keyword name="ut:L3ConnectPath" mask="0x400000000" message="$(string.string41)" />
+        <keyword name="ut:L2ConnectPath" mask="0x800000000" message="$(string.string40)" />
+        <keyword name="ut:ClosePath" mask="0x1000000000" message="$(string.string33)" />
+        <keyword name="ut:Authentication" mask="0x2000000000" message="$(string.string31)" />
+        <keyword name="ut:Configuration" mask="0x4000000000" message="$(string.string34)" />
+        <keyword name="ut:Global" mask="0x8000000000" message="$(string.string39)" />
+        <keyword name="ut:Dropped" mask="0x10000000000" message="$(string.string36)" />
+        <keyword name="ut:PiiPresent" mask="0x20000000000" message="$(string.string45)" />
+        <keyword name="ut:Packet" mask="0x40000000000" message="$(string.string44)" />
+        <keyword name="ut:Address" mask="0x80000000000" message="$(string.string29)" />
+        <keyword name="ut:StdTemplateHint" mask="0x100000000000" message="$(string.string51)" />
+        <keyword name="ut:StateTransition" mask="0x200000000000" message="$(string.string50)" />
+        <keyword name="ut:Scan" mask="0x400000000000" message="$(string.string47)" />
+      </keywords>
+      <tasks>
+        <task value="24000" name="Perftrack-RoamOnResume" message="$(string.string24000)">
+        </task>
+        <task value="24001" name="Perftrack-ReconnectOnResume" message="$(string.string24001)">
+        </task>
+        <task value="24002" name="TaskWlanResumeReconnect" message="$(string.string24002)">
+        </task>
+        <task value="24010" name="WLAN_TASK_ACM_CONNECTION" message="$(string.string24010)">
+          <opcodes>
+           <opcode value="189" name="Start" message="$(string.string22)"/>
+           <opcode value="190" name="Success" message="$(string.string25)"/>
+           <opcode value="191" name="Failure" message="$(string.string2)"/>
+           <opcode value="192" name="Disconnect" message="$(string.string1)"/>
+           <opcode value="210" name="ut:ActivityContext" message="$(string.string28)"/>
+          </opcodes>
+        </task>
+        <task value="24011" name="WLAN_TASK_MSM_ASSOCIATION" message="$(string.string24011)">
+          <opcodes>
+           <opcode value="193" name="Start" message="$(string.string22)"/>
+           <opcode value="194" name="Success" message="$(string.string25)"/>
+           <opcode value="195" name="Failure" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+        <task value="24012" name="WLAN_TASK_MSM_SECURITY" message="$(string.string24012)">
+          <opcodes>
+           <opcode value="196" name="Start" message="$(string.string22)"/>
+           <opcode value="197" name="Stop" message="$(string.string24)"/>
+           <opcode value="198" name="Success" message="$(string.string25)"/>
+           <opcode value="199" name="Failure" message="$(string.string2)"/>
+           <opcode value="200" name="Start" message="$(string.string22)"/>
+          </opcodes>
+        </task>
+        <task value="24013" name="WLAN_TASK_IHV_SECURITY" message="$(string.string24013)">
+          <opcodes>
+           <opcode value="201" name="Success" message="$(string.string25)"/>
+           <opcode value="202" name="Failure" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+        <task value="24014" name="WLAN_TASK_ONEX_SECURITY" message="$(string.string24014)">
+          <opcodes>
+           <opcode value="203" name="Start" message="$(string.string22)"/>
+           <opcode value="204" name="Success" message="$(string.string25)"/>
+           <opcode value="205" name="Failure" message="$(string.string2)"/>
+           <opcode value="206" name="Restart" message="$(string.string19)"/>
+          </opcodes>
+        </task>
+        <task value="24015" name="Perftrack-SoftAPStart" message="$(string.string24015)">
+        </task>
+        <task value="24016" name="Perftrack-SoftAPStop" message="$(string.string24016)">
+        </task>
+        <task value="24017" name="Perftrack-MSAMAuthentication" message="$(string.string24017)">
+        </task>
+        <task value="24018" name="Perftrack-WfdDiscover" message="$(string.string24018)">
+        </task>
+        <task value="24019" name="Perftrack-WfdPair" message="$(string.string24019)">
+        </task>
+        <task value="24100" name="WLAN_TASK_COST" message="$(string.string24100)">
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="180" name="ut:Start" message="$(string.string49)"/>
+        <opcode value="181" name="ut:End" message="$(string.string37)"/>
+        <opcode value="182" name="ut:Closed" message="$(string.string32)"/>
+        <opcode value="183" name="ut:Open" message="$(string.string43)"/>
+        <opcode value="184" name="ut:Connect" message="$(string.string35)"/>
+        <opcode value="185" name="ut:Listen" message="$(string.string42)"/>
+        <opcode value="186" name="ut:Association" message="$(string.string30)"/>
+        <opcode value="187" name="ut:Authentication" message="$(string.string31)"/>
+        <opcode value="188" name="ut:Established" message="$(string.string38)"/>
+        <opcode value="189" name="WLAN_OPCODE_ACM_CONNECTION_START" message="$(string.string56)"/>
+        <opcode value="190" name="WLAN_OPCODE_ACM_CONNECTION_SUCCEED" message="$(string.string57)"/>
+        <opcode value="191" name="WLAN_OPCODE_ACM_CONNECTION_FAIL" message="$(string.string55)"/>
+        <opcode value="192" name="WLAN_OPCODE_ACM_DISCONNECTED" message="$(string.string58)"/>
+        <opcode value="193" name="WLAN_OPCODE_MSM_ASSOCIATION_START" message="$(string.string62)"/>
+        <opcode value="194" name="WLAN_OPCODE_MSM_ASSOCIATION_SUCCESS" message="$(string.string63)"/>
+        <opcode value="195" name="WLAN_OPCODE_MSM_ASSOCIATION_FAILURE" message="$(string.string61)"/>
+        <opcode value="196" name="WLAN_OPCODE_MSM_SECURITY_START" message="$(string.string65)"/>
+        <opcode value="197" name="WLAN_OPCODE_MSM_SECURITY_STOP" message="$(string.string67)"/>
+        <opcode value="198" name="WLAN_OPCODE_MSM_SECURITY_SUCCESS" message="$(string.string68)"/>
+        <opcode value="199" name="WLAN_OPCODE_MSM_SECURITY_FAILURE" message="$(string.string64)"/>
+        <opcode value="200" name="WLAN_OPCODE_MSM_SECURITY_START_SP1" message="$(string.string66)"/>
+        <opcode value="201" name="WLAN_OPCODE_IHV_SECURITY_SUCCESS" message="$(string.string60)"/>
+        <opcode value="202" name="WLAN_OPCODE_IHV_SECURITY_FAILURE" message="$(string.string59)"/>
+        <opcode value="203" name="WLAN_OPCODE_ONEX_SECURITY_START" message="$(string.string71)"/>
+        <opcode value="204" name="WLAN_OPCODE_ONEX_SECURITY_SUCCESS" message="$(string.string72)"/>
+        <opcode value="205" name="WLAN_OPCODE_ONEX_SECURITY_FAILURE" message="$(string.string69)"/>
+        <opcode value="206" name="WLAN_OPCODE_ONEX_SECURITY_RESTART" message="$(string.string70)"/>
+        <opcode value="210" name="ut:ActivityContext" message="$(string.string28)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args4002_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4003_0">
+          <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ChangeReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IpFamily" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8000_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args8001_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PHYType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AuthenticationAlgorithm" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CipherAlgorithm" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="NonBroadcast" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args8002_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FailureReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RSSI" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args8003_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args8004_0">
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SSID(s)" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FailureReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BlockTime" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args8005_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SSID" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args8007_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args8011_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args10000_0">
+          <data name="ExtensibleModulePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args11000_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Auth" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Cipher" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IhvConnectivitySetting" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11001_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="MgmtFrameProtection" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args11002_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FailureReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Dot11StatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="RSSI" inType="win:Int32" outType="xs:int"  />
+        </template>
+        <template tid="Args11003_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Auth" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AuthVal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cipher" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CipherVal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FIPSMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11004_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecurityHint" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SecurityHintCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11006_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReasonText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReasonCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11007_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IhvSecuritySetting" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args11009_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IhvReasonCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="IhvDataLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IhvData" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args12011_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EapType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args12012_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Identity" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Domain" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ExplicitCredentials" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args12013_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Identity" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="User" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Domain" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReasonText" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ReasonCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="EAPReasonCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="EAPRootCauseString" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EAPErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="ExplicitCredentials" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args12014_0">
+          <data name="Adapter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EapType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RestartReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args13001_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args13002_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RequestedFields" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args13013_0">
+          <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args13100_0">
+          <data name="CostSource" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CostValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14000_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Connected" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14001_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Joined" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14002_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14003_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Enabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Result" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args14005_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PHY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RadioState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="PHYCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14008_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PowerSetting" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14011_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PHY" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SoftwareState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HardwareState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PHYCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14013_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Profile" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14014_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionResetReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14015_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OpMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Result" inType="win:UInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args14016_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Profile" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args14018_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14021_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Status" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Adhoc" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14025_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="State" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14026_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Result" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14027_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Profile" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HealthCheckResult" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14028_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="OldProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewProfileName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14031_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14034_0">
+          <data name="DeviceGuid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14036_0">
+          <data name="Setting" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args14037_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Profile" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Reason" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args14039_0">
+          <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args14040_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ScanType" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FlushBSSList" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14045_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Auto" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Multiple" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SSIDListSize" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="SSIDList" inType="win:Binary" outType="xs:hexBinary" length="SSIDListSize" />
+        </template>
+        <template tid="Args14046_0">
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Active" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Console" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14048_0">
+          <data name="ActiveConsole" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14053_0">
+          <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="Network" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14060_0">
+          <data name="Profile" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BlockTimeMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SingleSSID" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14061_0">
+          <data name="Profile" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Update" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="SingleSSID" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14062_0">
+          <data name="WlanRpcCallType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14063_0">
+          <data name="OpCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14065_0">
+          <data name="OpCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+        <template tid="Args14067_0">
+          <data name="IsOn" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14068_0">
+          <data name="IsEnabled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14071_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ExpeditedScanTrigger" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args14072_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="DisconnectTrigger" inType="win:UInt8" outType="xs:unsignedByte"  />
+        </template>
+        <template tid="Args14073_0">
+          <data name="RecoveryType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EventType" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="EventData" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args14074_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="IsReachable" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args14075_0">
+          <data name="IsAutoConnectEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="AutoConnectProfileCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AutoConnectFilterControl" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IsManualConnectEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ManualConnectProfileCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ManualConnectFilterControl" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args14076_0">
+          <data name="IsAutoConnectEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IsManualConnectEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectivityBlockReason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20000_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Session" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args20004_0">
+          <data name="Reason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Session" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="AdHocFormed" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args20005_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AssocStatus" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args20006_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CurrState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20007_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CurrState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20009_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Quality" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20010_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSID" inType="win:Binary" outType="xs:hexBinary"  />
+        </template>
+        <template tid="Args20014_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PacketType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20015_0">
+          <data name="Reason" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="Error" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args20016_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args20018_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSIDCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20019_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LocalMAC" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PeerMAC" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args20021_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LocalMAC" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args20023_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20024_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args20025_0">
+          <data name="Ssid" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BssidCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Rssi" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21001_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PKMIDs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FourWayOffloadSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SafeModeSupported" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="SafeModeCertified" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21002_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21004_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="AuthAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OneXEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="UICancelled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21006_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="ResponseType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21007_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21010_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21013_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21016_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21021_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="Authenticator" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21022_0">
+          <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Direction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Len" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21023_0">
+          <data name="Addr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Direction" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Len" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21024_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21025_0">
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21026_0">
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="EtherType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21027_0">
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PageClsId" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21028_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args21032_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="EtherType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21033_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ResponseType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Cancelled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21034_0">
+          <data name="AdapterID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SSID" inType="win:AnsiString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Secure" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21037_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="Healthy" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="HealthStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Hint" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21039_0">
+          <data name="Valid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="Cancelled" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21046_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="RapidRekey" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21055_0">
+          <data name="AdapterId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PortId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LocalAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="PeerAddr" inType="win:Binary" outType="xs:hexBinary"  />
+          <data name="FastRoam" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args21063_0">
+          <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Current" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Max" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args21064_0">
+          <data name="BSSType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CipherAlgoId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="EapType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthorID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30021_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="WLANStatusCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DetailedStatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="ConnectionInformation" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args30100_0">
+          <data name="RequestId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30103_0">
+          <data name="RequestId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="WFDPairReturnCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args30105_0">
+          <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args40001_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ConnectionMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SSID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="BSSType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthAlgo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CipherAlgo" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IHVBitmap" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NonBroadcast" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PeerMAC" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="WLANStatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="DetailedStatusCode" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="AssocDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AssocRestartCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthDuration" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AuthRestartCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DeviceID" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverVersion" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverService" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RSSI" inType="win:Int32" outType="xs:int"  />
+          <data name="SignalQualityPercentage" inType="win:Int32" outType="xs:int"  />
+          <data name="Channel" inType="win:Int32" outType="xs:int"  />
+          <data name="InterferingAPCount" inType="win:Int32" outType="xs:int"  />
+          <data name="TotalVisibleAPCount" inType="win:Int32" outType="xs:int"  />
+          <data name="APPhyType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="APMaxChannelWidth" inType="win:Int32" outType="xs:int"  />
+          <data name="APDescription" inType="win:AnsiString" outType="xs:string"  />
+          <data name="APManufacturer" inType="win:AnsiString" outType="xs:string"  />
+          <data name="APModelName" inType="win:AnsiString" outType="xs:string"  />
+          <data name="APModelNum" inType="win:AnsiString" outType="xs:string"  />
+          <data name="DetailedStatusCodeOnRoam" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="RxRate" inType="win:Int32" outType="xs:int"  />
+          <data name="TxRate" inType="win:Int32" outType="xs:int"  />
+          <data name="EAPType" inType="win:Int32" outType="xs:int"  />
+          <data name="OneXAuthMode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HotSpot20IEPresent" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DeviceMfg" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProfileTypeUsed" inType="win:Int32" outType="xs:int"  />
+          <data name="SystemRandomizationStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProfileRandomizationStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectionFlags" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="DriverDate" inType="win:SYSTEMTIME" outType="xs:datetime"  />
+        </template>
+        <template tid="Args40002_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="DisconnectExtensions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RoamExtensions" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SuspectDurationMs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="BssidChanged" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="DetectionLinkQuality" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentLinkQuality" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MacTxUnicastCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxUnicastCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxMulticastCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxUnicastDecryptSuccess" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxUnicastDecryptFailure" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyTxFailedCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyTxFrameCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyTxRetryCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyRxFrameCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyRxFcsErrorCount" inType="win:Int32" outType="xs:int"  />
+          <data name="CurrentTxRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentRxRate" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args40003_0">
+          <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="DiagnosticStatsDifferenceTrigger" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MacTxUnicastCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxUnicastCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxMulticastCount" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxUnicastDecryptSuccess" inType="win:Int32" outType="xs:int"  />
+          <data name="MacRxUnicastDecryptFailure" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyTxFailedCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyTxFrameCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyTxRetryCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyRxFrameCount" inType="win:Int32" outType="xs:int"  />
+          <data name="PhyRxFcsErrorCount" inType="win:Int32" outType="xs:int"  />
+          <data name="TimeDiffMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args60002_0">
+          <data name="WarningCode" inType="win:UInt32" outType="win:ErrorCode"  />
+          <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60003_0">
+          <data name="NextState" inType="win:UInt8" outType="xs:unsignedByte"  />
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60004_0">
+          <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="UpdateReasonCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60101_0">
+          <data name="SourceAddress" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestinationAddress" inType="win:UInt32" outType="win:IPv4"  />
+          <data name="DestinationPort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60102_0">
+          <data name="SourceAddress" inType="win:Binary" outType="win:IPv6"  />
+          <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DestinationAddress" inType="win:Binary" outType="win:IPv6"  />
+          <data name="DestinationPort" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args60103_0">
+          <data name="IfGuid" inType="win:GUID" outType="xs:GUID"  />
+          <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="IfLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="API" />
+       <string id="string1" value="Disconnect" />
+       <string id="string2" value="Failure" />
+       <string id="string3" value="IntfContext" />
+       <string id="string4" value="IntfMgr" />
+       <string id="string5" value="LwtDiagnostic" />
+       <string id="string6" value="Microsoft-Windows-WLAN-AutoConfig" />
+       <string id="string7" value="Microsoft-Windows-WLAN-Autoconfig/Diagnostic" />
+       <string id="string8" value="Microsoft-Windows-WLAN-AutoConfig/Operational" />
+       <string id="string9" value="MSAM" />
+       <string id="string10" value="MSM" />
+       <string id="string11" value="MSMSEC" />
+       <string id="string12" value="Perftrack-MSAMAuthentication" />
+       <string id="string13" value="Perftrack-ReconnectOnResume" />
+       <string id="string14" value="Perftrack-RoamOnResume" />
+       <string id="string15" value="Perftrack-SoftAPStart" />
+       <string id="string16" value="Perftrack-SoftAPStop" />
+       <string id="string17" value="Perftrack-WfdDiscover" />
+       <string id="string18" value="Perftrack-WfdPair" />
+       <string id="string19" value="Restart" />
+       <string id="string20" value="Session" />
+       <string id="string21" value="SOFTAP" />
+       <string id="string22" value="Start" />
+       <string id="string23" value="State" />
+       <string id="string24" value="Stop" />
+       <string id="string25" value="Success" />
+       <string id="string26" value="System" />
+       <string id="string27" value="TaskWlanResumeReconnect" />
+       <string id="string28" value="ut:ActivityContext" />
+       <string id="string29" value="ut:Address" />
+       <string id="string30" value="ut:Association" />
+       <string id="string31" value="ut:Authentication" />
+       <string id="string32" value="ut:Closed" />
+       <string id="string33" value="ut:ClosePath" />
+       <string id="string34" value="ut:Configuration" />
+       <string id="string35" value="ut:Connect" />
+       <string id="string36" value="ut:Dropped" />
+       <string id="string37" value="ut:End" />
+       <string id="string38" value="ut:Established" />
+       <string id="string39" value="ut:Global" />
+       <string id="string40" value="ut:L2ConnectPath" />
+       <string id="string41" value="ut:L3ConnectPath" />
+       <string id="string42" value="ut:Listen" />
+       <string id="string43" value="ut:Open" />
+       <string id="string44" value="ut:Packet" />
+       <string id="string45" value="ut:PiiPresent" />
+       <string id="string46" value="ut:ReceivePath" />
+       <string id="string47" value="ut:Scan" />
+       <string id="string48" value="ut:SendPath" />
+       <string id="string49" value="ut:Start" />
+       <string id="string50" value="ut:StateTransition" />
+       <string id="string51" value="ut:StdTemplateHint" />
+       <string id="string52" value="win:Info" />
+       <string id="string53" value="win:Start" />
+       <string id="string54" value="win:Stop" />
+       <string id="string55" value="WLAN_OPCODE_ACM_CONNECTION_FAIL" />
+       <string id="string56" value="WLAN_OPCODE_ACM_CONNECTION_START" />
+       <string id="string57" value="WLAN_OPCODE_ACM_CONNECTION_SUCCEED" />
+       <string id="string58" value="WLAN_OPCODE_ACM_DISCONNECTED" />
+       <string id="string59" value="WLAN_OPCODE_IHV_SECURITY_FAILURE" />
+       <string id="string60" value="WLAN_OPCODE_IHV_SECURITY_SUCCESS" />
+       <string id="string61" value="WLAN_OPCODE_MSM_ASSOCIATION_FAILURE" />
+       <string id="string62" value="WLAN_OPCODE_MSM_ASSOCIATION_START" />
+       <string id="string63" value="WLAN_OPCODE_MSM_ASSOCIATION_SUCCESS" />
+       <string id="string64" value="WLAN_OPCODE_MSM_SECURITY_FAILURE" />
+       <string id="string65" value="WLAN_OPCODE_MSM_SECURITY_START" />
+       <string id="string66" value="WLAN_OPCODE_MSM_SECURITY_START_SP1" />
+       <string id="string67" value="WLAN_OPCODE_MSM_SECURITY_STOP" />
+       <string id="string68" value="WLAN_OPCODE_MSM_SECURITY_SUCCESS" />
+       <string id="string69" value="WLAN_OPCODE_ONEX_SECURITY_FAILURE" />
+       <string id="string70" value="WLAN_OPCODE_ONEX_SECURITY_RESTART" />
+       <string id="string71" value="WLAN_OPCODE_ONEX_SECURITY_START" />
+       <string id="string72" value="WLAN_OPCODE_ONEX_SECURITY_SUCCESS" />
+       <string id="string73" value="WLAN_TASK_ACM_CONNECTION" />
+       <string id="string74" value="WLAN_TASK_COST" />
+       <string id="string75" value="WLAN_TASK_IHV_SECURITY" />
+       <string id="string76" value="WLAN_TASK_MSM_ASSOCIATION" />
+       <string id="string77" value="WLAN_TASK_MSM_SECURITY" />
+       <string id="string78" value="WLAN_TASK_ONEX_SECURITY" />
+       <string id="string79" value="WlanConnect" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

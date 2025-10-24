@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-WPD-MTPIP" name="Microsoft-Windows-WPD-MTPIP" guid="{c374d21e-69b2-4cd7-9a25-62187c5a5619}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="100" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info" template="Args100_0"/>
+        <event value="101" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info"/>
+        <event value="102" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info"/>
+        <event value="103" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info"/>
+        <event value="104" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info" template="Args104_0"/>
+        <event value="105" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info" template="Args105_0"/>
+        <event value="106" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info"/>
+        <event value="107" version="0" level="win:Informational"  channel="Microsoft-Windows-WPD-MTPIP/Analytic" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-WPD-MTPIP/Analytic" type="Analytic"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args100_0">
+          <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MTPIPPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPPacketLength" />
+        </template>
+        <template tid="Args104_0">
+          <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MTPIPPacketType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args105_0">
+          <data name="MTPIPEventLength" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MTPIPEventData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPEventLength" />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-WPD-MTPIP" />
+       <string id="string1" value="Microsoft-Windows-WPD-MTPIP/Analytic" />
+       <string id="string2" value="win:Info" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

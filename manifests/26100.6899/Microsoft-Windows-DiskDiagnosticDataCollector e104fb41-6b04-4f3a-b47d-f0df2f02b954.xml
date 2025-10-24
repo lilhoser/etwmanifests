@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-DiskDiagnosticDataCollector" name="Microsoft-Windows-DiskDiagnosticDataCollector" guid="{e104fb41-6b04-4f3a-b47d-f0df2f02b954}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticDataCollector/Operational"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticDataCollector/Operational"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-DiskDiagnosticDataCollector/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-DiskDiagnosticDataCollector/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-DiskDiagnosticDataCollector" />
+       <string id="string1" value="Microsoft-Windows-DiskDiagnosticDataCollector/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

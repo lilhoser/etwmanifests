@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-VDRVROOT" name="Microsoft-Windows-VDRVROOT" guid="{e4480490-85b6-11dd-ad8b-0800200c9a66}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-VDRVROOT/Operational"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-VDRVROOT/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-VDRVROOT/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-VDRVROOT" />
+       <string id="string1" value="Microsoft-Windows-VDRVROOT/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

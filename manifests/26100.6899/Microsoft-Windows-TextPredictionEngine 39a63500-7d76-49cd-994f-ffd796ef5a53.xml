@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-TextPredictionEngine" name="Microsoft-Windows-TextPredictionEngine" guid="{39a63500-7d76-49cd-994f-ffd796ef5a53}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  task="TPLangMod_API_Init" opcode="win:Start"/>
+        <event value="2" version="0" level="win:Informational"  task="TPLangMod_API_Init" opcode="win:Stop"/>
+        <event value="3" version="0" level="win:Informational"  task="TPLangMod_API_SetContext" opcode="win:Start"/>
+        <event value="4" version="0" level="win:Informational"  task="TPLangMod_API_SetContext" opcode="win:Stop"/>
+        <event value="5" version="0" level="win:Informational"  task="TPLangMod_API_KeyPress" opcode="win:Start"/>
+        <event value="6" version="0" level="win:Informational"  task="TPLangMod_API_KeyPress" opcode="win:Stop"/>
+        <event value="7" version="0" level="win:Informational"  task="TPLangMod_API_KeyUnPress" opcode="win:Start"/>
+        <event value="8" version="0" level="win:Informational"  task="TPLangMod_API_KeyUnPress" opcode="win:Stop"/>
+        <event value="9" version="0" level="win:Informational"  task="TPLangMod_API_GetTypedAlternates" opcode="win:Start"/>
+        <event value="10" version="0" level="win:Informational"  task="TPLangMod_API_GetTypedAlternates" opcode="win:Stop"/>
+        <event value="11" version="0" level="win:Informational"  task="TPLangMod_API_GetPredictions" opcode="win:Start"/>
+        <event value="12" version="0" level="win:Informational"  task="TPLangMod_API_GetPredictions" opcode="win:Stop"/>
+        <event value="13" version="0" level="win:Informational"  task="TPLangMod_API_AddWord" opcode="win:Start"/>
+        <event value="14" version="0" level="win:Informational"  task="TPLangMod_API_AddWord" opcode="win:Stop"/>
+        <event value="15" version="0" level="win:Informational"  task="TPLangMod_API_GetCurrentOrNextWordCandidate" opcode="win:Start"/>
+        <event value="16" version="0" level="win:Informational"  task="TPLangMod_API_GetCurrentOrNextWordCandidate" opcode="win:Stop"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="TPLangMod_API_Init" message="$(string.string1)">
+        </task>
+        <task value="2" name="TPLangMod_API_SetContext" message="$(string.string2)">
+        </task>
+        <task value="3" name="TPLangMod_API_KeyPress" message="$(string.string3)">
+        </task>
+        <task value="4" name="TPLangMod_API_KeyUnPress" message="$(string.string4)">
+        </task>
+        <task value="5" name="TPLangMod_API_GetTypedAlternates" message="$(string.string5)">
+        </task>
+        <task value="6" name="TPLangMod_API_GetPredictions" message="$(string.string6)">
+        </task>
+        <task value="7" name="TPLangMod_API_AddWord" message="$(string.string7)">
+        </task>
+        <task value="8" name="TPLangMod_API_GetCurrentOrNextWordCandidate" message="$(string.string8)">
+        </task>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-TextPredictionEngine" />
+       <string id="string1" value="TPLangMod_API_AddWord" />
+       <string id="string2" value="TPLangMod_API_GetCurrentOrNextWordCandidate" />
+       <string id="string3" value="TPLangMod_API_GetPredictions" />
+       <string id="string4" value="TPLangMod_API_GetTypedAlternates" />
+       <string id="string5" value="TPLangMod_API_Init" />
+       <string id="string6" value="TPLangMod_API_KeyPress" />
+       <string id="string7" value="TPLangMod_API_KeyUnPress" />
+       <string id="string8" value="TPLangMod_API_SetContext" />
+       <string id="string9" value="win:Start" />
+       <string id="string10" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

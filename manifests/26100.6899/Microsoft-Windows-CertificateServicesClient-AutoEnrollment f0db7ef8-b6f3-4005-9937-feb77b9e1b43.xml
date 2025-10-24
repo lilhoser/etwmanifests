@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-CertificateServicesClient-AutoEnrollment" name="Microsoft-Windows-CertificateServicesClient-AutoEnrollment" guid="{f0db7ef8-b6f3-4005-9937-feb77b9e1b43}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Verbose"  template="Args1_0"/>
+        <event value="2" version="0" level="win:Verbose" />
+        <event value="3" version="0" level="win:Verbose" />
+        <event value="4" version="0" level="win:Verbose" />
+        <event value="5" version="0" level="win:Verbose" />
+        <event value="6" version="0" level="win:Verbose" />
+        <event value="15" version="0" level="win:Verbose" />
+        <event value="64" version="0" level="win:Verbose"  template="Args64_0"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="64" name=""/>
+        <opcode value="192" name=""/>
+        <opcode value="128" name=""/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="Context" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StoreName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LdapStore" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorMsg" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args64_0">
+          <data name="Context" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ObjId" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="" />
+       <string id="string1" value="Application" />
+       <string id="string2" value="Microsoft-Windows-CertificateServicesClient-AutoEnrollment" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-ApplicationExperienceInfrastructure" name="Microsoft-Windows-ApplicationExperienceInfrastructure" guid="{5ec13d8e-4b3f-422e-a7e7-3121a1d90c7a}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Warning"  channel="Application" opcode="win:Stop" template="Args1_0"/>
+        <event value="2" version="0" level="win:Critical"  channel="Application" opcode="win:Info"/>
+        <event value="3" version="0" level="win:Informational"  channel="Application" opcode="win:Info"/>
+      </events>
+      <channels>
+        <channel value="9" name="Application" type="unknown"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="DBType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppNameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="AppName" inType="win:UnicodeString" outType="xs:string" length="AppNameCount" />
+          <data name="VendorNameCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VendorName" inType="win:UnicodeString" outType="xs:string" length="VendorNameCount" />
+          <data name="SummaryCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Summary" inType="win:UnicodeString" outType="xs:string" length="SummaryCount" />
+          <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Application" />
+       <string id="string1" value="Microsoft-Windows-ApplicationExperienceInfrastructure" />
+       <string id="string2" value="win:Info" />
+       <string id="string3" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

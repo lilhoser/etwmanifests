@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Crashdump" name="Microsoft-Windows-Crashdump" guid="{ecdaacfa-6fe9-477c-b5f0-85b76f8f50aa}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="4" version="0" level="win:Warning"  channel="Microsoft-Windows-Crashdump/Operational" task="EarlyCrashDump" opcode="PrepareFailure" keywords="EarlyCrashDump" template="Args4_0"/>
+        <event value="5" version="0" level="win:Error"  channel="Microsoft-Windows-Crashdump/Operational" task="EarlyCrashDump" opcode="InitializationFailure" keywords="EarlyCrashDump"/>
+        <event value="6" version="0" level="win:Informational"  channel="Microsoft-Windows-Crashdump/Analytic" task="EarlyCrashDump" opcode="Initialized" keywords="EarlyCrashDump"/>
+        <event value="7" version="0" level="win:Informational"  channel="Microsoft-Windows-Crashdump/Analytic" task="EarlyCrashDump" opcode="Supported" keywords="EarlyCrashDump"/>
+        <event value="1" version="1" level="win:Informational"  channel="Microsoft-Windows-Crashdump/Analytic" task="TaskResumeCapable" opcode="OpCodeResumeCapable" keywords="Config" template="Args1_1"/>
+        <event value="2" version="1" level="win:Informational"  channel="Microsoft-Windows-Crashdump/Analytic" task="TaskTransferSizes" opcode="OpCodeTransferSizes" keywords="Config" template="Args2_1"/>
+        <event value="3" version="2" level="win:Informational"  channel="Microsoft-Windows-Crashdump/Operational" task="TaskCreateDumpFile" opcode="OpCodeCreateDumpFile" keywords="Config" template="Args3_2"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Crashdump/Analytic" type="Analytic"/>
+        <channel value="17" name="Microsoft-Windows-Crashdump/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+        <keyword name="Config" mask="0x1" message="$(string.string0)" />
+        <keyword name="EarlyCrashDump" mask="0x2" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="TaskResumeCapable" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="OpCodeResumeCapable" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="TaskTransferSizes" message="$(string.string2)">
+          <opcodes>
+           <opcode value="12" name="OpCodeTransferSizes" message="$(string.string9)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="TaskCreateDumpFile" message="$(string.string3)">
+          <opcodes>
+           <opcode value="13" name="OpCodeCreateDumpFile" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="EarlyCrashDump" message="$(string.string4)">
+          <opcodes>
+           <opcode value="11" name="Supported" message="$(string.string11)"/>
+           <opcode value="12" name="Initialized" message="$(string.string3)"/>
+           <opcode value="13" name="PrepareFailure" message="$(string.string10)"/>
+           <opcode value="14" name="InitializationFailure" message="$(string.string2)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="OpCodeResumeCapable" message="$(string.string8)"/>
+        <opcode value="12" name="OpCodeTransferSizes" message="$(string.string9)"/>
+        <opcode value="13" name="OpCodeCreateDumpFile" message="$(string.string7)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args4_0">
+          <data name="Status" inType="win:UInt32" outType="win:NTSTATUS"  />
+          <data name="FailurePoint" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args1_1">
+          <data name="ResumeCapable" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="ReasonCodes" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args2_1">
+          <data name="Minimum" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Maximum" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args3_2">
+          <data name="IoSpaceEnabled" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="PhysicalMemorySizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DumpFileSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="CreateDumpFileDurationInMs" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="LargeDumpThresholdGB" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Config" />
+       <string id="string1" value="EarlyCrashDump" />
+       <string id="string2" value="InitializationFailure" />
+       <string id="string3" value="Initialized" />
+       <string id="string4" value="Microsoft-Windows-Crashdump" />
+       <string id="string5" value="Microsoft-Windows-Crashdump/Analytic" />
+       <string id="string6" value="Microsoft-Windows-Crashdump/Operational" />
+       <string id="string7" value="OpCodeCreateDumpFile" />
+       <string id="string8" value="OpCodeResumeCapable" />
+       <string id="string9" value="OpCodeTransferSizes" />
+       <string id="string10" value="PrepareFailure" />
+       <string id="string11" value="Supported" />
+       <string id="string12" value="TaskCreateDumpFile" />
+       <string id="string13" value="TaskResumeCapable" />
+       <string id="string14" value="TaskTransferSizes" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

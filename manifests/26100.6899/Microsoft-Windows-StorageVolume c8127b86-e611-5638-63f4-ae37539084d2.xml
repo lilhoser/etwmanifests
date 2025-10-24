@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-StorageVolume" name="Microsoft-Windows-StorageVolume" guid="{c8127b86-e611-5638-63f4-ae37539084d2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1001" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageVolume/Operational" template="Args1001_0"/>
+        <event value="1002" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageVolume/Operational" template="Args1002_0"/>
+        <event value="1003" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageVolume/Operational"/>
+        <event value="1004" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageVolume/Operational"/>
+        <event value="1005" version="0" level="win:Informational"  channel="Microsoft-Windows-StorageVolume/Operational"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-StorageVolume/Operational" type="Operational"/>
+        <channel value="17" name="Microsoft-Windows-StorageVolume/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1001_0">
+          <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args1002_0">
+          <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Deleted" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-StorageVolume" />
+       <string id="string1" value="Microsoft-Windows-StorageVolume/Diagnostic" />
+       <string id="string2" value="Microsoft-Windows-StorageVolume/Operational" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

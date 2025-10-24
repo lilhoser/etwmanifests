@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-GroupPolicyTriggerProvider" name="Microsoft-Windows-GroupPolicyTriggerProvider" guid="{bd2f4252-5e1e-49fc-9a30-f3978ad89ee2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  keywords="Keyword_MachinePolicyPresentEvent" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  keywords="Keyword_UserPolicyPresentEvent"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Keyword_MachinePolicyPresentEvent" mask="0x1" message="$(string.string0)" />
+        <keyword name="Keyword_UserPolicyPresentEvent" mask="0x2" message="$(string.string1)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+        <template tid="Args1_0">
+          <data name="GPTriggerEventGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Keyword_MachinePolicyPresentEvent" />
+       <string id="string1" value="Keyword_UserPolicyPresentEvent" />
+       <string id="string2" value="Microsoft-Windows-GroupPolicyTriggerProvider" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

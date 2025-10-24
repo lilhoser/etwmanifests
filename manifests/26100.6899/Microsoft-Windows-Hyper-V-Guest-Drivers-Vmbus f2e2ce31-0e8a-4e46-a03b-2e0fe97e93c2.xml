@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Hyper-V-Guest-Drivers-Vmbus" name="Microsoft-Windows-Hyper-V-Guest-Drivers-Vmbus" guid="{f2e2ce31-0e8a-4e46-a03b-2e0fe97e93c2}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Error"  channel="Microsoft-Windows-Hyper-V-Guest-Drivers/Admin"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Hyper-V-Guest-Drivers/Admin" type="Admin"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+      </tasks>
+      <templates>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-Hyper-V-Guest-Drivers-Vmbus" />
+       <string id="string1" value="Microsoft-Windows-Hyper-V-Guest-Drivers/Admin" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

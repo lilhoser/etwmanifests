@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-BfeTriggerProvider" name="Microsoft-Windows-BfeTriggerProvider" guid="{54732ee5-61ca-4727-9da1-10be5a4f773d}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  opcode="Opcode_FirewallPortOpenEvent" keywords="Keyword_FirewallPortOpenEvent" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  opcode="Opcode_FirewallPortCloseEvent" keywords="Keyword_FirewallPortCloseEvent"/>
+      </events>
+      <channels>
+      </channels>
+      <keywords>
+        <keyword name="Keyword_FirewallPortOpenEvent" mask="0x1" message="$(string.string1)" />
+        <keyword name="Keyword_FirewallPortCloseEvent" mask="0x2" message="$(string.string0)" />
+      </keywords>
+      <tasks>
+      </tasks>
+      <opcodes>
+        <opcode value="100" name="Opcode_FirewallPortOpenEvent" message="$(string.string4)"/>
+        <opcode value="101" name="Opcode_FirewallPortCloseEvent" message="$(string.string3)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="FirewallPortStatusChangeGuid" inType="win:GUID" outType="xs:GUID"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Keyword_FirewallPortCloseEvent" />
+       <string id="string1" value="Keyword_FirewallPortOpenEvent" />
+       <string id="string2" value="Microsoft-Windows-BfeTriggerProvider" />
+       <string id="string3" value="Opcode_FirewallPortCloseEvent" />
+       <string id="string4" value="Opcode_FirewallPortOpenEvent" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

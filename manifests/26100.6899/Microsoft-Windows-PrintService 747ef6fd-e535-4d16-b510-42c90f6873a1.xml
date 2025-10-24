@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-PrintService" name="Microsoft-Windows-PrintService" guid="{747ef6fd-e535-4d16-b510-42c90f6873a1}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="99" version="0" level="win:Critical"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_UNEXPECTED_SHUTDOWN" opcode="Unexpected process termination" keywords="SPOOLER_KEYWORD" template="Args99_0"/>
+        <event value="100" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ADDPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_PRINTER" template="Args100_0"/>
+        <event value="101" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ADDPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_PRINTER"/>
+        <event value="104" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_DELETEPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_PRINTER"/>
+        <event value="105" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_DELETEPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_PRINTER"/>
+        <event value="106" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_STARTDOCPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB" template="Args106_0"/>
+        <event value="107" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_STARTDOCPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="110" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ENDDOCPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="111" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ENDDOCPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="114" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_DRIVER" template="Args114_0"/>
+        <event value="115" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_DRIVER"/>
+        <event value="118" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_OPENPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL"/>
+        <event value="119" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_OPENPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL"/>
+        <event value="122" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_STARTPAGE" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="123" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_STARTPAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="124" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ENDPAGE" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="125" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ENDPAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB"/>
+        <event value="131" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_SETPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_PRINTER"/>
+        <event value="200" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ADDCONNECTION" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_WIN32SPL SPOOLER_KEYWORD_CONNECTION"/>
+        <event value="201" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_ADDCONNECTION" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_WIN32SPL SPOOLER_KEYWORD_CONNECTION"/>
+        <event value="204" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_DELETECONNECTION" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_WIN32SPL SPOOLER_KEYWORD_CONNECTION"/>
+        <event value="205" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_DELETECONNECTION" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_WIN32SPL SPOOLER_KEYWORD_CONNECTION"/>
+        <event value="207" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_OPENPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_WIN32SPL"/>
+        <event value="210" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_CLOSEPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_WIN32SPL"/>
+        <event value="211" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_CLOSEPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_WIN32SPL"/>
+        <event value="212" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_PARSEINF" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP" template="Args212_0"/>
+        <event value="213" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PARSEINF" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP"/>
+        <event value="214" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP" template="Args214_0"/>
+        <event value="215" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP"/>
+        <event value="216" version="0" level="win:Verbose"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP" template="Args216_0"/>
+        <event value="217" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP"/>
+        <event value="218" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_COPY_PRINTER_DRIVER_PACKAGE" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP" template="Args218_0"/>
+        <event value="219" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_COPY_PRINTER_DRIVER_PACKAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP"/>
+        <event value="220" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ENUMPRINTERS" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_WIN32SPL SPOOLER_KEYWORD_PRINTER"/>
+        <event value="221" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ENUMPRINTERS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_WIN32SPL SPOOLER_KEYWORD_PRINTER"/>
+        <event value="222" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_TRACE" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_TRACE"/>
+        <event value="223" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_TRACE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_TRACE"/>
+        <event value="224" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR" template="Args224_0"/>
+        <event value="225" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP" template="Args225_0"/>
+        <event value="226" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP" template="Args226_0"/>
+        <event value="227" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="228" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="229" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="230" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="231" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="232" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="233" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="234" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETEDRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="235" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP" template="Args235_0"/>
+        <event value="236" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP" template="Args236_0"/>
+        <event value="237" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP" template="Args237_0"/>
+        <event value="238" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="239" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="240" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP" template="Args240_0"/>
+        <event value="241" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_SETUP"/>
+        <event value="242" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_SETUP" template="Args242_0"/>
+        <event value="300" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ADDPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC" template="Args300_0"/>
+        <event value="301" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETEPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="302" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETEPRINTER" opcode="Spooler Operation Started" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="303" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PAUSE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="304" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_UNPAUSE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="305" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PURGE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="306" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_SETPRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="307" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC" template="Args307_0"/>
+        <event value="308" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="309" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="310" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETE_DOCUMENT" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="311" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="312" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ADD_FORM" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="313" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETE_FORM" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="314" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="315" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_SHARE_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="316" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="317" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETEDRIVER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="318" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="319" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="320" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="321" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="322" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="323" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="325" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_UNPUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="326" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="327" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="328" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="329" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="331" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="332" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="333" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="334" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="335" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_UNPUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="336" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="337" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PUBLISH_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="338" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_UNPUBLISH_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="342" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRUNE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="343" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRUNE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="344" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRUNE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="345" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRUNE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="346" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRUNE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="347" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRUNE_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ACTIVE_DIR"/>
+        <event value="348" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Warning" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="349" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="350" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="351" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="352" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="353" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="354" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE_OBJECT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="356" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDDRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="359" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ADDPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="360" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_SETPRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="361" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="362" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="363" version="0" level="win:Critical"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="364" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="365" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="366" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="367" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="368" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="369" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="370" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="371" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_UNSHARE_PRINTER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PRINTER SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="372" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC" template="Args372_0"/>
+        <event value="373" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRINT_DOCUMENT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_JOB SPOOLER_KEYWORD_CLASSIC"/>
+        <event value="502" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER" template="Args502_0"/>
+        <event value="503" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="504" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="505" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="507" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="508" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="509" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="510" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZEPRINTPROVIDOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="511" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZEPRINTPROVIDOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="512" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZEPRINTPROVIDOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="513" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="514" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="515" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="516" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="517" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="518" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="519" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="520" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_ROUTE_COMMANDS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_ROUTER"/>
+        <event value="600" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_CSR" template="Args600_0"/>
+        <event value="601" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_CSR"/>
+        <event value="602" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_CSR" template="Args602_0"/>
+        <event value="603" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_CSR" template="Args603_0"/>
+        <event value="604" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_CSR"/>
+        <event value="701" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PIPELINE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_PIPELINE"/>
+        <event value="702" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PIPELINE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_PIPELINE"/>
+        <event value="703" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PIPELINE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_PIPELINE"/>
+        <event value="704" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PIPELINE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_PIPELINE"/>
+        <event value="800" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_JOB_DIAGNOSTICS" opcode="win:Start" template="Args800_0"/>
+        <event value="801" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_JOB_DIAGNOSTICS" opcode="win:Info"/>
+        <event value="802" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_JOB_DIAGNOSTICS" opcode="win:Stop" template="Args802_0"/>
+        <event value="805" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_JOB_DIAGNOSTICS" opcode="win:Info" template="Args805_0"/>
+        <event value="806" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_JOB_DIAGNOSTICS" opcode="win:Info"/>
+        <event value="807" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_JOB_DIAGNOSTICS" opcode="win:Info"/>
+        <event value="808" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INITIALIZE_OBJECT" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD" template="Args808_0"/>
+        <event value="809" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETE_DIR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD" template="Args809_0"/>
+        <event value="810" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DELETE_DIR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD"/>
+        <event value="811" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_FILE_OP" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD" template="Args811_0"/>
+        <event value="812" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_FILE_OP" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD"/>
+        <event value="813" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_FILE_OP" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD"/>
+        <event value="814" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL" template="Args814_0"/>
+        <event value="815" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ENABLE_RPC_ENDPOINTS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_ROUTER" template="Args815_0"/>
+        <event value="816" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ENABLE_RPC_ENDPOINTS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_ROUTER" template="Args816_0"/>
+        <event value="817" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ENABLE_RPC_ENDPOINTS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_ROUTER" template="Args817_0"/>
+        <event value="818" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ENABLE_RPC_ENDPOINTS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_ROUTER"/>
+        <event value="819" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR_REVERTING_TO_SSR" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CSR" template="Args819_0"/>
+        <event value="820" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR_REVERTING_TO_SSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR" template="Args820_0"/>
+        <event value="821" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR_REVERTING_TO_SSR" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CSR" template="Args821_0"/>
+        <event value="822" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR_REVERTING_TO_SSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR" template="Args822_0"/>
+        <event value="823" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CHANGING_DEFAULT_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD" template="Args823_0"/>
+        <event value="824" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PIPELINE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_PIPELINE" template="Args824_0"/>
+        <event value="825" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR_REVERTING_TO_SSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR"/>
+        <event value="826" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR_REVERTING_TO_SSR" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CSR" template="Args826_0"/>
+        <event value="827" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="XPS_PRINT_API_TASK" opcode="XPS Print API failure" keywords="XPS_PRINT_API_KEYWORD" template="Args827_0"/>
+        <event value="828" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="XPS_PRINT_API_TASK" opcode="XPS Print API failure" keywords="XPS_PRINT_API_KEYWORD" template="Args828_0"/>
+        <event value="829" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="XPS_PRINT_API_TASK_PERFORMANCE" opcode="win:Start" keywords="XPS_PRINT_API_KEYWORD_PERFORMANCE" template="Args829_0"/>
+        <event value="830" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="XPS_PRINT_API_TASK_PERFORMANCE" opcode="win:Stop" keywords="XPS_PRINT_API_KEYWORD_PERFORMANCE"/>
+        <event value="831" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="XPS_PRINT_API_TASK_PERFORMANCE" opcode="win:Start" keywords="XPS_PRINT_API_KEYWORD_PERFORMANCE"/>
+        <event value="832" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="XPS_PRINT_API_TASK_PERFORMANCE" opcode="win:Stop" keywords="XPS_PRINT_API_KEYWORD_PERFORMANCE"/>
+        <event value="833" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_PERFORMANCE" opcode="win:Start" keywords="SPOOLER_KEYWORD"/>
+        <event value="834" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_PERFORMANCE" opcode="win:Stop" keywords="SPOOLER_KEYWORD"/>
+        <event value="842" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX" template="Args842_0"/>
+        <event value="843" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX" template="Args843_0"/>
+        <event value="844" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX"/>
+        <event value="845" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX" template="Args845_0"/>
+        <event value="846" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CSR" template="Args846_0"/>
+        <event value="847" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_CSR"/>
+        <event value="848" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_SHARE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER" template="Args848_0"/>
+        <event value="849" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_UNSHARE_PRINTER" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD_PRINTER"/>
+        <event value="850" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_DRIVER_MONITORING" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER" template="Args850_0"/>
+        <event value="851" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_ADDCONNECTION" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CONNECTION" template="Args851_0"/>
+        <event value="852" version="0" level="win:Warning"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_DRIVER" template="Args852_0"/>
+        <event value="853" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR" template="Args853_0"/>
+        <event value="854" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR"/>
+        <event value="855" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Debug" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CSR" template="Args855_0"/>
+        <event value="856" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING" template="Args856_0"/>
+        <event value="857" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING"/>
+        <event value="858" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING"/>
+        <event value="859" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING"/>
+        <event value="860" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING"/>
+        <event value="861" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING"/>
+        <event value="862" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING"/>
+        <event value="863" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_CONNECTION_RECONFIGURED" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CONNECTION SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING" template="Args863_0"/>
+        <event value="864" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Operational" task="SPOOLER_TASK_SETUP_WFS" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD SETUP_WFS_KEYWORD"/>
+        <event value="865" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" opcode="Spooler Operation Succeeded" keywords="SPOOLER_KEYWORD SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX" template="Args865_0"/>
+        <event value="866" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CREATE_PRINT_DEVNODE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_PRINTER" template="Args866_0"/>
+        <event value="867" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_WSDMON_INITIALIZATION" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_WSDMON"/>
+        <event value="868" version="0" level="win:Informational"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_BOP_OFFLINE_LOG_ARCHIVE_FULL" opcode="Spooler Trace" keywords="SPOOLER_KEYWORD_CSR SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING" template="Args868_0"/>
+        <event value="869" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_DRIVER"/>
+        <event value="870" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_CSR" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_CLASSIC SPOOLER_KEYWORD_CSR"/>
+        <event value="871" version="0" level="win:Error"  channel="Microsoft-Windows-PrintService/Admin" task="SPOOLER_TASK_DEVICE_CONTROL" opcode="Spooler Operation Failed" keywords="SPOOLER_KEYWORD_LOCALSPL SPOOLER_KEYWORD_JOB" template="Args871_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-PrintService/Admin" type="Admin"/>
+        <channel value="17" name="Microsoft-Windows-PrintService/Operational" type="Operational"/>
+        <channel value="18" name="Microsoft-Windows-PrintService/Debug" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="SPOOLER_KEYWORD_LOCALSPL" mask="0x1" message="$(string.string18)" />
+        <keyword name="SPOOLER_KEYWORD_WIN32SPL" mask="0x2" message="$(string.string25)" />
+        <keyword name="SPOOLER_KEYWORD_PRINTER" mask="0x20" message="$(string.string21)" />
+        <keyword name="SPOOLER_KEYWORD_JOB" mask="0x40" message="$(string.string17)" />
+        <keyword name="SPOOLER_KEYWORD_CONNECTION" mask="0x80" message="$(string.string14)" />
+        <keyword name="SPOOLER_KEYWORD_DRIVER" mask="0x100" message="$(string.string16)" />
+        <keyword name="SPOOLER_KEYWORD_SETUP" mask="0x200" message="$(string.string23)" />
+        <keyword name="SPOOLER_KEYWORD_TRACE" mask="0x400" message="$(string.string24)" />
+        <keyword name="SPOOLER_KEYWORD_CLASSIC" mask="0x800" message="$(string.string13)" />
+        <keyword name="SPOOLER_KEYWORD_ACTIVE_DIR" mask="0x1000" message="$(string.string11)" />
+        <keyword name="SPOOLER_KEYWORD_ROUTER" mask="0x2000" message="$(string.string22)" />
+        <keyword name="SPOOLER_KEYWORD_CSR" mask="0x8000" message="$(string.string15)" />
+        <keyword name="SPOOLER_KEYWORD_PIPELINE" mask="0x10000" message="$(string.string19)" />
+        <keyword name="SPOOLER_KEYWORD" mask="0x20000" message="$(string.string10)" />
+        <keyword name="SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX" mask="0x40000" message="$(string.string20)" />
+        <keyword name="XPS_PRINT_API_KEYWORD" mask="0x80000" message="$(string.string93)" />
+        <keyword name="XPS_PRINT_API_KEYWORD_PERFORMANCE" mask="0x100000" message="$(string.string94)" />
+        <keyword name="SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING" mask="0x200000" message="$(string.string12)" />
+        <keyword name="SETUP_WFS_KEYWORD" mask="0x400000" message="$(string.string4)" />
+        <keyword name="SPOOLER_KEYWORD_WSDMON" mask="0x800000" message="$(string.string26)" />
+      </keywords>
+      <tasks>
+        <task value="1" name="SPOOLER_TASK_INITIALIZEPRINTPROVIDOR" message="$(string.string1)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="SPOOLER_TASK_OPENPRINTER" message="$(string.string2)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="SPOOLER_TASK_CLOSEPRINTER" message="$(string.string3)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="4" name="SPOOLER_TASK_ADDPRINTER" message="$(string.string4)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="5" name="SPOOLER_TASK_DELETEPRINTER" message="$(string.string5)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="10" name="Spooler Operation Started" message="$(string.string6)"/>
+          </opcodes>
+        </task>
+        <task value="6" name="SPOOLER_TASK_ADDCONNECTION" message="$(string.string6)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="7" name="SPOOLER_TASK_DELETECONNECTION" message="$(string.string7)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="8" name="SPOOLER_TASK_ADDDRIVER" message="$(string.string8)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="13" name="Spooler Warning" message="$(string.string9)"/>
+          </opcodes>
+        </task>
+        <task value="9" name="SPOOLER_TASK_DELETEDRIVER" message="$(string.string9)">
+          <opcodes>
+           <opcode value="13" name="Spooler Warning" message="$(string.string9)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="11" name="SPOOLER_TASK_STARTDOCPRINTER" message="$(string.string11)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="12" name="SPOOLER_TASK_ENDDOCPRINTER" message="$(string.string12)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="14" name="SPOOLER_TASK_STARTPAGE" message="$(string.string14)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="15" name="SPOOLER_TASK_ENDPAGE" message="$(string.string15)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="16" name="SPOOLER_TASK_SEEKPRINTER" message="$(string.string16)">
+        </task>
+        <task value="17" name="SPOOLER_TASK_SETPRINTER" message="$(string.string17)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="18" name="SPOOLER_TASK_PARSEINF" message="$(string.string18)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="19" name="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" message="$(string.string19)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="13" name="Spooler Warning" message="$(string.string9)"/>
+          </opcodes>
+        </task>
+        <task value="20" name="SPOOLER_TASK_COPY_PRINTER_DRIVER_PACKAGE" message="$(string.string20)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="21" name="SPOOLER_TASK_ENUMPRINTERS" message="$(string.string21)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="22" name="SPOOLER_TASK_TRACE" message="$(string.string22)">
+          <opcodes>
+           <opcode value="14" name="Spooler Trace" message="$(string.string8)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="23" name="SPOOLER_TASK_PAUSE_PRINTER" message="$(string.string23)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="24" name="SPOOLER_TASK_UNPAUSE_PRINTER" message="$(string.string24)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="25" name="SPOOLER_TASK_PURGE_PRINTER" message="$(string.string25)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="26" name="SPOOLER_TASK_PRINT_DOCUMENT" message="$(string.string26)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="27" name="SPOOLER_TASK_DELETE_DOCUMENT" message="$(string.string27)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="28" name="SPOOLER_TASK_ADD_FORM" message="$(string.string28)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="29" name="SPOOLER_TASK_DELETE_FORM" message="$(string.string29)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="30" name="SPOOLER_TASK_SHARE_PRINTER" message="$(string.string30)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="31" name="SPOOLER_TASK_UNSHARE_PRINTER" message="$(string.string31)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="32" name="SPOOLER_TASK_INITIALIZE" message="$(string.string32)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="33" name="SPOOLER_TASK_PUBLISH_PRINTER" message="$(string.string33)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="34" name="SPOOLER_TASK_UNPUBLISH_PRINTER" message="$(string.string34)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="35" name="SPOOLER_TASK_PRUNE_PRINTER" message="$(string.string35)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="36" name="SPOOLER_TASK_INITIALIZE_OBJECT" message="$(string.string36)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="37" name="SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR" message="$(string.string37)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="38" name="SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE" message="$(string.string38)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="39" name="SPOOLER_TASK_ROUTE_COMMANDS" message="$(string.string39)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="41" name="SPOOLER_TASK_CSR" message="$(string.string41)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="42" name="SPOOLER_TASK_PIPELINE" message="$(string.string42)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="43" name="SPOOLER_TASK_JOB_DIAGNOSTICS" message="$(string.string43)">
+        </task>
+        <task value="44" name="SPOOLER_TASK_UNEXPECTED_SHUTDOWN" message="$(string.string44)">
+          <opcodes>
+           <opcode value="16" name="Unexpected process termination" message="$(string.string88)"/>
+          </opcodes>
+        </task>
+        <task value="45" name="SPOOLER_TASK_DELETE_DIR" message="$(string.string45)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="46" name="SPOOLER_TASK_FILE_OP" message="$(string.string46)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="47" name="SPOOLER_TASK_ENABLE_RPC_ENDPOINTS" message="$(string.string47)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="48" name="SPOOLER_TASK_CSR_REVERTING_TO_SSR" message="$(string.string48)">
+          <opcodes>
+           <opcode value="14" name="Spooler Trace" message="$(string.string8)"/>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="49" name="SPOOLER_TASK_CHANGING_DEFAULT_PRINTER" message="$(string.string49)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="50" name="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" message="$(string.string50)">
+          <opcodes>
+           <opcode value="11" name="Spooler Operation Succeeded" message="$(string.string7)"/>
+          </opcodes>
+        </task>
+        <task value="51" name="XPS_PRINT_API_TASK" message="$(string.string51)">
+          <opcodes>
+           <opcode value="17" name="XPS Print API failure" message="$(string.string92)"/>
+          </opcodes>
+        </task>
+        <task value="52" name="XPS_PRINT_API_TASK_PERFORMANCE" message="$(string.string52)">
+        </task>
+        <task value="53" name="SPOOLER_TASK_PERFORMANCE" message="$(string.string53)">
+        </task>
+        <task value="54" name="SPOOLER_TASK_DRIVER_MONITORING" message="$(string.string54)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="55" name="SPOOLER_TASK_CONNECTION_RECONFIGURED" message="$(string.string55)">
+          <opcodes>
+           <opcode value="14" name="Spooler Trace" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="56" name="SPOOLER_TASK_SETUP_WFS" message="$(string.string56)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="57" name="SPOOLER_TASK_CREATE_PRINT_DEVNODE" message="$(string.string57)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="58" name="SPOOLER_TASK_WSDMON_INITIALIZATION" message="$(string.string58)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+        <task value="59" name="SPOOLER_TASK_BOP_OFFLINE_LOG_ARCHIVE_FULL" message="$(string.string59)">
+          <opcodes>
+           <opcode value="14" name="Spooler Trace" message="$(string.string8)"/>
+          </opcodes>
+        </task>
+        <task value="60" name="SPOOLER_TASK_DEVICE_CONTROL" message="$(string.string60)">
+          <opcodes>
+           <opcode value="12" name="Spooler Operation Failed" message="$(string.string5)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="10" name="SPOOLER_OPCODE_PENDING" message="$(string.string28)"/>
+        <opcode value="11" name="SPOOLER_OPCODE_SUCCEEDED" message="$(string.string29)"/>
+        <opcode value="12" name="SPOOLER_OPCODE_FAILED" message="$(string.string27)"/>
+        <opcode value="13" name="SPOOLER_OPCODE_WARNING" message="$(string.string32)"/>
+        <opcode value="14" name="SPOOLER_OPCODE_TRACE" message="$(string.string30)"/>
+        <opcode value="16" name="SPOOLER_OPCODE_UNEXPECTED_SHUTDOWN" message="$(string.string31)"/>
+        <opcode value="17" name="XPS_PRINT_API_OPCODE_FAILED" message="$(string.string95)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args99_0">
+          <data name="OperationCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args100_0">
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args106_0">
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args114_0">
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args212_0">
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstallSection" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LastError" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args214_0">
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InstallSection" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PackageAware" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="CoreDriverDependencies" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LastError" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args216_0">
+          <data name="Context" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LastError" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args218_0">
+          <data name="Label" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Message" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Server" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DestInfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LastError" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args224_0">
+          <data name="Function" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="Server" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args225_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RequiredClassDriver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args226_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverModelVersion" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args235_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RequiredClassDriver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Directive" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Value" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args236_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RequiredClassDriver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Directive" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ClassDriverOnly" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="NonClassDriverOnly" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args237_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RequiredClassDriver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Directive" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EmptyToken" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IncorrectNumberOfTokens" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args240_0">
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="InfPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="MissingManifest" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="MultipleManifests" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args242_0">
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args300_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args307_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param5" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param6" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param7" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param8" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args372_0">
+          <data name="param1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param2" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param3" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param4" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param5" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param6" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param7" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param8" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param9" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param10" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="param11" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args502_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args600_0">
+          <data name="DriverSource" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Driver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args602_0">
+          <data name="RegistryKey1" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RegistryKey2" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args603_0">
+          <data name="RegistryKey" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args800_0">
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args802_0">
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="JobSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Pages" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PagesPerSide" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FilesOpened" inType="win:Int16" outType="xs:short"  />
+          <data name="JobSizeHigh" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args805_0">
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="GdiJobSize" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ICMMethod" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Color" inType="win:Int16" outType="xs:short"  />
+          <data name="XRes" inType="win:Int16" outType="xs:short"  />
+          <data name="YRes" inType="win:Int16" outType="xs:short"  />
+          <data name="Quality" inType="win:Int16" outType="xs:short"  />
+          <data name="Copies" inType="win:Int16" outType="xs:short"  />
+          <data name="TTOption" inType="win:Int16" outType="xs:short"  />
+        </template>
+        <template tid="Args808_0">
+          <data name="PluginDllName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="Context" inType="win:Int16" outType="xs:short"  />
+        </template>
+        <template tid="Args809_0">
+          <data name="DirectoryName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="WaitForReboot" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="Context" inType="win:Int16" outType="xs:short"  />
+        </template>
+        <template tid="Args811_0">
+          <data name="Source" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Destination" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="Context" inType="win:Int16" outType="xs:short"  />
+        </template>
+        <template tid="Args814_0">
+          <data name="Processor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Environment" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Path" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args815_0">
+          <data name="ProtocolSequence" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="EndPoint" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="Context" inType="win:Int16" outType="xs:short"  />
+        </template>
+        <template tid="Args816_0">
+          <data name="ValidatedProtocolSequence" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ExpectedProtocolSequence" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args817_0">
+          <data name="WindowsStarterEdition" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SuiteStorageServer" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SystemPrintingDisabled" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SuiteBlade" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SuiteEmbeddedRestricted" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="SuiteComputerServer" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args819_0">
+          <data name="Policy" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args820_0">
+          <data name="PrintProcessor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Connection" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsXpsPrinter" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args821_0">
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Level" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args822_0">
+          <data name="LocalPrintProcessor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RemotePrintProcessor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DefaultPrintProcessor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="LocalDataType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="RemoteDataType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DefaultDataType" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args823_0">
+          <data name="DefaultPrinterSelectedBySpooler" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="OldDefaultPrinter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewDefaultPrinter" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="Module" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args824_0">
+          <data name="DocumentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrintQueue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ErrorInfo" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args826_0">
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PrinterPath" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args827_0">
+          <data name="QueueName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args828_0">
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ErrorCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args829_0">
+          <data name="Name" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Context" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="StatusCode" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args842_0">
+          <data name="JobId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Processor" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Printer" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Driver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="IsolationMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args843_0">
+          <data name="SucceededRpcCalls" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FailedRpcCalls" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args845_0">
+          <data name="Module" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Printer" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Driver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args846_0">
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PrinterAge" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ExpiryAge" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args848_0">
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="ShareName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args850_0">
+          <data name="Driver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Function" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args851_0">
+          <data name="PrintQueue" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args852_0">
+          <data name="OriginalDriver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="NewDriver" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args853_0">
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args855_0">
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="AccessCode" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args856_0">
+          <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args863_0">
+          <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"  />
+        </template>
+        <template tid="Args865_0">
+          <data name="Failures" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Jobs" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DriverName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args866_0">
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="DeviceObjectInstanceIdentifier" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="HResultErrorCode" inType="win:HexInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args868_0">
+          <data name="MachineName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+        <template tid="Args871_0">
+          <data name="RestrictionReason" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="JobOrDocumentName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="UserName" inType="win:UnicodeString" outType="xs:string"  />
+          <data name="PortName" inType="win:UnicodeString" outType="xs:string"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="Microsoft-Windows-PrintService" />
+       <string id="string1" value="Microsoft-Windows-PrintService/Admin" />
+       <string id="string2" value="Microsoft-Windows-PrintService/Debug" />
+       <string id="string3" value="Microsoft-Windows-PrintService/Operational" />
+       <string id="string4" value="SETUP_WFS_KEYWORD" />
+       <string id="string5" value="Spooler Operation Failed" />
+       <string id="string6" value="Spooler Operation Started" />
+       <string id="string7" value="Spooler Operation Succeeded" />
+       <string id="string8" value="Spooler Trace" />
+       <string id="string9" value="Spooler Warning" />
+       <string id="string10" value="SPOOLER_KEYWORD" />
+       <string id="string11" value="SPOOLER_KEYWORD_ACTIVE_DIR" />
+       <string id="string12" value="SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING" />
+       <string id="string13" value="SPOOLER_KEYWORD_CLASSIC" />
+       <string id="string14" value="SPOOLER_KEYWORD_CONNECTION" />
+       <string id="string15" value="SPOOLER_KEYWORD_CSR" />
+       <string id="string16" value="SPOOLER_KEYWORD_DRIVER" />
+       <string id="string17" value="SPOOLER_KEYWORD_JOB" />
+       <string id="string18" value="SPOOLER_KEYWORD_LOCALSPL" />
+       <string id="string19" value="SPOOLER_KEYWORD_PIPELINE" />
+       <string id="string20" value="SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX" />
+       <string id="string21" value="SPOOLER_KEYWORD_PRINTER" />
+       <string id="string22" value="SPOOLER_KEYWORD_ROUTER" />
+       <string id="string23" value="SPOOLER_KEYWORD_SETUP" />
+       <string id="string24" value="SPOOLER_KEYWORD_TRACE" />
+       <string id="string25" value="SPOOLER_KEYWORD_WIN32SPL" />
+       <string id="string26" value="SPOOLER_KEYWORD_WSDMON" />
+       <string id="string27" value="SPOOLER_OPCODE_FAILED" />
+       <string id="string28" value="SPOOLER_OPCODE_PENDING" />
+       <string id="string29" value="SPOOLER_OPCODE_SUCCEEDED" />
+       <string id="string30" value="SPOOLER_OPCODE_TRACE" />
+       <string id="string31" value="SPOOLER_OPCODE_UNEXPECTED_SHUTDOWN" />
+       <string id="string32" value="SPOOLER_OPCODE_WARNING" />
+       <string id="string33" value="SPOOLER_TASK_ADD_FORM" />
+       <string id="string34" value="SPOOLER_TASK_ADDCONNECTION" />
+       <string id="string35" value="SPOOLER_TASK_ADDDRIVER" />
+       <string id="string36" value="SPOOLER_TASK_ADDPRINTER" />
+       <string id="string37" value="SPOOLER_TASK_BOP_OFFLINE_LOG_ARCHIVE_FULL" />
+       <string id="string38" value="SPOOLER_TASK_CHANGING_DEFAULT_PRINTER" />
+       <string id="string39" value="SPOOLER_TASK_CLOSEPRINTER" />
+       <string id="string40" value="SPOOLER_TASK_CONNECTION_RECONFIGURED" />
+       <string id="string41" value="SPOOLER_TASK_COPY_PRINTER_DRIVER_PACKAGE" />
+       <string id="string42" value="SPOOLER_TASK_CREATE_PRINT_DEVNODE" />
+       <string id="string43" value="SPOOLER_TASK_CSR" />
+       <string id="string44" value="SPOOLER_TASK_CSR_REVERTING_TO_SSR" />
+       <string id="string45" value="SPOOLER_TASK_DELETE_DIR" />
+       <string id="string46" value="SPOOLER_TASK_DELETE_DOCUMENT" />
+       <string id="string47" value="SPOOLER_TASK_DELETE_FORM" />
+       <string id="string48" value="SPOOLER_TASK_DELETECONNECTION" />
+       <string id="string49" value="SPOOLER_TASK_DELETEDRIVER" />
+       <string id="string50" value="SPOOLER_TASK_DELETEPRINTER" />
+       <string id="string51" value="SPOOLER_TASK_DEVICE_CONTROL" />
+       <string id="string52" value="SPOOLER_TASK_DRIVER_MONITORING" />
+       <string id="string53" value="SPOOLER_TASK_ENABLE_RPC_ENDPOINTS" />
+       <string id="string54" value="SPOOLER_TASK_ENDDOCPRINTER" />
+       <string id="string55" value="SPOOLER_TASK_ENDPAGE" />
+       <string id="string56" value="SPOOLER_TASK_ENUMPRINTERS" />
+       <string id="string57" value="SPOOLER_TASK_FILE_OP" />
+       <string id="string58" value="SPOOLER_TASK_INITIALIZE" />
+       <string id="string59" value="SPOOLER_TASK_INITIALIZE_OBJECT" />
+       <string id="string60" value="SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR" />
+       <string id="string61" value="SPOOLER_TASK_INITIALIZEPRINTPROVIDOR" />
+       <string id="string62" value="SPOOLER_TASK_INSTALL_PRINTER_DRIVER" />
+       <string id="string63" value="SPOOLER_TASK_JOB_DIAGNOSTICS" />
+       <string id="string64" value="SPOOLER_TASK_OPENPRINTER" />
+       <string id="string65" value="SPOOLER_TASK_PARSEINF" />
+       <string id="string66" value="SPOOLER_TASK_PAUSE_PRINTER" />
+       <string id="string67" value="SPOOLER_TASK_PERFORMANCE" />
+       <string id="string68" value="SPOOLER_TASK_PIPELINE" />
+       <string id="string69" value="SPOOLER_TASK_PRINT_DOCUMENT" />
+       <string id="string70" value="SPOOLER_TASK_PRINT_DRIVER_SANDBOX" />
+       <string id="string71" value="SPOOLER_TASK_PRUNE_PRINTER" />
+       <string id="string72" value="SPOOLER_TASK_PUBLISH_PRINTER" />
+       <string id="string73" value="SPOOLER_TASK_PURGE_PRINTER" />
+       <string id="string74" value="SPOOLER_TASK_ROUTE_COMMANDS" />
+       <string id="string75" value="SPOOLER_TASK_SEEKPRINTER" />
+       <string id="string76" value="SPOOLER_TASK_SETPRINTER" />
+       <string id="string77" value="SPOOLER_TASK_SETUP_WFS" />
+       <string id="string78" value="SPOOLER_TASK_SHARE_PRINTER" />
+       <string id="string79" value="SPOOLER_TASK_STARTDOCPRINTER" />
+       <string id="string80" value="SPOOLER_TASK_STARTPAGE" />
+       <string id="string81" value="SPOOLER_TASK_TRACE" />
+       <string id="string82" value="SPOOLER_TASK_UNEXPECTED_SHUTDOWN" />
+       <string id="string83" value="SPOOLER_TASK_UNPAUSE_PRINTER" />
+       <string id="string84" value="SPOOLER_TASK_UNPUBLISH_PRINTER" />
+       <string id="string85" value="SPOOLER_TASK_UNSHARE_PRINTER" />
+       <string id="string86" value="SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE" />
+       <string id="string87" value="SPOOLER_TASK_WSDMON_INITIALIZATION" />
+       <string id="string88" value="Unexpected process termination" />
+       <string id="string89" value="win:Info" />
+       <string id="string90" value="win:Start" />
+       <string id="string91" value="win:Stop" />
+       <string id="string92" value="XPS Print API failure" />
+       <string id="string93" value="XPS_PRINT_API_KEYWORD" />
+       <string id="string94" value="XPS_PRINT_API_KEYWORD_PERFORMANCE" />
+       <string id="string95" value="XPS_PRINT_API_OPCODE_FAILED" />
+       <string id="string96" value="XPS_PRINT_API_TASK" />
+       <string id="string97" value="XPS_PRINT_API_TASK_PERFORMANCE" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

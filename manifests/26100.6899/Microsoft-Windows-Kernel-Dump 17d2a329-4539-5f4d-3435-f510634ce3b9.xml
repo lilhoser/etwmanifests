@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-Kernel-Dump" name="Microsoft-Windows-Kernel-Dump" guid="{17d2a329-4539-5f4d-3435-f510634ce3b9}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_POLICY" opcode="Policy Operation Failed" template="Args1_0"/>
+        <event value="2" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_POLICY" opcode="Policy Value Changed" template="Args2_0"/>
+        <event value="3" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_POLICY" opcode="CrashDump Disabled On Boot"/>
+        <event value="4" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Dump Disable Failed"/>
+        <event value="5" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Dump Initialization Failed."/>
+        <event value="6" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Dump Load Driver Failed."/>
+        <event value="7" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Dump Stack Initialization Failed"/>
+        <event value="8" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Free Dump Stack Failed"/>
+        <event value="9" version="0" level="win:Warning"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Load Dump Stack Failed"/>
+        <event value="10" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Dump Disabled"/>
+        <event value="11" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_CRASHDUMP_CONFIG" opcode="Dump Reconfigured"/>
+        <event value="12" version="0" level="win:Informational"  channel="Microsoft-Windows-Kernel-Dump/Operational" task="DUMP_TASK_DUMP_CONFIG" opcode="Dump disabled forcefully" template="Args12_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-Kernel-Dump/Operational" type="Operational"/>
+      </channels>
+      <keywords>
+      </keywords>
+      <tasks>
+        <task value="1" name="DUMP_TASK_CRASHDUMP_POLICY" message="$(string.string1)">
+          <opcodes>
+           <opcode value="11" name="Policy Operation Failed" message="$(string.string27)"/>
+           <opcode value="12" name="Policy Value Changed" message="$(string.string28)"/>
+           <opcode value="13" name="CrashDump Disabled On Boot" message="$(string.string0)"/>
+          </opcodes>
+        </task>
+        <task value="2" name="DUMP_TASK_CRASHDUMP_CONFIG" message="$(string.string2)">
+          <opcodes>
+           <opcode value="14" name="Dump Disable Failed" message="$(string.string12)"/>
+           <opcode value="15" name="Dump Initialization Failed." message="$(string.string15)"/>
+           <opcode value="16" name="Dump Load Driver Failed." message="$(string.string16)"/>
+           <opcode value="17" name="Dump Stack Initialization Failed" message="$(string.string18)"/>
+           <opcode value="18" name="Free Dump Stack Failed" message="$(string.string23)"/>
+           <opcode value="19" name="Load Dump Stack Failed" message="$(string.string24)"/>
+           <opcode value="20" name="Dump Disabled" message="$(string.string13)"/>
+           <opcode value="21" name="Dump Reconfigured" message="$(string.string17)"/>
+          </opcodes>
+        </task>
+        <task value="3" name="DUMP_TASK_DUMP_CONFIG" message="$(string.string3)">
+          <opcodes>
+           <opcode value="22" name="Dump disabled forcefully" message="$(string.string14)"/>
+          </opcodes>
+        </task>
+      </tasks>
+      <opcodes>
+        <opcode value="11" name="CrashDumpPolicyOperationFailure" message="$(string.string9)"/>
+        <opcode value="12" name="CrashDumpPolicyValueChanged" message="$(string.string10)"/>
+        <opcode value="13" name="CrashDumpDisabledOnBootByPolicy" message="$(string.string2)"/>
+        <opcode value="14" name="CrashDumpDisableFailed" message="$(string.string3)"/>
+        <opcode value="15" name="CrashDumpInitializeFailed" message="$(string.string6)"/>
+        <opcode value="16" name="CrashDumpLoadDriverFailed" message="$(string.string7)"/>
+        <opcode value="17" name="CrashDumpDumpStackInitializationFailed" message="$(string.string4)"/>
+        <opcode value="18" name="CrashDumpFreeDumpStackFailed" message="$(string.string5)"/>
+        <opcode value="19" name="CrashDumpLoadDumpStackFailed" message="$(string.string8)"/>
+        <opcode value="20" name="CrashDumpDisabled" message="$(string.string1)"/>
+        <opcode value="21" name="CrashDumpReconfigured" message="$(string.string11)"/>
+        <opcode value="22" name="ForceDumpDisabled" message="$(string.string22)"/>
+      </opcodes>
+      <templates>
+        <template tid="Args1_0">
+          <data name="OperationType" inType="win:AnsiString" outType="xs:string"  />
+        </template>
+        <template tid="Args2_0">
+          <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="NTStatus" inType="win:UInt32" outType="win:NTSTATUS"  />
+        </template>
+        <template tid="Args12_0">
+          <data name="ForceDumpDisabled" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="CrashDump Disabled On Boot" />
+       <string id="string1" value="CrashDumpDisabled" />
+       <string id="string2" value="CrashDumpDisabledOnBootByPolicy" />
+       <string id="string3" value="CrashDumpDisableFailed" />
+       <string id="string4" value="CrashDumpDumpStackInitializationFailed" />
+       <string id="string5" value="CrashDumpFreeDumpStackFailed" />
+       <string id="string6" value="CrashDumpInitializeFailed" />
+       <string id="string7" value="CrashDumpLoadDriverFailed" />
+       <string id="string8" value="CrashDumpLoadDumpStackFailed" />
+       <string id="string9" value="CrashDumpPolicyOperationFailure" />
+       <string id="string10" value="CrashDumpPolicyValueChanged" />
+       <string id="string11" value="CrashDumpReconfigured" />
+       <string id="string12" value="Dump Disable Failed" />
+       <string id="string13" value="Dump Disabled" />
+       <string id="string14" value="Dump disabled forcefully" />
+       <string id="string15" value="Dump Initialization Failed." />
+       <string id="string16" value="Dump Load Driver Failed." />
+       <string id="string17" value="Dump Reconfigured" />
+       <string id="string18" value="Dump Stack Initialization Failed" />
+       <string id="string19" value="DUMP_TASK_CRASHDUMP_CONFIG" />
+       <string id="string20" value="DUMP_TASK_CRASHDUMP_POLICY" />
+       <string id="string21" value="DUMP_TASK_DUMP_CONFIG" />
+       <string id="string22" value="ForceDumpDisabled" />
+       <string id="string23" value="Free Dump Stack Failed" />
+       <string id="string24" value="Load Dump Stack Failed" />
+       <string id="string25" value="Microsoft-Windows-Kernel-Dump" />
+       <string id="string26" value="Microsoft-Windows-Kernel-Dump/Operational" />
+       <string id="string27" value="Policy Operation Failed" />
+       <string id="string28" value="Policy Value Changed" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd">
+<instrumentation>
+  <events>
+  <provider symbol="Microsoft-Windows-IndirectDisplays-ClassExtension-Events" name="Microsoft-Windows-IndirectDisplays-ClassExtension-Events" guid="{966cd1c0-3f69-42ad-9877-517dce8462b4}" source="Xml" messageFileName="noMessageFile" resourceFileName="noResourceFile">
+      <events>
+        <event value="1" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterInitAsync" opcode="win:Info" keywords="DdiCalls"/>
+        <event value="2" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterInitFinished" opcode="win:Info" keywords="DdiCallbacks" template="Args2_0"/>
+        <event value="3" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterCommit" opcode="win:Start" keywords="DdiCallbacks" template="Args3_0"/>
+        <event value="4" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterUpdateMaxBandwidth" opcode="win:Info" keywords="DdiCalls" template="Args4_0"/>
+        <event value="5" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterDestroy" opcode="win:Info" keywords="DdiCalls"/>
+        <event value="6" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorCreate" opcode="win:Info" keywords="DdiCalls" template="Args6_0"/>
+        <event value="7" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorArrival" opcode="win:Info" keywords="DdiCalls"/>
+        <event value="8" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorDeparture" opcode="win:Info" keywords="DdiCalls"/>
+        <event value="9" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorGetDefaultDescriptionModes" opcode="win:Info" keywords="DdiCallbacks" template="Args9_0"/>
+        <event value="10" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorQueryTargetModes" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="11" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorAssignSwapChain" opcode="win:Info" keywords="DdiCallbacks" template="Args11_0"/>
+        <event value="12" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorUnassignSwapChain" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="13" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorI2CTransmit" opcode="win:Info" keywords="DdiCallbacks" template="Args13_0"/>
+        <event value="14" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorI2CReceive" opcode="win:Info" keywords="DdiCallbacks" template="Args14_0"/>
+        <event value="15" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorSetGammaRamp" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="16" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorUpdateModes" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="17" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorSetupHardwareCursor" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="18" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorQueryHardwareCursor" opcode="win:Info" keywords="DdiCallbacks" template="Args18_0"/>
+        <event value="19" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainCreate" opcode="win:Info" keywords="DdiCallbacks" template="Args19_0"/>
+        <event value="20" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainDestroy" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="21" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainSetDevice" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="22" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainReleaseAndAcquireBuffer" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="23" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainGetDirtyRects" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="24" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainGetMoveRegions" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="25" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainFinishProcessingFrame" opcode="win:Info" keywords="DdiCallbacks" template="Args25_0"/>
+        <event value="26" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainReportFrameStatistics" opcode="win:Info" keywords="DdiCallbacks" template="Args26_0"/>
+        <event value="27" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmGetCertificateSize" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="28" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmGetCertificate" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="29" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmCreateProtectedOutput" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="30" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmGetRandomNumber" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="31" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmSetSigningKeyAndSequenceNumbers" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="32" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmGetInformation" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="33" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmConfigureProtectedOutput" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="34" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="OpmDestroyProtectedOutput" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="35" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="ProcessDdi" opcode="win:Start" keywords="DdiCalls"/>
+        <event value="36" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorTraceTargetModes" opcode="win:Info" keywords="DdiCallbacks" template="Args36_0"/>
+        <event value="37" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorTraceMonitorModes" opcode="win:Info" keywords="DdiCallbacks" template="Args37_0"/>
+        <event value="38" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="Watchdog" opcode="win:Start" keywords="DdiCallbacks"/>
+        <event value="39" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="Watchdog" opcode="win:Stop" keywords="DdiCallbacks"/>
+        <event value="40" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="DeviceParseMonitorDescription" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="41" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterCommitPaths" opcode="win:Info" keywords="DdiCallbacks" template="Args41_0"/>
+        <event value="42" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainReportFrameStatisticsStep" opcode="win:Info" keywords="DdiCallbacks" template="Args42_0"/>
+        <event value="43" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorOpmSetMftContext" opcode="win:Info" keywords="DdiCallbacks" template="Args43_0"/>
+        <event value="44" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorGetPhysicalSize" opcode="win:Info" keywords="DdiCallbacks" template="Args44_0"/>
+        <event value="45" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterDisplayConfigUpdatePath" opcode="win:Info" keywords="DdiCalls" template="Args45_0"/>
+        <event value="46" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainInSystemMemory" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="47" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainReleaseAndAcquireSystemBuffer" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="48" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainGetPhysicallyContiguousAddress" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="49" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainDriverFrameProcessingTask" opcode="win:Start" keywords="DdiCallbacks" template="Args49_0"/>
+        <event value="50" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainDriverFrameProcessingTask" opcode="win:Stop" keywords="DdiCallbacks" template="Args50_0"/>
+        <event value="51" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="ProcessDdi" opcode="win:Stop" keywords="DdiCalls"/>
+        <event value="52" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="ProcessKernelRequest" opcode="win:Start" keywords="DdiCalls" template="Args52_0"/>
+        <event value="53" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="ProcessKernelRequest" opcode="win:Stop" keywords="DdiCalls"/>
+        <event value="54" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SwapchainReleaseAndAcquireBuffer2" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="55" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="DeviceParseMonitorDescription2" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="56" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorQueryTargetModes2" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="57" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorUpdateModes2" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="58" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterQueryTargetInfo" opcode="win:Info" keywords="DdiCallbacks" template="Args58_0"/>
+        <event value="59" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorSetDefaultHdrMetaData" opcode="win:Info" keywords="DdiCallbacks"/>
+        <event value="60" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterDisplayConfigUpdate" opcode="win:Start" keywords="DdiCalls"/>
+        <event value="61" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="CommitVidPn" opcode="win:Start" keywords="DdiCalls" template="Args61_0"/>
+        <event value="62" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="CommitVidPn" opcode="win:Stop" keywords="DdiCalls"/>
+        <event value="63" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SetTimings" opcode="win:Start" keywords="DdiCallbacks" template="Args63_0"/>
+        <event value="64" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SetTimings" opcode="win:Stop" keywords="DdiCallbacks"/>
+        <event value="65" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterCommit" opcode="win:Stop" keywords="DdiCallbacks"/>
+        <event value="66" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="AdapterDisplayConfigUpdate" opcode="win:Stop" keywords="DdiCalls"/>
+        <event value="67" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="SetTimingsPath" opcode="win:Info" keywords="DdiCallbacks" template="Args67_0"/>
+        <event value="68" version="0" level="Log Always"  channel="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" task="MonitorI2CTransmitAndReceive" opcode="win:Info" keywords="DdiCallbacks" template="Args68_0"/>
+      </events>
+      <channels>
+        <channel value="16" name="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" type="Debug"/>
+      </channels>
+      <keywords>
+        <keyword name="DdiCalls" mask="0x1" message="$(string.string11)" />
+        <keyword name="DdiCallbacks" mask="0x2" message="$(string.string10)" />
+        <keyword name="ObjectLifetime" mask="0x4" message="$(string.string38)" />
+        <keyword name="FrameProcessing" mask="0x8" message="$(string.string14)" />
+      </keywords>
+      <tasks>
+        <task value="100" name="AdapterInitAsync" message="$(string.string100)">
+        </task>
+        <task value="101" name="AdapterInitFinished" message="$(string.string101)">
+        </task>
+        <task value="102" name="AdapterCommit" message="$(string.string102)">
+        </task>
+        <task value="103" name="AdapterUpdateMaxBandwidth" message="$(string.string103)">
+        </task>
+        <task value="104" name="AdapterDestroy" message="$(string.string104)">
+        </task>
+        <task value="105" name="AdapterCommitPaths" message="$(string.string105)">
+        </task>
+        <task value="106" name="AdapterDisplayConfigUpdatePath" message="$(string.string106)">
+        </task>
+        <task value="107" name="AdapterQueryTargetInfo" message="$(string.string107)">
+        </task>
+        <task value="108" name="AdapterDisplayConfigUpdate" message="$(string.string108)">
+        </task>
+        <task value="200" name="MonitorCreate" message="$(string.string200)">
+        </task>
+        <task value="201" name="MonitorArrival" message="$(string.string201)">
+        </task>
+        <task value="202" name="MonitorDeparture" message="$(string.string202)">
+        </task>
+        <task value="203" name="MonitorGetDefaultDescriptionModes" message="$(string.string203)">
+        </task>
+        <task value="204" name="MonitorQueryTargetModes" message="$(string.string204)">
+        </task>
+        <task value="205" name="MonitorAssignSwapChain" message="$(string.string205)">
+        </task>
+        <task value="206" name="MonitorUnassignSwapChain" message="$(string.string206)">
+        </task>
+        <task value="207" name="MonitorI2CTransmit" message="$(string.string207)">
+        </task>
+        <task value="208" name="MonitorI2CReceive" message="$(string.string208)">
+        </task>
+        <task value="209" name="MonitorSetGammaRamp" message="$(string.string209)">
+        </task>
+        <task value="210" name="MonitorUpdateModes" message="$(string.string210)">
+        </task>
+        <task value="211" name="MonitorSetupHardwareCursor" message="$(string.string211)">
+        </task>
+        <task value="212" name="MonitorQueryHardwareCursor" message="$(string.string212)">
+        </task>
+        <task value="213" name="MonitorTraceTargetModes" message="$(string.string213)">
+        </task>
+        <task value="214" name="MonitorTraceMonitorModes" message="$(string.string214)">
+        </task>
+        <task value="215" name="MonitorOpmSetMftContext" message="$(string.string215)">
+        </task>
+        <task value="216" name="MonitorGetPhysicalSize" message="$(string.string216)">
+        </task>
+        <task value="217" name="MonitorQueryTargetModes2" message="$(string.string217)">
+        </task>
+        <task value="218" name="MonitorUpdateModes2" message="$(string.string218)">
+        </task>
+        <task value="219" name="MonitorSetDefaultHdrMetaData" message="$(string.string219)">
+        </task>
+        <task value="220" name="MonitorI2CTransmitAndReceive" message="$(string.string220)">
+        </task>
+        <task value="300" name="SwapchainCreate" message="$(string.string300)">
+        </task>
+        <task value="301" name="SwapchainDestroy" message="$(string.string301)">
+        </task>
+        <task value="302" name="SwapchainSetDevice" message="$(string.string302)">
+        </task>
+        <task value="303" name="SwapchainReleaseAndAcquireBuffer" message="$(string.string303)">
+        </task>
+        <task value="304" name="SwapchainGetDirtyRects" message="$(string.string304)">
+        </task>
+        <task value="305" name="SwapchainGetMoveRegions" message="$(string.string305)">
+        </task>
+        <task value="306" name="SwapchainDriverFrameProcessingTask" message="$(string.string306)">
+        </task>
+        <task value="307" name="SwapchainFinishProcessingFrame" message="$(string.string307)">
+        </task>
+        <task value="308" name="SwapchainReportFrameStatistics" message="$(string.string308)">
+        </task>
+        <task value="309" name="SwapchainReportFrameStatisticsStep" message="$(string.string309)">
+        </task>
+        <task value="310" name="SwapchainInSystemMemory" message="$(string.string310)">
+        </task>
+        <task value="311" name="SwapchainReleaseAndAcquireSystemBuffer" message="$(string.string311)">
+        </task>
+        <task value="312" name="SwapchainGetPhysicallyContiguousAddress" message="$(string.string312)">
+        </task>
+        <task value="313" name="SwapchainReleaseAndAcquireBuffer2" message="$(string.string313)">
+        </task>
+        <task value="400" name="OpmGetCertificateSize" message="$(string.string400)">
+        </task>
+        <task value="401" name="OpmGetCertificate" message="$(string.string401)">
+        </task>
+        <task value="402" name="OpmCreateProtectedOutput" message="$(string.string402)">
+        </task>
+        <task value="403" name="OpmGetRandomNumber" message="$(string.string403)">
+        </task>
+        <task value="404" name="OpmSetSigningKeyAndSequenceNumbers" message="$(string.string404)">
+        </task>
+        <task value="405" name="OpmGetInformation" message="$(string.string405)">
+        </task>
+        <task value="406" name="OpmConfigureProtectedOutput" message="$(string.string406)">
+        </task>
+        <task value="407" name="OpmDestroyProtectedOutput" message="$(string.string407)">
+        </task>
+        <task value="500" name="DeviceParseMonitorDescription" message="$(string.string500)">
+        </task>
+        <task value="501" name="Watchdog" message="$(string.string501)">
+        </task>
+        <task value="502" name="ProcessDdi" message="$(string.string502)">
+        </task>
+        <task value="503" name="ProcessKernelRequest" message="$(string.string503)">
+        </task>
+        <task value="504" name="DeviceParseMonitorDescription2" message="$(string.string504)">
+        </task>
+        <task value="600" name="CommitVidPn" message="$(string.string600)">
+        </task>
+        <task value="601" name="SetTimings" message="$(string.string601)">
+        </task>
+        <task value="602" name="SetTimingsPath" message="$(string.string602)">
+        </task>
+      </tasks>
+      <templates>
+        <template tid="Args2_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args3_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PathCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args4_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="Bandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args6_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DescriptorType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args9_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="InputModeCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args11_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Handle" inType="win:Pointer" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args13_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SevenBitI2CAddress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args14_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SevenBitI2CAddress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args18_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="LastShapeId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args19_0">
+          <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WddmAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="VidPnTargetId" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args25_0">
+          <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WddmAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="VidPnTargetId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FrameNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args26_0">
+          <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentationFrameNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameStatus" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReencodeNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameSliceTotal" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentSlice" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameAcquireQpcTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="FrameProcessingStepsCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="SendStartQpcTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SendStopQpcTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="SendCompleteQpcTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ProcessedPixelCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FrameSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args36_0">
+          <data name="Valid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetModeIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PixelRate" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VSync" inType="win:Float" outType="xs:float"  />
+          <data name="ActiveWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RequiredBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RgbBitsPerComponent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args37_0">
+          <data name="Valid" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MonitorModeIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PixelRate" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="VSync" inType="win:Float" outType="xs:float"  />
+          <data name="ActiveWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ActiveHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VSyncDivider" inType="win:UInt16" outType="xs:unsignedShort"  />
+          <data name="RequiredBandwidth" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="RgbBitsPerComponent" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Preferred" inType="win:Boolean" outType="xs:boolean"  />
+        </template>
+        <template tid="Args41_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PathIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MonitorConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PathFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColorSpace" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RgbBitsPerComponent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args42_0">
+          <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="PresentationFrameNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReencodeNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="CurrentSlice" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StepIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="StepType" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="QpcTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="Data1" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Data2" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args43_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MftContext" inType="win:UInt64" outType="win:HexInt64"  />
+        </template>
+        <template tid="Args44_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PhysicalWidth" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PhysicalHeight" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args45_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PathIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MonitorConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"  />
+          <data name="Position.x" inType="win:Int32" outType="xs:int"  />
+          <data name="Position.y" inType="win:Int32" outType="xs:int"  />
+          <data name="Resolution.Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Resolution.Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="VSync" inType="win:Float" outType="xs:float"  />
+          <data name="VSyncDivider" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColorMode" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DPI" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PhysicalSize.Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="PhysicalSize.Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColorimetryFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="HostAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="HostVidPnTargetId" inType="win:UInt32" outType="win:HexInt32"  />
+        </template>
+        <template tid="Args49_0">
+          <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WddmAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="VidPnTargetId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FrameNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="FramePresentQpcTime" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DirtyRectCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="MetaDataType" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args50_0">
+          <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"  />
+          <data name="WddmAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="VidPnTargetId" inType="win:UInt32" outType="win:HexInt32"  />
+          <data name="FrameNumber" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="DriverProcessingTimeInMicroseconds" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DriverProcessingTimeStartQpc" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="DriverProcessingTimeStopQpc" inType="win:UInt64" outType="xs:unsignedLong"  />
+          <data name="QPCFrequency" inType="win:UInt64" outType="xs:unsignedLong"  />
+        </template>
+        <template tid="Args52_0">
+          <data name="KernelEventId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args58_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="TargetId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TargetCaps" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args61_0">
+          <data name="KmdAdapterHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="AffectedSourceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args63_0">
+          <data name="KmdAdapterHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PathCount" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args67_0">
+          <data name="KmdAdapterHandle" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="PathIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Changed" inType="win:Boolean" outType="xs:boolean"  />
+          <data name="VidPnSourceId" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ColorSpace" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="RgbBitsPerComponent" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+        <template tid="Args68_0">
+          <data name="IddAdapterLuid" inType="win:UInt64" outType="win:HexInt64"  />
+          <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransmitSevenBitI2CAddress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="TransmitDataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReceiveSevenBitI2CAddress" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReceiveDataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"  />
+          <data name="ReceiveFlags" inType="win:UInt32" outType="xs:unsignedInt"  />
+        </template>
+      </templates>
+  </provider>
+  </events>
+</instrumentation>
+<localization>
+  <resources culture="en-US">
+     <stringTable>
+       <string id="string0" value="AdapterCommit" />
+       <string id="string1" value="AdapterCommitPaths" />
+       <string id="string2" value="AdapterDestroy" />
+       <string id="string3" value="AdapterDisplayConfigUpdate" />
+       <string id="string4" value="AdapterDisplayConfigUpdatePath" />
+       <string id="string5" value="AdapterInitAsync" />
+       <string id="string6" value="AdapterInitFinished" />
+       <string id="string7" value="AdapterQueryTargetInfo" />
+       <string id="string8" value="AdapterUpdateMaxBandwidth" />
+       <string id="string9" value="CommitVidPn" />
+       <string id="string10" value="DdiCallbacks" />
+       <string id="string11" value="DdiCalls" />
+       <string id="string12" value="DeviceParseMonitorDescription" />
+       <string id="string13" value="DeviceParseMonitorDescription2" />
+       <string id="string14" value="FrameProcessing" />
+       <string id="string15" value="Microsoft-Windows-IndirectDisplays-ClassExtension-Events" />
+       <string id="string16" value="Microsoft-Windows-IndirectDisplays-ClassExtension-Events/Diagnostic" />
+       <string id="string17" value="MonitorArrival" />
+       <string id="string18" value="MonitorAssignSwapChain" />
+       <string id="string19" value="MonitorCreate" />
+       <string id="string20" value="MonitorDeparture" />
+       <string id="string21" value="MonitorGetDefaultDescriptionModes" />
+       <string id="string22" value="MonitorGetPhysicalSize" />
+       <string id="string23" value="MonitorI2CReceive" />
+       <string id="string24" value="MonitorI2CTransmit" />
+       <string id="string25" value="MonitorI2CTransmitAndReceive" />
+       <string id="string26" value="MonitorOpmSetMftContext" />
+       <string id="string27" value="MonitorQueryHardwareCursor" />
+       <string id="string28" value="MonitorQueryTargetModes" />
+       <string id="string29" value="MonitorQueryTargetModes2" />
+       <string id="string30" value="MonitorSetDefaultHdrMetaData" />
+       <string id="string31" value="MonitorSetGammaRamp" />
+       <string id="string32" value="MonitorSetupHardwareCursor" />
+       <string id="string33" value="MonitorTraceMonitorModes" />
+       <string id="string34" value="MonitorTraceTargetModes" />
+       <string id="string35" value="MonitorUnassignSwapChain" />
+       <string id="string36" value="MonitorUpdateModes" />
+       <string id="string37" value="MonitorUpdateModes2" />
+       <string id="string38" value="ObjectLifetime" />
+       <string id="string39" value="OpmConfigureProtectedOutput" />
+       <string id="string40" value="OpmCreateProtectedOutput" />
+       <string id="string41" value="OpmDestroyProtectedOutput" />
+       <string id="string42" value="OpmGetCertificate" />
+       <string id="string43" value="OpmGetCertificateSize" />
+       <string id="string44" value="OpmGetInformation" />
+       <string id="string45" value="OpmGetRandomNumber" />
+       <string id="string46" value="OpmSetSigningKeyAndSequenceNumbers" />
+       <string id="string47" value="ProcessDdi" />
+       <string id="string48" value="ProcessKernelRequest" />
+       <string id="string49" value="SetTimings" />
+       <string id="string50" value="SetTimingsPath" />
+       <string id="string51" value="SwapchainCreate" />
+       <string id="string52" value="SwapchainDestroy" />
+       <string id="string53" value="SwapchainDriverFrameProcessingTask" />
+       <string id="string54" value="SwapchainFinishProcessingFrame" />
+       <string id="string55" value="SwapchainGetDirtyRects" />
+       <string id="string56" value="SwapchainGetMoveRegions" />
+       <string id="string57" value="SwapchainGetPhysicallyContiguousAddress" />
+       <string id="string58" value="SwapchainInSystemMemory" />
+       <string id="string59" value="SwapchainReleaseAndAcquireBuffer" />
+       <string id="string60" value="SwapchainReleaseAndAcquireBuffer2" />
+       <string id="string61" value="SwapchainReleaseAndAcquireSystemBuffer" />
+       <string id="string62" value="SwapchainReportFrameStatistics" />
+       <string id="string63" value="SwapchainReportFrameStatisticsStep" />
+       <string id="string64" value="SwapchainSetDevice" />
+       <string id="string65" value="Watchdog" />
+       <string id="string66" value="win:Info" />
+       <string id="string67" value="win:Start" />
+       <string id="string68" value="win:Stop" />
+     </stringTable>
+  </resources>
+</localization>
+</instrumentationManifest>
